@@ -1,0 +1,823 @@
+---
+format:
+  revealjs:
+    theme: serif
+    code-fold: true
+    controls: true
+    navigation-mode: linear
+    controls-layout: bottom-right
+    controls-tutorial: true
+    slide-number: true
+    show-slide-number: all
+    pdfMaxPagesPerSlide: 1
+fig-dpi: 300
+
+---
+
+
+Ethics in GIS
+=============
+
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+GIS, more than many disciplines has immense potential to have an impact on peoples lives.
+
+
+
+:::
+::::
+
+
+
+
+What is Ethics
+--------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Ethics is a branch of philosophy that deals with the nature of right and wrong. It is a theory or set of standards that inform moral practice.
+
+
+* Ethics and legality are not synonymous
++ Though the laws we have constructed as a society may be informed by morality
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/Ethics.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Ethics vs. Legality
+-------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+![](images/Police.jpg)
+
+
+#### Legal but Unethical
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/Protest.png)
+
+
+#### Ethical but Illegal
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 1
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+This branch of philosophy deals with the nature of right and wrong:
+
+
+* Logic
+* Ethics
+* Epistemology
+* Metaphysics
+
+
+
+
+:::
+::::
+
+
+
+
+Ethics in Science
+-----------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Research often involves handling the private, personal information about individuals and minority groups:
+
+
+* Potential participants must be able to trust that their information will be used in a safe and respected manner.
+* In some fields, ethics boards often review research proposals to ensure best practices are used.
++ How will the data be used?
++ Who will have access to data/results?
++ What identifying information will be used/released?
+
+
+
+
+:::
+::::
+
+
+
+
+Ethics in GIS
+-------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+GIS has the potential to be **more** intrusive in to people’s every day lives other sciences:
+
+
+* We can know where people are at any given time
+* We can guess at what they are doing reasonably well
+* We can know where people shop, approximately how much money they make, who they know, and to which organizations they belong
+* We can know if they belong to minority groups:
++ E.g., racial minorities, religious minorities, political groups, LGBT+
+
+
+
+
+:::
+::::
+
+
+
+
+Data Privacy and Security
+-------------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+More detail gives = more accurate; allows for better decision making but infringes on privacy.
+
+
+* How specific is too specific?
++ Point locations risk exposing personal information
+
+* Guidelines surrounding exposure of information
++ Public health agencies don't release information about individuals
++ Stats Canada masks census data when they don't get enough respondents
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/COVID_Map.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+The Power of a Line
+-------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+What side of a border you live up on can have drastic impacts on outcomes. Where you live determines:
+
+
+* What rights you have
+* What schools you attend
+* How much your vote matters (if you even get to vote)
+* How much you pay in taxes
+* What services you have access too
+* Where you can travel
+
+
+
+
+:::
+::::
+
+
+
+
+The Power of a Line
+-------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Borders are often **arbitrary** and **modifiable**.
+
+
+* Think back to the modifiable areal unit problem
++ The decisions of a few can impact many
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/gerrymander_0.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Redlining
+---------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+The systematic denial of services to racially marginalized groups by government and lending institutions in order to forcibly segregated communities. 
+
+
+* For much of the 20th century, redlining was legal and wide spread across North American cities. The practice has been more thoroughly documented and researched in the US.
++ It is very important to note that redlining occurred in Canada as well ([source](https://www.jstor.org/stable/43100660))
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 2
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+The modifiable areal unit problem is a serious problem. Instead of voters choosing their politicians, it allows politicians to choose their \_\_\_\_.
+
+
+
+
+:::
+::::
+
+
+
+
+Data Representation
+-------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Every cartographic choice you make can have ramifications.
+
+
+* How we choose to display our data can have a big impact on how it is perceived
++ Maps influence the way people think
++ They can reinforce (or counter) biases individuals may hold
+
+* All maps lie, but some lie more than others.
++ Abstraction is a necessary part of map making
++ But it needs to be done carefully
+
+
+
+
+:::
+::::
+
+
+
+
+All Maps Lie
+------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Sometimes the lies are intentional.
+
+
+* Maps can be crafted to sway public opinion and influence political outcomes
++ This is a serious ethical issue
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/gerrymander_nc.png)
+
+
+
+
+:::
+::::
+
+
+
+
+All Maps Lie
+------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Sometimes the lies are careless oversights.
+
+
+* Different map projections cause areas to be different sizes
++ It may not be an intentional choice by the map maker
++ Nonetheless it will influence the way people think
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/Projection.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+All Maps Lie
+------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Sometimes the lack of context is the issue.
+
+
+* Different unit sizes mean this map over-represents republicans
++ It may not be an intentional choice by the map maker
++ Nonetheless it will influence the way people think
++ There are strategies to correct these issues
+- More context
+- Adjust the map
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/nocontext.png)
+
+
+##### US House of Representatives 2022 Election
+
+
+
+
+:::
+::::
+
+
+
+
+All Maps Lie
+------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Sometimes the lack of context is the issue.
+
+
+* Different unit sizes mean this map over-represents republicans
++ It may not be an intentional choice by the map maker
++ Nonetheless it will influence the way people think
++ There are strategies to correct these issues
+- More context
+- Adjust the map
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/context.png)
+
+
+##### US House of Representatives 2022 Election
+
+
+##### Equally Sized Districts
+
+
+
+
+:::
+::::
+
+
+
+
+All Maps Lie
+------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Sometimes the lack of context is the issue.
+
+
+* Different unit sizes mean this map over-represents republicans
++ It may not be an intentional choice by the map maker
++ Nonetheless it will influence the way people think
++ There are strategies to correct these issues
+- More context
+- Adjust the map
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/president.png)
+
+
+##### Cartograms of 2020 Presidential Election
+
+
+
+
+:::
+::::
+
+
+
+
+Who Has Access to GIS?
+----------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Who has access to GIS? ESRI products (e.g. ArcGIS Pro) have very expensive licensing fees. Beyond just the cost of the software, hardware to run GIS is not always accessible, and GIS training takes time. 
+
+
+* There are options to make GIS more accessible to the public
+* But they can only go so far
+
+
+
+
+:::
+::::
+
+
+
+
+Open Source GIS
+---------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Open source software is free to access, platforms are created and maintain by volunteers. There are open source alternatives that can provide some access to GIS:
+
+
+* [QGIS](https://qgis.org/en/site/) is an application with similar functionality to ArcGIS Pro.
+* Python, R, JavaScript etc. are open source programming languages that have many GIS packages
+* Free help pages like [stackexchange](https://gis.stackexchange.com/) and github doc's pages e.g., [qgis](https://github.com/qgis/QGIS) can help with training, but they require a base level of knowledge first.
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 3
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Open source software and documentation make GIS more
+
+
+* Profitable
+* Accessible
+* Difficult
+
+
+
+
+:::
+::::
+
+
+
+
+Public Participation in GIS
+---------------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+There are many ways the public can be involved in GIS; the can participate actively or passively.
+
+
+* Public engagement is crucial way to increase representation of opinions and trust in institutions
+* Not all participatory approaches are centered on engagement
++ They can also be passive
+
+
+
+
+:::
+::::
+
+
+
+
+Volunteer Geographic Information
+--------------------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+The collection, processing, assembly, and dissemination of geographic data provided voluntarily by individuals. Is sometimes, part of participatory approaches to GIS; sometimes its just using freely provided information that people are unaware of.
+
+
+* This is equally likely to be used for commercial purposes as it is for participatory, educational, and other non-commercial uses: E.g. Trip Advisor, Flickr, Twitter, etc.
+* Usually some sort of "wisdom of the crowds" is used to validate data, or else data verification and validation is performed by the organizing group
++ See [Chae et al. (2025)](http://localhost:4000/docs/content/Chae_et_al_2015.pdf)
+
+
+
+
+:::
+::::
+
+
+
+
+Citizen Science
+---------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Allows interested volunteers and researchers to team up to address some scientific question.
+
+
+* Volunteers provide the “leg work” of data collection, data cleaning, and initial interpretation of field data; guided by scientific research experts
+* Participation levels can range from simple data collection through to contributing to academic journal submission.
++ The [COCORAHS](https://maps.cocorahs.org/) platform is a great example!
+
+
+
+
+:::
+::::
+
+
+
+
+Participatory GIS
+-----------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+The goal is the empowerment and inclusion of marginalized people. These groups tend to have little or no voice due to extremes of location, poverty, racism, sexism, anti-religious feelings, etc. 
+
+
+* Begins through a process of community mapping, with many steps and a set of long-term goals for the community
++ Members of the community generate their own data and construct their own maps
++ Bring members together to share their maps and combine into a community map/database
++ These community efforts can then be coded into a GIS to systematize the community’s knowledge and allow for greater spatial analysis to occur
+
+* Emphasizes engagement throughout the GIS process
+
+
+
+
+:::
+::::
+
+
+
+
+Inuit Land Use and Occupancy Project
+------------------------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Participatory GIS to safeguard Inuit rights to Arctic lands and waters.
+
+
+* Inuit People became increasingly concerned about resource extraction projects
+* Commissioned a study on land use and occupancy that was instrumental in the establishment of Nunavut
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/ILUOP_1.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Inuit Land Use and Occupancy Project
+------------------------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+No references to published work or other secondary sources of information:
+
+
+* Existing maps and information had significant colonial bias
+* 100 % Original Data collection from Inuit Sources
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/ILUOP_2.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Positionality
+-------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+It is important to reflect on your relation to your work. In the social sciences, positionality is especially important, because a researches privileges, biases, and preconceptions can drastically impact the people and communities they are working with. 
+
+
+* In some of the "hard" sciences, there are often a claims of total objectivity, but complete objectivity is **impossible**.
+* No one is completely objective, that must be understood and acknowledged regardless of the field.
+
+
+
+
+:::
+::::
+
+
+
+
+Positionality
+-------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Some important questions to ask yourself, and things you may want to disclose depending on the context.
+
+
+* Who am I and where do I come from?
+* What is my relationship to the community/field I am working in?
+* What are my motivations for this work?
++ What biases may I have and how may my past experiences influence how I engage with this work?
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 4
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+This is the concept of reflecting on your relation to your work, what your motivations are, and what biases you might have.
+
+
+* Objectivity
+* Positionality
+* GIS Ethics
+* Cartography
+
+
+
+
+:::
+::::
+
+

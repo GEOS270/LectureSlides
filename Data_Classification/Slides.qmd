@@ -1,0 +1,979 @@
+---
+format:
+  revealjs:
+    theme: serif
+    code-fold: true
+    controls: true
+    navigation-mode: linear
+    controls-layout: bottom-right
+    controls-tutorial: true
+    slide-number: true
+    show-slide-number: all
+    pdfMaxPagesPerSlide: 1
+fig-dpi: 300
+
+---
+
+
+Classifying Data
+================
+
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+Finding patterns in complex datasets, emphasizing aspects we think are important.
+:::
+::::
+
+
+
+
+Descriptive Statistics
+----------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+
+
+Descriptors by data type| **Statistic** | **Nominal** | **Ordinal** | **Interval** | **Ratio** |
+| Equality | x | x | x | x |
+| Counts/Mode | x | x | x | x |
+| Rank/Order |  | x | x | x |
+| Median |  | ~ | x | x |
+| Add/Subtract |  |  | x | x |
+| Mean |  |  | x | x |
+| Multiply/Divide |  |  |  | x |
+
+
+
+
+:::
+::::
+
+
+
+
+Measures of Central Tendency
+----------------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Highlight the "central" feature in a dataset.
+
+
+* **Mode**: The most frequent value in a set
+* **Median**: The middle value in a set
+	+ Data is ranked to find the center point
+	
+		- 50% above, 50% below+ Not impacted by outliers
+* **Mean**: The sum of all values divided by the number of values
+	+ Impacted by outliers
+
+
+
+
+:::
+::::
+
+
+
+
+Measures of Dispersion
+----------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+These statistics give context a measure of central tendency.
+
+
+* **Range**: The difference between the maximum and minimum values
+* **Inter-quartile Range**: Difference between 75th and 25th percentile value
++ Spread around the median (50th percentile), not influenced by outliers
+
+* **Standard Deviation**: $\sigma = \sqrt{\frac{1}{N}\sum\_{i=1}^n (x\_i - U)^2}$
++ Spread of data values (x) around the mean(U), influenced by outliers
+
+
+
+
+:::
+::::
+
+
+
+
+Frequency Distribution
+----------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Frequency of occurrence in a **qualitative** data.
+
+
+* Counts per category
+* Bar charts are a useful tool for visualizing frequency distributions
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/Frequency_Dist.svg)
+
+
+
+
+:::
+::::
+
+
+
+
+Probability Distribution
+------------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Probability of occurrence in a **quantitative** dataset.
+
+
+* **Normal Distribution**: idealized, based on distance from the mean in **standard deviations**.
++ Assumed distribution in many statistical tests.
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/normal_dist.svg)
+
+
+
+
+|  |  |
+| --- | --- |
+| ±1 $\sigma$ | 68% of observations |
+| ±2 $\sigma$ | 95% of observations |
+| ±3 $\sigma$ | 99.7% of observations |
+
+
+
+
+:::
+::::
+
+
+
+
+Histograms
+----------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Useful for **quantitative** data.
+
+
+* Orders data and groups data into **bins** of consistent width
+* Helpful for:
++ Approximating probability distribution
++ Grouping data into classes
++ Outlier detection
+
+* Similar to bar charts, **but** not the same thing!
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/histogram.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Deviating from the Norm
+-----------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Data rarely fits a normal distribution perfectly:
+
+
+* **Skew**: deviates from a normal distribution
++ Tails with outliers
+
+* **Kurtosis**: deviates from a normal distribution
++ Dispersed or clustered
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+Near Normal
+
+
+![](images/normal_dist.png)
+
+
+
+
+Skewed Normal
+
+
+![](images/normal_dist2.png)
+
+
+
+
+Highly Skewed
+
+
+![](images/normal_dist3.png)
+
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 1
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+If you are working with nominal or ordinal data, and you want see how many observations you have for each category, you would use:
+
+
+* A histogram to plot a probability distribution
+* A histogram to plot a frequency distribution
+* A bar chart to plot a probability distribution
+* A bar chart to plot a frequency distribution
+
+
+
+
+:::
+::::
+
+
+
+
+Normalizing Data
+----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Allows us to account for confounding variables that mask or hide patterns in our data.
+
+
+* Helpful to scale or normalize a value by a another value - time, area, population etc.
+* Examples:
++ Income vs. money spent on food
++ Population vs. shape area
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+Highly Correlated
+
+
+![](images/confounder_1.png)
+
+
+
+
+No Correlation
+
+
+![](images/confounder_2.png)
+
+
+
+
+
+:::
+::::
+
+
+
+
+Multiple Confounders
+--------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+It isn't always straightforward to account for multiple variables.
+
+
+* ex: COVID rates by age groups
+![](images/horgan.jpg)
+
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/multiple_confounders.png)
+
+
+1. Population by age group
+2. Workforce participation
+3. Occupational exposure
+
+
+
+
+:::
+::::
+
+
+
+
+Standardizing
+-------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Also allow us to compare between **two or more** variables in different units / scales.
+
+
+* $z = \frac{x-\overline{U}}{\sigma}$
+* Similar idea to normalizing, but:
++ Removing the mean and standard deviation from multiple variables
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/Standardizing.png)
+
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 2
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Which of these countries has the highest population density? \* *Populations and Areas are approximate, given to two significant figures for convenience.*
+
+
+* **Monaco**: Pop (37,000), Area (2 km2)
+* **Singapore**: Pop (5,500,000), Area (720 km2)
+* **China**: Pop (1,400,000,000), Area (9,600,000 km2)
+
+
+
+
+:::
+::::
+
+
+
+
+Classification Methods
+----------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+**Unsupervised:**
+
+
+* Data defined classes - the user decides on the number of classes
+* The rest is left of up to an algorithm
+
+
+
+:::
+:::{.column width="50%"}
+
+
+**Supervised:**
+
+
+* User defined - the user explicitly defines classes
+* Or provides set of classes as training data
+* Degree of user input is variable, more than unsupervised
+
+
+
+
+:::
+::::
+
+
+
+
+Common Examples in Arc Pro
+--------------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Vancouver dissemination area populations
+
+
+* Not classified
+* Color scheme is stretched between min/max
+* Difficult to see patterns
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/Unclassified.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Equal Interval
+--------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+One of the simplest classification schemes.
+
+
+* Data is split to classes of equal width based on the range.
+* **Unsupervised**: user defines number of bins.
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/Equal_Int.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Defined Interval
+----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Another of the simplest classification schemes.
+
+
+* Data is split to classes of equal width based on the range.
+* **Unsupervised**: user defines bin width.
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/Defined.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Quantiles
+---------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Slightly more complex classification scheme.
+
+
+* Data is split into classes by percentiles.
++ e.g. 0-20%, 20-40%, ... 80-100%.
+
+* **Unsupervised**: user defines number of bins.
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/Quantile.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Natural Breaks
+--------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+More complex, data is split using the [Jenks algorithm](http://wiki.gis.com/wiki/index.php/Jenks_Natural_Breaks_Classification).
+
+
+* Optimizes splits, by maximizing within group similarity and between group dissimilarity.
++ "Natural" classes.
+
+* **Unsupervised**: user defines number of bins.
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/Natural_break.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Standard Deviation
+------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Informative to "experts", but not accessible for all.
+
+
+* Classes based on "distance" from the mean in standard deviations.
++ Unit-less, converts to interval data.
++ Diverging color maps.
+
+* **Unsupervised**: user defines number of bins.
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/Standard_dev.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Manual Breaks
+-------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+**Supervised**: User defines break values.
+
+
+* Allows us to choose more meaningful break values if necessary.
+* Incorporate multiple factors
+* Influence the way the data is perceived.
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/Natural_break.png)
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 3
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+This classification method seeks to maximize the similarity between data values within groups and maximize the dissimilarity in data values between groups. It tries to find the "optimal" splits within a dataset.
+
+
+* Manual Breaks
+* Quantiles
+* Natural Breaks
+* Equal Interval
+* Standard Deviation
+
+
+
+
+:::
+::::
+
+
+
+
+More Complex Methods
+--------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+There are many classification methods that are a bit too complex to actually perform in this course.
+
+
+* I'm introducing some because important to be aware of them.
+* You'll encounter them if you continue with GIS.
+
+
+
+
+:::
+::::
+
+
+
+
+K-means
+-------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Algorithm uses random steps to group data into clusters.
+
+
+* **Unsupervised**: user defines number of bins & iterations.
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/kmeans.gif)
+
+
+
+
+:::
+::::
+
+
+
+
+Median Absolute Deviation
+-------------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Used for automated detection of outliers.
+
+
+* **Unsupervised**: user defines error threshold.
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/MAD.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+Decision Trees
+--------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Fit training data to user defined categories.
+
+
+* **Supervised**: user provides training classes.
+* *Automated*: algorithm determines break values.
+* Risk of over-fitting
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/tree.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Random Forests
+--------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Multiple trees (>100) can be averaged to increase performance and generalization.
+
+
+* **Supervised**: user provides training classes and "hyperparameters".
+* *Automated*: algorithm determines break values.
+* Low risk of over-fitting
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/forest.gif)
+
+
+
+
+:::
+::::
+
+
+
+
+Landscape Classification
+------------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Multiple trees (>100) can be averaged to increase performance and generalization.
+
+
+* **Supervised**: user provides training classes and "hyperparameters".
+* *Automated*: algorithm determines break values.
+* Low risk of over-fitting
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/FishIsland_NDVI2.gif)
+
+
+
+
+:::
+::::
+
+
+
+
+Neural Networks
+---------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+One of the most complex methods.
+
+
+* **Supervised**: user provides training classes and "hyperparameters".
+* *Automated*: algorithm maps relationships in dataset.
+* Risk of over-fitting
++ Requires careful inspection
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/NN.gif)
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 4
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Unsupervised classification methods typically require more user input than supervised classification methods.
+
+
+* True
+* False
+
+
+
+
+:::
+::::
+
+

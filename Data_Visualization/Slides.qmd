@@ -1,0 +1,924 @@
+---
+format:
+  revealjs:
+    theme: serif
+    code-fold: true
+    controls: true
+    navigation-mode: linear
+    controls-layout: bottom-right
+    controls-tutorial: true
+    slide-number: true
+    show-slide-number: all
+    pdfMaxPagesPerSlide: 1
+fig-dpi: 300
+
+---
+
+
+Visualizing Data
+================
+
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+Displaying patterns in complex datasets, communicating aspects we think are important.
+:::
+::::
+
+
+
+
+Cartography
+-----------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+The art **and** science of making maps.
+
+
+* Why do we make maps?
++ To transmit spatial information to a map reader
+
+* Data and analyses are meaningless, unless conveyed effectively
++ Decide what you want to communicate and to whom
+
+
+
+
+:::
+::::
+
+
+
+
+Cartography
+-----------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+**Good Maps**
+
+
+1. Concise
+2. Accessible
+3. Aesthetically pleasing
+
+
+
+:::
+:::{.column width="50%"}
+
+
+**Bad Maps**
+
+
+1. Cluttered, ineffective, misleading
+2. Inaccessible to target audience
+3. Ugly
+
+
+
+
+:::
+::::
+
+
+
+
+A Bad Map
+---------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Excellent example of a bad map showing really interesting information.
+
+
+* Too much information
+* Too many colors
+* Text is way too small
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/BadMap.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+A Better Map
+------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Cleaner, less complex presentation.
+
+
+* Too much information
+* Too many colors
+* Text is way too small
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/Fig1.png)
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 1
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Cartography is the \_\_\_ and \_\_\_ of making maps.
+
+
+
+
+:::
+::::
+
+
+
+
+Design Principals
+-----------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Give the viewer the most information in the shortest time with the least ink in the smallest space.
+
+
+* Complex ideas communicated with clarity, precision, and efficiency.
+* Maximize data-to-ink ratio (i.e. more data, less other stuff).
+* Erase non-data ink, within reason.
+
+
+
+
+:::
+::::
+
+
+
+
+Design Principals
+-----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+The best maps can be interpreted quickly and easily.
+
+
+* Title: Clear and to the point
+* Content: Patterns are obvious, no "extra" information
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/good_map.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Design Principals
+-----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+The best maps can be interpreted quickly and easily.
+
+
+* Content: Takes longer to read, but subject matter is more complex
++ Minimizes "extra" information
++ Simplifies geometry
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/dc_metro.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+Data Symbolization
+------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+The techniques we use to represent information on a map.
+
+
+* The choices we make will convey aspects of the data
++ Color & brightness
++ Shapes & lines
++ Characters & fonts
++ Position & size
+
+* Some choices may lead to assumptions being made about the data
++ Intentionally or otherwise
+
+
+
+:::
+::::
+
+
+
+
+Color
+-----
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+The **HSV** scale describes three components.
+
+
+* **Hue**: the dominant wavelength
++ Typical association with the term "color"
+
+* **Saturation**: the intensity of one color
++ All red or only a little red?
+
+* **Value**: the brightness of one color
++ Lightness or darkness, how much light is reflected?
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/HSV.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Color Choice
+------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+It is important to choose the right kind of color map.
+
+
+* **Qualitative**: Different hues
++ Same value and saturation
+
+* **Sequential**: Single hue
++ Increasing saturation or value
+
+* **Diverging**: Opposing hues
++ Decreasing saturation toward center
+
+
+
+:::
+:::{.column width="50%"}
+
+
+Qualitative: Nominal  
+![](images/qualitative.jpg)
+
+  
+
+ Sequential: Ordinal & Ratio  
+![](images/sequential.jpg)
+
+  
+
+ Diverging: Interval  
+![](images/divergin.jpg)
+
+
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 2
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+This type of color map would be best suited for which variable?![](images/qualitative.jpg)
+
+
+
+
+* Land use (Forest, Agriculture, Urban, etc.)
+* Temperatures (in Kelvin)
+* Temperatures (in Celsius)
+* Zoning Density (High, Medium, Low, etc.)
+
+
+
+
+:::
+::::
+
+
+
+
+Color Choice
+------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Some colors have implicit assumptions depending on the context.
+
+
+![](images/color_association.png)
+
+
+
+
+
+:::
+::::
+
+
+
+
+Color Accessibility
+-------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+About 4.25% of people are colorblind, red-green is the most common. [Color Brewer](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3) is a great resource.
+
+
+![](images/color_blind.jpg)
+
+
+
+
+
+:::
+::::
+
+
+
+
+What Type of Are We Data Representing?
+--------------------------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+**Discrete**:
+
+
+* Points/lines/shapes
+* Hues
+![](images/Discrete.png)
+
+
+
+
+:::
+:::{.column width="50%"}
+
+
+**Continuous**:
+
+
+* Surfaces, contour lines
+* Saturation and value
+![](images/elevation.png)
+
+
+
+
+
+:::
+::::
+
+
+
+
+What is the Measurement Scale?
+------------------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+**Nominal**:
+
+
+* Dashes, shapes
+* Different Hues (colors)
+* **Do Not** choose colors or sizes that imply a difference in magnitude
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/LCM.png)
+
+
+
+
+:::
+::::
+
+
+
+
+What is the Measurement Scale?
+------------------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+**Ordinal, Interval, or Ratio**:
+
+
+* Graduated symbols, line weights
+* Different shades/intensities
+* **Do Not** choose colors or shapes that imply a difference in category
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/Final_Map.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Visual Hierarchy
+----------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+The relative importance of features is implied by a maps layout. Our perception is influenced by the order in which we see things and how big / bold they are.
+
+
+
+
+**Placement**
+* Center first
+* Top to bottom
+* Left to right
+
+
+
+
+
+
+
+**Font size**
+* Large
+* Medium
+* Small
+
+
+
+
+
+
+
+**Intensity (value)**
+* Light
+* Medium
+* Dark
+
+
+
+
+
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 3
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Visual hierarchy describes how some hues (colors) are more important than others and how the choice of hue influences our perception of a map.
+
+
+* True
+* False
+
+
+
+
+:::
+::::
+
+
+
+
+Stylistic Guidelines
+--------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+1. Clear labeling to prevent ambiguity and confusion.
+	* Minimize assumptions about your audience
+	* Proof your map text
+2. Consider if all map elements are necessary.
+	* Scale bars, North arrows, etc.
+	* Minimize “chart junk”
+3. Use appropriate color schemes.
+	* Colorblind friendly
+	* High contrast
+	* Suited for data type
+
+
+
+
+:::
+::::
+
+
+
+
+Stylistic Guidelines
+--------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+North arrows scale bars
+
+
+* North arrow
++ Doesn't work in circumpolar area
++ Not needed for large/familiar regions
+
+* Scale bar
++ Not always needed if its a large/familiar region
+- Scale text can often suffice
+- Depending on projection (i.e. Mercator), scale will vary drastically across the map
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/Fig1.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Stylistic Guidelines
+--------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+North arrows scale bars
+ * North arrow
++ Needed if it's not a familiar region **or** if north is not up
+
+* Scale
++ Needed if it's a small/unfamiliar region
++ For multiple maps are at different scales
++ Needed if navigation is important
+- i.e., a hiking map
+
+
+
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/LCM.png)
+
+
+
+
+:::
+::::
+
+
+
+
+So Many Mistakes!!
+------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+* Poor use of map space
++ Wasted white space
++ Not centered
+
+* Poor color choice
++ Not colorblind friendly
+
+* Not all map elements are visible
+* Text/font issues
+* North arrow
++ Placement
++ Size & style
+
+* Scale bar
++ Wrong units!
+
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/Bad2.png)
+
+
+
+
+:::
+::::
+
+
+
+
+So Many Mistakes!!
+------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+* Legend issues
++ Avoid unnecessary text
+- Don't title it **Legend**
+
++ Make sure entries are meaningful
+- Get rid of underscores
+
+* No name / affiliation, date, or data source
++ Be transparent, readers deserve to know:
+- Who made the map (individual / organization)?
+- When was the map made?
+- Where did relevant data come from?
+
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/Bad2.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Cleaner Presentation
+--------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+* Area of interest takes up most of the map space.
+* Name, affiliation, source.
+* More meaningful legend entries.
+* Proper sizing/placement of map elements.
+* More pleasing color choice, easier for colorblind people to read.
+
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/Clean.png)
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 4
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Your maps always need to have a title, scale bar, and north arrow.
+
+
+* True
+* False
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 5
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+If you are mapping a region that your target audience may be familiar with, its you should include a north arrow and scale information (scale bar, representative fraction, etc.).
+
+
+* True
+* False
+
+
+
+
+:::
+::::
+
+
+
+
+Cartographic Principals
+-----------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+These are just stylistic guidelines!
+
+
+* Cartography is an art, there are no steadfast rules
++ Just best practices
+
+* Feel free to play around with styling
++ Just be able to justify your choices
+
+* Not all spaces “want” to be mapped
++ Sometimes you need to make aesthetic compromises to make an effective map
+
+
+
+
+:::
+::::
+
+

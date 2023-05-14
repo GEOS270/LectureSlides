@@ -1,0 +1,903 @@
+---
+format:
+  revealjs:
+    theme: serif
+    code-fold: true
+    controls: true
+    navigation-mode: linear
+    controls-layout: bottom-right
+    controls-tutorial: true
+    slide-number: true
+    show-slide-number: all
+    pdfMaxPagesPerSlide: 1
+fig-dpi: 300
+
+---
+
+
+Steps of Abstraction
+====================
+
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+From the 3D Earth to 2D maps.
+:::
+::::
+
+
+
+
+Flattening the Blue Marble
+--------------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+This is what earth looks like when you take a picture of it from 29,000 kilometers away.
+
+
+* This photo is called the Blue Marble, it was taken from Apollo 17
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/blue_marble_og.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+Flattening the Blue Marble
+--------------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+This is the version that was published.
+
+
+* NASA rotated the image 180 degrees to fit peoples expectations
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/blue_marble_north_up.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+Complexities of Earth
+---------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+A lumpy ball of rock flying through space.
+
+
+* Despite what you may have been told
++ **The earth isn't round!**
+
+* It has multiple distortions caused by:
++ Topography
++ Gravity Differentials
++ Centrifugal Force
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/shape.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+Our Infinitely Complex Earth
+----------------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Cartographers have developed strategies for dealing with these distortions:
+
+
+* Topography
+* Gravity Differentials
+* Centrifugal Force
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/shape.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+Ignore Topography!?
+-------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Topography is very localized, in most applications it isn't explicitly needed to make a map.
+
+
+* We can account after the fact if needed
++ Digital Elevation Models
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/DEM.png)
+
+
+DEM of Mt. Everest
+
+
+
+
+:::
+::::
+
+
+
+
+Ignore Topography!?
+-------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Topography is very localized, in most applications it isn't explicitly needed to make a map.
+
+
+* We can account after the fact if needed
++ Digital Elevation Models
++ Contour Lines
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/Contour.png)
+
+
+Contour lines, Golden Ears Trail
+
+
+
+
+:::
+::::
+
+
+
+
+The Geoid
+---------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+A simplified model of the Earth that ignores elevation differences due to **topography**.
+
+
+* Earths crust is not uniformly dense, causes gravity differentials to form.
++ Differences in density cause the surface to "sink" down or "float" up
++ Continental scale undulations, +85 m (Iceland) to −106 m (southern India)
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/geoid_ex.jpg)
+
+
+**Vertical scale exaggerated** to show gravity induced elevation differences.
+
+
+
+
+:::
+::::
+
+
+
+
+The Geoid
+---------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+A simplified model of the Earth that ignores elevation differences due to **topography**.
+
+
+* Gravity differences measured by satellites
+![](images/geoid_model.png)
+
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/geoid.jpg)
+
+
+The Geoid without vertical exaggeration.
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 1
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+The Geoid accounts for elevation differences in the Earth's crust due to
+
+
+* Topography
+* Centrifugal force
+* Density differences
+* All of the above
+
+
+
+
+:::
+::::
+
+
+
+
+The Oblate Spheroid
+-------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+A fairly close approximation of Earth's shape.
+
+
+* Due to **Centrifugal Force** the earth is ~ 26 km wider at the equator
+![](images/centrifuge.gif)
+
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/OblateSpheroid.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+Datums
+------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Measuring distance/height requires a reference point.
+
+
+* A **Datum** is the reference system we to do the fitting
++ Gives meaning to numbers/coordinates
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/02-Datum_height.PNG)
+
+
+
+
+:::
+::::
+
+
+
+
+Datums
+------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Fitting a spheroid to the geoid allows us to minimize elevation differences due to density differentials and account for effects of Centrifugal force, while ignoring topography.
+
+
+* A **Datum** is the reference system we to do the fitting
++ Can be **Global** or **Local**
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/datum.png)
+
+
+Datums give us a reference point to account for distortions
+
+
+
+
+:::
+::::
+
+
+
+
+Global Datums
+-------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+The **center of the earth** is used as the reference point.
+
+
+* Fits the geoid fairly well everywhere
+![](images/wgs_geoid.jpg)
+
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/global_datum.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Local Datums
+------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+**A point on the geoids surface** is used as the reference point.
+
+
+* Fits geoid very well in **one** region
+![](images/nad_geoid.png)
+
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/local_datum.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Does the Datum Matter?
+----------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Generally speaking:
+
+
+* For global maps, you **always** need a global datum
+* A local datum is better for small areas like a city
++ Global datums can be used, they just might shift things a bit
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/datum.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Does the Datum Matter?
+----------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Only minor differences between local and global datums in North America.
+
+
+* For most applications ...
++ The choice of global vs. local is not really that important
+
+* For others, its **very important**
++ Aviation
++ Self driving cars
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/nad_v_wgs.png)
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 2
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+A \_\_\_\_\_ datum is fixed to the center of the geoid while a \_\_\_\_\_ datum is fixed to a point on the geoid's surface.
+
+
+
+
+:::
+::::
+
+
+
+
+Geographic Coordinate System
+----------------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+**Latitude/Longitude** is the primary Geographic Coordinate System **(GSC)** that we use to describe locations on the "the earth's surface"
+
+
+* Location on a 3D object with just 2 numbers
++ Fixed to the surface of spheroid
++ *Not* the actual earth's surface
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/latitude-longitude-globe-ESRI.gif)
+
+
+
+
+:::
+::::
+
+
+
+
+Latitude
+--------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Distance in degrees form Equator:
+
+
+* Angular distance between center of the earth and the equator
+* -90°(South) to +90°(North)
+* Often called parallels
+![](images/grat.gif)
+
+
+
+
+
+:::
+::::
+
+
+
+
+Longitude
+---------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Distance in degrees form the Prime Meridian:
+
+
+* Angular distance between center of the earth and the prime meridian
+* -180° (West); to +180° (East)
+* Often called meridians
+![](images/grat.gif)
+
+
+
+
+
+:::
+::::
+
+
+
+
+Latitude & Longitude
+--------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Sometimes refereed to as a graticule.
+
+
+**Degrees Minutes Seconds**
+
+
+* Vancouver BC: 49°15′40″N 123°06′50″W
+* Sydney NSW: 33°51′54″S 151°12′34″E
+
+
+**Decimal Degrees**
+
+
+* Vancouver BC: 49.261111, -123.113889
+* Sydney NSW: -33.865, 151.209444
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/latitude-longitude-globe-ESRI.gif)
+
+
+
+
+:::
+::::
+
+
+
+
+An Important Caveat!
+--------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Meridians converge at the poles!
+
+
+* Distance between degrees of longitude decreases with increasing latitude
+* This is the central issue with projecting a map!
++ You **can't** accurately display a Geographic Coordinate System on a 2D surface (map/screen).
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/long_boi.gif)
+
+
+
+
+:::
+::::
+
+
+
+
+Making a Flat Map
+-----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Displaying Lat/Lon in 2D doesn't work well
+
+
+* Causes things to look "scrunched"
+
+
+![](images/no_project.png)
+
+
+
+:::
+:::{.column width="50%"}
+
+
+We have to **Project** our map.
+
+
+* Involves intentionally distorting the data to display it effectively in 2D
+
+
+![](images/proj_1.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 3
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Lines of latitude converge at the poles.
+
+
+* True
+* False
+
+
+
+
+:::
+::::
+
+
+
+
+Projected Coordinate Systems
+----------------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+A map projection is a mathematical transformation used to flatten a GCS.
+
+
+* Imagine sending rays of light through the ellipsoid onto a flat surface, the resulting image is a projection
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/proj_2.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Making a Flat Map
+-----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Applying a projection:
+
+
+* Converts to linear units
+* Allows distance/area calculations
+* Makes things look better
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/project.png)
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 4
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+A Geographic Coordinate System is a mathematical transformation we apply to project the earth on a 2D plane.
+
+
+* True
+* False
+
+
+
+
+:::
+::::
+
+
+
+
+Steps of Abstraction
+--------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+
+![](images/Steps of Abstraction.png)
+
+
+
+
+:::
+::::
+
+

@@ -1,0 +1,77 @@
+{
+  "Module1_HistoyGIS.md": {
+    "Module1_HistoyGIS.html": "3878b552"
+  },
+  "HistoyGIS.md": {
+    "HistoyGIS.html": "820d2c71"
+  },
+  "HistoyGIS.qmd": {
+    "HistoyGIS.html": "eb89bf88"
+  },
+  "Slides.qmd": {
+    "Slides.html": "999a808b"
+  },
+  "Abstraction.qmd": {
+    "Abstraction.html": "0e9773b3"
+  },
+  "index.qmd": {
+    "index.html": "82e576e7"
+  },
+  "RevealJS_Converter.ipynb": {
+    "RevealJS_Converter.html": "5921760d"
+  },
+  "Abstraction/Abstraction.qmd": {
+    "Abstraction.html": "0eec460c"
+  },
+  "Steps_of_Abstraction/Steps_of_Abstraction.qmd": {
+    "Steps_of_Abstraction.html": "1c70a2e3"
+  },
+  "Choice_of_Data_Model/Slides.qmd": {
+    "Slides.html": "36b8e5c1"
+  },
+  "Data_Classification/Slides.qmd": {
+    "Slides.html": "21164ade"
+  },
+  "Data_Visualization/Slides.qmd": {
+    "Slides.html": "96928090"
+  },
+  "Ethics_in_GIS/Slides.qmd": {
+    "Slides.html": "364a5558"
+  },
+  "History_of_GIS/Slides.qmd": {
+    "Slides.html": "4cf73e5a"
+  },
+  "Map_Projections/Slides.qmd": {
+    "Slides.html": "d1a2284a"
+  },
+  "Phenomena_and_Data_Types/Slides.qmd": {
+    "Slides.html": "91ec3fc7"
+  },
+  "Raster_Analysis_Methods/Slides.qmd": {
+    "Slides.html": "1d714422"
+  },
+  "Spatial_Data_Workflows/Slides.qmd": {
+    "Slides.html": "538c11b1"
+  },
+  "Spatial_is_Special/Slides.qmd": {
+    "Slides.html": "95993f17"
+  },
+  "Spatial_Sampling_Methods/Slides.qmd": {
+    "Slides.html": "804f8e04"
+  },
+  "Steps_of_Abstraction/Slides.qmd": {
+    "Slides.html": "310fbfa4"
+  },
+  "The_Raster_Data_Model/Slides.qmd": {
+    "Slides.html": "de78d2a3"
+  },
+  "The_Vector_Data_Model/Slides.qmd": {
+    "Slides.html": "68d7fd59"
+  },
+  "Uncertainty_in_GIS/Slides.qmd": {
+    "Slides.html": "bb1779ed"
+  },
+  "Vector_Analysis_Methods/Slides.qmd": {
+    "Slides.html": "e7f491f0"
+  }
+}

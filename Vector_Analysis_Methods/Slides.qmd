@@ -1,0 +1,861 @@
+---
+format:
+  revealjs:
+    theme: serif
+    code-fold: true
+    controls: true
+    navigation-mode: linear
+    controls-layout: bottom-right
+    controls-tutorial: true
+    slide-number: true
+    show-slide-number: all
+    pdfMaxPagesPerSlide: 1
+fig-dpi: 300
+
+---
+
+
+Vector Analysis Methods
+=======================
+
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+ Querying and overlaying vector layers, key operations and techniques.
+ 
+:::
+::::
+
+
+
+
+Vector Analysis Methods
+-----------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Many operations can be done with vector data.
+
+
+* Some methods are very similar.
++ Distinctions between methods can be subtle, but important.
++ Can complete the same tasks, but need slight changes to a workflow.
+
+* Typically in GIS there are multiple ways to get the same answers.
++ Some "routes" are just more direct.
+
+
+
+
+:::
+::::
+
+
+
+
+Querying Attributes
+-------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Finding features of interest based on attributes.
+
+
+* A good way to reduce data volumes, export queries to new layers
+* In ArcGIS Pro you can **Select by Attribute**
++ Uses SQL (Structured Query Language)
++ Check equality, relative magnitude, etc.
++ Combined with operators: **AND** / **OR**
+
+* If we're only interested in historic residential buildings:
++ Where "YEAR BUILT" ≤ 1950 **AND** "TYPE" = "Residential"
++ Save as a new layer, won't have to search through all the objects every time.
+
+
+
+
+:::
+::::
+
+
+
+
+Select by Attribute
+-------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Sample SQL queries
+
+
+* **Where "SPECIES" = "Pine"**
+* Where "SPECIES" ≠ "Pine"
+* Where "HEIGHT" ≤ 5
+* Where "SPECIES" = "Pine" AND "HEIGHT" ≤ 5
+* Where "SPECIES" = "Pine" fc0314OR "HEIGHT" ≤ 5
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+
+|  |  |  |
+| --- | --- | --- |
+| Species | Age | Height |
+| Pine | 10 | 5 |
+| Pine | 95 | 28 |
+| Oak | 200 | 25 |
+| Oak | 5 | 4 |
+
+
+
+
+:::
+::::
+
+
+
+
+Select by Attribute
+-------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Sample SQL queries
+
+
+* Where "SPECIES" = "Pine"
+* **Where "SPECIES" ≠ "Pine"**
+* Where "HEIGHT" ≤ 5
+* Where "SPECIES" = "Pine" AND "HEIGHT" ≤ 5
+* Where "SPECIES" = "Pine" OR "HEIGHT" ≤ 5
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+
+|  |  |  |
+| --- | --- | --- |
+| Species | Age | Height |
+| Pine | 10 | 5 |
+| Pine | 95 | 28 |
+| Oak | 200 | 25 |
+| Oak | 5 | 4 |
+
+
+
+
+:::
+::::
+
+
+
+
+Select by Attribute
+-------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Sample SQL queries
+
+
+* Where "SPECIES" = "Pine"
+* Where "SPECIES" ≠ "Pine"
+* **Where "HEIGHT" ≤ 5**
+* Where "SPECIES" = "Pine" AND "HEIGHT" ≤ 5
+* Where "SPECIES" = "Pine" OR "HEIGHT" ≤ 5
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+
+|  |  |  |
+| --- | --- | --- |
+| Species | Age | Height |
+| Pine | 10 | 5 |
+| Pine | 95 | 28 |
+| Oak | 200 | 25 |
+| Oak | 5 | 4 |
+
+
+
+
+:::
+::::
+
+
+
+
+Select by Attribute
+-------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Sample SQL queries
+
+
+* Where "SPECIES" = "Pine"
+* Where "SPECIES" ≠ "Pine"
+* Where "HEIGHT" ≤ 5
+* **Where "SPECIES" = "Pine" AND "HEIGHT" ≤ 5**
+* Where "SPECIES" = "Pine" OR "HEIGHT" ≤ 5
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+
+|  |  |  |
+| --- | --- | --- |
+| Species | Age | Height |
+| Pine | 10 | 5 |
+| Pine | 95 | 28 |
+| Oak | 200 | 25 |
+| Oak | 5 | 4 |
+
+
+
+
+:::
+::::
+
+
+
+
+Select by Attribute
+-------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Sample SQL queries
+
+
+* Where "SPECIES" = "Pine"
+* Where "SPECIES" ≠ "Pine"
+* Where "HEIGHT" ≤ 5
+* Where "SPECIES" = "Pine" AND "HEIGHT" ≤ 5
+* **Where "SPECIES" = "Pine" OR "HEIGHT" ≤ 5**
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+
+|  |  |  |
+| --- | --- | --- |
+| Species | Age | Height |
+| Pine | 10 | 5 |
+| Pine | 95 | 28 |
+| Oak | 200 | 25 |
+| Oak | 5 | 4 |
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 1
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+How many rows in this table would the following query return?   
+
+**Where "SPECIES" = "Pine" AND "SPECIES" = "Oak"**
+
+
+
+
+|  |  |  |
+| --- | --- | --- |
+| Species | Age | Height |
+| Pine | 10 | 5 |
+| Pine | 95 | 28 |
+| Oak | 200 | 25 |
+| Oak | 5 | 4 |
+| Birch | 5 | 4 |
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 2
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+How many rows in this table would the following query return?   
+
+**Where "SPECIES" = "Pine" OR "SPECIES" = "Oak"**
+
+
+
+
+|  |  |  |
+| --- | --- | --- |
+| Species | Age | Height |
+| Pine | 10 | 5 |
+| Pine | 95 | 28 |
+| Oak | 200 | 25 |
+| Oak | 5 | 4 |
+| Birch | 5 | 4 |
+
+
+
+
+:::
+::::
+
+
+
+
+Proximity Analysis
+------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Looking at spatial relationships within or between layers.
+
+
+* A good way to reduce data volumes, export queries to new layers.
+* Multiple options, depending on our needs.
+* If we're only interested in buildings within 1 km of streams:
++ Identify by proximity
++ Save as a new layer, won't have to search through all the objects every time.
+
+
+
+:::
+::::
+
+
+
+
+Select by Location
+------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+Use [Select by Location](https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/using-select-by-location.htm) when you want to check for spatial relationships. There are many relationships we can check for:
+
+
+* Containment
+* Intersection
+* Distance
+
+
+
+
+![](images/by_location.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Geometric Manipulations
+-----------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+These methods create new layers with altered "geometries". Geometry is a term we use to refer to points, lines, and/or polygons in a vector layer.
+
+
+
+
+:::
+::::
+
+
+
+
+Buffering
+---------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Use the [Buffer](https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/buffer.htm) tool to create a new Polygon layer based on distance.
+
+
+* Buffer points, lines, or polygons using a buffer distance or set a field to specify varriable distance.
+* Use the [Multiple Ring Buffer](https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/multiple-ring-buffer.htm) tool for multi-criteria buffers.
+
+
+
+
+Example From ESRI Docs
+
+
+![](images/buffer_docs.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Buffering
+---------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Use the [Buffer](https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/buffer.htm) tool to create a new Polygon layer based on distance.
+
+
+* Buffer points, lines, or polygons using a buffer distance or set a field to specify varriable distance.
+* Use the [Multiple Ring Buffer](https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/multiple-ring-buffer.htm) tool for multi-criteria buffers.
+
+
+
+
+Buffering Tsunami Shelters
+
+
+![](images/buffer.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Dissolve
+--------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+[Dissolve](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/dissolve.htm) aggregates features.
+
+
+* Merges objects completely or by attribute(s).
+* Can calculate statistics for aggregated regions.
+* Useful if our data is more "complex" than we need it to be.
+
+
+
+
+Example From ESRI Docs
+
+
+![](images/dissolve_docs.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Dissolve
+--------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+[Dissolve](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/dissolve.htm) aggregates features.
+
+
+* Merges objects completely or by attribute(s).
+* Can calculate statistics for aggregated regions.
+* Useful if our data is more "complex" than we need it to be.
+
+
+
+
+Dissolve Tsunami Shelter Buffers
+
+
+![](images/dissolve.png)
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 3
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+This tool allows us to aggregate vector objects in a layer, either completely or by specific attribute values.
+
+
+* Buffer
+* Dissolve
+* Select by Attribute
+* Merge
+
+
+
+
+:::
+::::
+
+
+
+
+Feature Overlay
+---------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+When we have multiple data layers and we want to combine them to form a new output.
+
+
+
+
+:::
+::::
+
+
+
+
+Clip
+----
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Use the [Clip](https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/clip.htm) tool to cut one layer down to the boundaries of another.
+
+
+* Works like a cookie cutter
+* Useful when we want to focus on a study area
+* Does not alter attributes
++ Input layer: our data layer
++ Clip layer: the study area
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+Example From ESRI Docs
+
+
+![](images/clip_docs.png)
+
+
+
+
+Input
+
+
+![](images/clip_inpt.png)
+
+
+
+
+Output
+
+
+![](images/clip_output.png)
+
+
+
+
+
+:::
+::::
+
+
+
+
+Erase
+-----
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Use the [erase](https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/erase.htm) tool to remove the area of one layer from another.
+
+
+* Opposite of the clip tool
+* Does not alter attributes
+* Useful when we want to discard/exclude an area
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+Example From ESRI Docs
+
+
+![](images/erase_docs.png)
+
+
+
+
+Input
+
+
+![](images/clip_inpt.png)
+
+
+
+
+Output
+
+
+![](images/erase.png)
+
+
+
+
+
+:::
+::::
+
+
+
+
+Intersect
+---------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+[Intersect](https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/intersect.htm) lets us see **only** where layers overlap and combine overlapping attributes.
+
+
+* Can handle more than two layers at once
+* Splits features by overlaps and merges attribute tables
+* Useful when we want to merge and parse data at the same time
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+Example From ESRI Docs
+
+
+![](images/intersect_docs.png)
+
+
+
+
+Input
+
+
+![](images/clip_inpt.png)
+
+
+
+
+Output
+
+
+![](images/intersect.png)
+
+
+
+
+
+:::
+::::
+
+
+
+
+Union
+-----
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Use the [Union](https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/union.htm) tool to combine multiple layers, split features where they overlap and combine attributes.
+
+
+* Similar to intersect, but keeps overlapping areas
+* Adds attributes from all overlaps.
+* Can handle more than two layers at once.
++ Null values where for new attributes where no overlaps are present.
+
+* Useful when we want to merge layers.
+
+
+
+
+:::
+::::
+
+
+
+
+Union
+-----
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Use the [Union](https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/union.htm) tool to combine multiple layers, split features where they overlap and combine attributes.
+
+
+* Similar to intersect, but keeps overlapping areas
+![](images/union_docs.gif)
+
+
+
+
+
+:::
+::::
+
+
+
+
+Many More
+---------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+There are many more vector overlay tools! I have presented some of the the most frequently used tools, but if you have specific use cases you may need others. I can't cover them all, and I don't want to overwhelm folks.
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 4
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Clip and erase remove portions of layer based on location relative to another layer but they do not alter the attribute table.
+
+
+* True
+* False
+
+
+
+
+:::
+::::
+
+

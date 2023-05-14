@@ -1,0 +1,2627 @@
+[
+  {
+    "objectID": "Choice_of_Data_Model/Slides.html#comparing-data-models",
+    "href": "Choice_of_Data_Model/Slides.html#comparing-data-models",
+    "title": "Lecture Slides",
+    "section": "Comparing Data Models",
+    "text": "Comparing Data Models\n\n\nRaster\nUsually continuous fields\n\nFull coverage over domain\nGrid of equally sized cells\nData “gaps” must be given a value\n(i.e., NODATA)\nSeparate bands for each attribute\nEach cell has one value per band\nOne raster can have many bands\n\n\nVector\nUsually discrete objects\n\nOnly represents features of interest\nPoints, Lines, and/or Polygons\nCan overlap, have gaps, or be continuous\nEach object can have many attributes\nAttribute table links spatial and non-spatial data\nTopology rules\nConnectivity and relationships between features"
+  },
+  {
+    "objectID": "Choice_of_Data_Model/Slides.html#advantages",
+    "href": "Choice_of_Data_Model/Slides.html#advantages",
+    "title": "Lecture Slides",
+    "section": "Advantages",
+    "text": "Advantages\n\n\nRaster\n\nGood for continuous variables\nFeatures that do not have distinct boundaries\nSimple data structure\nOverlay is easy and efficient\n\n\nVector\n\nGood for discrete objects\nFeatures that are have distinct, fixed in boundaries\nCompact data structure\nMore efficient storage\nEasy to query and select by attributes"
+  },
+  {
+    "objectID": "Choice_of_Data_Model/Slides.html#disadvantages",
+    "href": "Choice_of_Data_Model/Slides.html#disadvantages",
+    "title": "Lecture Slides",
+    "section": "Disadvantages",
+    "text": "Disadvantages\n\n\nRaster\n\nMixed pixel problem\nOne attribute per cell\nLarge data volumes\n\n\nVector\n\nNo variability within polygons\nComplex data structure\nOverlay can be computationally expensive"
+  },
+  {
+    "objectID": "Choice_of_Data_Model/Slides.html#resolution-.-scale",
+    "href": "Choice_of_Data_Model/Slides.html#resolution-.-scale",
+    "title": "Lecture Slides",
+    "section": "Resolution &. Scale",
+    "text": "Resolution &. Scale\n\n\nThese properties can influence our choice of model.\n\nHow does the scale of our analysis dictate our desired resolution?\nHow can resolution of the data limit the scale of our analysis?"
+  },
+  {
+    "objectID": "Choice_of_Data_Model/Slides.html#resolution-.-scale-1",
+    "href": "Choice_of_Data_Model/Slides.html#resolution-.-scale-1",
+    "title": "Lecture Slides",
+    "section": "Resolution &. Scale",
+    "text": "Resolution &. Scale\n\n\nWe want to work with high resolution data because:\n↑ resolution = ↓ generalization = ↓ uncertainty\n\nBut in reality, this isn’t always practical or possible. High resolution data may\nBe too expensive $$$\nTake too long to collect or process\nInfringe on individuals privacy or endanger marginalized people\nWe must try to strike a balance\nFind what suits our needs without hindering adding unnecessary risk, expense, or complexity"
+  },
+  {
+    "objectID": "Choice_of_Data_Model/Slides.html#things-to-consider",
+    "href": "Choice_of_Data_Model/Slides.html#things-to-consider",
+    "title": "Lecture Slides",
+    "section": "Things to consider",
+    "text": "Things to consider\n\n\nWhat is the “lowest” acceptable resolution?\n\nSmaller scale analysis won’t need the same level of detail.\nLooking at national immigration patterns, maybe you only need provincial level data?"
+  },
+  {
+    "objectID": "Choice_of_Data_Model/Slides.html#things-to-consider-1",
+    "href": "Choice_of_Data_Model/Slides.html#things-to-consider-1",
+    "title": "Lecture Slides",
+    "section": "Things to consider",
+    "text": "Things to consider\n\n\nChange the scope of our analysis?\n\nIf you need a high resolution analysis, work at a larger scale and focus on a small area.\nIf you need to analyze a large area, work at small scales and accept the uncertainty that comes with coarser resolution."
+  },
+  {
+    "objectID": "Choice_of_Data_Model/Slides.html#working-together",
+    "href": "Choice_of_Data_Model/Slides.html#working-together",
+    "title": "Lecture Slides",
+    "section": "Working Together",
+    "text": "Working Together\n\n\nFrequently we’ll end up working with both raster and vector data in the same analysis.\n\nIn Module 1, you worked with:\nCholera deaths (points)\nVector Data Model\nKernel density (probability of deaths)\nRaster Data Model"
+  },
+  {
+    "objectID": "Choice_of_Data_Model/Slides.html#working-together-1",
+    "href": "Choice_of_Data_Model/Slides.html#working-together-1",
+    "title": "Lecture Slides",
+    "section": "Working Together",
+    "text": "Working Together\n\n\n\nIn the Module 4 Lab you are converting between data types\nNDVI (Raster Data Model)\nCensus units (Vector Data Model)\nExploring two approaches\nZonal Statistics:\nFaster, but in a more limited applicability.\nRaster to Polygon Conversion: Converting between data types requires more, but it is more flexible."
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#descriptive-statistics",
+    "href": "Data_Classification/Slides.html#descriptive-statistics",
+    "title": "Lecture Slides",
+    "section": "Descriptive Statistics",
+    "text": "Descriptive Statistics\n\n\nDescriptors by data type| Statistic | Nominal | Ordinal | Interval | Ratio | | Equality | x | x | x | x | | Counts/Mode | x | x | x | x | | Rank/Order | | x | x | x | | Median | | ~ | x | x | | Add/Subtract | | | x | x | | Mean | | | x | x | | Multiply/Divide | | | | x |"
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#measures-of-central-tendency",
+    "href": "Data_Classification/Slides.html#measures-of-central-tendency",
+    "title": "Lecture Slides",
+    "section": "Measures of Central Tendency",
+    "text": "Measures of Central Tendency\n\n\nHighlight the “central” feature in a dataset.\n\nMode: The most frequent value in a set\nMedian: The middle value in a set\n\nData is ranked to find the center point\n\n50% above, 50% below+ Not impacted by outliers\n\n\nMean: The sum of all values divided by the number of values\n\nImpacted by outliers"
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#measures-of-dispersion",
+    "href": "Data_Classification/Slides.html#measures-of-dispersion",
+    "title": "Lecture Slides",
+    "section": "Measures of Dispersion",
+    "text": "Measures of Dispersion\n\n\nThese statistics give context a measure of central tendency.\n\nRange: The difference between the maximum and minimum values\nInter-quartile Range: Difference between 75th and 25th percentile value\nSpread around the median (50th percentile), not influenced by outliers\nStandard Deviation: \\(\\sigma = \\sqrt{\\frac{1}{N}\\sum\\_{i=1}^n (x\\_i - U)^2}\\)\nSpread of data values (x) around the mean(U), influenced by outliers"
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#frequency-distribution",
+    "href": "Data_Classification/Slides.html#frequency-distribution",
+    "title": "Lecture Slides",
+    "section": "Frequency Distribution",
+    "text": "Frequency Distribution\n\n\nFrequency of occurrence in a qualitative data.\n\nCounts per category\nBar charts are a useful tool for visualizing frequency distributions"
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#probability-distribution",
+    "href": "Data_Classification/Slides.html#probability-distribution",
+    "title": "Lecture Slides",
+    "section": "Probability Distribution",
+    "text": "Probability Distribution\n\n\nProbability of occurrence in a quantitative dataset.\n\nNormal Distribution: idealized, based on distance from the mean in standard deviations.\nAssumed distribution in many statistical tests.\n\n\n\n\n\n\n±1 \\(\\sigma\\)\n68% of observations\n\n\n±2 \\(\\sigma\\)\n95% of observations\n\n\n±3 \\(\\sigma\\)\n99.7% of observations"
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#histograms",
+    "href": "Data_Classification/Slides.html#histograms",
+    "title": "Lecture Slides",
+    "section": "Histograms",
+    "text": "Histograms\n\n\nUseful for quantitative data.\n\nOrders data and groups data into bins of consistent width\nHelpful for:\nApproximating probability distribution\nGrouping data into classes\nOutlier detection\nSimilar to bar charts, but not the same thing!"
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#deviating-from-the-norm",
+    "href": "Data_Classification/Slides.html#deviating-from-the-norm",
+    "title": "Lecture Slides",
+    "section": "Deviating from the Norm",
+    "text": "Deviating from the Norm\n\n\nData rarely fits a normal distribution perfectly:\n\nSkew: deviates from a normal distribution\nTails with outliers\nKurtosis: deviates from a normal distribution\nDispersed or clustered\n\n\nNear Normal\n\nSkewed Normal\n\nHighly Skewed"
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#normalizing-data",
+    "href": "Data_Classification/Slides.html#normalizing-data",
+    "title": "Lecture Slides",
+    "section": "Normalizing Data",
+    "text": "Normalizing Data\n\n\nAllows us to account for confounding variables that mask or hide patterns in our data.\n\nHelpful to scale or normalize a value by a another value - time, area, population etc.\nExamples:\nIncome vs. money spent on food\nPopulation vs. shape area\n\n\nHighly Correlated\n\nNo Correlation"
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#multiple-confounders",
+    "href": "Data_Classification/Slides.html#multiple-confounders",
+    "title": "Lecture Slides",
+    "section": "Multiple Confounders",
+    "text": "Multiple Confounders\n\n\nIt isn’t always straightforward to account for multiple variables.\n\nex: COVID rates by age groups \n\n\n\n\nPopulation by age group\nWorkforce participation\nOccupational exposure"
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#standardizing",
+    "href": "Data_Classification/Slides.html#standardizing",
+    "title": "Lecture Slides",
+    "section": "Standardizing",
+    "text": "Standardizing\n\n\nAlso allow us to compare between two or more variables in different units / scales.\n\n\\(z = \\frac{x-\\overline{U}}{\\sigma}\\)\nSimilar idea to normalizing, but:\nRemoving the mean and standard deviation from multiple variables"
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#classification-methods",
+    "href": "Data_Classification/Slides.html#classification-methods",
+    "title": "Lecture Slides",
+    "section": "Classification Methods",
+    "text": "Classification Methods\n\n\nUnsupervised:\n\nData defined classes - the user decides on the number of classes\nThe rest is left of up to an algorithm\n\n\nSupervised:\n\nUser defined - the user explicitly defines classes\nOr provides set of classes as training data\nDegree of user input is variable, more than unsupervised"
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#common-examples-in-arc-pro",
+    "href": "Data_Classification/Slides.html#common-examples-in-arc-pro",
+    "title": "Lecture Slides",
+    "section": "Common Examples in Arc Pro",
+    "text": "Common Examples in Arc Pro\n\n\nVancouver dissemination area populations\n\nNot classified\nColor scheme is stretched between min/max\nDifficult to see patterns"
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#equal-interval",
+    "href": "Data_Classification/Slides.html#equal-interval",
+    "title": "Lecture Slides",
+    "section": "Equal Interval",
+    "text": "Equal Interval\n\n\nOne of the simplest classification schemes.\n\nData is split to classes of equal width based on the range.\nUnsupervised: user defines number of bins."
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#defined-interval",
+    "href": "Data_Classification/Slides.html#defined-interval",
+    "title": "Lecture Slides",
+    "section": "Defined Interval",
+    "text": "Defined Interval\n\n\nAnother of the simplest classification schemes.\n\nData is split to classes of equal width based on the range.\nUnsupervised: user defines bin width."
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#quantiles",
+    "href": "Data_Classification/Slides.html#quantiles",
+    "title": "Lecture Slides",
+    "section": "Quantiles",
+    "text": "Quantiles\n\n\nSlightly more complex classification scheme.\n\nData is split into classes by percentiles.\ne.g. 0-20%, 20-40%, … 80-100%.\nUnsupervised: user defines number of bins."
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#natural-breaks",
+    "href": "Data_Classification/Slides.html#natural-breaks",
+    "title": "Lecture Slides",
+    "section": "Natural Breaks",
+    "text": "Natural Breaks\n\n\nMore complex, data is split using the Jenks algorithm.\n\nOptimizes splits, by maximizing within group similarity and between group dissimilarity.\n“Natural” classes.\nUnsupervised: user defines number of bins."
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#standard-deviation",
+    "href": "Data_Classification/Slides.html#standard-deviation",
+    "title": "Lecture Slides",
+    "section": "Standard Deviation",
+    "text": "Standard Deviation\n\n\nInformative to “experts”, but not accessible for all.\n\nClasses based on “distance” from the mean in standard deviations.\nUnit-less, converts to interval data.\nDiverging color maps.\nUnsupervised: user defines number of bins."
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#manual-breaks",
+    "href": "Data_Classification/Slides.html#manual-breaks",
+    "title": "Lecture Slides",
+    "section": "Manual Breaks",
+    "text": "Manual Breaks\n\n\nSupervised: User defines break values.\n\nAllows us to choose more meaningful break values if necessary.\nIncorporate multiple factors\nInfluence the way the data is perceived."
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#more-complex-methods",
+    "href": "Data_Classification/Slides.html#more-complex-methods",
+    "title": "Lecture Slides",
+    "section": "More Complex Methods",
+    "text": "More Complex Methods\n\n\nThere are many classification methods that are a bit too complex to actually perform in this course.\n\nI’m introducing some because important to be aware of them.\nYou’ll encounter them if you continue with GIS."
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#k-means",
+    "href": "Data_Classification/Slides.html#k-means",
+    "title": "Lecture Slides",
+    "section": "K-means",
+    "text": "K-means\n\n\nAlgorithm uses random steps to group data into clusters.\n\nUnsupervised: user defines number of bins & iterations."
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#median-absolute-deviation",
+    "href": "Data_Classification/Slides.html#median-absolute-deviation",
+    "title": "Lecture Slides",
+    "section": "Median Absolute Deviation",
+    "text": "Median Absolute Deviation\n\n\nUsed for automated detection of outliers.\n\nUnsupervised: user defines error threshold."
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#decision-trees",
+    "href": "Data_Classification/Slides.html#decision-trees",
+    "title": "Lecture Slides",
+    "section": "Decision Trees",
+    "text": "Decision Trees\n\n\nFit training data to user defined categories.\n\nSupervised: user provides training classes.\nAutomated: algorithm determines break values.\nRisk of over-fitting"
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#random-forests",
+    "href": "Data_Classification/Slides.html#random-forests",
+    "title": "Lecture Slides",
+    "section": "Random Forests",
+    "text": "Random Forests\n\n\nMultiple trees (>100) can be averaged to increase performance and generalization.\n\nSupervised: user provides training classes and “hyperparameters”.\nAutomated: algorithm determines break values.\nLow risk of over-fitting"
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#landscape-classification",
+    "href": "Data_Classification/Slides.html#landscape-classification",
+    "title": "Lecture Slides",
+    "section": "Landscape Classification",
+    "text": "Landscape Classification\n\n\nMultiple trees (>100) can be averaged to increase performance and generalization.\n\nSupervised: user provides training classes and “hyperparameters”.\nAutomated: algorithm determines break values.\nLow risk of over-fitting"
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#neural-networks",
+    "href": "Data_Classification/Slides.html#neural-networks",
+    "title": "Lecture Slides",
+    "section": "Neural Networks",
+    "text": "Neural Networks\n\n\nOne of the most complex methods.\n\nSupervised: user provides training classes and “hyperparameters”.\nAutomated: algorithm maps relationships in dataset.\nRisk of over-fitting\nRequires careful inspection"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#cartography",
+    "href": "Data_Visualization/Slides.html#cartography",
+    "title": "Lecture Slides",
+    "section": "Cartography",
+    "text": "Cartography\n\n\nThe art and science of making maps.\n\nWhy do we make maps?\nTo transmit spatial information to a map reader\nData and analyses are meaningless, unless conveyed effectively\nDecide what you want to communicate and to whom"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#cartography-1",
+    "href": "Data_Visualization/Slides.html#cartography-1",
+    "title": "Lecture Slides",
+    "section": "Cartography",
+    "text": "Cartography\n\n\nGood Maps\n\nConcise\nAccessible\nAesthetically pleasing\n\n\nBad Maps\n\nCluttered, ineffective, misleading\nInaccessible to target audience\nUgly"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#a-bad-map",
+    "href": "Data_Visualization/Slides.html#a-bad-map",
+    "title": "Lecture Slides",
+    "section": "A Bad Map",
+    "text": "A Bad Map\n\n\nExcellent example of a bad map showing really interesting information.\n\nToo much information\nToo many colors\nText is way too small"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#a-better-map",
+    "href": "Data_Visualization/Slides.html#a-better-map",
+    "title": "Lecture Slides",
+    "section": "A Better Map",
+    "text": "A Better Map\n\n\nCleaner, less complex presentation.\n\nToo much information\nToo many colors\nText is way too small"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#design-principals",
+    "href": "Data_Visualization/Slides.html#design-principals",
+    "title": "Lecture Slides",
+    "section": "Design Principals",
+    "text": "Design Principals\n\n\nGive the viewer the most information in the shortest time with the least ink in the smallest space.\n\nComplex ideas communicated with clarity, precision, and efficiency.\nMaximize data-to-ink ratio (i.e. more data, less other stuff).\nErase non-data ink, within reason."
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#design-principals-1",
+    "href": "Data_Visualization/Slides.html#design-principals-1",
+    "title": "Lecture Slides",
+    "section": "Design Principals",
+    "text": "Design Principals\n\n\nThe best maps can be interpreted quickly and easily.\n\nTitle: Clear and to the point\nContent: Patterns are obvious, no “extra” information"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#design-principals-2",
+    "href": "Data_Visualization/Slides.html#design-principals-2",
+    "title": "Lecture Slides",
+    "section": "Design Principals",
+    "text": "Design Principals\n\n\nThe best maps can be interpreted quickly and easily.\n\nContent: Takes longer to read, but subject matter is more complex\nMinimizes “extra” information\nSimplifies geometry"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#data-symbolization",
+    "href": "Data_Visualization/Slides.html#data-symbolization",
+    "title": "Lecture Slides",
+    "section": "Data Symbolization",
+    "text": "Data Symbolization\n\n\nThe techniques we use to represent information on a map.\n\nThe choices we make will convey aspects of the data\nColor & brightness\nShapes & lines\nCharacters & fonts\nPosition & size\nSome choices may lead to assumptions being made about the data\nIntentionally or otherwise"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#color",
+    "href": "Data_Visualization/Slides.html#color",
+    "title": "Lecture Slides",
+    "section": "Color",
+    "text": "Color\n\n\nThe HSV scale describes three components.\n\nHue: the dominant wavelength\nTypical association with the term “color”\nSaturation: the intensity of one color\nAll red or only a little red?\nValue: the brightness of one color\nLightness or darkness, how much light is reflected?"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#color-choice",
+    "href": "Data_Visualization/Slides.html#color-choice",
+    "title": "Lecture Slides",
+    "section": "Color Choice",
+    "text": "Color Choice\n\n\nIt is important to choose the right kind of color map.\n\nQualitative: Different hues\nSame value and saturation\nSequential: Single hue\nIncreasing saturation or value\nDiverging: Opposing hues\nDecreasing saturation toward center\n\n\nQualitative: Nominal\n\nSequential: Ordinal & Ratio\n\nDiverging: Interval"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#color-choice-1",
+    "href": "Data_Visualization/Slides.html#color-choice-1",
+    "title": "Lecture Slides",
+    "section": "Color Choice",
+    "text": "Color Choice\n\n\nSome colors have implicit assumptions depending on the context."
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#color-accessibility",
+    "href": "Data_Visualization/Slides.html#color-accessibility",
+    "title": "Lecture Slides",
+    "section": "Color Accessibility",
+    "text": "Color Accessibility\n\n\nAbout 4.25% of people are colorblind, red-green is the most common. Color Brewer is a great resource."
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#what-type-of-are-we-data-representing",
+    "href": "Data_Visualization/Slides.html#what-type-of-are-we-data-representing",
+    "title": "Lecture Slides",
+    "section": "What Type of Are We Data Representing?",
+    "text": "What Type of Are We Data Representing?\n\n\nDiscrete:\n\nPoints/lines/shapes\nHues \n\n\nContinuous:\n\nSurfaces, contour lines\nSaturation and value"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#what-is-the-measurement-scale",
+    "href": "Data_Visualization/Slides.html#what-is-the-measurement-scale",
+    "title": "Lecture Slides",
+    "section": "What is the Measurement Scale?",
+    "text": "What is the Measurement Scale?\n\n\nNominal:\n\nDashes, shapes\nDifferent Hues (colors)\nDo Not choose colors or sizes that imply a difference in magnitude"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#what-is-the-measurement-scale-1",
+    "href": "Data_Visualization/Slides.html#what-is-the-measurement-scale-1",
+    "title": "Lecture Slides",
+    "section": "What is the Measurement Scale?",
+    "text": "What is the Measurement Scale?\n\n\nOrdinal, Interval, or Ratio:\n\nGraduated symbols, line weights\nDifferent shades/intensities\nDo Not choose colors or shapes that imply a difference in category"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#visual-hierarchy",
+    "href": "Data_Visualization/Slides.html#visual-hierarchy",
+    "title": "Lecture Slides",
+    "section": "Visual Hierarchy",
+    "text": "Visual Hierarchy\n\n\nThe relative importance of features is implied by a maps layout. Our perception is influenced by the order in which we see things and how big / bold they are.\nPlacement * Center first * Top to bottom * Left to right\nFont size * Large * Medium * Small\nIntensity (value) * Light * Medium * Dark"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#stylistic-guidelines",
+    "href": "Data_Visualization/Slides.html#stylistic-guidelines",
+    "title": "Lecture Slides",
+    "section": "Stylistic Guidelines",
+    "text": "Stylistic Guidelines\n\n\n\nClear labeling to prevent ambiguity and confusion.\n\nMinimize assumptions about your audience\nProof your map text\n\nConsider if all map elements are necessary.\n\nScale bars, North arrows, etc.\nMinimize “chart junk”\n\nUse appropriate color schemes.\n\nColorblind friendly\nHigh contrast\nSuited for data type"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#stylistic-guidelines-1",
+    "href": "Data_Visualization/Slides.html#stylistic-guidelines-1",
+    "title": "Lecture Slides",
+    "section": "Stylistic Guidelines",
+    "text": "Stylistic Guidelines\n\n\nNorth arrows scale bars\n\nNorth arrow\nDoesn’t work in circumpolar area\nNot needed for large/familiar regions\nScale bar\nNot always needed if its a large/familiar region\nScale text can often suffice\nDepending on projection (i.e. Mercator), scale will vary drastically across the map"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#stylistic-guidelines-2",
+    "href": "Data_Visualization/Slides.html#stylistic-guidelines-2",
+    "title": "Lecture Slides",
+    "section": "Stylistic Guidelines",
+    "text": "Stylistic Guidelines\n\n\nNorth arrows scale bars * North arrow + Needed if it’s not a familiar region or if north is not up\n\nScale\nNeeded if it’s a small/unfamiliar region\nFor multiple maps are at different scales\nNeeded if navigation is important\ni.e., a hiking map"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#so-many-mistakes",
+    "href": "Data_Visualization/Slides.html#so-many-mistakes",
+    "title": "Lecture Slides",
+    "section": "So Many Mistakes!!",
+    "text": "So Many Mistakes!!\n\n\n\nPoor use of map space\nWasted white space\nNot centered\nPoor color choice\nNot colorblind friendly\nNot all map elements are visible\nText/font issues\nNorth arrow\nPlacement\nSize & style\nScale bar\nWrong units!"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#so-many-mistakes-1",
+    "href": "Data_Visualization/Slides.html#so-many-mistakes-1",
+    "title": "Lecture Slides",
+    "section": "So Many Mistakes!!",
+    "text": "So Many Mistakes!!\n\n\n\nLegend issues\nAvoid unnecessary text\nDon’t title it Legend\nMake sure entries are meaningful\nGet rid of underscores\nNo name / affiliation, date, or data source\nBe transparent, readers deserve to know:\nWho made the map (individual / organization)?\nWhen was the map made?\nWhere did relevant data come from?"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#cleaner-presentation",
+    "href": "Data_Visualization/Slides.html#cleaner-presentation",
+    "title": "Lecture Slides",
+    "section": "Cleaner Presentation",
+    "text": "Cleaner Presentation\n\n\n\nArea of interest takes up most of the map space.\nName, affiliation, source.\nMore meaningful legend entries.\nProper sizing/placement of map elements.\nMore pleasing color choice, easier for colorblind people to read."
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#cartographic-principals",
+    "href": "Data_Visualization/Slides.html#cartographic-principals",
+    "title": "Lecture Slides",
+    "section": "Cartographic Principals",
+    "text": "Cartographic Principals\n\n\nThese are just stylistic guidelines!\n\nCartography is an art, there are no steadfast rules\nJust best practices\nFeel free to play around with styling\nJust be able to justify your choices\nNot all spaces “want” to be mapped\nSometimes you need to make aesthetic compromises to make an effective map"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#what-is-ethics",
+    "href": "Ethics_in_GIS/Slides.html#what-is-ethics",
+    "title": "Lecture Slides",
+    "section": "What is Ethics",
+    "text": "What is Ethics\n\n\nEthics is a branch of philosophy that deals with the nature of right and wrong. It is a theory or set of standards that inform moral practice.\n\nEthics and legality are not synonymous\nThough the laws we have constructed as a society may be informed by morality"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#ethics-vs.-legality",
+    "href": "Ethics_in_GIS/Slides.html#ethics-vs.-legality",
+    "title": "Lecture Slides",
+    "section": "Ethics vs. Legality",
+    "text": "Ethics vs. Legality\n\n\n\nLegal but Unethical\n\n\nEthical but Illegal"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#ethics-in-science",
+    "href": "Ethics_in_GIS/Slides.html#ethics-in-science",
+    "title": "Lecture Slides",
+    "section": "Ethics in Science",
+    "text": "Ethics in Science\n\n\nResearch often involves handling the private, personal information about individuals and minority groups:\n\nPotential participants must be able to trust that their information will be used in a safe and respected manner.\nIn some fields, ethics boards often review research proposals to ensure best practices are used.\nHow will the data be used?\nWho will have access to data/results?\nWhat identifying information will be used/released?"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#ethics-in-gis-1",
+    "href": "Ethics_in_GIS/Slides.html#ethics-in-gis-1",
+    "title": "Lecture Slides",
+    "section": "Ethics in GIS",
+    "text": "Ethics in GIS\n\n\nGIS has the potential to be more intrusive in to people’s every day lives other sciences:\n\nWe can know where people are at any given time\nWe can guess at what they are doing reasonably well\nWe can know where people shop, approximately how much money they make, who they know, and to which organizations they belong\nWe can know if they belong to minority groups:\nE.g., racial minorities, religious minorities, political groups, LGBT+"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#data-privacy-and-security",
+    "href": "Ethics_in_GIS/Slides.html#data-privacy-and-security",
+    "title": "Lecture Slides",
+    "section": "Data Privacy and Security",
+    "text": "Data Privacy and Security\n\n\nMore detail gives = more accurate; allows for better decision making but infringes on privacy.\n\nHow specific is too specific?\nPoint locations risk exposing personal information\nGuidelines surrounding exposure of information\nPublic health agencies don’t release information about individuals\nStats Canada masks census data when they don’t get enough respondents"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#the-power-of-a-line",
+    "href": "Ethics_in_GIS/Slides.html#the-power-of-a-line",
+    "title": "Lecture Slides",
+    "section": "The Power of a Line",
+    "text": "The Power of a Line\n\n\nWhat side of a border you live up on can have drastic impacts on outcomes. Where you live determines:\n\nWhat rights you have\nWhat schools you attend\nHow much your vote matters (if you even get to vote)\nHow much you pay in taxes\nWhat services you have access too\nWhere you can travel"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#the-power-of-a-line-1",
+    "href": "Ethics_in_GIS/Slides.html#the-power-of-a-line-1",
+    "title": "Lecture Slides",
+    "section": "The Power of a Line",
+    "text": "The Power of a Line\n\n\nBorders are often arbitrary and modifiable.\n\nThink back to the modifiable areal unit problem\nThe decisions of a few can impact many"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#redlining",
+    "href": "Ethics_in_GIS/Slides.html#redlining",
+    "title": "Lecture Slides",
+    "section": "Redlining",
+    "text": "Redlining\n\n\nThe systematic denial of services to racially marginalized groups by government and lending institutions in order to forcibly segregated communities.\n\nFor much of the 20th century, redlining was legal and wide spread across North American cities. The practice has been more thoroughly documented and researched in the US.\nIt is very important to note that redlining occurred in Canada as well (source)"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#data-representation",
+    "href": "Ethics_in_GIS/Slides.html#data-representation",
+    "title": "Lecture Slides",
+    "section": "Data Representation",
+    "text": "Data Representation\n\n\nEvery cartographic choice you make can have ramifications.\n\nHow we choose to display our data can have a big impact on how it is perceived\nMaps influence the way people think\nThey can reinforce (or counter) biases individuals may hold\nAll maps lie, but some lie more than others.\nAbstraction is a necessary part of map making\nBut it needs to be done carefully"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#all-maps-lie",
+    "href": "Ethics_in_GIS/Slides.html#all-maps-lie",
+    "title": "Lecture Slides",
+    "section": "All Maps Lie",
+    "text": "All Maps Lie\n\n\nSometimes the lies are intentional.\n\nMaps can be crafted to sway public opinion and influence political outcomes\nThis is a serious ethical issue"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#all-maps-lie-1",
+    "href": "Ethics_in_GIS/Slides.html#all-maps-lie-1",
+    "title": "Lecture Slides",
+    "section": "All Maps Lie",
+    "text": "All Maps Lie\n\n\nSometimes the lies are careless oversights.\n\nDifferent map projections cause areas to be different sizes\nIt may not be an intentional choice by the map maker\nNonetheless it will influence the way people think"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#all-maps-lie-2",
+    "href": "Ethics_in_GIS/Slides.html#all-maps-lie-2",
+    "title": "Lecture Slides",
+    "section": "All Maps Lie",
+    "text": "All Maps Lie\n\n\nSometimes the lack of context is the issue.\n\nDifferent unit sizes mean this map over-represents republicans\nIt may not be an intentional choice by the map maker\nNonetheless it will influence the way people think\nThere are strategies to correct these issues\nMore context\nAdjust the map\n\n\n\nUS House of Representatives 2022 Election"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#all-maps-lie-3",
+    "href": "Ethics_in_GIS/Slides.html#all-maps-lie-3",
+    "title": "Lecture Slides",
+    "section": "All Maps Lie",
+    "text": "All Maps Lie\n\n\nSometimes the lack of context is the issue.\n\nDifferent unit sizes mean this map over-represents republicans\nIt may not be an intentional choice by the map maker\nNonetheless it will influence the way people think\nThere are strategies to correct these issues\nMore context\nAdjust the map\n\n\n\nUS House of Representatives 2022 Election\nEqually Sized Districts"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#all-maps-lie-4",
+    "href": "Ethics_in_GIS/Slides.html#all-maps-lie-4",
+    "title": "Lecture Slides",
+    "section": "All Maps Lie",
+    "text": "All Maps Lie\n\n\nSometimes the lack of context is the issue.\n\nDifferent unit sizes mean this map over-represents republicans\nIt may not be an intentional choice by the map maker\nNonetheless it will influence the way people think\nThere are strategies to correct these issues\nMore context\nAdjust the map\n\n\n\nCartograms of 2020 Presidential Election"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#who-has-access-to-gis",
+    "href": "Ethics_in_GIS/Slides.html#who-has-access-to-gis",
+    "title": "Lecture Slides",
+    "section": "Who Has Access to GIS?",
+    "text": "Who Has Access to GIS?\n\n\nWho has access to GIS? ESRI products (e.g. ArcGIS Pro) have very expensive licensing fees. Beyond just the cost of the software, hardware to run GIS is not always accessible, and GIS training takes time.\n\nThere are options to make GIS more accessible to the public\nBut they can only go so far"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#open-source-gis",
+    "href": "Ethics_in_GIS/Slides.html#open-source-gis",
+    "title": "Lecture Slides",
+    "section": "Open Source GIS",
+    "text": "Open Source GIS\n\n\nOpen source software is free to access, platforms are created and maintain by volunteers. There are open source alternatives that can provide some access to GIS:\n\nQGIS is an application with similar functionality to ArcGIS Pro.\nPython, R, JavaScript etc. are open source programming languages that have many GIS packages\nFree help pages like stackexchange and github doc’s pages e.g., qgis can help with training, but they require a base level of knowledge first."
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#public-participation-in-gis",
+    "href": "Ethics_in_GIS/Slides.html#public-participation-in-gis",
+    "title": "Lecture Slides",
+    "section": "Public Participation in GIS",
+    "text": "Public Participation in GIS\n\n\nThere are many ways the public can be involved in GIS; the can participate actively or passively.\n\nPublic engagement is crucial way to increase representation of opinions and trust in institutions\nNot all participatory approaches are centered on engagement\nThey can also be passive"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#volunteer-geographic-information",
+    "href": "Ethics_in_GIS/Slides.html#volunteer-geographic-information",
+    "title": "Lecture Slides",
+    "section": "Volunteer Geographic Information",
+    "text": "Volunteer Geographic Information\n\n\nThe collection, processing, assembly, and dissemination of geographic data provided voluntarily by individuals. Is sometimes, part of participatory approaches to GIS; sometimes its just using freely provided information that people are unaware of.\n\nThis is equally likely to be used for commercial purposes as it is for participatory, educational, and other non-commercial uses: E.g. Trip Advisor, Flickr, Twitter, etc.\nUsually some sort of “wisdom of the crowds” is used to validate data, or else data verification and validation is performed by the organizing group\nSee Chae et al. (2025)"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#citizen-science",
+    "href": "Ethics_in_GIS/Slides.html#citizen-science",
+    "title": "Lecture Slides",
+    "section": "Citizen Science",
+    "text": "Citizen Science\n\n\nAllows interested volunteers and researchers to team up to address some scientific question.\n\nVolunteers provide the “leg work” of data collection, data cleaning, and initial interpretation of field data; guided by scientific research experts\nParticipation levels can range from simple data collection through to contributing to academic journal submission.\nThe COCORAHS platform is a great example!"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#participatory-gis",
+    "href": "Ethics_in_GIS/Slides.html#participatory-gis",
+    "title": "Lecture Slides",
+    "section": "Participatory GIS",
+    "text": "Participatory GIS\n\n\nThe goal is the empowerment and inclusion of marginalized people. These groups tend to have little or no voice due to extremes of location, poverty, racism, sexism, anti-religious feelings, etc.\n\nBegins through a process of community mapping, with many steps and a set of long-term goals for the community\nMembers of the community generate their own data and construct their own maps\nBring members together to share their maps and combine into a community map/database\nThese community efforts can then be coded into a GIS to systematize the community’s knowledge and allow for greater spatial analysis to occur\nEmphasizes engagement throughout the GIS process"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#inuit-land-use-and-occupancy-project",
+    "href": "Ethics_in_GIS/Slides.html#inuit-land-use-and-occupancy-project",
+    "title": "Lecture Slides",
+    "section": "Inuit Land Use and Occupancy Project",
+    "text": "Inuit Land Use and Occupancy Project\n\n\nParticipatory GIS to safeguard Inuit rights to Arctic lands and waters.\n\nInuit People became increasingly concerned about resource extraction projects\nCommissioned a study on land use and occupancy that was instrumental in the establishment of Nunavut"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#inuit-land-use-and-occupancy-project-1",
+    "href": "Ethics_in_GIS/Slides.html#inuit-land-use-and-occupancy-project-1",
+    "title": "Lecture Slides",
+    "section": "Inuit Land Use and Occupancy Project",
+    "text": "Inuit Land Use and Occupancy Project\n\n\nNo references to published work or other secondary sources of information:\n\nExisting maps and information had significant colonial bias\n100 % Original Data collection from Inuit Sources"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#positionality",
+    "href": "Ethics_in_GIS/Slides.html#positionality",
+    "title": "Lecture Slides",
+    "section": "Positionality",
+    "text": "Positionality\n\n\nIt is important to reflect on your relation to your work. In the social sciences, positionality is especially important, because a researches privileges, biases, and preconceptions can drastically impact the people and communities they are working with.\n\nIn some of the “hard” sciences, there are often a claims of total objectivity, but complete objectivity is impossible.\nNo one is completely objective, that must be understood and acknowledged regardless of the field."
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#positionality-1",
+    "href": "Ethics_in_GIS/Slides.html#positionality-1",
+    "title": "Lecture Slides",
+    "section": "Positionality",
+    "text": "Positionality\n\n\nSome important questions to ask yourself, and things you may want to disclose depending on the context.\n\nWho am I and where do I come from?\nWhat is my relationship to the community/field I am working in?\nWhat are my motivations for this work?\nWhat biases may I have and how may my past experiences influence how I engage with this work?"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#pre-historic-maps",
+    "href": "History_of_GIS/Slides.html#pre-historic-maps",
+    "title": "Lecture Slides",
+    "section": "Pre-Historic Maps",
+    "text": "Pre-Historic Maps\n\n\nMany of the first maps are difficult to recognize as such.\n\nRock art, pottery, carving, and etchings\nMovement, gestures, & oral traditions\nPaper and Textile maps appeared later"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#pre-historic-maps-1",
+    "href": "History_of_GIS/Slides.html#pre-historic-maps-1",
+    "title": "Lecture Slides",
+    "section": "Pre-Historic Maps",
+    "text": "Pre-Historic Maps\n\n\nFrequently depicted:\n\nLandscapes\nHunting Grounds\nVillages\nAgricultural Plots"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#few-surviving-examples",
+    "href": "History_of_GIS/Slides.html#few-surviving-examples",
+    "title": "Lecture Slides",
+    "section": "Few Surviving Examples",
+    "text": "Few Surviving Examples\n\n\nIn many cases we must look to more recent examples.\n\nOjibway birch bark scrolls.\n\n\nMiꞌkmaq gestural map"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#cartography-and-navigation",
+    "href": "History_of_GIS/Slides.html#cartography-and-navigation",
+    "title": "Lecture Slides",
+    "section": "Cartography and Navigation",
+    "text": "Cartography and Navigation\n\n\nAustronesian expansion started ~5,000 B.P.\n\nCrossed oceans reading stars, waves, weather, and wildlife\nCharts, songs, and stories to recorded details"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#oldest-known-maps",
+    "href": "History_of_GIS/Slides.html#oldest-known-maps",
+    "title": "Lecture Slides",
+    "section": "Oldest Known Maps",
+    "text": "Oldest Known Maps\n\n\nLandscape around Dyje River, Czechia (26,000 B.P.)\n\n\n\nDarling River basin, Australia (~20,000 B.P.)"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#oldest-known-maps-1",
+    "href": "History_of_GIS/Slides.html#oldest-known-maps-1",
+    "title": "Lecture Slides",
+    "section": "Oldest Known Maps",
+    "text": "Oldest Known Maps\n\n\nMap Rock is an engraving of a 600km reach of the Snake River Valley, Idaho (~12,000 B.P.)"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#first-urban-plans",
+    "href": "History_of_GIS/Slides.html#first-urban-plans",
+    "title": "Lecture Slides",
+    "section": "First “Urban” Plans",
+    "text": "First “Urban” Plans\n\n\nÇatalhöyük Turkey, 8700 B.P.\n\n\nBedolina, Italy 4000 B.P."
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#paper-and-textile-maps",
+    "href": "History_of_GIS/Slides.html#paper-and-textile-maps",
+    "title": "Lecture Slides",
+    "section": "Paper and Textile Maps",
+    "text": "Paper and Textile Maps\n\n\nMaps on papyrus paper appeared in Egypt ~3,200 B.P.\n\n\n\nPaper and silk maps appeared in China ~2,200 B.P."
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#advent-of-surveying",
+    "href": "History_of_GIS/Slides.html#advent-of-surveying",
+    "title": "Lecture Slides",
+    "section": "Advent of Surveying",
+    "text": "Advent of Surveying\n\n\nAs societies coalesced, methods for the systematic collection of spatial information were developed.\n\nObjects needed to be drawn to scale\nMastery of geometry and trigonometry\nSurveys were used to:\nDemarcate agricultural fields\nConstruct buildings\nPlan settlements"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#urban-planning",
+    "href": "History_of_GIS/Slides.html#urban-planning",
+    "title": "Lecture Slides",
+    "section": "Urban Planning",
+    "text": "Urban Planning\n\n\nTown plan of Nippur, Babylonia on a clay tablet. Possibly the earliest map drawn to scale 3500 B.P.\n\nOver small areas, maps could now “accurately” represent:\nBearings (direction)\nDistances\nSizes"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#surveying-methods",
+    "href": "History_of_GIS/Slides.html#surveying-methods",
+    "title": "Lecture Slides",
+    "section": "Surveying Methods",
+    "text": "Surveying Methods\n\n\nRope stretching is the earliest technique to come about.\n\nIt was labor intensive and only applicable for small areas\nUsed for building monuments and agricultural surveys"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#surveying-methods-1",
+    "href": "History_of_GIS/Slides.html#surveying-methods-1",
+    "title": "Lecture Slides",
+    "section": "Surveying Methods",
+    "text": "Surveying Methods\n\n\nLine of sight methods allowed for surveying over greater distances and mapping larger areas."
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#surveying-methods-2",
+    "href": "History_of_GIS/Slides.html#surveying-methods-2",
+    "title": "Lecture Slides",
+    "section": "Surveying Methods",
+    "text": "Surveying Methods\n\n\nLine of sight methods allowed for surveying over greater distances and mapping larger areas.\n\nRoad networks could be constructed\nDistances between settlements could be approximated"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#the-groma",
+    "href": "History_of_GIS/Slides.html#the-groma",
+    "title": "Lecture Slides",
+    "section": "The Groma",
+    "text": "The Groma\n\n\nThe Roman Empire employed professional surveyors.\n\nBuilt a massive road network and created an Agricultural land registry\nThey used the groma\nPrecursor of the modern theodolite"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#the-compass",
+    "href": "History_of_GIS/Slides.html#the-compass",
+    "title": "Lecture Slides",
+    "section": "The Compass",
+    "text": "The Compass\n\n\nLodestones are naturally occurring magnetic minerals. They were used to make compasses by the Olmec civilization (3000 B.P.).\n\nOriented buildings and cities"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#the-compass-1",
+    "href": "History_of_GIS/Slides.html#the-compass-1",
+    "title": "Lecture Slides",
+    "section": "The Compass",
+    "text": "The Compass\n\n\nSeparately developed by the Han Dynasty ~2200 B.P.\n\nInitially used for orienting buildings\nApplied to marine navigation in China during the Song Dynasty ~ 1000 B.P.\nReached Europe around 800 B.P.\nSpurred on the “Age of Exploration”"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#exploration-spurred-cartographic-advances",
+    "href": "History_of_GIS/Slides.html#exploration-spurred-cartographic-advances",
+    "title": "Lecture Slides",
+    "section": "Exploration Spurred Cartographic Advances",
+    "text": "Exploration Spurred Cartographic Advances\n\n\nTrade and travel expanded conceptualizations of what the world was.\n\nGreeks built on knowledge of the Egyptians & Mesopotamians\nMaps became more complex and “complete”"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#ptolemys-geographia",
+    "href": "History_of_GIS/Slides.html#ptolemys-geographia",
+    "title": "Lecture Slides",
+    "section": "Ptolemy’s Geographia",
+    "text": "Ptolemy’s Geographia\n\n\nThe first known Atlas (1850 B.P.).\n\n8 volume GIS prototype with an index of place names and projected maps\nAccounted for earth’s curvature but underestimated size"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#chinese-exploration",
+    "href": "History_of_GIS/Slides.html#chinese-exploration",
+    "title": "Lecture Slides",
+    "section": "Chinese Exploration",
+    "text": "Chinese Exploration\n\n\nAdvances in maritime technology, including the compass led to a wave of exploration.\n\nCulminated in the Ming Dynasty Treasure Voyages\nBy 600 B.P., they had mapped most of South & East Asia, East Africa, Indonesia & Australia\nMay have even visited the west coast of North America!"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#spread-of-information",
+    "href": "History_of_GIS/Slides.html#spread-of-information",
+    "title": "Lecture Slides",
+    "section": "Spread of Information",
+    "text": "Spread of Information\n\n\nChinese and Islamic mariners brought technology westward.\n\nBy 550 BP. Europeans had the compass\n\n\n\nSpurred on the “Age of Discovery”\n\nEuropean perspectives came to dominate the cartographic world"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#the-mercator-projection",
+    "href": "History_of_GIS/Slides.html#the-mercator-projection",
+    "title": "Lecture Slides",
+    "section": "The Mercator Projection",
+    "text": "The Mercator Projection\n\n\nRevolutionized navigation and cartography.\n\nFollow constant bearing and reach any location on earth\nStill used today (e.g. Google Maps)"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#the-mercator-projection-1",
+    "href": "History_of_GIS/Slides.html#the-mercator-projection-1",
+    "title": "Lecture Slides",
+    "section": "The Mercator Projection",
+    "text": "The Mercator Projection\n\n\nThe projection is problematic because it severely distorts the true size of some regions.\n\nInfluences perceptions of high latitudes vs. equatorial regions\nWe’ll discuss more about why this is in Module 2"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#spatial-analysis",
+    "href": "History_of_GIS/Slides.html#spatial-analysis",
+    "title": "Lecture Slides",
+    "section": "Spatial Analysis",
+    "text": "Spatial Analysis\n\n\nAs our representation of space became more accurate and precise, our ability to make spatial inferences expanded as well.\n\nAs part of the Module 1 Lab we’ll recreate an example from history using modern methods."
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#canadian-context",
+    "href": "History_of_GIS/Slides.html#canadian-context",
+    "title": "Lecture Slides",
+    "section": "Canadian Context",
+    "text": "Canadian Context\n\n\nCartography facilitated colonialism and territorial expansion throughout Canadian history.\n\nThe British and Canadian governments conducted surveys to map out resources\nTreated the land as a “blank canvas”"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#canadian-context-1",
+    "href": "History_of_GIS/Slides.html#canadian-context-1",
+    "title": "Lecture Slides",
+    "section": "Canadian Context",
+    "text": "Canadian Context\n\n\nCanada’s first scientific agency, founded in 1842. The GSC mapped resources and promoted expansion.\n\n\nThe government used GSC maps to identify and “claim” valuable territories."
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#numbered-treaties",
+    "href": "History_of_GIS/Slides.html#numbered-treaties",
+    "title": "Lecture Slides",
+    "section": "Numbered Treaties",
+    "text": "Numbered Treaties\n\n\nBuilding on GSC Surveys, the government “negotiated” the numbered treaties.\n\nCited survey maps as evidence of their “sovereignty”\nThe RCMP were created to enforce treaties and displace Indigenous people"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#countering-colonialism",
+    "href": "History_of_GIS/Slides.html#countering-colonialism",
+    "title": "Lecture Slides",
+    "section": "Countering Colonialism",
+    "text": "Countering Colonialism\n\n\nThe lands that comprise Canada have been inhabited for thousands of years and have histories that stretch back well before the colonial era.\n\nMany colonial mapping efforts were centered on erasing Indigenous peoples and their histories\nOne way they accomplished this was through the use of place names\n\n\n\nCh’ich’iyuy is a Skwxwú7mesh word that translates to “Twins”"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#learning-place-names",
+    "href": "History_of_GIS/Slides.html#learning-place-names",
+    "title": "Lecture Slides",
+    "section": "Learning Place Names",
+    "text": "Learning Place Names\n\n\nThe Skwxwú7mesh Atlas is a great resource for learning about Skwxwú7mesh Place Names.\n\n\nThe xʷməθkʷəy̓əm nation has put together a great resource for as well!"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#canada-land-inventory",
+    "href": "History_of_GIS/Slides.html#canada-land-inventory",
+    "title": "Lecture Slides",
+    "section": "Canada Land Inventory",
+    "text": "Canada Land Inventory\n\n\nMapped suitability of lands for: Agriculture, forestry, recreation and wildlife.\n\nOriginal maps can be found here\nThe first operational GIS\nDigital geographic database\nAdvances in spatial analysis"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#commercial-development",
+    "href": "History_of_GIS/Slides.html#commercial-development",
+    "title": "Lecture Slides",
+    "section": "Commercial Development",
+    "text": "Commercial Development\n\n\nFollowing the CLI, a number of commercial software companies began developing GIS applications.\n\nHardware improvements made the technology more accessible\nMapping Display and Analysis System (MIDAS)\nFirst desktop GIS released in 1986"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Slides",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\nC:"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#projected-coordinate-systems",
+    "href": "Map_Projections/Slides.html#projected-coordinate-systems",
+    "title": "Lecture Slides",
+    "section": "Projected Coordinate Systems",
+    "text": "Projected Coordinate Systems\n\n\nA map projection is a transformation applied to a geographic coordinate system (GCS).\n\nAllows us to “convert” from 3D coordinates (Lat/Lon) to 2D coordinates (meters)\nWhy does this work?\nWhile the GCS is a 3D coordinate system, it only references locations on the surface of the oblate spheroid"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#projection-methods",
+    "href": "Map_Projections/Slides.html#projection-methods",
+    "title": "Lecture Slides",
+    "section": "Projection Methods",
+    "text": "Projection Methods\n\n\nThere are three main ways to project the 3D oblate spheroid onto a 2D plane.\n\nPlanar: A plane is referenced to “Earth’s” surface\nConic: A cone is referenced to “Earth’s” surface\nThe cone must be cut to flatten it\nCylindrical: A cylinder is referenced to “Earth’s” surface\nThe cylinder must be cut to flatten it"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#projection-methods-1",
+    "href": "Map_Projections/Slides.html#projection-methods-1",
+    "title": "Lecture Slides",
+    "section": "Projection Methods",
+    "text": "Projection Methods\n\n\nHow/where to reference the surface influences how the map is distorted.\n\nTangent: when projections touch the “earth’s” surface at a one point or line\nPoint for planar projections, line for conic and cylindrical projections\nSecant: when projections touch the “earth’s” surface along two lines\nHelps minimize reduce distortion\nThese are the only locations on map without distortions"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#planar-projections",
+    "href": "Map_Projections/Slides.html#planar-projections",
+    "title": "Lecture Slides",
+    "section": "Planar Projections",
+    "text": "Planar Projections\n\n\nSometimes also called azimuthal or zenith projections, planar projections are the simplest approach.\n\nLimited applicability/scope and are typically only used for polar regions."
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#planar-projections-1",
+    "href": "Map_Projections/Slides.html#planar-projections-1",
+    "title": "Lecture Slides",
+    "section": "Planar Projections",
+    "text": "Planar Projections\n\n\nThe Polar Azimuthal projection, tangent to the north pole."
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#conic-projections",
+    "href": "Map_Projections/Slides.html#conic-projections",
+    "title": "Lecture Slides",
+    "section": "Conic Projections",
+    "text": "Conic Projections\n\n\nConic projections are a great option for the mid-latitudes. They have one central meridian and one/two standard parallel(s).\n\nCan only cover one hemisphere at a time"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#conic-projections-1",
+    "href": "Map_Projections/Slides.html#conic-projections-1",
+    "title": "Lecture Slides",
+    "section": "Conic Projections",
+    "text": "Conic Projections\n\n\nThe BC Environment Albers projection, secant to 50° N and 58° N, central meridian 126° W."
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#conic-projections-2",
+    "href": "Map_Projections/Slides.html#conic-projections-2",
+    "title": "Lecture Slides",
+    "section": "Conic Projections",
+    "text": "Conic Projections\n\n\nCanada’s “official” map projection: Canada Lambert Conformal Conic"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#cylindrical-projections",
+    "href": "Map_Projections/Slides.html#cylindrical-projections",
+    "title": "Lecture Slides",
+    "section": "Cylindrical Projections",
+    "text": "Cylindrical Projections\n\n\nThe only method that works (well) for displaying the full Earth."
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#cylindrical-projections-1",
+    "href": "Map_Projections/Slides.html#cylindrical-projections-1",
+    "title": "Lecture Slides",
+    "section": "Cylindrical Projections",
+    "text": "Cylindrical Projections\n\n\nThe Mercator projection, tangent to 0° N and, central meridian 0° W."
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#cylindrical-projections-2",
+    "href": "Map_Projections/Slides.html#cylindrical-projections-2",
+    "title": "Lecture Slides",
+    "section": "Cylindrical Projections",
+    "text": "Cylindrical Projections\n\n\nTransverse cylinders projections are also frequently used.\n\nMinimize distortion near secant lines"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#pseudocylindrical-projections",
+    "href": "Map_Projections/Slides.html#pseudocylindrical-projections",
+    "title": "Lecture Slides",
+    "section": "Pseudocylindrical Projections",
+    "text": "Pseudocylindrical Projections\n\n\nSome special projections apply more complex transformations.\n\n\nThese tend to be used less frequently.\n\nWon’t be used in this class"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#types-of-deformations",
+    "href": "Map_Projections/Slides.html#types-of-deformations",
+    "title": "Lecture Slides",
+    "section": "Types of Deformations",
+    "text": "Types of Deformations\n\n\nAll map projections must induce distortions in order to display the 3D earth in 2D, they can cause different distortions in different ways:\n\nTearing: All projections have tearing (edges)\nShearing: Shapes and angles are contorted\nCompression: Changes to area\nBit of a misnomer, often results in expansion"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#tearing",
+    "href": "Map_Projections/Slides.html#tearing",
+    "title": "Lecture Slides",
+    "section": "Tearing",
+    "text": "Tearing\n\n\nAll projections require tearing, some projections have more than others."
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#shearing",
+    "href": "Map_Projections/Slides.html#shearing",
+    "title": "Lecture Slides",
+    "section": "Shearing",
+    "text": "Shearing\n\n\nShapes and angles are contorted by some, but not all projections."
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#compression",
+    "href": "Map_Projections/Slides.html#compression",
+    "title": "Lecture Slides",
+    "section": "Compression",
+    "text": "Compression\n\n\nAreas can be “inflated” or “deflated” some, but not all projections.\n\nThis can cause serious issues when you are trying to calculate statistics dependent upon area!\nPopulation density is a good example\nYou will get hands on experience with this issue in Lab"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#types-of-projections",
+    "href": "Map_Projections/Slides.html#types-of-projections",
+    "title": "Lecture Slides",
+    "section": "Types of Projections",
+    "text": "Types of Projections\n\n\nAll map projections must induce distortions in order to display the 3D earth in 2D. But there are different types of projections that are designed to preserve some attributes.\n\nConformal: Shapes and angles are preserved, i.e. they prevent shearing\nEqual-area: Areas is preserved, i.e. they prevent compression\nEquidistant: Distance is preserved\nNot “globally”, only in certain regions, ie. the tangent/secant lines\nTrue-direction: Gives shortest route between points (great circle)\nNot “globally”, only certain paths, ie. outward from the center of an azimuthal projection\nCompromise: Splits the difference for aesthetics"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#conformal-projections",
+    "href": "Map_Projections/Slides.html#conformal-projections",
+    "title": "Lecture Slides",
+    "section": "Conformal Projections",
+    "text": "Conformal Projections\n\n\nThese projections are designed to maintain the shapes/angles across the map.\n\nThe mercator projection is a good example\nBecause it maintains shape/angles, it can be used to circumnavigate the globe in a sailboat\nBut to maintain shape globally, it must severely distort area\nScale changes across the map, poor for measuring distances or areas"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#conformal-projections-1",
+    "href": "Map_Projections/Slides.html#conformal-projections-1",
+    "title": "Lecture Slides",
+    "section": "Conformal Projections",
+    "text": "Conformal Projections\n\n\nThese projections are designed to maintain the shapes/angles across the map.\n\nThe lambert conformal conic projection is also a good example\nBecause it is a conic projection showing a smaller region and it uses secant lines, areal distortions are less obvious/drastic\nHowever, the area calculations are not true to reality"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#universal-transverse-mercator-utm",
+    "href": "Map_Projections/Slides.html#universal-transverse-mercator-utm",
+    "title": "Lecture Slides",
+    "section": "Universal Transverse Mercator (UTM)",
+    "text": "Universal Transverse Mercator (UTM)\n\n\nGlobe is divided into 60 strips 6° wide, spanning 80°N to 80°S.\n\nMinimal distortion within zones \n\n\nA special type of conformal projection.\n\nOnly used for “small” areas"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#utm-zones",
+    "href": "Map_Projections/Slides.html#utm-zones",
+    "title": "Lecture Slides",
+    "section": "UTM Zones",
+    "text": "UTM Zones\n\n\nVancouver is in UTM Zone 10N.\n\n\nThe Mackenzie Delta, UTM Zone 8N."
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#equal-area-projections",
+    "href": "Map_Projections/Slides.html#equal-area-projections",
+    "title": "Lecture Slides",
+    "section": "Equal Area Projections",
+    "text": "Equal Area Projections\n\n\nThese projections are designed to preserves area.\n\nThe gall peters projection is a good example\nBecause it maintains area, it can be used to calculate population density\nVery useful in GIS where area must be preserved for land analysis\nAngles/shapes are deformed so it “looks” weird"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#equal-area-projections-1",
+    "href": "Map_Projections/Slides.html#equal-area-projections-1",
+    "title": "Lecture Slides",
+    "section": "Equal Area Projections",
+    "text": "Equal Area Projections\n\n\nThese projections are designed to preserves area.\n\nThe albers equal area projection is also a good example\nBecause it is a conic projection showing a smaller region and it uses secant lines, shape/angle distortions are less obvious/drastic\nYou can still see it, especially in the north"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#equidistant-projections",
+    "href": "Map_Projections/Slides.html#equidistant-projections",
+    "title": "Lecture Slides",
+    "section": "Equidistant Projections",
+    "text": "Equidistant Projections\n\n\nThese projections are designed to preserves distance.\n\nDistance cannot be preserved globally, only specific locations\ne.g. lines radiating from center of an azimuthal projection\ne.g. lines of longitude + central meridian of sinusoidal projection"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#true-direction-projections",
+    "href": "Map_Projections/Slides.html#true-direction-projections",
+    "title": "Lecture Slides",
+    "section": "True-direction Projections",
+    "text": "True-direction Projections\n\n\nThese projections are designed to preserves direction.\n\nDirection cannot be preserved globally, only specific locations\ne.g. lines radiating from center of an azimuthal projection\nOften, equidistant are also true direction but not always\nWill give us a “great circle” route, the shortest distance between two locations"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#compromise-projections",
+    "href": "Map_Projections/Slides.html#compromise-projections",
+    "title": "Lecture Slides",
+    "section": "Compromise Projections",
+    "text": "Compromise Projections\n\n\nThese projections are designed for aesthetics.\n\n\nMinimize distortion without preserving any one property."
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#what-projection-is-right-for-my-map",
+    "href": "Map_Projections/Slides.html#what-projection-is-right-for-my-map",
+    "title": "Lecture Slides",
+    "section": "What projection is right for my map?",
+    "text": "What projection is right for my map?\n\n\nThere isn’t a “correct” answer here, but there are definitely wrong answers.\n\nYou can typically get similar results with a handful of different projections, depending on your application\nBest practice is to always use an equal area projection to calculate areas/densities\nBut there are many different equal area projections"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#things-to-think-about",
+    "href": "Map_Projections/Slides.html#things-to-think-about",
+    "title": "Lecture Slides",
+    "section": "Things to Think About",
+    "text": "Things to Think About\nWhere do the data come from?\n\nSome organizations use a standard projection\nStats Canada: Lambert Conformal Conic\nBritish Columbia: BC Environment Albers\n\nWhat is the map’s purpose?\n\nConformal/compromise are aesthetically pleasing.\nNavigational maps, use conformal, equidistant, etc.\nThematic maps (areas/densities) use equal area.\n\n::: ::::"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#map-scale",
+    "href": "Map_Projections/Slides.html#map-scale",
+    "title": "Lecture Slides",
+    "section": "Map Scale",
+    "text": "Map Scale\n\n\nThe relationship between distance on a map to distance in the real world.\n\nHow much smaller is a unit on the map than a unit on the earth?\ni.e. 1 cm on the map = 1 km on the Earth\nCan be described:\nGraphically\nVerbally\nRepresentative fraction"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#map-scale-1",
+    "href": "Map_Projections/Slides.html#map-scale-1",
+    "title": "Lecture Slides",
+    "section": "Map Scale",
+    "text": "Map Scale\n\n\nSmall Scale Zoomed out, large area, more generalization, less detail.\n\n\nLarge Scale Zoomed in, small area, more detail, less generalization."
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#map-scale-2",
+    "href": "Map_Projections/Slides.html#map-scale-2",
+    "title": "Lecture Slides",
+    "section": "Map Scale",
+    "text": "Map Scale\n\n\nSmall Scale 1:10,000,000\n1/10,000,000 = 0.0000001\n\n\nLarge Scale 1:1,000\n1/1,000 = 0.001"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#map-scale-3",
+    "href": "Map_Projections/Slides.html#map-scale-3",
+    "title": "Lecture Slides",
+    "section": "Map Scale",
+    "text": "Map Scale\n\n\nAll maps require simplification of real world features. The degree of simplification is a function of the map’s scale.\n\nSmaller scale maps require more generalization.\nLarger scale maps can include more detail."
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#map-scale-projection",
+    "href": "Map_Projections/Slides.html#map-scale-projection",
+    "title": "Lecture Slides",
+    "section": "Map Scale & Projection",
+    "text": "Map Scale & Projection\n\n\nMap scale will impact our choice of projection.\n\nProjections that work at 1:000 aren’t necessarily suited for a 1:10,000,000 map\nWith conformal projections like the Mercator, scale changes with position on the map\nPreserves scale “locally”\nScale is grossly distorted globally"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#what-is-a-phenomenon",
+    "href": "Phenomena_and_Data_Types/Slides.html#what-is-a-phenomenon",
+    "title": "Lecture Slides",
+    "section": "What is a Phenomenon?",
+    "text": "What is a Phenomenon?\n\n\nPhenomenon: a fact or situation that is observed to exist or happen, especially one whose cause or explanation is in question.\n\nA lightning strike\nA coastline\nA country\nA dog on a kayak!\nAnything and everything are phenomena!"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#types-of-phenomena",
+    "href": "Phenomena_and_Data_Types/Slides.html#types-of-phenomena",
+    "title": "Lecture Slides",
+    "section": "Types of Phenomena",
+    "text": "Types of Phenomena\n\n\nDiscrete Objects\n\nDistinct boundaries\nChat can be exactly measured\nFinite\nThey are countable and cannot be infinitely subdivided\n\n\nContinuous Fields\n\nNo distinct boundaries\nEverywhere has a value\nInfinitely divisible\nThey are not countable and can be infinitely subdivided"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#types-of-phenomena-1",
+    "href": "Phenomena_and_Data_Types/Slides.html#types-of-phenomena-1",
+    "title": "Lecture Slides",
+    "section": "Types of Phenomena",
+    "text": "Types of Phenomena\n\n\nWhen is a phenomenon discrete or continuous?\n\nTo an extent, it depends on our perspective and the scale of our analysis.\nMany phenomenon are a bit of both."
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#lightning",
+    "href": "Phenomena_and_Data_Types/Slides.html#lightning",
+    "title": "Lecture Slides",
+    "section": "Lightning",
+    "text": "Lightning\n\n\n\nA strike is a discrete object\nWhat about a lighting bolt …?\nDoesn’t really have clearly defined boundaries?\nSort of continuous\nStrike frequency is a continuous field\nEverywhere has a frequency of lighting strikes\nEven the absence of lighting strikes, is still a frequency of strikes"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#a-coastline",
+    "href": "Phenomena_and_Data_Types/Slides.html#a-coastline",
+    "title": "Lecture Slides",
+    "section": "A Coastline",
+    "text": "A Coastline\n\n\n\nContinuous field at large scale\nTides & waves\nWhere is the exact boundary?\nDiscrete object at small scale\nZoom out and the tides/waves don’t really matter\nIts easy to draw a static boundary\nUnless you change the time scale\nUntil you start thinking about the long term :("
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#types-of-phenomena-2",
+    "href": "Phenomena_and_Data_Types/Slides.html#types-of-phenomena-2",
+    "title": "Lecture Slides",
+    "section": "Types of Phenomena",
+    "text": "Types of Phenomena\n\n\nMost things don’t fall perfectly into one category or the other.\n\nThat said, it is a helpful framework as long as we recognize the discrete vs. continuous dichotomy is not a perfect classification"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#discrete-objects",
+    "href": "Phenomena_and_Data_Types/Slides.html#discrete-objects",
+    "title": "Lecture Slides",
+    "section": "Discrete Objects",
+    "text": "Discrete Objects\n\n\nBuildings are a great example.\n\nConcrete boundaries\nCountable\nReal physical object"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#discrete-objects-1",
+    "href": "Phenomena_and_Data_Types/Slides.html#discrete-objects-1",
+    "title": "Lecture Slides",
+    "section": "Discrete Objects",
+    "text": "Discrete Objects\n\n\nPolitical Boundaries are also a great example.\n\nDistinct boundaries\nCountable\nNot a physical object"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#continuous-fields",
+    "href": "Phenomena_and_Data_Types/Slides.html#continuous-fields",
+    "title": "Lecture Slides",
+    "section": "Continuous Fields",
+    "text": "Continuous Fields\n\n\nElevation is a great example.\n\nEverywhere on Earth\nNo “number of elevations”\nA physical property"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#continuous-fields-1",
+    "href": "Phenomena_and_Data_Types/Slides.html#continuous-fields-1",
+    "title": "Lecture Slides",
+    "section": "Continuous Fields",
+    "text": "Continuous Fields\n\n\nDensity of tweets is also a great example.\n\nEverywhere has this too\nDerived from something countable\nBut not countable itself\nNot a physical property"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#working-together",
+    "href": "Phenomena_and_Data_Types/Slides.html#working-together",
+    "title": "Lecture Slides",
+    "section": "Working Together",
+    "text": "Working Together\n\n\nFrequently we’ll end up working with both discrete objects and continuous fields.\n\nIn Module 1, you worked with:\nCholera deaths (Discrete objects)\nKernel density (continuous field)\nWe use spatial data models to represent information in a GIS\nVector Data Model = discrete objects\nRaster Data Model = continuous fields"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#digital-information",
+    "href": "Phenomena_and_Data_Types/Slides.html#digital-information",
+    "title": "Lecture Slides",
+    "section": "Digital information",
+    "text": "Digital information\n\n\nWe’ll talk more about spatial data models later. For now, lets think about data more broadly. How do we represent data in a computer?\n\nDigital information is represented as bits (0’s and 1’s)\nWe typically quantify data as bytes (8 bits):\nKilobyte (kB) = 1,000 bytes\nMegabyte (MB) = 1,000,000 bytes\nGigabyte (GB) = 1,000,000,000 bytes"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#digital-information-1",
+    "href": "Phenomena_and_Data_Types/Slides.html#digital-information-1",
+    "title": "Lecture Slides",
+    "section": "Digital information",
+    "text": "Digital information\n\n\nThere are numerous ways to translate human readable data to binary, such as ASCII.\n\nEach character is represented as one byte\nThere are 28 = 256 unique combinations of 0’s and 1’s in a byte\nSome examples:\n“A” : 01000001\n“CAT”: 01000011 01000001 01010100\n“31”: 00110011 00110001"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#digital-information-2",
+    "href": "Phenomena_and_Data_Types/Slides.html#digital-information-2",
+    "title": "Lecture Slides",
+    "section": "Digital Information",
+    "text": "Digital Information\n\n\nModern computers use 64-bit “architecture”. That is, the central processing unit (CPU) can handle 64 bits (8 bytes) of information at a time.\n\n“Word” length is 64 bits\nA “Word” is a unit of data\ni.e., an individual piece of information\n264 possible unique values\n\n18 quintillion possible unique combinations of 1’s and 0’s to describe something\n\nCPUs can be stacked in parallel to handle more information at one time"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#representing-phenomena-in-gis",
+    "href": "Phenomena_and_Data_Types/Slides.html#representing-phenomena-in-gis",
+    "title": "Lecture Slides",
+    "section": "Representing Phenomena in GIS",
+    "text": "Representing Phenomena in GIS\n\n\nWithin the context of a GIS, every piece of information describing a phenomenon is referred to as an Attribute.\n\nBroadly speaking each attribute can address one of three questions:\nWhere?\nWhat?\nWhen?"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#types-of-attributes",
+    "href": "Phenomena_and_Data_Types/Slides.html#types-of-attributes",
+    "title": "Lecture Slides",
+    "section": "Types of Attributes",
+    "text": "Types of Attributes\n\n\nThere are multiple ways to classify/think about attributes. One important distinction we must make\n\nNon-Spatial Attributes: describe what or when\nSpatial Attributes: describe where\nPuts the Geographic in GIS\nRequires some special considerations\nWe have already talked a bit about these consideration (map projections)\nWe’ll discuss more considerations in the next module"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#types-of-attributes-1",
+    "href": "Phenomena_and_Data_Types/Slides.html#types-of-attributes-1",
+    "title": "Lecture Slides",
+    "section": "Types of Attributes",
+    "text": "Types of Attributes\n\n\nAll data (attributes), spatial and non-spatial, can be either qualitative or quantitative.\n\nThe types of analysis we can do with qualitative data are more limited\nThat does not make quantitative data “better”\nMeasurement scales: both qualitative and quantitative can be measured on different scales\nQualitative: Nominal or Ordinal Sales\nQuantitative: Interval or Ratio Sales"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#qualitative-data",
+    "href": "Phenomena_and_Data_Types/Slides.html#qualitative-data",
+    "title": "Lecture Slides",
+    "section": "Qualitative Data",
+    "text": "Qualitative Data\n\n\nQualitative data is Categorical. It is strictly descriptive and lacks any meaningful numeric value.\n\nTextual, coded numerals, pictures, sounds, etc\nTypically working with textual & coded numerals most frequently in GIS\nLimited number of computational options, often requires careful consideration when analyzing\nMeasured on either a Nominal or Ordinal scale."
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#nominal-scale",
+    "href": "Phenomena_and_Data_Types/Slides.html#nominal-scale",
+    "title": "Lecture Slides",
+    "section": "Nominal Scale",
+    "text": "Nominal Scale\n\n\nNames or categories with no ranking or direction. Categories are not more/less, better/worse, they just different. Some examples include:\n\nFlower Species\nZoning Categories\nLand cover Classification"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#nominal-operations",
+    "href": "Phenomena_and_Data_Types/Slides.html#nominal-operations",
+    "title": "Lecture Slides",
+    "section": "Nominal Operations",
+    "text": "Nominal Operations\n\n\nWith nominal data we can:\n\nCheck equivalency\nCount frequencies\nNothing else"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#ordinal-scale",
+    "href": "Phenomena_and_Data_Types/Slides.html#ordinal-scale",
+    "title": "Lecture Slides",
+    "section": "Ordinal Scale",
+    "text": "Ordinal Scale\n\n\nNames or categories with a ranking or direction. Categories are more/less, better/worse, etc. But the differences are relative, there is no way to say by “how much”. Some examples include:\n\nSpice levels\nRelative heights\nCompass Direction"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#ordinal-operations",
+    "href": "Phenomena_and_Data_Types/Slides.html#ordinal-operations",
+    "title": "Lecture Slides",
+    "section": "Ordinal Operations",
+    "text": "Ordinal Operations\n\n\nWith ordinal data we can:\n\nCheck equivalency\nCount frequencies\nCheck order/rank\n\nAll the same operations as nominal data + more."
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#ordinal-operations-1",
+    "href": "Phenomena_and_Data_Types/Slides.html#ordinal-operations-1",
+    "title": "Lecture Slides",
+    "section": "Ordinal Operations",
+    "text": "Ordinal Operations\n\n\nSometimes we can calculate the median.\n\nOdd sets the median is the middle.\nEven sets, average of the middle two.\nOne solution, arbitrarily assign a numeric score.\n\nAll the same operations as nominal data + more."
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#graded-membership",
+    "href": "Phenomena_and_Data_Types/Slides.html#graded-membership",
+    "title": "Lecture Slides",
+    "section": "Graded Membership",
+    "text": "Graded Membership\n\n\nExceptions that blur the lines.\n\nGrade membership to assign categories\nWhere to draw the line between forest/alpine?\nWinner take all: alpine meadow\n45% alpine meadow\n40% forest\n5% bare rock"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#graded-membership-1",
+    "href": "Phenomena_and_Data_Types/Slides.html#graded-membership-1",
+    "title": "Lecture Slides",
+    "section": "Graded Membership",
+    "text": "Graded Membership\n\n\nIn practice, lots of qualitative data we work with, especially for natural phenomena, are actually graded membership.\n\nThe downside: variability within the area is lost."
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#quantitative-data",
+    "href": "Phenomena_and_Data_Types/Slides.html#quantitative-data",
+    "title": "Lecture Slides",
+    "section": "Quantitative Data",
+    "text": "Quantitative Data\n\n\nQuantitative data is Numeric. It describe the quantities associated with a phenomenon. Key properties include:\n\nValues separated by a meaningful unit.\nMore arithmetic operations possible.\nCan be Discrete or Continuous numbers.\nMeasured on either a Ratio or Interval scale."
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#kinds-of-numbers",
+    "href": "Phenomena_and_Data_Types/Slides.html#kinds-of-numbers",
+    "title": "Lecture Slides",
+    "section": "Kinds of Numbers",
+    "text": "Kinds of Numbers\n\n\nDiscrete\n\nWhole numbers\nCounts\nNot infinitely divisible\nNames in ArcGIS Pro:\nInteger, Long, etc.\n\n\nContinuous\n\nDecimals\nMeasurements\nInfinitely divisible\nNames in ArcGIS Pro:\nFloat, Double, etc."
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#kinds-of-numbers-1",
+    "href": "Phenomena_and_Data_Types/Slides.html#kinds-of-numbers-1",
+    "title": "Lecture Slides",
+    "section": "Kinds of Numbers",
+    "text": "Kinds of Numbers\n\n\nDiscrete\n\nCountable\nExamples:\nPopulation\nYear\n“Age”\n\n\nContinuous\n\nNon-countable\nExamples:\nTemperature\nHeight\nSpeed"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#quantitative-data-1",
+    "href": "Phenomena_and_Data_Types/Slides.html#quantitative-data-1",
+    "title": "Lecture Slides",
+    "section": "Quantitative Data",
+    "text": "Quantitative Data\n\n\nBoth Interval and Ratio data can consist of discrete or continuous numbers. These types of quantitative data are closely related, but have one important distinction.\n\nInterval scales have an arbitrarily zero point, which means:\nCan have negative values\nCannot multiply/divide …\nTo compare the magnitude of one value to another\nCan still multiply/divide for other calculations, i.e. calculating an average\nRatio scales have a fixed, absolute zero point, which means:\nCannot have negative values\nAbsolute zero point does not imply an end point, can still have infinitely many values\nCan multiply/divide"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#the-difference",
+    "href": "Phenomena_and_Data_Types/Slides.html#the-difference",
+    "title": "Lecture Slides",
+    "section": "The Difference",
+    "text": "The Difference\n\n\nCelsius (interval) vs. Kelvin (ratio).\n\n°C = K-273.15.\n0 °C: Freezing point of water\nDrops below 0 °C all the time\n0 K: “Absolute Zero”\nPhysically cannot get any colder\n100 °C is not ∞% warmer than as 0 °C\nIt’s actually ~ 36% warmer\n(373.15 K - 273.15 K) ⁄ 273.15 K ~ 0.36"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#interval-scale",
+    "href": "Phenomena_and_Data_Types/Slides.html#interval-scale",
+    "title": "Lecture Slides",
+    "section": "Interval Scale",
+    "text": "Interval Scale\n\n\nInterval data has an arbitrarily zero point. Examples include:\n\nCalendar years\nDiscrete interval data\nTemperature (in celsius)\nContinuous interval data\nOther examples:\nph scale (continuous)\nIQ scores (continuous)\nTimes (discrete-ish)"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#ratio-scale",
+    "href": "Phenomena_and_Data_Types/Slides.html#ratio-scale",
+    "title": "Lecture Slides",
+    "section": "Ratio Scale",
+    "text": "Ratio Scale\n\n\nRatio data has a fixed, absolute zero point. Examples include:\n\nPopulation\nDiscrete ratio data\nTree height\nContinuous ratio data\nOther examples:\nPrecipitation (Continuous)\nArea (Continuous)\nUnits of time (Continuous)\nPopular Vote Totals (Discrete)"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#derived-ratio",
+    "href": "Phenomena_and_Data_Types/Slides.html#derived-ratio",
+    "title": "Lecture Slides",
+    "section": "Derived Ratio",
+    "text": "Derived Ratio\n\n\nSometimes called normalizing or standardizing, we calculate derived ratios to account for the influence of a confounding variable over a variable of interest. e.x. Housing affordability (Ha):\n\nYou need to account for income (I) to figure out how affordable rent (R) is:\n\n\\[ H\\_a = \\frac{R}{I} \\] + R: My rent $1,450/mo + I: I make ~\\(4600/mo + ***Ha***: 31.5% of my income goes to rent + Income and rent (\\)) are both discrete, housing affordability (%) is continuous."
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#derived-ratio-1",
+    "href": "Phenomena_and_Data_Types/Slides.html#derived-ratio-1",
+    "title": "Lecture Slides",
+    "section": "Derived Ratio",
+    "text": "Derived Ratio\n\n\nIn Lab, you are going to work with two derived ratios:\n\nIncome and Food expenditures are correlated\nNeed to account for income if you analyze other factors\nPopulation and Area are not highly correlated\nBut area definitely influences population\nNeed to account for area to analyze other factors"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#summary-types-of-data",
+    "href": "Phenomena_and_Data_Types/Slides.html#summary-types-of-data",
+    "title": "Lecture Slides",
+    "section": "Summary: Types of Data",
+    "text": "Summary: Types of Data"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#summary-operations-by-data-type",
+    "href": "Phenomena_and_Data_Types/Slides.html#summary-operations-by-data-type",
+    "title": "Lecture Slides",
+    "section": "Summary: Operations by Data Type",
+    "text": "Summary: Operations by Data Type\n\n\n\n\n\nOperation\nNominal\nOrdinal\nInterval\nRatio\n\n\nEquality\nx\nx\nx\nx\n\n\nCounts/Mode\nx\nx\nx\nx\n\n\nRank/Order\n\nx\nx\nx\n\n\nMedian\n\n~\nx\nx\n\n\nAdd/Subtract\n\n\nx\nx\n\n\nMean\n\n\nx\nx\n\n\nMultiply/Divide\n\n\n\nx"
+  },
+  {
+    "objectID": "Raster_Analysis_Methods/Slides.html#clip",
+    "href": "Raster_Analysis_Methods/Slides.html#clip",
+    "title": "Lecture Slides",
+    "section": "Clip",
+    "text": "Clip\n\n\nOften our data is more “complex” than we need it to be. It is useful to parse, reclassify, and/or aggregate our data.\n\nClip Raster: cuts raster down to a bounding box.\nMax N/S & E/W extent of another layer (vector or raster) or manually defined.\nDifferent tool than vector clipping\n\n\n\nRaster clipping is similar to vector clipping"
+  },
+  {
+    "objectID": "Raster_Analysis_Methods/Slides.html#reclassify",
+    "href": "Raster_Analysis_Methods/Slides.html#reclassify",
+    "title": "Lecture Slides",
+    "section": "Reclassify",
+    "text": "Reclassify\n\n\nOften our data is more “complex” than we need it to be. It is useful to parse, reclassify, and/or aggregate our data.\n\nReclassify: creates a new output based on a classification scheme.\n\n\n\nReassign values or simplify data to reduce data volume"
+  },
+  {
+    "objectID": "Raster_Analysis_Methods/Slides.html#reclassify-1",
+    "href": "Raster_Analysis_Methods/Slides.html#reclassify-1",
+    "title": "Lecture Slides",
+    "section": "Reclassify",
+    "text": "Reclassify\n\n\nOften our data is more “complex” than we need it to be. It is useful to parse, reclassify, and/or aggregate our data.\n\nReclassify: creates a new output based on a classification scheme.\n\n\n\nReassign values or simplify data to reduce data volume"
+  },
+  {
+    "objectID": "Raster_Analysis_Methods/Slides.html#mosaic",
+    "href": "Raster_Analysis_Methods/Slides.html#mosaic",
+    "title": "Lecture Slides",
+    "section": "Mosaic",
+    "text": "Mosaic\n\n\nOften our data is more “complex” than we need it to be. It is useful to parse, reclassify, and/or aggregate our data.\n\nMosaic: Combine multiple raster data sets into one.\nThere are multiple approaches we can use.\n\n\n\nOften used to merge multiple satellite images"
+  },
+  {
+    "objectID": "Raster_Analysis_Methods/Slides.html#mosaic-1",
+    "href": "Raster_Analysis_Methods/Slides.html#mosaic-1",
+    "title": "Lecture Slides",
+    "section": "Mosaic",
+    "text": "Mosaic\n\n\nOften our data is more “complex” than we need it to be. It is useful to parse, reclassify, and/or aggregate our data.\n\nMosaic: Combine multiple raster data sets into one.\nThere are multiple approaches we can use.\n\n\n\nOften used to merge multiple satellite images"
+  },
+  {
+    "objectID": "Raster_Analysis_Methods/Slides.html#proximity-analysis",
+    "href": "Raster_Analysis_Methods/Slides.html#proximity-analysis",
+    "title": "Lecture Slides",
+    "section": "Proximity Analysis",
+    "text": "Proximity Analysis\n\n\nSometimes, we’re interested in looking at spatial relationships using raster data. * Euclidean Distance: use this tool to calculate distance from the nearest feature or raster layer."
+  },
+  {
+    "objectID": "Raster_Analysis_Methods/Slides.html#raster-overlay",
+    "href": "Raster_Analysis_Methods/Slides.html#raster-overlay",
+    "title": "Lecture Slides",
+    "section": "Raster Overlay",
+    "text": "Raster Overlay\n\n\nWhen we have multiple raster layers and we want to combine them to form a new output.\n\nEasy, efficient overlay is a key advantage of the raster data model\nWe have a few tools we can use for this"
+  },
+  {
+    "objectID": "Raster_Analysis_Methods/Slides.html#weighted-overlay",
+    "href": "Raster_Analysis_Methods/Slides.html#weighted-overlay",
+    "title": "Lecture Slides",
+    "section": "Weighted Overlay",
+    "text": "Weighted Overlay\n\n\nWeights inputs for suitability analysis or risk assessment.\n\nInputs must be discrete numbers\nManually define weights and scale"
+  },
+  {
+    "objectID": "Raster_Analysis_Methods/Slides.html#weighted-overlay-1",
+    "href": "Raster_Analysis_Methods/Slides.html#weighted-overlay-1",
+    "title": "Lecture Slides",
+    "section": "Weighted Overlay",
+    "text": "Weighted Overlay\n\n\nWeights inputs for suitability analysis or risk assessment.\n\nInputs must be discrete numbers\nManually define weights and scale\n\n\n\n\nOutputs discrete classification."
+  },
+  {
+    "objectID": "Raster_Analysis_Methods/Slides.html#raster-calculator",
+    "href": "Raster_Analysis_Methods/Slides.html#raster-calculator",
+    "title": "Lecture Slides",
+    "section": "Raster Calculator",
+    "text": "Raster Calculator\n\n\nMore general and flexible than weighted overlay.\n\nOutputs are more straightforward\nBecause inputs are more explicit\nCan do weighted overlay among other tasks"
+  },
+  {
+    "objectID": "Raster_Analysis_Methods/Slides.html#raster-calculator-1",
+    "href": "Raster_Analysis_Methods/Slides.html#raster-calculator-1",
+    "title": "Lecture Slides",
+    "section": "Raster Calculator",
+    "text": "Raster Calculator\n\n\nMore general and flexible than weighted overlay.\n\nOutputs are more straightforward\nBecause inputs are more explicit\nCan do weighted overlay among other tasks\n\n\n\nOutputs continuous gradient."
+  },
+  {
+    "objectID": "Raster_Analysis_Methods/Slides.html#zonal-statistics",
+    "href": "Raster_Analysis_Methods/Slides.html#zonal-statistics",
+    "title": "Lecture Slides",
+    "section": "Zonal Statistics",
+    "text": "Zonal Statistics\n\n\nCalculate statistics (mean, max, etc.) using zones (regions) and output desired statistic by zone.\n\nThe zone can be either a raster or vector layer.\nZonal Statistics as Table generates a table containing multiple statistics by zone."
+  },
+  {
+    "objectID": "Raster_Analysis_Methods/Slides.html#surface-analysis",
+    "href": "Raster_Analysis_Methods/Slides.html#surface-analysis",
+    "title": "Lecture Slides",
+    "section": "Surface Analysis",
+    "text": "Surface Analysis\n\n\nThese tools are specifically designed to analyze terrain surfaces (ie. Digital Elevation Models).\n\nHowever, they can be applied to other purposes in select applications\nSlope: calculates the slope of a terrain surface\nie. the angle in degrees from a cell to it’s “lowest” neighbor"
+  },
+  {
+    "objectID": "Raster_Analysis_Methods/Slides.html#surface-analysis-1",
+    "href": "Raster_Analysis_Methods/Slides.html#surface-analysis-1",
+    "title": "Lecture Slides",
+    "section": "Surface Analysis",
+    "text": "Surface Analysis\n\n\nThese tools are specifically designed to analyze terrain surfaces (ie. Digital Elevation Models).\n\nHowever, they can be applied to other purposes in select applications\nAspect: calculates the direction a slope is facing\nNorth, southeast, west northwest, etc."
+  },
+  {
+    "objectID": "Raster_Analysis_Methods/Slides.html#raster-functions",
+    "href": "Raster_Analysis_Methods/Slides.html#raster-functions",
+    "title": "Lecture Slides",
+    "section": "Raster Functions",
+    "text": "Raster Functions\n\n\nArcGIS Pro has an extensive toolkit of tools for more complex analyses.\n\nMany are beyond the scope of intro-level GIS"
+  },
+  {
+    "objectID": "Raster_Analysis_Methods/Slides.html#hydrologic-modelling",
+    "href": "Raster_Analysis_Methods/Slides.html#hydrologic-modelling",
+    "title": "Lecture Slides",
+    "section": "Hydrologic Modelling",
+    "text": "Hydrologic Modelling\n\n\nThe Hydrology toolset can be used to calculate stream flow.\n\nUse a DEM as an input\nFill “sinks”\nCalculate flow direction\nRun flow accumulation\n\n\nDEM Input\n\nAccumulated stream flow output"
+  },
+  {
+    "objectID": "Raster_Analysis_Methods/Slides.html#calculate-ndvi",
+    "href": "Raster_Analysis_Methods/Slides.html#calculate-ndvi",
+    "title": "Lecture Slides",
+    "section": "Calculate NDVI",
+    "text": "Calculate NDVI\n\n\nYou can calculate NDVI directly in Arc * Just give the red and near infrared bands from a satellite image + e.g. Landsat8: Red (4), near infrared (5)"
+  },
+  {
+    "objectID": "Raster_Analysis_Methods/Slides.html#image-classification",
+    "href": "Raster_Analysis_Methods/Slides.html#image-classification",
+    "title": "Lecture Slides",
+    "section": "Image Classification",
+    "text": "Image Classification\n\n\nClassify a raster.\n\nSupervised or unsupervised"
+  },
+  {
+    "objectID": "Raster_Analysis_Methods/Slides.html#image-classification-1",
+    "href": "Raster_Analysis_Methods/Slides.html#image-classification-1",
+    "title": "Lecture Slides",
+    "section": "Image Classification",
+    "text": "Image Classification\n\n\nClassify a raster.\n\nSupervised or unsupervised"
+  },
+  {
+    "objectID": "RevealJS_Converter.html",
+    "href": "RevealJS_Converter.html",
+    "title": "Lecture Slides",
+    "section": "",
+    "text": "import os\nimport re\nimport shutil\nimport pandas as pd\nfrom PIL import Image\nfrom markdownify import MarkdownConverter\n\nTo_convert = {\n    'Module':[],\n    'Slides':[]\n}\n\nhtmlFiles = []\npath = '../../GEOS270_Archive/Modules/'\nfor mod in range (7):\n    for dir,subdir,filename in os.walk(f'{path}{mod+1}'):\n        if 'content' in dir and '_site' not in dir:\n            for f in filename:\n                if '.html' in f:\n                    To_convert['Module'].append(mod+1)\n                    To_convert['Slides'].append(f)\n\nTo_convert = pd.DataFrame(data=To_convert)\nTo_convert['Name'] = None\n\nTo_convert.loc[To_convert.index==0,'Name'] = 'History of GIS'\nTo_convert.loc[To_convert.index==1,'Name'] = 'Steps of Abstraction'\nTo_convert.loc[To_convert.index==2,'Name'] = 'Map Projections'\nTo_convert.loc[To_convert.index==4,'Name'] = 'Data Classification'\nTo_convert.loc[To_convert.index==5,'Name'] = 'Data Visualization'\nTo_convert.loc[To_convert.index==6,'Name'] = 'Phenomena and Data Types'\nTo_convert.loc[To_convert.index==10,'Name'] = 'Choice of Data Model'\nTo_convert.loc[To_convert.index==11,'Name'] = 'The Raster Data Model'\nTo_convert.loc[To_convert.index==12,'Name'] = 'Spatial is Special'\nTo_convert.loc[To_convert.index==13,'Name'] = 'The Vector Data Model'\nTo_convert.loc[To_convert.index==14,'Name'] = 'Spatial Data Workflows'\nTo_convert.loc[To_convert.index==15,'Name'] = 'Raster Analysis Methods'\nTo_convert.loc[To_convert.index==16,'Name'] = 'Vector Analysis Methods'\nTo_convert.loc[To_convert.index==18,'Name'] = 'Ethics in GIS'\nTo_convert.loc[To_convert.index==19,'Name'] = 'Spatial Sampling Methods'\nTo_convert.loc[To_convert.index==21,'Name'] = 'Uncertainty in GIS'\n\nTo_convert\n\n\n\n\n\n  \n    \n      \n      Module\n      Slides\n      Name\n    \n  \n  \n    \n      0\n      1\n      HistoyGIS.html\n      History of GIS\n    \n    \n      1\n      2\n      Abstraction.html\n      Steps of Abstraction\n    \n    \n      2\n      2\n      Projection.html\n      Map Projections\n    \n    \n      3\n      2\n      Web_Mercator_Iqualuit.html\n      None\n    \n    \n      4\n      3\n      Classification.html\n      Data Classification\n    \n    \n      5\n      3\n      Visualization.html\n      Data Visualization\n    \n    \n      6\n      3\n      WhatIsData.html\n      Phenomena and Data Types\n    \n    \n      7\n      4\n      Bldg.html\n      None\n    \n    \n      8\n      4\n      Choice.html\n      None\n    \n    \n      9\n      4\n      ChoiceOfModel.html\n      None\n    \n    \n      10\n      4\n      ChoosingAModel.html\n      Choice of Data Model\n    \n    \n      11\n      4\n      RasterModel.html\n      The Raster Data Model\n    \n    \n      12\n      4\n      Tobler.html\n      Spatial is Special\n    \n    \n      13\n      4\n      VectorModel.html\n      The Vector Data Model\n    \n    \n      14\n      5\n      GISWorkflows.html\n      Spatial Data Workflows\n    \n    \n      15\n      5\n      RasterMethods.html\n      Raster Analysis Methods\n    \n    \n      16\n      5\n      VectorMethods.html\n      Vector Analysis Methods\n    \n    \n      17\n      5\n      Workflows.html\n      None\n    \n    \n      18\n      6\n      Ethics.html\n      Ethics in GIS\n    \n    \n      19\n      6\n      Sampling.html\n      Spatial Sampling Methods\n    \n    \n      20\n      6\n      Template.html\n      None\n    \n    \n      21\n      6\n      Uncertainty.html\n      Uncertainty in GIS\n    \n    \n      22\n      6\n      Uncertainty_GIS.html\n      None\n    \n    \n      23\n      7\n      PID.html\n      None\n    \n  \n\n\n\n\n\ndef head(theme='default'):\n  return (f'''---\nformat:\n  revealjs:\n    theme: {theme}\n    code-fold: true\n    controls: true\n    navigation-mode: linear\n    controls-layout: bottom-right\n    controls-tutorial: true\n    slide-number: true\n    show-slide-number: all\n    pdfMaxPagesPerSlide: 1\nfig-dpi: 300\n\n---''')\n\n\ndef find_between(s, first, last):\n    try:\n        regex = rf'{first}(.*?){last}'\n        return re.findall(regex, s)\n    except ValueError:\n        return -1\n\n\nclass ImageBlockConverter(MarkdownConverter):\n    \"\"\"\n    Create a custom MarkdownConverter that adds two newlines after an image\n    \"\"\"\n    def convert_img(self, el, text, convert_as_inline):\n        return super().convert_img(el, text, convert_as_inline)+'\\n\\n'\n\nclass convert_Reveal():\n    def __init__(self,dir,fileName,Title=None):\n        self.html = f'{dir}{fileName}.html'\n        # if Title == None:\n        #     self.Name = fileName\n        # else:\n        #     self.Name = Title\n        self.dest = f\"{Title.replace(' ','_')}/\"\n        self.dir = dir\n        self.parse_Slides()\n\n    def md(self,html, **options):\n        return ImageBlockConverter(**options).convert(html)\n    \n    def titleSlide(self):\n        TTL = self.text_md.split('---')[2].split('==')[0]\n        TTL_txt = TTL.split('\\n')\n\n        k = 0\n        for i,t in enumerate(TTL_txt):\n            if len(t)>1:\n                k = i\n\n        ttl = TTL_txt[k]\n        New_Title = TTL.replace(ttl,Title)\n        self.text_md.replace(TTL,New_Title)\n\n    def parse_Slides(self):\n        html = open(self.html, encoding=\"utf8\").read()\n        html = html.replace('text-align: left','text-align: Left')\n        html = html.replace('text-align: center','text-align: Center')\n        html = html.replace('text-align: right','text-align: Right')\n        html = html.replace(' style=\"text-align: Left;\"','')\n        html = html.replace(' style=\"text-align: Center;\"','')\n        html = html.replace(' style=\"text-align: Right;\"','')\n        html = html.replace(' style=\"text-align: Left\"','')\n        html = html.replace(' style=\"text-align: Center\"','')\n        html = html.replace(' style=\"text-align: Right\"','')\n        html = html.replace('<div class=\"subtitle\">','<div class=\"subtitle\"><p>::::{.columns}\\n:::{.column width=\"100%\"}</p>')\n        html = html.replace('<div class=\"question\">','<div class=\"question\"><p>::::{.columns}\\n:::{.column width=\"100%\"}</p>')\n        html = html.replace('<div class=\"full\">','<div class=\"full\"><p>::::{.columns}\\n:::{.column width=\"100%\"}</p>')\n        html = html.replace('<div class=\"left\">','<div class=\"left\"><p>::::{.columns}\\n:::{.column width=\"50%\"}</p>')\n        html = html.replace('<div class=\"right\">','<div class=\"right\"><p>:::\\n:::{.column width=\"50%\"}</p>')\n        html = html.replace('<div class=\"r-stack\">','<div class=\"r-stack\"><p>:::\\n:::{.column width=\"50%\"}</p>')\n        html = html.replace('<div class=\"figure\">','<div class=\"figure\"><p>:::\\n:::{.column width=\"50%\"}</p>')\n        html = html.replace('</section>','<p>:::\\n::::</p></section>')\n        slides = html.split('<div class=\"slides\">')[-1].split('</div><!-- .slides -->')[0]\n        theme = html.split('link id=\"theme\"')[-1].split('/theme/')[-1].split('.css\">')[0]\n        self.YML_Header = head(theme)\n        self.text_md = self.md(slides)\n\n\n\n        with open(f'{self.dest}Slides.qmd','w+', encoding=\"utf8\") as out:\n            self.text_md = self.YML_Header+self.text_md\n            out.write(self.text_md)\n        self.move_Images()\n\n    def move_Images(self,maxDim = 1800):\n        # ims = self.md.split('![]')[1:]\n        ims = self.text_md.split('![]')[1:]\n        \n        for im in ims:\n            image_file = re.search(r'\\((.*?)\\)',im).group(1)\n            if image_file.split('.')[-1].lower() in ['png','jpg','gif']:\n                image = Image.open(self.dir+image_file)\n                if image.mode != 'RGB' and image_file.split('.')[-1].lower()=='jpg':\n                    image = image.convert('RGB')\n                if image.size[0] > maxDim and image.size[1]<image.size[0]:\n                    wpercent = (maxDim/float(image.size[0]))\n                    hsize = int((float(image.size[1])*float(wpercent)))\n                    image = image.resize((maxDim,hsize), Image.Resampling.LANCZOS)\n                    image.save(f'{self.dest}{image_file}',optimize=True)\n                elif image.size[1] > maxDim and image.size[1]>image.size[0]:\n                    wpercent = (maxDim/float(image.size[1]))\n                    wsize = int((float(image.size[0])*float(wpercent)))\n                    image = image.resize((wsize,maxDim), Image.Resampling.LANCZOS)\n                    image.save(f'{self.dest}{image_file}',quality=95,optimize=True)\n                else:\n                    image.save(f'{self.dest}{image_file}',quality=95,optimize=True)\n            else:\n                try:\n                    shutil.copy(self.dir+image_file,f'{self.dest}{image_file}')\n                except:\n                    print('Could not find ',self.dir+image_file)\n                    print('Proceeding without')\n                    print()\n                    pass\n\nYML = '''project:\n  type: website\n  output-dir: docs\n  \nformat:\n  html:\n    theme: cosmo\n    css: styles.css\n    toc: true\n\nwebsite:\n  title: \"Lecture Slides\"\n  sidebar:\n    style: \"docked\"\n    search: true\n    contents:\n    \n'''\n\nfor m in range(1,7):\n    YML+=(f'      - section: \"Module {m}\"')\n    YML+='\\n'\n    YML+=('        contents:')\n    YML+='\\n'\n    for i ,row in To_convert[To_convert['Module']==m].iterrows():\n        if row['Name'] is not None:\n            Nm = row['Name'].replace(' ','_')        \n            YML+=(f'        - {Nm}/Slides.qmd')\n            YML+='\\n'\n            print('Converting: ',row['Name'])\n\n            mod = To_convert['Module'][i]\n            fileName = To_convert['Slides'][i].split('.')[0]\n            Title = To_convert['Name'][i]\n\n            dir = Title.replace(' ','_')\n            if os.path.isdir(dir) == False:\n                os.mkdir(dir)\n            if os.path.isdir(dir+'/images') == False:\n                os.mkdir(dir+'/images')\n\n            conv = convert_Reveal(f'{path}{mod}/docs/content/',fileName,Title)\n            \nwith open(f'_quarto.yml','w+', encoding=\"utf8\") as out:\n  out.write(YML)\n\nConverting:  History of GIS\nConverting:  Steps of Abstraction\nConverting:  Map Projections\nConverting:  Data Classification\nConverting:  Data Visualization\nConverting:  Phenomena and Data Types\nConverting:  Choice of Data Model\nConverting:  The Raster Data Model\nConverting:  Spatial is Special\nConverting:  The Vector Data Model\nConverting:  Spatial Data Workflows\nConverting:  Raster Analysis Methods\nConverting:  Vector Analysis Methods\nConverting:  Ethics in GIS\nConverting:  Spatial Sampling Methods\nConverting:  Uncertainty in GIS"
+  },
+  {
+    "objectID": "Spatial_Data_Workflows/Slides.html#gis-research-process",
+    "href": "Spatial_Data_Workflows/Slides.html#gis-research-process",
+    "title": "Lecture Slides",
+    "section": "GIS Research Process",
+    "text": "GIS Research Process\n\n\n\nDefine your research question\n\nIdentify the problems you will address and determine scale of your analysis\nExplore the available data\n\nAdjust your research question as needed* Outline a plan for your analysis\n\n\nConduct your analysis\n\nClean, convert, reproject, and reclassify input data\nSpatial overlays, statistical tests, summary statistics, etc.\nRefine and incorporate more data as needed\n\nShare your results\n\nVisualizations, reports, publications, press releases, etc.\nIdentify new questions\n\nGood research often generates more questions than it answers"
+  },
+  {
+    "objectID": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow",
+    "href": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow",
+    "title": "Lecture Slides",
+    "section": "Visualizing a Workflow",
+    "text": "Visualizing a Workflow\n\n\nIt is a good idea to think through a workflow before conducting it.\n\nA flowchart is a diagram that outlines the key steps in an analysis\nA flowchart can help you\nIdentify necessary analysis steps\nThink through the logical progression of analysis steps\nCatch errors before you start working\nShare your planned analysis with colleagues, funding organizations, etc."
+  },
+  {
+    "objectID": "Spatial_Data_Workflows/Slides.html#an-applied-example",
+    "href": "Spatial_Data_Workflows/Slides.html#an-applied-example",
+    "title": "Lecture Slides",
+    "section": "An Applied Example",
+    "text": "An Applied Example\n\n\nPort Alberni has needs a new tsunami evacuation shelter and you have been tasked with finding a suitable location. The shelter must:\n\nOutside the flood zone:\n\n\n\n15 MASL or > 1 km from coast.\n\n\n\n\n1.5 km from existing shelters.\n\n< 250 m from an Arterial Roadway.\nNot on Residential, Commercial, or Industrial parcels."
+  },
+  {
+    "objectID": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow-1",
+    "href": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow-1",
+    "title": "Lecture Slides",
+    "section": "Visualizing a Workflow",
+    "text": "Visualizing a Workflow\n\n\nIt is best to create a workflow that is repeatable, modifiable, and sharable.\n\n“Point and Click” GIS is not repeatable\nThis can create issues when you:\nNeed to write up a report\nWant to share how you completed a task\nHave to redo or update complex analyses"
+  },
+  {
+    "objectID": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow-2",
+    "href": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow-2",
+    "title": "Lecture Slides",
+    "section": "Visualizing a Workflow",
+    "text": "Visualizing a Workflow\n\n\nModel Builder is a good solution for beginners.\n\nIt lets you define you analysis steps using a flowchart\nInputs are run trough the geoprocessing steps\nModels are easy to save and update\nCan be exported as custom tools\nHelps you visualize your results and share them with others"
+  },
+  {
+    "objectID": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow-3",
+    "href": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow-3",
+    "title": "Lecture Slides",
+    "section": "Visualizing a Workflow",
+    "text": "Visualizing a Workflow\n\n\nIf you pursue a GIS career, or any other science, you should consider learning to code.\n\nCode is replicable, legible, and even more explicit than a model\nPython is a great option for geospatial analysis\nJavascript is great for making web based applications and interactive visualizations\nR is useful for statistical analysis\n\n\n\nModels can be exported as Python code!\n\nJavascript can create interactive web maps!\nJavascript can create interactive web maps!"
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#first-law-of-geography",
+    "href": "Spatial_is_Special/Slides.html#first-law-of-geography",
+    "title": "Lecture Slides",
+    "section": "First Law of Geography",
+    "text": "First Law of Geography\n\n\n“Everything is related to everything else,\nbut near things are more related than distant things.”\n-Waldo Tobler"
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#first-law-of-geography-1",
+    "href": "Spatial_is_Special/Slides.html#first-law-of-geography-1",
+    "title": "Lecture Slides",
+    "section": "First Law of Geography",
+    "text": "First Law of Geography\n\n\nThis might seem obvious:\n\nStudents in the same class interact more.\nOrca pods in different areas develop different dialects.\nHemlocks in BC are more related to each other than to hemlocks in NB."
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#first-law-of-geography-2",
+    "href": "Spatial_is_Special/Slides.html#first-law-of-geography-2",
+    "title": "Lecture Slides",
+    "section": "First Law of Geography",
+    "text": "First Law of Geography\n\n\nNot a grantee of similarity.\n\nVancouver’s average snowfall is < 30 cm/yr\nGrouse Mountain frequently exceeds 9 m/yr"
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#first-law-of-geography-3",
+    "href": "Spatial_is_Special/Slides.html#first-law-of-geography-3",
+    "title": "Lecture Slides",
+    "section": "First Law of Geography",
+    "text": "First Law of Geography\n\n\nWhat do you have in common with your neighbor?\n\nAre you in the same city?\nDo you have the same major?\nAre you from the same hometown?"
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#spatial-homogeneity",
+    "href": "Spatial_is_Special/Slides.html#spatial-homogeneity",
+    "title": "Lecture Slides",
+    "section": "Spatial Homogeneity",
+    "text": "Spatial Homogeneity\n\n\nEven distribution of discrete objects trough space, or values (qualitative or quantitative) across a continuous field."
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#spatial-heterogeneity",
+    "href": "Spatial_is_Special/Slides.html#spatial-heterogeneity",
+    "title": "Lecture Slides",
+    "section": "Spatial Heterogeneity",
+    "text": "Spatial Heterogeneity\n\n\nUneven distribution of discrete objects trough space, or variation of values (qualitative or quantitative) across a continuous field.\n\nOpposite of Spatial Homogeneity"
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#spatial-heterogeneity-1",
+    "href": "Spatial_is_Special/Slides.html#spatial-heterogeneity-1",
+    "title": "Lecture Slides",
+    "section": "Spatial Heterogeneity",
+    "text": "Spatial Heterogeneity"
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#spatial-autocorrelation",
+    "href": "Spatial_is_Special/Slides.html#spatial-autocorrelation",
+    "title": "Lecture Slides",
+    "section": "Spatial Autocorrelation",
+    "text": "Spatial Autocorrelation\n\n\nA measure of similarity Homogeneity/heterogeneity.\n\nPositive: Clustered/grouped in space\nNegative: Dispersed across space\nMany natural systems exhibit positive spatial autocorrelation"
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#spatial-autocorrelation-1",
+    "href": "Spatial_is_Special/Slides.html#spatial-autocorrelation-1",
+    "title": "Lecture Slides",
+    "section": "Spatial Autocorrelation",
+    "text": "Spatial Autocorrelation"
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#revisiting-scale",
+    "href": "Spatial_is_Special/Slides.html#revisiting-scale",
+    "title": "Lecture Slides",
+    "section": "Revisiting Scale",
+    "text": "Revisiting Scale\nMap scale: ratio of map units to real world units.\n\nSmall Scale: Large area, more generalization, less detail.\nLarge Scale: Small area, more detail, less generalization.\n\n::: :::{.column width=“50%”}\n\n::: ::::"
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#time-scale",
+    "href": "Spatial_is_Special/Slides.html#time-scale",
+    "title": "Lecture Slides",
+    "section": "Time Scale",
+    "text": "Time Scale\nTime is “one dimensional”, but many of the same concepts related to scale apply.\n\nJust as features are exhibit spatial autocorrelation, they typically exhibit temporal autocorrelation\n\n::: :::{.column width=“50%”}\n\n::: ::::"
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#analysis-scale",
+    "href": "Spatial_is_Special/Slides.html#analysis-scale",
+    "title": "Lecture Slides",
+    "section": "Analysis Scale",
+    "text": "Analysis Scale\n\n\nDifferent phenomena operate on different temporal and spatial scales.\n\nNo need to model tornadoes in a global climate model.\nImpractical to map turbulence globally."
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#analysis-scale-1",
+    "href": "Spatial_is_Special/Slides.html#analysis-scale-1",
+    "title": "Lecture Slides",
+    "section": "Analysis Scale",
+    "text": "Analysis Scale\n\n\nDifferent phenomena operate on different temporal and spatial scales.\n\nIdentify the scale relevant to your analysis."
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#boninis-paradox",
+    "href": "Spatial_is_Special/Slides.html#boninis-paradox",
+    "title": "Lecture Slides",
+    "section": "Bonini’s paradox",
+    "text": "Bonini’s paradox\n\n\nAs a model of a complex system becomes more complete, it becomes less understandable.\n\nIt will eventually be just as difficult to understand as the real-world processes it represents\nA 1:1 scale map needs to be as big as the features you are mapping\nA life size model house … would be the size of a regular house\nAt a certain point, we have to ignore the heterogeneity."
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#map-the-forest-not-the-trees",
+    "href": "Spatial_is_Special/Slides.html#map-the-forest-not-the-trees",
+    "title": "Lecture Slides",
+    "section": "Map the Forest not the Trees",
+    "text": "Map the Forest not the Trees\n\n\nWe don’t need the location of every tree to map a forest.\n\nUse average presence of trees over a larger area\nGroup by dominant species or category"
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#similarity-across-space",
+    "href": "Spatial_is_Special/Slides.html#similarity-across-space",
+    "title": "Lecture Slides",
+    "section": "Similarity Across Space",
+    "text": "Similarity Across Space\n\n\nOften, the system we want to map will exhibit high degrees of both spatial heterogeneity and autocorrelation.\n\nWhat is heterogeneous at one scale may be homogeneous at another."
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#spatial-data-models",
+    "href": "Spatial_is_Special/Slides.html#spatial-data-models",
+    "title": "Lecture Slides",
+    "section": "Spatial Data Models",
+    "text": "Spatial Data Models\n\n\nWe can exploit spatial autocorrelation to simplify data representation."
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#spatial-resolution",
+    "href": "Spatial_is_Special/Slides.html#spatial-resolution",
+    "title": "Lecture Slides",
+    "section": "Spatial Resolution",
+    "text": "Spatial Resolution\n\n\nRelates to the level of spatial detail in a dataset.\n\nWhat is the smallest feature that is included in a dataset?"
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#temporal-resolution",
+    "href": "Spatial_is_Special/Slides.html#temporal-resolution",
+    "title": "Lecture Slides",
+    "section": "Temporal Resolution",
+    "text": "Temporal Resolution\n\n\nRelates to the level of temporal detail in a dataset.\n\nOver what time period is the data valid?\nAre there multiple observations?"
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#resolution-vs.-scale",
+    "href": "Spatial_is_Special/Slides.html#resolution-vs.-scale",
+    "title": "Lecture Slides",
+    "section": "Resolution vs. Scale",
+    "text": "Resolution vs. Scale\n\n\nThe scale of our analysis dictates our desired resolution. But data resolution can limit the scale of our analysis."
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#scale-dependence",
+    "href": "Spatial_is_Special/Slides.html#scale-dependence",
+    "title": "Lecture Slides",
+    "section": "Scale Dependence",
+    "text": "Scale Dependence"
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#scale-dependence-1",
+    "href": "Spatial_is_Special/Slides.html#scale-dependence-1",
+    "title": "Lecture Slides",
+    "section": "Scale Dependence",
+    "text": "Scale Dependence\n\n\nAcknowledge the heterogeneity where appropriate.\n\nLarge scale maps might need more attention to detail.\nHigher resolution data."
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#scale-dependence-2",
+    "href": "Spatial_is_Special/Slides.html#scale-dependence-2",
+    "title": "Lecture Slides",
+    "section": "Scale Dependence",
+    "text": "Scale Dependence\n\n\nCount on spatial autocorrelation\nand call a unit homogeneous where appropriate.\n\nSmaller scale maps can be more generalized.\nLower resolution data."
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#scale-dependence-3",
+    "href": "Spatial_is_Special/Slides.html#scale-dependence-3",
+    "title": "Lecture Slides",
+    "section": "Scale Dependence",
+    "text": "Scale Dependence\n\n\nAt even smaller scales, more and more generalization is required.\n\nSome features become indistinguishable\nEven lower resolution data is sufficient"
+  },
+  {
+    "objectID": "Spatial_is_Special/Slides.html#spatial-data-models-1",
+    "href": "Spatial_is_Special/Slides.html#spatial-data-models-1",
+    "title": "Lecture Slides",
+    "section": "Spatial Data Models",
+    "text": "Spatial Data Models\n\n\nRaster and vector models are distinct approaches for addressing the same task."
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#the-first-law-of-geography",
+    "href": "Spatial_Sampling_Methods/Slides.html#the-first-law-of-geography",
+    "title": "Lecture Slides",
+    "section": "The First Law of Geography",
+    "text": "The First Law of Geography\n\n\nEverything is related to everything else, but near things are more related than distant things.\n\nObjects (or regions) near each other are more likely to be similar to one another Objects (or regions) that are distant from each other are more likely to be different from each other\nThis aspect of nature keeps coming up again and again in GIS!"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#sampling",
+    "href": "Spatial_Sampling_Methods/Slides.html#sampling",
+    "title": "Lecture Slides",
+    "section": "Sampling",
+    "text": "Sampling\n\n\nYou can think of sampling as the process of selecting points from within an area or population, called a sample frame.\n\nWe collect information about some within the sample frame\nBut we ignore most objects/locations\nThink back to Bonini’s Paradox\nHow we define our sample frame and choose our sample can determine the quality of our data\nWe want to maximize representativeness of the sample\nBut also minimize effort and expense associated with sampling"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#sampling-1",
+    "href": "Spatial_Sampling_Methods/Slides.html#sampling-1",
+    "title": "Lecture Slides",
+    "section": "Sampling",
+    "text": "Sampling\n\n\nScientific sampling requires that each element in the sample frame have a known and pre-specified chance of selection.\n\nIf some elements have a greater or lower chance of being selected our sample is said to be biased\nIf every element of interest has an equal chance of being selected our sample is said to be unbiased"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#random-sampling",
+    "href": "Spatial_Sampling_Methods/Slides.html#random-sampling",
+    "title": "Lecture Slides",
+    "section": "Random Sampling",
+    "text": "Random Sampling\n\n\nIn theory, a random sample is best. Its the “gold standard”.\n\nEach location has equal chance of being selected (Unbiased) Easy to do, randomly select 𝑥,𝑦 coordinates\nA foundational assumption of many statistical tests"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#random-sampling-1",
+    "href": "Spatial_Sampling_Methods/Slides.html#random-sampling-1",
+    "title": "Lecture Slides",
+    "section": "Random Sampling",
+    "text": "Random Sampling\n\n\nCan be difficult to implement in practice.\n\nThere is a chance, that all samples will miss important features\nMay be barriers to accessing some features\nRemote or rugged terrain\nPrivate or restricted property\nSystematic under-responses"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#random-sampling-2",
+    "href": "Spatial_Sampling_Methods/Slides.html#random-sampling-2",
+    "title": "Lecture Slides",
+    "section": "Random Sampling",
+    "text": "Random Sampling\n\n\nWe have some options to account for the drawbacks\n\nThe “law of large numbers”: as we collect more information, our sample will become increasingly representative of actual population values\nLarger sample sizes\nRepeated samples (aka “Bootstrapping”)\ne.g., Take 30 random samples of 100 individuals, calculate an average for each sample, then average across samples\nNot always practical\nRequires more time and resources"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#alternate-approaches-to-sampling",
+    "href": "Spatial_Sampling_Methods/Slides.html#alternate-approaches-to-sampling",
+    "title": "Lecture Slides",
+    "section": "Alternate Approaches to Sampling",
+    "text": "Alternate Approaches to Sampling\n\n\nBiased sampling\n\nCreate a sample design that trades a sampling scheme for randomness\nInduce bias to the sample to:\nSave time or resources\nAccount for relevant information about the sample frame"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#systematic-sampling",
+    "href": "Spatial_Sampling_Methods/Slides.html#systematic-sampling",
+    "title": "Lecture Slides",
+    "section": "Systematic Sampling",
+    "text": "Systematic Sampling\n\n\nA random starting point is chosen and a fixed sampling interval is used.\n\nRandomly select first of 3 students\nThen select every 3rd after that\nChoose a random starting point\nThen draw equally spaced grid"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#systematic-sampling-1",
+    "href": "Spatial_Sampling_Methods/Slides.html#systematic-sampling-1",
+    "title": "Lecture Slides",
+    "section": "Systematic Sampling",
+    "text": "Systematic Sampling\n\n\nA random starting point is chosen and a fixed sampling interval is used.\n\nGeneral premise behind remote sensing (satellite data collection)\nCan be a good for areas that contain few features and abrupt boundaries\ne.g., Agricultural fields\nNot ideal for attributes that exhibit periodicity\ne.g., Roads"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#systematic-sampling-2",
+    "href": "Spatial_Sampling_Methods/Slides.html#systematic-sampling-2",
+    "title": "Lecture Slides",
+    "section": "Systematic Sampling",
+    "text": "Systematic Sampling\n\n\nA random starting point is chosen and a fixed sampling interval is used.\n\nGeneral premise behind remote sensing (satellite data collection)\nCan be a good for areas that contain few features and abrupt boundaries\ne.g., Agricultural fields\nNot ideal for attributes that exhibit periodicity\ne.g., Roads"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#stratified-sampling",
+    "href": "Spatial_Sampling_Methods/Slides.html#stratified-sampling",
+    "title": "Lecture Slides",
+    "section": "Stratified Sampling",
+    "text": "Stratified Sampling\n\n\nHelps to address the issues with systematic sampling by sampling at random locations, but still applying some “systematic bias”\n\nCreate a systematic sampling grid, then take random samples within cells\nDivide a population by certain attributes, then take random samples from sub-populations\nGender, race, age, political party, etc."
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#stratified-sampling-1",
+    "href": "Spatial_Sampling_Methods/Slides.html#stratified-sampling-1",
+    "title": "Lecture Slides",
+    "section": "Stratified Sampling",
+    "text": "Stratified Sampling\n\n\nHelps to address the issues with systematic sampling by sampling at random locations, but still applying some “systematic bias”\n\nCan avoid over/under sampling regularly repeating features\nAccount for important factors"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#cluster-sampling",
+    "href": "Spatial_Sampling_Methods/Slides.html#cluster-sampling",
+    "title": "Lecture Slides",
+    "section": "Cluster Sampling",
+    "text": "Cluster Sampling\n\n\nIntense sampling of features in clusters around a number of selected locations\n\nLocations can be selected for specific features:\ne.g., Shopping centers, known history of invasive species\nOr, locations can be selected at random across the grid\nMore efficient use of time and resources\nMay not be representative"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#transect-sampling",
+    "href": "Spatial_Sampling_Methods/Slides.html#transect-sampling",
+    "title": "Lecture Slides",
+    "section": "Transect Sampling",
+    "text": "Transect Sampling\n\n\nMost commonly used along line features like roads, rivers\n\nAllows you to focus your efforts on features of interest\nRequires understanding of spatial structure for maximum effectiveness"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#how-many-samples",
+    "href": "Spatial_Sampling_Methods/Slides.html#how-many-samples",
+    "title": "Lecture Slides",
+    "section": "How Many Samples?",
+    "text": "How Many Samples?\n\n\nThe number of samples required is a function of how similar units of that population are.\n\nSpatial structure can vary wildly across a landscape\nA little knowledge of your study area will help you to establish ways to best stratify to maximize returns with minimal effort\nNeed to balance effective coverage with the cost (in $ or time)\nEg. short vs. long census form"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#spatial-autocorrelation",
+    "href": "Spatial_Sampling_Methods/Slides.html#spatial-autocorrelation",
+    "title": "Lecture Slides",
+    "section": "Spatial Autocorrelation",
+    "text": "Spatial Autocorrelation\n\n\nWhen the values of objects are related to the values of nearby objects.\n\nIf you know the value of one object, you can make a reasonable guess at the value of nearby objects\nThat doesn’t mean they are the same; Correlation does not imply causation!\nThere could be relationship between them, a relationship to a third object that determines the values of both, or a completely random coincidence"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#spatial-autocorrelation-1",
+    "href": "Spatial_Sampling_Methods/Slides.html#spatial-autocorrelation-1",
+    "title": "Lecture Slides",
+    "section": "Spatial Autocorrelation",
+    "text": "Spatial Autocorrelation"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#statistical-assumptions",
+    "href": "Spatial_Sampling_Methods/Slides.html#statistical-assumptions",
+    "title": "Lecture Slides",
+    "section": "Statistical Assumptions",
+    "text": "Statistical Assumptions\nSpatial autocorrelation is a problem when it comes to spatial statistics. Most statistics assume that there is no relationship between objects!\n\nIf you know the value of one object, you can make a reasonable guess at the value of nearby objects\nBy violating this assumption, we “break” many common statistics!\nFor this reason, a separate field of spatial statistics explores different ways of accessing similar information, or we acknowledge this as a flaw in our assumptions\nIt is also a benefit!: We can exploit spatial autocorrelation to our advantage\n\n::: ::::"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#statistical-interpolation",
+    "href": "Spatial_Sampling_Methods/Slides.html#statistical-interpolation",
+    "title": "Lecture Slides",
+    "section": "Statistical Interpolation",
+    "text": "Statistical Interpolation\nThe process of “filling in the blanks” that you just performed is called interpolation\n\nIf you know the value of one object, you can make a reasonable guess at the value of nearby objects\nOver a 2D or 3D surface we call this spatial interpolation\nIntelligent guesswork in which we attempt to make reasonable estimates of the values of a continuous field at places where we do not have measurements\n\n::: ::::"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#spatial-interpolation",
+    "href": "Spatial_Sampling_Methods/Slides.html#spatial-interpolation",
+    "title": "Lecture Slides",
+    "section": "Spatial Interpolation",
+    "text": "Spatial Interpolation\nSpatial interpolation only makes sense for a continuous field with numeric values.\n\nRainfall, temperature, pressure\nEstimate between weather stations\nElevation between measured locations\nWith qualitative data, this can be problematic\n\n::: :::{.column width=“50%”}\n\n::: ::::"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#spatial-interpolation-1",
+    "href": "Spatial_Sampling_Methods/Slides.html#spatial-interpolation-1",
+    "title": "Lecture Slides",
+    "section": "Spatial Interpolation",
+    "text": "Spatial Interpolation\nAll spatial interpolation methods incorporate distance to known samples.\n\nContinuous fields tend to exhibit strong positive spatial autocorrelation, it is reasonable to assume that missing values are likely to be similar to those around them in the field\nSound familiar? This is Tobler’s First Law!\nCloser samples may be given more weight than distant ones\nA threshold is usually set, to determine the maximum distance to take samples from\n\n::: ::::"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#inverse-distance-weighting",
+    "href": "Spatial_Sampling_Methods/Slides.html#inverse-distance-weighting",
+    "title": "Lecture Slides",
+    "section": "Inverse Distance Weighting",
+    "text": "Inverse Distance Weighting\nCalculates cell values based on nearby observations.\n\nWeight cells by distance from observation points\nMathematical expression of Tobler’s Law\n\n\n::: ::::"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#inverse-distance-weighting-1",
+    "href": "Spatial_Sampling_Methods/Slides.html#inverse-distance-weighting-1",
+    "title": "Lecture Slides",
+    "section": "Inverse Distance Weighting",
+    "text": "Inverse Distance Weighting\nBest applied to discrete samples of continuous quantitative variables.\n\nElevation\nTemperature\nPrecipitation\n\n::: :::{.column width=“50%”}\n\n::: ::::"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#kernel-density",
+    "href": "Spatial_Sampling_Methods/Slides.html#kernel-density",
+    "title": "Lecture Slides",
+    "section": "Kernel Density",
+    "text": "Kernel Density\nCalculates the “density” of discrete point observations/samples and converts to a raster surface\n\nShows the probability of occurrence at any given location\nWeight cells by “value” of points\nOften applied to counts of qualitative data\nDisease outbreaks\nCrime data\n\n::: :::{.column width=“50%”}\n\n::: ::::"
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#flattening-the-blue-marble",
+    "href": "Steps_of_Abstraction/Slides.html#flattening-the-blue-marble",
+    "title": "Lecture Slides",
+    "section": "Flattening the Blue Marble",
+    "text": "Flattening the Blue Marble\n\n\nThis is what earth looks like when you take a picture of it from 29,000 kilometers away.\n\nThis photo is called the Blue Marble, it was taken from Apollo 17"
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#flattening-the-blue-marble-1",
+    "href": "Steps_of_Abstraction/Slides.html#flattening-the-blue-marble-1",
+    "title": "Lecture Slides",
+    "section": "Flattening the Blue Marble",
+    "text": "Flattening the Blue Marble\n\n\nThis is the version that was published.\n\nNASA rotated the image 180 degrees to fit peoples expectations"
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#complexities-of-earth",
+    "href": "Steps_of_Abstraction/Slides.html#complexities-of-earth",
+    "title": "Lecture Slides",
+    "section": "Complexities of Earth",
+    "text": "Complexities of Earth\n\n\nA lumpy ball of rock flying through space.\n\nDespite what you may have been told\nThe earth isn’t round!\nIt has multiple distortions caused by:\nTopography\nGravity Differentials\nCentrifugal Force"
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#our-infinitely-complex-earth",
+    "href": "Steps_of_Abstraction/Slides.html#our-infinitely-complex-earth",
+    "title": "Lecture Slides",
+    "section": "Our Infinitely Complex Earth",
+    "text": "Our Infinitely Complex Earth\n\n\nCartographers have developed strategies for dealing with these distortions:\n\nTopography\nGravity Differentials\nCentrifugal Force"
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#ignore-topography",
+    "href": "Steps_of_Abstraction/Slides.html#ignore-topography",
+    "title": "Lecture Slides",
+    "section": "Ignore Topography!?",
+    "text": "Ignore Topography!?\n\n\nTopography is very localized, in most applications it isn’t explicitly needed to make a map.\n\nWe can account after the fact if needed\nDigital Elevation Models\n\n\n\nDEM of Mt. Everest"
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#ignore-topography-1",
+    "href": "Steps_of_Abstraction/Slides.html#ignore-topography-1",
+    "title": "Lecture Slides",
+    "section": "Ignore Topography!?",
+    "text": "Ignore Topography!?\n\n\nTopography is very localized, in most applications it isn’t explicitly needed to make a map.\n\nWe can account after the fact if needed\nDigital Elevation Models\nContour Lines\n\n\n\nContour lines, Golden Ears Trail"
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#the-geoid",
+    "href": "Steps_of_Abstraction/Slides.html#the-geoid",
+    "title": "Lecture Slides",
+    "section": "The Geoid",
+    "text": "The Geoid\n\n\nA simplified model of the Earth that ignores elevation differences due to topography.\n\nEarths crust is not uniformly dense, causes gravity differentials to form.\nDifferences in density cause the surface to “sink” down or “float” up\nContinental scale undulations, +85 m (Iceland) to −106 m (southern India)\n\n\n\nVertical scale exaggerated to show gravity induced elevation differences."
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#the-geoid-1",
+    "href": "Steps_of_Abstraction/Slides.html#the-geoid-1",
+    "title": "Lecture Slides",
+    "section": "The Geoid",
+    "text": "The Geoid\n\n\nA simplified model of the Earth that ignores elevation differences due to topography.\n\nGravity differences measured by satellites \n\n\n\nThe Geoid without vertical exaggeration."
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#the-oblate-spheroid",
+    "href": "Steps_of_Abstraction/Slides.html#the-oblate-spheroid",
+    "title": "Lecture Slides",
+    "section": "The Oblate Spheroid",
+    "text": "The Oblate Spheroid\n\n\nA fairly close approximation of Earth’s shape.\n\nDue to Centrifugal Force the earth is ~ 26 km wider at the equator"
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#datums",
+    "href": "Steps_of_Abstraction/Slides.html#datums",
+    "title": "Lecture Slides",
+    "section": "Datums",
+    "text": "Datums\n\n\nMeasuring distance/height requires a reference point.\n\nA Datum is the reference system we to do the fitting\nGives meaning to numbers/coordinates"
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#datums-1",
+    "href": "Steps_of_Abstraction/Slides.html#datums-1",
+    "title": "Lecture Slides",
+    "section": "Datums",
+    "text": "Datums\n\n\nFitting a spheroid to the geoid allows us to minimize elevation differences due to density differentials and account for effects of Centrifugal force, while ignoring topography.\n\nA Datum is the reference system we to do the fitting\nCan be Global or Local\n\n\n\nDatums give us a reference point to account for distortions"
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#global-datums",
+    "href": "Steps_of_Abstraction/Slides.html#global-datums",
+    "title": "Lecture Slides",
+    "section": "Global Datums",
+    "text": "Global Datums\n\n\nThe center of the earth is used as the reference point.\n\nFits the geoid fairly well everywhere"
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#local-datums",
+    "href": "Steps_of_Abstraction/Slides.html#local-datums",
+    "title": "Lecture Slides",
+    "section": "Local Datums",
+    "text": "Local Datums\n\n\nA point on the geoids surface is used as the reference point.\n\nFits geoid very well in one region"
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#does-the-datum-matter",
+    "href": "Steps_of_Abstraction/Slides.html#does-the-datum-matter",
+    "title": "Lecture Slides",
+    "section": "Does the Datum Matter?",
+    "text": "Does the Datum Matter?\n\n\nGenerally speaking:\n\nFor global maps, you always need a global datum\nA local datum is better for small areas like a city\nGlobal datums can be used, they just might shift things a bit"
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#does-the-datum-matter-1",
+    "href": "Steps_of_Abstraction/Slides.html#does-the-datum-matter-1",
+    "title": "Lecture Slides",
+    "section": "Does the Datum Matter?",
+    "text": "Does the Datum Matter?\n\n\nOnly minor differences between local and global datums in North America.\n\nFor most applications …\nThe choice of global vs. local is not really that important\nFor others, its very important\nAviation\nSelf driving cars"
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#geographic-coordinate-system",
+    "href": "Steps_of_Abstraction/Slides.html#geographic-coordinate-system",
+    "title": "Lecture Slides",
+    "section": "Geographic Coordinate System",
+    "text": "Geographic Coordinate System\n\n\nLatitude/Longitude is the primary Geographic Coordinate System (GSC) that we use to describe locations on the “the earth’s surface”\n\nLocation on a 3D object with just 2 numbers\nFixed to the surface of spheroid\nNot the actual earth’s surface"
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#latitude",
+    "href": "Steps_of_Abstraction/Slides.html#latitude",
+    "title": "Lecture Slides",
+    "section": "Latitude",
+    "text": "Latitude\n\n\nDistance in degrees form Equator:\n\nAngular distance between center of the earth and the equator\n-90°(South) to +90°(North)\nOften called parallels"
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#longitude",
+    "href": "Steps_of_Abstraction/Slides.html#longitude",
+    "title": "Lecture Slides",
+    "section": "Longitude",
+    "text": "Longitude\n\n\nDistance in degrees form the Prime Meridian:\n\nAngular distance between center of the earth and the prime meridian\n-180° (West); to +180° (East)\nOften called meridians"
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#latitude-longitude",
+    "href": "Steps_of_Abstraction/Slides.html#latitude-longitude",
+    "title": "Lecture Slides",
+    "section": "Latitude & Longitude",
+    "text": "Latitude & Longitude\n\n\nSometimes refereed to as a graticule.\nDegrees Minutes Seconds\n\nVancouver BC: 49°15′40″N 123°06′50″W\nSydney NSW: 33°51′54″S 151°12′34″E\n\nDecimal Degrees\n\nVancouver BC: 49.261111, -123.113889\nSydney NSW: -33.865, 151.209444"
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#an-important-caveat",
+    "href": "Steps_of_Abstraction/Slides.html#an-important-caveat",
+    "title": "Lecture Slides",
+    "section": "An Important Caveat!",
+    "text": "An Important Caveat!\n\n\nMeridians converge at the poles!\n\nDistance between degrees of longitude decreases with increasing latitude\nThis is the central issue with projecting a map!\nYou can’t accurately display a Geographic Coordinate System on a 2D surface (map/screen)."
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#making-a-flat-map",
+    "href": "Steps_of_Abstraction/Slides.html#making-a-flat-map",
+    "title": "Lecture Slides",
+    "section": "Making a Flat Map",
+    "text": "Making a Flat Map\n\n\nDisplaying Lat/Lon in 2D doesn’t work well\n\nCauses things to look “scrunched”\n\n\n\nWe have to Project our map.\n\nInvolves intentionally distorting the data to display it effectively in 2D"
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#projected-coordinate-systems",
+    "href": "Steps_of_Abstraction/Slides.html#projected-coordinate-systems",
+    "title": "Lecture Slides",
+    "section": "Projected Coordinate Systems",
+    "text": "Projected Coordinate Systems\n\n\nA map projection is a mathematical transformation used to flatten a GCS.\n\nImagine sending rays of light through the ellipsoid onto a flat surface, the resulting image is a projection"
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#making-a-flat-map-1",
+    "href": "Steps_of_Abstraction/Slides.html#making-a-flat-map-1",
+    "title": "Lecture Slides",
+    "section": "Making a Flat Map",
+    "text": "Making a Flat Map\n\n\nApplying a projection:\n\nConverts to linear units\nAllows distance/area calculations\nMakes things look better"
+  },
+  {
+    "objectID": "Steps_of_Abstraction/Slides.html#steps-of-abstraction-1",
+    "href": "Steps_of_Abstraction/Slides.html#steps-of-abstraction-1",
+    "title": "Lecture Slides",
+    "section": "Steps of Abstraction",
+    "text": "Steps of Abstraction"
+  },
+  {
+    "objectID": "The_Raster_Data_Model/Slides.html#raster-data-model-1",
+    "href": "The_Raster_Data_Model/Slides.html#raster-data-model-1",
+    "title": "Lecture Slides",
+    "section": "Raster Data Model",
+    "text": "Raster Data Model\n\n\nRepresents space continuously:\n\nRectangular grid of equally sized cells\nEach cell only has one value"
+  },
+  {
+    "objectID": "The_Raster_Data_Model/Slides.html#raster-data-model-2",
+    "href": "The_Raster_Data_Model/Slides.html#raster-data-model-2",
+    "title": "Lecture Slides",
+    "section": "Raster Data Model",
+    "text": "Raster Data Model\n\n\nMultiple attributes, require multiple bands * Standard color photos have three bands: + Red, green, & blue * LANDSAT8 has 11 bands: + “False Color Images” + Spectral Indices (NDVI)"
+  },
+  {
+    "objectID": "The_Raster_Data_Model/Slides.html#resolution-vs.-extent",
+    "href": "The_Raster_Data_Model/Slides.html#resolution-vs.-extent",
+    "title": "Lecture Slides",
+    "section": "Resolution vs. Extent",
+    "text": "Resolution vs. Extent\n\n\nResolution: (aka cell size) is the smallest resolvable feature.\n\n1 m x 1 m = 1 m2\n\nExtent: (aka domain) depends on number of rows and columns along with the cell size.\n\n5 rows x 5 columns = 25 cells\n1 m cell size\nCovers 5 m x 5 m = 25 m2"
+  },
+  {
+    "objectID": "The_Raster_Data_Model/Slides.html#resolution-vs.-extent-1",
+    "href": "The_Raster_Data_Model/Slides.html#resolution-vs.-extent-1",
+    "title": "Lecture Slides",
+    "section": "Resolution vs. Extent",
+    "text": "Resolution vs. Extent\n\n\nResolution: 10 m cell size = 100 m2 area per cell.\nExtent: varies with number of cells and cell size.\n\n\n\nRows\nColumns\nExtent\n\n\n\n\n5\n5\n50 m x 50 m = 2,500 m2\n\n\n5\n10\n50 m x 100 m = 5,000 m2\n\n\n100\n100\n1,000 m x 1,000 m = 1,000,000 m2"
+  },
+  {
+    "objectID": "The_Raster_Data_Model/Slides.html#mixed-pixel-problem",
+    "href": "The_Raster_Data_Model/Slides.html#mixed-pixel-problem",
+    "title": "Lecture Slides",
+    "section": "Mixed Pixel Problem",
+    "text": "Mixed Pixel Problem\nOne cell: one value\n\nWhat if it covers multiple values?\nA: Winner take all\nB: Cell center\nOther options?\nContainment - if a value of interest is anywhere within a cell\ne.g. invasive species presence\n\n::: :::{.column width=“50%”}\n\n::: ::::"
+  },
+  {
+    "objectID": "The_Raster_Data_Model/Slides.html#implications",
+    "href": "The_Raster_Data_Model/Slides.html#implications",
+    "title": "Lecture Slides",
+    "section": "Implications",
+    "text": "Implications\nLoss of information during rasterization.\n\nA “bigger” issue for larger cells.\nAt a certain point features become unrecognizable.\nHigher resolution = larger file for equivalent areas.\n\n::: :::{.column width=“50%”}\n\n::: ::::"
+  },
+  {
+    "objectID": "The_Raster_Data_Model/Slides.html#file-size",
+    "href": "The_Raster_Data_Model/Slides.html#file-size",
+    "title": "Lecture Slides",
+    "section": "File Size",
+    "text": "File Size\n\n\nThe number of cells per image dictates file size.\n\nCells = rows x columns x bands\nIncreases exponentially with resolution\nFor a given extent\nIncreases linearly with number of bands\n\n\n\n\n\nExtent\nBands\nCell Size\nNumber of Cells\n\n\n\n\n1x1km\n1\n100m\n100\n\n\n1x1km\n1\n1m\n1,000,000\n\n\n1x1km\n3\n100m\n300\n\n\n1x1km\n3\n1m\n3,000,000"
+  },
+  {
+    "objectID": "The_Raster_Data_Model/Slides.html#why-does-this-matter",
+    "href": "The_Raster_Data_Model/Slides.html#why-does-this-matter",
+    "title": "Lecture Slides",
+    "section": "Why does this matter?",
+    "text": "Why does this matter?\n\n\nDownloading, uploading, and processing times will all increase as the file size increases.\n\nLarge raster datasets are computationally “expensive”\nMore cells = more “overhead”\nPractically speaking, how will this impact you?"
+  },
+  {
+    "objectID": "The_Raster_Data_Model/Slides.html#metadata-in-arcpro",
+    "href": "The_Raster_Data_Model/Slides.html#metadata-in-arcpro",
+    "title": "Lecture Slides",
+    "section": "Metadata in ArcPro",
+    "text": "Metadata in ArcPro"
+  },
+  {
+    "objectID": "The_Raster_Data_Model/Slides.html#raster-overlay",
+    "href": "The_Raster_Data_Model/Slides.html#raster-overlay",
+    "title": "Lecture Slides",
+    "section": "Raster Overlay",
+    "text": "Raster Overlay\n\n\nRaster data can be used to evaluate algebraic expressions easily and efficiently.\n\nA: Winter Temperature\nB: Summer Temperature\nRange: B-A\nAverage: (A+B)/2"
+  },
+  {
+    "objectID": "The_Raster_Data_Model/Slides.html#raster-calculator",
+    "href": "The_Raster_Data_Model/Slides.html#raster-calculator",
+    "title": "Lecture Slides",
+    "section": "Raster Calculator",
+    "text": "Raster Calculator\n\n\nThe tool for this in Arc is called the “Raster Calculator”\n\nRaster layers can be “variables” in linear equations\nPerform simple calculations incorporating one or multiple layers\nIdeally, layers should have the same resolution and extent\nResampling is required if not\nOutput will be restricted to “smallest” extent"
+  },
+  {
+    "objectID": "The_Raster_Data_Model/Slides.html#key-advantages",
+    "href": "The_Raster_Data_Model/Slides.html#key-advantages",
+    "title": "Lecture Slides",
+    "section": "Key Advantages",
+    "text": "Key Advantages\n\n\nThe raster data model is well suited for continuous phenomena:\n\nContinuous in space\nComplete coverage within the domain (extent), everywhere has a value\nContinuous in space and time\nBands can be used to represent time steps\nCommon tool approach for climate data\ni.e., bands 1, 2, 3 … could represent mean Jan, Feb, Mar temperatures\nSimple data structure makes raster overlay easy and efficient\nMultiple raster layers can be combined and evaluated using expressions\nEasy to “show” others what has been done"
+  },
+  {
+    "objectID": "The_Raster_Data_Model/Slides.html#geotiff",
+    "href": "The_Raster_Data_Model/Slides.html#geotiff",
+    "title": "Lecture Slides",
+    "section": "GeoTIFF",
+    "text": "GeoTIFF\nOne of the most common/functional raster formats, based of the Tag Image File Format (TIFF). A TIFF file stores metadata (data about the data) as tags. A GeoTIFF is a standard .tif image format plus additional tags spatial tags denoting spatial information including:\n\nExtent (minimum x,y and maximum x,y)\nResolution (cell size)\nProjection, Coordinate system, and datum\n\n::: ::::"
+  },
+  {
+    "objectID": "The_Raster_Data_Model/Slides.html#other-file-types",
+    "href": "The_Raster_Data_Model/Slides.html#other-file-types",
+    "title": "Lecture Slides",
+    "section": "Other file types",
+    "text": "Other file types\nRaster data can come in many different formats. You will likely encounter when working with raster data include:\n\nIMG - A proprietary image format commonly used by ESRI products\nJPEG2000 - A geospatial version of the common .jpg image type\nASCII - An older human readable format (simple text file) with slower performance than the types listed above\n\n::: ::::"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#vector-data-model-1",
+    "href": "The_Vector_Data_Model/Slides.html#vector-data-model-1",
+    "title": "Lecture Slides",
+    "section": "Vector Data Model",
+    "text": "Vector Data Model\n\n\nRepresents space discretely:\n\nObjects delineated using sets of coordinate pairs.\nLinked to descriptive attributes\nMany attributes per object"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#points",
+    "href": "The_Vector_Data_Model/Slides.html#points",
+    "title": "Lecture Slides",
+    "section": "Points",
+    "text": "Points\n\n\nA point feature is an individual x, y coordinate pair representing a precise location.\n\n“Zero-dimensional”\nNo length, width, or area"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#points-1",
+    "href": "The_Vector_Data_Model/Slides.html#points-1",
+    "title": "Lecture Slides",
+    "section": "Points",
+    "text": "Points\n\n\nPoints are great for representing a variety of objects, depending on the scale:\nAlmost Any Scale* Trees * Stop signs * Fire hydrants"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#points-2",
+    "href": "The_Vector_Data_Model/Slides.html#points-2",
+    "title": "Lecture Slides",
+    "section": "Points",
+    "text": "Points\n\n\nPoints are great for representing a variety of objects, depending on the scale:\nAlmost Any Scale* Trees * Stop signs * Fire hydrants\nSmaller Scales* Cities * Wild Fires * Airports"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#lines",
+    "href": "The_Vector_Data_Model/Slides.html#lines",
+    "title": "Lecture Slides",
+    "section": "Lines",
+    "text": "Lines\n\n\nA line feature is a set of connected points. Must have a start and end point. May have middle points (vertices).\n\nOne-dimensional\nLength\nNo width or area"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#lines-1",
+    "href": "The_Vector_Data_Model/Slides.html#lines-1",
+    "title": "Lecture Slides",
+    "section": "Lines",
+    "text": "Lines\n\n\nLines are also great for representing a variety of objects, depending on the scale:\nAlmost Any Scale* Hiking trails * Power lines * Water pipes"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#lines-2",
+    "href": "The_Vector_Data_Model/Slides.html#lines-2",
+    "title": "Lecture Slides",
+    "section": "Lines",
+    "text": "Lines\n\n\nLines are also great for representing a variety of objects, depending on the scale:\nAlmost Any Scale* Hiking trails * Power lines * Water pipes\nSmaller Scales* Roads * Rivers * Storm tracks"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#polygons",
+    "href": "The_Vector_Data_Model/Slides.html#polygons",
+    "title": "Lecture Slides",
+    "section": "Polygons",
+    "text": "Polygons\n\n\nA polygon feature consist of a set of three or more vertices connected by line segments (edges) that form an enclosed shape.\n\nTwo-dimensional\nLength & width\nArea"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#polygons-1",
+    "href": "The_Vector_Data_Model/Slides.html#polygons-1",
+    "title": "Lecture Slides",
+    "section": "Polygons",
+    "text": "Polygons\n\n\nPreferred for many objects depending on scale:\nAlmost Any Scale* Climate units * Lakes * Political boundaries"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#polygons-2",
+    "href": "The_Vector_Data_Model/Slides.html#polygons-2",
+    "title": "Lecture Slides",
+    "section": "Polygons",
+    "text": "Polygons\n\n\nPreferred for many objects depending on scale:\nAlmost Any Scale* Climate units * Lakes * Political boundaries\nLarger Scales* Buildings * Roads * Cities"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#interior-rings",
+    "href": "The_Vector_Data_Model/Slides.html#interior-rings",
+    "title": "Lecture Slides",
+    "section": "Interior Rings",
+    "text": "Interior Rings\n\n\nAll polygons are an enclosed shape. Some can also have interior rings (holes).\n\nEach ring is a separate set of vertices and edges within the polygon\nInterior rings cannot overlap"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#multi-part-objects",
+    "href": "The_Vector_Data_Model/Slides.html#multi-part-objects",
+    "title": "Lecture Slides",
+    "section": "Multi-part Objects",
+    "text": "Multi-part Objects\n\n\nWhen an object has multiple parts, the vector model allows for:\n\nMulti-polygons\nMulti-lines\nMulti-points"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#resolution",
+    "href": "The_Vector_Data_Model/Slides.html#resolution",
+    "title": "Lecture Slides",
+    "section": "Resolution",
+    "text": "Resolution\n\n\nData resolution also applies to the vector model:\n\nLess straightforward than for raster model\nSpacing between vertices\nSmallest resolvable feature\nHigher resolution = larger filed size"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#attributes",
+    "href": "The_Vector_Data_Model/Slides.html#attributes",
+    "title": "Lecture Slides",
+    "section": "Attributes",
+    "text": "Attributes\n\n\nNon-spatial data can be stored in an Attribute Table separate from the spatial data.\n\nAttributes are linked by an index\nThe index is a unique identifier\nNo two objects can have the same index\nOften labelled as the “FID” in Arc"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#attributes-1",
+    "href": "The_Vector_Data_Model/Slides.html#attributes-1",
+    "title": "Lecture Slides",
+    "section": "Attributes",
+    "text": "Attributes"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#attributes-2",
+    "href": "The_Vector_Data_Model/Slides.html#attributes-2",
+    "title": "Lecture Slides",
+    "section": "Attributes",
+    "text": "Attributes\n\n\nNon-spatial data can be stored in an Attribute Table separate from the spatial data.\n\nAttributes are linked by an index\nThe index is a unique identifier\nNo two objects can have the same index\nOften labelled as the “FID” in Arc\nAbility to store many attributes\nLess redundancy than raster model\nEasy to add new attributes"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#loss-of-variability",
+    "href": "The_Vector_Data_Model/Slides.html#loss-of-variability",
+    "title": "Lecture Slides",
+    "section": "Loss of Variability",
+    "text": "Loss of Variability\nSimilar to the mixed pixel problem, all space within a polygon (or along a line) is treated as homogenous\n\nWhat a unit covers multiple values?\nAny variability is lost and the unit is treated as homogenous\n\n\n::: ::::"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#vector-overlay",
+    "href": "The_Vector_Data_Model/Slides.html#vector-overlay",
+    "title": "Lecture Slides",
+    "section": "Vector Overlay",
+    "text": "Vector Overlay\n\n\nVector overlay operations are more computationally expensive than raster overlay.\n\nInvolves calculating the relative positions of ever point/vertex in every layer to determine overlap, containment, etc.\nMany different operations depending on needs"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#field-calculator",
+    "href": "The_Vector_Data_Model/Slides.html#field-calculator",
+    "title": "Lecture Slides",
+    "section": "Field Calculator",
+    "text": "Field Calculator\n\n\nThe tool in Arc for performing calculations in the attribute table\n\nFields can be “variables” in linear equations\nWon’t update if field values change\nNot always easy to use or intuitive\nLacks some basic functionality\nCan’t calculate the sum of a column without extra steps"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#topology",
+    "href": "The_Vector_Data_Model/Slides.html#topology",
+    "title": "Lecture Slides",
+    "section": "Topology",
+    "text": "Topology\n\n\nThe spatial relationships between geographic features.\n\nAn important aspect of network analysis (route finding)\nGoogle maps uses topology every time you search for directions\nDifferent rules for different features (pedestrian, car, transit)\nWe can specify rules e.g.:\nPolygons (i.e. buildings) cannot overlap\nPoints (i.e. fire hydrants) must be attached to lines (i.e. water mains)"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#key-advantages",
+    "href": "The_Vector_Data_Model/Slides.html#key-advantages",
+    "title": "Lecture Slides",
+    "section": "Key Advantages",
+    "text": "Key Advantages\n\n\nThe vector data model is well suited for discrete objects:\n\nThe compact data structure allows for smaller file sizes relative to the raster dta model\nEasy to query and select by attributes\nTopology (connectivity)\nProximity & Network Analysis\nGraphic output is usually “cleaner”\nFor final production maps, often useful to convert to vector format"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#shapefiles",
+    "href": "The_Vector_Data_Model/Slides.html#shapefiles",
+    "title": "Lecture Slides",
+    "section": "Shapefiles",
+    "text": "Shapefiles\nOne of the most common file types you will encounter, stores the coordinates of vertices plus metadata. Identified by a .shp tag.\n\nObject type: points/multi-points, lines/multi-lines, or polygons/multi-polygons.\nOnly one type per .shp!\nCoordinate reference system (CRS).\nAttribute table.\n\n::: ::::"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#geojson",
+    "href": "The_Vector_Data_Model/Slides.html#geojson",
+    "title": "Lecture Slides",
+    "section": "GeoJSON",
+    "text": "GeoJSON\nA simple, lightweight format for most commonly encountered in web mapping. Identified by a .json tag.\n\nUnlike shapefiles, a GeoJSON can mix of geometries.\nEncoded stylistic choices in the file.\nLarger File Size\nAn Example)\n\n::: ::::"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#text-data",
+    "href": "The_Vector_Data_Model/Slides.html#text-data",
+    "title": "Lecture Slides",
+    "section": "Text Data",
+    "text": "Text Data\n\n\nPoint objects can be stored as simple text flies.\n\nDoes not work for lines or polygons\n\n\n\n\n\n\n\n\n\n\n\nName\nProvince\nClimate ID\nLatitude (Decimal Degrees)\nLongitude (Decimal Degrees)\n\n\nACTIVE PASS\nBRITISH COLUMBIA\n1010066\n48.87\n-123.28\n\n\nALBERT HEAD\nBRITISH COLUMBIA\n1010235\n48.40\n-123.48\n\n\nBAMBERTON OCEAN CEMENT\nBRITISH COLUMBIA\n1010595\n48.58\n-123.52\n\n\nBEAR CREEK\nBRITISH COLUMBIA\n1010720\n48.50\n-124.00\n\n\nBEAVER LAKE\nBRITISH COLUMBIA\n1010774\n48.50\n-123.35\n\n\nBECHER BAY\nBRITISH COLUMBIA\n1010780\n48.33\n-123.63\n\n\nBRENTWOOD BAY 2\nBRITISH COLUMBIA\n1010960\n48.60\n-123.47\n\n\nBRENTWOOD CLARKE ROAD\nBRITISH COLUMBIA\n1010961\n48.57\n-123.45\n\n\nBRENTWOOD W SAANICH RD\nBRITISH COLUMBIA\n1010965\n48.57\n-123.43\n\n\nCENTRAL SAANICH VEYANESS\nBRITISH COLUMBIA\n1011467\n48.58\n-123.42"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#uncertainty",
+    "href": "Uncertainty_in_GIS/Slides.html#uncertainty",
+    "title": "Lecture Slides",
+    "section": "Uncertainty",
+    "text": "Uncertainty\nArises from our inability to measure phenomena perfectly and flaws in our conceptual models.\n\nData quality: Instrument limitations, sampling costs, etc.\nGeneralizations when representing phenomena: i.e., Bonini’s Paradox\nIncomplete knowledge, misunderstandings, biases, etc.\n\n\n::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#data-quality",
+    "href": "Uncertainty_in_GIS/Slides.html#data-quality",
+    "title": "Lecture Slides",
+    "section": "Data Quality",
+    "text": "Data Quality\nThere is no standardized measure of data quality in GIS.\n\nFlaws may pass through many users before discovery.\nMust trust the data was collected and processed correctly.\nRisk of the users misinterpreting valid products.\n\n\nWhen baking mistakes are obvious.\nOften in GIS, they are not.\n::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#data-quality-1",
+    "href": "Uncertainty_in_GIS/Slides.html#data-quality-1",
+    "title": "Lecture Slides",
+    "section": "Data Quality",
+    "text": "Data Quality\n\n\nData must be assessed on a case by case basis.\n\nIs the resolution of the data sufficient for the scale of my analysis?\nIs this the most up to date version of this dataset?\nCan I trust the organization publishing this data?"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#error-accuracy-precision",
+    "href": "Uncertainty_in_GIS/Slides.html#error-accuracy-precision",
+    "title": "Lecture Slides",
+    "section": "Error: Accuracy & Precision",
+    "text": "Error: Accuracy & Precision\n\n\nThe terms are related, but the distinction is very important.\nAccuracy: The degree to which a set of measurements correctly matches the real world values. * How close is the measurement to the real value?\nPrecision: The degree of agreement between multiple measurements of the same real world phenomena. * How repeatable is the measurement?"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#error-accuracy-precision-1",
+    "href": "Uncertainty_in_GIS/Slides.html#error-accuracy-precision-1",
+    "title": "Lecture Slides",
+    "section": "Error: Accuracy & Precision",
+    "text": "Error: Accuracy & Precision\n\nAccuracy: A systematic (consistent) offset from the real world value; errors have a bias.\nPrecision: A random offset from the real world value; errors are unbiased\n\n\nAccuracy and precision can be quantified.\n::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#quantifying-error",
+    "href": "Uncertainty_in_GIS/Slides.html#quantifying-error",
+    "title": "Lecture Slides",
+    "section": "Quantifying Error",
+    "text": "Quantifying Error\nStatistical methods can be used to quantify error.\n\nThese measures won’t tell us for sure that we are correct, but they can give us some insight.\n\n\nWe can quantify any offset (bias) and the spread of the measurements (unbiased).\n::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#quantifying-accuracy",
+    "href": "Uncertainty_in_GIS/Slides.html#quantifying-accuracy",
+    "title": "Lecture Slides",
+    "section": "Quantifying Accuracy",
+    "text": "Quantifying Accuracy\nMean Absolute Error (MAE):\n\nThe absolute value of the error averaged across all samples.\nHow close the samples (observations or estimate) are to be to the true values.\n\n\\(MAE = \\frac{\\sum\\_{i=1}^N \\lvert{x\\_i-t\\_i}\\rvert}{N}\\)\n\\(x\\_i\\) = the ith sample value\n\\(t\\_i\\) = the ith true value\n\\(N\\) = the total number of samples\n::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#quantifying-accuracy-1",
+    "href": "Uncertainty_in_GIS/Slides.html#quantifying-accuracy-1",
+    "title": "Lecture Slides",
+    "section": "Quantifying Accuracy",
+    "text": "Quantifying Accuracy\nMean Squared Error (MSE):\n\nThe squared error averaged across all samples.\nSimilar to MAE, but more harshly penalizes large deviations.\nMSE is not in the same units as the original data.\n\n\\(MSE = \\frac{\\sum\\_{i=1}^N \\left({x\\_i-t\\_i}\\right)^2}{N}\\)\n\\(x\\_i\\) = the ith sample value\n\\(t\\_i\\) = the ith true value\n\\(N\\) = the total number of samples\n::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#quantifying-accuracy-2",
+    "href": "Uncertainty_in_GIS/Slides.html#quantifying-accuracy-2",
+    "title": "Lecture Slides",
+    "section": "Quantifying Accuracy",
+    "text": "Quantifying Accuracy\nRoot Mean Squared Error (RMSE):\n\nThe square root of the squared error averaged across all samples.\nSame as MSE, except:\nWith the square root, RMSE is in the same units as the original data.\n\n\\(RMSE = \\sqrt{\\frac{\\sum\\_{i=1}^N \\left({x\\_i-t\\_i}\\right)^2}{N}}\\)\n\\(x\\_i\\) = the ith sample value\n\\(t\\_i\\) = the ith true value\n\\(N\\) = the total number of samples\n::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#quantifying-precision",
+    "href": "Uncertainty_in_GIS/Slides.html#quantifying-precision",
+    "title": "Lecture Slides",
+    "section": "Quantifying Precision",
+    "text": "Quantifying Precision\nStandard Deviation (\\(\\sigma\\)):\n\nThe square root of squared deviation averaged across all samples.\nsimilar to RMSE, except:\nInstead of characterizing error, it the dispersion of a dataset.\n\n\\(\\sigma=\\sqrt{\\frac{\\sum\\_{i=1}^N \\left({x\\_i-\\overline{X}}\\right)^2}{N}}\\)\n\\(x\\_i\\) = the ith sample value\n\\(\\overline{X}\\) = the mean of all samples\n\\(N\\) = the total number of samples\n::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#quantifying-precision-1",
+    "href": "Uncertainty_in_GIS/Slides.html#quantifying-precision-1",
+    "title": "Lecture Slides",
+    "section": "Quantifying Precision",
+    "text": "Quantifying Precision\nConfidence Intervals (CI):\n\nUsed to convey our confidence in the estimated average value.\nIf the \\(x\\) values are close together, we have higher confidence in \\(\\overline{X}\\).\nIf the \\(x\\) values are more dispersed, we have lower confidence in \\(\\overline{X}\\).\n\n\\(CI = \\frac{\\sigma}{\\sqrt{N}} z\\)\n\\(\\sigma\\) = the standard deviation\n\\(N\\) = the total number of samples\n\\(z\\) = a z-score\n::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#quantifying-precision-2",
+    "href": "Uncertainty_in_GIS/Slides.html#quantifying-precision-2",
+    "title": "Lecture Slides",
+    "section": "Quantifying Precision",
+    "text": "Quantifying Precision\nConfidence Intervals (CI):\n\nFor Normally Distributed data:\nCan be used to specify a confidence level (i.e., 90%, 95%, etc).\nTypically presented as a range around the mean.\n\n\n::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#quantifying-precision-3",
+    "href": "Uncertainty_in_GIS/Slides.html#quantifying-precision-3",
+    "title": "Lecture Slides",
+    "section": "Quantifying Precision",
+    "text": "Quantifying Precision\nInter Quartile Range (IQR):\n\nFor Non-normally Distributed data:\nCannot be used to specify a confidence level.\nBut it can give us some idea of the dispersion in a dataset.\n\n\n::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#vagueness-and-ambiguity",
+    "href": "Uncertainty_in_GIS/Slides.html#vagueness-and-ambiguity",
+    "title": "Lecture Slides",
+    "section": "Vagueness and Ambiguity",
+    "text": "Vagueness and Ambiguity\n\n\nThe terms are related, but the distinction is very important.\nVagueness: When something is not clearly stated or defined. * Arises when boundaries or labels are poorly defined.\nAmbiguity: When something can reasonably be interpreted in multiple ways. * Arises when terms or labels can apply to multiple features."
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#vagueness",
+    "href": "Uncertainty_in_GIS/Slides.html#vagueness",
+    "title": "Lecture Slides",
+    "section": "Vagueness",
+    "text": "Vagueness\n\nWhat does “London” refer to:\nLondon, UK?\nLondon, Ontario?\nLondon Drugs?\nThe word “bank”:\nA financial institution?\nThe edge of a river?\n\n\n::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#ambiguity",
+    "href": "Uncertainty_in_GIS/Slides.html#ambiguity",
+    "title": "Lecture Slides",
+    "section": "Ambiguity",
+    "text": "Ambiguity\n\nInterpretation requires context.\nWhere does a forest end and a grassland begin?\nThe position of objects are unclear or changeable.\nCoastal boundary file - High tide? Low tide? Mean water level?\n\n\n::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#qualifying-vagueness-and-ambiguity",
+    "href": "Uncertainty_in_GIS/Slides.html#qualifying-vagueness-and-ambiguity",
+    "title": "Lecture Slides",
+    "section": "Qualifying Vagueness and Ambiguity",
+    "text": "Qualifying Vagueness and Ambiguity\n\n\nAmbiguity and vagueness are difficult to quantify numerically. But they still must be addressed whenever possible..\nThe key with these issues: * Present things clearly and thoroughly. Be explicit and transparent when conducting and communicating your work."
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#measurements",
+    "href": "Uncertainty_in_GIS/Slides.html#measurements",
+    "title": "Lecture Slides",
+    "section": "Measurements",
+    "text": "Measurements\n\n\nSome sources of error are out of our control. The instruments we use to collect data can only so precise.\n\nIt is actually impossible to know all the physical quantities of an object.\nHeisenberg Uncertainty Principle: you cannot concurrently measure a particles exact position and momentum!"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#data-resolution",
+    "href": "Uncertainty_in_GIS/Slides.html#data-resolution",
+    "title": "Lecture Slides",
+    "section": "Data Resolution",
+    "text": "Data Resolution\n\n\nThe concentration of samples in space and time dictates the level of accuracy & precision you can attain. * Lower resolution data is by definition less precise, but not necessarily less accurate. * High resolution data can be very precise, but have a significant bias. * What do you do if your data are collected at different resolutions? * Low resolution result in vagueness & ambiguity."
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#data-entry",
+    "href": "Uncertainty_in_GIS/Slides.html#data-entry",
+    "title": "Lecture Slides",
+    "section": "Data Entry",
+    "text": "Data Entry\n\n\nThings we do have some control over: * Input datasets & sample sizes. * Typos during tabular data entry. * Digitizing errors when creating vector features. + Gaps: there should be a feature, but there is not. + Overlaps: one polygon sits over another polygon. + Slivers: a feature is created between two features when it should not be."
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#digitization-errors",
+    "href": "Uncertainty_in_GIS/Slides.html#digitization-errors",
+    "title": "Lecture Slides",
+    "section": "Digitization Errors",
+    "text": "Digitization Errors\nErrors that arise when creating vector features: * Slivers: a feature is created between two features when it should not be. * Gaps: there should be a feature, but there is not. * Overlaps: one polygon sits over another polygon.\n\nmissing::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#digitization-errors-1",
+    "href": "Uncertainty_in_GIS/Slides.html#digitization-errors-1",
+    "title": "Lecture Slides",
+    "section": "Digitization Errors",
+    "text": "Digitization Errors\nErrors that arise when creating vector features: * Under/overshoots: vertex misses a connection. * Extra nodes: unnecessary vertices. * Missing features: features or attributes missing.\n\nmissing::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#labels-and-boundaries",
+    "href": "Uncertainty_in_GIS/Slides.html#labels-and-boundaries",
+    "title": "Lecture Slides",
+    "section": "Labels and Boundaries",
+    "text": "Labels and Boundaries\n\n\nSince geographic phenomena often don’t have clear, natural units, we are often forced to assign zones and labels in our work (i.e. Census Data). * A convenient way of simplifying complex processes. * Often vague and/or ambiguous. * May be difficult to defend because they are arbitrary. * Where to draw a boundary and what to call a zone are likely to vary significantly between different people/groups."
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#data-aggregation",
+    "href": "Uncertainty_in_GIS/Slides.html#data-aggregation",
+    "title": "Lecture Slides",
+    "section": "Data Aggregation",
+    "text": "Data Aggregation\n\n\nMuch of the data we use to learn about society is collected in aggregate. We take average values for many individuals within a group or area (i.e. Census Data). * Lets us explore the general attributes (e.g. mean, median, etc.) for each group/area. * Compare the attributes between different groups or regions * Determine the allocation of resources."
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#conversion-and-processing",
+    "href": "Uncertainty_in_GIS/Slides.html#conversion-and-processing",
+    "title": "Lecture Slides",
+    "section": "Conversion and Processing",
+    "text": "Conversion and Processing\n\n\nEven with “perfect” data; GIS operations can add uncertainty:\n\nRe-projecting to different coordinate systems.\nConverting between data types.\nPerform generalizations (i.e. data classification)\n\n\n\n\nmissing"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#logical-fallacies",
+    "href": "Uncertainty_in_GIS/Slides.html#logical-fallacies",
+    "title": "Lecture Slides",
+    "section": "Logical Fallacies",
+    "text": "Logical Fallacies\n\n\nA flaw in our reasoning that undermines the logic of our argument.\n\nCan be made both by accident and on purpose.\nOften lacking evidence to support the claims/decisions made, or evidence is presented in a misleading way.\n“Hasty generalizations” are an example of logical fallacies:\n‘I saw a violent protester on TV … Protesters are inciting violence.’"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#ecological-fallacy",
+    "href": "Uncertainty_in_GIS/Slides.html#ecological-fallacy",
+    "title": "Lecture Slides",
+    "section": "Ecological Fallacy",
+    "text": "Ecological Fallacy\n\n\nApplying data collected/presented in aggregate for a group/region and applying it to an individual or specific place.\n\nYou cannot make an assumption about individuals within a group based on the aggregate data for that group.\nCensus data is averaged for an area, the information about individual values is lost.\nBasically - don’t make assumptions about individuals."
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#atomistic-fallacy",
+    "href": "Uncertainty_in_GIS/Slides.html#atomistic-fallacy",
+    "title": "Lecture Slides",
+    "section": "Atomistic Fallacy",
+    "text": "Atomistic Fallacy\n\n\nOccurs when we take aggregated data and aggregate it again at a higher level.\n\nTake the average income by census DA for the city of Vancouver.\nAverage those across the city Vancouver, and you won’t get the correct value.\nYou are comparing across units of different sizes/populations"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#atomistic-fallacy-1",
+    "href": "Uncertainty_in_GIS/Slides.html#atomistic-fallacy-1",
+    "title": "Lecture Slides",
+    "section": "Atomistic Fallacy",
+    "text": "Atomistic Fallacy\n\nmissingSee here for a proof\n::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#atomistic-fallacy-2",
+    "href": "Uncertainty_in_GIS/Slides.html#atomistic-fallacy-2",
+    "title": "Lecture Slides",
+    "section": "Atomistic Fallacy",
+    "text": "Atomistic Fallacy\nThe US Electoral College is an example of this in practice:\n\nTotaling votes per state.\n… then totaling “delegates” by state.\n\n\nmissing::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#modifiable-areal-unit-problem",
+    "href": "Uncertainty_in_GIS/Slides.html#modifiable-areal-unit-problem",
+    "title": "Lecture Slides",
+    "section": "Modifiable Areal Unit Problem",
+    "text": "Modifiable Areal Unit Problem\nModifiable, arbitrary boundaries can have a significant impact on descriptive statistics for areas. * When areas are grouped together, the way you choose to group them can change the values of the groups. * See this video for more context.\n\nmissing::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#modifiable-areal-unit-problem-1",
+    "href": "Uncertainty_in_GIS/Slides.html#modifiable-areal-unit-problem-1",
+    "title": "Lecture Slides",
+    "section": "Modifiable Areal Unit Problem",
+    "text": "Modifiable Areal Unit Problem\nData collected at a finer level of detail is being combined into larger areas of lower detail that can be manipulated. * Used to imply things that are not necessarily true. * Serious ethical implications. * Gerrymandering is a prime example.\n\nmissing::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#modifiable-areal-unit-problem-2",
+    "href": "Uncertainty_in_GIS/Slides.html#modifiable-areal-unit-problem-2",
+    "title": "Lecture Slides",
+    "section": "Modifiable Areal Unit Problem",
+    "text": "Modifiable Areal Unit Problem\n\nmissing::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#modifiable-areal-unit-problem-3",
+    "href": "Uncertainty_in_GIS/Slides.html#modifiable-areal-unit-problem-3",
+    "title": "Lecture Slides",
+    "section": "Modifiable Areal Unit Problem",
+    "text": "Modifiable Areal Unit Problem\n\nmissing::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#modifiable-areal-unit-problem-4",
+    "href": "Uncertainty_in_GIS/Slides.html#modifiable-areal-unit-problem-4",
+    "title": "Lecture Slides",
+    "section": "Modifiable Areal Unit Problem",
+    "text": "Modifiable Areal Unit Problem\n\nmissing::: ::::"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#error-propagation",
+    "href": "Uncertainty_in_GIS/Slides.html#error-propagation",
+    "title": "Lecture Slides",
+    "section": "Error Propagation",
+    "text": "Error Propagation\nErrors are cumulative: * Uncertainty will propagate through the model/system.\n\nmissing::: ::::"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#vector-analysis-methods-1",
+    "href": "Vector_Analysis_Methods/Slides.html#vector-analysis-methods-1",
+    "title": "Lecture Slides",
+    "section": "Vector Analysis Methods",
+    "text": "Vector Analysis Methods\n\n\nMany operations can be done with vector data.\n\nSome methods are very similar.\nDistinctions between methods can be subtle, but important.\nCan complete the same tasks, but need slight changes to a workflow.\nTypically in GIS there are multiple ways to get the same answers.\nSome “routes” are just more direct."
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#querying-attributes",
+    "href": "Vector_Analysis_Methods/Slides.html#querying-attributes",
+    "title": "Lecture Slides",
+    "section": "Querying Attributes",
+    "text": "Querying Attributes\n\n\nFinding features of interest based on attributes.\n\nA good way to reduce data volumes, export queries to new layers\nIn ArcGIS Pro you can Select by Attribute\nUses SQL (Structured Query Language)\nCheck equality, relative magnitude, etc.\nCombined with operators: AND / OR\nIf we’re only interested in historic residential buildings:\nWhere “YEAR BUILT” ≤ 1950 AND “TYPE” = “Residential”\nSave as a new layer, won’t have to search through all the objects every time."
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#select-by-attribute",
+    "href": "Vector_Analysis_Methods/Slides.html#select-by-attribute",
+    "title": "Lecture Slides",
+    "section": "Select by Attribute",
+    "text": "Select by Attribute\n\n\nSample SQL queries\n\nWhere “SPECIES” = “Pine”\nWhere “SPECIES” ≠ “Pine”\nWhere “HEIGHT” ≤ 5\nWhere “SPECIES” = “Pine” AND “HEIGHT” ≤ 5\nWhere “SPECIES” = “Pine” fc0314OR “HEIGHT” ≤ 5\n\n\n\n\n\nSpecies\nAge\nHeight\n\n\nPine\n10\n5\n\n\nPine\n95\n28\n\n\nOak\n200\n25\n\n\nOak\n5\n4"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#select-by-attribute-1",
+    "href": "Vector_Analysis_Methods/Slides.html#select-by-attribute-1",
+    "title": "Lecture Slides",
+    "section": "Select by Attribute",
+    "text": "Select by Attribute\n\n\nSample SQL queries\n\nWhere “SPECIES” = “Pine”\nWhere “SPECIES” ≠ “Pine”\nWhere “HEIGHT” ≤ 5\nWhere “SPECIES” = “Pine” AND “HEIGHT” ≤ 5\nWhere “SPECIES” = “Pine” OR “HEIGHT” ≤ 5\n\n\n\n\n\nSpecies\nAge\nHeight\n\n\nPine\n10\n5\n\n\nPine\n95\n28\n\n\nOak\n200\n25\n\n\nOak\n5\n4"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#select-by-attribute-2",
+    "href": "Vector_Analysis_Methods/Slides.html#select-by-attribute-2",
+    "title": "Lecture Slides",
+    "section": "Select by Attribute",
+    "text": "Select by Attribute\n\n\nSample SQL queries\n\nWhere “SPECIES” = “Pine”\nWhere “SPECIES” ≠ “Pine”\nWhere “HEIGHT” ≤ 5\nWhere “SPECIES” = “Pine” AND “HEIGHT” ≤ 5\nWhere “SPECIES” = “Pine” OR “HEIGHT” ≤ 5\n\n\n\n\n\nSpecies\nAge\nHeight\n\n\nPine\n10\n5\n\n\nPine\n95\n28\n\n\nOak\n200\n25\n\n\nOak\n5\n4"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#select-by-attribute-3",
+    "href": "Vector_Analysis_Methods/Slides.html#select-by-attribute-3",
+    "title": "Lecture Slides",
+    "section": "Select by Attribute",
+    "text": "Select by Attribute\n\n\nSample SQL queries\n\nWhere “SPECIES” = “Pine”\nWhere “SPECIES” ≠ “Pine”\nWhere “HEIGHT” ≤ 5\nWhere “SPECIES” = “Pine” AND “HEIGHT” ≤ 5\nWhere “SPECIES” = “Pine” OR “HEIGHT” ≤ 5\n\n\n\n\n\nSpecies\nAge\nHeight\n\n\nPine\n10\n5\n\n\nPine\n95\n28\n\n\nOak\n200\n25\n\n\nOak\n5\n4"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#select-by-attribute-4",
+    "href": "Vector_Analysis_Methods/Slides.html#select-by-attribute-4",
+    "title": "Lecture Slides",
+    "section": "Select by Attribute",
+    "text": "Select by Attribute\n\n\nSample SQL queries\n\nWhere “SPECIES” = “Pine”\nWhere “SPECIES” ≠ “Pine”\nWhere “HEIGHT” ≤ 5\nWhere “SPECIES” = “Pine” AND “HEIGHT” ≤ 5\nWhere “SPECIES” = “Pine” OR “HEIGHT” ≤ 5\n\n\n\n\n\nSpecies\nAge\nHeight\n\n\nPine\n10\n5\n\n\nPine\n95\n28\n\n\nOak\n200\n25\n\n\nOak\n5\n4"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#proximity-analysis",
+    "href": "Vector_Analysis_Methods/Slides.html#proximity-analysis",
+    "title": "Lecture Slides",
+    "section": "Proximity Analysis",
+    "text": "Proximity Analysis\n\n\nLooking at spatial relationships within or between layers.\n\nA good way to reduce data volumes, export queries to new layers.\nMultiple options, depending on our needs.\nIf we’re only interested in buildings within 1 km of streams:\nIdentify by proximity\nSave as a new layer, won’t have to search through all the objects every time."
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#select-by-location",
+    "href": "Vector_Analysis_Methods/Slides.html#select-by-location",
+    "title": "Lecture Slides",
+    "section": "Select by Location",
+    "text": "Select by Location\n\n\nUse Select by Location when you want to check for spatial relationships. There are many relationships we can check for:\n\nContainment\nIntersection\nDistance"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#geometric-manipulations",
+    "href": "Vector_Analysis_Methods/Slides.html#geometric-manipulations",
+    "title": "Lecture Slides",
+    "section": "Geometric Manipulations",
+    "text": "Geometric Manipulations\n\n\nThese methods create new layers with altered “geometries”. Geometry is a term we use to refer to points, lines, and/or polygons in a vector layer."
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#buffering",
+    "href": "Vector_Analysis_Methods/Slides.html#buffering",
+    "title": "Lecture Slides",
+    "section": "Buffering",
+    "text": "Buffering\n\n\nUse the Buffer tool to create a new Polygon layer based on distance.\n\nBuffer points, lines, or polygons using a buffer distance or set a field to specify varriable distance.\nUse the Multiple Ring Buffer tool for multi-criteria buffers.\n\nExample From ESRI Docs"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#buffering-1",
+    "href": "Vector_Analysis_Methods/Slides.html#buffering-1",
+    "title": "Lecture Slides",
+    "section": "Buffering",
+    "text": "Buffering\n\n\nUse the Buffer tool to create a new Polygon layer based on distance.\n\nBuffer points, lines, or polygons using a buffer distance or set a field to specify varriable distance.\nUse the Multiple Ring Buffer tool for multi-criteria buffers.\n\nBuffering Tsunami Shelters"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#dissolve",
+    "href": "Vector_Analysis_Methods/Slides.html#dissolve",
+    "title": "Lecture Slides",
+    "section": "Dissolve",
+    "text": "Dissolve\n\n\nDissolve aggregates features.\n\nMerges objects completely or by attribute(s).\nCan calculate statistics for aggregated regions.\nUseful if our data is more “complex” than we need it to be.\n\nExample From ESRI Docs"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#dissolve-1",
+    "href": "Vector_Analysis_Methods/Slides.html#dissolve-1",
+    "title": "Lecture Slides",
+    "section": "Dissolve",
+    "text": "Dissolve\n\n\nDissolve aggregates features.\n\nMerges objects completely or by attribute(s).\nCan calculate statistics for aggregated regions.\nUseful if our data is more “complex” than we need it to be.\n\nDissolve Tsunami Shelter Buffers"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#feature-overlay",
+    "href": "Vector_Analysis_Methods/Slides.html#feature-overlay",
+    "title": "Lecture Slides",
+    "section": "Feature Overlay",
+    "text": "Feature Overlay\n\n\nWhen we have multiple data layers and we want to combine them to form a new output."
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#clip",
+    "href": "Vector_Analysis_Methods/Slides.html#clip",
+    "title": "Lecture Slides",
+    "section": "Clip",
+    "text": "Clip\n\n\nUse the Clip tool to cut one layer down to the boundaries of another.\n\nWorks like a cookie cutter\nUseful when we want to focus on a study area\nDoes not alter attributes\nInput layer: our data layer\nClip layer: the study area\n\n\nExample From ESRI Docs\n\nInput\n\nOutput"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#erase",
+    "href": "Vector_Analysis_Methods/Slides.html#erase",
+    "title": "Lecture Slides",
+    "section": "Erase",
+    "text": "Erase\n\n\nUse the erase tool to remove the area of one layer from another.\n\nOpposite of the clip tool\nDoes not alter attributes\nUseful when we want to discard/exclude an area\n\n\nExample From ESRI Docs\n\nInput\n\nOutput"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#intersect",
+    "href": "Vector_Analysis_Methods/Slides.html#intersect",
+    "title": "Lecture Slides",
+    "section": "Intersect",
+    "text": "Intersect\n\n\nIntersect lets us see only where layers overlap and combine overlapping attributes.\n\nCan handle more than two layers at once\nSplits features by overlaps and merges attribute tables\nUseful when we want to merge and parse data at the same time\n\n\nExample From ESRI Docs\n\nInput\n\nOutput"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#union",
+    "href": "Vector_Analysis_Methods/Slides.html#union",
+    "title": "Lecture Slides",
+    "section": "Union",
+    "text": "Union\n\n\nUse the Union tool to combine multiple layers, split features where they overlap and combine attributes.\n\nSimilar to intersect, but keeps overlapping areas\nAdds attributes from all overlaps.\nCan handle more than two layers at once.\nNull values where for new attributes where no overlaps are present.\nUseful when we want to merge layers."
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#union-1",
+    "href": "Vector_Analysis_Methods/Slides.html#union-1",
+    "title": "Lecture Slides",
+    "section": "Union",
+    "text": "Union\n\n\nUse the Union tool to combine multiple layers, split features where they overlap and combine attributes.\n\nSimilar to intersect, but keeps overlapping areas"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#many-more",
+    "href": "Vector_Analysis_Methods/Slides.html#many-more",
+    "title": "Lecture Slides",
+    "section": "Many More",
+    "text": "Many More\n\n\nThere are many more vector overlay tools! I have presented some of the the most frequently used tools, but if you have specific use cases you may need others. I can’t cover them all, and I don’t want to overwhelm folks."
+  }
+]

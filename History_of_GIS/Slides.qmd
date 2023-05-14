@@ -1,0 +1,1113 @@
+---
+format:
+  revealjs:
+    theme: serif
+    code-fold: true
+    controls: true
+    navigation-mode: linear
+    controls-layout: bottom-right
+    controls-tutorial: true
+    slide-number: true
+    show-slide-number: all
+    pdfMaxPagesPerSlide: 1
+fig-dpi: 300
+
+---
+
+
+History of GIS
+==============
+
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+From prehistoric maps to modern GIS.
+:::
+::::
+
+
+
+
+Pre-Historic Maps
+-----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Many of the first maps are difficult to recognize as such.
+
+
+* Rock art, pottery, carving, and etchings
+* Movement, gestures, & oral traditions
+* Paper and Textile maps appeared later
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/timeline.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Pre-Historic Maps
+-----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Frequently depicted:
+
+
+* Landscapes
+* Hunting Grounds
+* Villages
+* Agricultural Plots
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/RAJUM_HANI.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Few Surviving Examples
+----------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+In many cases we must look to more recent examples.
+
+
+![](images/birch.png)
+
+
+Ojibway birch bark scrolls.
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/Symbolic.png)
+
+
+Miꞌkmaq gestural map
+
+
+
+
+:::
+::::
+
+
+
+
+Cartography and Navigation
+--------------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Austronesian expansion started ~5,000 B.P.
+
+
+* Crossed oceans reading stars, waves, weather, and wildlife
++ Charts, songs, and stories to recorded details
+
+
+![](images/austronesian.png)
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/stick_chart.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+Oldest Known Maps
+-----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Landscape around Dyje River, Czechia (26,000 B.P.)
+
+
+![](images/pavlov.jpg)
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/cylcon.jpg)
+
+  
+Darling River basin, Australia (~20,000 B.P.)
+
+
+
+
+:::
+::::
+
+
+
+
+Oldest Known Maps
+-----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+[Map Rock](https://decolonialatlas.wordpress.com/2016/01/13/shoshoni-map-rock/) is an engraving of a 600km reach of the Snake River Valley, Idaho (~12,000 B.P.)
+
+
+![](images/idahomaprock.jpg)
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/map_rock.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+First "Urban" Plans
+-------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Çatalhöyük Turkey, 8700 B.P.
+
+
+![](images/CATAL_HUYUK.png)
+
+
+
+:::
+:::{.column width="50%"}
+
+
+Bedolina, Italy 4000 B.P.
+
+
+![](images/BEDOLINA_PETROGLYPH.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Paper and Textile Maps
+----------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Maps on papyrus paper appeared in Egypt ~3,200 B.P.
+
+
+![](images/papyrus_map.png)
+
+
+
+:::
+:::{.column width="50%"}
+
+
+  
+
+![](images/silk_map.png)
+
+
+Paper and silk maps appeared in China ~2,200 B.P.
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 2
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+The Ojibway people of the Great Lakes region created maps on scrolls of:
+
+
+* Birch Bark
+* Papyrus Paper
+* Silk
+* Animal Hide
+
+
+
+
+:::
+::::
+
+
+
+
+Advent of Surveying
+-------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+As societies coalesced, methods for the **systematic** collection of spatial information were developed.
+
+
+* Objects needed to be drawn to scale
++ Mastery of geometry and trigonometry
+
+* Surveys were used to:
++ Demarcate agricultural fields
++ Construct buildings
++ Plan settlements
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/image_9934e-Si-427.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+Urban Planning
+--------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Town plan of Nippur, Babylonia on a clay tablet. Possibly the earliest map drawn to scale 3500 B.P.
+
+
+* Over small areas, maps could now "accurately" represent:
++ Bearings (direction)
++ Distances
++ Sizes
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/NIPPUR.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Surveying Methods
+-----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Rope stretching is the earliest technique to come about.
+
+
+* It was labor intensive and only applicable for small areas
+* Used for building monuments and agricultural surveys
+
+
+![](images/rope_stretchers_egypt.jpg)
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+
+![](images/rope_stretchers_aztec.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Surveying Methods
+-----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Line of sight methods allowed for surveying over greater distances and mapping larger areas.
+
+
+![](images/incan_survey.png)
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/chinese_survey.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Surveying Methods
+-----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Line of sight methods allowed for surveying over greater distances and mapping larger areas.
+
+
+* Road networks could be constructed
+* Distances between settlements could be approximated
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/Babylon.png)
+
+
+
+
+:::
+::::
+
+
+
+
+The Groma
+---------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+The Roman Empire employed professional surveyors.
+
+
+* Built a massive road network and created an Agricultural land registry
+* They used the groma
++ Precursor of the modern [theodolite](https://en.wikipedia.org/wiki/Total_station)
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/roman_roads.png)
+
+
+
+
+:::
+::::
+
+
+
+
+The Compass
+-----------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Lodestones are naturally occurring magnetic minerals. They were used to make compasses by the Olmec civilization (3000 B.P.).
+
+
+* Oriented buildings and cities
+![](images/Olmec_compas.png)
+
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/olmec_orientation.png)
+
+
+
+
+:::
+::::
+
+
+
+
+The Compass
+-----------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Separately developed by the Han Dynasty ~2200 B.P.
+
+
+* Initially used for orienting buildings
+* Applied to marine navigation in China during the Song Dynasty ~ 1000 B.P.
+* Reached Europe around 800 B.P.
++ Spurred on the "Age of Exploration"
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/song_compass.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+Exploration Spurred Cartographic Advances
+-----------------------------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Trade and travel expanded conceptualizations of what the world was.
+
+
+* Greeks built on knowledge of the Egyptians & Mesopotamians
+* Maps became more complex and "complete"
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/hecataeus.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+Ptolemy’s Geographia
+--------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+The first known [Atlas](https://en.wikipedia.org/wiki/Geography_(Ptolemy)#Atlas) (1850 B.P.).
+
+
+* 8 volume GIS prototype with an index of place names and projected maps
++ Accounted for earth's curvature but underestimated size
+![](images/round_earth.png)
+
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/geographia.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Chinese Exploration
+-------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Advances in maritime technology, including the compass led to a wave of exploration.
+
+
+* Culminated in the [Ming Dynasty Treasure Voyages](https://en.wikipedia.org/wiki/Ming_treasure_voyages)
+* By 600 B.P., they had mapped most of South & East Asia, East Africa, Indonesia & Australia
++ May have even visited the west coast of North America!
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/zheng_he.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Spread of Information
+---------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Chinese and Islamic mariners brought technology westward.
+
+
+* By 550 BP. Europeans had the compass
+
+
+![](images/FraMauro.jpg)
+
+
+
+:::
+:::{.column width="50%"}
+
+
+Spurred on the "Age of Discovery"
+
+
+* European perspectives came to dominate the cartographic world
+
+
+![](images/magellan.png)
+
+
+
+
+:::
+::::
+
+
+
+
+The Mercator Projection
+-----------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Revolutionized navigation and cartography.
+
+
+* Follow constant bearing and reach any location on earth
++ Still used today (e.g. Google Maps)
+
+![](images/cylindrical.png)
+
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/mercator.png)
+
+
+
+
+:::
+::::
+
+
+
+
+The Mercator Projection
+-----------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+The projection is problematic because it severely distorts the true size of some regions.
+
+
+* Influences perceptions of high latitudes vs. equatorial regions
+* We'll discuss more about why this is in Module 2
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/head_map.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 3
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+This Mercator projection revolutionized navigation because you could use it to navigate anywhere in the world by following a:
+
+
+* Line of sight
+* Constant bearing
+* Sea bird
+* Great circle
+
+
+
+
+:::
+::::
+
+
+
+
+Spatial Analysis
+----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+As our representation of space became more accurate and precise, our ability to make spatial inferences expanded as well.
+
+
+* As part of the [Module 1 Lab](https://geos270.github.io/Module1/docs/Application_Part3.html) we'll recreate an example from history using modern methods.
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/Snow_Map.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+Canadian Context
+----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Cartography facilitated colonialism and territorial expansion throughout Canadian history.
+
+
+* The British and Canadian governments conducted surveys to map out resources
+* Treated the land as a "blank canvas"
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/BritishNA.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+Canadian Context
+----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Canada’s first scientific agency, founded in 1842. The GSC mapped resources and promoted expansion.
+
+
+![](images/GCS.png)
+
+
+
+:::
+:::{.column width="50%"}
+
+
+The government used GSC maps to identify and "claim" valuable territories.
+
+
+![](images/cp_land.jpg)
+
+
+
+
+
+:::
+::::
+
+
+
+
+Numbered Treaties
+-----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Building on GSC Surveys, the government "negotiated" the numbered treaties.
+
+
+* Cited survey maps as evidence of their "sovereignty"
+* The [RCMP](https://en.wikipedia.org/wiki/North-West_Mounted_Police#History) were created to enforce treaties and displace Indigenous people
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/numbered_treaties.gif)
+
+
+
+
+:::
+::::
+
+
+
+
+Countering Colonialism
+----------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+The lands that comprise Canada have been inhabited for thousands of years and have histories that stretch back well before the colonial era.
+
+
+* Many colonial mapping efforts were centered on erasing Indigenous peoples and their histories
+* One way they accomplished this was through the use of place names
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/the_twins.jpg)
+
+
+Ch'ich'iyuy is a Skwxwú7mesh word that translates to "Twins"
+
+
+
+
+:::
+::::
+
+
+
+
+Learning Place Names
+--------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+The [Skwxwú7mesh Atlas](http://squamishatlas.com/?fbclid=IwAR3JfkUeATF22zPFi9BCo-S6BrOudMQeFSO3_r3iar6JGj0XYf1qTOQ92zE#) is a great resource for learning about Skwxwú7mesh Place Names.
+
+
+![](images/squamish_atlas.png)
+
+
+
+:::
+:::{.column width="50%"}
+
+
+The [xʷməθkʷəy̓əm](https://placenamemap.musqueam.bc.ca/?fbclid=IwAR1dWYuotXFkmwJzidy2ayrlPy4NvvnRBuOnUeyoSqsRiZpt5blWhxeFR0I) nation has put together a great resource for as well!
+
+
+![](images/musqueam_atlas.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Canada Land Inventory
+---------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Mapped suitability of lands for: Agriculture, forestry, recreation and wildlife.
+
+
+* Original maps can be found [here](https://atlas.gc.ca/toporama/en/index.html)
+* The first operational GIS
++ Digital geographic database
++ Advances in spatial analysis
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/CLI.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Commercial Development
+----------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Following the CLI, a number of commercial software companies began developing GIS applications.
+
+
+* Hardware improvements made the technology more accessible
+* Mapping Display and Analysis System (MIDAS)
++ First desktop GIS released in 1986
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/GIS_Concept.png)
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 4
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+The Canada Land Inventory led to the creation of the first digital
+
+
+* Atlas
+* Spatial Analysis Method
+* Database
+* Geographic Information System
+
+
+
+
+:::
+::::
+
+

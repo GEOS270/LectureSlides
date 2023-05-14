@@ -1,0 +1,45 @@
+project:
+  type: website
+  output-dir: docs
+  
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+website:
+  title: "Lecture Slides"
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+    
+      - section: "Module 1"
+        contents:
+        - History_of_GIS/Slides.qmd
+      - section: "Module 2"
+        contents:
+        - Steps_of_Abstraction/Slides.qmd
+        - Map_Projections/Slides.qmd
+      - section: "Module 3"
+        contents:
+        - Data_Classification/Slides.qmd
+        - Data_Visualization/Slides.qmd
+        - Phenomena_and_Data_Types/Slides.qmd
+      - section: "Module 4"
+        contents:
+        - Choice_of_Data_Model/Slides.qmd
+        - The_Raster_Data_Model/Slides.qmd
+        - Spatial_is_Special/Slides.qmd
+        - The_Vector_Data_Model/Slides.qmd
+      - section: "Module 5"
+        contents:
+        - Spatial_Data_Workflows/Slides.qmd
+        - Raster_Analysis_Methods/Slides.qmd
+        - Vector_Analysis_Methods/Slides.qmd
+      - section: "Module 6"
+        contents:
+        - Ethics_in_GIS/Slides.qmd
+        - Spatial_Sampling_Methods/Slides.qmd
+        - Uncertainty_in_GIS/Slides.qmd

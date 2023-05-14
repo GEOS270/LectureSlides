@@ -1,0 +1,490 @@
+---
+format:
+  revealjs:
+    theme: serif
+    code-fold: true
+    controls: true
+    navigation-mode: linear
+    controls-layout: bottom-right
+    controls-tutorial: true
+    slide-number: true
+    show-slide-number: all
+    pdfMaxPagesPerSlide: 1
+fig-dpi: 300
+
+---
+
+
+Choosing Data Model
+===================
+
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+ Which data model is better?
+ 
+:::
+::::
+
+
+
+
+TopHat Question 1
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+The spatial data models we use in GIS work by taking advantage of: (select all that apply)
+
+
+* Tobler's First Law of Geography
+* Causality
+* Spatial Autocorrelation
+* Spatial Heterogeneity
+* Cheat Codes
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 2
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Bonnini's Paradox states that: As a model becomes more complex model becomes, it becomes:
+
+
+* More useful
+* Less understandable
+* Easier to use
+* Larger
+
+
+
+
+:::
+::::
+
+
+
+
+Comparing Data Models
+---------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+### Raster
+
+
+Usually **continuous fields**
+
+
+* Full coverage over domain
++ Grid of equally sized cells
++ Data "gaps" must be given a value   
+ (i.e., NODATA)
+
+* Separate bands for each attribute
++ Each cell has **one** value per band
++ One raster can have **many** bands
+
+
+
+:::
+:::{.column width="50%"}
+
+
+### Vector
+
+
+Usually **discrete objects**
+
+
+* Only represents features of interest
++ Points, Lines, and/or Polygons
++ Can overlap, have gaps, or be continuous
+
+* Each object can have **many** attributes
++ Attribute table links spatial and non-spatial data
+
+* Topology rules
++ Connectivity and relationships between features
+
+
+
+
+:::
+::::
+
+
+
+
+Advantages
+----------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+### Raster
+
+
+* Good for continuous variables
++ Features that do not have distinct boundaries
+
+* Simple data structure
++ Overlay is easy and efficient
+
+
+
+:::
+:::{.column width="50%"}
+
+
+### Vector
+
+
+* Good for discrete objects
++ Features that are have distinct, fixed in boundaries
+
+* Compact data structure
++ More efficient storage
+
+* Easy to query and select by attributes
+
+
+
+
+:::
+::::
+
+
+
+
+Disadvantages
+-------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+### Raster
+
+
+* Mixed pixel problem
+* One attribute per cell
+* Large data volumes
+
+
+
+:::
+:::{.column width="50%"}
+
+
+### Vector
+
+
+* No variability within polygons
+* Complex data structure
+* Overlay can be computationally expensive
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 3
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Select the best method for representing each phenomena:
+
+
+* Precipitation observations from weather stations across Canada
+* Precipitation forecasts for an atmospheric river
+* Census tracts in Metro Vancouver
+* Hiking trails in Garibaldi Park
+
+
+
+
+:::
+::::
+
+
+
+
+Resolution &. Scale
+-------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+These properties can influence our choice of model.
+
+
+1. How does the scale of our analysis dictate our desired resolution?
+2. How can resolution of the data limit the scale of our analysis?
+
+
+
+:::
+:::{.column width="50%"}
+
+
+
+![](images/03-scales.png)
+
+
+
+
+![](images/coastal_scale.jpg)
+
+
+
+
+![](images/03-resolution.gif)
+
+
+
+
+![](images/scale_general.png)
+
+
+
+
+
+:::
+::::
+
+
+
+
+Resolution &. Scale
+-------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+We want to work with high resolution data because:   
+
+ **↑ resolution = ↓ generalization = ↓ uncertainty**
+
+
+* But in reality, this isn't always practical or possible. High resolution data may
++ Be too expensive $$$
++ Take too long to collect or process
++ Infringe on individuals privacy or endanger marginalized people
+
+* We must try to strike a balance
++ Find what suits our needs without hindering adding unnecessary risk, expense, or complexity
+
+
+
+
+:::
+::::
+
+
+
+
+Things to consider
+------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+What is the "lowest" acceptable resolution?
+
+
+* Smaller scale analysis won't need the same level of detail.
+* Looking at national immigration patterns, maybe you only need provincial level data?
+
+
+
+
+:::
+::::
+
+
+
+
+Things to consider
+------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Change the scope of our analysis?
+
+
+* If you need a high resolution analysis, work at a larger scale and focus on a small area.
+* If you need to analyze a large area, work at small scales and accept the uncertainty that comes with coarser resolution.
+
+
+
+
+:::
+::::
+
+
+
+
+Working Together
+----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Frequently we'll end up working with both raster and vector data in the same analysis.
+
+
+* In Module 1, you worked with:
++ Cholera deaths (points)
+- **Vector Data Model**
+
++ Kernel density (probability of deaths)
+- **Raster Data Model**
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/Final_Map.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Working Together
+----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+- In the [Module 4 Lab](https://geos270.github.io/Module4/docs/Application.html) you are converting between data types
+
+* NDVI (**Raster Data Model**)
+* Census units (**Vector Data Model**)
+* Exploring two approaches
++ **Zonal Statistics:**  
+ Faster, but in a more limited applicability.
++ **Raster to Polygon Conversion:** Converting between data types requires more, but it is more flexible.
+
+
+
+
+:::
+:::{.column width="50%"}
+
+
+  
+
+![](images/Van_NDVI_Map.png)
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 4
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Which of the following are true (select all that apply):
+
+
+* Scale is a property of your analysis while resolution is a property of your data.
+* Scale is a property of your data while resolution is a property of your analysis.
+* Scale and resolution are properties of your analysis.
+* We always want to work with the highest resolution data available.
+* Both the raster and vector data models are useful ways to represent spatial data.
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 5
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+How do you feel about the pace of lecture and the lab workload so far?
+
+
+* The pace of lecture is too fast and the lab workload is overwhelming.
+* The pace of lecture is good and the lab workload is overwhelming.
+* The pace of lecture is good and the lab workload is manageable.
+* The pace of lecture is too slow and the lab workload is manageable.
+* The pace of lecture is too slow and the lab workload is too easy.
+
+
+
+
+:::
+::::
+
+

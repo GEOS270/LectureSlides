@@ -1,0 +1,790 @@
+---
+format:
+  revealjs:
+    theme: serif
+    code-fold: true
+    controls: true
+    navigation-mode: linear
+    controls-layout: bottom-right
+    controls-tutorial: true
+    slide-number: true
+    show-slide-number: all
+    pdfMaxPagesPerSlide: 1
+fig-dpi: 300
+
+---
+
+
+Spatial is Special
+==================
+
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+Spatial data has special properties that we must take into consideration
+:::
+::::
+
+
+
+
+First Law of Geography
+----------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+"Everything is related to everything else,  
+but near things are more related than distant things."   
+ -Waldo Tobler
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/03-spatial-is-special.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+First Law of Geography
+----------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+This might seem obvious:
+
+
+* Students in the same class interact more.
+* Orca pods in different areas develop different dialects.
+* Hemlocks in BC are more related to each other than to hemlocks in NB.
+
+:::
+:::{.column width="50%"}
+
+
+![](images/03-spatial-is-special.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+First Law of Geography
+----------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Not a **grantee** of similarity.
+
+
+* Vancouver's average snowfall is < 30 cm/yr
+* Grouse Mountain frequently exceeds 9 m/yr
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/03-spatial-is-special.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+First Law of Geography
+----------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+What do you have in common with your neighbor?
+
+
+* Are you in the same city?
+* Do you have the same major?
+* Are you from the same hometown?
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/03-spatial-is-special.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 1
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Everything is related to everything else, but ...
+
+
+* near things are less related than distant things
+* near things are more related than distant things
+* near things are aren't related than distant things
+
+
+
+
+:::
+::::
+
+
+
+
+Spatial Homogeneity
+-------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Even distribution of discrete objects trough space, or values (qualitative or quantitative) across a continuous field.
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/corn.jpg)
+
+
+
+:::
+::::
+
+
+
+
+Spatial Heterogeneity
+---------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Uneven distribution of discrete objects trough space, or variation of values (qualitative or quantitative) across a continuous field.
+
+
+* Opposite of **Spatial Homogeneity**
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/BasinPhoto.JPG)
+
+
+
+:::
+::::
+
+
+
+
+Spatial Heterogeneity
+---------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+
+
+
+
+
+:::
+::::
+
+
+
+
+Spatial Autocorrelation
+-----------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+A measure of similarity Homogeneity/heterogeneity.
+
+
+* Positive: Clustered/grouped in space
+* Negative: Dispersed across space
+* Many natural systems exhibit **positive** spatial autocorrelation
+
+
+
+
+:::
+::::
+
+
+
+
+Spatial Autocorrelation
+-----------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+![](images/03-autocorrelation.png)
+
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 2
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+These phenomena tend to exhibit a high degree of spatial autocorrelation (select all that apply)
+
+
+* Air Temperature
+* Elevation
+* Precipitation
+* COVID Cases
+* Randomly Selected Samples
+
+
+
+
+:::
+::::
+
+
+
+
+Revisiting Scale
+----------------
+
+
+
+**Map scale**: ratio of map units to real world units.
+
+
+* Small Scale: Large area, more generalization, less detail.
+* Large Scale: Small area, more detail, less generalization.
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/scale_general.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Time Scale
+----------
+
+
+
+Time is "one dimensional", but many of the same concepts related to scale apply.
+
+
+* Just as features are exhibit spatial autocorrelation, they typically exhibit temporal autocorrelation
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/03-time-scale.png)
+
+
+
+:::
+::::
+
+
+
+
+Analysis Scale
+--------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Different phenomena operate on different temporal and spatial scales.
+
+
+* No need to model tornadoes in a global climate model.
+* Impractical to map turbulence globally.
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/03-scales.png)
+
+
+
+:::
+::::
+
+
+
+
+Analysis Scale
+--------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Different phenomena operate on different temporal and spatial scales.
+
+
+* Identify the scale relevant to your analysis.
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/coastal_scale.jpg)
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 3
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Tobler's First Law of Geography applies to time just as it applies to space.
+
+
+* True
+* False
+
+
+
+
+:::
+::::
+
+
+
+
+Bonini's paradox
+----------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+As a model of a complex system becomes more complete, it becomes less understandable.
+
+
+* It will eventually be just as difficult to understand as the real-world processes it represents
++ A 1:1 scale map needs to be as big as the features you are mapping
++ A life size model house ... would be the size of a regular house
+
+* At a certain point, we have to ignore the heterogeneity.
+
+
+
+
+:::
+::::
+
+
+
+
+Map the Forest not the Trees
+----------------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+We don't need the location of every tree to map a forest.
+
+
+* Use average presence of trees over a larger area
+* Group by dominant species or category
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/03-forest-for-the-trees.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+Similarity Across Space
+-----------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Often, the system we want to map will exhibit high degrees of both spatial heterogeneity **and** autocorrelation.
+
+
+* What is *heterogeneous* at one scale may be **homogeneous** at another.
+
+
+
+:::
+::::
+
+
+
+
+Spatial Data Models
+-------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+We can exploit spatial autocorrelation to simplify data representation.
+
+
+![](images/03-vector-v-raster.jpg)
+
+
+
+:::
+::::
+
+
+
+
+Spatial Resolution
+------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Relates to the level of spatial detail in a dataset.
+
+
+* What is the smallest feature that is included in a dataset?
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/03-resolution.gif)
+
+
+
+
+:::
+::::
+
+
+
+
+Temporal Resolution
+-------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Relates to the level of temporal detail in a dataset.
+
+
+* Over what time period is the data valid?
+* Are there multiple observations?
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/03-NDVI.gif)
+
+
+
+:::
+::::
+
+
+
+
+Resolution vs. Scale
+--------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+The scale of our analysis dictates our desired resolution. But data resolution can limit the scale of our analysis.
+
+
+
+
+:::
+::::
+
+
+
+
+Scale Dependence
+----------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+![](images/FI_Drone.JPG)
+
+
+
+
+:::
+::::
+
+
+
+
+Scale Dependence
+----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+
+Acknowledge the heterogeneity where appropriate.
+
+
+* Large scale maps might need more attention to detail.
+* Higher resolution data.
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/footprint_class.jpg)
+
+
+
+
+:::
+::::
+
+
+
+
+Scale Dependence
+----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Count on spatial autocorrelation  
+ and call a unit homogeneous where appropriate.
+
+
+* Smaller scale maps can be more generalized.
+* Lower resolution data.
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/LCM.png)
+
+
+
+:::
+::::
+
+
+
+
+Scale Dependence
+----------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+At even smaller scales, more and more generalization is required.
+
+
+* Some features become indistinguishable
+* Even lower resolution data is sufficient
+
+
+
+:::
+:::{.column width="50%"}
+
+
+![](images/DeltaMap.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Spatial Data Models
+-------------------
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Raster and vector models are distinct approaches for addressing the same task.
+
+
+![](images/03-vector-v-raster.jpg)
+
+
+
+:::
+::::
+
+
+
+
+TopHat Question 4
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Spatial data models exploit spatial autocorrelation to simplify our representation of spatial features.
+
+
+* True
+* False
+
+
+
+
+:::
+::::
+
+
