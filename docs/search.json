@@ -567,6 +567,41 @@
     "text": "Positionality\n\n\nSome important questions to ask yourself, and things you may want to disclose depending on the context.\n\nWho am I and where do I come from?\nWhat is my relationship to the community/field I am working in?\nWhat are my motivations for this work?\nWhat biases may I have and how may my past experiences influence how I engage with this work?"
   },
   {
+    "objectID": "History_of_GIS/Slides.html#what-is-gis",
+    "href": "History_of_GIS/Slides.html#what-is-gis",
+    "title": "Lecture Slides",
+    "section": "What is GIS?",
+    "text": "What is GIS?\nThe GI stands for Geographic Information. The S can be either Science or System. You will often see them used interchangeably because they are very closely related. Basically, you do GIScience with a GISystem."
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#what-is-giscience",
+    "href": "History_of_GIS/Slides.html#what-is-giscience",
+    "title": "Lecture Slides",
+    "section": "What is GIScience?",
+    "text": "What is GIScience?\nThe science and study of geospatial information: GIScience is a framework we use to understand spatial information. It is rooted in Cartography, the art and science of graphically mapping but it is inherently multidisciplinary and drawing on Computer Science, Mathematics & Statistics, Remote Sensing, and many other fields."
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#what-is-a-gisystem",
+    "href": "History_of_GIS/Slides.html#what-is-a-gisystem",
+    "title": "Lecture Slides",
+    "section": "What is a GISystem?",
+    "text": "What is a GISystem?\nAny system or tool we use to store and analyze geospatial information can broadly be considered a GISystem. Until a the late 20th century, atlases and library map catalogues were our most advanced GIS. Now we have a wide range of computer and web based GISystems. Ranging from the “desktop” GIS applications like ArcGIS Pro that you will be using to cloud computing systems that can Terabytes of planetary scale data."
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#what-can-be-done-with-gis",
+    "href": "History_of_GIS/Slides.html#what-can-be-done-with-gis",
+    "title": "Lecture Slides",
+    "section": "What can be done with GIS?",
+    "text": "What can be done with GIS?\nGIS can be used to help solve a wide range of geographic problems in different fields:\n\nEpidemiology/Public Health\nPlanning (Urban, Hazards)\nConservation & Resource Management\nEconomics\nClimate Science\nEcology/Biology\nSocial Justice"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#history-of-gis-1",
+    "href": "History_of_GIS/Slides.html#history-of-gis-1",
+    "title": "Lecture Slides",
+    "section": "History of GIS",
+    "text": "History of GIS\nA holistic understanding of GIS can help you use it effectively and responsibly. A good way to start off is to look at the history of the GIS and Cartography more broadly.\n\nIn this section of the module, I will give a sweeping overview of the development of the discipline.\n\nWe’ll start with the very first maps and end with the widespread adoption of GIS and proliferation of geospatial technology."
+  },
+  {
     "objectID": "History_of_GIS/Slides.html#pre-historic-maps",
     "href": "History_of_GIS/Slides.html#pre-historic-maps",
     "title": "Lecture Slides",
@@ -725,7 +760,7 @@
     "href": "History_of_GIS/Slides.html#spatial-analysis",
     "title": "Lecture Slides",
     "section": "Spatial Analysis",
-    "text": "Spatial Analysis\n\n\nAs our representation of space became more accurate and precise, our ability to make spatial inferences expanded as well.\n\nAs part of the Module 1 Lab we’ll recreate an example from history using modern methods."
+    "text": "Spatial Analysis\n\n\nAs our representation of space became more accurate and precise, our ability to make spatial inferences expanded as well.\n\nAs part of the Lab Assignment we’ll recreate an example from history using modern methods."
   },
   {
     "objectID": "History_of_GIS/Slides.html#canadian-context",
@@ -779,9 +814,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Slides",
+    "title": "Lecture Slides",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\nC:"
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
   },
   {
     "objectID": "Map_Projections/Slides.html#projected-coordinate-systems",
@@ -1013,6 +1048,55 @@
     "title": "Lecture Slides",
     "section": "Map Scale & Projection",
     "text": "Map Scale & Projection\n\n\nMap scale will impact our choice of projection.\n\nProjections that work at 1:000 aren’t necessarily suited for a 1:10,000,000 map\nWith conformal projections like the Mercator, scale changes with position on the map\nPreserves scale “locally”\nScale is grossly distorted globally"
+  },
+  {
+    "objectID": "Modern_GIS/Slides.html#proprietary-gis-software",
+    "href": "Modern_GIS/Slides.html#proprietary-gis-software",
+    "title": "Lecture Slides",
+    "section": "Proprietary GIS Software",
+    "text": "Proprietary GIS Software\nGIS is very much rooted in capitalism and the capitalist enterprise. Consequently many of the initial developments in GIS were by for profit companies. For example, ESRI is a leading producer of GIS software. They make ArcGIS Pro, the software package we will be working with most in this class.\nProprietary software requires users to purchase a license in order to gain access and restricts access to source code, meaning users have no right to view or edit source code (inner workings of a program). Common examples of proprietary technology include: * Operating Systems: Windows OS, Mac OS, IOS * Programming Languages: MATLAB, VBScript * Software Packages: Microsoft Office (Word, Excel, Power Point etc.), Adobe Illustrator, IOS, ArcMap\nProprietary software licenses are often very expensive. They pose a significant barrier to access for uses that aren’t affiliated with large institutions."
+  },
+  {
+    "objectID": "Modern_GIS/Slides.html#arcgis-pro",
+    "href": "Modern_GIS/Slides.html#arcgis-pro",
+    "title": "Lecture Slides",
+    "section": "ArcGIS Pro",
+    "text": "ArcGIS Pro\nProprietary packages like ArcGIS Pro are expensive!"
+  },
+  {
+    "objectID": "Modern_GIS/Slides.html#open-source-gis",
+    "href": "Modern_GIS/Slides.html#open-source-gis",
+    "title": "Lecture Slides",
+    "section": "Open Source GIS",
+    "text": "Open Source GIS\nThere are alternatives! Open source software packages have proliferated in recent years and are a viable alternative to the traditional options. The the internet has connected like-minded developers and allowed for collaboration across the globe.\nOpen Source software is free to use, published under an open copyright license. Users have the right to view, edit, and distribute the source code. Common examples of open source technology include:\n\nOperating Systems: Linux OS, Android\nProgramming Languages: Python, R, Java, etc.\nSoftware Packages: Libre Office (Writer, Calc, Impress, etc.), Ink Scape, QGIS\n\nOpen source software is more accessible because its free to download and use."
+  },
+  {
+    "objectID": "Modern_GIS/Slides.html#qgis",
+    "href": "Modern_GIS/Slides.html#qgis",
+    "title": "Lecture Slides",
+    "section": "QGIS",
+    "text": "QGIS\n\n\n<p>\nYour browser does not support iframes.\n</p>\n<p>\n\nView slides in new tab"
+  },
+  {
+    "objectID": "Modern_GIS/Slides.html#open-street-maps",
+    "href": "Modern_GIS/Slides.html#open-street-maps",
+    "title": "Lecture Slides",
+    "section": "Open Street Maps",
+    "text": "Open Street Maps\n\n\nOpen Street Maps is a freely available public database of geospatial information."
+  },
+  {
+    "objectID": "Modern_GIS/Slides.html#programmatic-gis",
+    "href": "Modern_GIS/Slides.html#programmatic-gis",
+    "title": "Lecture Slides",
+    "section": "Programmatic GIS",
+    "text": "Programmatic GIS\nProgramming languages like Python and JavaScript can be used to conduct a variety of geospatial analysis and make webmaps. I created the map below using JavaScript. I’ll talk a bit more about these methods later on in the term.\nWebmap for navigating to UBC micromet field sites.\n\n\n<p>\nYour browser does not support iframes.\n</p>\n<p>"
+  },
+  {
+    "objectID": "Modern_GIS/Slides.html#fremium-services",
+    "href": "Modern_GIS/Slides.html#fremium-services",
+    "title": "Lecture Slides",
+    "section": "Fremium Services",
+    "text": "Fremium Services\nCompanies like mapbox and google provide some geospatial services that are “free” to a point. For example, Google earth engine provides its cloud based computational capabilities to non-commercial users free of charge."
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#what-is-a-phenomenon",
