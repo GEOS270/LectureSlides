@@ -17,7 +17,9 @@ website:
     
       - section: "Module 1"
         contents:
+        - What_is_GIS/Slides.qmd
         - History_of_GIS/Slides.qmd
+        - Modern_GIS/Slides.qmd
       - section: "Module 2"
         contents:
         - Steps_of_Abstraction/Slides.qmd
