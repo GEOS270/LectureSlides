@@ -567,39 +567,11 @@
     "text": "Positionality\n\n\nSome important questions to ask yourself, and things you may want to disclose depending on the context.\n\nWho am I and where do I come from?\nWhat is my relationship to the community/field I am working in?\nWhat are my motivations for this work?\nWhat biases may I have and how may my past experiences influence how I engage with this work?"
   },
   {
-    "objectID": "History_of_GIS/Slides.html#what-is-gis",
-    "href": "History_of_GIS/Slides.html#what-is-gis",
-    "title": "Lecture Slides",
-    "section": "What is GIS?",
-    "text": "What is GIS?\nThe GI stands for Geographic Information. The S can be either Science or System. You will often see them used interchangeably because they are very closely related. Basically, you do GIScience with a GISystem."
-  },
-  {
-    "objectID": "History_of_GIS/Slides.html#what-is-giscience",
-    "href": "History_of_GIS/Slides.html#what-is-giscience",
-    "title": "Lecture Slides",
-    "section": "What is GIScience?",
-    "text": "What is GIScience?\nThe science and study of geospatial information: GIScience is a framework we use to understand spatial information. It is rooted in Cartography, the art and science of graphically mapping but it is inherently multidisciplinary and drawing on Computer Science, Mathematics & Statistics, Remote Sensing, and many other fields."
-  },
-  {
-    "objectID": "History_of_GIS/Slides.html#what-is-a-gisystem",
-    "href": "History_of_GIS/Slides.html#what-is-a-gisystem",
-    "title": "Lecture Slides",
-    "section": "What is a GISystem?",
-    "text": "What is a GISystem?\nAny system or tool we use to store and analyze geospatial information can broadly be considered a GISystem. Until a the late 20th century, atlases and library map catalogues were our most advanced GIS. Now we have a wide range of computer and web based GISystems. Ranging from the “desktop” GIS applications like ArcGIS Pro that you will be using to cloud computing systems that can Terabytes of planetary scale data."
-  },
-  {
-    "objectID": "History_of_GIS/Slides.html#what-can-be-done-with-gis",
-    "href": "History_of_GIS/Slides.html#what-can-be-done-with-gis",
-    "title": "Lecture Slides",
-    "section": "What can be done with GIS?",
-    "text": "What can be done with GIS?\nGIS can be used to help solve a wide range of geographic problems in different fields:\n\nEpidemiology/Public Health\nPlanning (Urban, Hazards)\nConservation & Resource Management\nEconomics\nClimate Science\nEcology/Biology\nSocial Justice"
-  },
-  {
     "objectID": "History_of_GIS/Slides.html#history-of-gis-1",
     "href": "History_of_GIS/Slides.html#history-of-gis-1",
     "title": "Lecture Slides",
     "section": "History of GIS",
-    "text": "History of GIS\nA holistic understanding of GIS can help you use it effectively and responsibly. A good way to start off is to look at the history of the GIS and Cartography more broadly.\n\nIn this section of the module, I will give a sweeping overview of the development of the discipline.\n\nWe’ll start with the very first maps and end with the widespread adoption of GIS and proliferation of geospatial technology."
+    "text": "History of GIS\nA holistic understanding of GIScience can help you use GISystems more effectively and responsibly.\n\nA good way to start off is to look at the history of the discipline"
   },
   {
     "objectID": "History_of_GIS/Slides.html#pre-historic-maps",
@@ -620,28 +592,28 @@
     "href": "History_of_GIS/Slides.html#few-surviving-examples",
     "title": "Lecture Slides",
     "section": "Few Surviving Examples",
-    "text": "Few Surviving Examples\n\n\nIn many cases we must look to more recent examples.\n\nOjibway birch bark scrolls.\n\n\nMiꞌkmaq gestural map"
+    "text": "Few Surviving Examples\n\n\nIn many cases we must look to more recent examples.\n\nOjibway birch bark scrolls.\n\n\n\n\nMiꞌkmaq gestural map"
   },
   {
     "objectID": "History_of_GIS/Slides.html#cartography-and-navigation",
     "href": "History_of_GIS/Slides.html#cartography-and-navigation",
     "title": "Lecture Slides",
     "section": "Cartography and Navigation",
-    "text": "Cartography and Navigation\n\n\nAustronesian expansion started ~5,000 B.P.\n\nCrossed oceans reading stars, waves, weather, and wildlife\nCharts, songs, and stories to recorded details"
+    "text": "Cartography and Navigation\n\n\nAustronesian expansion started ~5,000 B.P.\n\nCrossed oceans reading stars, waves, weather, and wildlife\n\nCharts, songs, and stories to recorded details"
   },
   {
     "objectID": "History_of_GIS/Slides.html#oldest-known-maps",
     "href": "History_of_GIS/Slides.html#oldest-known-maps",
     "title": "Lecture Slides",
     "section": "Oldest Known Maps",
-    "text": "Oldest Known Maps\n\n\nLandscape around Dyje River, Czechia (26,000 B.P.)\n\n\n\nDarling River basin, Australia (~20,000 B.P.)"
+    "text": "Oldest Known Maps\n\n\nLandscape around Dyje River, Czechia (26,000 B.P.)\n\n\n\n\n\n\nDarling River basin, Australia ~20,000 B.P."
   },
   {
     "objectID": "History_of_GIS/Slides.html#oldest-known-maps-1",
     "href": "History_of_GIS/Slides.html#oldest-known-maps-1",
     "title": "Lecture Slides",
     "section": "Oldest Known Maps",
-    "text": "Oldest Known Maps\n\n\nMap Rock is an engraving of a 600km reach of the Snake River Valley, Idaho (~12,000 B.P.)"
+    "text": "Oldest Known Maps\n\n\nMap Rock: an engraving of a 600km reach of the Snake River Valley ~12,000 B.P."
   },
   {
     "objectID": "History_of_GIS/Slides.html#first-urban-plans",
@@ -655,21 +627,21 @@
     "href": "History_of_GIS/Slides.html#paper-and-textile-maps",
     "title": "Lecture Slides",
     "section": "Paper and Textile Maps",
-    "text": "Paper and Textile Maps\n\n\nMaps on papyrus paper appeared in Egypt ~3,200 B.P.\n\n\n\nPaper and silk maps appeared in China ~2,200 B.P."
+    "text": "Paper and Textile Maps\n\n\nMaps on papyrus paper Egypt ~3,200 B.P.\n\n\n\nPaper and silk maps China ~2,200 B.P."
   },
   {
     "objectID": "History_of_GIS/Slides.html#advent-of-surveying",
     "href": "History_of_GIS/Slides.html#advent-of-surveying",
     "title": "Lecture Slides",
     "section": "Advent of Surveying",
-    "text": "Advent of Surveying\n\n\nAs societies coalesced, methods for the systematic collection of spatial information were developed.\n\nObjects needed to be drawn to scale\nMastery of geometry and trigonometry\nSurveys were used to:\nDemarcate agricultural fields\nConstruct buildings\nPlan settlements"
+    "text": "Advent of Surveying\n\n\nAs societies coalesced, methods for the systematic collection of spatial information were developed.\n\nObjects needed to be drawn to scale\n\nGeometry and trigonometry\n\nSurveys were used for:\n\nAgriculture & construction\nPlanning settlements"
   },
   {
     "objectID": "History_of_GIS/Slides.html#urban-planning",
     "href": "History_of_GIS/Slides.html#urban-planning",
     "title": "Lecture Slides",
     "section": "Urban Planning",
-    "text": "Urban Planning\n\n\nTown plan of Nippur, Babylonia on a clay tablet. Possibly the earliest map drawn to scale 3500 B.P.\n\nOver small areas, maps could now “accurately” represent:\nBearings (direction)\nDistances\nSizes"
+    "text": "Urban Planning\n\n\nTown plan of Nippur, Babylonia on a clay tablet. Possibly the earliest map drawn to scale 3500 B.P.\n\nOver small areas, maps could now “accurately” represent:\n\nBearing, Distance, & Size"
   },
   {
     "objectID": "History_of_GIS/Slides.html#surveying-methods",
@@ -697,21 +669,21 @@
     "href": "History_of_GIS/Slides.html#the-groma",
     "title": "Lecture Slides",
     "section": "The Groma",
-    "text": "The Groma\n\n\nThe Roman Empire employed professional surveyors.\n\nBuilt a massive road network and created an Agricultural land registry\nThey used the groma\nPrecursor of the modern theodolite"
+    "text": "The Groma\n\n\nThe Roman Empire employed professional surveyors.\n\nBuilt a massive road network and created an Agricultural land registry\nUsed the groma, a precursor of the modern theodolite"
   },
   {
     "objectID": "History_of_GIS/Slides.html#the-compass",
     "href": "History_of_GIS/Slides.html#the-compass",
     "title": "Lecture Slides",
     "section": "The Compass",
-    "text": "The Compass\n\n\nLodestones are naturally occurring magnetic minerals. They were used to make compasses by the Olmec civilization (3000 B.P.).\n\nOriented buildings and cities"
+    "text": "The Compass\n\n\nMagnetic minerals were by the Olmec civilization (3000 B.P.)."
   },
   {
     "objectID": "History_of_GIS/Slides.html#the-compass-1",
     "href": "History_of_GIS/Slides.html#the-compass-1",
     "title": "Lecture Slides",
     "section": "The Compass",
-    "text": "The Compass\n\n\nSeparately developed by the Han Dynasty ~2200 B.P.\n\nInitially used for orienting buildings\nApplied to marine navigation in China during the Song Dynasty ~ 1000 B.P.\nReached Europe around 800 B.P.\nSpurred on the “Age of Exploration”"
+    "text": "The Compass\n\n\nDeveloped during the Han Dynasty ~2200 B.P.\n\nApplied to marine navigation during the Song Dynasty ~ 1000 B.P.\nReached Europe around 800 B.P.\n\nSpurred on the “Age of Exploration”"
   },
   {
     "objectID": "History_of_GIS/Slides.html#exploration-spurred-cartographic-advances",
@@ -725,28 +697,42 @@
     "href": "History_of_GIS/Slides.html#ptolemys-geographia",
     "title": "Lecture Slides",
     "section": "Ptolemy’s Geographia",
-    "text": "Ptolemy’s Geographia\n\n\nThe first known Atlas (1850 B.P.).\n\n8 volume GIS prototype with an index of place names and projected maps\nAccounted for earth’s curvature but underestimated size"
+    "text": "Ptolemy’s Geographia\n\n\nThe first known Atlas 1850 B.P.\n\n8 volume GIS prototype with an index of place names and projected maps"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#ptolemys-geographia-1",
+    "href": "History_of_GIS/Slides.html#ptolemys-geographia-1",
+    "title": "Lecture Slides",
+    "section": "Ptolemy’s Geographia",
+    "text": "Ptolemy’s Geographia\n\n\nThe first known Atlas 1850 B.P.\n\nAccounted for earth’s curvature\n\nUnderestimated size by 50%"
   },
   {
     "objectID": "History_of_GIS/Slides.html#chinese-exploration",
     "href": "History_of_GIS/Slides.html#chinese-exploration",
     "title": "Lecture Slides",
     "section": "Chinese Exploration",
-    "text": "Chinese Exploration\n\n\nAdvances in maritime technology, including the compass led to a wave of exploration.\n\nCulminated in the Ming Dynasty Treasure Voyages\nBy 600 B.P., they had mapped most of South & East Asia, East Africa, Indonesia & Australia\nMay have even visited the west coast of North America!"
+    "text": "Chinese Exploration\n\n\nAdvances in maritime technology led to a wave of exploration.\n\nMing Dynasty Treasure Voyages\nMapped most of South & East Asia, East Africa, Indonesia & Australia by 600 B.P.\n\nMay have even visited the west coast of North America!"
   },
   {
     "objectID": "History_of_GIS/Slides.html#spread-of-information",
     "href": "History_of_GIS/Slides.html#spread-of-information",
     "title": "Lecture Slides",
     "section": "Spread of Information",
-    "text": "Spread of Information\n\n\nChinese and Islamic mariners brought technology westward.\n\nBy 550 BP. Europeans had the compass\n\n\n\nSpurred on the “Age of Discovery”\n\nEuropean perspectives came to dominate the cartographic world"
+    "text": "Spread of Information\n\n\nChinese and Islamic mariners brought technology westward. By 550 BP. Europeans had the compass"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#spread-of-information-1",
+    "href": "History_of_GIS/Slides.html#spread-of-information-1",
+    "title": "Lecture Slides",
+    "section": "Spread of Information",
+    "text": "Spread of Information\n\n\nThe “Age of Discovery” in Europe led to the rise of colonialism. European perspectives came to dominate much of the cartographic world."
   },
   {
     "objectID": "History_of_GIS/Slides.html#the-mercator-projection",
     "href": "History_of_GIS/Slides.html#the-mercator-projection",
     "title": "Lecture Slides",
     "section": "The Mercator Projection",
-    "text": "The Mercator Projection\n\n\nRevolutionized navigation and cartography.\n\nFollow constant bearing and reach any location on earth\nStill used today (e.g. Google Maps)"
+    "text": "The Mercator Projection\n\n\nRevolutionized navigation and cartography.\n\nFollow constant bearing and reach any location on earth\n\nStill used today\nGoogle Maps etc."
   },
   {
     "objectID": "History_of_GIS/Slides.html#the-mercator-projection-1",
@@ -784,32 +770,18 @@
     "text": "Numbered Treaties\n\n\nBuilding on GSC Surveys, the government “negotiated” the numbered treaties.\n\nCited survey maps as evidence of their “sovereignty”\nThe RCMP were created to enforce treaties and displace Indigenous people"
   },
   {
-    "objectID": "History_of_GIS/Slides.html#countering-colonialism",
-    "href": "History_of_GIS/Slides.html#countering-colonialism",
-    "title": "Lecture Slides",
-    "section": "Countering Colonialism",
-    "text": "Countering Colonialism\n\n\nThe lands that comprise Canada have been inhabited for thousands of years and have histories that stretch back well before the colonial era.\n\nMany colonial mapping efforts were centered on erasing Indigenous peoples and their histories\nOne way they accomplished this was through the use of place names\n\n\n\nCh’ich’iyuy is a Skwxwú7mesh word that translates to “Twins”"
-  },
-  {
-    "objectID": "History_of_GIS/Slides.html#learning-place-names",
-    "href": "History_of_GIS/Slides.html#learning-place-names",
-    "title": "Lecture Slides",
-    "section": "Learning Place Names",
-    "text": "Learning Place Names\n\n\nThe Skwxwú7mesh Atlas is a great resource for learning about Skwxwú7mesh Place Names.\n\n\nThe xʷməθkʷəy̓əm nation has put together a great resource for as well!"
-  },
-  {
     "objectID": "History_of_GIS/Slides.html#canada-land-inventory",
     "href": "History_of_GIS/Slides.html#canada-land-inventory",
     "title": "Lecture Slides",
     "section": "Canada Land Inventory",
-    "text": "Canada Land Inventory\n\n\nMapped suitability of lands for: Agriculture, forestry, recreation and wildlife.\n\nOriginal maps can be found here\nThe first operational GIS\nDigital geographic database\nAdvances in spatial analysis"
+    "text": "Canada Land Inventory\n\n\nMapped suitability of lands for: Agriculture, forestry, recreation and wildlife.\n\nOriginal maps can be found here\nThe first operational GIS\n\nDigital geographic database\nAdvances in spatial analysis"
   },
   {
     "objectID": "History_of_GIS/Slides.html#commercial-development",
     "href": "History_of_GIS/Slides.html#commercial-development",
     "title": "Lecture Slides",
     "section": "Commercial Development",
-    "text": "Commercial Development\n\n\nFollowing the CLI, a number of commercial software companies began developing GIS applications.\n\nHardware improvements made the technology more accessible\nMapping Display and Analysis System (MIDAS)\nFirst desktop GIS released in 1986"
+    "text": "Commercial Development\n\n\nFollowing the CLI, a number of commercial software companies began developing GIS applications.\n\nHardware improvements made the technology more accessible\nMapping Display and Analysis System (MIDAS)\n\nDesktop GIS released in 1986"
   },
   {
     "objectID": "index.html",
@@ -1097,6 +1069,20 @@
     "title": "Lecture Slides",
     "section": "Fremium Services",
     "text": "Fremium Services\nCompanies like mapbox and google provide some geospatial services that are “free” to a point. For example, Google earth engine provides its cloud based computational capabilities to non-commercial users free of charge."
+  },
+  {
+    "objectID": "Modern_GIS/Slides.html#countering-colonialism",
+    "href": "Modern_GIS/Slides.html#countering-colonialism",
+    "title": "Lecture Slides",
+    "section": "Countering Colonialism",
+    "text": "Countering Colonialism\n\n\nThe lands that comprise Canada have been inhabited for thousands of years and have histories that stretch back well before the colonial era.\n\nMany colonial mapping efforts were centered on erasing Indigenous peoples and their histories\nOne way they accomplished this was through the use of place names\n\n\n\nCh’ich’iyuy is a Skwxwú7mesh word that translates to “Twins”"
+  },
+  {
+    "objectID": "Modern_GIS/Slides.html#learning-place-names",
+    "href": "Modern_GIS/Slides.html#learning-place-names",
+    "title": "Lecture Slides",
+    "section": "Learning Place Names",
+    "text": "Learning Place Names\n\n\nThe Skwxwú7mesh Atlas is a great resource for learning about Skwxwú7mesh Place Names.\n\n\nThe xʷməθkʷəy̓əm nation has put together a great resource for as well!"
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#what-is-a-phenomenon",
@@ -2707,5 +2693,33 @@
     "title": "Lecture Slides",
     "section": "Many More",
     "text": "Many More\n\n\nThere are many more vector overlay tools! I have presented some of the the most frequently used tools, but if you have specific use cases you may need others. I can’t cover them all, and I don’t want to overwhelm folks."
+  },
+  {
+    "objectID": "What_is_GIS/Slides.html#what-is-giscience",
+    "href": "What_is_GIS/Slides.html#what-is-giscience",
+    "title": "Lecture Slides",
+    "section": "What is GIScience?",
+    "text": "What is GIScience?\nThe science and study of geospatial information:\n\nGIScience is a framework we use to understand spatial information.\n\nRooted in Cartography, but it is inherently multidisciplinary\nDraws on Computer Science, Mathematics & Statistics, Remote Sensing, and many other fields."
+  },
+  {
+    "objectID": "What_is_GIS/Slides.html#what-is-a-gisystem",
+    "href": "What_is_GIS/Slides.html#what-is-a-gisystem",
+    "title": "Lecture Slides",
+    "section": "What is a GISystem?",
+    "text": "What is a GISystem?\nAny system or tool we use to store and analyze geospatial information can broadly be considered a GISystem.\n\nUntil a the late 20th century, atlases and library map catalogues were our most advanced GIS.\n\nNow we have a wide range of computer and web based GISystems.\n\nRanging from the “desktop” GIS applications like ArcGIS Pro that you will be using to cloud computing systems that can Terabytes of planetary scale data."
+  },
+  {
+    "objectID": "What_is_GIS/Slides.html#what-is-a-gisystem-1",
+    "href": "What_is_GIS/Slides.html#what-is-a-gisystem-1",
+    "title": "Lecture Slides",
+    "section": "What is a GISystem?",
+    "text": "What is a GISystem?\n\nCredit - https://gisgeography.com/what-is-gis/"
+  },
+  {
+    "objectID": "What_is_GIS/Slides.html#what-can-be-done-with-gis",
+    "href": "What_is_GIS/Slides.html#what-can-be-done-with-gis",
+    "title": "Lecture Slides",
+    "section": "What can be done with GIS?",
+    "text": "What can be done with GIS?\nGIS can be used to help solve a wide range of geographic problems in different fields:\n\n\n\nPublic Health (Epidemiology)\nPlanning (Urban, Hazards)\nResource Management\nEconomics\n\n\n\nEcology & Biology\nClimate Science\nSocial Justice\nConservation"
   }
 ]

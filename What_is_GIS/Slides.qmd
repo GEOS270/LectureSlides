@@ -1,0 +1,89 @@
+---
+format:
+  revealjs:
+    theme: white
+    code-fold: true
+    controls: true
+    navigation-mode: linear
+    controls-layout: bottom-right
+    controls-tutorial: true
+    slide-number: true
+    show-slide-number: all
+    pdfMaxPagesPerSlide: 1
+fig-dpi: 300
+
+---
+
+
+What Is GIS?
+==============
+
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+The **GI** stands for **Geographic Information**.  The **S** can be either **Science** or **System**.  You will often see them used interchangeably because they are very closely related.  Basically, you do GI*Science* with a GI*System*.
+
+:::
+::::
+
+
+What is GIScience?
+------------------
+
+The science and study of geospatial information: 
+
+* GIScience is a framework we use to understand spatial information.  
+
+  * Rooted in Cartography, but it is inherently multidisciplinary 
+  * Draws on Computer Science, Mathematics & Statistics, Remote Sensing, and many other fields.
+
+What is a GISystem?
+-------------------
+
+Any system or tool we use to store and analyze geospatial information can broadly be considered a GISystem.  
+
+* Until a the late 20th century, atlases and library map catalogues were our most advanced GIS.  
+* Now we have a wide range of computer and web based GISystems.  
+  * Ranging from the "desktop" GIS applications like ArcGIS Pro that you will be using to cloud computing systems that can Terabytes of planetary scale data.
+
+What is a GISystem?
+-------------------
+
+![Credit - https://gisgeography.com/what-is-gis/](images/What-Is-Geographic-Information-Systems.jpg)
+
+What can be done with GIS?
+--------------------------
+
+GIS can be used to help solve a wide range of geographic problems in different fields: 
+
+::::{.columns}
+:::{.column width="55%"}
+* Public Health (Epidemiology)
+* Planning (Urban, Hazards)
+* Resource Management
+* Economics
+:::
+
+:::{.column width="45%"}
+* Ecology & Biology
+* Climate Science
+* Social Justice
+* Conservation
+
+:::
+::::
+
+
+
+TopHat Question 1
+=================
+
+GIS is an acronym that stands for:
+
+- Geographic Information Science
+- Geographic Information System
+- Both Geographic Information Science and Geographic Information System
+

@@ -10,6 +10,7 @@ format:
     slide-number: true
     show-slide-number: all
     pdfMaxPagesPerSlide: 1
+    scrollable: true
 fig-dpi: 300
 
 ---
@@ -24,58 +25,17 @@ History of GIS
 :::{.column width="100%"}
 
 From prehistoric maps to modern GIS.
+
 :::
 ::::
-
-
-What is GIS?
------------
-
-The **GI** stands for **Geographic Information**.  The **S** can be either **Science** or **System**.  You will often see them used interchangeably because they are very closely related.  Basically, you do GI*Science* with a GI*System*.
-
-What is GIScience?
-------------------
-
-The science and study of geospatial information: GIScience is a framework we use to understand spatial information.  It is rooted in Cartography, the art and science of graphically mapping but it is inherently multidisciplinary and drawing on Computer Science, Mathematics & Statistics, Remote Sensing, and many other fields.
-
-What is a GISystem?
--------------------
-
-Any system or tool we use to store and analyze geospatial information can broadly be considered a GISystem.  Until a the late 20th century, atlases and library map catalogues were our most advanced GIS.  Now we have a wide range of computer and web based GISystems.  Ranging from the "desktop" GIS applications like ArcGIS Pro that you will be using to cloud computing systems that can Terabytes of planetary scale data.
-
-What can be done with GIS?
---------------------------
-
-GIS can be used to help solve a wide range of geographic problems in different fields: 
-
-* Epidemiology/Public Health
-* Planning (Urban, Hazards)
-* Conservation & Resource Management
-* Economics
-* Climate Science
-* Ecology/Biology
-* Social Justice
-
-TopHat Question 1
-=================
-
-GIS is an acronym that stands for:
-
-- Geographic Information Science
-- Geographic Information System
-- Both Geographic Information Science and Geographic Information System
 
 
 History of GIS
 --------------
 
-A holistic understanding of GIS can help you use it effectively **and** responsibly.  A good way to start off is to look at the history of the GIS and Cartography more broadly.
+A holistic understanding of GIScience can help you use GISystems more effectively **and** responsibly.  
 
-* In this section of the module, I will give a sweeping overview of the development of the discipline.
-  * We'll start with the very first maps and end with the widespread adoption of GIS and proliferation of geospatial technology.
-
-
-
+* A good way to start off is to look at the history of the discipline
 
 
 Pre-Historic Maps
@@ -83,7 +43,7 @@ Pre-Historic Maps
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="55%"}
 
 
 Many of the first maps are difficult to recognize as such.
@@ -96,7 +56,7 @@ Many of the first maps are difficult to recognize as such.
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 
@@ -164,14 +124,16 @@ Ojibway birch bark scrolls.
 
 
 :::
-:::{.column width="50%"}
+
+:::{.column width="10%"}
+<!-- Empty Spacer -->
+:::
+:::{.column width="40%"}
 
 
-![](images/Symbolic.png)
-
+![](images/Symbolic.png){width="80%"}
 
 Miꞌkmaq gestural map
-
 
 
 
@@ -193,19 +155,19 @@ Austronesian expansion started ~5,000 B.P.
 
 
 * Crossed oceans reading stars, waves, weather, and wildlife
-+ Charts, songs, and stories to recorded details
+  + Charts, songs, and stories to recorded details
 
 
-![](images/austronesian.png)
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="45%"}
 
 
 
 ![](images/stick_chart.jpg)
+![](images/austronesian.png)
 
 
 
@@ -232,14 +194,20 @@ Landscape around Dyje River, Czechia (26,000 B.P.)
 
 
 :::
-:::{.column width="50%"}
 
+:::{.column width="10%"}
+<!-- Filler -->
+:::
 
-![](images/cylcon.jpg)
+:::{.column width="40%"}
 
+:::{.smaller}
+![](images/cylcon.jpg){width="50%"}
   
-Darling River basin, Australia (~20,000 B.P.)
+Darling River basin, Australia 
+~20,000 B.P.
 
+:::
 
 
 
@@ -257,7 +225,7 @@ Oldest Known Maps
 :::{.column width="50%"}
 
 
-[Map Rock](https://decolonialatlas.wordpress.com/2016/01/13/shoshoni-map-rock/) is an engraving of a 600km reach of the Snake River Valley, Idaho (~12,000 B.P.)
+[Map Rock](https://decolonialatlas.wordpress.com/2016/01/13/shoshoni-map-rock/): an engraving of a 600km reach of the Snake River Valley ~12,000 B.P.
 
 
 ![](images/idahomaprock.jpg)
@@ -285,7 +253,7 @@ First "Urban" Plans
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="55%"}
 
 
 Çatalhöyük Turkey, 8700 B.P.
@@ -296,7 +264,7 @@ First "Urban" Plans
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="45%"}
 
 
 Bedolina, Italy 4000 B.P.
@@ -321,7 +289,8 @@ Paper and Textile Maps
 :::{.column width="50%"}
 
 
-Maps on papyrus paper appeared in Egypt ~3,200 B.P.
+Maps on papyrus paper
+Egypt ~3,200 B.P.
 
 
 ![](images/papyrus_map.png)
@@ -329,7 +298,7 @@ Maps on papyrus paper appeared in Egypt ~3,200 B.P.
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="45%"}
 
 
   
@@ -337,7 +306,8 @@ Maps on papyrus paper appeared in Egypt ~3,200 B.P.
 ![](images/silk_map.png)
 
 
-Paper and silk maps appeared in China ~2,200 B.P.
+Paper and silk maps
+China ~2,200 B.P.
 
 
 
@@ -348,7 +318,7 @@ Paper and silk maps appeared in China ~2,200 B.P.
 
 
 
-TopHat Question 2
+TopHat Question 1
 =================
 
 
@@ -364,32 +334,28 @@ The Ojibway people of the Great Lakes region created maps on scrolls of:
 
 
 
-
-
-
 Advent of Surveying
 -------------------
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="70%"}
 
 
 As societies coalesced, methods for the **systematic** collection of spatial information were developed.
 
 
 * Objects needed to be drawn to scale
-+ Mastery of geometry and trigonometry
+  + Geometry and trigonometry
 
-* Surveys were used to:
-+ Demarcate agricultural fields
-+ Construct buildings
-+ Plan settlements
+* Surveys were used for:
+  + Agriculture & construction
+  + Planning settlements
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="30%"}
 
 
 
@@ -409,21 +375,19 @@ Urban Planning
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="60%"}
 
 
 Town plan of Nippur, Babylonia on a clay tablet. Possibly the earliest map drawn to scale 3500 B.P.
 
 
 * Over small areas, maps could now "accurately" represent:
-+ Bearings (direction)
-+ Distances
-+ Sizes
+  + Bearing, Distance, & Size
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 
@@ -443,7 +407,7 @@ Surveying Methods
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="55%"}
 
 
 Rope stretching is the earliest technique to come about.
@@ -453,14 +417,14 @@ Rope stretching is the earliest technique to come about.
 * Used for building monuments and agricultural surveys
 
 
-![](images/rope_stretchers_egypt.jpg)
-
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="45%"}
 
 
+
+![](images/rope_stretchers_egypt.jpg)
 
 
 ![](images/rope_stretchers_aztec.png)
@@ -479,7 +443,7 @@ Surveying Methods
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="65%"}
 
 
 Line of sight methods allowed for surveying over greater distances and mapping larger areas.
@@ -490,7 +454,7 @@ Line of sight methods allowed for surveying over greater distances and mapping l
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="35%"}
 
 
 
@@ -510,7 +474,7 @@ Surveying Methods
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="60%"}
 
 
 Line of sight methods allowed for surveying over greater distances and mapping larger areas.
@@ -522,7 +486,7 @@ Line of sight methods allowed for surveying over greater distances and mapping l
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 
@@ -549,8 +513,7 @@ The Roman Empire employed professional surveyors.
 
 
 * Built a massive road network and created an Agricultural land registry
-* They used the groma
-+ Precursor of the modern [theodolite](https://en.wikipedia.org/wiki/Total_station)
+* Used the groma, a precursor of the modern [theodolite](https://en.wikipedia.org/wiki/Total_station)
 
 
 
@@ -575,20 +538,18 @@ The Compass
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="55%"}
 
 
-Lodestones are naturally occurring magnetic minerals. They were used to make compasses by the Olmec civilization (3000 B.P.).
+Magnetic minerals were by the Olmec civilization (3000 B.P.).
 
-
-* Oriented buildings and cities
-![](images/Olmec_compas.png)
+![](images/Olmec_compas.png){width="80%"}
 
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 
@@ -608,21 +569,20 @@ The Compass
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="65%"}
 
 
-Separately developed by the Han Dynasty ~2200 B.P.
+Developed during the Han Dynasty ~2200 B.P.
 
 
-* Initially used for orienting buildings
-* Applied to marine navigation in China during the Song Dynasty ~ 1000 B.P.
+* Applied to marine navigation during the Song Dynasty ~ 1000 B.P.
 * Reached Europe around 800 B.P.
-+ Spurred on the "Age of Exploration"
+  + Spurred on the "Age of Exploration"
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="35%"}
 
 
 
@@ -642,7 +602,7 @@ Exploration Spurred Cartographic Advances
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="60%"}
 
 
 Trade and travel expanded conceptualizations of what the world was.
@@ -654,7 +614,7 @@ Trade and travel expanded conceptualizations of what the world was.
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 
@@ -674,25 +634,51 @@ Ptolemy’s Geographia
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="55%"}
 
 
-The first known [Atlas](https://en.wikipedia.org/wiki/Geography_(Ptolemy)#Atlas) (1850 B.P.).
+The first known [Atlas](https://en.wikipedia.org/wiki/Geography_(Ptolemy)#Atlas) 1850 B.P.
 
 
 * 8 volume GIS prototype with an index of place names and projected maps
-+ Accounted for earth's curvature but underestimated size
-![](images/round_earth.png)
 
 
 
 
 :::
-:::{.column width="50%"}
-
+:::{.column width="45%"}
 
 
 ![](images/geographia.png)
+
+
+
+:::
+::::
+
+
+Ptolemy’s Geographia
+--------------------
+
+
+::::{.columns}
+:::{.column width="55%"}
+
+The first known [Atlas](https://en.wikipedia.org/wiki/Geography_(Ptolemy)#Atlas) 1850 B.P.
+
+
+* Accounted for earth's curvature
+  + Underestimated size by 50%
+
+
+
+
+:::
+:::{.column width="45%"}
+
+
+
+![](images/round_earth.png)
 
 
 
@@ -701,27 +687,25 @@ The first known [Atlas](https://en.wikipedia.org/wiki/Geography_(Ptolemy)#Atlas)
 ::::
 
 
-
-
 Chinese Exploration
 -------------------
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="60%"}
 
 
-Advances in maritime technology, including the compass led to a wave of exploration.
+Advances in maritime technology led to a wave of exploration.
 
 
-* Culminated in the [Ming Dynasty Treasure Voyages](https://en.wikipedia.org/wiki/Ming_treasure_voyages)
-* By 600 B.P., they had mapped most of South & East Asia, East Africa, Indonesia & Australia
-+ May have even visited the west coast of North America!
+* [Ming Dynasty Treasure Voyages](https://en.wikipedia.org/wiki/Ming_treasure_voyages)
+* Mapped most of South & East Asia, East Africa, Indonesia & Australia by 600 B.P.
+  + May have even visited the west coast of North America!
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 
@@ -734,26 +718,21 @@ Advances in maritime technology, including the compass led to a wave of explorat
 ::::
 
 
-
-
 Spread of Information
 ---------------------
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="100%"}
 
 
-Chinese and Islamic mariners brought technology westward.
+Chinese and Islamic mariners brought technology westward. By 550 BP. Europeans had the compass
 
 
-* By 550 BP. Europeans had the compass
+![](images/FraMauro.jpg){width="80%"}
 
 
-![](images/FraMauro.jpg)
-
-
-
+<!-- 
 :::
 :::{.column width="50%"}
 
@@ -766,7 +745,25 @@ Spurred on the "Age of Discovery"
 
 ![](images/magellan.png)
 
+ -->
 
+
+:::
+::::
+
+
+Spread of Information
+---------------------
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+
+The "Age of Discovery" in Europe led to the rise of colonialism.  European perspectives came to dominate much of the cartographic world.
+
+
+![](images/magellan.png){width="60%"}
 
 
 :::
@@ -780,26 +777,27 @@ The Mercator Projection
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="55%"}
 
 
 Revolutionized navigation and cartography.
 
 
 * Follow constant bearing and reach any location on earth
-+ Still used today (e.g. Google Maps)
+  + Still used today 
+  + Google Maps etc.
 
-![](images/cylindrical.png)
 
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="45%"}
 
 
 
 ![](images/mercator.png)
+![](images/cylindrical.png)
 
 
 
@@ -957,7 +955,7 @@ Numbered Treaties
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="60%"}
 
 
 Building on GSC Surveys, the government "negotiated" the numbered treaties.
@@ -969,7 +967,7 @@ Building on GSC Surveys, the government "negotiated" the numbered treaties.
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 
@@ -984,71 +982,6 @@ Building on GSC Surveys, the government "negotiated" the numbered treaties.
 
 
 
-Countering Colonialism
-----------------------
-
-
-::::{.columns}
-:::{.column width="50%"}
-
-
-The lands that comprise Canada have been inhabited for thousands of years and have histories that stretch back well before the colonial era.
-
-
-* Many colonial mapping efforts were centered on erasing Indigenous peoples and their histories
-* One way they accomplished this was through the use of place names
-
-
-
-:::
-:::{.column width="50%"}
-
-
-![](images/the_twins.jpg)
-
-
-Ch'ich'iyuy is a Skwxwú7mesh word that translates to "Twins"
-
-
-
-
-:::
-::::
-
-
-
-
-Learning Place Names
---------------------
-
-
-::::{.columns}
-:::{.column width="50%"}
-
-
-The [Skwxwú7mesh Atlas](http://squamishatlas.com/?fbclid=IwAR3JfkUeATF22zPFi9BCo-S6BrOudMQeFSO3_r3iar6JGj0XYf1qTOQ92zE#) is a great resource for learning about Skwxwú7mesh Place Names.
-
-
-![](images/squamish_atlas.png)
-
-
-
-:::
-:::{.column width="50%"}
-
-
-The [xʷməθkʷəy̓əm](https://placenamemap.musqueam.bc.ca/?fbclid=IwAR1dWYuotXFkmwJzidy2ayrlPy4NvvnRBuOnUeyoSqsRiZpt5blWhxeFR0I) nation has put together a great resource for as well!
-
-
-![](images/musqueam_atlas.png)
-
-
-
-
-:::
-::::
-
-
 
 
 Canada Land Inventory
@@ -1056,7 +989,7 @@ Canada Land Inventory
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="55%"}
 
 
 Mapped suitability of lands for: Agriculture, forestry, recreation and wildlife.
@@ -1064,13 +997,13 @@ Mapped suitability of lands for: Agriculture, forestry, recreation and wildlife.
 
 * Original maps can be found [here](https://atlas.gc.ca/toporama/en/index.html)
 * The first operational GIS
-+ Digital geographic database
-+ Advances in spatial analysis
+  + Digital geographic database
+  + Advances in spatial analysis
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="45%"}
 
 
 
@@ -1090,7 +1023,7 @@ Commercial Development
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="60%"}
 
 
 Following the CLI, a number of commercial software companies began developing GIS applications.
@@ -1098,12 +1031,12 @@ Following the CLI, a number of commercial software companies began developing GI
 
 * Hardware improvements made the technology more accessible
 * Mapping Display and Analysis System (MIDAS)
-+ First desktop GIS released in 1986
+  + Desktop GIS released in 1986
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 
