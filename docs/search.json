@@ -749,6 +749,76 @@
     "text": "Spatial Analysis\n\n\nAs our representation of space became more accurate and precise, our ability to make spatial inferences expanded as well.\n\nAs part of the Lab Assignment we’ll recreate an example from history using modern methods."
   },
   {
+    "objectID": "History_of_GIS/Slides.html#backstory-germ-theory",
+    "href": "History_of_GIS/Slides.html#backstory-germ-theory",
+    "title": "Lecture Slides",
+    "section": "Backstory: Germ Theory",
+    "text": "Backstory: Germ Theory\nEarly germ theory developed 2000 years ago.\n\nIslamic physicians later formalized the basics. Ibn al-Khatib’s writings on the bubonic plague in 1362:\n\n“The existence of contagion is established by experience [and] by trustworthy reports on transmission by garments, vessels, ear-rings; by the spread of it by persons from one house, by infection of a healthy sea-port by an arrival from an infected land [and] by the immunity of isolated individuals.”"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#backstory-miasma-theory",
+    "href": "History_of_GIS/Slides.html#backstory-miasma-theory",
+    "title": "Lecture Slides",
+    "section": "Backstory: Miasma Theory",
+    "text": "Backstory: Miasma Theory\n\n\nYet European physicians clung to the miasma theory for many centuries.\n\nAttributed diseases such as cholera to “bad air”"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#a-case-study-hand-washing",
+    "href": "History_of_GIS/Slides.html#a-case-study-hand-washing",
+    "title": "Lecture Slides",
+    "section": "A Case Study: Hand Washing",
+    "text": "A Case Study: Hand Washing\nThe Vienna Maternity Hospital had two clinics with different maternal mortality rates.\n\n\n\nFirst clinic run by physicians and students\n\nStarted each day with postmortems, then went to the maternity ward\nDid not wash hands"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#a-case-study-hand-washing-1",
+    "href": "History_of_GIS/Slides.html#a-case-study-hand-washing-1",
+    "title": "Lecture Slides",
+    "section": "A Case Study: Hand Washing",
+    "text": "A Case Study: Hand Washing\nMidwives had more sanitary practices and they did not do postmortems.\n\n\n\nConsequently they had lower mortality rates.\nNew chief resident Ignaz Semmelweis suspected contagions from the cadavers were to blame"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#a-case-study-hand-washing-2",
+    "href": "History_of_GIS/Slides.html#a-case-study-hand-washing-2",
+    "title": "Lecture Slides",
+    "section": "A Case Study: Hand Washing",
+    "text": "A Case Study: Hand Washing\nIn 1847, Semmelweis mandated hand washing and sanitizing instruments with a chlorine solution for both clinics.\n\nBy 1848, mortality in both clinics fell to 1.3%.\n\nSemmelweis’ was replaced in 1849\nSanitizing fell out of practice and death rates began to rise again."
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#a-case-study-hand-washing-3",
+    "href": "History_of_GIS/Slides.html#a-case-study-hand-washing-3",
+    "title": "Lecture Slides",
+    "section": "A Case Study: Hand Washing",
+    "text": "A Case Study: Hand Washing\nDespite the overwhelming evidence, the hand washing was rejected by the European medical community because it was in conflict with the Miasma theory.\n\n\n\nSome were offended by the idea that physicians were vectors for disease transmission\n\n“A gentleman’s hands are clean”"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#foundations-of-epidemiology",
+    "href": "History_of_GIS/Slides.html#foundations-of-epidemiology",
+    "title": "Lecture Slides",
+    "section": "Foundations of Epidemiology",
+    "text": "Foundations of Epidemiology\nDr. John Snow was a in London where cholera outbreaks were a frequent due to poor sanitation practices.\n\nDr. Snow was a skeptic of the miasma theory and a proponent of germ theory\nIn 1849 he proposed cholera that it was spread by fecal contaminated water\n\nCompared cholera rates between London districts supplied by different water companies"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#foundations-of-epidemiology-1",
+    "href": "History_of_GIS/Slides.html#foundations-of-epidemiology-1",
+    "title": "Lecture Slides",
+    "section": "Foundations of Epidemiology",
+    "text": "Foundations of Epidemiology\nDuring an 1854 outbreak in SoHo, Dr. Snow identified the point source of the outbreak using a hand-sketched map.\n\n\n\nRecorded cases using a dash and pumps with a circle\n\nCreated what today would be called a dot map\nTraced cases to the Broad st. water pump"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#foundations-of-epidemiology-2",
+    "href": "History_of_GIS/Slides.html#foundations-of-epidemiology-2",
+    "title": "Lecture Slides",
+    "section": "Foundations of Epidemiology",
+    "text": "Foundations of Epidemiology\nDr. Snow convinced the government to remove the pump handle and the outbreak subsided\n\n\n\nThe medical community in London continued to reject germ theory\nMiasma theory wouldn’t be dispelled until the invention of the microscope twenty years later"
+  },
+  {
+    "objectID": "History_of_GIS/Slides.html#belief-perseverance",
+    "href": "History_of_GIS/Slides.html#belief-perseverance",
+    "title": "Lecture Slides",
+    "section": "Belief Perseverance",
+    "text": "Belief Perseverance\nRejection of sanitary practices in the European medical community is an example of belief perseverance.\n\nA common issue that has impeded numerous scientific advancements (eg. plate tectonics, climate change, vaccines, etc).\n\nBelief perseverance has many causes but it is often exacerbated by misogyny, racism, and ethnocentrism."
+  },
+  {
     "objectID": "History_of_GIS/Slides.html#canadian-context",
     "href": "History_of_GIS/Slides.html#canadian-context",
     "title": "Lecture Slides",

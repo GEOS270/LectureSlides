@@ -881,6 +881,168 @@ As our representation of space became more accurate and precise, our ability to 
 :::
 ::::
 
+Backstory: Germ Theory
+----------------
+
+Early [germ theory](https://en.wikipedia.org/wiki/Germ_theory_of_disease) developed 2000 years ago.  
+
+* Islamic physicians later formalized the basics. Ibn al-Khatib's writings on the bubonic plague in [1362](https://en.wikipedia.org/wiki/Ibn_al-Khatib#On_the_Plague):
+
+  + *"The existence of contagion is established by experience [and] by trustworthy reports on transmission by garments, vessels, ear-rings; by the spread of it by persons from one house, by infection of a healthy sea-port by an arrival from an infected land [and] by the immunity of isolated individuals."*  
+
+
+Backstory: Miasma Theory
+----------------
+
+::::{.columns}
+:::{.column width="50%"}
+
+Yet European physicians clung to the [miasma theory](https://en.wikipedia.org/wiki/Miasma_theory) for many centuries.
+
+* Attributed diseases such as cholera to “bad air”
+
+:::
+:::{.column width="50%"}
+
+![](https://upload.wikimedia.org/wikipedia/commons/1/1e/Cholera-nlm_nlmuid-101393375-imgAA.JPG)
+
+:::
+::::
+
+A Case Study: Hand Washing
+----------------
+
+The Vienna Maternity Hospital had two clinics with different maternal mortality rates. 
+
+::::{.columns}
+:::{.column width="50%"}
+ 
+
+* First clinic run by physicians and students
+  + Started each day with postmortems, then went to the maternity ward
+  + **Did not wash hands**
+
+:::
+:::{.column width="50%"}
+
+![](https://upload.wikimedia.org/wikipedia/commons/f/fe/Yearly_mortality_rates_1841-1846_two_clinics.png)
+
+:::
+::::
+
+
+A Case Study: Hand Washing
+----------------
+
+Midwives had more sanitary practices and they did not do postmortems.
+
+::::{.columns}
+:::{.column width="50%"}
+ 
+
+* Consequently they had lower mortality rates.
+* New chief resident Ignaz Semmelweis suspected contagions from the cadavers were to blame
+
+:::
+:::{.column width="50%"}
+
+![](https://upload.wikimedia.org/wikipedia/commons/f/fe/Yearly_mortality_rates_1841-1846_two_clinics.png)
+
+:::
+::::
+
+A Case Study: Hand Washing
+----------------
+
+In 1847, Semmelweis mandated hand washing and sanitizing instruments with a chlorine solution for both clinics.
+
+* By 1848, mortality in both clinics fell to 1.3%.
+  + Semmelweis' was replaced in 1849
+  + Sanitizing fell out of practice and death rates began to rise again.
+
+A Case Study: Hand Washing
+----------------
+
+Despite the overwhelming evidence, the hand washing was rejected by the European medical community because it was in conflict with the Miasma theory.
+
+::::{.columns}
+:::{.column width="50%"}
+ 
+* Some were offended by the idea that physicians were vectors for disease transmission
+  + [*"A gentleman's hands are clean"*](https://en.wikipedia.org/wiki/Charles_Delucena_Meigs)
+
+:::
+:::{.column width="50%"}
+
+![](https://upload.wikimedia.org/wikipedia/commons/f/fe/Yearly_mortality_rates_1841-1846_two_clinics.png)
+
+:::
+::::
+  
+Foundations of Epidemiology
+----------------
+
+[Dr. John Snow](https://en.wikipedia.org/wiki/John_Snow#Cholera) was a in London where cholera outbreaks were a frequent due to poor sanitation practices.  
+
+* Dr. Snow was a skeptic of the miasma theory and a proponent of germ theory
+* In 1849 he proposed cholera that it was spread by fecal contaminated water
+  + Compared cholera rates between London districts supplied by different water companies
+
+Foundations of Epidemiology
+----------------
+
+During an 1854 outbreak in SoHo, Dr. Snow identified the point source of the outbreak using a hand-sketched map.  
+
+
+::::{.columns}
+:::{.column width="55%"}
+
+* Recorded cases using a dash and pumps with a circle
+  + Created what today would be called a **dot map**
+  + Traced cases to the Broad st. water pump
+
+:::
+:::{.column width="45%"}
+
+
+
+![](images/Snow_Map.jpg)
+
+
+:::
+::::
+
+Foundations of Epidemiology
+----------------
+
+Dr. Snow convinced the government to remove the pump handle and the outbreak subsided
+
+
+::::{.columns}
+:::{.column width="55%"}
+
+* The medical community in London continued to reject germ theory
+* Miasma theory wouldn't be dispelled until the invention of the microscope twenty years later
+
+:::
+:::{.column width="45%"}
+
+
+
+![](images/Snow_Map.jpg)
+
+
+:::
+::::
+
+
+Belief Perseverance
+----------------
+
+Rejection of sanitary practices in the European medical community is an example of [belief perseverance](https://en.wikipedia.org/wiki/Belief_perseverance).
+
+* A common issue that has impeded numerous scientific advancements (eg. plate tectonics, climate change, vaccines, etc).
+  + Belief perseverance has many causes but it is often exacerbated by misogyny, racism, and ethnocentrism.
 
 
 
@@ -889,7 +1051,7 @@ Canadian Context
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="55%"}
 
 
 Cartography facilitated colonialism and territorial expansion throughout Canadian history.
@@ -901,7 +1063,7 @@ Cartography facilitated colonialism and territorial expansion throughout Canadia
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="45%"}
 
 
 
