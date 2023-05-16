@@ -1,7 +1,7 @@
 ---
 format:
   revealjs:
-    theme: serif
+    theme: ../myserif.scss
     code-fold: true
     controls: true
     navigation-mode: linear

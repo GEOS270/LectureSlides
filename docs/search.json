@@ -1096,56 +1096,63 @@
     "href": "Modern_GIS/Slides.html#proprietary-gis-software",
     "title": "Lecture Slides",
     "section": "Proprietary GIS Software",
-    "text": "Proprietary GIS Software\nGIS is very much rooted in capitalism and the capitalist enterprise. Consequently many of the initial developments in GIS were by for profit companies. For example, ESRI is a leading producer of GIS software. They make ArcGIS Pro, the software package we will be working with most in this class.\nProprietary software requires users to purchase a license in order to gain access and restricts access to source code, meaning users have no right to view or edit source code (inner workings of a program). Common examples of proprietary technology include: * Operating Systems: Windows OS, Mac OS, IOS * Programming Languages: MATLAB, VBScript * Software Packages: Microsoft Office (Word, Excel, Power Point etc.), Adobe Illustrator, IOS, ArcMap\nProprietary software licenses are often very expensive. They pose a significant barrier to access for uses that aren’t affiliated with large institutions."
+    "text": "Proprietary GIS Software\nGIS is very much rooted in capitalism and the capitalist enterprise. Consequently many of the initial developments in GIS were by for profit companies.\n\nESRI is a leading producer of GIS software. They make ArcGIS Pro, the software package we will be working with most in this class."
+  },
+  {
+    "objectID": "Modern_GIS/Slides.html#proprietary-gis-software-1",
+    "href": "Modern_GIS/Slides.html#proprietary-gis-software-1",
+    "title": "Lecture Slides",
+    "section": "Proprietary GIS Software",
+    "text": "Proprietary GIS Software\nProprietary software requires a license and restricts access to source code. Common examples include:\n\nOperating Systems: Windows OS, Mac OS, IOS\nProgramming Languages: MATLAB, VBScript\nSoftware Packages: Microsoft Office (Word, Excel, Power Point etc.), Adobe Illustrator, IOS, ArcMap\n\nProprietary software licenses are often expensive. They pose a barrier to access many users."
   },
   {
     "objectID": "Modern_GIS/Slides.html#arcgis-pro",
     "href": "Modern_GIS/Slides.html#arcgis-pro",
     "title": "Lecture Slides",
     "section": "ArcGIS Pro",
-    "text": "ArcGIS Pro\nProprietary packages like ArcGIS Pro are expensive!"
+    "text": "ArcGIS Pro\nAn ArcGIS Pro license is very expensive!\n\nAs a UBC student, you get discounted access\nArcGIS Pro is a good place to start for new uses\n\nOnce you learn the basic, you can move on to cheaper options"
   },
   {
     "objectID": "Modern_GIS/Slides.html#open-source-gis",
     "href": "Modern_GIS/Slides.html#open-source-gis",
     "title": "Lecture Slides",
     "section": "Open Source GIS",
-    "text": "Open Source GIS\nThere are alternatives! Open source software packages have proliferated in recent years and are a viable alternative to the traditional options. The the internet has connected like-minded developers and allowed for collaboration across the globe.\nOpen Source software is free to use, published under an open copyright license. Users have the right to view, edit, and distribute the source code. Common examples of open source technology include:\n\nOperating Systems: Linux OS, Android\nProgramming Languages: Python, R, Java, etc.\nSoftware Packages: Libre Office (Writer, Calc, Impress, etc.), Ink Scape, QGIS\n\nOpen source software is more accessible because its free to download and use."
+    "text": "Open Source GIS\nOpen Source software is free to use, published under an open copyright license. Users have the right to view, edit, and distribute the source code. Common examples include:\n\nOperating Systems: Linux OS, Android\nProgramming Languages: Python, R, Java, etc.\nSoftware Packages: Libre Office (Writer, Calc, Impress, etc.), Ink Scape, QGIS\n\nOpen source software is more accessible because its free to download and use."
   },
   {
     "objectID": "Modern_GIS/Slides.html#qgis",
     "href": "Modern_GIS/Slides.html#qgis",
     "title": "Lecture Slides",
     "section": "QGIS",
-    "text": "QGIS\n\n\n<p>\nYour browser does not support iframes.\n</p>\n<p>\n\nView slides in new tab"
+    "text": "QGIS\n\n  View site in new tab"
   },
   {
     "objectID": "Modern_GIS/Slides.html#open-street-maps",
     "href": "Modern_GIS/Slides.html#open-street-maps",
     "title": "Lecture Slides",
     "section": "Open Street Maps",
-    "text": "Open Street Maps\n\n\nOpen Street Maps is a freely available public database of geospatial information."
+    "text": "Open Street Maps\nOpen Street Maps is a freely available public database of geospatial information."
   },
   {
     "objectID": "Modern_GIS/Slides.html#programmatic-gis",
     "href": "Modern_GIS/Slides.html#programmatic-gis",
     "title": "Lecture Slides",
     "section": "Programmatic GIS",
-    "text": "Programmatic GIS\nProgramming languages like Python and JavaScript can be used to conduct a variety of geospatial analysis and make webmaps. I created the map below using JavaScript. I’ll talk a bit more about these methods later on in the term.\nWebmap for navigating to UBC micromet field sites.\n\n\n<p>\nYour browser does not support iframes.\n</p>\n<p>"
+    "text": "Programmatic GIS\n\n\nPython, JavaScript, R, etc. can be used to for GSI.\n\nI created this webmap using JavaScript.\n\nI’ll talk a bit more about these methods later on in the term.\n\n\n\n\n<p>\nYour browser does not support iframes.\n</p>\n<p>"
   },
   {
     "objectID": "Modern_GIS/Slides.html#fremium-services",
     "href": "Modern_GIS/Slides.html#fremium-services",
     "title": "Lecture Slides",
     "section": "Fremium Services",
-    "text": "Fremium Services\nCompanies like mapbox and google provide some geospatial services that are “free” to a point. For example, Google earth engine provides its cloud based computational capabilities to non-commercial users free of charge."
+    "text": "Fremium Services\n\n\nCompanies like mapbox and google provide some geospatial services that are “free” to a point.\n\nGoogle earth engine provides its cloud based computational capabilities to non-commercial users free of charge."
   },
   {
     "objectID": "Modern_GIS/Slides.html#countering-colonialism",
     "href": "Modern_GIS/Slides.html#countering-colonialism",
     "title": "Lecture Slides",
     "section": "Countering Colonialism",
-    "text": "Countering Colonialism\n\n\nThe lands that comprise Canada have been inhabited for thousands of years and have histories that stretch back well before the colonial era.\n\nMany colonial mapping efforts were centered on erasing Indigenous peoples and their histories\nOne way they accomplished this was through the use of place names\n\n\n\nCh’ich’iyuy is a Skwxwú7mesh word that translates to “Twins”"
+    "text": "Countering Colonialism\nThe lands that comprise Canada have histories that stretch back well before the colonial era.\n\n\n\nColonial mapping centered on erasing Indigenous peoples and their histories\n\nOne way was through the names\n\nCh’ich’iyuy (The Twins)\n\nSkwxwú7mesh name for “The Lions”"
   },
   {
     "objectID": "Modern_GIS/Slides.html#learning-place-names",
