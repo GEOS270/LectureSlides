@@ -467,9 +467,6 @@ Key Advantages
 --------------
 
 
-::::{.columns}
-:::{.column width="100%"}
-
 
 The raster data model is well suited for continuous phenomena:
 
@@ -489,10 +486,6 @@ The raster data model is well suited for continuous phenomena:
 
 
 
-:::
-::::
-
-
 
 
 GeoTIFF
@@ -510,12 +503,6 @@ One of the most common/functional raster formats, based of the Tag Image File Fo
 
 
 
-:::
-::::
-
-
-
-
 Other file types
 ----------------
 
@@ -528,11 +515,6 @@ Raster data can come in many different formats. You will likely encounter when w
 * JPEG2000 - A geospatial version of the common .jpg image type
 * ASCII - An older human readable format (simple text file) with slower performance than the types listed above
 
-
-
-
-:::
-::::
 
 
 
@@ -553,6 +535,44 @@ The Raster Calculator tool lets you:
 * Calculate the area of raster layers
 * Overlay raster and vector layers
 
+
+
+
+:::
+::::
+
+
+
+
+Monitoring Vegetation with Satellites
+----------------
+
+
+
+
+We're going to work with [LANDSAT8](https://developers.google.com/earth-engine/datasets/catalog/landsat-8) data in this lab.  LANDSAT8 is one of a large number of satellites that orbit the earth continuously collecting multi-spectral (visible light & other wavelengths) imagery.  We can use multi-spectral imagery for a number of different applications like estimating vegetation health.
+
+The lines on the chart below are referred to as a spectral reflectance curves. They show reflectance (amount of light) on the y-axis, defined as the percent of radiation reflected by different earth features, and wavelength on the x-axis. As you can see, the spectral reflectance curves for different features look very different. Specifically, you can see that healthy green vegetation has very high reflectance in the near-infrared wavelengths (0.7-1.4 µm) and lower reflectance in the visible part of the spectrum (0-0.7 µm), while water absorbs almost all incoming infrared radiation and thus has very low infrared reflectance. Soil has relatively higher reflectance in the visible wavelengths, and intermediate reflectance in the near infrared.
+
+
+![](images/NDVI.png)
+
+
+TopHat Question 5
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+What does NDVI tell us?
+
+* Vegetation Height
+* Vegetation Health/Density
+* Vegetation Species
+* Number of Plants per Square Meter
+* Location and Age of Forests
 
 
 

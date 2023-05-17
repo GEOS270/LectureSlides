@@ -592,8 +592,6 @@
 </section>
 <section id="key-advantages" class="slide level2">
 <h2>Key Advantages</h2>
-<div class="columns">
-<div class="column" style="width:100%;">
 <p>The raster data model is well suited for continuous phenomena:</p>
 <ul>
 <li><p>Continuous in <strong>space</strong></p></li>
@@ -606,8 +604,6 @@
 <li><p>Multiple raster layers can be combined and evaluated using expressions</p></li>
 <li><p>Easy to “show” others what has been done</p></li>
 </ul>
-</div>
-</div>
 </section>
 <section id="geotiff" class="slide level2">
 <h2>GeoTIFF</h2>
@@ -617,7 +613,6 @@
 <li>Resolution (cell size)</li>
 <li>Projection, Coordinate system, and datum</li>
 </ul>
-<p>::: ::::</p>
 </section>
 <section id="other-file-types" class="slide level2">
 <h2>Other file types</h2>
@@ -627,8 +622,8 @@
 <li>JPEG2000 - A geospatial version of the common .jpg image type</li>
 <li>ASCII - An older human readable format (simple text file) with slower performance than the types listed above</li>
 </ul>
-<p>::: ::::</p>
 </section></section>
+<section>
 <section id="tophat-question-4" class="title-slide slide level1 center">
 <h1>TopHat Question 4</h1>
 <div class="columns">
@@ -639,6 +634,27 @@
 <li>Create raster layers</li>
 <li>Calculate the area of raster layers</li>
 <li>Overlay raster and vector layers</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="monitoring-vegetation-with-satellites" class="slide level2">
+<h2>Monitoring Vegetation with Satellites</h2>
+<p>We’re going to work with <a href="https://developers.google.com/earth-engine/datasets/catalog/landsat-8">LANDSAT8</a> data in this lab. LANDSAT8 is one of a large number of satellites that orbit the earth continuously collecting multi-spectral (visible light &amp; other wavelengths) imagery. We can use multi-spectral imagery for a number of different applications like estimating vegetation health.</p>
+<p>The lines on the chart below are referred to as a spectral reflectance curves. They show reflectance (amount of light) on the y-axis, defined as the percent of radiation reflected by different earth features, and wavelength on the x-axis. As you can see, the spectral reflectance curves for different features look very different. Specifically, you can see that healthy green vegetation has very high reflectance in the near-infrared wavelengths (0.7-1.4 µm) and lower reflectance in the visible part of the spectrum (0-0.7 µm), while water absorbs almost all incoming infrared radiation and thus has very low infrared reflectance. Soil has relatively higher reflectance in the visible wavelengths, and intermediate reflectance in the near infrared.</p>
+
+<img data-src="images/NDVI.png" class="r-stretch"></section></section>
+<section id="tophat-question-5" class="title-slide slide level1 center">
+<h1>TopHat Question 5</h1>
+<div class="columns">
+<div class="column" style="width:100%;">
+<p>What does NDVI tell us?</p>
+<ul>
+<li>Vegetation Height</li>
+<li>Vegetation Health/Density</li>
+<li>Vegetation Species</li>
+<li>Number of Plants per Square Meter</li>
+<li>Location and Age of Forests</li>
 </ul>
 </div>
 </div>
