@@ -1,16 +1,15 @@
 ---
-format:
-  revealjs:
-    theme: serif
-    code-fold: true
-    controls: true
-    navigation-mode: linear
-    controls-layout: bottom-right
-    controls-tutorial: true
-    slide-number: true
-    show-slide-number: all
-    pdfMaxPagesPerSlide: 1
-fig-dpi: 300
+format: revealjs
+    # theme: serif
+    # code-fold: true
+    # controls: true
+    # navigation-mode: linear
+    # controls-layout: bottom-right
+    # controls-tutorial: true
+    # slide-number: true
+    # show-slide-number: all
+    # pdfMaxPagesPerSlide: 1
+# fig-dpi: 300
 
 ---
 
@@ -98,16 +97,14 @@ Complexities of Earth
 :::{.column width="50%"}
 
 
-A lumpy ball of rock flying through space.
+A lumpy ball of rock.
 
 
-* Despite what you may have been told
-+ **The earth isn't round!**
-
+* **The earth isn't "round"!**
 * It has multiple distortions caused by:
-+ Topography
-+ Gravity Differentials
-+ Centrifugal Force
+  1. Topography
+  2. Gravity Differentials
+  3. Centrifugal Force
 
 
 
@@ -137,9 +134,10 @@ Our Infinitely Complex Earth
 Cartographers have developed strategies for dealing with these distortions:
 
 
-* Topography
-* Gravity Differentials
-* Centrifugal Force
+
+  1. Topography
+  2. Gravity Differentials
+  3. Centrifugal Force
 
 
 
@@ -170,7 +168,7 @@ Topography is very localized, in most applications it isn't explicitly needed to
 
 
 * We can account after the fact if needed
-+ Digital Elevation Models
+  + Digital Elevation Models
 
 
 
@@ -204,8 +202,8 @@ Topography is very localized, in most applications it isn't explicitly needed to
 
 
 * We can account after the fact if needed
-+ Digital Elevation Models
-+ Contour Lines
+  + Digital Elevation Models
+  + Contour Lines
 
 
 
@@ -213,10 +211,9 @@ Topography is very localized, in most applications it isn't explicitly needed to
 :::{.column width="50%"}
 
 
-![](images/Contour.png)
+![](images/Contour.png){width="90%"}
 
-
-Contour lines, Golden Ears Trail
+Golden Ears Trail
 
 
 
@@ -235,12 +232,13 @@ The Geoid
 :::{.column width="50%"}
 
 
-A simplified model of the Earth that ignores elevation differences due to **topography**.
+A simplified model that ignores due to **topography**.
 
 
-* Earths crust is not uniformly dense, causes gravity differentials to form.
-+ Differences in density cause the surface to "sink" down or "float" up
-+ Continental scale undulations, +85 m (Iceland) to −106 m (southern India)
+* **Gravity differentials:** Earth's crust is not uniformly dense
+  + Surface to "sinks" down or "floats" up
+* Continental scale:
+  + +85 m to −106 m
 
 
 
@@ -270,7 +268,7 @@ The Geoid
 :::{.column width="50%"}
 
 
-A simplified model of the Earth that ignores elevation differences due to **topography**.
+A simplified model that ignores due to **topography**.
 
 
 * Gravity differences measured by satellites
@@ -327,20 +325,20 @@ The Oblate Spheroid
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="55%"}
 
 
-A fairly close approximation of Earth's shape.
+Due to **Centrifugal Force** the earth is ~ 26 km wider at the equator
 
+* A close approximation of Earth's real shape
 
-* Due to **Centrifugal Force** the earth is ~ 26 km wider at the equator
-![](images/centrifuge.gif)
+<!-- <img src="images/centrifuge.gif" > -->
 
-
+<!-- ![](images/centrifuge.gif) -->
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="45%"}
 
 
 ![](images/OblateSpheroid.jpg)
@@ -359,19 +357,19 @@ Datums
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="60%"}
 
 
 Measuring distance/height requires a reference point.
 
 
-* A **Datum** is the reference system we to do the fitting
-+ Gives meaning to numbers/coordinates
+* A **Datum** is the reference system 
+  + Gives meaning to coordinates
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 
@@ -391,25 +389,28 @@ Datums
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="60%"}
 
 
-Fitting a spheroid to the geoid allows us to minimize elevation differences due to density differentials and account for effects of Centrifugal force, while ignoring topography.
+Fit a spheroid to the geoid using a **Datum**.
+
+* Explicitly account for effects of Centrifugal force
+* Minimize distortion from density differentials
+* "Ignore" topography.
 
 
-* A **Datum** is the reference system we to do the fitting
-+ Can be **Global** or **Local**
+  + Can be **Global** or **Local**
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 ![](images/datum.png)
 
 
-Datums give us a reference point to account for distortions
+Reference point to account for distortion
 
 
 
@@ -428,10 +429,10 @@ Global Datums
 :::{.column width="50%"}
 
 
-The **center of the earth** is used as the reference point.
+The **center of the geoid** is the reference point.
 
 
-* Fits the geoid fairly well everywhere
+* Fits fairly well everywhere
 ![](images/wgs_geoid.jpg)
 
 
@@ -461,11 +462,12 @@ Local Datums
 :::{.column width="50%"}
 
 
-**A point on the geoids surface** is used as the reference point.
+**A location on the geoid's surface** the reference point.
 
 
-* Fits geoid very well in **one** region
-![](images/nad_geoid.png)
+* Fits very well in **one** region
+
+![](images/nad_geoid.png){width="80%"}
 
 
 
@@ -486,8 +488,8 @@ Local Datums
 
 
 
-Does the Datum Matter?
-----------------------
+Why Does it Matter?
+-------------------
 
 
 ::::{.columns}
@@ -497,10 +499,10 @@ Does the Datum Matter?
 Generally speaking:
 
 
-* For global maps, you **always** need a global datum
-* A local datum is better for small areas like a city
-+ Global datums can be used, they just might shift things a bit
-
+* Global maps **always** use a global datum
+* Local datums are better for specific regions
+  + Global datums can work
+  + But less accurate
 
 
 :::
@@ -511,32 +513,22 @@ Generally speaking:
 ![](images/datum.png)
 
 
-
-
 :::
 ::::
 
 
 
 
-Does the Datum Matter?
-----------------------
+Why Does it Matter?
+-------------------
 
+
+Only minor differences between in North America, larger differences elsewhere.
 
 ::::{.columns}
 :::{.column width="50%"}
 
-
-Only minor differences between local and global datums in North America.
-
-
-* For most applications ...
-+ The choice of global vs. local is not really that important
-
-* For others, its **very important**
-+ Aviation
-+ Self driving cars
-
+![](images/nad_v_wgs.png)
 
 
 :::
@@ -544,7 +536,7 @@ Only minor differences between local and global datums in North America.
 
 
 
-![](images/nad_v_wgs.png)
+![](images/geoid_ex.jpg)
 
 
 
@@ -577,22 +569,22 @@ A \_\_\_\_\_ datum is fixed to the center of the geoid while a \_\_\_\_\_ datum 
 Geographic Coordinate System
 ----------------------------
 
+**Latitude/Longitude** is a Geographic Coordinate System **(GCS)**.
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="55%"}
 
 
-**Latitude/Longitude** is the primary Geographic Coordinate System **(GSC)** that we use to describe locations on the "the earth's surface"
 
 
-* Location on a 3D object with just 2 numbers
-+ Fixed to the surface of spheroid
-+ *Not* the actual earth's surface
+* Location on the surface of a **3D object** with *only 2 values*
+  + Fixed to the surface of spheroid
+  + *Not* the actual earth's surface
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="45%"}
 
 
 
@@ -615,13 +607,12 @@ Latitude
 :::{.column width="100%"}
 
 
-Distance in degrees form Equator:
+Angular distance from the equator
 
-
-* Angular distance between center of the earth and the equator
 * -90°(South) to +90°(North)
 * Often called parallels
-![](images/grat.gif)
+
+![](images/grat.gif){width="80%"}
 
 
 
@@ -641,13 +632,12 @@ Longitude
 :::{.column width="100%"}
 
 
-Distance in degrees form the Prime Meridian:
+Angular distance from the prime meridian
 
-
-* Angular distance between center of the earth and the prime meridian
 * -180° (West); to +180° (East)
 * Often called meridians
-![](images/grat.gif)
+
+![](images/grat.gif){width="80%"}
 
 
 
@@ -662,26 +652,22 @@ Distance in degrees form the Prime Meridian:
 Latitude & Longitude
 --------------------
 
+Sometimes refereed to as a graticule.
 
 ::::{.columns}
 :::{.column width="50%"}
 
 
-Sometimes refereed to as a graticule.
 
 
 **Degrees Minutes Seconds**
 
 
-* Vancouver BC: 49°15′40″N 123°06′50″W
-* Sydney NSW: 33°51′54″S 151°12′34″E
+* Vancouver BC:
+  + 49°15′40″N 123°06′50″W
+* Sydney NSW:
+  + 33°51′54″S 151°12′34″E
 
-
-**Decimal Degrees**
-
-
-* Vancouver BC: 49.261111, -123.113889
-* Sydney NSW: -33.865, 151.209444
 
 
 
@@ -689,9 +675,13 @@ Sometimes refereed to as a graticule.
 :::{.column width="50%"}
 
 
+**Decimal Degrees**
 
-![](images/latitude-longitude-globe-ESRI.gif)
 
+* Vancouver BC: 
+  + 49.261, -123.113
+* Sydney NSW:
+  + -33.865, 151.209
 
 
 
@@ -701,20 +691,19 @@ Sometimes refereed to as a graticule.
 
 
 
-An Important Caveat!
+Meridians converge at the poles!
 --------------------
 
+Distance between degrees of longitude decreases with increasing latitude.
 
 ::::{.columns}
 :::{.column width="50%"}
 
 
-Meridians converge at the poles!
 
 
-* Distance between degrees of longitude decreases with increasing latitude
-* This is the central issue with projecting a map!
-+ You **can't** accurately display a Geographic Coordinate System on a 2D surface (map/screen).
+* You **can't** accurately display a Geographic Coordinate System on a 2D surface (map/screen).
+  + This is why we need map projects! 
 
 
 
@@ -742,10 +731,7 @@ Making a Flat Map
 :::{.column width="50%"}
 
 
-Displaying Lat/Lon in 2D doesn't work well
-
-
-* Causes things to look "scrunched"
+Displaying Lat/Lon in 2D doesn't work, things to look "scrunched"
 
 
 ![](images/no_project.png)
@@ -759,7 +745,7 @@ Displaying Lat/Lon in 2D doesn't work well
 We have to **Project** our map.
 
 
-* Involves intentionally distorting the data to display it effectively in 2D
+* Intentionally distort data to display in 2D
 
 
 ![](images/proj_1.jpg)
@@ -800,11 +786,11 @@ Projected Coordinate Systems
 ----------------------------
 
 
+A map projection is a mathematical transformation used to "flatten" a geographic coordinate system.
+
 ::::{.columns}
 :::{.column width="50%"}
 
-
-A map projection is a mathematical transformation used to flatten a GCS.
 
 
 * Imagine sending rays of light through the ellipsoid onto a flat surface, the resulting image is a projection

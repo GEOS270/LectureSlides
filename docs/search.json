@@ -396,7 +396,7 @@
     "href": "Data_Visualization/Slides.html#cartographic-principals",
     "title": "Lecture Slides",
     "section": "Cartographic Principals",
-    "text": "Cartographic Principals\n\n\nThese are just stylistic guidelines!\n\nCartography is an art, there are no steadfast rules\nJust best practices\nFeel free to play around with styling\nJust be able to justify your choices\nNot all spaces “want” to be mapped\nSometimes you need to make aesthetic compromises to make an effective map"
+    "text": "Cartographic Principals\n\n\nThese are just stylistic guidelines!\n\nCartography is an art, there are no steadfast rules\nJust best practices\nFeel free to play around with styling\nJust be able to justify your choices\nNot all spaces “want” to be mapped\nSometimes you need to make aesthetic compromises to make an effective map\n\n\n\n\n\nBack"
   },
   {
     "objectID": "Ethics_in_GIS/Slides.html#what-is-ethics",
@@ -854,11 +854,11 @@
     "text": "Commercial Development\n\n\nFollowing the CLI, a number of commercial software companies began developing GIS applications.\n\nHardware improvements made the technology more accessible\nMapping Display and Analysis System (MIDAS)\n\nDesktop GIS released in 1986"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "index.html#quarto",
+    "href": "index.html#quarto",
     "title": "Lecture Slides",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+    "section": "Quarto",
+    "text": "Quarto\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n\nBack"
   },
   {
     "objectID": "Map_Projections/Slides.html#projected-coordinate-systems",
@@ -1152,7 +1152,7 @@
     "href": "Modern_GIS/Slides.html#countering-colonialism",
     "title": "Lecture Slides",
     "section": "Countering Colonialism",
-    "text": "Countering Colonialism\nThe lands that comprise Canada have histories that stretch back well before the colonial era.\n\n\n\nColonial mapping centered on erasing Indigenous peoples and their histories\n\nOne way was through the names\n\nCh’ich’iyuy (The Twins)\n\nSkwxwú7mesh name for “The Lions”"
+    "text": "Countering Colonialism\n\n\nThe lands that comprise Canada have histories that stretch back well before the colonial era.\n\nColonial mapping centered on erasing Indigenous peoples and their histories\n\n\n\nCh’ich’iyuy: The Twins Skwxwú7mesh name for “The Lions”"
   },
   {
     "objectID": "Modern_GIS/Slides.html#learning-place-names",
@@ -1411,7 +1411,7 @@
     "href": "Phenomena_and_Data_Types/Slides.html#summary-operations-by-data-type",
     "title": "Lecture Slides",
     "section": "Summary: Operations by Data Type",
-    "text": "Summary: Operations by Data Type\n\n\n\n\n\nOperation\nNominal\nOrdinal\nInterval\nRatio\n\n\nEquality\nx\nx\nx\nx\n\n\nCounts/Mode\nx\nx\nx\nx\n\n\nRank/Order\n\nx\nx\nx\n\n\nMedian\n\n~\nx\nx\n\n\nAdd/Subtract\n\n\nx\nx\n\n\nMean\n\n\nx\nx\n\n\nMultiply/Divide\n\n\n\nx"
+    "text": "Summary: Operations by Data Type\n\n\n\n\n\nOperation\nNominal\nOrdinal\nInterval\nRatio\n\n\nEquality\nx\nx\nx\nx\n\n\nCounts/Mode\nx\nx\nx\nx\n\n\nRank/Order\n\nx\nx\nx\n\n\nMedian\n\n~\nx\nx\n\n\nAdd/Subtract\n\n\nx\nx\n\n\nMean\n\n\nx\nx\n\n\nMultiply/Divide\n\n\n\nx\n\n\n\n\n\n\n\nBack"
   },
   {
     "objectID": "Raster_Analysis_Methods/Slides.html#clip",
@@ -1545,13 +1545,6 @@
     "title": "Lecture Slides",
     "section": "Image Classification",
     "text": "Image Classification\n\n\nClassify a raster.\n\nSupervised or unsupervised"
-  },
-  {
-    "objectID": "RevealJS_Converter.html",
-    "href": "RevealJS_Converter.html",
-    "title": "Lecture Slides",
-    "section": "",
-    "text": "import os\nimport re\nimport shutil\nimport pandas as pd\nfrom PIL import Image\nfrom markdownify import MarkdownConverter\n\nTo_convert = {\n    'Module':[],\n    'Slides':[]\n}\n\nhtmlFiles = []\npath = '../../GEOS270_Archive/Modules/'\nfor mod in range (7):\n    for dir,subdir,filename in os.walk(f'{path}{mod+1}'):\n        if 'content' in dir and '_site' not in dir:\n            for f in filename:\n                if '.html' in f:\n                    To_convert['Module'].append(mod+1)\n                    To_convert['Slides'].append(f)\n\nTo_convert = pd.DataFrame(data=To_convert)\nTo_convert['Name'] = None\n\nTo_convert.loc[To_convert.index==0,'Name'] = 'History of GIS'\nTo_convert.loc[To_convert.index==1,'Name'] = 'Steps of Abstraction'\nTo_convert.loc[To_convert.index==2,'Name'] = 'Map Projections'\nTo_convert.loc[To_convert.index==4,'Name'] = 'Data Classification'\nTo_convert.loc[To_convert.index==5,'Name'] = 'Data Visualization'\nTo_convert.loc[To_convert.index==6,'Name'] = 'Phenomena and Data Types'\nTo_convert.loc[To_convert.index==10,'Name'] = 'Choice of Data Model'\nTo_convert.loc[To_convert.index==11,'Name'] = 'The Raster Data Model'\nTo_convert.loc[To_convert.index==12,'Name'] = 'Spatial is Special'\nTo_convert.loc[To_convert.index==13,'Name'] = 'The Vector Data Model'\nTo_convert.loc[To_convert.index==14,'Name'] = 'Spatial Data Workflows'\nTo_convert.loc[To_convert.index==15,'Name'] = 'Raster Analysis Methods'\nTo_convert.loc[To_convert.index==16,'Name'] = 'Vector Analysis Methods'\nTo_convert.loc[To_convert.index==18,'Name'] = 'Ethics in GIS'\nTo_convert.loc[To_convert.index==19,'Name'] = 'Spatial Sampling Methods'\nTo_convert.loc[To_convert.index==21,'Name'] = 'Uncertainty in GIS'\n\nTo_convert\n\n\n\n\n\n  \n    \n      \n      Module\n      Slides\n      Name\n    \n  \n  \n    \n      0\n      1\n      HistoyGIS.html\n      History of GIS\n    \n    \n      1\n      2\n      Abstraction.html\n      Steps of Abstraction\n    \n    \n      2\n      2\n      Projection.html\n      Map Projections\n    \n    \n      3\n      2\n      Web_Mercator_Iqualuit.html\n      None\n    \n    \n      4\n      3\n      Classification.html\n      Data Classification\n    \n    \n      5\n      3\n      Visualization.html\n      Data Visualization\n    \n    \n      6\n      3\n      WhatIsData.html\n      Phenomena and Data Types\n    \n    \n      7\n      4\n      Bldg.html\n      None\n    \n    \n      8\n      4\n      Choice.html\n      None\n    \n    \n      9\n      4\n      ChoiceOfModel.html\n      None\n    \n    \n      10\n      4\n      ChoosingAModel.html\n      Choice of Data Model\n    \n    \n      11\n      4\n      RasterModel.html\n      The Raster Data Model\n    \n    \n      12\n      4\n      Tobler.html\n      Spatial is Special\n    \n    \n      13\n      4\n      VectorModel.html\n      The Vector Data Model\n    \n    \n      14\n      5\n      GISWorkflows.html\n      Spatial Data Workflows\n    \n    \n      15\n      5\n      RasterMethods.html\n      Raster Analysis Methods\n    \n    \n      16\n      5\n      VectorMethods.html\n      Vector Analysis Methods\n    \n    \n      17\n      5\n      Workflows.html\n      None\n    \n    \n      18\n      6\n      Ethics.html\n      Ethics in GIS\n    \n    \n      19\n      6\n      Sampling.html\n      Spatial Sampling Methods\n    \n    \n      20\n      6\n      Template.html\n      None\n    \n    \n      21\n      6\n      Uncertainty.html\n      Uncertainty in GIS\n    \n    \n      22\n      6\n      Uncertainty_GIS.html\n      None\n    \n    \n      23\n      7\n      PID.html\n      None\n    \n  \n\n\n\n\n\ndef head(theme='default'):\n  return (f'''---\nformat:\n  revealjs:\n    theme: {theme}\n    code-fold: true\n    controls: true\n    navigation-mode: linear\n    controls-layout: bottom-right\n    controls-tutorial: true\n    slide-number: true\n    show-slide-number: all\n    pdfMaxPagesPerSlide: 1\nfig-dpi: 300\n\n---''')\n\n\ndef find_between(s, first, last):\n    try:\n        regex = rf'{first}(.*?){last}'\n        return re.findall(regex, s)\n    except ValueError:\n        return -1\n\n\nclass ImageBlockConverter(MarkdownConverter):\n    \"\"\"\n    Create a custom MarkdownConverter that adds two newlines after an image\n    \"\"\"\n    def convert_img(self, el, text, convert_as_inline):\n        return super().convert_img(el, text, convert_as_inline)+'\\n\\n'\n\nclass convert_Reveal():\n    def __init__(self,dir,fileName,Title=None):\n        self.html = f'{dir}{fileName}.html'\n        # if Title == None:\n        #     self.Name = fileName\n        # else:\n        #     self.Name = Title\n        self.dest = f\"{Title.replace(' ','_')}/\"\n        self.dir = dir\n        self.parse_Slides()\n\n    def md(self,html, **options):\n        return ImageBlockConverter(**options).convert(html)\n    \n    def titleSlide(self):\n        TTL = self.text_md.split('---')[2].split('==')[0]\n        TTL_txt = TTL.split('\\n')\n\n        k = 0\n        for i,t in enumerate(TTL_txt):\n            if len(t)>1:\n                k = i\n\n        ttl = TTL_txt[k]\n        New_Title = TTL.replace(ttl,Title)\n        self.text_md.replace(TTL,New_Title)\n\n    def parse_Slides(self):\n        html = open(self.html, encoding=\"utf8\").read()\n        html = html.replace('text-align: left','text-align: Left')\n        html = html.replace('text-align: center','text-align: Center')\n        html = html.replace('text-align: right','text-align: Right')\n        html = html.replace(' style=\"text-align: Left;\"','')\n        html = html.replace(' style=\"text-align: Center;\"','')\n        html = html.replace(' style=\"text-align: Right;\"','')\n        html = html.replace(' style=\"text-align: Left\"','')\n        html = html.replace(' style=\"text-align: Center\"','')\n        html = html.replace(' style=\"text-align: Right\"','')\n        html = html.replace('<div class=\"subtitle\">','<div class=\"subtitle\"><p>::::{.columns}\\n:::{.column width=\"100%\"}</p>')\n        html = html.replace('<div class=\"question\">','<div class=\"question\"><p>::::{.columns}\\n:::{.column width=\"100%\"}</p>')\n        html = html.replace('<div class=\"full\">','<div class=\"full\"><p>::::{.columns}\\n:::{.column width=\"100%\"}</p>')\n        html = html.replace('<div class=\"left\">','<div class=\"left\"><p>::::{.columns}\\n:::{.column width=\"50%\"}</p>')\n        html = html.replace('<div class=\"right\">','<div class=\"right\"><p>:::\\n:::{.column width=\"50%\"}</p>')\n        html = html.replace('<div class=\"r-stack\">','<div class=\"r-stack\"><p>:::\\n:::{.column width=\"50%\"}</p>')\n        html = html.replace('<div class=\"figure\">','<div class=\"figure\"><p>:::\\n:::{.column width=\"50%\"}</p>')\n        html = html.replace('</section>','<p>:::\\n::::</p></section>')\n        slides = html.split('<div class=\"slides\">')[-1].split('</div><!-- .slides -->')[0]\n        theme = html.split('link id=\"theme\"')[-1].split('/theme/')[-1].split('.css\">')[0]\n        self.YML_Header = head(theme)\n        self.text_md = self.md(slides)\n\n\n\n        with open(f'{self.dest}Slides.qmd','w+', encoding=\"utf8\") as out:\n            self.text_md = self.YML_Header+self.text_md\n            out.write(self.text_md)\n        self.move_Images()\n\n    def move_Images(self,maxDim = 1800):\n        # ims = self.md.split('![]')[1:]\n        ims = self.text_md.split('![]')[1:]\n        \n        for im in ims:\n            image_file = re.search(r'\\((.*?)\\)',im).group(1)\n            if image_file.split('.')[-1].lower() in ['png','jpg','gif']:\n                image = Image.open(self.dir+image_file)\n                if image.mode != 'RGB' and image_file.split('.')[-1].lower()=='jpg':\n                    image = image.convert('RGB')\n                if image.size[0] > maxDim and image.size[1]<image.size[0]:\n                    wpercent = (maxDim/float(image.size[0]))\n                    hsize = int((float(image.size[1])*float(wpercent)))\n                    image = image.resize((maxDim,hsize), Image.Resampling.LANCZOS)\n                    image.save(f'{self.dest}{image_file}',optimize=True)\n                elif image.size[1] > maxDim and image.size[1]>image.size[0]:\n                    wpercent = (maxDim/float(image.size[1]))\n                    wsize = int((float(image.size[0])*float(wpercent)))\n                    image = image.resize((wsize,maxDim), Image.Resampling.LANCZOS)\n                    image.save(f'{self.dest}{image_file}',quality=95,optimize=True)\n                else:\n                    image.save(f'{self.dest}{image_file}',quality=95,optimize=True)\n            else:\n                try:\n                    shutil.copy(self.dir+image_file,f'{self.dest}{image_file}')\n                except:\n                    print('Could not find ',self.dir+image_file)\n                    print('Proceeding without')\n                    print()\n                    pass\n\nYML = '''project:\n  type: website\n  output-dir: docs\n  \nformat:\n  html:\n    theme: cosmo\n    css: styles.css\n    toc: true\n\nwebsite:\n  title: \"Lecture Slides\"\n  sidebar:\n    style: \"docked\"\n    search: true\n    contents:\n    \n'''\n\nfor m in range(1,7):\n    YML+=(f'      - section: \"Module {m}\"')\n    YML+='\\n'\n    YML+=('        contents:')\n    YML+='\\n'\n    for i ,row in To_convert[To_convert['Module']==m].iterrows():\n        if row['Name'] is not None:\n            Nm = row['Name'].replace(' ','_')        \n            YML+=(f'        - {Nm}/Slides.qmd')\n            YML+='\\n'\n            print('Converting: ',row['Name'])\n\n            mod = To_convert['Module'][i]\n            fileName = To_convert['Slides'][i].split('.')[0]\n            Title = To_convert['Name'][i]\n\n            dir = Title.replace(' ','_')\n            if os.path.isdir(dir) == False:\n                os.mkdir(dir)\n            if os.path.isdir(dir+'/images') == False:\n                os.mkdir(dir+'/images')\n\n            conv = convert_Reveal(f'{path}{mod}/docs/content/',fileName,Title)\n            \nwith open(f'_quarto.yml','w+', encoding=\"utf8\") as out:\n  out.write(YML)\n\nConverting:  History of GIS\nConverting:  Steps of Abstraction\nConverting:  Map Projections\nConverting:  Data Classification\nConverting:  Data Visualization\nConverting:  Phenomena and Data Types\nConverting:  Choice of Data Model\nConverting:  The Raster Data Model\nConverting:  Spatial is Special\nConverting:  The Vector Data Model\nConverting:  Spatial Data Workflows\nConverting:  Raster Analysis Methods\nConverting:  Vector Analysis Methods\nConverting:  Ethics in GIS\nConverting:  Spatial Sampling Methods\nConverting:  Uncertainty in GIS"
   },
   {
     "objectID": "Spatial_Data_Workflows/Slides.html#gis-research-process",
@@ -1936,7 +1929,7 @@
     "href": "Spatial_Sampling_Methods/Slides.html#kernel-density",
     "title": "Lecture Slides",
     "section": "Kernel Density",
-    "text": "Kernel Density\nCalculates the “density” of discrete point observations/samples and converts to a raster surface\n\nShows the probability of occurrence at any given location\nWeight cells by “value” of points\nOften applied to counts of qualitative data\nDisease outbreaks\nCrime data\n\n::: :::{.column width=“50%”}\n\n::: ::::"
+    "text": "Kernel Density\nCalculates the “density” of discrete point observations/samples and converts to a raster surface\n\nShows the probability of occurrence at any given location\nWeight cells by “value” of points\nOften applied to counts of qualitative data\nDisease outbreaks\nCrime data\n\n::: :::{.column width=“50%”}\n\n::: ::::\n\n\nBack"
   },
   {
     "objectID": "Steps_of_Abstraction/Slides.html#flattening-the-blue-marble",
@@ -1957,7 +1950,7 @@
     "href": "Steps_of_Abstraction/Slides.html#complexities-of-earth",
     "title": "Lecture Slides",
     "section": "Complexities of Earth",
-    "text": "Complexities of Earth\n\n\nA lumpy ball of rock flying through space.\n\nDespite what you may have been told\nThe earth isn’t round!\nIt has multiple distortions caused by:\nTopography\nGravity Differentials\nCentrifugal Force"
+    "text": "Complexities of Earth\n\n\nA lumpy ball of rock.\n\nThe earth isn’t “round”!\nIt has multiple distortions caused by:\n\nTopography\nGravity Differentials\nCentrifugal Force"
   },
   {
     "objectID": "Steps_of_Abstraction/Slides.html#our-infinitely-complex-earth",
@@ -1971,126 +1964,126 @@
     "href": "Steps_of_Abstraction/Slides.html#ignore-topography",
     "title": "Lecture Slides",
     "section": "Ignore Topography!?",
-    "text": "Ignore Topography!?\n\n\nTopography is very localized, in most applications it isn’t explicitly needed to make a map.\n\nWe can account after the fact if needed\nDigital Elevation Models\n\n\n\nDEM of Mt. Everest"
+    "text": "Ignore Topography!?\n\n\nTopography is very localized, in most applications it isn’t explicitly needed to make a map.\n\nWe can account after the fact if needed\n\nDigital Elevation Models\n\n\n\n\nDEM of Mt. Everest"
   },
   {
     "objectID": "Steps_of_Abstraction/Slides.html#ignore-topography-1",
     "href": "Steps_of_Abstraction/Slides.html#ignore-topography-1",
     "title": "Lecture Slides",
     "section": "Ignore Topography!?",
-    "text": "Ignore Topography!?\n\n\nTopography is very localized, in most applications it isn’t explicitly needed to make a map.\n\nWe can account after the fact if needed\nDigital Elevation Models\nContour Lines\n\n\n\nContour lines, Golden Ears Trail"
+    "text": "Ignore Topography!?\n\n\nTopography is very localized, in most applications it isn’t explicitly needed to make a map.\n\nWe can account after the fact if needed\n\nDigital Elevation Models\nContour Lines\n\n\n\n\nGolden Ears Trail"
   },
   {
     "objectID": "Steps_of_Abstraction/Slides.html#the-geoid",
     "href": "Steps_of_Abstraction/Slides.html#the-geoid",
     "title": "Lecture Slides",
     "section": "The Geoid",
-    "text": "The Geoid\n\n\nA simplified model of the Earth that ignores elevation differences due to topography.\n\nEarths crust is not uniformly dense, causes gravity differentials to form.\nDifferences in density cause the surface to “sink” down or “float” up\nContinental scale undulations, +85 m (Iceland) to −106 m (southern India)\n\n\n\nVertical scale exaggerated to show gravity induced elevation differences."
+    "text": "The Geoid\n\n\nA simplified model that ignores due to topography.\n\nGravity differentials: Earth’s crust is not uniformly dense\n\nSurface to “sinks” down or “floats” up\n\nContinental scale:\n\n+85 m to −106 m\n\n\n\n\nVertical scale exaggerated to show gravity induced elevation differences."
   },
   {
     "objectID": "Steps_of_Abstraction/Slides.html#the-geoid-1",
     "href": "Steps_of_Abstraction/Slides.html#the-geoid-1",
     "title": "Lecture Slides",
     "section": "The Geoid",
-    "text": "The Geoid\n\n\nA simplified model of the Earth that ignores elevation differences due to topography.\n\nGravity differences measured by satellites \n\n\n\nThe Geoid without vertical exaggeration."
+    "text": "The Geoid\n\n\nA simplified model that ignores due to topography.\n\nGravity differences measured by satellites \n\n\n\nThe Geoid without vertical exaggeration."
   },
   {
     "objectID": "Steps_of_Abstraction/Slides.html#the-oblate-spheroid",
     "href": "Steps_of_Abstraction/Slides.html#the-oblate-spheroid",
     "title": "Lecture Slides",
     "section": "The Oblate Spheroid",
-    "text": "The Oblate Spheroid\n\n\nA fairly close approximation of Earth’s shape.\n\nDue to Centrifugal Force the earth is ~ 26 km wider at the equator"
+    "text": "The Oblate Spheroid\n\n\nDue to Centrifugal Force the earth is ~ 26 km wider at the equator\n\nA close approximation of Earth’s real shape"
   },
   {
     "objectID": "Steps_of_Abstraction/Slides.html#datums",
     "href": "Steps_of_Abstraction/Slides.html#datums",
     "title": "Lecture Slides",
     "section": "Datums",
-    "text": "Datums\n\n\nMeasuring distance/height requires a reference point.\n\nA Datum is the reference system we to do the fitting\nGives meaning to numbers/coordinates"
+    "text": "Datums\n\n\nMeasuring distance/height requires a reference point.\n\nA Datum is the reference system\n\nGives meaning to coordinates"
   },
   {
     "objectID": "Steps_of_Abstraction/Slides.html#datums-1",
     "href": "Steps_of_Abstraction/Slides.html#datums-1",
     "title": "Lecture Slides",
     "section": "Datums",
-    "text": "Datums\n\n\nFitting a spheroid to the geoid allows us to minimize elevation differences due to density differentials and account for effects of Centrifugal force, while ignoring topography.\n\nA Datum is the reference system we to do the fitting\nCan be Global or Local\n\n\n\nDatums give us a reference point to account for distortions"
+    "text": "Datums\n\n\nFit a spheroid to the geoid using a Datum.\n\nExplicitly account for effects of Centrifugal force\nMinimize distortion from density differentials\n“Ignore” topography.\n\nCan be Global or Local\n\n\n\n\nReference point to account for distortion"
   },
   {
     "objectID": "Steps_of_Abstraction/Slides.html#global-datums",
     "href": "Steps_of_Abstraction/Slides.html#global-datums",
     "title": "Lecture Slides",
     "section": "Global Datums",
-    "text": "Global Datums\n\n\nThe center of the earth is used as the reference point.\n\nFits the geoid fairly well everywhere"
+    "text": "Global Datums\n\n\nThe center of the geoid is the reference point.\n\nFits fairly well everywhere"
   },
   {
     "objectID": "Steps_of_Abstraction/Slides.html#local-datums",
     "href": "Steps_of_Abstraction/Slides.html#local-datums",
     "title": "Lecture Slides",
     "section": "Local Datums",
-    "text": "Local Datums\n\n\nA point on the geoids surface is used as the reference point.\n\nFits geoid very well in one region"
+    "text": "Local Datums\n\n\nA location on the geoid’s surface the reference point.\n\nFits very well in one region"
   },
   {
-    "objectID": "Steps_of_Abstraction/Slides.html#does-the-datum-matter",
-    "href": "Steps_of_Abstraction/Slides.html#does-the-datum-matter",
+    "objectID": "Steps_of_Abstraction/Slides.html#why-does-it-matter",
+    "href": "Steps_of_Abstraction/Slides.html#why-does-it-matter",
     "title": "Lecture Slides",
-    "section": "Does the Datum Matter?",
-    "text": "Does the Datum Matter?\n\n\nGenerally speaking:\n\nFor global maps, you always need a global datum\nA local datum is better for small areas like a city\nGlobal datums can be used, they just might shift things a bit"
+    "section": "Why Does it Matter?",
+    "text": "Why Does it Matter?\n\n\nGenerally speaking:\n\nGlobal maps always use a global datum\nLocal datums are better for specific regions\n\nGlobal datums can work\nBut less accurate"
   },
   {
-    "objectID": "Steps_of_Abstraction/Slides.html#does-the-datum-matter-1",
-    "href": "Steps_of_Abstraction/Slides.html#does-the-datum-matter-1",
+    "objectID": "Steps_of_Abstraction/Slides.html#why-does-it-matter-1",
+    "href": "Steps_of_Abstraction/Slides.html#why-does-it-matter-1",
     "title": "Lecture Slides",
-    "section": "Does the Datum Matter?",
-    "text": "Does the Datum Matter?\n\n\nOnly minor differences between local and global datums in North America.\n\nFor most applications …\nThe choice of global vs. local is not really that important\nFor others, its very important\nAviation\nSelf driving cars"
+    "section": "Why Does it Matter?",
+    "text": "Why Does it Matter?\nOnly minor differences between in North America, larger differences elsewhere."
   },
   {
     "objectID": "Steps_of_Abstraction/Slides.html#geographic-coordinate-system",
     "href": "Steps_of_Abstraction/Slides.html#geographic-coordinate-system",
     "title": "Lecture Slides",
     "section": "Geographic Coordinate System",
-    "text": "Geographic Coordinate System\n\n\nLatitude/Longitude is the primary Geographic Coordinate System (GSC) that we use to describe locations on the “the earth’s surface”\n\nLocation on a 3D object with just 2 numbers\nFixed to the surface of spheroid\nNot the actual earth’s surface"
+    "text": "Geographic Coordinate System\nLatitude/Longitude is a Geographic Coordinate System (GCS).\n\n\n\nLocation on the surface of a 3D object with only 2 values\n\nFixed to the surface of spheroid\nNot the actual earth’s surface"
   },
   {
     "objectID": "Steps_of_Abstraction/Slides.html#latitude",
     "href": "Steps_of_Abstraction/Slides.html#latitude",
     "title": "Lecture Slides",
     "section": "Latitude",
-    "text": "Latitude\n\n\nDistance in degrees form Equator:\n\nAngular distance between center of the earth and the equator\n-90°(South) to +90°(North)\nOften called parallels"
+    "text": "Latitude\n\n\nAngular distance from the equator\n\n-90°(South) to +90°(North)\nOften called parallels"
   },
   {
     "objectID": "Steps_of_Abstraction/Slides.html#longitude",
     "href": "Steps_of_Abstraction/Slides.html#longitude",
     "title": "Lecture Slides",
     "section": "Longitude",
-    "text": "Longitude\n\n\nDistance in degrees form the Prime Meridian:\n\nAngular distance between center of the earth and the prime meridian\n-180° (West); to +180° (East)\nOften called meridians"
+    "text": "Longitude\n\n\nAngular distance from the prime meridian\n\n-180° (West); to +180° (East)\nOften called meridians"
   },
   {
     "objectID": "Steps_of_Abstraction/Slides.html#latitude-longitude",
     "href": "Steps_of_Abstraction/Slides.html#latitude-longitude",
     "title": "Lecture Slides",
     "section": "Latitude & Longitude",
-    "text": "Latitude & Longitude\n\n\nSometimes refereed to as a graticule.\nDegrees Minutes Seconds\n\nVancouver BC: 49°15′40″N 123°06′50″W\nSydney NSW: 33°51′54″S 151°12′34″E\n\nDecimal Degrees\n\nVancouver BC: 49.261111, -123.113889\nSydney NSW: -33.865, 151.209444"
+    "text": "Latitude & Longitude\nSometimes refereed to as a graticule.\n\n\nDegrees Minutes Seconds\n\nVancouver BC:\n\n49°15′40″N 123°06′50″W\n\nSydney NSW:\n\n33°51′54″S 151°12′34″E\n\n\n\nDecimal Degrees\n\nVancouver BC:\n\n49.261, -123.113\n\nSydney NSW:\n\n-33.865, 151.209"
   },
   {
-    "objectID": "Steps_of_Abstraction/Slides.html#an-important-caveat",
-    "href": "Steps_of_Abstraction/Slides.html#an-important-caveat",
+    "objectID": "Steps_of_Abstraction/Slides.html#meridians-converge-at-the-poles",
+    "href": "Steps_of_Abstraction/Slides.html#meridians-converge-at-the-poles",
     "title": "Lecture Slides",
-    "section": "An Important Caveat!",
-    "text": "An Important Caveat!\n\n\nMeridians converge at the poles!\n\nDistance between degrees of longitude decreases with increasing latitude\nThis is the central issue with projecting a map!\nYou can’t accurately display a Geographic Coordinate System on a 2D surface (map/screen)."
+    "section": "Meridians converge at the poles!",
+    "text": "Meridians converge at the poles!\nDistance between degrees of longitude decreases with increasing latitude.\n\n\n\nYou can’t accurately display a Geographic Coordinate System on a 2D surface (map/screen).\n\nThis is why we need map projects!"
   },
   {
     "objectID": "Steps_of_Abstraction/Slides.html#making-a-flat-map",
     "href": "Steps_of_Abstraction/Slides.html#making-a-flat-map",
     "title": "Lecture Slides",
     "section": "Making a Flat Map",
-    "text": "Making a Flat Map\n\n\nDisplaying Lat/Lon in 2D doesn’t work well\n\nCauses things to look “scrunched”\n\n\n\nWe have to Project our map.\n\nInvolves intentionally distorting the data to display it effectively in 2D"
+    "text": "Making a Flat Map\n\n\nDisplaying Lat/Lon in 2D doesn’t work, things to look “scrunched”\n\n\nWe have to Project our map.\n\nIntentionally distort data to display in 2D"
   },
   {
     "objectID": "Steps_of_Abstraction/Slides.html#projected-coordinate-systems",
     "href": "Steps_of_Abstraction/Slides.html#projected-coordinate-systems",
     "title": "Lecture Slides",
     "section": "Projected Coordinate Systems",
-    "text": "Projected Coordinate Systems\n\n\nA map projection is a mathematical transformation used to flatten a GCS.\n\nImagine sending rays of light through the ellipsoid onto a flat surface, the resulting image is a projection"
+    "text": "Projected Coordinate Systems\nA map projection is a mathematical transformation used to “flatten” a geographic coordinate system.\n\n\n\nImagine sending rays of light through the ellipsoid onto a flat surface, the resulting image is a projection"
   },
   {
     "objectID": "Steps_of_Abstraction/Slides.html#making-a-flat-map-1",
@@ -2104,7 +2097,7 @@
     "href": "Steps_of_Abstraction/Slides.html#steps-of-abstraction-1",
     "title": "Lecture Slides",
     "section": "Steps of Abstraction",
-    "text": "Steps of Abstraction"
+    "text": "Steps of Abstraction\n\n\n\n\n\n\n\nBack"
   },
   {
     "objectID": "The_Raster_Data_Model/Slides.html#raster-data-model-1",
@@ -2629,7 +2622,7 @@
     "href": "Uncertainty_in_GIS/Slides.html#error-propagation",
     "title": "Lecture Slides",
     "section": "Error Propagation",
-    "text": "Error Propagation\nErrors are cumulative: * Uncertainty will propagate through the model/system.\n\nmissing::: ::::"
+    "text": "Error Propagation\nErrors are cumulative: * Uncertainty will propagate through the model/system.\n\nmissing::: ::::\n\n\nBack"
   },
   {
     "objectID": "Vector_Analysis_Methods/Slides.html#vector-analysis-methods-1",

@@ -241,6 +241,7 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
+      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -362,14 +363,15 @@
 <h2>Complexities of Earth</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>A lumpy ball of rock flying through space.</p>
+<p>A lumpy ball of rock.</p>
 <ul>
-<li><p>Despite what you may have been told</p></li>
-<li><p><strong>The earth isn’t round!</strong></p></li>
-<li><p>It has multiple distortions caused by:</p></li>
-<li><p>Topography</p></li>
-<li><p>Gravity Differentials</p></li>
-<li><p>Centrifugal Force</p></li>
+<li><strong>The earth isn’t “round”!</strong></li>
+<li>It has multiple distortions caused by:
+<ol type="1">
+<li>Topography</li>
+<li>Gravity Differentials</li>
+<li>Centrifugal Force</li>
+</ol></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/shape.jpg"></p>
@@ -381,11 +383,11 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>Cartographers have developed strategies for dealing with these distortions:</p>
-<ul>
+<ol type="1">
 <li>Topography</li>
 <li>Gravity Differentials</li>
 <li>Centrifugal Force</li>
-</ul>
+</ol>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/shape.jpg"></p>
 </div>
@@ -397,8 +399,10 @@
 <div class="column" style="width:50%;">
 <p>Topography is very localized, in most applications it isn’t explicitly needed to make a map.</p>
 <ul>
-<li>We can account after the fact if needed</li>
+<li>We can account after the fact if needed
+<ul>
 <li>Digital Elevation Models</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/DEM.png"></p>
@@ -412,13 +416,15 @@
 <div class="column" style="width:50%;">
 <p>Topography is very localized, in most applications it isn’t explicitly needed to make a map.</p>
 <ul>
-<li>We can account after the fact if needed</li>
+<li>We can account after the fact if needed
+<ul>
 <li>Digital Elevation Models</li>
 <li>Contour Lines</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><img data-src="images/Contour.png"></p>
-<p>Contour lines, Golden Ears Trail</p>
+<p><img data-src="images/Contour.png" style="width:90.0%"></p>
+<p>Golden Ears Trail</p>
 </div>
 </div>
 </section>
@@ -426,11 +432,16 @@
 <h2>The Geoid</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>A simplified model of the Earth that ignores elevation differences due to <strong>topography</strong>.</p>
+<p>A simplified model that ignores due to <strong>topography</strong>.</p>
 <ul>
-<li>Earths crust is not uniformly dense, causes gravity differentials to form.</li>
-<li>Differences in density cause the surface to “sink” down or “float” up</li>
-<li>Continental scale undulations, +85 m (Iceland) to −106 m (southern India)</li>
+<li><strong>Gravity differentials:</strong> Earth’s crust is not uniformly dense
+<ul>
+<li>Surface to “sinks” down or “floats” up</li>
+</ul></li>
+<li>Continental scale:
+<ul>
+<li>+85 m to −106 m</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/geoid_ex.jpg"></p>
@@ -442,7 +453,7 @@
 <h2>The Geoid</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>A simplified model of the Earth that ignores elevation differences due to <strong>topography</strong>.</p>
+<p>A simplified model that ignores due to <strong>topography</strong>.</p>
 <ul>
 <li>Gravity differences measured by satellites <img data-src="images/geoid_model.png"></li>
 </ul>
@@ -470,12 +481,14 @@
 <section id="the-oblate-spheroid" class="slide level2">
 <h2>The Oblate Spheroid</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>A fairly close approximation of Earth’s shape.</p>
+<div class="column" style="width:55%;">
+<p>Due to <strong>Centrifugal Force</strong> the earth is ~ 26 km wider at the equator</p>
 <ul>
-<li>Due to <strong>Centrifugal Force</strong> the earth is ~ 26 km wider at the equator <img data-src="images/centrifuge.gif"></li>
+<li>A close approximation of Earth’s real shape</li>
 </ul>
-</div><div class="column" style="width:50%;">
+<!-- <img src="images/centrifuge.gif" > -->
+<!-- ![](images/centrifuge.gif) -->
+</div><div class="column" style="width:45%;">
 <p><img data-src="images/OblateSpheroid.jpg"></p>
 </div>
 </div>
@@ -483,13 +496,15 @@
 <section id="datums" class="slide level2">
 <h2>Datums</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:60%;">
 <p>Measuring distance/height requires a reference point.</p>
 <ul>
-<li>A <strong>Datum</strong> is the reference system we to do the fitting</li>
-<li>Gives meaning to numbers/coordinates</li>
+<li>A <strong>Datum</strong> is the reference system
+<ul>
+<li>Gives meaning to coordinates</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/02-Datum_height.PNG"></p>
 </div>
 </div>
@@ -497,15 +512,19 @@
 <section id="datums-1" class="slide level2">
 <h2>Datums</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>Fitting a spheroid to the geoid allows us to minimize elevation differences due to density differentials and account for effects of Centrifugal force, while ignoring topography.</p>
+<div class="column" style="width:60%;">
+<p>Fit a spheroid to the geoid using a <strong>Datum</strong>.</p>
 <ul>
-<li>A <strong>Datum</strong> is the reference system we to do the fitting</li>
+<li><p>Explicitly account for effects of Centrifugal force</p></li>
+<li><p>Minimize distortion from density differentials</p></li>
+<li><p>“Ignore” topography.</p>
+<ul>
 <li>Can be <strong>Global</strong> or <strong>Local</strong></li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/datum.png"></p>
-<p>Datums give us a reference point to account for distortions</p>
+<p>Reference point to account for distortion</p>
 </div>
 </div>
 </section>
@@ -513,9 +532,9 @@
 <h2>Global Datums</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>The <strong>center of the earth</strong> is used as the reference point.</p>
+<p>The <strong>center of the geoid</strong> is the reference point.</p>
 <ul>
-<li>Fits the geoid fairly well everywhere <img data-src="images/wgs_geoid.jpg"></li>
+<li>Fits fairly well everywhere <img data-src="images/wgs_geoid.jpg"></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/global_datum.png"></p>
@@ -526,44 +545,42 @@
 <h2>Local Datums</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>A point on the geoids surface</strong> is used as the reference point.</p>
+<p><strong>A location on the geoid’s surface</strong> the reference point.</p>
 <ul>
-<li>Fits geoid very well in <strong>one</strong> region <img data-src="images/nad_geoid.png"></li>
+<li>Fits very well in <strong>one</strong> region</li>
 </ul>
+<p><img data-src="images/nad_geoid.png" style="width:80.0%"></p>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/local_datum.png"></p>
 </div>
 </div>
 </section>
-<section id="does-the-datum-matter" class="slide level2">
-<h2>Does the Datum Matter?</h2>
+<section id="why-does-it-matter" class="slide level2">
+<h2>Why Does it Matter?</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>Generally speaking:</p>
 <ul>
-<li>For global maps, you <strong>always</strong> need a global datum</li>
-<li>A local datum is better for small areas like a city</li>
-<li>Global datums can be used, they just might shift things a bit</li>
+<li>Global maps <strong>always</strong> use a global datum</li>
+<li>Local datums are better for specific regions
+<ul>
+<li>Global datums can work</li>
+<li>But less accurate</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/datum.png"></p>
 </div>
 </div>
 </section>
-<section id="does-the-datum-matter-1" class="slide level2">
-<h2>Does the Datum Matter?</h2>
+<section id="why-does-it-matter-1" class="slide level2">
+<h2>Why Does it Matter?</h2>
+<p>Only minor differences between in North America, larger differences elsewhere.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Only minor differences between local and global datums in North America.</p>
-<ul>
-<li><p>For most applications …</p></li>
-<li><p>The choice of global vs.&nbsp;local is not really that important</p></li>
-<li><p>For others, its <strong>very important</strong></p></li>
-<li><p>Aviation</p></li>
-<li><p>Self driving cars</p></li>
-</ul>
-</div><div class="column" style="width:50%;">
 <p><img data-src="images/nad_v_wgs.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/geoid_ex.jpg"></p>
 </div>
 </div>
 </section></section>
@@ -578,15 +595,17 @@
 </section>
 <section id="geographic-coordinate-system" class="slide level2">
 <h2>Geographic Coordinate System</h2>
+<p><strong>Latitude/Longitude</strong> is a Geographic Coordinate System <strong>(GCS)</strong>.</p>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Latitude/Longitude</strong> is the primary Geographic Coordinate System <strong>(GSC)</strong> that we use to describe locations on the “the earth’s surface”</p>
+<div class="column" style="width:55%;">
 <ul>
-<li>Location on a 3D object with just 2 numbers</li>
+<li>Location on the surface of a <strong>3D object</strong> with <em>only 2 values</em>
+<ul>
 <li>Fixed to the surface of spheroid</li>
 <li><em>Not</em> the actual earth’s surface</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:45%;">
 <p><img data-src="images/latitude-longitude-globe-ESRI.gif"></p>
 </div>
 </div>
@@ -595,12 +614,12 @@
 <h2>Latitude</h2>
 <div class="columns">
 <div class="column" style="width:100%;">
-<p>Distance in degrees form Equator:</p>
+<p>Angular distance from the equator</p>
 <ul>
-<li>Angular distance between center of the earth and the equator</li>
 <li>-90°(South) to +90°(North)</li>
-<li>Often called parallels <img data-src="images/grat.gif"></li>
+<li>Often called parallels</li>
 </ul>
+<p><img data-src="images/grat.gif" style="width:80.0%"></p>
 </div>
 </div>
 </section>
@@ -608,44 +627,56 @@
 <h2>Longitude</h2>
 <div class="columns">
 <div class="column" style="width:100%;">
-<p>Distance in degrees form the Prime Meridian:</p>
+<p>Angular distance from the prime meridian</p>
 <ul>
-<li>Angular distance between center of the earth and the prime meridian</li>
 <li>-180° (West); to +180° (East)</li>
-<li>Often called meridians <img data-src="images/grat.gif"></li>
+<li>Often called meridians</li>
 </ul>
+<p><img data-src="images/grat.gif" style="width:80.0%"></p>
 </div>
 </div>
 </section>
 <section id="latitude-longitude" class="slide level2">
 <h2>Latitude &amp; Longitude</h2>
+<p>Sometimes refereed to as a graticule.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Sometimes refereed to as a graticule.</p>
 <p><strong>Degrees Minutes Seconds</strong></p>
 <ul>
-<li>Vancouver BC: 49°15′40″N 123°06′50″W</li>
-<li>Sydney NSW: 33°51′54″S 151°12′34″E</li>
-</ul>
-<p><strong>Decimal Degrees</strong></p>
+<li>Vancouver BC:
 <ul>
-<li>Vancouver BC: 49.261111, -123.113889</li>
-<li>Sydney NSW: -33.865, 151.209444</li>
+<li>49°15′40″N 123°06′50″W</li>
+</ul></li>
+<li>Sydney NSW:
+<ul>
+<li>33°51′54″S 151°12′34″E</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><img data-src="images/latitude-longitude-globe-ESRI.gif"></p>
+<p><strong>Decimal Degrees</strong></p>
+<ul>
+<li>Vancouver BC:
+<ul>
+<li>49.261, -123.113</li>
+</ul></li>
+<li>Sydney NSW:
+<ul>
+<li>-33.865, 151.209</li>
+</ul></li>
+</ul>
 </div>
 </div>
 </section>
-<section id="an-important-caveat" class="slide level2">
-<h2>An Important Caveat!</h2>
+<section id="meridians-converge-at-the-poles" class="slide level2">
+<h2>Meridians converge at the poles!</h2>
+<p>Distance between degrees of longitude decreases with increasing latitude.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Meridians converge at the poles!</p>
 <ul>
-<li>Distance between degrees of longitude decreases with increasing latitude</li>
-<li>This is the central issue with projecting a map!</li>
-<li>You <strong>can’t</strong> accurately display a Geographic Coordinate System on a 2D surface (map/screen).</li>
+<li>You <strong>can’t</strong> accurately display a Geographic Coordinate System on a 2D surface (map/screen).
+<ul>
+<li>This is why we need map projects!</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/long_boi.gif"></p>
@@ -656,15 +687,12 @@
 <h2>Making a Flat Map</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Displaying Lat/Lon in 2D doesn’t work well</p>
-<ul>
-<li>Causes things to look “scrunched”</li>
-</ul>
+<p>Displaying Lat/Lon in 2D doesn’t work, things to look “scrunched”</p>
 <p><img data-src="images/no_project.png"></p>
 </div><div class="column" style="width:50%;">
 <p>We have to <strong>Project</strong> our map.</p>
 <ul>
-<li>Involves intentionally distorting the data to display it effectively in 2D</li>
+<li>Intentionally distort data to display in 2D</li>
 </ul>
 <p><img data-src="images/proj_1.jpg"></p>
 </div>
@@ -685,9 +713,9 @@
 </section>
 <section id="projected-coordinate-systems" class="slide level2">
 <h2>Projected Coordinate Systems</h2>
+<p>A map projection is a mathematical transformation used to “flatten” a geographic coordinate system.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>A map projection is a mathematical transformation used to flatten a GCS.</p>
 <ul>
 <li>Imagine sending rays of light through the ellipsoid onto a flat surface, the resulting image is a projection</li>
 </ul>
@@ -733,7 +761,7 @@
 </div>
 
 <div class="footer footer-default">
-
+<p><a href="https://geos270.github.io/">Back</a></p>
 </div>
 </section></section>
     </div>

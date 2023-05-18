@@ -1,16 +1,15 @@
 ---
-format:
-  revealjs:
-    theme: serif
-    code-fold: true
-    controls: true
-    navigation-mode: linear
-    controls-layout: bottom-right
-    controls-tutorial: true
-    slide-number: true
-    show-slide-number: all
-    pdfMaxPagesPerSlide: 1
-fig-dpi: 300
+format: revealjs
+#     theme: serif
+#     code-fold: true
+#     controls: true
+#     navigation-mode: linear
+#     controls-layout: bottom-right
+#     controls-tutorial: true
+#     slide-number: true
+#     show-slide-number: all
+#     pdfMaxPagesPerSlide: 1
+# fig-dpi: 300
 
 ---
 
@@ -108,7 +107,7 @@ Python, JavaScript, R, etc. can be used to for GSI.
   position: relative">
   <iframe src="https://ubc-micromet.github.io/FieldSiteMaps/" title="Processes" scrolling="no" frameborder="0"
     style="border: 0;
-   height: 100%;
+   height: 75%;
    left: 0;
    position: absolute;
    top: 0;
@@ -163,20 +162,15 @@ ArcGIS Pro is a proprietary software package.  It is created and maintained by a
 Countering Colonialism
 ----------------------
 
-The lands that comprise Canada have histories that stretch back well before the colonial era.
 
 ::::{.columns}
 :::{.column width="50%"}
 
 
+The lands that comprise Canada have histories that stretch back well before the colonial era.
 
 
 * Colonial mapping centered on erasing Indigenous peoples and their histories
-  + One way was through the names
-
-* Ch'ich'iyuy (The Twins) 
-  + Skwxwú7mesh name for "The Lions"
-
 
 :::
 :::{.column width="50%"}
@@ -185,6 +179,7 @@ The lands that comprise Canada have histories that stretch back well before the 
 ![](images/the_twins.jpg)
 
 
+**Ch'ich'iyuy**: The Twins Skwxwú7mesh name for "The Lions"
 
 
 

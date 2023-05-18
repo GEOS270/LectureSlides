@@ -3,18 +3,37 @@ project:
   output-dir: docs
   
 format:
-  html:
-    theme: cosmo
-    css: styles.css
-    toc: true
+  revealjs:
+    code-fold: true
+    controls: true
+    navigation-mode: linear
+    controls-layout: bottom-right
+    controls-tutorial: true
+    slide-number: true
+    show-slide-number: all
+    pdfMaxPagesPerSlide: 1
+    scrollable: true
+    footer: <a href="https://geos270.github.io/">Back</a>
+fig-dpi: 300
+  # html:
+  #   theme: cosmo
+  #   css: styles.css
+  #   toc: true
 
 website:
   title: "Lecture Slides"
+  navbar:
+    left:
+      - href: https://geos270.github.io/
+        text: Syllabus
+      - href: index.md
+        text: Lecture Slides
+      - href: https://geos270.github.io/LabAssignments/labs.html
+        text: Lab Assignments
   sidebar:
     style: "docked"
     search: true
-    contents:
-    
+    contents:    
       - section: "Module 1"
         contents:
         - What_is_GIS/Slides.qmd
