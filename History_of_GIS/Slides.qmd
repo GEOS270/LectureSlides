@@ -829,7 +829,7 @@ The projection is problematic because it severely distorts the true size of some
 
 
 
-TopHat Question 3
+TopHat Question 2
 =================
 
 
@@ -1202,7 +1202,7 @@ Following the CLI, a number of commercial software companies began developing GI
 
 
 
-TopHat Question 4
+TopHat Question 3
 =================
 
 

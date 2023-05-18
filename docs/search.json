@@ -396,7 +396,7 @@
     "href": "Data_Visualization/Slides.html#cartographic-principals",
     "title": "Lecture Slides",
     "section": "Cartographic Principals",
-    "text": "Cartographic Principals\n\n\nThese are just stylistic guidelines!\n\nCartography is an art, there are no steadfast rules\nJust best practices\nFeel free to play around with styling\nJust be able to justify your choices\nNot all spaces “want” to be mapped\nSometimes you need to make aesthetic compromises to make an effective map\n\n\n\n\n\nBack"
+    "text": "Cartographic Principals\n\n\nThese are just stylistic guidelines!\n\nCartography is an art, there are no steadfast rules\nJust best practices\nFeel free to play around with styling\nJust be able to justify your choices\nNot all spaces “want” to be mapped\nSometimes you need to make aesthetic compromises to make an effective map\n\n\n\n\n\nBack to Course Modules"
   },
   {
     "objectID": "Ethics_in_GIS/Slides.html#what-is-ethics",
@@ -854,11 +854,11 @@
     "text": "Commercial Development\n\n\nFollowing the CLI, a number of commercial software companies began developing GIS applications.\n\nHardware improvements made the technology more accessible\nMapping Display and Analysis System (MIDAS)\n\nDesktop GIS released in 1986"
   },
   {
-    "objectID": "index.html#quarto",
-    "href": "index.html#quarto",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Lecture Slides",
-    "section": "Quarto",
-    "text": "Quarto\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n\nBack"
+    "section": "",
+    "text": "This page contains 270 lecture slides."
   },
   {
     "objectID": "Map_Projections/Slides.html#projected-coordinate-systems",
@@ -1124,7 +1124,7 @@
     "href": "Modern_GIS/Slides.html#qgis",
     "title": "Lecture Slides",
     "section": "QGIS",
-    "text": "QGIS\n\n  View site in new tab"
+    "text": "QGIS\nVisit QGIS Homepage"
   },
   {
     "objectID": "Modern_GIS/Slides.html#open-street-maps",
@@ -1411,7 +1411,7 @@
     "href": "Phenomena_and_Data_Types/Slides.html#summary-operations-by-data-type",
     "title": "Lecture Slides",
     "section": "Summary: Operations by Data Type",
-    "text": "Summary: Operations by Data Type\n\n\n\n\n\nOperation\nNominal\nOrdinal\nInterval\nRatio\n\n\nEquality\nx\nx\nx\nx\n\n\nCounts/Mode\nx\nx\nx\nx\n\n\nRank/Order\n\nx\nx\nx\n\n\nMedian\n\n~\nx\nx\n\n\nAdd/Subtract\n\n\nx\nx\n\n\nMean\n\n\nx\nx\n\n\nMultiply/Divide\n\n\n\nx\n\n\n\n\n\n\n\nBack"
+    "text": "Summary: Operations by Data Type\n\n\n\n\n\nOperation\nNominal\nOrdinal\nInterval\nRatio\n\n\nEquality\nx\nx\nx\nx\n\n\nCounts/Mode\nx\nx\nx\nx\n\n\nRank/Order\n\nx\nx\nx\n\n\nMedian\n\n~\nx\nx\n\n\nAdd/Subtract\n\n\nx\nx\n\n\nMean\n\n\nx\nx\n\n\nMultiply/Divide\n\n\n\nx\n\n\n\n\n\n\n\nBack to Course Modules"
   },
   {
     "objectID": "Raster_Analysis_Methods/Slides.html#clip",
@@ -1929,7 +1929,7 @@
     "href": "Spatial_Sampling_Methods/Slides.html#kernel-density",
     "title": "Lecture Slides",
     "section": "Kernel Density",
-    "text": "Kernel Density\nCalculates the “density” of discrete point observations/samples and converts to a raster surface\n\nShows the probability of occurrence at any given location\nWeight cells by “value” of points\nOften applied to counts of qualitative data\nDisease outbreaks\nCrime data\n\n::: :::{.column width=“50%”}\n\n::: ::::\n\n\nBack"
+    "text": "Kernel Density\nCalculates the “density” of discrete point observations/samples and converts to a raster surface\n\nShows the probability of occurrence at any given location\nWeight cells by “value” of points\nOften applied to counts of qualitative data\nDisease outbreaks\nCrime data\n\n::: :::{.column width=“50%”}\n\n::: ::::\n\n\nBack to Course Modules"
   },
   {
     "objectID": "Steps_of_Abstraction/Slides.html#flattening-the-blue-marble",
@@ -2097,7 +2097,7 @@
     "href": "Steps_of_Abstraction/Slides.html#steps-of-abstraction-1",
     "title": "Lecture Slides",
     "section": "Steps of Abstraction",
-    "text": "Steps of Abstraction\n\n\n\n\n\n\n\nBack"
+    "text": "Steps of Abstraction\n\n\n\n\n\n\n\nBack to Course Modules"
   },
   {
     "objectID": "The_Raster_Data_Model/Slides.html#raster-data-model-1",
@@ -2622,7 +2622,7 @@
     "href": "Uncertainty_in_GIS/Slides.html#error-propagation",
     "title": "Lecture Slides",
     "section": "Error Propagation",
-    "text": "Error Propagation\nErrors are cumulative: * Uncertainty will propagate through the model/system.\n\nmissing::: ::::\n\n\nBack"
+    "text": "Error Propagation\nErrors are cumulative: * Uncertainty will propagate through the model/system.\n\nmissing::: ::::\n\n\nBack to Course Modules"
   },
   {
     "objectID": "Vector_Analysis_Methods/Slides.html#vector-analysis-methods-1",

@@ -63,18 +63,18 @@ Open source software is more accessible because its free to download and use.
 QGIS
 ----
 
+<a href="https://www.qgis.org/en/site/" target="_blank">Visit QGIS Homepage</a>
 <div style="overflow: hidden;
-  padding-top: 56.25%;
+  padding-top: 60%;
   position: relative">
   <iframe src="https://www.qgis.org/en/site/" title="Processes" scrolling="no" frameborder="0"
     style="border: 0;
-   height: 75%;
+   height: 70%;
    left: 0;
    position: absolute;
    top: 0;
-   width: 75%;">
+   width: 70%;">
  </iframe>
-<a href="https://www.qgis.org/en/site/" target="_blank">View site in new tab</a>
 </div>
 
 Open Street Maps

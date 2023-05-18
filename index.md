@@ -1,7 +1,8 @@
 ---
 title: "Lecture Slides"
+format: html
 ---
 
-## Quarto
+## GEOS 270
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+This page contains 270 lecture slides.
