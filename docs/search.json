@@ -865,28 +865,28 @@
     "href": "Map_Projections/Slides.html#projected-coordinate-systems",
     "title": "Lecture Slides",
     "section": "Projected Coordinate Systems",
-    "text": "Projected Coordinate Systems\n\n\nA map projection is a transformation applied to a geographic coordinate system (GCS).\n\nAllows us to “convert” from 3D coordinates (Lat/Lon) to 2D coordinates (meters)\nWhy does this work?\nWhile the GCS is a 3D coordinate system, it only references locations on the surface of the oblate spheroid"
+    "text": "Projected Coordinate Systems\n\nA map projection is a transformation applied to a geographic coordinate system (GCS).\n\nConverts from 3D coordinates (Lat/Lon) to 2D coordinates (meters)\nWhy does this work?\n\nGCS is 3D coordinate system, but only locations on the surface of the “Earth”"
   },
   {
     "objectID": "Map_Projections/Slides.html#projection-methods",
     "href": "Map_Projections/Slides.html#projection-methods",
     "title": "Lecture Slides",
     "section": "Projection Methods",
-    "text": "Projection Methods\n\n\nThere are three main ways to project the 3D oblate spheroid onto a 2D plane.\n\nPlanar: A plane is referenced to “Earth’s” surface\nConic: A cone is referenced to “Earth’s” surface\nThe cone must be cut to flatten it\nCylindrical: A cylinder is referenced to “Earth’s” surface\nThe cylinder must be cut to flatten it"
+    "text": "Projection Methods\n\nThree main ways to project the spheroid onto a plane.\n\nPlanar: A plane is referenced to “Earth’s” surface\nConic: A cone is referenced to “Earth’s” surface\n\nMust be cut to flatten\n\nCylindrical: A cylinder is referenced to “Earth’s” surface\n\nMust be cut to flatten"
   },
   {
     "objectID": "Map_Projections/Slides.html#projection-methods-1",
     "href": "Map_Projections/Slides.html#projection-methods-1",
     "title": "Lecture Slides",
     "section": "Projection Methods",
-    "text": "Projection Methods\n\n\nHow/where to reference the surface influences how the map is distorted.\n\nTangent: when projections touch the “earth’s” surface at a one point or line\nPoint for planar projections, line for conic and cylindrical projections\nSecant: when projections touch the “earth’s” surface along two lines\nHelps minimize reduce distortion\nThese are the only locations on map without distortions"
+    "text": "Projection Methods\n\nHow to reference the influences how the map is distorted.\n\nTangent: projections touch the surface at one point or line\n\nPoint for planar, line for conic and cylindrical\n\nSecant: when projections touch the surface along two lines\n\nHelps minimize reduce distortion\n\n\n\n\nOnly locations without distortion"
   },
   {
     "objectID": "Map_Projections/Slides.html#planar-projections",
     "href": "Map_Projections/Slides.html#planar-projections",
     "title": "Lecture Slides",
     "section": "Planar Projections",
-    "text": "Planar Projections\n\n\nSometimes also called azimuthal or zenith projections, planar projections are the simplest approach.\n\nLimited applicability/scope and are typically only used for polar regions."
+    "text": "Planar Projections\n\n\nPlanar projections are the simplest approach.\n\nLimited applicability, typically used for polar regions\nSometimes also called azimuthal or zenith projections"
   },
   {
     "objectID": "Map_Projections/Slides.html#planar-projections-1",
@@ -900,7 +900,7 @@
     "href": "Map_Projections/Slides.html#conic-projections",
     "title": "Lecture Slides",
     "section": "Conic Projections",
-    "text": "Conic Projections\n\n\nConic projections are a great option for the mid-latitudes. They have one central meridian and one/two standard parallel(s).\n\nCan only cover one hemisphere at a time"
+    "text": "Conic Projections\n\nConic projections are a great option for the mid-latitudes.\n\nOne central meridian\nOne or two standard parallel(s)\nOnly work for one hemisphere at a time"
   },
   {
     "objectID": "Map_Projections/Slides.html#conic-projections-1",
@@ -914,7 +914,7 @@
     "href": "Map_Projections/Slides.html#conic-projections-2",
     "title": "Lecture Slides",
     "section": "Conic Projections",
-    "text": "Conic Projections\n\n\nCanada’s “official” map projection: Canada Lambert Conformal Conic"
+    "text": "Conic Projections\n\n\nCanada Lambert Conformal Conic"
   },
   {
     "objectID": "Map_Projections/Slides.html#cylindrical-projections",
@@ -928,7 +928,7 @@
     "href": "Map_Projections/Slides.html#cylindrical-projections-1",
     "title": "Lecture Slides",
     "section": "Cylindrical Projections",
-    "text": "Cylindrical Projections\n\n\nThe Mercator projection, tangent to 0° N and, central meridian 0° W."
+    "text": "Cylindrical Projections\n\n\nMercator projection: tangent to 0° N and, central meridian 0° W."
   },
   {
     "objectID": "Map_Projections/Slides.html#cylindrical-projections-2",
@@ -942,14 +942,14 @@
     "href": "Map_Projections/Slides.html#pseudocylindrical-projections",
     "title": "Lecture Slides",
     "section": "Pseudocylindrical Projections",
-    "text": "Pseudocylindrical Projections\n\n\nSome special projections apply more complex transformations.\n\n\nThese tend to be used less frequently.\n\nWon’t be used in this class"
+    "text": "Pseudocylindrical Projections\n\n\nSpecial applications, more complex transformations.\n\n\nUsed less frequently, won’t be used in lab."
   },
   {
     "objectID": "Map_Projections/Slides.html#types-of-deformations",
     "href": "Map_Projections/Slides.html#types-of-deformations",
     "title": "Lecture Slides",
     "section": "Types of Deformations",
-    "text": "Types of Deformations\n\n\nAll map projections must induce distortions in order to display the 3D earth in 2D, they can cause different distortions in different ways:\n\nTearing: All projections have tearing (edges)\nShearing: Shapes and angles are contorted\nCompression: Changes to area\nBit of a misnomer, often results in expansion"
+    "text": "Types of Deformations\n\n\nAll map projections must induce distortions in order to display the 3D earth in 2D, they can cause different distortions in different ways:\n\nTearing: All projections have tearing (edges)\nShearing: Shapes and angles are contorted\nCompression: Changes to area\n\nBit of a misnomer, often results in expansion"
   },
   {
     "objectID": "Map_Projections/Slides.html#tearing",
@@ -963,77 +963,91 @@
     "href": "Map_Projections/Slides.html#shearing",
     "title": "Lecture Slides",
     "section": "Shearing",
-    "text": "Shearing\n\n\nShapes and angles are contorted by some, but not all projections."
+    "text": "Shearing\n\n\nShapes and angles are contorted by some, but not all projections.\n\n\n\n\nGall Peters is a common alternative to the Mercator"
   },
   {
     "objectID": "Map_Projections/Slides.html#compression",
     "href": "Map_Projections/Slides.html#compression",
     "title": "Lecture Slides",
     "section": "Compression",
-    "text": "Compression\n\n\nAreas can be “inflated” or “deflated” some, but not all projections.\n\nThis can cause serious issues when you are trying to calculate statistics dependent upon area!\nPopulation density is a good example\nYou will get hands on experience with this issue in Lab"
+    "text": "Compression\n\nAreas can be “inflated” or “deflated” some, but not all projections.\n\nSerious issues when you calculate statistics dependent upon area!\nPopulation density is a good example\n\nYou will get experience with this in Lab"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#compression-1",
+    "href": "Map_Projections/Slides.html#compression-1",
+    "title": "Lecture Slides",
+    "section": "Compression",
+    "text": "Compression\n\nAreas can be “inflated” or “deflated” some, but not all projections.\n\nSerious issues when you calculate statistics dependent upon area!\nPopulation density is a good example\n\nYou will get experience with this in Lab"
   },
   {
     "objectID": "Map_Projections/Slides.html#types-of-projections",
     "href": "Map_Projections/Slides.html#types-of-projections",
     "title": "Lecture Slides",
     "section": "Types of Projections",
-    "text": "Types of Projections\n\n\nAll map projections must induce distortions in order to display the 3D earth in 2D. But there are different types of projections that are designed to preserve some attributes.\n\nConformal: Shapes and angles are preserved, i.e. they prevent shearing\nEqual-area: Areas is preserved, i.e. they prevent compression\nEquidistant: Distance is preserved\nNot “globally”, only in certain regions, ie. the tangent/secant lines\nTrue-direction: Gives shortest route between points (great circle)\nNot “globally”, only certain paths, ie. outward from the center of an azimuthal projection\nCompromise: Splits the difference for aesthetics"
+    "text": "Types of Projections\n\n\nDifferent types of projections that are designed to preserve some attributes.\n\nConformal: Shapes and angles are preserved, i.e. they prevent shearing\nEqual-area: Areas is preserved, i.e. they prevent compression\nEquidistant & True-direction: Less common\nCompromise: Splits the difference for aesthetics"
   },
   {
     "objectID": "Map_Projections/Slides.html#conformal-projections",
     "href": "Map_Projections/Slides.html#conformal-projections",
     "title": "Lecture Slides",
     "section": "Conformal Projections",
-    "text": "Conformal Projections\n\n\nThese projections are designed to maintain the shapes/angles across the map.\n\nThe mercator projection is a good example\nBecause it maintains shape/angles, it can be used to circumnavigate the globe in a sailboat\nBut to maintain shape globally, it must severely distort area\nScale changes across the map, poor for measuring distances or areas"
+    "text": "Conformal Projections\n\nDesigned to maintain the shapes/angles across the map.\n\nMercator is a good example\n\nIt maintains shape/angles, useful for navigation\nTo maintain shape globally, it must severely distort area\nScale changes across map, bad for measuring distance/area"
   },
   {
     "objectID": "Map_Projections/Slides.html#conformal-projections-1",
     "href": "Map_Projections/Slides.html#conformal-projections-1",
     "title": "Lecture Slides",
     "section": "Conformal Projections",
-    "text": "Conformal Projections\n\n\nThese projections are designed to maintain the shapes/angles across the map.\n\nThe lambert conformal conic projection is also a good example\nBecause it is a conic projection showing a smaller region and it uses secant lines, areal distortions are less obvious/drastic\nHowever, the area calculations are not true to reality"
+    "text": "Conformal Projections\n\nDesigned to maintain the shapes/angles across the map.\n\nLambert Conformal Conic\n\nArea distortions are less drastic\n\nA conic projection using secant lines\n\nHowever, the area calculations are not true to reality"
   },
   {
     "objectID": "Map_Projections/Slides.html#universal-transverse-mercator-utm",
     "href": "Map_Projections/Slides.html#universal-transverse-mercator-utm",
     "title": "Lecture Slides",
     "section": "Universal Transverse Mercator (UTM)",
-    "text": "Universal Transverse Mercator (UTM)\n\n\nGlobe is divided into 60 strips 6° wide, spanning 80°N to 80°S.\n\nMinimal distortion within zones \n\n\nA special type of conformal projection.\n\nOnly used for “small” areas"
+    "text": "Universal Transverse Mercator (UTM)\n\nGlobe is divided into 60 strips 6° wide, spanning 80°N to 80°S.\n\nSpecial type of conformal projection\n\nOnly used for “small” areas\nMinimal distortion within zones"
+  },
+  {
+    "objectID": "Map_Projections/Slides.html#universal-transverse-mercator-utm-1",
+    "href": "Map_Projections/Slides.html#universal-transverse-mercator-utm-1",
+    "title": "Lecture Slides",
+    "section": "Universal Transverse Mercator (UTM)",
+    "text": "Universal Transverse Mercator (UTM)\n\nGlobe is divided into 60 strips 6° wide, spanning 80°N to 80°S.\n\nSpecial type of conformal projection\n\nOnly used for “small” areas\nMinimal distortion within zones"
   },
   {
     "objectID": "Map_Projections/Slides.html#utm-zones",
     "href": "Map_Projections/Slides.html#utm-zones",
     "title": "Lecture Slides",
     "section": "UTM Zones",
-    "text": "UTM Zones\n\n\nVancouver is in UTM Zone 10N.\n\n\nThe Mackenzie Delta, UTM Zone 8N."
+    "text": "UTM Zones\n\n\nVancouver is in UTM Zone 10N.\n\n\n\nMackenzie Delta, UTM Zone 8N"
   },
   {
     "objectID": "Map_Projections/Slides.html#equal-area-projections",
     "href": "Map_Projections/Slides.html#equal-area-projections",
     "title": "Lecture Slides",
     "section": "Equal Area Projections",
-    "text": "Equal Area Projections\n\n\nThese projections are designed to preserves area.\n\nThe gall peters projection is a good example\nBecause it maintains area, it can be used to calculate population density\nVery useful in GIS where area must be preserved for land analysis\nAngles/shapes are deformed so it “looks” weird"
+    "text": "Equal Area Projections\n\nDesigned to preserves area, useful where area must be preserved for land surface analysis.\n\nGall Peters projection\n\nMaintains area, can be used to calculate population density\nAngles & shapes are deformed so it “looks” weird"
   },
   {
     "objectID": "Map_Projections/Slides.html#equal-area-projections-1",
     "href": "Map_Projections/Slides.html#equal-area-projections-1",
     "title": "Lecture Slides",
     "section": "Equal Area Projections",
-    "text": "Equal Area Projections\n\n\nThese projections are designed to preserves area.\n\nThe albers equal area projection is also a good example\nBecause it is a conic projection showing a smaller region and it uses secant lines, shape/angle distortions are less obvious/drastic\nYou can still see it, especially in the north"
+    "text": "Equal Area Projections\n\nDesigned to preserves area, useful where area must be preserved for land surface analysis.\n\nThe Albers equal area\n\nShape distortions are less drastic\n\nA conic projection using secant lines\n\nStill visible, especially in the north"
   },
   {
-    "objectID": "Map_Projections/Slides.html#equidistant-projections",
-    "href": "Map_Projections/Slides.html#equidistant-projections",
+    "objectID": "Map_Projections/Slides.html#equidistanttrue-direction-projections",
+    "href": "Map_Projections/Slides.html#equidistanttrue-direction-projections",
     "title": "Lecture Slides",
-    "section": "Equidistant Projections",
-    "text": "Equidistant Projections\n\n\nThese projections are designed to preserves distance.\n\nDistance cannot be preserved globally, only specific locations\ne.g. lines radiating from center of an azimuthal projection\ne.g. lines of longitude + central meridian of sinusoidal projection"
+    "section": "Equidistant/True-Direction Projections",
+    "text": "Equidistant/True-Direction Projections\n\nDesigned to preserves distance/direction.\n\nCannot be preserved globally, only specific locations\n\ne.g. lines radiating from center of an azimuthal projection\nGives a “great circle” route\n\nShortest line between two locations"
   },
   {
-    "objectID": "Map_Projections/Slides.html#true-direction-projections",
-    "href": "Map_Projections/Slides.html#true-direction-projections",
+    "objectID": "Map_Projections/Slides.html#equidistanttrue-direction-projections-1",
+    "href": "Map_Projections/Slides.html#equidistanttrue-direction-projections-1",
     "title": "Lecture Slides",
-    "section": "True-direction Projections",
-    "text": "True-direction Projections\n\n\nThese projections are designed to preserves direction.\n\nDirection cannot be preserved globally, only specific locations\ne.g. lines radiating from center of an azimuthal projection\nOften, equidistant are also true direction but not always\nWill give us a “great circle” route, the shortest distance between two locations"
+    "section": "Equidistant/True-Direction Projections",
+    "text": "Equidistant/True-Direction Projections\n\nDesigned to preserves distance/direction.\n\nCannot be preserved globally, only specific locations\n\ne.g. lines radiating from center of an azimuthal projection\nGives a “great circle” route\n\nShortest line between two locations"
   },
   {
     "objectID": "Map_Projections/Slides.html#compromise-projections",
@@ -1047,28 +1061,28 @@
     "href": "Map_Projections/Slides.html#what-projection-is-right-for-my-map",
     "title": "Lecture Slides",
     "section": "What projection is right for my map?",
-    "text": "What projection is right for my map?\n\n\nThere isn’t a “correct” answer here, but there are definitely wrong answers.\n\nYou can typically get similar results with a handful of different projections, depending on your application\nBest practice is to always use an equal area projection to calculate areas/densities\nBut there are many different equal area projections"
+    "text": "What projection is right for my map?\n\n\nThere isn’t a “correct” answer, but there are wrong answers.\n\nTypically get similar results with a handful of projections, depending on application\nBest practice is to always use an equal area projection to calculate areas/densities\n\nMany different equal area projections"
   },
   {
     "objectID": "Map_Projections/Slides.html#things-to-think-about",
     "href": "Map_Projections/Slides.html#things-to-think-about",
     "title": "Lecture Slides",
     "section": "Things to Think About",
-    "text": "Things to Think About\nWhere do the data come from?\n\nSome organizations use a standard projection\nStats Canada: Lambert Conformal Conic\nBritish Columbia: BC Environment Albers\n\nWhat is the map’s purpose?\n\nConformal/compromise are aesthetically pleasing.\nNavigational maps, use conformal, equidistant, etc.\nThematic maps (areas/densities) use equal area.\n\n::: ::::"
+    "text": "Things to Think About\n\n\nWhere are the data from?\n\nSome organizations use a standard projection\n\nStats Canada: Lambert Conformal Conic\nBritish Columbia: BC Environment Albers\n\n\n\nWhat is the map’s purpose?\n\nConformal/compromise are aesthetically pleasing.\nNavigational maps, use conformal, equidistant, etc.\nThematic maps (areas/densities) use equal area."
   },
   {
     "objectID": "Map_Projections/Slides.html#map-scale",
     "href": "Map_Projections/Slides.html#map-scale",
     "title": "Lecture Slides",
     "section": "Map Scale",
-    "text": "Map Scale\n\n\nThe relationship between distance on a map to distance in the real world.\n\nHow much smaller is a unit on the map than a unit on the earth?\ni.e. 1 cm on the map = 1 km on the Earth\nCan be described:\nGraphically\nVerbally\nRepresentative fraction"
+    "text": "Map Scale\n\nRelationship between distance on a map to distance in the real world.\n\nHow much smaller is a unit on the map than a unit on the earth?\n\ni.e. 1 cm on the map = 1 km on the Earth\n\nGraphic, verbal, or representative fraction"
   },
   {
     "objectID": "Map_Projections/Slides.html#map-scale-1",
     "href": "Map_Projections/Slides.html#map-scale-1",
     "title": "Lecture Slides",
     "section": "Map Scale",
-    "text": "Map Scale\n\n\nSmall Scale Zoomed out, large area, more generalization, less detail.\n\n\nLarge Scale Zoomed in, small area, more detail, less generalization."
+    "text": "Map Scale\n\n\nSmall Scale: Zoomed out, large area, more general, less detail.\n\n\nLarge Scale: Zoomed in, small area, more detail, less general."
   },
   {
     "objectID": "Map_Projections/Slides.html#map-scale-2",
@@ -1082,14 +1096,14 @@
     "href": "Map_Projections/Slides.html#map-scale-3",
     "title": "Lecture Slides",
     "section": "Map Scale",
-    "text": "Map Scale\n\n\nAll maps require simplification of real world features. The degree of simplification is a function of the map’s scale.\n\nSmaller scale maps require more generalization.\nLarger scale maps can include more detail."
+    "text": "Map Scale\n\nAll maps require simplification of real world features. The degree of simplification is a function of the scale.\n\nSmaller scale maps require more generalization.\nLarger scale maps can include more detail."
   },
   {
     "objectID": "Map_Projections/Slides.html#map-scale-projection",
     "href": "Map_Projections/Slides.html#map-scale-projection",
     "title": "Lecture Slides",
     "section": "Map Scale & Projection",
-    "text": "Map Scale & Projection\n\n\nMap scale will impact our choice of projection.\n\nProjections that work at 1:000 aren’t necessarily suited for a 1:10,000,000 map\nWith conformal projections like the Mercator, scale changes with position on the map\nPreserves scale “locally”\nScale is grossly distorted globally"
+    "text": "Map Scale & Projection\n\nMap scale will impact our choice of projection.\n\nProjections that work at 1:1000 may not work at 1:10,000,000\nConformal projections (e.g., Mercator), scale changes with position on the map\n\nPreserved locally; distorted globally"
   },
   {
     "objectID": "Modern_GIS/Slides.html#proprietary-gis-software",

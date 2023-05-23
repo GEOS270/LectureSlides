@@ -337,14 +337,15 @@ Types of projections and what we use them for.</p>
 <section id="projected-coordinate-systems" class="slide level2">
 <h2>Projected Coordinate Systems</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>A map projection is a transformation applied to a geographic coordinate system (GCS).</p>
+<p>A map projection is a transformation applied to a geographic coordinate system (GCS).</p><div class="column" style="width:60%;">
 <ul>
-<li>Allows us to “convert” from 3D coordinates (Lat/Lon) to 2D coordinates (meters)</li>
-<li>Why does this work?</li>
-<li>While the GCS is a 3D coordinate system, it only references locations <strong>on the surface</strong> of the oblate spheroid</li>
+<li>Converts from 3D coordinates (Lat/Lon) to 2D coordinates (meters)</li>
+<li>Why does this work?
+<ul>
+<li>GCS is 3D coordinate system, but only locations <strong>on the surface</strong> of the “Earth”</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/proj_2.png"></p>
 </div>
 </div>
@@ -352,16 +353,19 @@ Types of projections and what we use them for.</p>
 <section id="projection-methods" class="slide level2">
 <h2>Projection Methods</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>There are three main ways to project the 3D oblate spheroid onto a 2D plane.</p>
+<p>Three main ways to project the spheroid onto a plane.</p><div class="column" style="width:60%;">
 <ul>
-<li><p><strong>Planar:</strong> A plane is referenced to “Earth’s” surface</p></li>
-<li><p><strong>Conic:</strong> A cone is referenced to “Earth’s” surface</p></li>
-<li><p>The cone must be cut to flatten it</p></li>
-<li><p><strong>Cylindrical</strong>: A cylinder is referenced to “Earth’s” surface</p></li>
-<li><p>The cylinder must be cut to flatten it</p></li>
+<li><strong>Planar:</strong> A plane is referenced to “Earth’s” surface</li>
+<li><strong>Conic:</strong> A cone is referenced to “Earth’s” surface
+<ul>
+<li>Must be cut to flatten</li>
+</ul></li>
+<li><strong>Cylindrical</strong>: A cylinder is referenced to “Earth’s” surface
+<ul>
+<li>Must be cut to flatten</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/Proj_surface.png"></p>
 </div>
 </div>
@@ -369,17 +373,20 @@ Types of projections and what we use them for.</p>
 <section id="projection-methods-1" class="slide level2">
 <h2>Projection Methods</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>How/where to reference the surface influences how the map is distorted.</p>
+<p>How to reference the influences how the map is distorted.</p><div class="column" style="width:60%;">
 <ul>
-<li><p><strong>Tangent:</strong> when projections touch the “earth’s” surface at a one point or line</p></li>
-<li><p>Point for planar projections, line for conic and cylindrical projections</p></li>
-<li><p><strong>Secant:</strong> when projections touch the “earth’s” surface along two lines</p></li>
-<li><p>Helps minimize reduce distortion</p></li>
-<li><p>These are the only locations on map without distortions</p></li>
+<li><strong>Tangent:</strong> projections touch the surface at one point or line
+<ul>
+<li>Point for planar, line for conic and cylindrical</li>
+</ul></li>
+<li><strong>Secant:</strong> when projections touch the surface along two lines
+<ul>
+<li>Helps minimize reduce distortion</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/tan_sec.gif"></p>
+<p>Only locations without distortion</p>
 </div>
 </div>
 </section>
@@ -387,9 +394,10 @@ Types of projections and what we use them for.</p>
 <h2>Planar Projections</h2>
 <div class="columns">
 <div class="column" style="width:100%;">
-<p>Sometimes also called azimuthal or zenith projections, planar projections are the simplest approach.</p>
+<p>Planar projections are the simplest approach.</p>
 <ul>
-<li>Limited applicability/scope and are typically only used for polar regions.</li>
+<li>Limited applicability, typically used for polar regions</li>
+<li>Sometimes also called azimuthal or zenith projections</li>
 </ul>
 <p><img data-src="images/planar.jpg"></p>
 </div>
@@ -409,12 +417,13 @@ Types of projections and what we use them for.</p>
 <section id="conic-projections" class="slide level2">
 <h2>Conic Projections</h2>
 <div class="columns">
-<div class="column" style="width:100%;">
-<p>Conic projections are a great option for the mid-latitudes. They have one central meridian and one/two standard parallel(s).</p>
+<p>Conic projections are a great option for the mid-latitudes.</p><div class="column" style="width:40%;">
 <ul>
-<li>Can only cover one hemisphere at a time</li>
+<li><p>One central meridian</p></li>
+<li><p>One or two standard parallel(s)</p></li>
+<li><p>Only work for one hemisphere at a time</p></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:60%;">
 <p><img data-src="images/conic.jpg"></p>
 <p><img data-src="images/conic_secant.jpg"></p>
 </div>
@@ -434,10 +443,10 @@ Types of projections and what we use them for.</p>
 <section id="conic-projections-2" class="slide level2">
 <h2>Conic Projections</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>Canada’s “official” map projection: Canada Lambert Conformal Conic</p>
+<div class="column" style="width:55%;">
+<p>Canada Lambert Conformal Conic</p>
 <p><img data-src="images/ca_lambert.png"></p>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:35%;">
 <p><img data-src="images/ca_lambert.jpg"></p>
 </div>
 </div>
@@ -467,10 +476,10 @@ Types of projections and what we use them for.</p>
 <section id="cylindrical-projections-1" class="slide level2">
 <h2>Cylindrical Projections</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>The Mercator projection, tangent to 0° N and, central meridian 0° W.</p>
+<div class="column" style="width:60%;">
+<p>Mercator projection: tangent to 0° N and, central meridian 0° W.</p>
 <p><img data-src="images/mercator-vs-truesize.png"></p>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:35%;">
 <p><img data-src="images/02-Mercator-map.png"></p>
 </div>
 </div>
@@ -478,14 +487,14 @@ Types of projections and what we use them for.</p>
 <section id="cylindrical-projections-2" class="slide level2">
 <h2>Cylindrical Projections</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:70%;">
 <p>Transverse cylinders projections are also frequently used.</p>
 <ul>
-<li>Minimize distortion near secant lines <img data-src="images/utm_3.png"></li>
+<li>Minimize distortion near secant lines</li>
 </ul>
-</div><div class="column" style="width:50%;">
+<p><img data-src="images/utm_3.png"></p>
+</div><div class="column" style="width:30%;">
 <p><img data-src="images/02-UTM-13N-map.png"></p>
-<p><img data-src="images/DeltaMap.png"></p>
 </div>
 </div>
 </section>
@@ -493,13 +502,11 @@ Types of projections and what we use them for.</p>
 <h2>Pseudocylindrical Projections</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Some special projections apply more complex transformations.</p>
+<p>Special applications, more complex transformations.</p>
 <p><img data-src="images/02-Sinusoidal-map.png"></p>
 </div><div class="column" style="width:50%;">
-<p>These tend to be used less frequently.</p>
-<ul>
-<li>Won’t be used in this class</li>
-</ul>
+<p>Used less frequently, won’t be used in lab.</p>
+<p><br></p>
 <p><img data-src="images/Sinusoidal.jpg"></p>
 </div>
 </div>
@@ -527,8 +534,10 @@ Types of projections and what we use them for.</p>
 <ul>
 <li><strong>Tearing</strong>: All projections have tearing (edges)</li>
 <li><strong>Shearing</strong>: Shapes and angles are contorted</li>
-<li><strong>Compression</strong>: Changes to area</li>
+<li><strong>Compression</strong>: Changes to area
+<ul>
 <li>Bit of a misnomer, often results in expansion</li>
+</ul></li>
 </ul>
 </div>
 </div>
@@ -538,33 +547,52 @@ Types of projections and what we use them for.</p>
 <div class="columns">
 <div class="column" style="width:100%;">
 <p>All projections require tearing, some projections have more than others.</p>
-<p><img data-src="images/Mollewide.png"></p>
+<p><img data-src="images/Mollewide.png" style="width:80.0%"></p>
 </div>
 </div>
 </section>
 <section id="shearing" class="slide level2">
 <h2>Shearing</h2>
 <div class="columns">
-<div class="column" style="width:100%;">
+<div class="column" style="width:50%;">
 <p>Shapes and angles are contorted by some, but not all projections.</p>
-</div><div class="column" style="width:50%;">
 <p><img data-src="images/Sinusoidal.jpg"></p>
+</div><div class="column" style="width:50%;">
 <p><img data-src="images/GallPeters_projection_SW.jpg"></p>
+<ul>
+<li>Gall Peters is a common alternative to the Mercator</li>
+</ul>
 </div>
 </div>
 </section>
 <section id="compression" class="slide level2">
 <h2>Compression</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>Areas can be “inflated” or “deflated” some, but not all projections.</p>
+<p>Areas can be “inflated” or “deflated” some, but not all projections.</p><div class="column" style="width:60%;">
 <ul>
-<li>This can cause <strong>serious</strong> issues when you are trying to calculate statistics dependent upon area!</li>
-<li>Population density is a good example</li>
-<li>You will get hands on experience with this issue in <a href="https://geos270.github.io/Module2/">Lab</a></li>
+<li><strong>Serious</strong> issues when you calculate statistics dependent upon area!</li>
+<li>Population density is a good example
+<ul>
+<li>You will get experience with this in Lab</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/compression.jpg"></p>
+</div>
+</div>
+</section>
+<section id="compression-1" class="slide level2">
+<h2>Compression</h2>
+<div class="columns">
+<p>Areas can be “inflated” or “deflated” some, but not all projections.</p><div class="column" style="width:60%;">
+<ul>
+<li><strong>Serious</strong> issues when you calculate statistics dependent upon area!</li>
+<li>Population density is a good example
+<ul>
+<li>You will get experience with this in Lab</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/mercator-vs-truesize.png"></p>
 </div>
 </div>
@@ -573,14 +601,11 @@ Types of projections and what we use them for.</p>
 <h2>Types of Projections</h2>
 <div class="columns">
 <div class="column" style="width:100%;">
-<p>All map projections must induce distortions in order to display the 3D earth in 2D. But there are different types of projections that are designed to preserve some attributes.</p>
+<p>Different types of projections that are designed to preserve some attributes.</p>
 <ul>
 <li><p><strong>Conformal</strong>: Shapes and angles are preserved, i.e.&nbsp;they <strong>prevent shearing</strong></p></li>
 <li><p><strong>Equal-area</strong>: Areas is preserved, i.e.&nbsp;they <strong>prevent compression</strong></p></li>
-<li><p><strong>Equidistant</strong>: Distance is preserved</p></li>
-<li><p><em>Not “globally”</em>, only in certain regions, ie. the tangent/secant lines</p></li>
-<li><p><strong>True-direction</strong>: Gives shortest route between points (great circle)</p></li>
-<li><p><em>Not “globally”</em>, only certain paths, ie. outward from the center of an azimuthal projection</p></li>
+<li><p><strong>Equidistant</strong> &amp; <strong>True-direction</strong>: Less common</p></li>
 <li><p><strong>Compromise</strong>: Splits the difference for aesthetics</p></li>
 </ul>
 </div>
@@ -589,15 +614,16 @@ Types of projections and what we use them for.</p>
 <section id="conformal-projections" class="slide level2">
 <h2>Conformal Projections</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>These projections are designed to maintain the shapes/angles across the map.</p>
+<p>Designed to maintain the shapes/angles across the map.</p><div class="column" style="width:60%;">
 <ul>
-<li>The mercator projection is a good example</li>
-<li>Because it maintains shape/angles, it can be used to circumnavigate the globe in a sailboat</li>
-<li>But to maintain shape globally, it must <strong>severely</strong> distort area</li>
-<li>Scale changes across the map, poor for measuring distances or areas</li>
+<li>Mercator is a good example
+<ul>
+<li>It maintains shape/angles, useful for navigation</li>
+<li>To maintain shape globally, it must <strong>severely</strong> distort area</li>
+<li>Scale changes across map, bad for measuring distance/area</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/conformal.png"></p>
 </div>
 </div>
@@ -605,14 +631,18 @@ Types of projections and what we use them for.</p>
 <section id="conformal-projections-1" class="slide level2">
 <h2>Conformal Projections</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>These projections are designed to maintain the shapes/angles across the map.</p>
+<p>Designed to maintain the shapes/angles across the map.</p><div class="column" style="width:60%;">
 <ul>
-<li>The lambert conformal conic projection is also a good example</li>
-<li>Because it is a conic projection showing a smaller region and it uses secant lines, areal distortions are less obvious/drastic</li>
+<li>Lambert Conformal Conic
+<ul>
+<li>Area distortions are less drastic
+<ul>
+<li>A conic projection using secant lines</li>
+</ul></li>
 <li>However, the area calculations are not true to reality</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/lambert.jpg"></p>
 </div>
 </div>
@@ -620,41 +650,57 @@ Types of projections and what we use them for.</p>
 <section id="universal-transverse-mercator-utm" class="slide level2">
 <h2>Universal Transverse Mercator (UTM)</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>Globe is divided into 60 strips 6° wide, spanning 80°N to 80°S.</p>
+<p>Globe is divided into 60 strips 6° wide, spanning 80°N to 80°S.</p><div class="column" style="width:50%;">
 <ul>
-<li>Minimal distortion within zones <img data-src="images/utm_1.png"></li>
+<li>Special type of conformal projection
+<ul>
+<li>Only used for “small” areas</li>
+<li>Minimal distortion within zones</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p>A special type of conformal projection.</p>
+<p><img data-src="images/utm_1.png"></p>
+</div>
+</div>
+</section>
+<section id="universal-transverse-mercator-utm-1" class="slide level2">
+<h2>Universal Transverse Mercator (UTM)</h2>
+<div class="columns">
+<p>Globe is divided into 60 strips 6° wide, spanning 80°N to 80°S.</p><div class="column" style="width:50%;">
 <ul>
-<li>Only used for “small” areas <img data-src="images/utm_2.png"></li>
+<li>Special type of conformal projection
+<ul>
+<li>Only used for “small” areas</li>
+<li>Minimal distortion within zones</li>
+</ul></li>
 </ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/utm_2.png"></p>
 </div>
 </div>
 </section>
 <section id="utm-zones" class="slide level2">
 <h2>UTM Zones</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:65%;">
 <p>Vancouver is in UTM Zone 10N.</p>
 <p><img data-src="images/FinalMap.png"></p>
-</div><div class="column" style="width:50%;">
-<p>The Mackenzie Delta, UTM Zone 8N.</p>
-<p><img data-src="images/DeltaMap.png"></p>
+</div><div class="column" style="width:35%;">
+<p><img data-src="images/DeltaMap.png" style="width:80.0%"></p>
+<p>Mackenzie Delta, UTM Zone 8N</p>
 </div>
 </div>
 </section>
 <section id="equal-area-projections" class="slide level2">
 <h2>Equal Area Projections</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>These projections are designed to preserves area.</p>
+<p>Designed to preserves area, useful where area must be preserved for land surface analysis.</p><div class="column" style="width:50%;">
 <ul>
-<li>The gall peters projection is a good example</li>
-<li>Because it maintains area, it can be used to calculate population density</li>
-<li>Very useful in GIS where area must be preserved for land analysis</li>
-<li>Angles/shapes are deformed so it “looks” weird</li>
+<li>Gall Peters projection
+<ul>
+<li>Maintains area, can be used to calculate population density</li>
+<li>Angles &amp; shapes are deformed so it “looks” weird</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/equal_area.png"></p>
@@ -664,48 +710,56 @@ Types of projections and what we use them for.</p>
 <section id="equal-area-projections-1" class="slide level2">
 <h2>Equal Area Projections</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>These projections are designed to preserves area.</p>
+<p>Designed to preserves area, useful where area must be preserved for land surface analysis.</p><div class="column" style="width:50%;">
 <ul>
-<li>The albers equal area projection is also a good example</li>
-<li>Because it is a conic projection showing a smaller region and it uses secant lines, shape/angle distortions are less obvious/drastic</li>
-<li>You can still see it, especially in the north</li>
+<li>The Albers equal area
+<ul>
+<li>Shape distortions are less drastic
+<ul>
+<li>A conic projection using secant lines</li>
+</ul></li>
+<li>Still visible, especially in the north</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/albers.jpg"></p>
 </div>
 </div>
 </section>
-<section id="equidistant-projections" class="slide level2">
-<h2>Equidistant Projections</h2>
+<section id="equidistanttrue-direction-projections" class="slide level2">
+<h2>Equidistant/True-Direction Projections</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>These projections are designed to preserves distance.</p>
+<p>Designed to preserves distance/direction.</p><div class="column" style="width:60%;">
 <ul>
-<li>Distance <strong>cannot</strong> be preserved globally, only specific locations</li>
+<li><strong>Cannot</strong> be preserved globally, only specific locations
+<ul>
 <li>e.g.&nbsp;lines radiating from center of an azimuthal projection</li>
-<li>e.g.&nbsp;lines of longitude + central meridian of sinusoidal projection</li>
+<li>Gives a “great circle” route
+<ul>
+<li>Shortest line between two locations</li>
+</ul></li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Equidistant_Azimuthal.png"></p>
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/Polar.png"></p>
-<p><img data-src="images/Sinusoidal.jpg"></p>
 </div>
 </div>
 </section>
-<section id="true-direction-projections" class="slide level2">
-<h2>True-direction Projections</h2>
+<section id="equidistanttrue-direction-projections-1" class="slide level2">
+<h2>Equidistant/True-Direction Projections</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>These projections are designed to preserves direction.</p>
+<p>Designed to preserves distance/direction.</p><div class="column" style="width:60%;">
 <ul>
-<li>Direction <strong>cannot</strong> be preserved globally, only specific locations</li>
+<li><strong>Cannot</strong> be preserved globally, only specific locations
+<ul>
 <li>e.g.&nbsp;lines radiating from center of an azimuthal projection</li>
-<li>Often, equidistant are also true direction but not always</li>
-<li>Will give us a “great circle” route, the shortest distance between two locations</li>
+<li>Gives a “great circle” route
+<ul>
+<li>Shortest line between two locations</li>
+</ul></li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Equidistant_Azimuthal.png"></p>
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/GreatCircle.jpeg"></p>
 </div>
 </div>
@@ -726,14 +780,16 @@ Types of projections and what we use them for.</p>
 <section id="tophat-question-3" class="title-slide slide level1 center">
 <h1>TopHat Question 3</h1>
 <div class="columns">
-<div class="column" style="width:100%;">
-<p>A conformal projection will maintain which properties? (select all that apply)</p>
+<p>A conformal projection will maintain which properties? (select all that apply)</p><div class="column" style="width:50%;">
 <ul>
 <li>Area</li>
 <li>Shape</li>
 <li>Distance</li>
 <li>Angles</li>
 <li>Direction</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
 <li>All of the above</li>
 <li>None of the above</li>
 </ul>
@@ -744,43 +800,49 @@ Types of projections and what we use them for.</p>
 <h2>What projection is right for my map?</h2>
 <div class="columns">
 <div class="column" style="width:100%;">
-<p>There isn’t a “correct” answer here, but there are definitely wrong answers.</p>
+<p>There isn’t a “correct” answer, but there are <strong>wrong</strong> answers.</p>
 <ul>
-<li>You can typically get similar results with a handful of different projections, depending on your application</li>
-<li>Best practice is to <strong>always</strong> use an equal area projection to calculate areas/densities</li>
-<li>But there are many different equal area projections</li>
+<li>Typically get similar results with a handful of projections, depending on application</li>
+<li>Best practice is to <strong>always</strong> use an equal area projection to calculate areas/densities
+<ul>
+<li>Many different equal area projections</li>
+</ul></li>
 </ul>
 </div>
 </div>
 </section>
 <section id="things-to-think-about" class="slide level2">
 <h2>Things to Think About</h2>
-<p>Where do the data come from?</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Where are the data from?</p>
 <ul>
-<li>Some organizations use a standard projection</li>
+<li>Some organizations use a standard projection
+<ul>
 <li>Stats Canada: Lambert Conformal Conic</li>
 <li>British Columbia: BC Environment Albers</li>
+</ul></li>
 </ul>
+</div><div class="column" style="width:50%;">
 <p>What is the map’s purpose?</p>
 <ul>
 <li>Conformal/compromise are aesthetically pleasing.</li>
 <li>Navigational maps, use conformal, equidistant, etc.</li>
 <li>Thematic maps (areas/densities) use equal area.</li>
 </ul>
-<p>::: ::::</p>
+</div>
+</div>
 </section>
 <section id="map-scale" class="slide level2">
 <h2>Map Scale</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>The relationship between distance on a map to distance in the real world.</p>
+<p>Relationship between distance on a map to distance in the real world.</p><div class="column" style="width:50%;">
 <ul>
-<li><p>How much smaller is a unit on the map than a unit on the earth?</p></li>
-<li><p>i.e.&nbsp;1 cm on the map = 1 km on the Earth</p></li>
-<li><p>Can be described:</p></li>
-<li><p>Graphically</p></li>
-<li><p>Verbally</p></li>
-<li><p>Representative fraction</p></li>
+<li>How much smaller is a unit on the map than a unit on the earth?
+<ul>
+<li>i.e.&nbsp;1 cm on the map = 1 km on the Earth</li>
+</ul></li>
+<li>Graphic, verbal, or representative fraction</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/scale_1.png"></p>
@@ -791,11 +853,11 @@ Types of projections and what we use them for.</p>
 <h2>Map Scale</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Small Scale</strong> Zoomed out, large area, more generalization, less detail.</p>
-<p><img data-src="images/small_scale.png"></p>
+<p><strong>Small Scale:</strong> Zoomed out, large area, more general, less detail.</p>
+<p><img data-src="images/small_scale.png" style="width:80.0%"></p>
 </div><div class="column" style="width:50%;">
-<p><strong>Large Scale</strong> Zoomed in, small area, more detail, less generalization.</p>
-<p><img data-src="images/large_scale.png"></p>
+<p><strong>Large Scale:</strong> Zoomed in, small area, more detail, less general.</p>
+<p><img data-src="images/large_scale.png" style="width:80.0%"></p>
 </div>
 </div>
 </section>
@@ -805,19 +867,18 @@ Types of projections and what we use them for.</p>
 <div class="column" style="width:50%;">
 <p><strong>Small Scale</strong> 1:10,000,000<br>
 1/10,000,000 = 0.0000001</p>
-<p><img data-src="images/small_scale.png"></p>
+<p><img data-src="images/small_scale.png" style="width:80.0%"></p>
 </div><div class="column" style="width:50%;">
 <p><strong>Large Scale</strong> 1:1,000<br>
 1/1,000 = 0.001</p>
-<p><img data-src="images/large_scale.png"></p>
+<p><img data-src="images/large_scale.png" style="width:80.0%"></p>
 </div>
 </div>
 </section>
 <section id="map-scale-3" class="slide level2">
 <h2>Map Scale</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>All maps require simplification of real world features. The degree of simplification is a function of the map’s scale.</p>
+<p>All maps require simplification of real world features. The degree of simplification is a function of the scale.</p><div class="column" style="width:50%;">
 <ul>
 <li>Smaller scale maps require more generalization.</li>
 <li>Larger scale maps can include more detail.</li>
@@ -830,16 +891,26 @@ Types of projections and what we use them for.</p>
 <section id="map-scale-projection" class="slide level2">
 <h2>Map Scale &amp; Projection</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>Map scale will impact our choice of projection.</p>
+<p>Map scale will impact our choice of projection.</p><div class="column" style="width:50%;">
 <ul>
-<li>Projections that work at 1:000 aren’t necessarily suited for a 1:10,000,000 map</li>
-<li>With conformal projections like the Mercator, scale changes with position on the map</li>
-<li>Preserves scale “locally”</li>
-<li>Scale is grossly distorted globally</li>
+<li>Projections that work at 1:1000 may not work at 1:10,000,000</li>
+<li>Conformal projections (e.g., Mercator), scale changes with position on the map
+<ul>
+<li>Preserved locally; distorted globally</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
-
+<div style="overflow: hidden;
+  padding-top: 85%;
+  position: relative">
+<iframe src="html/Web_Mercator_Iqualuit.html" title="Processes" scrolling="no" frameborder="0" style="border: 0;
+height: 100%;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;">
+</iframe>
+</div>
 </div>
 </div>
 </section></section>
@@ -857,10 +928,12 @@ Types of projections and what we use them for.</p>
 <div class="columns">
 <div class="column" style="width:100%;">
 <p>On a scale of 1 to 5: How do you feel about the lecture topics covered in Module 2 (Steps of Abstraction &amp; Map Projections)?</p>
-<p>1 = It makes no sense at all.</p>
-<p>3 = Unsure.</p>
-<p>5 = I makes perfect sense.</p>
-<p>(Participation points only, please answer honestly)</p>
+<ul>
+<li><p>1 = It makes no sense at all.</p></li>
+<li><p>3 = Unsure.</p></li>
+<li><p>5 = I makes perfect sense.</p></li>
+<li><p>Participation points only, please answer honestly</p></li>
+</ul>
 </div>
 </div>
 </section>
@@ -869,8 +942,12 @@ Types of projections and what we use them for.</p>
 <h1>TopHat Question 6</h1>
 <div class="columns">
 <div class="column" style="width:100%;">
-<p>Are there any topics from Module 1 or Module 2 which you would like me to discuss further before moving on to Module 3? * If not, just say No * If yes, please keep your response short. List a few concepts you find particularly confusing, separated by a comma + e.g.&nbsp;“Datums, tangents vs.&nbsp;secants”</p>
-<p>(Participation points only, please answer honestly)</p>
+<p>Are there any topics from Module 1 or Module 2 which you would like me to discuss further before moving on to Module 3?</p>
+<ul>
+<li><p>If not, just say No</p></li>
+<li><p>If yes, please keep your response short. List a few concepts you find particularly confusing, separated by a comma</p></li>
+<li><p>Participation points only, please answer honestly</p></li>
+</ul>
 </div>
 </div>
 

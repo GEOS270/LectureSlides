@@ -36,20 +36,23 @@ Projected Coordinate Systems
 
 
 ::::{.columns}
-:::{.column width="50%"}
-
 
 A map projection is a transformation applied to a geographic coordinate system (GCS).
 
+:::{.column width="60%"}
 
-* Allows us to "convert" from 3D coordinates (Lat/Lon) to 2D coordinates (meters)
+
+
+
+
+* Converts from 3D coordinates (Lat/Lon) to 2D coordinates (meters)
 * Why does this work?
-+ While the GCS is a 3D coordinate system, it only references locations **on the surface** of the oblate spheroid
+  + GCS is 3D coordinate system, but only locations **on the surface** of the "Earth"
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 ![](images/proj_2.png)
@@ -68,23 +71,23 @@ Projection Methods
 
 
 ::::{.columns}
-:::{.column width="50%"}
 
+Three main ways to project the spheroid onto a plane.
 
-There are three main ways to project the 3D oblate spheroid onto a 2D plane.
+:::{.column width="60%"}
 
 
 * **Planar:** A plane is referenced to "Earth's" surface
 * **Conic:** A cone is referenced to "Earth's" surface
-+ The cone must be cut to flatten it
+  + Must be cut to flatten
 
 * **Cylindrical**: A cylinder is referenced to "Earth's" surface
-+ The cylinder must be cut to flatten it
+  + Must be cut to flatten
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 
@@ -104,30 +107,30 @@ Projection Methods
 
 
 ::::{.columns}
-:::{.column width="50%"}
+
+How to reference the influences how the map is distorted.
+
+:::{.column width="60%"}
 
 
-How/where to reference the surface influences how the map is distorted.
 
 
-* **Tangent:** when projections touch the "earth's" surface at a one point or line
-+ Point for planar projections, line for conic and cylindrical projections
+* **Tangent:** projections touch the surface at one point or line
+  + Point for planar, line for conic and cylindrical
 
-* **Secant:** when projections touch the "earth's" surface along two lines
-+ Helps minimize reduce distortion
-
-* These are the only locations on map without distortions
+* **Secant:** when projections touch the surface along two lines
+  + Helps minimize reduce distortion
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 
 ![](images/tan_sec.gif)
 
-
+Only locations without distortion
 
 
 :::
@@ -144,10 +147,11 @@ Planar Projections
 :::{.column width="100%"}
 
 
-Sometimes also called azimuthal or zenith projections, planar projections are the simplest approach.
+Planar projections are the simplest approach.
 
 
-* Limited applicability/scope and are typically only used for polar regions.
+* Limited applicability, typically used for polar regions
+* Sometimes also called azimuthal or zenith projections
 
 
 
@@ -197,18 +201,23 @@ Conic Projections
 
 
 ::::{.columns}
-:::{.column width="100%"}
+
+Conic projections are a great option for the mid-latitudes. 
+
+:::{.column width="40%"}
 
 
-Conic projections are a great option for the mid-latitudes. They have one central meridian and one/two standard parallel(s).
+* One central meridian 
+
+* One or two standard parallel(s)
 
 
-* Can only cover one hemisphere at a time
+* Only work for one hemisphere at a time
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="60%"}
 
 
 ![](images/conic.jpg)
@@ -261,10 +270,10 @@ Conic Projections
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="55%"}
 
 
-Canada's "official" map projection: Canada Lambert Conformal Conic
+Canada Lambert Conformal Conic
 
 
 ![](images/ca_lambert.png)
@@ -273,7 +282,7 @@ Canada's "official" map projection: Canada Lambert Conformal Conic
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="35%"}
 
 
 ![](images/ca_lambert.jpg)
@@ -338,10 +347,10 @@ Cylindrical Projections
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="60%"}
 
 
-The Mercator projection, tangent to 0° N and, central meridian 0° W.
+Mercator projection: tangent to 0° N and, central meridian 0° W.
 
 
 ![](images/mercator-vs-truesize.png)
@@ -350,7 +359,7 @@ The Mercator projection, tangent to 0° N and, central meridian 0° W.
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="35%"}
 
 
 
@@ -370,30 +379,25 @@ Cylindrical Projections
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="70%"}
 
 
 Transverse cylinders projections are also frequently used.
 
 
 * Minimize distortion near secant lines
+
 ![](images/utm_3.png)
 
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="30%"}
 
 
 
 ![](images/02-UTM-13N-map.png)
-
-
-
-
-![](images/DeltaMap.png)
-
 
 
 
@@ -412,7 +416,7 @@ Pseudocylindrical Projections
 :::{.column width="50%"}
 
 
-Some special projections apply more complex transformations.
+Special applications, more complex transformations.
 
 
 ![](images/02-Sinusoidal-map.png)
@@ -423,11 +427,9 @@ Some special projections apply more complex transformations.
 :::{.column width="50%"}
 
 
-These tend to be used less frequently.
+Used less frequently, won't be used in lab.
 
-
-* Won't be used in this class
-
+<br>
 
 ![](images/Sinusoidal.jpg)
 
@@ -479,7 +481,7 @@ All map projections must induce distortions in order to display the 3D earth in 
 * **Tearing**: All projections have tearing (edges)
 * **Shearing**: Shapes and angles are contorted
 * **Compression**: Changes to area
-+ Bit of a misnomer, often results in expansion
+  + Bit of a misnomer, often results in expansion
 
 
 
@@ -502,7 +504,7 @@ All projections require tearing, some projections have more than others.
 
 
 
-![](images/Mollewide.png)
+![](images/Mollewide.png){width="80%"}
 
 
 
@@ -521,27 +523,23 @@ Shearing
 
 
 ::::{.columns}
-:::{.column width="100%"}
+:::{.column width="50%"}
 
 
 Shapes and angles are contorted by some, but not all projections.
+
+![](images/Sinusoidal.jpg)
 
 
 :::
 :::{.column width="50%"}
 
 
-![](images/Sinusoidal.jpg)
-
 
 
 ![](images/GallPeters_projection_SW.jpg)
 
-
-
-
-
-
+* Gall Peters is a common alternative to the Mercator
 
 
 :::
@@ -555,20 +553,20 @@ Compression
 
 
 ::::{.columns}
-:::{.column width="50%"}
-
 
 Areas can be "inflated" or "deflated" some, but not all projections.
 
 
-* This can cause **serious** issues when you are trying to calculate statistics dependent upon area!
-* Population density is a good example
-+ You will get hands on experience with this issue in [Lab](https://geos270.github.io/Module2/)
+:::{.column width="60%"}
 
+
+* **Serious** issues when you calculate statistics dependent upon area!
+* Population density is a good example
+  + You will get experience with this in Lab
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 
@@ -576,6 +574,33 @@ Areas can be "inflated" or "deflated" some, but not all projections.
 ![](images/compression.jpg)
 
 
+
+
+
+
+
+:::
+::::
+
+
+Compression
+-----------
+
+::::{.columns}
+
+Areas can be "inflated" or "deflated" some, but not all projections.
+
+
+:::{.column width="60%"}
+
+
+* **Serious** issues when you calculate statistics dependent upon area!
+* Population density is a good example
+  + You will get experience with this in Lab
+
+
+:::
+:::{.column width="40%"}
 
 
 
@@ -590,7 +615,6 @@ Areas can be "inflated" or "deflated" some, but not all projections.
 
 
 
-
 Types of Projections
 --------------------
 
@@ -599,16 +623,12 @@ Types of Projections
 :::{.column width="100%"}
 
 
-All map projections must induce distortions in order to display the 3D earth in 2D. But there are different types of projections that are designed to preserve some attributes.
+Different types of projections that are designed to preserve some attributes.
 
 
 * **Conformal**: Shapes and angles are preserved, i.e. they **prevent shearing**
 * **Equal-area**: Areas is preserved, i.e. they **prevent compression**
-* **Equidistant**: Distance is preserved
-+ *Not "globally"*, only in certain regions, ie. the tangent/secant lines
-
-* **True-direction**: Gives shortest route between points (great circle)
-+ *Not "globally"*, only certain paths, ie. outward from the center of an azimuthal projection
+* **Equidistant** & **True-direction**: Less common
 
 * **Compromise**: Splits the difference for aesthetics
 
@@ -619,28 +639,26 @@ All map projections must induce distortions in order to display the 3D earth in 
 ::::
 
 
-
-
 Conformal Projections
 ---------------------
 
 
 ::::{.columns}
-:::{.column width="50%"}
+
+Designed to maintain the shapes/angles across the map.
+
+:::{.column width="60%"}
 
 
-These projections are designed to maintain the shapes/angles across the map.
-
-
-* The mercator projection is a good example
-+ Because it maintains shape/angles, it can be used to circumnavigate the globe in a sailboat
-+ But to maintain shape globally, it must **severely** distort area
-+ Scale changes across the map, poor for measuring distances or areas
+* Mercator is a good example
+  + It maintains shape/angles, useful for navigation
+  + To maintain shape globally, it must **severely** distort area
+  + Scale changes across map, bad for measuring distance/area
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 ![](images/conformal.png)
@@ -659,20 +677,21 @@ Conformal Projections
 
 
 ::::{.columns}
-:::{.column width="50%"}
+
+Designed to maintain the shapes/angles across the map.
+
+:::{.column width="60%"}
 
 
-These projections are designed to maintain the shapes/angles across the map.
-
-
-* The lambert conformal conic projection is also a good example
-+ Because it is a conic projection showing a smaller region and it uses secant lines, areal distortions are less obvious/drastic
-+ However, the area calculations are not true to reality
+* Lambert Conformal Conic
+  + Area distortions are less drastic
+    - A conic projection using secant lines
+  + However, the area calculations are not true to reality
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 ![](images/lambert.jpg)
@@ -691,15 +710,17 @@ Universal Transverse Mercator (UTM)
 
 
 ::::{.columns}
-:::{.column width="50%"}
-
 
 Globe is divided into 60 strips 6° wide, spanning 80°N to 80°S.
 
+:::{.column width="50%"}
 
-* Minimal distortion within zones
-![](images/utm_1.png)
 
+
+
+* Special type of conformal projection
+  + Only used for "small" areas
+  + Minimal distortion within zones
 
 
 
@@ -707,10 +728,39 @@ Globe is divided into 60 strips 6° wide, spanning 80°N to 80°S.
 :::{.column width="50%"}
 
 
-A special type of conformal projection.
+![](images/utm_1.png)
 
 
-* Only used for "small" areas
+
+
+:::
+::::
+
+
+Universal Transverse Mercator (UTM)
+-----------------------------------
+
+
+
+::::{.columns}
+
+Globe is divided into 60 strips 6° wide, spanning 80°N to 80°S.
+
+:::{.column width="50%"}
+
+
+
+
+* Special type of conformal projection
+  + Only used for "small" areas
+  + Minimal distortion within zones
+
+
+
+:::
+:::{.column width="50%"}
+
+
 ![](images/utm_2.png)
 
 
@@ -728,7 +778,7 @@ UTM Zones
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="65%"}
 
 
 Vancouver is in UTM Zone 10N.
@@ -739,15 +789,13 @@ Vancouver is in UTM Zone 10N.
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="35%"}
 
 
-The Mackenzie Delta, UTM Zone 8N.
+![](images/DeltaMap.png){width="80%"}
 
 
-![](images/DeltaMap.png)
-
-
+Mackenzie Delta, UTM Zone 8N
 
 
 :::
@@ -761,16 +809,18 @@ Equal Area Projections
 
 
 ::::{.columns}
+
+Designed to preserves area, useful where area must be preserved for land surface analysis.
+
+
 :::{.column width="50%"}
 
 
-These projections are designed to preserves area.
 
 
-* The gall peters projection is a good example
-+ Because it maintains area, it can be used to calculate population density
-+ Very useful in GIS where area must be preserved for land analysis
-+ Angles/shapes are deformed so it "looks" weird
+* Gall Peters projection 
+  + Maintains area, can be used to calculate population density
+  + Angles & shapes are deformed so it "looks" weird
 
 
 
@@ -794,15 +844,18 @@ Equal Area Projections
 
 
 ::::{.columns}
+
+Designed to preserves area, useful where area must be preserved for land surface analysis.
+
+
 :::{.column width="50%"}
 
 
-These projections are designed to preserves area.
 
-
-* The albers equal area projection is also a good example
-+ Because it is a conic projection showing a smaller region and it uses secant lines, shape/angle distortions are less obvious/drastic
-+ You can still see it, especially in the north
+* The Albers equal area 
+  + Shape distortions are less drastic
+    - A conic projection using secant lines
+  + Still visible, especially in the north
 
 
 
@@ -819,95 +872,58 @@ These projections are designed to preserves area.
 ::::
 
 
-
-
-Equidistant Projections
+Equidistant/True-Direction Projections
 -----------------------
 
 
 ::::{.columns}
-:::{.column width="50%"}
 
+Designed to preserves distance/direction.
 
-These projections are designed to preserves distance.
+:::{.column width="60%"}
 
-
-* Distance **cannot** be preserved globally, only specific locations
-+ e.g. lines radiating from center of an azimuthal projection
-+ e.g. lines of longitude + central meridian of sinusoidal projection
-
+* **Cannot** be preserved globally, only specific locations
+  + e.g. lines radiating from center of an azimuthal projection
+  + Gives a "great circle" route
+    - Shortest line between two locations
 
 
 :::
-:::{.column width="50%"}
-
-
-
-
-![](images/Equidistant_Azimuthal.png)
-
-
-
+:::{.column width="40%"}
 
 
 ![](images/Polar.png)
 
 
-
-
-
-![](images/Sinusoidal.jpg)
-
-
-
-
-
 :::
 ::::
 
 
-
-
-True-direction Projections
---------------------------
+Equidistant/True-Direction Projections
+-----------------------
 
 
 ::::{.columns}
-:::{.column width="50%"}
 
+Designed to preserves distance/direction.
 
-These projections are designed to preserves direction.
+:::{.column width="60%"}
 
-
-* Direction **cannot** be preserved globally, only specific locations
-+ e.g. lines radiating from center of an azimuthal projection
-+ Often, equidistant are also true direction but not always
-+ Will give us a "great circle" route, the shortest distance between two locations
-
+* **Cannot** be preserved globally, only specific locations
+  + e.g. lines radiating from center of an azimuthal projection
+  + Gives a "great circle" route
+    - Shortest line between two locations
 
 
 :::
-:::{.column width="50%"}
-
-
-
-
-![](images/Equidistant_Azimuthal.png)
-
-
-
+:::{.column width="40%"}
 
 
 ![](images/GreatCircle.jpeg)
 
 
-
-
-
 :::
 ::::
-
-
 
 
 Compromise Projections
@@ -948,22 +964,26 @@ TopHat Question 3
 
 
 ::::{.columns}
-:::{.column width="100%"}
 
 
 A conformal projection will maintain which properties? (select all that apply)
 
+
+:::{.column width="50%"}
 
 * Area
 * Shape
 * Distance
 * Angles
 * Direction
+
+:::
+
+:::{.column width="50%"}
+
+
 * All of the above
 * None of the above
-
-
-
 
 :::
 ::::
@@ -979,15 +999,12 @@ What projection is right for my map?
 :::{.column width="100%"}
 
 
-There isn't a "correct" answer here, but there are definitely wrong answers.
+There isn't a "correct" answer, but there are **wrong** answers.
 
 
-* You can typically get similar results with a handful of different projections, depending on your application
+* Typically get similar results with a handful of projections, depending on application
 * Best practice is to **always** use an equal area projection to calculate areas/densities
-+ But there are many different equal area projections
-
-
-
+  + Many different equal area projections
 
 :::
 ::::
@@ -999,14 +1016,19 @@ Things to Think About
 ---------------------
 
 
+::::{.columns}
+:::{.column width="50%"}
 
-Where do the data come from?
+
+Where are the data from?
 
 
 * Some organizations use a standard projection
-+ Stats Canada: Lambert Conformal Conic
-+ British Columbia: BC Environment Albers
+  + Stats Canada: Lambert Conformal Conic
+  + British Columbia: BC Environment Albers
 
+:::
+:::{.column width="50%"}
 
 
 
@@ -1030,19 +1052,16 @@ Map Scale
 
 
 ::::{.columns}
+
+Relationship between distance on a map to distance in the real world.
+
 :::{.column width="50%"}
 
 
-The relationship between distance on a map to distance in the real world.
-
-
 * How much smaller is a unit on the map than a unit on the earth?
-+ i.e. 1 cm on the map = 1 km on the Earth
+  + i.e. 1 cm on the map = 1 km on the Earth
 
-* Can be described:
-+ Graphically
-+ Verbally
-+ Representative fraction
+* Graphic, verbal, or representative fraction
 
 :::
 :::{.column width="50%"}
@@ -1067,10 +1086,10 @@ Map Scale
 :::{.column width="50%"}
 
 
- **Small Scale** Zoomed out, large area, more generalization, less detail.
+ **Small Scale:** Zoomed out, large area, more general, less detail.
 
 
-![](images/small_scale.png)
+![](images/small_scale.png){width="80%"}
 
 
 
@@ -1078,10 +1097,10 @@ Map Scale
 :::{.column width="50%"}
 
 
- **Large Scale** Zoomed in, small area, more detail, less generalization.
+ **Large Scale:** Zoomed in, small area, more detail, less general.
 
 
-![](images/large_scale.png)
+![](images/large_scale.png){width="80%"}
 
 
 
@@ -1104,7 +1123,7 @@ Map Scale
 1/10,000,000 = 0.0000001
 
 
-![](images/small_scale.png)
+![](images/small_scale.png){width="80%"}
 
 
 
@@ -1116,7 +1135,7 @@ Map Scale
 1/1,000 = 0.001
 
 
-![](images/large_scale.png)
+![](images/large_scale.png){width="80%"}
 
 
 
@@ -1132,10 +1151,13 @@ Map Scale
 
 
 ::::{.columns}
+
+All maps require simplification of real world features. The degree of simplification is a function of the scale.
+
 :::{.column width="50%"}
 
 
-All maps require simplification of real world features. The degree of simplification is a function of the map's scale.
+
 
 
 * Smaller scale maps require more generalization.
@@ -1163,16 +1185,17 @@ Map Scale & Projection
 
 
 ::::{.columns}
-:::{.column width="50%"}
-
 
 Map scale will impact our choice of projection.
 
+:::{.column width="50%"}
 
-* Projections that work at 1:000 aren't necessarily suited for a 1:10,000,000 map
-* With conformal projections like the Mercator, scale changes with position on the map
-+ Preserves scale "locally"
-+ Scale is grossly distorted globally
+
+
+
+* Projections that work at 1:1000 may not work at 1:10,000,000
+* Conformal projections (e.g., Mercator), scale changes with position on the map
+  + Preserved locally; distorted globally
 
 
 
@@ -1180,8 +1203,18 @@ Map scale will impact our choice of projection.
 :::{.column width="50%"}
 
 
-
-
+<div style="overflow: hidden;
+  padding-top: 85%;
+  position: relative">
+<iframe src="html/Web_Mercator_Iqualuit.html" title="Processes" scrolling="no" frameborder="0"
+style="border: 0;
+height: 100%;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;">
+</iframe>
+</div>
 
 
 :::
@@ -1220,16 +1253,16 @@ TopHat Question 5
 On a scale of 1 to 5: How do you feel about the lecture topics covered in Module 2 (Steps of Abstraction & Map Projections)?
    
 
- 1 = It makes no sense at all.
+* 1 = It makes no sense at all.
    
 
- 3 = Unsure.
+* 3 = Unsure.
    
 
- 5 = I makes perfect sense.
+* 5 = I makes perfect sense.
    
 
- (Participation points only, please answer honestly)
+* Participation points only, please answer honestly
 
 
 
@@ -1249,13 +1282,11 @@ TopHat Question 6
 
 
 Are there any topics from Module 1 or Module 2 which you would like me to discuss further before moving on to Module 3?
- * If not, just say No
-* If yes, please keep your response short. List a few concepts you find particularly confusing, separated by a comma
-+ e.g. "Datums, tangents vs. secants"
 
-  
+* If not, just say No
+* If yes, please keep your response short. List a few concepts you find particularly confusing, separated by a comma  
 
- (Participation points only, please answer honestly)
+* Participation points only, please answer honestly
 
 
 
