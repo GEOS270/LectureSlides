@@ -1180,7 +1180,28 @@
     "href": "Phenomena_and_Data_Types/Slides.html#what-is-a-phenomenon",
     "title": "Lecture Slides",
     "section": "What is a Phenomenon?",
-    "text": "What is a Phenomenon?\n\n\nPhenomenon: a fact or situation that is observed to exist or happen, especially one whose cause or explanation is in question.\n\nA lightning strike\nA coastline\nA country\nA dog on a kayak!\nAnything and everything are phenomena!"
+    "text": "What is a Phenomenon?\n\n\nA factor situation that is observed to exist or happen, especially one whose cause or explanation is in question.\n\nA lightning strike"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#what-is-a-phenomenon-1",
+    "href": "Phenomena_and_Data_Types/Slides.html#what-is-a-phenomenon-1",
+    "title": "Lecture Slides",
+    "section": "What is a Phenomenon?",
+    "text": "What is a Phenomenon?\n\n\nA factor situation that is observed to exist or happen, especially one whose cause or explanation is in question.\n\nA lightning strike\nA coastline"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#what-is-a-phenomenon-2",
+    "href": "Phenomena_and_Data_Types/Slides.html#what-is-a-phenomenon-2",
+    "title": "Lecture Slides",
+    "section": "What is a Phenomenon?",
+    "text": "What is a Phenomenon?\n\n\nA factor situation that is observed to exist or happen, especially one whose cause or explanation is in question.\n\nA lightning strike\nA coastline\nA country"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#what-is-a-phenomenon-3",
+    "href": "Phenomena_and_Data_Types/Slides.html#what-is-a-phenomenon-3",
+    "title": "Lecture Slides",
+    "section": "What is a Phenomenon?",
+    "text": "What is a Phenomenon?\n\n\nA factor situation that is observed to exist or happen, especially one whose cause or explanation is in question.\n\nA lightning strike\nA coastline\nA country\nA dog on a kayak!\n\n\n\nAnything and everything are phenomena!"
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#types-of-phenomena",
@@ -1201,14 +1222,35 @@
     "href": "Phenomena_and_Data_Types/Slides.html#lightning",
     "title": "Lecture Slides",
     "section": "Lightning",
-    "text": "Lightning\n\n\n\nA strike is a discrete object\nWhat about a lighting bolt …?\nDoesn’t really have clearly defined boundaries?\nSort of continuous\nStrike frequency is a continuous field\nEverywhere has a frequency of lighting strikes\nEven the absence of lighting strikes, is still a frequency of strikes"
+    "text": "Lightning\nA strike is a discrete object, what about a lighting bolt?\n\n\n\nSort of continuous?"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#lightning-1",
+    "href": "Phenomena_and_Data_Types/Slides.html#lightning-1",
+    "title": "Lecture Slides",
+    "section": "Lightning",
+    "text": "Lightning\nA strike is a discrete object, what about a lighting bolt?\n\n\n\nStrike frequency is a continuous field\n\nEverywhere has a value\nEven the absence of strikes, is a frequency of strikes"
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#a-coastline",
     "href": "Phenomena_and_Data_Types/Slides.html#a-coastline",
     "title": "Lecture Slides",
     "section": "A Coastline",
-    "text": "A Coastline\n\n\n\nContinuous field at large scale\nTides & waves\nWhere is the exact boundary?\nDiscrete object at small scale\nZoom out and the tides/waves don’t really matter\nIts easy to draw a static boundary\nUnless you change the time scale\nUntil you start thinking about the long term :("
+    "text": "A Coastline\nContinuous field at large scale\n\n\n\nTides & waves\nWhere is the exact boundary?"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#a-coastline-1",
+    "href": "Phenomena_and_Data_Types/Slides.html#a-coastline-1",
+    "title": "Lecture Slides",
+    "section": "A Coastline",
+    "text": "A Coastline\nDiscrete object at small scale\n\n\n\nZoom out and the tides/waves don’t really matter\nIts easy to draw a static boundary"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#a-coastline-2",
+    "href": "Phenomena_and_Data_Types/Slides.html#a-coastline-2",
+    "title": "Lecture Slides",
+    "section": "A Coastline",
+    "text": "A Coastline\nUnless you change the time scale"
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#types-of-phenomena-2",
@@ -1250,63 +1292,84 @@
     "href": "Phenomena_and_Data_Types/Slides.html#working-together",
     "title": "Lecture Slides",
     "section": "Working Together",
-    "text": "Working Together\n\n\nFrequently we’ll end up working with both discrete objects and continuous fields.\n\nIn Module 1, you worked with:\nCholera deaths (Discrete objects)\nKernel density (continuous field)\nWe use spatial data models to represent information in a GIS\nVector Data Model = discrete objects\nRaster Data Model = continuous fields"
+    "text": "Working Together\n\n\nFrequently we’ll end up working with both discrete objects and continuous fields.\n\nIn Module 1, you worked with:\n\nCholera deaths\n\nDiscrete objects\n\nKernel density\n\nContinuous field"
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#digital-information",
     "href": "Phenomena_and_Data_Types/Slides.html#digital-information",
     "title": "Lecture Slides",
     "section": "Digital information",
-    "text": "Digital information\n\n\nWe’ll talk more about spatial data models later. For now, lets think about data more broadly. How do we represent data in a computer?\n\nDigital information is represented as bits (0’s and 1’s)\nWe typically quantify data as bytes (8 bits):\nKilobyte (kB) = 1,000 bytes\nMegabyte (MB) = 1,000,000 bytes\nGigabyte (GB) = 1,000,000,000 bytes"
+    "text": "Digital information\nWe’ll talk more about spatial data models later. For now, lets think about data more broadly.\n\nHow do we represent data in a computer?"
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#digital-information-1",
     "href": "Phenomena_and_Data_Types/Slides.html#digital-information-1",
     "title": "Lecture Slides",
     "section": "Digital information",
-    "text": "Digital information\n\n\nThere are numerous ways to translate human readable data to binary, such as ASCII.\n\nEach character is represented as one byte\nThere are 28 = 256 unique combinations of 0’s and 1’s in a byte\nSome examples:\n“A” : 01000001\n“CAT”: 01000011 01000001 01010100\n“31”: 00110011 00110001"
+    "text": "Digital information\nDigital information is represented as bits (0’s and 1’s)\n\nWe typically quantify data as bytes (8 bits):\n\n\n\n\nKilobyte (kB) = 1,000 bytes\nMegabyte (MB) = 1,000,000 bytes\nGigabyte (GB) = 1,000,000,000 bytes"
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#digital-information-2",
     "href": "Phenomena_and_Data_Types/Slides.html#digital-information-2",
     "title": "Lecture Slides",
+    "section": "Digital information",
+    "text": "Digital information\n\n\nThere are numerous ways to translate human readable data to binary, such as ASCII.\n\nEach character is represented as one byte\n28 = 256 unique combinations of 0’s and 1’s in a byte\nSome examples:\n\n“A” : 01000001\n“CAT”: 01000011 01000001 01010100\n“31”: 00110011 00110001"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#digital-information-3",
+    "href": "Phenomena_and_Data_Types/Slides.html#digital-information-3",
+    "title": "Lecture Slides",
     "section": "Digital Information",
-    "text": "Digital Information\n\n\nModern computers use 64-bit “architecture”. That is, the central processing unit (CPU) can handle 64 bits (8 bytes) of information at a time.\n\n“Word” length is 64 bits\nA “Word” is a unit of data\ni.e., an individual piece of information\n264 possible unique values\n\n18 quintillion possible unique combinations of 1’s and 0’s to describe something\n\nCPUs can be stacked in parallel to handle more information at one time"
+    "text": "Digital Information\n\n\nModern computers use 64-bit “architecture”. The central processing unit (CPU) can handle 64 bits (8 bytes) of information at a time.\n\n“Word” length is 64 bits, a word is a unit of data\n\ni.e., an individual piece of information\n18 quintillion unique combinations of 1’s and 0’s\n\nCPUs can be stacked in parallel to handle more information at one time"
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#representing-phenomena-in-gis",
     "href": "Phenomena_and_Data_Types/Slides.html#representing-phenomena-in-gis",
     "title": "Lecture Slides",
     "section": "Representing Phenomena in GIS",
-    "text": "Representing Phenomena in GIS\n\n\nWithin the context of a GIS, every piece of information describing a phenomenon is referred to as an Attribute.\n\nBroadly speaking each attribute can address one of three questions:\nWhere?\nWhat?\nWhen?"
+    "text": "Representing Phenomena in GIS\n\n\nWithin the context of a GIS, every piece of information describing a phenomenon is referred to as an Attribute.\n\nBroadly speaking each attribute can address one of three questions:\n\nWhere?\nWhat?\nWhen?"
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#types-of-attributes",
     "href": "Phenomena_and_Data_Types/Slides.html#types-of-attributes",
     "title": "Lecture Slides",
     "section": "Types of Attributes",
-    "text": "Types of Attributes\n\n\nThere are multiple ways to classify/think about attributes. One important distinction we must make\n\nNon-Spatial Attributes: describe what or when\nSpatial Attributes: describe where\nPuts the Geographic in GIS\nRequires some special considerations\nWe have already talked a bit about these consideration (map projections)\nWe’ll discuss more considerations in the next module"
+    "text": "Types of Attributes\n\n\nThere are multiple ways to classify/think about attributes. One important distinction we must make\n\nNon-Spatial Attributes: describe what or when\nSpatial Attributes: describe where\n\nPuts the Geographic in GIS\nRequires some special considerations\nWe have already talked a bit about map projections\nWe’ll discuss more considerations in the next module"
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#types-of-attributes-1",
     "href": "Phenomena_and_Data_Types/Slides.html#types-of-attributes-1",
     "title": "Lecture Slides",
     "section": "Types of Attributes",
-    "text": "Types of Attributes\n\n\nAll data (attributes), spatial and non-spatial, can be either qualitative or quantitative.\n\nThe types of analysis we can do with qualitative data are more limited\nThat does not make quantitative data “better”\nMeasurement scales: both qualitative and quantitative can be measured on different scales\nQualitative: Nominal or Ordinal Sales\nQuantitative: Interval or Ratio Sales"
+    "text": "Types of Attributes\n\n\nAll data (attributes), spatial and non-spatial, can be either qualitative or quantitative.\n\nThe types of analysis we can do with qualitative data are more limited\nThat does not make quantitative data “better”\nMeasurement scales: both qualitative and quantitative can be measured on different scales\n\nQualitative: Nominal or Ordinal Sales\nQuantitative: Interval or Ratio Sales"
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#qualitative-data",
     "href": "Phenomena_and_Data_Types/Slides.html#qualitative-data",
     "title": "Lecture Slides",
     "section": "Qualitative Data",
-    "text": "Qualitative Data\n\n\nQualitative data is Categorical. It is strictly descriptive and lacks any meaningful numeric value.\n\nTextual, coded numerals, pictures, sounds, etc\nTypically working with textual & coded numerals most frequently in GIS\nLimited number of computational options, often requires careful consideration when analyzing\nMeasured on either a Nominal or Ordinal scale."
+    "text": "Qualitative Data\n\n\nQualitative data is Categorical. It is strictly descriptive and lacks any meaningful numeric value.\n\nTextual, coded numerals, pictures, sounds, etc\n\nTypically working with textual & coded numerals most frequently in GIS\n\nLimited number of computational options, often requires careful consideration when analyzing\nMeasured on either a Nominal or Ordinal scale."
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#nominal-scale",
     "href": "Phenomena_and_Data_Types/Slides.html#nominal-scale",
     "title": "Lecture Slides",
     "section": "Nominal Scale",
-    "text": "Nominal Scale\n\n\nNames or categories with no ranking or direction. Categories are not more/less, better/worse, they just different. Some examples include:\n\nFlower Species\nZoning Categories\nLand cover Classification"
+    "text": "Nominal Scale\nNames or categories with no ranking or direction. Categories are not more/less, better/worse, they just different. Some examples include:\n\n\n\nFlower Species"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#nominal-scale-1",
+    "href": "Phenomena_and_Data_Types/Slides.html#nominal-scale-1",
+    "title": "Lecture Slides",
+    "section": "Nominal Scale",
+    "text": "Nominal Scale\nNames or categories with no ranking or direction. Categories are not more/less, better/worse, they just different. Some examples include:\n\n\n\nFlower Species\nZoning Categories"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#nominal-scale-2",
+    "href": "Phenomena_and_Data_Types/Slides.html#nominal-scale-2",
+    "title": "Lecture Slides",
+    "section": "Nominal Scale",
+    "text": "Nominal Scale\nNames or categories with no ranking or direction. Categories are not more/less, better/worse, they just different. Some examples include:\n\n\n\nFlower Species\nZoning Categories\nLand cover Classification"
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#nominal-operations",
@@ -1320,35 +1383,49 @@
     "href": "Phenomena_and_Data_Types/Slides.html#ordinal-scale",
     "title": "Lecture Slides",
     "section": "Ordinal Scale",
-    "text": "Ordinal Scale\n\n\nNames or categories with a ranking or direction. Categories are more/less, better/worse, etc. But the differences are relative, there is no way to say by “how much”. Some examples include:\n\nSpice levels\nRelative heights\nCompass Direction"
+    "text": "Ordinal Scale\nNames or categories with a ranking. The differences are relative. Categories are more/less, better/worse, etc.\n\n\n\nSpice levels"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#ordinal-scale-1",
+    "href": "Phenomena_and_Data_Types/Slides.html#ordinal-scale-1",
+    "title": "Lecture Slides",
+    "section": "Ordinal Scale",
+    "text": "Ordinal Scale\nNames or categories with a ranking. The differences are relative. Categories are more/less, better/worse, etc.\n\n\n\nSpice levels\nRelative heights"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#ordinal-scale-2",
+    "href": "Phenomena_and_Data_Types/Slides.html#ordinal-scale-2",
+    "title": "Lecture Slides",
+    "section": "Ordinal Scale",
+    "text": "Ordinal Scale\nNames or categories with a ranking. The differences are relative. Categories are more/less, better/worse, etc.\n\n\n\nSpice levels\nRelative heights\nCompass Direction"
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#ordinal-operations",
     "href": "Phenomena_and_Data_Types/Slides.html#ordinal-operations",
     "title": "Lecture Slides",
     "section": "Ordinal Operations",
-    "text": "Ordinal Operations\n\n\nWith ordinal data we can:\n\nCheck equivalency\nCount frequencies\nCheck order/rank\n\nAll the same operations as nominal data + more."
+    "text": "Ordinal Operations\nAll the same operations as nominal data + more. With ordinal data we can:\n\n\n\nCheck equivalency\nCount frequencies\nCheck order/rank"
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#ordinal-operations-1",
     "href": "Phenomena_and_Data_Types/Slides.html#ordinal-operations-1",
     "title": "Lecture Slides",
     "section": "Ordinal Operations",
-    "text": "Ordinal Operations\n\n\nSometimes we can calculate the median.\n\nOdd sets the median is the middle.\nEven sets, average of the middle two.\nOne solution, arbitrarily assign a numeric score.\n\nAll the same operations as nominal data + more."
+    "text": "Ordinal Operations\nSometimes we can calculate the median.\n\n\n\nOdd sets the median is the middle.\nEven sets, average of the middle two.\nOne solution, arbitrarily assign a numeric score."
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#graded-membership",
     "href": "Phenomena_and_Data_Types/Slides.html#graded-membership",
     "title": "Lecture Slides",
     "section": "Graded Membership",
-    "text": "Graded Membership\n\n\nExceptions that blur the lines.\n\nGrade membership to assign categories\nWhere to draw the line between forest/alpine?\nWinner take all: alpine meadow\n45% alpine meadow\n40% forest\n5% bare rock"
+    "text": "Graded Membership\nExceptions that blur the lines. Where to draw the line between forest/alpine?\n\n\n\nGrade membership to assign categories\nWinner take all: alpine meadow\n\n45% alpine meadow\n40% forest\n5% bare rock"
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#graded-membership-1",
     "href": "Phenomena_and_Data_Types/Slides.html#graded-membership-1",
     "title": "Lecture Slides",
     "section": "Graded Membership",
-    "text": "Graded Membership\n\n\nIn practice, lots of qualitative data we work with, especially for natural phenomena, are actually graded membership.\n\nThe downside: variability within the area is lost."
+    "text": "Graded Membership\nIn practice, lots of qualitative data we work with, especially for natural phenomena, are actually graded membership.\n\n\n\nThe downside: variability within the area is lost."
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#quantitative-data",
@@ -1376,42 +1453,70 @@
     "href": "Phenomena_and_Data_Types/Slides.html#quantitative-data-1",
     "title": "Lecture Slides",
     "section": "Quantitative Data",
-    "text": "Quantitative Data\n\n\nBoth Interval and Ratio data can consist of discrete or continuous numbers. These types of quantitative data are closely related, but have one important distinction.\n\nInterval scales have an arbitrarily zero point, which means:\nCan have negative values\nCannot multiply/divide …\nTo compare the magnitude of one value to another\nCan still multiply/divide for other calculations, i.e. calculating an average\nRatio scales have a fixed, absolute zero point, which means:\nCannot have negative values\nAbsolute zero point does not imply an end point, can still have infinitely many values\nCan multiply/divide"
+    "text": "Quantitative Data\nBoth Interval and Ratio data can consist of discrete or continuous numbers. These types of quantitative data are closely related, but have one important distinction.\n\n\n\nInterval scales have an arbitrary zero point\n\nCan be negative\nCannot multiply/divide\n\nTo compare magnitudes\n\n\n\n\n\nRatio scales have a fixed, absolute zero point\n\nCan multiply/divide\nCannot be negative\n\nCan increase infinitely from zero"
   },
   {
-    "objectID": "Phenomena_and_Data_Types/Slides.html#the-difference",
-    "href": "Phenomena_and_Data_Types/Slides.html#the-difference",
+    "objectID": "Phenomena_and_Data_Types/Slides.html#celsius-interval-vs.-kelvin-ratio",
+    "href": "Phenomena_and_Data_Types/Slides.html#celsius-interval-vs.-kelvin-ratio",
     "title": "Lecture Slides",
-    "section": "The Difference",
-    "text": "The Difference\n\n\nCelsius (interval) vs. Kelvin (ratio).\n\n°C = K-273.15.\n0 °C: Freezing point of water\nDrops below 0 °C all the time\n0 K: “Absolute Zero”\nPhysically cannot get any colder\n100 °C is not ∞% warmer than as 0 °C\nIt’s actually ~ 36% warmer\n(373.15 K - 273.15 K) ⁄ 273.15 K ~ 0.36"
+    "section": "Celsius (interval) vs. Kelvin (ratio)",
+    "text": "Celsius (interval) vs. Kelvin (ratio)\n\n\n°C = K-273.15.\n\n0 °C: Freezing point of water\n\nDrops below 0 °C all the time\n\n0 K: “Absolute Zero”\n\nPhysically cannot get any colder"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#celsius-interval-vs.-kelvin-ratio-1",
+    "href": "Phenomena_and_Data_Types/Slides.html#celsius-interval-vs.-kelvin-ratio-1",
+    "title": "Lecture Slides",
+    "section": "Celsius (interval) vs. Kelvin (ratio)",
+    "text": "Celsius (interval) vs. Kelvin (ratio)\n\n\n°C = K-273.15.\n\n100 °C is not ∞% warmer than as 0 °C\n\nIt’s actually ~ 36% warmer\n(373.15 K - 273.15 K) ⁄ 273.15 K ~ 0.36"
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#interval-scale",
     "href": "Phenomena_and_Data_Types/Slides.html#interval-scale",
     "title": "Lecture Slides",
     "section": "Interval Scale",
-    "text": "Interval Scale\n\n\nInterval data has an arbitrarily zero point. Examples include:\n\nCalendar years\nDiscrete interval data\nTemperature (in celsius)\nContinuous interval data\nOther examples:\nph scale (continuous)\nIQ scores (continuous)\nTimes (discrete-ish)"
+    "text": "Interval Scale\nInterval data has an arbitrary zero point.\n\n\n\nCalendar years\n\nDiscrete interval data\n\nTemperature (in celsius)\n\nContinuous interval data\n\nOther examples:\n\nph scale (continuous)\nTimes (discrete-ish)"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#interval-scale-1",
+    "href": "Phenomena_and_Data_Types/Slides.html#interval-scale-1",
+    "title": "Lecture Slides",
+    "section": "Interval Scale",
+    "text": "Interval Scale\nInterval data has an arbitrary zero point.\n\n\n\nCalendar years\n\nDiscrete interval data\n\nTemperature (in celsius)\n\nContinuous interval data\n\nOther examples:\n\nph scale (continuous)\nTimes (discrete-ish)"
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#ratio-scale",
     "href": "Phenomena_and_Data_Types/Slides.html#ratio-scale",
     "title": "Lecture Slides",
     "section": "Ratio Scale",
-    "text": "Ratio Scale\n\n\nRatio data has a fixed, absolute zero point. Examples include:\n\nPopulation\nDiscrete ratio data\nTree height\nContinuous ratio data\nOther examples:\nPrecipitation (Continuous)\nArea (Continuous)\nUnits of time (Continuous)\nPopular Vote Totals (Discrete)"
+    "text": "Ratio Scale\nRatio data has a fixed, absolute zero point.\n\n\n\nPopulation\n\nDiscrete ratio data\n\nTree height\n\nContinuous ratio data\n\nOther examples:\n\nPrecipitation (Continuous)\nVote Totals (Discrete)"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#ratio-scale-1",
+    "href": "Phenomena_and_Data_Types/Slides.html#ratio-scale-1",
+    "title": "Lecture Slides",
+    "section": "Ratio Scale",
+    "text": "Ratio Scale\nRatio data has a fixed, absolute zero point.\n\n\n\nPopulation\n\nDiscrete ratio data\n\nTree height\n\nContinuous ratio data\n\nOther examples:\n\nPrecipitation (Continuous)\nVote Totals (Discrete)"
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#derived-ratio",
     "href": "Phenomena_and_Data_Types/Slides.html#derived-ratio",
     "title": "Lecture Slides",
     "section": "Derived Ratio",
-    "text": "Derived Ratio\n\n\nSometimes called normalizing or standardizing, we calculate derived ratios to account for the influence of a confounding variable over a variable of interest. e.x. Housing affordability (Ha):\n\nYou need to account for income (I) to figure out how affordable rent (R) is:\n\n\\[ H\\_a = \\frac{R}{I} \\] + R: My rent $1,450/mo + I: I make ~\\(4600/mo + ***Ha***: 31.5% of my income goes to rent + Income and rent (\\)) are both discrete, housing affordability (%) is continuous."
+    "text": "Derived Ratio\n\n\nSometimes called normalizing or standardizing, we calculate derived ratios to account for the influence of a confounding variable over a variable of interest. e.x. Housing affordability (Ha):\n\nYou need to account for income (I) to figure out how affordable rent (R) is: \\(H\\_a = \\frac{R}{I}\\)\n\nHa: 31.5% of my income goes to rent\nIncome and rent ($) are both discrete, housing affordability (%) is continuous."
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#derived-ratio-1",
     "href": "Phenomena_and_Data_Types/Slides.html#derived-ratio-1",
     "title": "Lecture Slides",
     "section": "Derived Ratio",
-    "text": "Derived Ratio\n\n\nIn Lab, you are going to work with two derived ratios:\n\nIncome and Food expenditures are correlated\nNeed to account for income if you analyze other factors\nPopulation and Area are not highly correlated\nBut area definitely influences population\nNeed to account for area to analyze other factors"
+    "text": "Derived Ratio\nIn Lab, you are going to work with two derived ratios:\n\n\n\nIncome and Food expenditures are correlated\n\nNeed to account for income if you analyze other factors"
+  },
+  {
+    "objectID": "Phenomena_and_Data_Types/Slides.html#derived-ratio-2",
+    "href": "Phenomena_and_Data_Types/Slides.html#derived-ratio-2",
+    "title": "Lecture Slides",
+    "section": "Derived Ratio",
+    "text": "Derived Ratio\nIn Lab, you are going to work with two derived ratios:\n\n\n\nPopulation and Area are not highly correlated\n\nBut area definitely influences population\nNeed to account for area to analyze other factors"
   },
   {
     "objectID": "Phenomena_and_Data_Types/Slides.html#summary-types-of-data",
@@ -1421,11 +1526,11 @@
     "text": "Summary: Types of Data"
   },
   {
-    "objectID": "Phenomena_and_Data_Types/Slides.html#summary-operations-by-data-type",
-    "href": "Phenomena_and_Data_Types/Slides.html#summary-operations-by-data-type",
+    "objectID": "Phenomena_and_Data_Types/Slides.html#summary-operations",
+    "href": "Phenomena_and_Data_Types/Slides.html#summary-operations",
     "title": "Lecture Slides",
-    "section": "Summary: Operations by Data Type",
-    "text": "Summary: Operations by Data Type\n\n\n\n\n\nOperation\nNominal\nOrdinal\nInterval\nRatio\n\n\nEquality\nx\nx\nx\nx\n\n\nCounts/Mode\nx\nx\nx\nx\n\n\nRank/Order\n\nx\nx\nx\n\n\nMedian\n\n~\nx\nx\n\n\nAdd/Subtract\n\n\nx\nx\n\n\nMean\n\n\nx\nx\n\n\nMultiply/Divide\n\n\n\nx\n\n\n\n\n\n\n\nBack to Course Modules"
+    "section": "Summary: Operations",
+    "text": "Summary: Operations\n\n\n\n\n\nOperation\nNominal\nOrdinal\nInterval\nRatio\n\n\nEquality\nx\nx\nx\nx\n\n\nCounts/Mode\nx\nx\nx\nx\n\n\nRank/Order\n\nx\nx\nx\n\n\nMedian\n\n~\nx\nx\n\n\nAdd/Subtract\n\n\nx\nx\n\n\nMean\n\n\nx\nx\n\n\nMultiply/Divide\n\n\n\nx\n\n\n\n\n\n\n\nBack to Course Modules"
   },
   {
     "objectID": "Raster_Analysis_Methods/Slides.html#clip",

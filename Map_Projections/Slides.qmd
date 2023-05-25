@@ -155,7 +155,7 @@ Planar projections are the simplest approach.
 
 
 
-![](images/planar.jpg)
+![](images/planar.jpg){width="80%"}
 
 
 

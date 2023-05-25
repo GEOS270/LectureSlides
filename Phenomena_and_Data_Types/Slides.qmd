@@ -17,9 +17,6 @@ fig-dpi: 300
 
 What is Data?
 =============
-
-
-
 ::::{.columns}
 :::{.column width="100%"}
 
@@ -27,7 +24,27 @@ Data is information describing some phenomenon.
 :::
 ::::
 
+What is a Phenomenon?
+---------------------
 
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+A factor situation that is observed to exist or happen, especially one whose cause or explanation is in question.
+
+
+* A lightning strike
+
+:::
+:::{.column width="50%"}
+
+
+![](images/lightning.jpg){width="70%"}
+
+:::
+::::
 
 
 What is a Phenomenon?
@@ -38,51 +55,73 @@ What is a Phenomenon?
 :::{.column width="50%"}
 
 
-Phenomenon: a fact or situation that is observed to exist or happen, especially one whose cause or explanation is in question.
+A factor situation that is observed to exist or happen, especially one whose cause or explanation is in question.
 
 
 * A lightning strike
 * A coastline
-* A country
-* A dog on a kayak!
-* Anything and everything are phenomena!
-
-
 
 :::
 :::{.column width="50%"}
 
 
-
-
-![](images/lightning.jpg)
-
-
-
-
-
 ![](images/beach.jpg)
+:::
+::::
 
 
+What is a Phenomenon?
+---------------------
 
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+A factor situation that is observed to exist or happen, especially one whose cause or explanation is in question.
+
+
+* A lightning strike
+* A coastline
+* A country
+
+:::
+:::{.column width="50%"}
 
 
 ![](images/03-vector.png)
-
-
-
-
-
-![](images/dog_on_a_boaty.jpg)
-
-
-
 
 
 :::
 ::::
 
 
+What is a Phenomenon?
+---------------------
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+A factor situation that is observed to exist or happen, especially one whose cause or explanation is in question.
+
+
+* A lightning strike
+* A coastline
+* A country
+* A dog on a kayak!
+
+:::
+:::{.column width="50%"}
+
+![](images/dog_on_a_boaty.jpg)
+
+
+Anything and everything are phenomena!
+
+:::
+::::
 
 
 Types of Phenomena
@@ -101,9 +140,6 @@ Types of Phenomena
 
 * Finite
 + They are countable and cannot be infinitely subdivided
-
-
-
 :::
 :::{.column width="50%"}
 
@@ -120,14 +156,8 @@ Types of Phenomena
 
 * They are not countable and can be infinitely subdivided
 
-
-
-
 :::
 ::::
-
-
-
 
 Types of Phenomena
 ------------------
@@ -143,108 +173,102 @@ When is a phenomenon **discrete** or **continuous**?
 * To an extent, it depends on our *perspective* and the *scale* of our analysis.
 * Many phenomenon are a bit of both.
 
+:::
+::::
 
+Lightning
+---------
+
+
+A **strike** is a discrete object, what about a lighting bolt?
+
+::::{.columns}
+:::{.column width="50%"}
+
+* Sort of continuous?
+
+:::
+:::{.column width="50%"}
+
+
+![](images/lightning.jpg){width="60%"}
 
 
 :::
 ::::
-
-
 
 
 Lightning
 ---------
 
 
+A **strike** is a discrete object, what about a lighting bolt?
+
 ::::{.columns}
 :::{.column width="50%"}
 
-
-* A **strike** is a discrete object
-* What about a lighting bolt ...?
-+ Doesn't really have clearly defined boundaries?
-+ Sort of continuous
-
 * Strike **frequency** is a continuous field
-+ Everywhere has a frequency of lighting strikes
-+ Even the absence of lighting strikes, is still a frequency of strikes
-
-
+  + Everywhere has a value
+  + Even the absence of strikes, is a frequency of strikes
 
 :::
 :::{.column width="50%"}
 
-
-
-
-![](images/lightning.jpg)
-
-
-
-
-
-![](images/03-lightning-density.gif)
-
-
-
-
+![](images/03-lightning-density.gif){}
 
 :::
 ::::
-
-
 
 
 A Coastline
 -----------
 
+Continuous field at **large scale**
 
 ::::{.columns}
 :::{.column width="50%"}
 
-
-* Continuous field at **large scale**
 + Tides & waves
 + Where is the exact boundary?
-
-* Discrete object at **small scale**
-+ Zoom out and the tides/waves don't really matter
-+ Its easy to draw a static boundary
-
-* Unless you change the [*time scale*](https://coastal.climatecentral.org/)
-+ Until you start thinking about the long term :(
-
-
 
 :::
 :::{.column width="50%"}
 
-
-
-
 ![](images/beach.jpg)
-
-
-
-
-
-![](images/beach_small_scale.png)
-
-
-
-
-
-![](images/sea_level_rise.png)
-
-
-
-
 
 :::
 ::::
 
 
+A Coastline
+-----------
 
+Discrete object at **small scale**
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+* Zoom out and the tides/waves don't really matter
++ Its easy to draw a static boundary
+
+:::
+:::{.column width="50%"}
+
+
+![](images/beach_small_scale.png)
+
+:::
+::::
+
+
+A Coastline
+-----------
+
+Unless you change the [*time scale*](https://coastal.climatecentral.org/)
+
+
+![](images/sea_level_rise.png)
 
 Types of Phenomena
 ------------------
@@ -259,14 +283,8 @@ Most things don't fall perfectly into one category or the other.
 
 * That said, it is a helpful framework as long as we recognize the discrete vs. continuous dichotomy is not a perfect classification
 
-
-
-
 :::
 ::::
-
-
-
 
 TopHat Question 1
 =================
@@ -284,14 +302,8 @@ Discrete objects: (select all that apply)
 * Are infinitely divisible
 * Have well defined boundaries
 
-
-
-
 :::
 ::::
-
-
-
 
 Discrete Objects
 ----------------
@@ -307,24 +319,12 @@ Discrete Objects
 * Concrete boundaries
 * Countable
 * Real physical object
-
-
-
 :::
 :::{.column width="50%"}
-
-
-
 ![](images/building.png)
-
-
-
 
 :::
 ::::
-
-
-
 
 Discrete Objects
 ----------------
@@ -340,24 +340,12 @@ Discrete Objects
 * Distinct boundaries
 * Countable
 * Not a physical object
-
-
-
 :::
 :::{.column width="50%"}
-
-
-
 ![](images/03-vector.png)
-
-
-
 
 :::
 ::::
-
-
-
 
 Continuous Fields
 -----------------
@@ -373,24 +361,12 @@ Continuous Fields
 * Everywhere on Earth
 * No "number of elevations"
 * A physical property
-
-
-
 :::
 :::{.column width="50%"}
-
-
-
 ![](images/elevation.png)
-
-
-
 
 :::
 ::::
-
-
-
 
 Continuous Fields
 -----------------
@@ -408,95 +384,65 @@ Continuous Fields
 + But not countable itself
 
 * Not a physical property
-
-
-
 :::
 :::{.column width="50%"}
-
-
-
 ![](images/tweet_density.jpg)
-
-
-
 
 :::
 ::::
-
-
-
 
 Working Together
 ----------------
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="60%"}
 
 
 Frequently we'll end up working with both discrete objects and continuous fields.
 
 
 * In Module 1, you worked with:
-+ Cholera deaths (Discrete objects)
-+ Kernel density (continuous field)
-
-* We use **spatial data models** to represent information in a GIS
-+ **Vector Data Model** = discrete objects
-+ **Raster Data Model** = continuous fields
-
-
+  + Cholera deaths
+    - **Discrete objects**
+  + Kernel density
+    - **Continuous field**
 
 :::
-:::{.column width="50%"}
-
-
+:::{.column width="40%"}
 
 ![](images/Final_Map.png)
 
-
-
-
 :::
 ::::
-
-
-
 
 Digital information
 -------------------
 
+We'll talk more about spatial data models later. For now, lets think about data more broadly. 
+
+* How do we represent data in a computer?
+
+Digital information
+-------------------
+
+Digital information is represented as bits (0's and 1's)
+
+* We typically quantify data as bytes (8 bits):
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="60%"}
 
-
-We'll talk more about spatial data models later. For now, lets think about data more broadly. How do we represent data in a computer?
-
-
-* Digital information is represented as bits (0's and 1's)
-* We typically quantify data as bytes (8 bits):
 + Kilobyte (kB) = 1,000 bytes
 + Megabyte (MB) = 1,000,000 bytes
 + Gigabyte (GB) = 1,000,000,000 bytes
 
-
-
 :::
-:::{.column width="50%"}
-
-
-
+:::{.column width="40%"}
 ![](images/bit-vs-byte-illustration.jpg)
-
-
-
 
 :::
 ::::
-
-
 
 
 Digital information
@@ -511,20 +457,14 @@ There are numerous ways to translate human readable data to binary, such as ASCI
 
 
 * Each character is represented as one byte
-* There are 28 = 256 unique combinations of 0's and 1's in a byte
+* 2<sup>8</sup> = 256 unique combinations of 0's and 1's in a byte
 * Some examples:
-+ "A" : 01000001
-+ "CAT": 01000011 01000001 01010100
-+ "31": 00110011 00110001
-
-
-
+  + "A" : 01000001
+  + "CAT": 01000011 01000001 01010100
+  + "31": 00110011 00110001
 
 :::
 ::::
-
-
-
 
 Digital Information
 -------------------
@@ -534,26 +474,18 @@ Digital Information
 :::{.column width="100%"}
 
 
-Modern computers use 64-bit "architecture". That is, the central processing unit (CPU) can handle 64 bits (8 bytes) of information at a time.
+Modern computers use 64-bit "architecture". The central processing unit (CPU) can handle 64 bits (8 bytes) of information at a time.
 
 
-* **"Word"** length is 64 bits
-+ A "Word" is a unit of data
-- i.e., an individual piece of information
+* **"Word"** length is 64 bits, a word is a unit of data
+  + i.e., an individual piece of information
 
-+ 264 possible unique values
-- >18 quintillion possible unique combinations of 1's and 0's to describe something
+  + 18 quintillion unique combinations of 1's and 0's
 
 * CPUs can be stacked in parallel to handle more information at one time
 
-
-
-
 :::
 ::::
-
-
-
 
 Representing Phenomena in GIS
 -----------------------------
@@ -567,18 +499,12 @@ Within the context of a GIS, every piece of information describing a phenomenon 
 
 
 * Broadly speaking each attribute can address one of three questions:
-+ **Where?**
-+ **What?**
-+ **When?**
-
-
-
+  + **Where?**
+  + **What?**
+  + **When?**
 
 :::
 ::::
-
-
-
 
 Types of Attributes
 -------------------
@@ -593,19 +519,13 @@ There are multiple ways to classify/think about attributes. One important distin
 
 * **Non-Spatial Attributes**: describe what or when
 * **Spatial Attributes**: describe where
-+ Puts the **G**eographic in **G**IS
-+ Requires some special considerations
-- We have already talked a bit about these consideration (map projections)
-- We'll discuss more considerations in the next module
-
-
-
+  + Puts the **G**eographic in **G**IS
+  + Requires some special considerations
+  - We have already talked a bit about map projections
+  - We'll discuss more considerations in the next module
 
 :::
 ::::
-
-
-
 
 Types of Attributes
 -------------------
@@ -621,17 +541,11 @@ All data (attributes), spatial and non-spatial, can be either **qualitative** or
 * The types of analysis we can do with qualitative data are more limited
 * That does not make quantitative data “better”
 * **Measurement scales**: both qualitative and quantitative can be measured on different scales
-+ Qualitative: Nominal or Ordinal Sales
-+ Quantitative: Interval or Ratio Sales
-
-
-
+  + Qualitative: Nominal or Ordinal Sales
+  + Quantitative: Interval or Ratio Sales
 
 :::
 ::::
-
-
-
 
 Qualitative Data
 ----------------
@@ -645,65 +559,73 @@ Qualitative data is **Categorical**. It is strictly descriptive and lacks any me
 
 
 * Textual, coded numerals, pictures, sounds, etc
-+ Typically working with textual & coded numerals most frequently in GIS
+  + Typically working with textual & coded numerals most frequently in GIS
 
 * Limited number of computational options, often requires careful consideration when analyzing
 * Measured on either a **Nominal** or **Ordinal** scale.
 
-
-
-
 :::
 ::::
 
+Nominal Scale
+-------------
 
+Names or categories **with no** ranking or direction. Categories are not more/less, better/worse, they just different. Some examples include:
+
+::::{.columns}
+:::{.column width="50%"}
+
+* Flower Species
+
+:::
+:::{.column width="50%"}
+
+![](images/03-flowers-nominal.png)
+
+:::
+::::
 
 
 Nominal Scale
 -------------
 
+Names or categories **with no** ranking or direction. Categories are not more/less, better/worse, they just different. Some examples include:
 
 ::::{.columns}
 :::{.column width="50%"}
 
-
-Names or categories **with no** ranking or direction. Categories are not more/less, better/worse, they just different. Some examples include:
-
-
 * Flower Species
 * Zoning Categories
-* Land cover Classification
-
-
 
 :::
 :::{.column width="50%"}
 
-
-
-
-![](images/03-flowers-nominal.png)
-
-
-
-
-
 ![](images/03-zoning.png)
-
-
-
-
-
-![](images/03-lc-class.png)
-
-
-
-
 
 :::
 ::::
 
 
+Nominal Scale
+-------------
+
+Names or categories **with no** ranking or direction. Categories are not more/less, better/worse, they just different. Some examples include:
+
+::::{.columns}
+:::{.column width="50%"}
+
+* Flower Species
+* Zoning Categories
+* Land cover Classification
+
+:::
+:::{.column width="50%"}
+
+![](images/03-lc-class.png)
+
+
+:::
+::::
 
 
 Nominal Operations
@@ -720,209 +642,155 @@ With nominal data we can:
 * Check equivalency
 * Count frequencies
 * **Nothing else**
-
-
-
 :::
 :::{.column width="50%"}
 
 
 ![](images/03-nominal-opperations.png)
 
-
-
-
 :::
 ::::
-
-
-
 
 Ordinal Scale
 -------------
 
+Names or categories **with a** ranking. The differences are relative. Categories **are** more/less, better/worse, etc. 
 
 ::::{.columns}
 :::{.column width="50%"}
 
 
-Names or categories **with a** ranking or direction. Categories **are** more/less, better/worse, etc. But the differences are relative, there is no way to say by "how much". Some examples include:
+* Spice levels
+
+:::
+:::{.column width="50%"}
+
+![](images/03-spicy.jpg)
+
+:::
+::::
+
+Ordinal Scale
+-------------
+
+Names or categories **with a** ranking. The differences are relative. Categories **are** more/less, better/worse, etc. 
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+* Spice levels
+* Relative heights
+
+:::
+:::{.column width="50%"}
+
+![](images/03-dogs-ordinal.png){width="55%"}
+
+:::
+::::
+
+Ordinal Scale
+-------------
+
+Names or categories **with a** ranking. The differences are relative. Categories **are** more/less, better/worse, etc. 
+
+::::{.columns}
+:::{.column width="50%"}
 
 
 * Spice levels
 * Relative heights
 * Compass Direction
 
-
-
 :::
 :::{.column width="50%"}
 
-
-
-
-![](images/03-spicy.jpg)
-
-
-
-
-
-![](images/03-dogs-ordinal.png)
-
-
-
-
-
-![](images/03-compas.png)
-
-
-
+![](images/03-compas.png){width="70%"}
 
 
 :::
 ::::
 
-
-
-
 Ordinal Operations
 ------------------
 
+All the same operations as nominal data **+ more**.  With ordinal data we can:
 
 ::::{.columns}
 :::{.column width="50%"}
-
-
-With ordinal data we can:
-
 
 * Check equivalency
 * Count frequencies
 * **Check order/rank**
 
-
-All the same operations as nominal data **+ more**.
-
-
-
 :::
 :::{.column width="50%"}
 
-
-
 ![](images/03-spicy.jpg)
-
-
-
 
 :::
 ::::
-
-
-
 
 Ordinal Operations
 ------------------
 
 
-::::{.columns}
-:::{.column width="50%"}
-
-
 *Sometimes* we can calculate the median.
+
+::::{.columns}
+:::{.column width="40%"}
 
 
 * Odd sets the median is the middle.
 * Even sets, average of the middle two.
 * One solution, *arbitrarily* assign a numeric score.
 
-
-All the same operations as nominal data **+ more**.
-
-
-
 :::
-:::{.column width="50%"}
+:::{.column width="60%"}
 
-
-
-![](images/03-ordinal-operatons.png)
-
-
-
+![](images/03-ordinal-operatons.png){width="110%"}
 
 :::
 ::::
 
-
-
-
 Graded Membership
 -----------------
 
+**Exceptions** that blur the lines.  Where to draw the line between forest/alpine?
 
 ::::{.columns}
 :::{.column width="50%"}
-
-
-**Exceptions** that blur the lines.
-
 
 * Grade membership to assign categories
-* Where to draw the line between forest/alpine?
 * **Winner take all**: alpine meadow
-+ 45% alpine meadow
-+ 40% forest
-+ 5% bare rock
-
-
+  + 45% alpine meadow
+  + 40% forest
+  + 5% bare rock
 
 :::
 :::{.column width="50%"}
-
-
-
 ![](images/03-fuzzy.jpg)
-
-
-
 
 :::
 ::::
 
-
-
-
 Graded Membership
 -----------------
-
-
-::::{.columns}
-:::{.column width="50%"}
-
 
 In practice, lots of qualitative data we work with, especially for *natural phenomena*, are actually graded membership.
 
-
-* **The downside**: variability within the area is lost.
-
-
-
-:::
+::::{.columns}
 :::{.column width="50%"}
 
 
-
+* **The downside**: variability within the area is lost.
+:::
+:::{.column width="50%"}
 ![](images/03-fuzzy.jpg)
-
-
-
 
 :::
 ::::
-
-
-
 
 TopHat Question 2
 =================
@@ -941,14 +809,8 @@ Which of the following would be examples of Nominal Data? (select all that apply
 * Colors
 * Drink sizes
 
-
-
-
 :::
 ::::
-
-
-
 
 Quantitative Data
 -----------------
@@ -966,14 +828,8 @@ Quantitative data is **Numeric**. It describe the quantities associated with a p
 * Can be **Discrete** or **Continuous** numbers.
 * Measured on either a **Ratio** or **Interval** scale.
 
-
-
-
 :::
 ::::
-
-
-
 
 Kinds of Numbers
 ----------------
@@ -991,9 +847,6 @@ Kinds of Numbers
 * Not infinitely divisible
 * Names in ArcGIS Pro:
 + Integer, Long, etc.
-
-
-
 :::
 :::{.column width="50%"}
 
@@ -1007,14 +860,8 @@ Kinds of Numbers
 * Names in ArcGIS Pro:
 + Float, Double, etc.
 
-
-
-
 :::
 ::::
-
-
-
 
 Kinds of Numbers
 ----------------
@@ -1032,9 +879,6 @@ Kinds of Numbers
 + Population
 + Year
 + "Age"
-
-
-
 :::
 :::{.column width="50%"}
 
@@ -1048,183 +892,192 @@ Kinds of Numbers
 + Height
 + Speed
 
-
-
-
 :::
 ::::
-
-
-
 
 Quantitative Data
 -----------------
 
-
-::::{.columns}
-:::{.column width="100%"}
-
-
 Both **Interval** and **Ratio** data can consist of discrete *or* continuous numbers. These types of quantitative data are closely related, but have one important distinction.
 
 
-* Interval scales have an arbitrarily zero point, which means:
-+ **Can** have negative values
-+ **Cannot** multiply/divide ...
-- To compare the magnitude of one value to another
-- Can still multiply/divide for other calculations, i.e. calculating an average
-
-* Ratio scales have a fixed, absolute zero point, which means:
-+ **Cannot** have negative values
-- Absolute zero point does not imply an end point, can still have infinitely many values
-
-+ **Can** multiply/divide
+::::{.columns}
+:::{.column width="50%"}
 
 
+
+* Interval scales have an arbitrary zero point
+  + **Can** be negative
+  + **Cannot** multiply/divide
+    - To compare magnitudes
+
+:::
+:::{.column width="50%"}
+
+* Ratio scales have a fixed, absolute zero point
+  + **Can** multiply/divide
+  + **Cannot** be negative
+    - Can increase infinitely from zero
 
 
 :::
 ::::
 
-
-
-
-The Difference
+Celsius (interval) vs. Kelvin (ratio)
 --------------
 
 
 ::::{.columns}
 :::{.column width="50%"}
 
+°C = K-273.15.
 
-**Celsius** (interval) vs. **Kelvin** (ratio).
-
-
-* °C = K-273.15.
 * 0 °C: Freezing point of water
-+ Drops below 0 °C all the time
+  + Drops below 0 °C all the time
 
 * 0 K: "Absolute Zero"
-+ Physically cannot get any colder
-
-* 100 °C **is not** ∞% warmer than as 0 °C
-+ It's actually ~ 36% warmer
-+ (373.15 K - 273.15 K) ⁄ 273.15 K ~ 0.36
-
-
+  + Physically cannot get any colder
 
 :::
 :::{.column width="50%"}
 
-
-
 ![](images/03-interval-ratio-temperature.png)
-
-
-
 
 :::
 ::::
 
+Celsius (interval) vs. Kelvin (ratio)
+--------------
 
+
+::::{.columns}
+:::{.column width="50%"}
+
+°C = K-273.15.
+
+* 100 °C **is not** ∞% warmer than as 0 °C
+  + It's actually ~ 36% warmer
+  + (373.15 K - 273.15 K) ⁄ 273.15 K ~ 0.36
+
+:::
+:::{.column width="50%"}
+
+![](images/03-interval-ratio-temperature.png)
+
+:::
+::::
 
 
 Interval Scale
 --------------
 
+Interval data has an arbitrary zero point.
 
 ::::{.columns}
 :::{.column width="50%"}
 
-
-Interval data has an arbitrarily zero point. Examples include:
-
-
 * Calendar years
-+ *Discrete* interval data
+  + *Discrete* interval data
 
 * Temperature (in celsius)
-+ *Continuous* interval data
+  + *Continuous* interval data
 
 * Other examples:
-+ ph scale (continuous)
-+ IQ scores (continuous)
-+ Times (discrete-ish)
-
+  + ph scale (continuous)
+  + Times (discrete-ish)
 
 
 :::
 :::{.column width="50%"}
 
-
-
-
 ![](images/CalendarYears.png)
-
-
-
-
-
-![](images/CA_Temp.gif)
-
-
-
 
 
 :::
 ::::
 
+
+Interval Scale
+--------------
+
+Interval data has an arbitrary zero point.
+
+::::{.columns}
+:::{.column width="50%"}
+
+* Calendar years
+  + *Discrete* interval data
+
+* Temperature (in celsius)
+  + *Continuous* interval data
+
+* Other examples:
+  + ph scale (continuous)
+  + Times (discrete-ish)
+
+:::
+:::{.column width="50%"}
+
+![](images/CA_Temp.gif)
+
+
+:::
+::::
 
 
 
 Ratio Scale
 -----------
 
+Ratio data has a fixed, absolute zero point.
 
 ::::{.columns}
-:::{.column width="50%"}
-
-
-Ratio data has a fixed, absolute zero point. Examples include:
-
+:::{.column width="55%"}
 
 * Population
-+ *Discrete* ratio data
+  + *Discrete* ratio data
 
 * Tree height
-+ *Continuous* ratio data
+  + *Continuous* ratio data
 
 * Other examples:
-+ Precipitation (Continuous)
-+ Area (Continuous)
-+ Units of time (Continuous)
-+ Popular Vote Totals (Discrete)
-
-
+  + Precipitation (Continuous)
+  + Vote Totals (Discrete)
 
 :::
-:::{.column width="50%"}
-
-
-
+:::{.column width="45%"}
 
 ![](images/03-ratio-population.png)
-
-
-
-
-
-![](images/03-tree-height.gif)
-
-
-
-
 
 :::
 ::::
 
 
+Ratio Scale
+-----------
 
+Ratio data has a fixed, absolute zero point.
+
+::::{.columns}
+:::{.column width="55%"}
+
+* Population
+  + *Discrete* ratio data
+
+* Tree height
+  + *Continuous* ratio data
+
+* Other examples:
+  + Precipitation (Continuous)
+  + Vote Totals (Discrete)
+
+:::
+:::{.column width="45%"}
+
+![](images/03-tree-height.gif)
+
+:::
+::::
 
 TopHat Question 3
 =================
@@ -1236,9 +1089,6 @@ TopHat Question 3
 
 Match the value to the type measurement scale and type of number:
 
-
-
-
 |  |  |
 | --- | --- |
 | Length a hiking trail | Interval (Discrete) |
@@ -1246,14 +1096,8 @@ Match the value to the type measurement scale and type of number:
 | Global Orca Population | Ratio (Continuous) |
 | Change in Global Orca Population from 2000 to 2022 | Interval (Continuous) |
 
-
-
-
 :::
 ::::
-
-
-
 
 Derived Ratio
 -------------
@@ -1266,65 +1110,54 @@ Derived Ratio
 Sometimes called normalizing or standardizing, we calculate derived ratios to account for the influence of a confounding variable over a variable of interest. e.x. Housing affordability (*Ha*):
 
 
-* You need to account for income (*I*) to figure out how affordable rent (*R*) is:
- 
- $$ H\_a = \frac{R}{I} $$
- + **R**: My rent $1,450/mo
-+ **I**: I make ~$4600/mo
-+ ***Ha***: 31.5% of my income goes to rent
-+ Income and rent ($) are both discrete, housing affordability (%) is continuous.
-
-
-
+* You need to account for income (*I*) to figure out how affordable rent (*R*) is: 
+$H\_a = \frac{R}{I}$
+  + ***Ha***: 31.5% of my income goes to rent
+  + Income and rent ($) are both discrete, housing affordability (%) is continuous.
 
 :::
 ::::
-
-
-
 
 Derived Ratio
 -------------
 
 
+In Lab, you are going to work with two derived ratios:
+
 ::::{.columns}
 :::{.column width="50%"}
 
-
-In [Lab](https://geos270.github.io/Module3/docs/Application.html), you are going to work with two derived ratios:
-
-
 * Income and Food expenditures are correlated
-+ Need to account for income if you analyze other factors
-
-* Population and Area are not highly correlated
-+ But area definitely influences population
-+ Need to account for area to analyze other factors
-
-
+  + Need to account for income if you analyze other factors
 
 :::
 :::{.column width="50%"}
 
-
-
-
 ![](images/confounder_1.png)
-
-
-
-
-
-![](images/confounder_2.png)
-
-
-
-
 
 :::
 ::::
 
+Derived Ratio
+-------------
 
+
+In Lab, you are going to work with two derived ratios:
+
+::::{.columns}
+:::{.column width="50%"}
+
+* Population and Area are not highly correlated
+  + But area definitely influences population
+  + Need to account for area to analyze other factors
+  
+:::
+:::{.column width="50%"}
+
+![](images/confounder_2.png)
+
+:::
+::::
 
 
 TopHat Question 4
@@ -1337,14 +1170,8 @@ TopHat Question 4
 
 Speed is another example of a derived ratio. If a line of thunderstorm takes 5 hours to travel from Brandon, MB to Winnipeg, MB (200 km), what is the storm's speed in km/hr?
 
-
-
-
 :::
 ::::
-
-
-
 
 Summary: Types of Data
 ----------------------
@@ -1356,24 +1183,15 @@ Summary: Types of Data
 
 ![](images/03-data-types.png)
 
-
-
-
 :::
 ::::
 
-
-
-
-Summary: Operations by Data Type
---------------------------------
+Summary: Operations
+-------------------
 
 
 ::::{.columns}
 :::{.column width="100%"}
-
-
-
 
 |  |  |  |  |  |
 | --- | --- | --- | --- | --- |
@@ -1385,9 +1203,6 @@ Summary: Operations by Data Type
 | Add/Subtract |  |  | x | x |
 | Mean |  |  | x | x |
 | Multiply/Divide |  |  |  | x |
-
-
-
 
 :::
 ::::
