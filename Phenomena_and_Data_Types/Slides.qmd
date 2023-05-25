@@ -538,8 +538,8 @@ Types of Attributes
 All data (attributes), spatial and non-spatial, can be either **qualitative** or **quantitative**.
 
 
-* The types of analysis we can do with qualitative data are more limited
-* That does not make quantitative data “better”
+* Analysis we can do with qualitative data are more limited
+  + Does not make quantitative data “better”
 * **Measurement scales**: both qualitative and quantitative can be measured on different scales
   + Qualitative: Nominal or Ordinal Sales
   + Quantitative: Interval or Ratio Sales
