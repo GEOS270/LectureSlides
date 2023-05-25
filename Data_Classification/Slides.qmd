@@ -18,16 +18,12 @@ fig-dpi: 300
 Classifying Data
 ================
 
-
-
 ::::{.columns}
 :::{.column width="100%"}
 
 Finding patterns in complex datasets, emphasizing aspects we think are important.
 :::
 ::::
-
-
 
 
 Descriptive Statistics
@@ -37,10 +33,9 @@ Descriptive Statistics
 ::::{.columns}
 :::{.column width="100%"}
 
-
-
-
-Descriptors by data type| **Statistic** | **Nominal** | **Ordinal** | **Interval** | **Ratio** |
+|  |  |  |  |  |
+| --- | --- | --- | --- | --- |
+| **Operation** | **Nominal** | **Ordinal** | **Interval** | **Ratio** |
 | Equality | x | x | x | x |
 | Counts/Mode | x | x | x | x |
 | Rank/Order |  | x | x | x |
@@ -50,12 +45,8 @@ Descriptors by data type| **Statistic** | **Nominal** | **Ordinal** | **Interval
 | Multiply/Divide |  |  |  | x |
 
 
-
-
 :::
 ::::
-
-
 
 
 Measures of Central Tendency
@@ -78,71 +69,41 @@ Highlight the "central" feature in a dataset.
 	+ Impacted by outliers
 
 
-
-
 :::
 ::::
-
-
 
 
 Measures of Dispersion
 ----------------------
 
-
 ::::{.columns}
 :::{.column width="100%"}
-
 
 These statistics give context a measure of central tendency.
 
 
-* **Range**: The difference between the maximum and minimum values
-* **Inter-quartile Range**: Difference between 75th and 25th percentile value
-+ Spread around the median (50th percentile), not influenced by outliers
+* **Range**: Difference between the maximum and minimum
+* **Inter-quartile Range**: 75th to 25th percentile
+  + Spread around the median, not influenced by outliers
 
 * **Standard Deviation**: $\sigma = \sqrt{\frac{1}{N}\sum\_{i=1}^n (x\_i - U)^2}$
-+ Spread of data values (x) around the mean(U), influenced by outliers
-
-
+  + Spread around the mean(U), influenced by outliers
 
 
 :::
 ::::
-
-
 
 
 Frequency Distribution
 ----------------------
 
-
-::::{.columns}
-:::{.column width="50%"}
-
-
 Frequency of occurrence in a **qualitative** data.
 
 
 * Counts per category
-* Bar charts are a useful tool for visualizing frequency distributions
-
-
-
-:::
-:::{.column width="50%"}
-
-
+* Bar charts help visualizing frequency distributions
 
 ![](images/Frequency_Dist.svg)
-
-
-
-
-:::
-::::
-
-
 
 
 Probability Distribution
@@ -159,67 +120,44 @@ Probability of occurrence in a **quantitative** dataset.
 * **Normal Distribution**: idealized, based on distance from the mean in **standard deviations**.
 + Assumed distribution in many statistical tests.
 
-
-
 :::
 :::{.column width="50%"}
 
 
 ![](images/normal_dist.svg)
 
-
-
-
 |  |  |
 | --- | --- |
-| ±1 $\sigma$ | 68% of observations |
-| ±2 $\sigma$ | 95% of observations |
-| ±3 $\sigma$ | 99.7% of observations |
-
-
-
+| ±1 $\sigma$ | 68% obs. |
+| ±2 $\sigma$ | 95% obs. |
+| ±3 $\sigma$ | 99.7% obs. |
 
 :::
 ::::
-
-
 
 
 Histograms
 ----------
 
+Useful for **quantitative** data, sorts and groups data into **bins** of consistent width.
 
 ::::{.columns}
 :::{.column width="50%"}
 
+* Approximating probability distribution
+  + Grouping data into classes
+  + Outlier detection
 
-Useful for **quantitative** data.
-
-
-* Orders data and groups data into **bins** of consistent width
-* Helpful for:
-+ Approximating probability distribution
-+ Grouping data into classes
-+ Outlier detection
-
-* Similar to bar charts, **but** not the same thing!
-
-
+* Not the same as bar charts
 
 :::
 :::{.column width="50%"}
 
-
-
 ![](images/histogram.png)
-
-
 
 
 :::
 ::::
-
-
 
 
 Deviating from the Norm
@@ -239,12 +177,8 @@ Data rarely fits a normal distribution perfectly:
 * **Kurtosis**: deviates from a normal distribution
 + Dispersed or clustered
 
-
-
 :::
 :::{.column width="50%"}
-
-
 
 Near Normal
 
@@ -252,14 +186,10 @@ Near Normal
 ![](images/normal_dist.png)
 
 
-
-
 Skewed Normal
 
 
 ![](images/normal_dist2.png)
-
-
 
 
 Highly Skewed
@@ -269,12 +199,8 @@ Highly Skewed
 
 
 
-
-
 :::
 ::::
-
-
 
 
 TopHat Question 1
@@ -294,12 +220,8 @@ If you are working with nominal or ordinal data, and you want see how many obser
 * A bar chart to plot a frequency distribution
 
 
-
-
 :::
 ::::
-
-
 
 
 Normalizing Data
@@ -318,19 +240,13 @@ Allows us to account for confounding variables that mask or hide patterns in our
 + Income vs. money spent on food
 + Population vs. shape area
 
-
-
 :::
 :::{.column width="50%"}
-
-
 
 Highly Correlated
 
 
 ![](images/confounder_1.png)
-
-
 
 
 No Correlation
@@ -340,12 +256,8 @@ No Correlation
 
 
 
-
-
 :::
 ::::
-
-
 
 
 Multiple Confounders
@@ -363,8 +275,6 @@ It isn't always straightforward to account for multiple variables.
 ![](images/horgan.jpg)
 
 
-
-
 :::
 :::{.column width="50%"}
 
@@ -377,12 +287,8 @@ It isn't always straightforward to account for multiple variables.
 3. Occupational exposure
 
 
-
-
 :::
 ::::
-
-
 
 
 Standardizing
@@ -400,23 +306,15 @@ Also allow us to compare between **two or more** variables in different units / 
 * Similar idea to normalizing, but:
 + Removing the mean and standard deviation from multiple variables
 
-
-
 :::
 :::{.column width="50%"}
-
-
 
 ![](images/Standardizing.png)
 
 
 
-
-
 :::
 ::::
-
-
 
 
 TopHat Question 2
@@ -435,12 +333,8 @@ Which of these countries has the highest population density? \* *Populations and
 * **China**: Pop (1,400,000,000), Area (9,600,000 km2)
 
 
-
-
 :::
 ::::
-
-
 
 
 Classification Methods
@@ -457,8 +351,6 @@ Classification Methods
 * Data defined classes - the user decides on the number of classes
 * The rest is left of up to an algorithm
 
-
-
 :::
 :::{.column width="50%"}
 
@@ -471,12 +363,8 @@ Classification Methods
 * Degree of user input is variable, more than unsupervised
 
 
-
-
 :::
 ::::
-
-
 
 
 Common Examples in Arc Pro
@@ -494,22 +382,14 @@ Vancouver dissemination area populations
 * Color scheme is stretched between min/max
 * Difficult to see patterns
 
-
-
 :::
 :::{.column width="50%"}
-
-
 
 ![](images/Unclassified.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 Equal Interval
@@ -526,22 +406,14 @@ One of the simplest classification schemes.
 * Data is split to classes of equal width based on the range.
 * **Unsupervised**: user defines number of bins.
 
-
-
 :::
 :::{.column width="50%"}
-
-
 
 ![](images/Equal_Int.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 Defined Interval
@@ -558,22 +430,14 @@ Another of the simplest classification schemes.
 * Data is split to classes of equal width based on the range.
 * **Unsupervised**: user defines bin width.
 
-
-
 :::
 :::{.column width="50%"}
-
-
 
 ![](images/Defined.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 Quantiles
@@ -592,22 +456,14 @@ Slightly more complex classification scheme.
 
 * **Unsupervised**: user defines number of bins.
 
-
-
 :::
 :::{.column width="50%"}
-
-
 
 ![](images/Quantile.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 Natural Breaks
@@ -626,22 +482,14 @@ More complex, data is split using the [Jenks algorithm](http://wiki.gis.com/wiki
 
 * **Unsupervised**: user defines number of bins.
 
-
-
 :::
 :::{.column width="50%"}
-
-
 
 ![](images/Natural_break.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 Standard Deviation
@@ -661,22 +509,14 @@ Informative to "experts", but not accessible for all.
 
 * **Unsupervised**: user defines number of bins.
 
-
-
 :::
 :::{.column width="50%"}
-
-
 
 ![](images/Standard_dev.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 Manual Breaks
@@ -694,22 +534,14 @@ Manual Breaks
 * Incorporate multiple factors
 * Influence the way the data is perceived.
 
-
-
 :::
 :::{.column width="50%"}
-
-
 
 ![](images/Natural_break.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 TopHat Question 3
@@ -730,12 +562,8 @@ This classification method seeks to maximize the similarity between data values 
 * Standard Deviation
 
 
-
-
 :::
 ::::
-
-
 
 
 More Complex Methods
@@ -753,12 +581,8 @@ There are many classification methods that are a bit too complex to actually per
 * You'll encounter them if you continue with GIS.
 
 
-
-
 :::
 ::::
-
-
 
 
 K-means
@@ -774,22 +598,14 @@ Algorithm uses random steps to group data into clusters.
 
 * **Unsupervised**: user defines number of bins & iterations.
 
-
-
 :::
 :::{.column width="50%"}
-
-
 
 ![](images/kmeans.gif)
 
 
-
-
 :::
 ::::
-
-
 
 
 Median Absolute Deviation
@@ -805,22 +621,14 @@ Used for automated detection of outliers.
 
 * **Unsupervised**: user defines error threshold.
 
-
-
 :::
 :::{.column width="50%"}
-
-
 
 ![](images/MAD.jpg)
 
 
-
-
 :::
 ::::
-
-
 
 
 Decision Trees
@@ -838,22 +646,14 @@ Fit training data to user defined categories.
 * *Automated*: algorithm determines break values.
 * Risk of over-fitting
 
-
-
 :::
 :::{.column width="50%"}
-
-
 
 ![](images/tree.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 Random Forests
@@ -871,22 +671,14 @@ Multiple trees (>100) can be averaged to increase performance and generalization
 * *Automated*: algorithm determines break values.
 * Low risk of over-fitting
 
-
-
 :::
 :::{.column width="50%"}
-
-
 
 ![](images/forest.gif)
 
 
-
-
 :::
 ::::
-
-
 
 
 Landscape Classification
@@ -904,22 +696,14 @@ Multiple trees (>100) can be averaged to increase performance and generalization
 * *Automated*: algorithm determines break values.
 * Low risk of over-fitting
 
-
-
 :::
 :::{.column width="50%"}
-
-
 
 ![](images/FishIsland_NDVI2.gif)
 
 
-
-
 :::
 ::::
-
-
 
 
 Neural Networks
@@ -938,22 +722,14 @@ One of the most complex methods.
 * Risk of over-fitting
 + Requires careful inspection
 
-
-
 :::
 :::{.column width="50%"}
-
-
 
 ![](images/NN.gif)
 
 
-
-
 :::
 ::::
-
-
 
 
 TopHat Question 4
@@ -969,8 +745,6 @@ Unsupervised classification methods typically require more user input than super
 
 * True
 * False
-
-
 
 
 :::

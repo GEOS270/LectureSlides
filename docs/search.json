@@ -67,7 +67,7 @@
     "href": "Data_Classification/Slides.html#descriptive-statistics",
     "title": "Lecture Slides",
     "section": "Descriptive Statistics",
-    "text": "Descriptive Statistics\n\n\nDescriptors by data type| Statistic | Nominal | Ordinal | Interval | Ratio | | Equality | x | x | x | x | | Counts/Mode | x | x | x | x | | Rank/Order | | x | x | x | | Median | | ~ | x | x | | Add/Subtract | | | x | x | | Mean | | | x | x | | Multiply/Divide | | | | x |"
+    "text": "Descriptive Statistics\n\n\n\n\n\nOperation\nNominal\nOrdinal\nInterval\nRatio\n\n\nEquality\nx\nx\nx\nx\n\n\nCounts/Mode\nx\nx\nx\nx\n\n\nRank/Order\n\nx\nx\nx\n\n\nMedian\n\n~\nx\nx\n\n\nAdd/Subtract\n\n\nx\nx\n\n\nMean\n\n\nx\nx\n\n\nMultiply/Divide\n\n\n\nx"
   },
   {
     "objectID": "Data_Classification/Slides.html#measures-of-central-tendency",
@@ -81,28 +81,28 @@
     "href": "Data_Classification/Slides.html#measures-of-dispersion",
     "title": "Lecture Slides",
     "section": "Measures of Dispersion",
-    "text": "Measures of Dispersion\n\n\nThese statistics give context a measure of central tendency.\n\nRange: The difference between the maximum and minimum values\nInter-quartile Range: Difference between 75th and 25th percentile value\nSpread around the median (50th percentile), not influenced by outliers\nStandard Deviation: \\(\\sigma = \\sqrt{\\frac{1}{N}\\sum\\_{i=1}^n (x\\_i - U)^2}\\)\nSpread of data values (x) around the mean(U), influenced by outliers"
+    "text": "Measures of Dispersion\n\n\nThese statistics give context a measure of central tendency.\n\nRange: Difference between the maximum and minimum\nInter-quartile Range: 75th to 25th percentile\n\nSpread around the median, not influenced by outliers\n\nStandard Deviation: \\(\\sigma = \\sqrt{\\frac{1}{N}\\sum\\_{i=1}^n (x\\_i - U)^2}\\)\n\nSpread around the mean(U), influenced by outliers"
   },
   {
     "objectID": "Data_Classification/Slides.html#frequency-distribution",
     "href": "Data_Classification/Slides.html#frequency-distribution",
     "title": "Lecture Slides",
     "section": "Frequency Distribution",
-    "text": "Frequency Distribution\n\n\nFrequency of occurrence in a qualitative data.\n\nCounts per category\nBar charts are a useful tool for visualizing frequency distributions"
+    "text": "Frequency Distribution\nFrequency of occurrence in a qualitative data.\n\nCounts per category\nBar charts help visualizing frequency distributions"
   },
   {
     "objectID": "Data_Classification/Slides.html#probability-distribution",
     "href": "Data_Classification/Slides.html#probability-distribution",
     "title": "Lecture Slides",
     "section": "Probability Distribution",
-    "text": "Probability Distribution\n\n\nProbability of occurrence in a quantitative dataset.\n\nNormal Distribution: idealized, based on distance from the mean in standard deviations.\nAssumed distribution in many statistical tests.\n\n\n\n\n\n\n±1 \\(\\sigma\\)\n68% of observations\n\n\n±2 \\(\\sigma\\)\n95% of observations\n\n\n±3 \\(\\sigma\\)\n99.7% of observations"
+    "text": "Probability Distribution\n\n\nProbability of occurrence in a quantitative dataset.\n\nNormal Distribution: idealized, based on distance from the mean in standard deviations.\nAssumed distribution in many statistical tests.\n\n\n\n\n\n\n±1 \\(\\sigma\\)\n68% obs.\n\n\n±2 \\(\\sigma\\)\n95% obs.\n\n\n±3 \\(\\sigma\\)\n99.7% obs."
   },
   {
     "objectID": "Data_Classification/Slides.html#histograms",
     "href": "Data_Classification/Slides.html#histograms",
     "title": "Lecture Slides",
     "section": "Histograms",
-    "text": "Histograms\n\n\nUseful for quantitative data.\n\nOrders data and groups data into bins of consistent width\nHelpful for:\nApproximating probability distribution\nGrouping data into classes\nOutlier detection\nSimilar to bar charts, but not the same thing!"
+    "text": "Histograms\nUseful for quantitative data, sorts and groups data into bins of consistent width.\n\n\n\nApproximating probability distribution\n\nGrouping data into classes\nOutlier detection\n\nNot the same as bar charts"
   },
   {
     "objectID": "Data_Classification/Slides.html#deviating-from-the-norm",

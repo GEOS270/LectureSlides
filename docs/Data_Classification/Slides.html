@@ -337,7 +337,66 @@
 <h2>Descriptive Statistics</h2>
 <div class="columns">
 <div class="column" style="width:100%;">
-<p>Descriptors by data type| <strong>Statistic</strong> | <strong>Nominal</strong> | <strong>Ordinal</strong> | <strong>Interval</strong> | <strong>Ratio</strong> | | Equality | x | x | x | x | | Counts/Mode | x | x | x | x | | Rank/Order | | x | x | x | | Median | | ~ | x | x | | Add/Subtract | | | x | x | | Mean | | | x | x | | Multiply/Divide | | | | x |</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><strong>Operation</strong></td>
+<td><strong>Nominal</strong></td>
+<td><strong>Ordinal</strong></td>
+<td><strong>Interval</strong></td>
+<td><strong>Ratio</strong></td>
+</tr>
+<tr class="even">
+<td>Equality</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr class="odd">
+<td>Counts/Mode</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr class="even">
+<td>Rank/Order</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr class="odd">
+<td>Median</td>
+<td></td>
+<td>~</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr class="even">
+<td>Add/Subtract</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr class="odd">
+<td>Mean</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr class="even">
+<td>Multiply/Divide</td>
+<td></td>
+<td></td>
+<td></td>
+<td>x</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </section>
@@ -369,29 +428,28 @@
 <div class="column" style="width:100%;">
 <p>These statistics give context a measure of central tendency.</p>
 <ul>
-<li><p><strong>Range</strong>: The difference between the maximum and minimum values</p></li>
-<li><p><strong>Inter-quartile Range</strong>: Difference between 75th and 25th percentile value</p></li>
-<li><p>Spread around the median (50th percentile), not influenced by outliers</p></li>
-<li><p><strong>Standard Deviation</strong>: <span class="math inline">\(\sigma = \sqrt{\frac{1}{N}\sum\_{i=1}^n (x\_i - U)^2}\)</span></p></li>
-<li><p>Spread of data values (x) around the mean(U), influenced by outliers</p></li>
+<li><strong>Range</strong>: Difference between the maximum and minimum</li>
+<li><strong>Inter-quartile Range</strong>: 75th to 25th percentile
+<ul>
+<li>Spread around the median, not influenced by outliers</li>
+</ul></li>
+<li><strong>Standard Deviation</strong>: <span class="math inline">\(\sigma = \sqrt{\frac{1}{N}\sum\_{i=1}^n (x\_i - U)^2}\)</span>
+<ul>
+<li>Spread around the mean(U), influenced by outliers</li>
+</ul></li>
 </ul>
 </div>
 </div>
 </section>
 <section id="frequency-distribution" class="slide level2">
 <h2>Frequency Distribution</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p>Frequency of occurrence in a <strong>qualitative</strong> data.</p>
 <ul>
 <li>Counts per category</li>
-<li>Bar charts are a useful tool for visualizing frequency distributions</li>
+<li>Bar charts help visualizing frequency distributions</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Frequency_Dist.svg"></p>
-</div>
-</div>
-</section>
+
+<img data-src="images/Frequency_Dist.svg" class="r-stretch"></section>
 <section id="probability-distribution" class="slide level2">
 <h2>Probability Distribution</h2>
 <div class="columns">
@@ -407,15 +465,15 @@
 <tbody>
 <tr class="odd">
 <td>±1 <span class="math inline">\(\sigma\)</span></td>
-<td>68% of observations</td>
+<td>68% obs.</td>
 </tr>
 <tr class="even">
 <td>±2 <span class="math inline">\(\sigma\)</span></td>
-<td>95% of observations</td>
+<td>95% obs.</td>
 </tr>
 <tr class="odd">
 <td>±3 <span class="math inline">\(\sigma\)</span></td>
-<td>99.7% of observations</td>
+<td>99.7% obs.</td>
 </tr>
 </tbody>
 </table>
@@ -424,16 +482,16 @@
 </section>
 <section id="histograms" class="slide level2">
 <h2>Histograms</h2>
+<p>Useful for <strong>quantitative</strong> data, sorts and groups data into <strong>bins</strong> of consistent width.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Useful for <strong>quantitative</strong> data.</p>
 <ul>
-<li><p>Orders data and groups data into <strong>bins</strong> of consistent width</p></li>
-<li><p>Helpful for:</p></li>
-<li><p>Approximating probability distribution</p></li>
-<li><p>Grouping data into classes</p></li>
-<li><p>Outlier detection</p></li>
-<li><p>Similar to bar charts, <strong>but</strong> not the same thing!</p></li>
+<li>Approximating probability distribution
+<ul>
+<li>Grouping data into classes</li>
+<li>Outlier detection</li>
+</ul></li>
+<li>Not the same as bar charts</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/histogram.png"></p>
