@@ -97,11 +97,10 @@ These statistics give context a measure of central tendency.
 Frequency Distribution
 ----------------------
 
-Frequency of occurrence in a **qualitative** data.
+Frequency of occurrence, typically in a **qualitative** dataset.
 
-
-* Counts per category
-* Bar charts help visualizing frequency distributions
+* **Bar charts** help visualize frequency distributions
+  * Counts per category
 
 ![](images/Frequency_Dist.svg)
 
@@ -116,9 +115,9 @@ Probability Distribution
 
 Probability of occurrence in a **quantitative** dataset.
 
-
-* **Normal Distribution**: idealized, based on distance from the mean in **standard deviations**.
-+ Assumed distribution in many statistical tests.
+* **Normal Distribution**: 
+  + Idealized, based on distance from the mean in **standard deviations**.
+  + Assumed in many statistical tests.
 
 :::
 :::{.column width="50%"}
@@ -139,12 +138,12 @@ Probability of occurrence in a **quantitative** dataset.
 Histograms
 ----------
 
-Useful for **quantitative** data, sorts and groups data into **bins** of consistent width.
+Sorts and groups data into **bins** of consistent width.
 
 ::::{.columns}
 :::{.column width="50%"}
 
-* Approximating probability distribution
+* Approximate a probability distribution
   + Grouping data into classes
   + Outlier detection
 
@@ -163,13 +162,10 @@ Useful for **quantitative** data, sorts and groups data into **bins** of consist
 Deviating from the Norm
 -----------------------
 
+Data rarely fits a normal distribution perfectly:
 
 ::::{.columns}
 :::{.column width="50%"}
-
-
-Data rarely fits a normal distribution perfectly:
-
 
 * **Skew**: deviates from a normal distribution
 + Tails with outliers
@@ -180,28 +176,63 @@ Data rarely fits a normal distribution perfectly:
 :::
 :::{.column width="50%"}
 
-Near Normal
+**Near Normal**
 
 
 ![](images/normal_dist.png)
 
+:::
+::::
 
-Skewed Normal
 
+Deviating from the Norm
+-----------------------
+
+Data rarely fits a normal distribution perfectly:
+
+::::{.columns}
+:::{.column width="50%"}
+
+* **Skew**: deviates from a normal distribution
++ Tails with outliers
+
+* **Kurtosis**: deviates from a normal distribution
++ Dispersed or clustered
+
+:::
+:::{.column width="50%"}
+
+**Skewed Normal**
 
 ![](images/normal_dist2.png)
-
-
-Highly Skewed
-
-
-![](images/normal_dist3.png)
-
-
 
 :::
 ::::
 
+
+Deviating from the Norm
+-----------------------
+
+Data rarely fits a normal distribution perfectly:
+
+::::{.columns}
+:::{.column width="50%"}
+
+* **Skew**: deviates from a normal distribution
++ Tails with outliers
+
+* **Kurtosis**: deviates from a normal distribution
++ Dispersed or clustered
+
+:::
+:::{.column width="50%"}
+
+**Highly Skewed**
+
+![](images/normal_dist3.png)
+
+:::
+::::
 
 TopHat Question 1
 =================
@@ -227,65 +258,68 @@ If you are working with nominal or ordinal data, and you want see how many obser
 Normalizing Data
 ----------------
 
+Scaling a variable by another can reveal hidden patterns in our data.
 
 ::::{.columns}
 :::{.column width="50%"}
 
-
-Allows us to account for confounding variables that mask or hide patterns in our data.
-
-
-* Helpful to scale or normalize a value by a another value - time, area, population etc.
-* Examples:
 + Income vs. money spent on food
-+ Population vs. shape area
 
 :::
 :::{.column width="50%"}
 
-Highly Correlated
-
 
 ![](images/confounder_1.png)
 
-
-No Correlation
-
-
-![](images/confounder_2.png)
-
+**Highly Correlated**
 
 
 :::
 ::::
 
 
-Multiple Confounders
---------------------
+Normalizing Data
+----------------
 
+Scaling a variable by another can reveal hidden patterns in our data.
 
 ::::{.columns}
 :::{.column width="50%"}
 
-
-It isn't always straightforward to account for multiple variables.
-
-
-* ex: COVID rates by age groups
-![](images/horgan.jpg)
-
++ Income vs. money spent on food
++ Population vs. shape area
 
 :::
 :::{.column width="50%"}
 
+![](images/confounder_2.png)
+
+**No Correlation**
+
+:::
+::::
+
+Multiple Confounders
+--------------------
+
+Not always straightforward to account for multiple variables.
+
+::::{.columns}
+:::{.column width="60%"}
+
+
+
+
+* e.g., COVID by age groups
+
+![](images/horgan.jpg)
+
+
+:::
+:::{.column width="40%"}
+
 
 ![](images/multiple_confounders.png)
-
-
-1. Population by age group
-2. Workforce participation
-3. Occupational exposure
-
 
 :::
 ::::
@@ -294,17 +328,14 @@ It isn't always straightforward to account for multiple variables.
 Standardizing
 -------------
 
+Allow us to compare between **two or more** variables in different units / scales.
 
 ::::{.columns}
 :::{.column width="50%"}
 
-
-Also allow us to compare between **two or more** variables in different units / scales.
-
-
 * $z = \frac{x-\overline{U}}{\sigma}$
-* Similar idea to normalizing, but:
-+ Removing the mean and standard deviation from multiple variables
+* Similar to normalizing:
+  + Remove the mean and standard deviation from multiple variables
 
 :::
 :::{.column width="50%"}
@@ -325,7 +356,7 @@ TopHat Question 2
 :::{.column width="100%"}
 
 
-Which of these countries has the highest population density? \* *Populations and Areas are approximate, given to two significant figures for convenience.*
+Which of these countries has the highest population density? *Populations and Areas are approximate.*
 
 
 * **Monaco**: Pop (37,000), Area (2 km2)
@@ -370,15 +401,13 @@ Classification Methods
 Common Examples in Arc Pro
 --------------------------
 
+Vancouver dissemination areas by population total: 
 
 ::::{.columns}
 :::{.column width="50%"}
 
+**Not classified**
 
-Vancouver dissemination area populations
-
-
-* Not classified
 * Color scheme is stretched between min/max
 * Difficult to see patterns
 
@@ -395,13 +424,10 @@ Vancouver dissemination area populations
 Equal Interval
 --------------
 
+One of the simplest classification schemes.
 
 ::::{.columns}
 :::{.column width="50%"}
-
-
-One of the simplest classification schemes.
-
 
 * Data is split to classes of equal width based on the range.
 * **Unsupervised**: user defines number of bins.
@@ -419,13 +445,10 @@ One of the simplest classification schemes.
 Defined Interval
 ----------------
 
+Another of the simplest classification schemes.
 
 ::::{.columns}
 :::{.column width="50%"}
-
-
-Another of the simplest classification schemes.
-
 
 * Data is split to classes of equal width based on the range.
 * **Unsupervised**: user defines bin width.
@@ -443,16 +466,13 @@ Another of the simplest classification schemes.
 Quantiles
 ---------
 
+Slightly more complex classification scheme.
 
 ::::{.columns}
 :::{.column width="50%"}
 
-
-Slightly more complex classification scheme.
-
-
 * Data is split into classes by percentiles.
-+ e.g. 0-20%, 20-40%, ... 80-100%.
+  + e.g. 0-20%, 20-40%, ... 80-100%.
 
 * **Unsupervised**: user defines number of bins.
 
@@ -469,16 +489,14 @@ Slightly more complex classification scheme.
 Natural Breaks
 --------------
 
+More complex, data is split using the [Jenks algorithm](http://wiki.gis.com/wiki/index.php/Jenks_Natural_Breaks_Classification).
 
 ::::{.columns}
 :::{.column width="50%"}
 
 
-More complex, data is split using the [Jenks algorithm](http://wiki.gis.com/wiki/index.php/Jenks_Natural_Breaks_Classification).
-
-
 * Optimizes splits, by maximizing within group similarity and between group dissimilarity.
-+ "Natural" classes.
+  + "Natural" classes.
 
 * **Unsupervised**: user defines number of bins.
 
@@ -495,17 +513,14 @@ More complex, data is split using the [Jenks algorithm](http://wiki.gis.com/wiki
 Standard Deviation
 ------------------
 
+Informative to "experts", but not accessible for all audiences.
+
 
 ::::{.columns}
 :::{.column width="50%"}
 
-
-Informative to "experts", but not accessible for all.
-
-
-* Classes based on "distance" from the mean in standard deviations.
-+ Unit-less, converts to interval data.
-+ Diverging color maps.
+* "Distance" from mean in standard deviations.
+  + Interval data: diverging color maps.
 
 * **Unsupervised**: user defines number of bins.
 
@@ -522,13 +537,11 @@ Informative to "experts", but not accessible for all.
 Manual Breaks
 -------------
 
+**Supervised**: User defines break values.
+
 
 ::::{.columns}
 :::{.column width="50%"}
-
-
-**Supervised**: User defines break values.
-
 
 * Allows us to choose more meaningful break values if necessary.
 * Incorporate multiple factors
@@ -547,20 +560,20 @@ Manual Breaks
 TopHat Question 3
 =================
 
-
-::::{.columns}
-:::{.column width="100%"}
-
-
 This classification method seeks to maximize the similarity between data values within groups and maximize the dissimilarity in data values between groups. It tries to find the "optimal" splits within a dataset.
 
+
+::::{.columns}
+:::{.column width="50%"}
 
 * Manual Breaks
 * Quantiles
 * Natural Breaks
+:::
+:::{.column width="50%"}
+
 * Equal Interval
 * Standard Deviation
-
 
 :::
 ::::
@@ -577,8 +590,8 @@ More Complex Methods
 There are many classification methods that are a bit too complex to actually perform in this course.
 
 
-* I'm introducing some because important to be aware of them.
-* You'll encounter them if you continue with GIS.
+* I'm introducing some because they are important to be aware of them.
+  + You'll encounter them if you continue with GIS.
 
 
 :::
@@ -590,7 +603,7 @@ K-means
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="100%"}
 
 
 Algorithm uses random steps to group data into clusters.
@@ -598,10 +611,8 @@ Algorithm uses random steps to group data into clusters.
 
 * **Unsupervised**: user defines number of bins & iterations.
 
-:::
-:::{.column width="50%"}
 
-![](images/kmeans.gif)
+![](images/kmeans.gif){}
 
 
 :::
@@ -611,12 +622,12 @@ Algorithm uses random steps to group data into clusters.
 Median Absolute Deviation
 -------------------------
 
+Frequently used for  automated outlier detection.
 
 ::::{.columns}
 :::{.column width="50%"}
 
 
-Used for automated detection of outliers.
 
 
 * **Unsupervised**: user defines error threshold.
@@ -634,13 +645,11 @@ Used for automated detection of outliers.
 Decision Trees
 --------------
 
+Fit training data to user defined categories.
+
 
 ::::{.columns}
 :::{.column width="50%"}
-
-
-Fit training data to user defined categories.
-
 
 * **Supervised**: user provides training classes.
 * *Automated*: algorithm determines break values.
@@ -659,13 +668,11 @@ Fit training data to user defined categories.
 Random Forests
 --------------
 
+Multiple trees (>100) can be averaged to increase performance and generalization.
+
 
 ::::{.columns}
 :::{.column width="50%"}
-
-
-Multiple trees (>100) can be averaged to increase performance and generalization.
-
 
 * **Supervised**: user provides training classes and "hyperparameters".
 * *Automated*: algorithm determines break values.
@@ -684,12 +691,10 @@ Multiple trees (>100) can be averaged to increase performance and generalization
 Landscape Classification
 ------------------------
 
+Multiple trees (>100) can be averaged to increase performance and generalization.
 
 ::::{.columns}
 :::{.column width="50%"}
-
-
-Multiple trees (>100) can be averaged to increase performance and generalization.
 
 
 * **Supervised**: user provides training classes and "hyperparameters".
@@ -697,7 +702,10 @@ Multiple trees (>100) can be averaged to increase performance and generalization
 * Low risk of over-fitting
 
 :::
-:::{.column width="50%"}
+:::{.column width="20%"}
+
+:::
+:::{.column width="30%"}
 
 ![](images/FishIsland_NDVI2.gif)
 
@@ -709,18 +717,16 @@ Multiple trees (>100) can be averaged to increase performance and generalization
 Neural Networks
 ---------------
 
+One of the most complex methods, an algorithm learns complex relationships in dataset.
+
 
 ::::{.columns}
 :::{.column width="50%"}
 
 
-One of the most complex methods.
-
-
 * **Supervised**: user provides training classes and "hyperparameters".
-* *Automated*: algorithm maps relationships in dataset.
 * Risk of over-fitting
-+ Requires careful inspection
+  + Requires careful inspection
 
 :::
 :::{.column width="50%"}

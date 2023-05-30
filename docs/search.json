@@ -88,49 +88,70 @@
     "href": "Data_Classification/Slides.html#frequency-distribution",
     "title": "Lecture Slides",
     "section": "Frequency Distribution",
-    "text": "Frequency Distribution\nFrequency of occurrence in a qualitative data.\n\nCounts per category\nBar charts help visualizing frequency distributions"
+    "text": "Frequency Distribution\nFrequency of occurrence, typically in a qualitative dataset.\n\nBar charts help visualize frequency distributions\n\nCounts per category"
   },
   {
     "objectID": "Data_Classification/Slides.html#probability-distribution",
     "href": "Data_Classification/Slides.html#probability-distribution",
     "title": "Lecture Slides",
     "section": "Probability Distribution",
-    "text": "Probability Distribution\n\n\nProbability of occurrence in a quantitative dataset.\n\nNormal Distribution: idealized, based on distance from the mean in standard deviations.\nAssumed distribution in many statistical tests.\n\n\n\n\n\n\n±1 \\(\\sigma\\)\n68% obs.\n\n\n±2 \\(\\sigma\\)\n95% obs.\n\n\n±3 \\(\\sigma\\)\n99.7% obs."
+    "text": "Probability Distribution\n\n\nProbability of occurrence in a quantitative dataset.\n\nNormal Distribution:\n\nIdealized, based on distance from the mean in standard deviations.\nAssumed in many statistical tests.\n\n\n\n\n\n\n\n±1 \\(\\sigma\\)\n68% obs.\n\n\n±2 \\(\\sigma\\)\n95% obs.\n\n\n±3 \\(\\sigma\\)\n99.7% obs."
   },
   {
     "objectID": "Data_Classification/Slides.html#histograms",
     "href": "Data_Classification/Slides.html#histograms",
     "title": "Lecture Slides",
     "section": "Histograms",
-    "text": "Histograms\nUseful for quantitative data, sorts and groups data into bins of consistent width.\n\n\n\nApproximating probability distribution\n\nGrouping data into classes\nOutlier detection\n\nNot the same as bar charts"
+    "text": "Histograms\nSorts and groups data into bins of consistent width.\n\n\n\nApproximate a probability distribution\n\nGrouping data into classes\nOutlier detection\n\nNot the same as bar charts"
   },
   {
     "objectID": "Data_Classification/Slides.html#deviating-from-the-norm",
     "href": "Data_Classification/Slides.html#deviating-from-the-norm",
     "title": "Lecture Slides",
     "section": "Deviating from the Norm",
-    "text": "Deviating from the Norm\n\n\nData rarely fits a normal distribution perfectly:\n\nSkew: deviates from a normal distribution\nTails with outliers\nKurtosis: deviates from a normal distribution\nDispersed or clustered\n\n\nNear Normal\n\nSkewed Normal\n\nHighly Skewed"
+    "text": "Deviating from the Norm\nData rarely fits a normal distribution perfectly:\n\n\n\nSkew: deviates from a normal distribution\nTails with outliers\nKurtosis: deviates from a normal distribution\nDispersed or clustered\n\n\nNear Normal"
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#deviating-from-the-norm-1",
+    "href": "Data_Classification/Slides.html#deviating-from-the-norm-1",
+    "title": "Lecture Slides",
+    "section": "Deviating from the Norm",
+    "text": "Deviating from the Norm\nData rarely fits a normal distribution perfectly:\n\n\n\nSkew: deviates from a normal distribution\nTails with outliers\nKurtosis: deviates from a normal distribution\nDispersed or clustered\n\n\nSkewed Normal"
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#deviating-from-the-norm-2",
+    "href": "Data_Classification/Slides.html#deviating-from-the-norm-2",
+    "title": "Lecture Slides",
+    "section": "Deviating from the Norm",
+    "text": "Deviating from the Norm\nData rarely fits a normal distribution perfectly:\n\n\n\nSkew: deviates from a normal distribution\nTails with outliers\nKurtosis: deviates from a normal distribution\nDispersed or clustered\n\n\nHighly Skewed"
   },
   {
     "objectID": "Data_Classification/Slides.html#normalizing-data",
     "href": "Data_Classification/Slides.html#normalizing-data",
     "title": "Lecture Slides",
     "section": "Normalizing Data",
-    "text": "Normalizing Data\n\n\nAllows us to account for confounding variables that mask or hide patterns in our data.\n\nHelpful to scale or normalize a value by a another value - time, area, population etc.\nExamples:\nIncome vs. money spent on food\nPopulation vs. shape area\n\n\nHighly Correlated\n\nNo Correlation"
+    "text": "Normalizing Data\nScaling a variable by another can reveal hidden patterns in our data.\n\n\n\nIncome vs. money spent on food\n\n\n\nHighly Correlated"
+  },
+  {
+    "objectID": "Data_Classification/Slides.html#normalizing-data-1",
+    "href": "Data_Classification/Slides.html#normalizing-data-1",
+    "title": "Lecture Slides",
+    "section": "Normalizing Data",
+    "text": "Normalizing Data\nScaling a variable by another can reveal hidden patterns in our data.\n\n\n\nIncome vs. money spent on food\nPopulation vs. shape area\n\n\n\nNo Correlation"
   },
   {
     "objectID": "Data_Classification/Slides.html#multiple-confounders",
     "href": "Data_Classification/Slides.html#multiple-confounders",
     "title": "Lecture Slides",
     "section": "Multiple Confounders",
-    "text": "Multiple Confounders\n\n\nIt isn’t always straightforward to account for multiple variables.\n\nex: COVID rates by age groups \n\n\n\n\nPopulation by age group\nWorkforce participation\nOccupational exposure"
+    "text": "Multiple Confounders\nNot always straightforward to account for multiple variables.\n\n\n\ne.g., COVID by age groups"
   },
   {
     "objectID": "Data_Classification/Slides.html#standardizing",
     "href": "Data_Classification/Slides.html#standardizing",
     "title": "Lecture Slides",
     "section": "Standardizing",
-    "text": "Standardizing\n\n\nAlso allow us to compare between two or more variables in different units / scales.\n\n\\(z = \\frac{x-\\overline{U}}{\\sigma}\\)\nSimilar idea to normalizing, but:\nRemoving the mean and standard deviation from multiple variables"
+    "text": "Standardizing\nAllow us to compare between two or more variables in different units / scales.\n\n\n\n\\(z = \\frac{x-\\overline{U}}{\\sigma}\\)\nSimilar to normalizing:\n\nRemove the mean and standard deviation from multiple variables"
   },
   {
     "objectID": "Data_Classification/Slides.html#classification-methods",
@@ -144,56 +165,56 @@
     "href": "Data_Classification/Slides.html#common-examples-in-arc-pro",
     "title": "Lecture Slides",
     "section": "Common Examples in Arc Pro",
-    "text": "Common Examples in Arc Pro\n\n\nVancouver dissemination area populations\n\nNot classified\nColor scheme is stretched between min/max\nDifficult to see patterns"
+    "text": "Common Examples in Arc Pro\nVancouver dissemination areas by population total:\n\n\nNot classified\n\nColor scheme is stretched between min/max\nDifficult to see patterns"
   },
   {
     "objectID": "Data_Classification/Slides.html#equal-interval",
     "href": "Data_Classification/Slides.html#equal-interval",
     "title": "Lecture Slides",
     "section": "Equal Interval",
-    "text": "Equal Interval\n\n\nOne of the simplest classification schemes.\n\nData is split to classes of equal width based on the range.\nUnsupervised: user defines number of bins."
+    "text": "Equal Interval\nOne of the simplest classification schemes.\n\n\n\nData is split to classes of equal width based on the range.\nUnsupervised: user defines number of bins."
   },
   {
     "objectID": "Data_Classification/Slides.html#defined-interval",
     "href": "Data_Classification/Slides.html#defined-interval",
     "title": "Lecture Slides",
     "section": "Defined Interval",
-    "text": "Defined Interval\n\n\nAnother of the simplest classification schemes.\n\nData is split to classes of equal width based on the range.\nUnsupervised: user defines bin width."
+    "text": "Defined Interval\nAnother of the simplest classification schemes.\n\n\n\nData is split to classes of equal width based on the range.\nUnsupervised: user defines bin width."
   },
   {
     "objectID": "Data_Classification/Slides.html#quantiles",
     "href": "Data_Classification/Slides.html#quantiles",
     "title": "Lecture Slides",
     "section": "Quantiles",
-    "text": "Quantiles\n\n\nSlightly more complex classification scheme.\n\nData is split into classes by percentiles.\ne.g. 0-20%, 20-40%, … 80-100%.\nUnsupervised: user defines number of bins."
+    "text": "Quantiles\nSlightly more complex classification scheme.\n\n\n\nData is split into classes by percentiles.\n\ne.g. 0-20%, 20-40%, … 80-100%.\n\nUnsupervised: user defines number of bins."
   },
   {
     "objectID": "Data_Classification/Slides.html#natural-breaks",
     "href": "Data_Classification/Slides.html#natural-breaks",
     "title": "Lecture Slides",
     "section": "Natural Breaks",
-    "text": "Natural Breaks\n\n\nMore complex, data is split using the Jenks algorithm.\n\nOptimizes splits, by maximizing within group similarity and between group dissimilarity.\n“Natural” classes.\nUnsupervised: user defines number of bins."
+    "text": "Natural Breaks\nMore complex, data is split using the Jenks algorithm.\n\n\n\nOptimizes splits, by maximizing within group similarity and between group dissimilarity.\n\n“Natural” classes.\n\nUnsupervised: user defines number of bins."
   },
   {
     "objectID": "Data_Classification/Slides.html#standard-deviation",
     "href": "Data_Classification/Slides.html#standard-deviation",
     "title": "Lecture Slides",
     "section": "Standard Deviation",
-    "text": "Standard Deviation\n\n\nInformative to “experts”, but not accessible for all.\n\nClasses based on “distance” from the mean in standard deviations.\nUnit-less, converts to interval data.\nDiverging color maps.\nUnsupervised: user defines number of bins."
+    "text": "Standard Deviation\nInformative to “experts”, but not accessible for all audiences.\n\n\n\n“Distance” from mean in standard deviations.\n\nInterval data: diverging color maps.\n\nUnsupervised: user defines number of bins."
   },
   {
     "objectID": "Data_Classification/Slides.html#manual-breaks",
     "href": "Data_Classification/Slides.html#manual-breaks",
     "title": "Lecture Slides",
     "section": "Manual Breaks",
-    "text": "Manual Breaks\n\n\nSupervised: User defines break values.\n\nAllows us to choose more meaningful break values if necessary.\nIncorporate multiple factors\nInfluence the way the data is perceived."
+    "text": "Manual Breaks\nSupervised: User defines break values.\n\n\n\nAllows us to choose more meaningful break values if necessary.\nIncorporate multiple factors\nInfluence the way the data is perceived."
   },
   {
     "objectID": "Data_Classification/Slides.html#more-complex-methods",
     "href": "Data_Classification/Slides.html#more-complex-methods",
     "title": "Lecture Slides",
     "section": "More Complex Methods",
-    "text": "More Complex Methods\n\n\nThere are many classification methods that are a bit too complex to actually perform in this course.\n\nI’m introducing some because important to be aware of them.\nYou’ll encounter them if you continue with GIS."
+    "text": "More Complex Methods\n\n\nThere are many classification methods that are a bit too complex to actually perform in this course.\n\nI’m introducing some because they are important to be aware of them.\n\nYou’ll encounter them if you continue with GIS."
   },
   {
     "objectID": "Data_Classification/Slides.html#k-means",
@@ -207,35 +228,35 @@
     "href": "Data_Classification/Slides.html#median-absolute-deviation",
     "title": "Lecture Slides",
     "section": "Median Absolute Deviation",
-    "text": "Median Absolute Deviation\n\n\nUsed for automated detection of outliers.\n\nUnsupervised: user defines error threshold."
+    "text": "Median Absolute Deviation\nFrequently used for automated outlier detection.\n\n\n\nUnsupervised: user defines error threshold."
   },
   {
     "objectID": "Data_Classification/Slides.html#decision-trees",
     "href": "Data_Classification/Slides.html#decision-trees",
     "title": "Lecture Slides",
     "section": "Decision Trees",
-    "text": "Decision Trees\n\n\nFit training data to user defined categories.\n\nSupervised: user provides training classes.\nAutomated: algorithm determines break values.\nRisk of over-fitting"
+    "text": "Decision Trees\nFit training data to user defined categories.\n\n\n\nSupervised: user provides training classes.\nAutomated: algorithm determines break values.\nRisk of over-fitting"
   },
   {
     "objectID": "Data_Classification/Slides.html#random-forests",
     "href": "Data_Classification/Slides.html#random-forests",
     "title": "Lecture Slides",
     "section": "Random Forests",
-    "text": "Random Forests\n\n\nMultiple trees (>100) can be averaged to increase performance and generalization.\n\nSupervised: user provides training classes and “hyperparameters”.\nAutomated: algorithm determines break values.\nLow risk of over-fitting"
+    "text": "Random Forests\nMultiple trees (>100) can be averaged to increase performance and generalization.\n\n\n\nSupervised: user provides training classes and “hyperparameters”.\nAutomated: algorithm determines break values.\nLow risk of over-fitting"
   },
   {
     "objectID": "Data_Classification/Slides.html#landscape-classification",
     "href": "Data_Classification/Slides.html#landscape-classification",
     "title": "Lecture Slides",
     "section": "Landscape Classification",
-    "text": "Landscape Classification\n\n\nMultiple trees (>100) can be averaged to increase performance and generalization.\n\nSupervised: user provides training classes and “hyperparameters”.\nAutomated: algorithm determines break values.\nLow risk of over-fitting"
+    "text": "Landscape Classification\nMultiple trees (>100) can be averaged to increase performance and generalization.\n\n\n\nSupervised: user provides training classes and “hyperparameters”.\nAutomated: algorithm determines break values.\nLow risk of over-fitting"
   },
   {
     "objectID": "Data_Classification/Slides.html#neural-networks",
     "href": "Data_Classification/Slides.html#neural-networks",
     "title": "Lecture Slides",
     "section": "Neural Networks",
-    "text": "Neural Networks\n\n\nOne of the most complex methods.\n\nSupervised: user provides training classes and “hyperparameters”.\nAutomated: algorithm maps relationships in dataset.\nRisk of over-fitting\nRequires careful inspection"
+    "text": "Neural Networks\nOne of the most complex methods, an algorithm learns complex relationships in dataset.\n\n\n\nSupervised: user provides training classes and “hyperparameters”.\nRisk of over-fitting\n\nRequires careful inspection"
   },
   {
     "objectID": "Data_Visualization/Slides.html#cartography",

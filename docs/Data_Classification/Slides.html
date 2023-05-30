@@ -443,10 +443,12 @@
 </section>
 <section id="frequency-distribution" class="slide level2">
 <h2>Frequency Distribution</h2>
-<p>Frequency of occurrence in a <strong>qualitative</strong> data.</p>
+<p>Frequency of occurrence, typically in a <strong>qualitative</strong> dataset.</p>
+<ul>
+<li><strong>Bar charts</strong> help visualize frequency distributions
 <ul>
 <li>Counts per category</li>
-<li>Bar charts help visualizing frequency distributions</li>
+</ul></li>
 </ul>
 
 <img data-src="images/Frequency_Dist.svg" class="r-stretch"></section>
@@ -456,8 +458,11 @@
 <div class="column" style="width:50%;">
 <p>Probability of occurrence in a <strong>quantitative</strong> dataset.</p>
 <ul>
-<li><strong>Normal Distribution</strong>: idealized, based on distance from the mean in <strong>standard deviations</strong>.</li>
-<li>Assumed distribution in many statistical tests.</li>
+<li><strong>Normal Distribution</strong>:
+<ul>
+<li>Idealized, based on distance from the mean in <strong>standard deviations</strong>.</li>
+<li>Assumed in many statistical tests.</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/normal_dist.svg"></p>
@@ -482,11 +487,11 @@
 </section>
 <section id="histograms" class="slide level2">
 <h2>Histograms</h2>
-<p>Useful for <strong>quantitative</strong> data, sorts and groups data into <strong>bins</strong> of consistent width.</p>
+<p>Sorts and groups data into <strong>bins</strong> of consistent width.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
-<li>Approximating probability distribution
+<li>Approximate a probability distribution
 <ul>
 <li>Grouping data into classes</li>
 <li>Outlier detection</li>
@@ -500,9 +505,9 @@
 </section>
 <section id="deviating-from-the-norm" class="slide level2">
 <h2>Deviating from the Norm</h2>
+<p>Data rarely fits a normal distribution perfectly:</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Data rarely fits a normal distribution perfectly:</p>
 <ul>
 <li><p><strong>Skew</strong>: deviates from a normal distribution</p></li>
 <li><p>Tails with outliers</p></li>
@@ -510,11 +515,41 @@
 <li><p>Dispersed or clustered</p></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p>Near Normal</p>
+<p><strong>Near Normal</strong></p>
 <p><img data-src="images/normal_dist.png"></p>
-<p>Skewed Normal</p>
+</div>
+</div>
+</section>
+<section id="deviating-from-the-norm-1" class="slide level2">
+<h2>Deviating from the Norm</h2>
+<p>Data rarely fits a normal distribution perfectly:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p><strong>Skew</strong>: deviates from a normal distribution</p></li>
+<li><p>Tails with outliers</p></li>
+<li><p><strong>Kurtosis</strong>: deviates from a normal distribution</p></li>
+<li><p>Dispersed or clustered</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Skewed Normal</strong></p>
 <p><img data-src="images/normal_dist2.png"></p>
-<p>Highly Skewed</p>
+</div>
+</div>
+</section>
+<section id="deviating-from-the-norm-2" class="slide level2">
+<h2>Deviating from the Norm</h2>
+<p>Data rarely fits a normal distribution perfectly:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p><strong>Skew</strong>: deviates from a normal distribution</p></li>
+<li><p>Tails with outliers</p></li>
+<li><p><strong>Kurtosis</strong>: deviates from a normal distribution</p></li>
+<li><p>Dispersed or clustered</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Highly Skewed</strong></p>
 <p><img data-src="images/normal_dist3.png"></p>
 </div>
 </div>
@@ -536,50 +571,58 @@
 </section>
 <section id="normalizing-data" class="slide level2">
 <h2>Normalizing Data</h2>
+<p>Scaling a variable by another can reveal hidden patterns in our data.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Allows us to account for confounding variables that mask or hide patterns in our data.</p>
 <ul>
-<li>Helpful to scale or normalize a value by a another value - time, area, population etc.</li>
-<li>Examples:</li>
+<li>Income vs.&nbsp;money spent on food</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/confounder_1.png"></p>
+<p><strong>Highly Correlated</strong></p>
+</div>
+</div>
+</section>
+<section id="normalizing-data-1" class="slide level2">
+<h2>Normalizing Data</h2>
+<p>Scaling a variable by another can reveal hidden patterns in our data.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
 <li>Income vs.&nbsp;money spent on food</li>
 <li>Population vs.&nbsp;shape area</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p>Highly Correlated</p>
-<p><img data-src="images/confounder_1.png"></p>
-<p>No Correlation</p>
 <p><img data-src="images/confounder_2.png"></p>
+<p><strong>No Correlation</strong></p>
 </div>
 </div>
 </section>
 <section id="multiple-confounders" class="slide level2">
 <h2>Multiple Confounders</h2>
+<p>Not always straightforward to account for multiple variables.</p>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>It isn’t always straightforward to account for multiple variables.</p>
+<div class="column" style="width:60%;">
 <ul>
-<li>ex: COVID rates by age groups <img data-src="images/horgan.jpg"></li>
+<li>e.g., COVID by age groups</li>
 </ul>
-</div><div class="column" style="width:50%;">
+<p><img data-src="images/horgan.jpg"></p>
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/multiple_confounders.png"></p>
-<ol type="1">
-<li>Population by age group</li>
-<li>Workforce participation</li>
-<li>Occupational exposure</li>
-</ol>
 </div>
 </div>
 </section>
 <section id="standardizing" class="slide level2">
 <h2>Standardizing</h2>
+<p>Allow us to compare between <strong>two or more</strong> variables in different units / scales.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Also allow us to compare between <strong>two or more</strong> variables in different units / scales.</p>
 <ul>
 <li><span class="math inline">\(z = \frac{x-\overline{U}}{\sigma}\)</span></li>
-<li>Similar idea to normalizing, but:</li>
-<li>Removing the mean and standard deviation from multiple variables</li>
+<li>Similar to normalizing:
+<ul>
+<li>Remove the mean and standard deviation from multiple variables</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/Standardizing.png"></p>
@@ -591,7 +634,7 @@
 <h1>TopHat Question 2</h1>
 <div class="columns">
 <div class="column" style="width:100%;">
-<p>Which of these countries has the highest population density? * <em>Populations and Areas are approximate, given to two significant figures for convenience.</em></p>
+<p>Which of these countries has the highest population density? <em>Populations and Areas are approximate.</em></p>
 <ul>
 <li><strong>Monaco</strong>: Pop (37,000), Area (2 km2)</li>
 <li><strong>Singapore</strong>: Pop (5,500,000), Area (720 km2)</li>
@@ -621,11 +664,11 @@
 </section>
 <section id="common-examples-in-arc-pro" class="slide level2">
 <h2>Common Examples in Arc Pro</h2>
+<p>Vancouver dissemination areas by population total:</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Vancouver dissemination area populations</p>
+<p><strong>Not classified</strong></p>
 <ul>
-<li>Not classified</li>
 <li>Color scheme is stretched between min/max</li>
 <li>Difficult to see patterns</li>
 </ul>
@@ -636,9 +679,9 @@
 </section>
 <section id="equal-interval" class="slide level2">
 <h2>Equal Interval</h2>
+<p>One of the simplest classification schemes.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>One of the simplest classification schemes.</p>
 <ul>
 <li>Data is split to classes of equal width based on the range.</li>
 <li><strong>Unsupervised</strong>: user defines number of bins.</li>
@@ -650,9 +693,9 @@
 </section>
 <section id="defined-interval" class="slide level2">
 <h2>Defined Interval</h2>
+<p>Another of the simplest classification schemes.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Another of the simplest classification schemes.</p>
 <ul>
 <li>Data is split to classes of equal width based on the range.</li>
 <li><strong>Unsupervised</strong>: user defines bin width.</li>
@@ -664,13 +707,15 @@
 </section>
 <section id="quantiles" class="slide level2">
 <h2>Quantiles</h2>
+<p>Slightly more complex classification scheme.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Slightly more complex classification scheme.</p>
 <ul>
-<li><p>Data is split into classes by percentiles.</p></li>
-<li><p>e.g.&nbsp;0-20%, 20-40%, … 80-100%.</p></li>
-<li><p><strong>Unsupervised</strong>: user defines number of bins.</p></li>
+<li>Data is split into classes by percentiles.
+<ul>
+<li>e.g.&nbsp;0-20%, 20-40%, … 80-100%.</li>
+</ul></li>
+<li><strong>Unsupervised</strong>: user defines number of bins.</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/Quantile.png"></p>
@@ -679,13 +724,15 @@
 </section>
 <section id="natural-breaks" class="slide level2">
 <h2>Natural Breaks</h2>
+<p>More complex, data is split using the <a href="http://wiki.gis.com/wiki/index.php/Jenks_Natural_Breaks_Classification">Jenks algorithm</a>.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>More complex, data is split using the <a href="http://wiki.gis.com/wiki/index.php/Jenks_Natural_Breaks_Classification">Jenks algorithm</a>.</p>
 <ul>
-<li><p>Optimizes splits, by maximizing within group similarity and between group dissimilarity.</p></li>
-<li><p>“Natural” classes.</p></li>
-<li><p><strong>Unsupervised</strong>: user defines number of bins.</p></li>
+<li>Optimizes splits, by maximizing within group similarity and between group dissimilarity.
+<ul>
+<li>“Natural” classes.</li>
+</ul></li>
+<li><strong>Unsupervised</strong>: user defines number of bins.</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/Natural_break.png"></p>
@@ -694,14 +741,15 @@
 </section>
 <section id="standard-deviation" class="slide level2">
 <h2>Standard Deviation</h2>
+<p>Informative to “experts”, but not accessible for all audiences.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Informative to “experts”, but not accessible for all.</p>
 <ul>
-<li><p>Classes based on “distance” from the mean in standard deviations.</p></li>
-<li><p>Unit-less, converts to interval data.</p></li>
-<li><p>Diverging color maps.</p></li>
-<li><p><strong>Unsupervised</strong>: user defines number of bins.</p></li>
+<li>“Distance” from mean in standard deviations.
+<ul>
+<li>Interval data: diverging color maps.</li>
+</ul></li>
+<li><strong>Unsupervised</strong>: user defines number of bins.</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/Standard_dev.png"></p>
@@ -710,9 +758,9 @@
 </section>
 <section id="manual-breaks" class="slide level2">
 <h2>Manual Breaks</h2>
+<p><strong>Supervised</strong>: User defines break values.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Supervised</strong>: User defines break values.</p>
 <ul>
 <li>Allows us to choose more meaningful break values if necessary.</li>
 <li>Incorporate multiple factors</li>
@@ -726,13 +774,16 @@
 <section>
 <section id="tophat-question-3" class="title-slide slide level1 center">
 <h1>TopHat Question 3</h1>
-<div class="columns">
-<div class="column" style="width:100%;">
 <p>This classification method seeks to maximize the similarity between data values within groups and maximize the dissimilarity in data values between groups. It tries to find the “optimal” splits within a dataset.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
 <li>Manual Breaks</li>
 <li>Quantiles</li>
 <li>Natural Breaks</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
 <li>Equal Interval</li>
 <li>Standard Deviation</li>
 </ul>
@@ -745,8 +796,10 @@
 <div class="column" style="width:100%;">
 <p>There are many classification methods that are a bit too complex to actually perform in this course.</p>
 <ul>
-<li>I’m introducing some because important to be aware of them.</li>
+<li>I’m introducing some because they are important to be aware of them.
+<ul>
 <li>You’ll encounter them if you continue with GIS.</li>
+</ul></li>
 </ul>
 </div>
 </div>
@@ -754,21 +807,20 @@
 <section id="k-means" class="slide level2">
 <h2>K-means</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:100%;">
 <p>Algorithm uses random steps to group data into clusters.</p>
 <ul>
 <li><strong>Unsupervised</strong>: user defines number of bins &amp; iterations.</li>
 </ul>
-</div><div class="column" style="width:50%;">
 <p><img data-src="images/kmeans.gif"></p>
 </div>
 </div>
 </section>
 <section id="median-absolute-deviation" class="slide level2">
 <h2>Median Absolute Deviation</h2>
+<p>Frequently used for automated outlier detection.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Used for automated detection of outliers.</p>
 <ul>
 <li><strong>Unsupervised</strong>: user defines error threshold.</li>
 </ul>
@@ -779,9 +831,9 @@
 </section>
 <section id="decision-trees" class="slide level2">
 <h2>Decision Trees</h2>
+<p>Fit training data to user defined categories.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Fit training data to user defined categories.</p>
 <ul>
 <li><strong>Supervised</strong>: user provides training classes.</li>
 <li><em>Automated</em>: algorithm determines break values.</li>
@@ -794,9 +846,9 @@
 </section>
 <section id="random-forests" class="slide level2">
 <h2>Random Forests</h2>
+<p>Multiple trees (&gt;100) can be averaged to increase performance and generalization.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Multiple trees (&gt;100) can be averaged to increase performance and generalization.</p>
 <ul>
 <li><strong>Supervised</strong>: user provides training classes and “hyperparameters”.</li>
 <li><em>Automated</em>: algorithm determines break values.</li>
@@ -809,29 +861,32 @@
 </section>
 <section id="landscape-classification" class="slide level2">
 <h2>Landscape Classification</h2>
+<p>Multiple trees (&gt;100) can be averaged to increase performance and generalization.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Multiple trees (&gt;100) can be averaged to increase performance and generalization.</p>
 <ul>
 <li><strong>Supervised</strong>: user provides training classes and “hyperparameters”.</li>
 <li><em>Automated</em>: algorithm determines break values.</li>
 <li>Low risk of over-fitting</li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:20%;">
+
+</div><div class="column" style="width:30%;">
 <p><img data-src="images/FishIsland_NDVI2.gif"></p>
 </div>
 </div>
 </section>
 <section id="neural-networks" class="slide level2">
 <h2>Neural Networks</h2>
+<p>One of the most complex methods, an algorithm learns complex relationships in dataset.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>One of the most complex methods.</p>
 <ul>
 <li><strong>Supervised</strong>: user provides training classes and “hyperparameters”.</li>
-<li><em>Automated</em>: algorithm maps relationships in dataset.</li>
-<li>Risk of over-fitting</li>
+<li>Risk of over-fitting
+<ul>
 <li>Requires careful inspection</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/NN.gif"></p>
