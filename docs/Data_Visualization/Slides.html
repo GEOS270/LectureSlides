@@ -450,33 +450,41 @@
 </section>
 <section id="data-symbolization" class="slide level2">
 <h2>Data Symbolization</h2>
-<div class="columns">
-<div class="column" style="width:100%;">
-<p>The techniques we use to represent information on a map.</p>
+<p>The techniques we use and choices we make to represent information on a map.</p>
 <ul>
-<li><p>The choices we make will convey aspects of the data</p></li>
-<li><p>Color &amp; brightness</p></li>
-<li><p>Shapes &amp; lines</p></li>
-<li><p>Characters &amp; fonts</p></li>
-<li><p>Position &amp; size</p></li>
-<li><p>Some choices may lead to assumptions being made about the data</p></li>
-<li><p>Intentionally or otherwise</p></li>
+<li>Color &amp; brightness</li>
+<li>Shapes &amp; lines</li>
+<li>Characters &amp; fonts</li>
+<li>Position &amp; size</li>
 </ul>
-</div>
-</div>
+</section>
+<section id="data-symbolization-1" class="slide level2">
+<h2>Data Symbolization</h2>
+<p>The techniques we use and choices we make to represent information on a map.</p>
+<ul>
+<li>May lead to assumptions being made about the data
+<ul>
+<li>Intentionally or otherwise</li>
+</ul></li>
+</ul>
 </section>
 <section id="color" class="slide level2">
 <h2>Color</h2>
+<p>The <strong>HSV</strong> scale describes three components of a color</p>
+<ul>
+<li><strong>Hue</strong>: the dominant wavelength
+<ul>
+<li>Typical association with the term “color”</li>
+</ul></li>
+</ul>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>The <strong>HSV</strong> scale describes three components.</p>
 <ul>
-<li><p><strong>Hue</strong>: the dominant wavelength</p></li>
-<li><p>Typical association with the term “color”</p></li>
-<li><p><strong>Saturation</strong>: the intensity of one color</p></li>
-<li><p>All red or only a little red?</p></li>
-<li><p><strong>Value</strong>: the brightness of one color</p></li>
-<li><p>Lightness or darkness, how much light is reflected?</p></li>
+<li><strong>Saturation</strong>: the level of dominance
+<ul>
+<li>All red or only a little?</li>
+</ul></li>
+<li><strong>Value</strong>: the brightness / intensity</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/HSV.png"></p>
@@ -486,23 +494,28 @@
 <section id="color-choice" class="slide level2">
 <h2>Color Choice</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>It is important to choose the right kind of color map.</p>
+<div class="column" style="width:65%;">
 <ul>
-<li><p><strong>Qualitative</strong>: Different hues</p></li>
-<li><p>Same value and saturation</p></li>
-<li><p><strong>Sequential</strong>: Single hue</p></li>
-<li><p>Increasing saturation or value</p></li>
-<li><p><strong>Diverging</strong>: Opposing hues</p></li>
-<li><p>Decreasing saturation toward center</p></li>
+<li><strong>Qualitative</strong>: Different hues
+<ul>
+<li>Same value and saturation</li>
+</ul></li>
+<li><strong>Sequential</strong>: Single hue
+<ul>
+<li>Increasing saturation or value</li>
+</ul></li>
+<li><strong>Diverging</strong>: Opposing hues
+<ul>
+<li>Decreasing saturation toward center</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:35%;">
 <p>Qualitative: Nominal<br>
-<img data-src="images/qualitative.jpg"></p>
+<img data-src="images/qualitative.jpg" style="width:75.0%"></p>
 <p>Sequential: Ordinal &amp; Ratio<br>
 <img data-src="images/sequential.jpg"></p>
 <p>Diverging: Interval<br>
-<img data-src="images/divergin.jpg"></p>
+<img data-src="images/divergin.jpg" style="width:75.0%"></p>
 </div>
 </div>
 </section></section>
@@ -511,7 +524,8 @@
 <h1>TopHat Question 2</h1>
 <div class="columns">
 <div class="column" style="width:100%;">
-<p>This type of color map would be best suited for which variable?<img data-src="images/qualitative.jpg"></p>
+<p>This type of color map would be best suited for which variable?</p>
+<p><img data-src="images/qualitative.jpg" style="width:30.0%"></p>
 <ul>
 <li>Land use (Forest, Agriculture, Urban, etc.)</li>
 <li>Temperatures (in Kelvin)</li>
@@ -539,21 +553,23 @@
 </div>
 </div>
 </section>
-<section id="what-type-of-are-we-data-representing" class="slide level2">
-<h2>What Type of Are We Data Representing?</h2>
+<section id="type-of-phenomena" class="slide level2">
+<h2>Type of Phenomena?</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>Discrete</strong>:</p>
 <ul>
 <li>Points/lines/shapes</li>
-<li>Hues <img data-src="images/Discrete.png"></li>
+<li>Hues</li>
 </ul>
+<p><img data-src="images/Discrete.png" style="width:80.0%"></p>
 </div><div class="column" style="width:50%;">
 <p><strong>Continuous</strong>:</p>
 <ul>
 <li>Surfaces, contour lines</li>
-<li>Saturation and value <img data-src="images/elevation.png"></li>
+<li>Saturation and value</li>
 </ul>
+<p><img data-src="images/elevation.png" style="width:75.0%"></p>
 </div>
 </div>
 </section>
@@ -575,26 +591,62 @@
 <section id="what-is-the-measurement-scale-1" class="slide level2">
 <h2>What is the Measurement Scale?</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:55%;">
 <p><strong>Ordinal, Interval, or Ratio</strong>:</p>
 <ul>
 <li>Graduated symbols, line weights</li>
 <li>Different shades/intensities</li>
 <li><strong>Do Not</strong> choose colors or shapes that imply a difference in category</li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:45%;">
 <p><img data-src="images/Final_Map.png"></p>
 </div>
 </div>
 </section>
 <section id="visual-hierarchy" class="slide level2">
 <h2>Visual Hierarchy</h2>
-<div class="columns">
-<div class="column" style="width:100%;">
 <p>The relative importance of features is implied by a maps layout. Our perception is influenced by the order in which we see things and how big / bold they are.</p>
-<p><strong>Placement</strong> * Center first * Top to bottom * Left to right</p>
-<p><strong>Font size</strong> * Large * Medium * Small</p>
-<p><strong>Intensity (value)</strong> * Light * Medium * Dark</p>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><strong>Placement</strong></p>
+<ul>
+<li>Center first</li>
+<li>Top to bottom</li>
+<li>Left to right</li>
+</ul>
+</div><div class="column" style="width:30%;">
+<p><strong>Font &amp; Style</strong></p>
+<div style="font-size: 125%;">
+<ul>
+<li>Large</li>
+</ul>
+</div>
+<div style="font-size: 75%;">
+<ul>
+<li>Small</li>
+</ul>
+</div>
+<ul>
+<li><p><strong>Bold</strong></p></li>
+<li><p><em>Italics</em></p></li>
+</ul>
+</div><div class="column" style="width:30%;">
+<p><strong>Intensity (value)</strong></p>
+<div style="color: #b5b3b3;">
+<ul>
+<li>Lighter</li>
+</ul>
+</div>
+<div style="color: #262626;">
+<ul>
+<li>Darker</li>
+</ul>
+</div>
+<div style="color: #080808;">
+<ul>
+<li>Darkest</li>
+</ul>
+</div>
 </div>
 </div>
 </section></section>
@@ -613,44 +665,43 @@
 </section>
 <section id="stylistic-guidelines" class="slide level2">
 <h2>Stylistic Guidelines</h2>
-<div class="columns">
-<div class="column" style="width:100%;">
 <ol type="1">
-<li>Clear labeling to prevent ambiguity and confusion.
-<ul>
-<li>Minimize assumptions about your audience</li>
-<li>Proof your map text</li>
-</ul></li>
-<li>Consider if all map elements are necessary.
-<ul>
-<li>Scale bars, North arrows, etc.</li>
-<li>Minimize “chart junk”</li>
-</ul></li>
-<li>Use appropriate color schemes.
-<ul>
-<li>Colorblind friendly</li>
-<li>High contrast</li>
-<li>Suited for data type</li>
-</ul></li>
+<li>Clear labeling to prevent ambiguity and confusion.</li>
 </ol>
-</div>
-</div>
+<ul>
+<li>Proof your map text</li>
+</ul>
+<ol start="2" type="1">
+<li>Consider if all map elements are necessary.</li>
+</ol>
+<ul>
+<li>Scale bars, North arrows, etc. minimize “junk”</li>
+</ul>
+<ol start="3" type="1">
+<li>Use appropriate color scheme, suited for data type</li>
+</ol>
+<ul>
+<li>Colorblind friendly &amp; high contrast</li>
+</ul>
 </section>
 <section id="stylistic-guidelines-1" class="slide level2">
 <h2>Stylistic Guidelines</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>North arrows scale bars</p>
+<div class="column" style="width:60%;">
 <ul>
-<li><p>North arrow</p></li>
-<li><p>Doesn’t work in circumpolar area</p></li>
-<li><p>Not needed for large/familiar regions</p></li>
-<li><p>Scale bar</p></li>
-<li><p>Not always needed if its a large/familiar region</p></li>
-<li><p>Scale text can often suffice</p></li>
-<li><p>Depending on projection (i.e.&nbsp;Mercator), scale will vary drastically across the map</p></li>
+<li>North arrow not needed:
+<ul>
+<li>At poles</li>
+<li>Familiar region</li>
+</ul></li>
+<li>Scale bar not needed:
+<ul>
+<li>Familiar region</li>
+<li>Text can often suffice</li>
+<li>Can vary across the map</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/Fig1.png"></p>
 </div>
 </div>
@@ -658,16 +709,21 @@
 <section id="stylistic-guidelines-2" class="slide level2">
 <h2>Stylistic Guidelines</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>North arrows scale bars * North arrow + Needed if it’s not a familiar region <strong>or</strong> if north is not up</p>
+<div class="column" style="width:60%;">
 <ul>
-<li>Scale</li>
-<li>Needed if it’s a small/unfamiliar region</li>
-<li>For multiple maps are at different scales</li>
-<li>Needed if navigation is important</li>
-<li>i.e., a hiking map</li>
+<li>North arrow needed:
+<ul>
+<li>Unfamiliar region</li>
+<li>North not up</li>
+</ul></li>
+<li>Scale needed:
+<ul>
+<li>Unfamiliar region</li>
+<li>If navigation is goal</li>
+<li>Multiple maps are at different scales</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/LCM.png"></p>
 </div>
 </div>
@@ -677,18 +733,26 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
-<li><p>Poor use of map space</p></li>
-<li><p>Wasted white space</p></li>
-<li><p>Not centered</p></li>
-<li><p>Poor color choice</p></li>
-<li><p>Not colorblind friendly</p></li>
-<li><p>Not all map elements are visible</p></li>
-<li><p>Text/font issues</p></li>
-<li><p>North arrow</p></li>
-<li><p>Placement</p></li>
-<li><p>Size &amp; style</p></li>
-<li><p>Scale bar</p></li>
-<li><p>Wrong units!</p></li>
+<li>Poor use of map space
+<ul>
+<li>Wasted white space</li>
+<li>Not centered</li>
+</ul></li>
+<li>Poor color choice
+<ul>
+<li>Not colorblind friendly</li>
+</ul></li>
+<li>Not all map elements are visible</li>
+<li>Text/font issues</li>
+<li>North arrow
+<ul>
+<li>Placement</li>
+<li>Size &amp; style</li>
+</ul></li>
+<li>Scale bar
+<ul>
+<li>Wrong units!</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/Bad2.png"></p>

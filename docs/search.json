@@ -312,21 +312,28 @@
     "href": "Data_Visualization/Slides.html#data-symbolization",
     "title": "Lecture Slides",
     "section": "Data Symbolization",
-    "text": "Data Symbolization\n\n\nThe techniques we use to represent information on a map.\n\nThe choices we make will convey aspects of the data\nColor & brightness\nShapes & lines\nCharacters & fonts\nPosition & size\nSome choices may lead to assumptions being made about the data\nIntentionally or otherwise"
+    "text": "Data Symbolization\nThe techniques we use and choices we make to represent information on a map.\n\nColor & brightness\nShapes & lines\nCharacters & fonts\nPosition & size"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#data-symbolization-1",
+    "href": "Data_Visualization/Slides.html#data-symbolization-1",
+    "title": "Lecture Slides",
+    "section": "Data Symbolization",
+    "text": "Data Symbolization\nThe techniques we use and choices we make to represent information on a map.\n\nMay lead to assumptions being made about the data\n\nIntentionally or otherwise"
   },
   {
     "objectID": "Data_Visualization/Slides.html#color",
     "href": "Data_Visualization/Slides.html#color",
     "title": "Lecture Slides",
     "section": "Color",
-    "text": "Color\n\n\nThe HSV scale describes three components.\n\nHue: the dominant wavelength\nTypical association with the term “color”\nSaturation: the intensity of one color\nAll red or only a little red?\nValue: the brightness of one color\nLightness or darkness, how much light is reflected?"
+    "text": "Color\nThe HSV scale describes three components of a color\n\nHue: the dominant wavelength\n\nTypical association with the term “color”\n\n\n\n\n\nSaturation: the level of dominance\n\nAll red or only a little?\n\nValue: the brightness / intensity"
   },
   {
     "objectID": "Data_Visualization/Slides.html#color-choice",
     "href": "Data_Visualization/Slides.html#color-choice",
     "title": "Lecture Slides",
     "section": "Color Choice",
-    "text": "Color Choice\n\n\nIt is important to choose the right kind of color map.\n\nQualitative: Different hues\nSame value and saturation\nSequential: Single hue\nIncreasing saturation or value\nDiverging: Opposing hues\nDecreasing saturation toward center\n\n\nQualitative: Nominal\n\nSequential: Ordinal & Ratio\n\nDiverging: Interval"
+    "text": "Color Choice\n\n\n\nQualitative: Different hues\n\nSame value and saturation\n\nSequential: Single hue\n\nIncreasing saturation or value\n\nDiverging: Opposing hues\n\nDecreasing saturation toward center\n\n\n\nQualitative: Nominal\n\nSequential: Ordinal & Ratio\n\nDiverging: Interval"
   },
   {
     "objectID": "Data_Visualization/Slides.html#color-choice-1",
@@ -343,11 +350,11 @@
     "text": "Color Accessibility\n\n\nAbout 4.25% of people are colorblind, red-green is the most common. Color Brewer is a great resource."
   },
   {
-    "objectID": "Data_Visualization/Slides.html#what-type-of-are-we-data-representing",
-    "href": "Data_Visualization/Slides.html#what-type-of-are-we-data-representing",
+    "objectID": "Data_Visualization/Slides.html#type-of-phenomena",
+    "href": "Data_Visualization/Slides.html#type-of-phenomena",
     "title": "Lecture Slides",
-    "section": "What Type of Are We Data Representing?",
-    "text": "What Type of Are We Data Representing?\n\n\nDiscrete:\n\nPoints/lines/shapes\nHues \n\n\nContinuous:\n\nSurfaces, contour lines\nSaturation and value"
+    "section": "Type of Phenomena?",
+    "text": "Type of Phenomena?\n\n\nDiscrete:\n\nPoints/lines/shapes\nHues\n\n\n\nContinuous:\n\nSurfaces, contour lines\nSaturation and value"
   },
   {
     "objectID": "Data_Visualization/Slides.html#what-is-the-measurement-scale",
@@ -368,35 +375,35 @@
     "href": "Data_Visualization/Slides.html#visual-hierarchy",
     "title": "Lecture Slides",
     "section": "Visual Hierarchy",
-    "text": "Visual Hierarchy\n\n\nThe relative importance of features is implied by a maps layout. Our perception is influenced by the order in which we see things and how big / bold they are.\nPlacement * Center first * Top to bottom * Left to right\nFont size * Large * Medium * Small\nIntensity (value) * Light * Medium * Dark"
+    "text": "Visual Hierarchy\nThe relative importance of features is implied by a maps layout. Our perception is influenced by the order in which we see things and how big / bold they are.\n\n\nPlacement\n\nCenter first\nTop to bottom\nLeft to right\n\n\nFont & Style\n\n\nLarge\n\n\n\n\nSmall\n\n\n\nBold\nItalics\n\n\nIntensity (value)\n\n\nLighter\n\n\n\n\nDarker\n\n\n\n\nDarkest"
   },
   {
     "objectID": "Data_Visualization/Slides.html#stylistic-guidelines",
     "href": "Data_Visualization/Slides.html#stylistic-guidelines",
     "title": "Lecture Slides",
     "section": "Stylistic Guidelines",
-    "text": "Stylistic Guidelines\n\n\n\nClear labeling to prevent ambiguity and confusion.\n\nMinimize assumptions about your audience\nProof your map text\n\nConsider if all map elements are necessary.\n\nScale bars, North arrows, etc.\nMinimize “chart junk”\n\nUse appropriate color schemes.\n\nColorblind friendly\nHigh contrast\nSuited for data type"
+    "text": "Stylistic Guidelines\n\nClear labeling to prevent ambiguity and confusion.\n\n\nProof your map text\n\n\nConsider if all map elements are necessary.\n\n\nScale bars, North arrows, etc. minimize “junk”\n\n\nUse appropriate color scheme, suited for data type\n\n\nColorblind friendly & high contrast"
   },
   {
     "objectID": "Data_Visualization/Slides.html#stylistic-guidelines-1",
     "href": "Data_Visualization/Slides.html#stylistic-guidelines-1",
     "title": "Lecture Slides",
     "section": "Stylistic Guidelines",
-    "text": "Stylistic Guidelines\n\n\nNorth arrows scale bars\n\nNorth arrow\nDoesn’t work in circumpolar area\nNot needed for large/familiar regions\nScale bar\nNot always needed if its a large/familiar region\nScale text can often suffice\nDepending on projection (i.e. Mercator), scale will vary drastically across the map"
+    "text": "Stylistic Guidelines\n\n\n\nNorth arrow not needed:\n\nAt poles\nFamiliar region\n\nScale bar not needed:\n\nFamiliar region\nText can often suffice\nCan vary across the map"
   },
   {
     "objectID": "Data_Visualization/Slides.html#stylistic-guidelines-2",
     "href": "Data_Visualization/Slides.html#stylistic-guidelines-2",
     "title": "Lecture Slides",
     "section": "Stylistic Guidelines",
-    "text": "Stylistic Guidelines\n\n\nNorth arrows scale bars * North arrow + Needed if it’s not a familiar region or if north is not up\n\nScale\nNeeded if it’s a small/unfamiliar region\nFor multiple maps are at different scales\nNeeded if navigation is important\ni.e., a hiking map"
+    "text": "Stylistic Guidelines\n\n\n\nNorth arrow needed:\n\nUnfamiliar region\nNorth not up\n\nScale needed:\n\nUnfamiliar region\nIf navigation is goal\nMultiple maps are at different scales"
   },
   {
     "objectID": "Data_Visualization/Slides.html#so-many-mistakes",
     "href": "Data_Visualization/Slides.html#so-many-mistakes",
     "title": "Lecture Slides",
     "section": "So Many Mistakes!!",
-    "text": "So Many Mistakes!!\n\n\n\nPoor use of map space\nWasted white space\nNot centered\nPoor color choice\nNot colorblind friendly\nNot all map elements are visible\nText/font issues\nNorth arrow\nPlacement\nSize & style\nScale bar\nWrong units!"
+    "text": "So Many Mistakes!!\n\n\n\nPoor use of map space\n\nWasted white space\nNot centered\n\nPoor color choice\n\nNot colorblind friendly\n\nNot all map elements are visible\nText/font issues\nNorth arrow\n\nPlacement\nSize & style\n\nScale bar\n\nWrong units!"
   },
   {
     "objectID": "Data_Visualization/Slides.html#so-many-mistakes-1",
