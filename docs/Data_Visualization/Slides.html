@@ -494,28 +494,30 @@
 <section id="color-choice" class="slide level2">
 <h2>Color Choice</h2>
 <div class="columns">
-<div class="column" style="width:65%;">
+<div class="column" style="width:30%;">
+<p><strong>Qualitative</strong></p>
+<p><img data-src="images/qualitative.jpg"></p>
 <ul>
-<li><strong>Qualitative</strong>: Different hues
-<ul>
-<li>Same value and saturation</li>
-</ul></li>
-<li><strong>Sequential</strong>: Single hue
-<ul>
-<li>Increasing saturation or value</li>
-</ul></li>
-<li><strong>Diverging</strong>: Opposing hues
-<ul>
-<li>Decreasing saturation toward center</li>
-</ul></li>
+<li>Different hues,</li>
+<li>Fixed value and saturation</li>
+<li>Best for nominal scales</li>
 </ul>
 </div><div class="column" style="width:35%;">
-<p>Qualitative: Nominal<br>
-<img data-src="images/qualitative.jpg" style="width:75.0%"></p>
-<p>Sequential: Ordinal &amp; Ratio<br>
-<img data-src="images/sequential.jpg"></p>
-<p>Diverging: Interval<br>
-<img data-src="images/divergin.jpg" style="width:75.0%"></p>
+<p><strong>Sequential</strong></p>
+<p><img data-src="images/sequential.jpg"></p>
+<ul>
+<li>Fixed hue</li>
+<li>Increasing value and saturation</li>
+<li>Best for ordinal &amp; ratio scales</li>
+</ul>
+</div><div class="column" style="width:33%;">
+<p><strong>Diverging</strong></p>
+<p><img data-src="images/divergin.jpg"></p>
+<ul>
+<li>Opposing hues</li>
+<li>Diverging saturation</li>
+<li>Best for interval scales</li>
+</ul>
 </div>
 </div>
 </section></section>
@@ -605,50 +607,122 @@
 </section>
 <section id="visual-hierarchy" class="slide level2">
 <h2>Visual Hierarchy</h2>
-<p>The relative importance of features is implied by a maps layout. Our perception is influenced by the order in which we see things and how big / bold they are.</p>
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><strong>Placement</strong></p>
+<p>Relative importance is implied by layout, our perception is influenced by the order in which we see things and how big / bold they are.</p>
+<div style="display: flex; width: 100%; flex-wrap: wrap;">
+<div style="left: 0%; position: absolute;">
+<h3>
+Placement
+</h3>
 <ul>
-<li>Center first</li>
-<li>Top to bottom</li>
-<li>Left to right</li>
-</ul>
-</div><div class="column" style="width:30%;">
-<p><strong>Font &amp; Style</strong></p>
-<div style="font-size: 125%;">
-<ul>
-<li>Large</li>
-</ul>
-</div>
-<div style="font-size: 75%;">
-<ul>
-<li>Small</li>
+<li>
+Center first
+</li>
+<li>
+Top to bottom
+</li>
+<li>
+Left to right
+</li>
 </ul>
 </div>
+<div style="left: 33%; position: absolute;">
+<h3>
+Font
+</h3>
 <ul>
-<li><p><strong>Bold</strong></p></li>
-<li><p><em>Italics</em></p></li>
-</ul>
-</div><div class="column" style="width:30%;">
-<p><strong>Intensity (value)</strong></p>
-<div style="color: #b5b3b3;">
-<ul>
-<li>Lighter</li>
-</ul>
-</div>
-<div style="color: #262626;">
-<ul>
-<li>Darker</li>
-</ul>
-</div>
-<div style="color: #080808;">
-<ul>
-<li>Darkest</li>
+<li style="font-size: 150%;">
+Larger
+</li>
+<li>
+<b>Bold</b>
+</li>
+<li>
+<em>italics</em>
+</li>
+<li style="font-size: 50%;">
+Smaller
+</li>
 </ul>
 </div>
+<div style="left: 58%; position: absolute; width: 42%">
+<h3>
+Contrast
+</h3>
+<ul>
+<li style="color: #00090a;">
+Dark on Light
+</li>
+<li style="color: #fafafa; background-color: black">
+Light on Dark
+</li>
+<li style="color: #98effa;">
+Light on Light
+</li>
+<li style="color: #850101; background-color: black">
+Dark on Dark
+</li>
+</ul>
 </div>
 </div>
+<!-- 
+::::{.columns}
+:::{.column width="30%"}
+
+**Placement**
+
+* Center first
+* Top to bottom
+* Left to right
+
+:::
+:::{.column width="30%"}
+
+**Font & Style**
+
+::: {style="font-size: 125%;"}
+
+* Large 
+
+:::
+
+::: {style="font-size: 75%;"}
+
+* Small 
+
+:::
+
+* **Bold**
+
+* *Italics*
+
+
+:::
+:::{.column width="30%"}
+
+**Intensity (value)**
+
+
+::: {style="color: #b5b3b3;"}
+
+* Lighter
+
+:::
+
+::: {style="color: #262626;"}
+
+* Darker
+
+:::
+
+::: {style="color: #080808;"}
+
+* Darkest
+
+:::
+
+
+:::
+:::: -->
 </section></section>
 <section>
 <section id="tophat-question-3" class="title-slide slide level1 center">
@@ -687,7 +761,7 @@
 <section id="stylistic-guidelines-1" class="slide level2">
 <h2>Stylistic Guidelines</h2>
 <div class="columns">
-<div class="column" style="width:60%;">
+<div class="column" style="width:55%;">
 <ul>
 <li>North arrow not needed:
 <ul>
@@ -701,7 +775,7 @@
 <li>Can vary across the map</li>
 </ul></li>
 </ul>
-</div><div class="column" style="width:40%;">
+</div><div class="column" style="width:45%;">
 <p><img data-src="images/Fig1.png"></p>
 </div>
 </div>
@@ -709,7 +783,7 @@
 <section id="stylistic-guidelines-2" class="slide level2">
 <h2>Stylistic Guidelines</h2>
 <div class="columns">
-<div class="column" style="width:60%;">
+<div class="column" style="width:55%;">
 <ul>
 <li>North arrow needed:
 <ul>
@@ -720,10 +794,10 @@
 <ul>
 <li>Unfamiliar region</li>
 <li>If navigation is goal</li>
-<li>Multiple maps are at different scales</li>
+<li>Maps at different scales</li>
 </ul></li>
 </ul>
-</div><div class="column" style="width:40%;">
+</div><div class="column" style="width:45%;">
 <p><img data-src="images/LCM.png"></p>
 </div>
 </div>
@@ -731,7 +805,7 @@
 <section id="so-many-mistakes" class="slide level2">
 <h2>So Many Mistakes!!</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:60%;">
 <ul>
 <li>Poor use of map space
 <ul>
@@ -742,6 +816,17 @@
 <ul>
 <li>Not colorblind friendly</li>
 </ul></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/Bad2.png"></p>
+</div>
+</div>
+</section>
+<section id="so-many-mistakes-1" class="slide level2">
+<h2>So Many Mistakes!!</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
 <li>Not all map elements are visible</li>
 <li>Text/font issues</li>
 <li>North arrow
@@ -754,28 +839,47 @@
 <li>Wrong units!</li>
 </ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/Bad2.png"></p>
 </div>
 </div>
 </section>
-<section id="so-many-mistakes-1" class="slide level2">
+<section id="so-many-mistakes-2" class="slide level2">
 <h2>So Many Mistakes!!</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:60%;">
 <ul>
-<li><p>Legend issues</p></li>
-<li><p>Avoid unnecessary text</p></li>
-<li><p>Don’t title it <strong>Legend</strong></p></li>
-<li><p>Make sure entries are meaningful</p></li>
-<li><p>Get rid of underscores</p></li>
-<li><p>No name / affiliation, date, or data source</p></li>
-<li><p>Be transparent, readers deserve to know:</p></li>
-<li><p>Who made the map (individual / organization)?</p></li>
-<li><p>When was the map made?</p></li>
-<li><p>Where did relevant data come from?</p></li>
+<li>Legend issues
+<ul>
+<li>Avoid unnecessary text
+<ul>
+<li>Don’t title it <strong>Legend</strong></li>
+</ul></li>
+<li>Make sure entries are meaningful</li>
+<li>Get rid of underscores</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/Bad2.png"></p>
+</div>
+</div>
+</section>
+<section id="so-many-mistakes-3" class="slide level2">
+<h2>So Many Mistakes!!</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>No name / affiliation, date, or data source
+<ul>
+<li>Be transparent, readers deserve to know:
+<ul>
+<li>Who made the map?</li>
+<li>When was the map made?</li>
+<li>Where did relevant data come from?</li>
+</ul></li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/Bad2.png"></p>
 </div>
 </div>
@@ -783,15 +887,15 @@
 <section id="cleaner-presentation" class="slide level2">
 <h2>Cleaner Presentation</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:60%;">
 <ul>
-<li>Area of interest takes up most of the map space.</li>
-<li>Name, affiliation, source.</li>
-<li>More meaningful legend entries.</li>
-<li>Proper sizing/placement of map elements.</li>
-<li>More pleasing color choice, easier for colorblind people to read.</li>
+<li>Area of interest takes up most of the map space</li>
+<li>Name, affiliation, source</li>
+<li>More meaningful legend entries</li>
+<li>Proper sizing/placement of map elements</li>
+<li>More pleasing, accessible color choices</li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/Clean.png"></p>
 </div>
 </div>

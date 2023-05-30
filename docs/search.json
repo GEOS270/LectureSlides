@@ -333,7 +333,7 @@
     "href": "Data_Visualization/Slides.html#color-choice",
     "title": "Lecture Slides",
     "section": "Color Choice",
-    "text": "Color Choice\n\n\n\nQualitative: Different hues\n\nSame value and saturation\n\nSequential: Single hue\n\nIncreasing saturation or value\n\nDiverging: Opposing hues\n\nDecreasing saturation toward center\n\n\n\nQualitative: Nominal\n\nSequential: Ordinal & Ratio\n\nDiverging: Interval"
+    "text": "Color Choice\n\n\nQualitative\n\n\nDifferent hues,\nFixed value and saturation\nBest for nominal scales\n\n\nSequential\n\n\nFixed hue\nIncreasing value and saturation\nBest for ordinal & ratio scales\n\n\nDiverging\n\n\nOpposing hues\nDiverging saturation\nBest for interval scales"
   },
   {
     "objectID": "Data_Visualization/Slides.html#color-choice-1",
@@ -375,7 +375,7 @@
     "href": "Data_Visualization/Slides.html#visual-hierarchy",
     "title": "Lecture Slides",
     "section": "Visual Hierarchy",
-    "text": "Visual Hierarchy\nThe relative importance of features is implied by a maps layout. Our perception is influenced by the order in which we see things and how big / bold they are.\n\n\nPlacement\n\nCenter first\nTop to bottom\nLeft to right\n\n\nFont & Style\n\n\nLarge\n\n\n\n\nSmall\n\n\n\nBold\nItalics\n\n\nIntensity (value)\n\n\nLighter\n\n\n\n\nDarker\n\n\n\n\nDarkest"
+    "text": "Visual Hierarchy\nRelative importance is implied by layout, our perception is influenced by the order in which we see things and how big / bold they are.\n\n\n\nPlacement\n\n\n\nCenter first\n\n\nTop to bottom\n\n\nLeft to right\n\n\n\n\n\nFont\n\n\n\nLarger\n\n\nBold\n\n\nitalics\n\n\nSmaller\n\n\n\n\n\nContrast\n\n\n\nDark on Light\n\n\nLight on Dark\n\n\nLight on Light\n\n\nDark on Dark"
   },
   {
     "objectID": "Data_Visualization/Slides.html#stylistic-guidelines",
@@ -396,28 +396,42 @@
     "href": "Data_Visualization/Slides.html#stylistic-guidelines-2",
     "title": "Lecture Slides",
     "section": "Stylistic Guidelines",
-    "text": "Stylistic Guidelines\n\n\n\nNorth arrow needed:\n\nUnfamiliar region\nNorth not up\n\nScale needed:\n\nUnfamiliar region\nIf navigation is goal\nMultiple maps are at different scales"
+    "text": "Stylistic Guidelines\n\n\n\nNorth arrow needed:\n\nUnfamiliar region\nNorth not up\n\nScale needed:\n\nUnfamiliar region\nIf navigation is goal\nMaps at different scales"
   },
   {
     "objectID": "Data_Visualization/Slides.html#so-many-mistakes",
     "href": "Data_Visualization/Slides.html#so-many-mistakes",
     "title": "Lecture Slides",
     "section": "So Many Mistakes!!",
-    "text": "So Many Mistakes!!\n\n\n\nPoor use of map space\n\nWasted white space\nNot centered\n\nPoor color choice\n\nNot colorblind friendly\n\nNot all map elements are visible\nText/font issues\nNorth arrow\n\nPlacement\nSize & style\n\nScale bar\n\nWrong units!"
+    "text": "So Many Mistakes!!\n\n\n\nPoor use of map space\n\nWasted white space\nNot centered\n\nPoor color choice\n\nNot colorblind friendly"
   },
   {
     "objectID": "Data_Visualization/Slides.html#so-many-mistakes-1",
     "href": "Data_Visualization/Slides.html#so-many-mistakes-1",
     "title": "Lecture Slides",
     "section": "So Many Mistakes!!",
-    "text": "So Many Mistakes!!\n\n\n\nLegend issues\nAvoid unnecessary text\nDon’t title it Legend\nMake sure entries are meaningful\nGet rid of underscores\nNo name / affiliation, date, or data source\nBe transparent, readers deserve to know:\nWho made the map (individual / organization)?\nWhen was the map made?\nWhere did relevant data come from?"
+    "text": "So Many Mistakes!!\n\n\n\nNot all map elements are visible\nText/font issues\nNorth arrow\n\nPlacement\nSize & style\n\nScale bar\n\nWrong units!"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#so-many-mistakes-2",
+    "href": "Data_Visualization/Slides.html#so-many-mistakes-2",
+    "title": "Lecture Slides",
+    "section": "So Many Mistakes!!",
+    "text": "So Many Mistakes!!\n\n\n\nLegend issues\n\nAvoid unnecessary text\n\nDon’t title it Legend\n\nMake sure entries are meaningful\nGet rid of underscores"
+  },
+  {
+    "objectID": "Data_Visualization/Slides.html#so-many-mistakes-3",
+    "href": "Data_Visualization/Slides.html#so-many-mistakes-3",
+    "title": "Lecture Slides",
+    "section": "So Many Mistakes!!",
+    "text": "So Many Mistakes!!\n\n\n\nNo name / affiliation, date, or data source\n\nBe transparent, readers deserve to know:\n\nWho made the map?\nWhen was the map made?\nWhere did relevant data come from?"
   },
   {
     "objectID": "Data_Visualization/Slides.html#cleaner-presentation",
     "href": "Data_Visualization/Slides.html#cleaner-presentation",
     "title": "Lecture Slides",
     "section": "Cleaner Presentation",
-    "text": "Cleaner Presentation\n\n\n\nArea of interest takes up most of the map space.\nName, affiliation, source.\nMore meaningful legend entries.\nProper sizing/placement of map elements.\nMore pleasing color choice, easier for colorblind people to read."
+    "text": "Cleaner Presentation\n\n\n\nArea of interest takes up most of the map space\nName, affiliation, source\nMore meaningful legend entries\nProper sizing/placement of map elements\nMore pleasing, accessible color choices"
   },
   {
     "objectID": "Data_Visualization/Slides.html#cartographic-principals",

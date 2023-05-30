@@ -265,33 +265,43 @@ Color Choice
 
 
 ::::{.columns}
-:::{.column width="65%"}
+:::{.column width="30%"}
 
 
-* **Qualitative**: Different hues
-  + Same value and saturation
+**Qualitative**
 
-* **Sequential**: Single hue
-  + Increasing saturation or value
+![](images/qualitative.jpg)
 
-* **Diverging**: Opposing hues
-  + Decreasing saturation toward center
++ Different hues, 
++ Fixed value and saturation
++ Best for nominal scales
+
+
+
 
 :::
 :::{.column width="35%"}
 
-Qualitative: Nominal  
-![](images/qualitative.jpg){width="75%"}
+**Sequential** 
 
-  
-
-Sequential: Ordinal & Ratio  
 ![](images/sequential.jpg)
 
-  
++ Fixed hue
++ Increasing value and saturation
++ Best for ordinal & ratio scales 
 
-Diverging: Interval  
-![](images/divergin.jpg){width="75%"}
+
+:::
+:::{.column width="33%"}
+
+  
+**Diverging**
+
+![](images/divergin.jpg)
+
++ Opposing hues
++ Diverging saturation
++ Best for interval scales 
 
 :::
 ::::
@@ -424,8 +434,43 @@ What is the Measurement Scale?
 Visual Hierarchy
 ----------------
 
-The relative importance of features is implied by a maps layout. Our perception is influenced by the order in which we see things and how big / bold they are.
+Relative importance is implied by layout, our perception is influenced by the order in which we see things and how big / bold they are.
 
+<div style="display: flex; width: 100%; flex-wrap: wrap;">
+
+<div style="left: 0%; position: absolute;">
+<h3>Placement</h3>
+<ul>
+<li>Center first</li>
+<li>Top to bottom</li>
+<li>Left to right</li>
+</ul>
+
+</div>
+<div style="left: 33%; position: absolute;">
+<h3>Font</h3>
+<ul>
+<li style="font-size: 150%;">Larger</li>
+<li><b>Bold</b></li>
+<li><em>italics</em></li>
+<li style="font-size: 50%;">Smaller</li>
+</ul>
+
+</div>
+<div style="left: 58%; position: absolute; width: 42%">
+<h3>Contrast</h3>
+<ul>
+<li style="color: #00090a;">Dark on Light</li>
+<li style="color: #fafafa; background-color: black">Light on Dark</li>
+<li style="color: #98effa;">Light on Light</li>
+<li style="color: #850101; background-color: black">Dark on Dark</li>
+</ul>
+
+</div>
+
+</div>
+
+<!-- 
 ::::{.columns}
 :::{.column width="30%"}
 
@@ -483,7 +528,7 @@ The relative importance of features is implied by a maps layout. Our perception 
 
 
 :::
-::::
+:::: -->
 
 TopHat Question 3
 =================
@@ -519,7 +564,7 @@ Stylistic Guidelines
 --------------------
 
 ::::{.columns}
-:::{.column width="60%"}
+:::{.column width="55%"}
 
 * North arrow not needed:
   + At poles
@@ -531,7 +576,7 @@ Stylistic Guidelines
   + Can vary across the map
 
 :::
-:::{.column width="40%"}
+:::{.column width="45%"}
 
 
 ![](images/Fig1.png)
@@ -544,9 +589,8 @@ Stylistic Guidelines
 Stylistic Guidelines
 --------------------
 
-
 ::::{.columns}
-:::{.column width="60%"}
+:::{.column width="55%"}
 
 * North arrow needed:
   * Unfamiliar region
@@ -555,11 +599,11 @@ Stylistic Guidelines
 * Scale needed:
   + Unfamiliar region
   + If navigation is goal
-  + Multiple maps are at different scales
+  + Maps at different scales
 
 
 :::
-:::{.column width="40%"}
+:::{.column width="45%"}
 
 
 ![](images/LCM.png)
@@ -572,9 +616,8 @@ Stylistic Guidelines
 So Many Mistakes!!
 ------------------
 
-
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="60%"}
 
 
 * Poor use of map space
@@ -583,6 +626,22 @@ So Many Mistakes!!
 
 * Poor color choice
   + Not colorblind friendly
+
+:::
+:::{.column width="40%"}
+
+
+![](images/Bad2.png)
+
+
+:::
+::::
+
+So Many Mistakes!!
+------------------
+
+::::{.columns}
+:::{.column width="60%"}
 
 * Not all map elements are visible
 * Text/font issues
@@ -593,9 +652,8 @@ So Many Mistakes!!
 * Scale bar
   + Wrong units!
 
-
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 ![](images/Bad2.png)
@@ -603,39 +661,48 @@ So Many Mistakes!!
 
 :::
 ::::
-
 
 So Many Mistakes!!
 ------------------
 
-
 ::::{.columns}
-:::{.column width="50%"}
-
+:::{.column width="60%"}
 
 * Legend issues
-+ Avoid unnecessary text
-- Don't title it **Legend**
-
-+ Make sure entries are meaningful
-- Get rid of underscores
-
-* No name / affiliation, date, or data source
-+ Be transparent, readers deserve to know:
-- Who made the map (individual / organization)?
-- When was the map made?
-- Where did relevant data come from?
-
+  + Avoid unnecessary text
+    - Don't title it **Legend**
+  + Make sure entries are meaningful
+  - Get rid of underscores
 
 :::
-:::{.column width="50%"}
-
+:::{.column width="40%"}
 
 ![](images/Bad2.png)
 
+:::
+::::
+
+So Many Mistakes!!
+------------------
+
+::::{.columns}
+:::{.column width="60%"}
+
+* No name / affiliation, date, or data source
+  + Be transparent, readers deserve to know:
+    - Who made the map?
+    - When was the map made?
+    - Where did relevant data come from?
+
+:::
+:::{.column width="40%"}
+
+![](images/Bad2.png)
 
 :::
 ::::
+
+
 
 
 Cleaner Presentation
@@ -643,18 +710,18 @@ Cleaner Presentation
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="60%"}
 
 
-* Area of interest takes up most of the map space.
-* Name, affiliation, source.
-* More meaningful legend entries.
-* Proper sizing/placement of map elements.
-* More pleasing color choice, easier for colorblind people to read.
+* Area of interest takes up most of the map space
+* Name, affiliation, source
+* More meaningful legend entries
+* Proper sizing/placement of map elements
+* More pleasing, accessible color choices
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 ![](images/Clean.png)
