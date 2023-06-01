@@ -81,7 +81,7 @@
     "href": "Data_Classification/Slides.html#measures-of-dispersion",
     "title": "Lecture Slides",
     "section": "Measures of Dispersion",
-    "text": "Measures of Dispersion\n\n\nThese statistics give context a measure of central tendency.\n\nRange: Difference between the maximum and minimum\nInter-quartile Range: 75th to 25th percentile\n\nSpread around the median, not influenced by outliers\n\nStandard Deviation: \\(\\sigma = \\sqrt{\\frac{1}{N}\\sum\\_{i=1}^n (x\\_i - U)^2}\\)\n\nSpread around the mean(U), influenced by outliers"
+    "text": "Measures of Dispersion\n\n\nThese statistics give context a measure of central tendency.\n\nRange: Difference between the maximum and minimum\nInter-quartile Range: 75th to 25th percentile\n\nSpread around the median, not influenced by outliers\n\nStandard Deviation: \\(\\sigma = \\sqrt{\\frac{1}{N}\\Sigma_{i=1}^n (x_i - U)^2}\\)\n\nSpread around the mean(U), influenced by outliers"
   },
   {
     "objectID": "Data_Classification/Slides.html#frequency-distribution",

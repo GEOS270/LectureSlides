@@ -86,7 +86,7 @@ These statistics give context a measure of central tendency.
 * **Inter-quartile Range**: 75th to 25th percentile
   + Spread around the median, not influenced by outliers
 
-* **Standard Deviation**: $\sigma = \sqrt{\frac{1}{N}\sum\_{i=1}^n (x\_i - U)^2}$
+* **Standard Deviation**: $\sigma = \sqrt{\frac{1}{N}\Sigma_{i=1}^n (x_i - U)^2}$
   + Spread around the mean(U), influenced by outliers
 
 
