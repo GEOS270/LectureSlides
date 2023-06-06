@@ -376,7 +376,7 @@
 <ul>
 <li><p>1 m cell size</p></li>
 <li><p>5 rows x 5 columns = 25 cells</p></li>
-<li><p>Covers 5 m x 5 m = 25 m2</p></li>
+<li><p>Covers 5 m x 5 m = 25 m<sup>2</sup></p></li>
 </ul>
 </div><div class="column" style="width:40%;">
 <p><img data-src="images/03-raster-example.png"></p>
@@ -387,7 +387,7 @@
 <h2>Resolution vs.&nbsp;Extent</h2>
 <div class="columns">
 <div class="column" style="width:100%;">
-<p><strong>Resolution</strong>: 10 m cell size = 100 m2 area per cell.</p>
+<p><strong>Resolution</strong>: 10 m cell size = 100 m<sup>2</sup> area per cell.</p>
 <p><strong>Extent</strong>: varies with number of cells and cell size.</p>
 <table>
 <thead>
@@ -401,17 +401,17 @@
 <tr class="odd">
 <td>5</td>
 <td>5</td>
-<td>50 m x 50 m = 2,500 m2</td>
+<td>50 m x 50 m = 2,500 m<sup>2</sup></td>
 </tr>
 <tr class="even">
 <td>5</td>
 <td>10</td>
-<td>50 m x 100 m = 5,000 m2</td>
+<td>50 m x 100 m = 5,000 m<sup>2</sup></td>
 </tr>
 <tr class="odd">
 <td>100</td>
 <td>100</td>
-<td>1,000 m x 1,000 m = 1,000,000 m2</td>
+<td>1,000 m x 1,000 m = 1,000,000 m<sup>2</sup></td>
 </tr>
 </tbody>
 </table>
@@ -500,42 +500,47 @@
 </section>
 <section id="file-size-1" class="slide level2">
 <h2>File Size</h2>
-<p>The number of cells per image dictates file size.</p>
+<p>Imagine four images that all have the same extent:</p>
 <ul>
-<li># cells = rows x columns x bands</li>
+<li>1000 m x 1000 m = 1,000,000 m<sup>2</sup></li>
 </ul>
 <table>
 <thead>
 <tr class="header">
-<th>Extent</th>
 <th>Bands</th>
 <th>Cell Size</th>
-<th>Number of Cells</th>
+<th>Rows</th>
+<th>Columns</th>
+<th># of Cells</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1x1km</td>
 <td>1</td>
 <td>100m</td>
+<td>10</td>
+<td>10</td>
 <td>100</td>
 </tr>
 <tr class="even">
-<td>1x1km</td>
 <td>1</td>
 <td>1m</td>
+<td>1000</td>
+<td>1000</td>
 <td>1,000,000</td>
 </tr>
 <tr class="odd">
-<td>1x1km</td>
 <td>3</td>
 <td>100m</td>
+<td>10</td>
+<td>10</td>
 <td>300</td>
 </tr>
 <tr class="even">
-<td>1x1km</td>
 <td>3</td>
 <td>1m</td>
+<td>1000</td>
+<td>1000</td>
 <td>3,000,000</td>
 </tr>
 </tbody>
@@ -559,7 +564,7 @@
 <section>
 <section id="tophat-question-3" class="title-slide slide level1 center">
 <h1>TopHat Question 3</h1>
-<p>You downloaded a 3 band LANDSAT8 image covering the UBC campus. The image’s dimensions are 6000m (rows) by 4500m (columns) and the resolution (cell size) is 30m. How many cells does the image contain?</p>
+<p>You downloaded a 3 band LANDSAT8 image covering the UBC campus. The image’s dimensions are 6000m north/south (rows are vertical) by 4500m east/west (columns are horizontal) and the resolution (aka cell size) is 30m. How many cells does the image contain?</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
@@ -575,6 +580,14 @@
 </ul>
 </div>
 </div>
+</section>
+<section id="solution" class="slide level2">
+<h2>Solution</h2>
+<p>You downloaded a 3 band LANDSAT8 image covering the UBC campus. The image’s dimensions are 6000m north/south (rows are vertical) by 4500m east/west (columns are horizontal) and the resolution (aka cell size) is 30m. How many cells does the image contain?</p>
+<p><span class="math inline">\(6000 \div 30 = 200\)</span> rows</p>
+<p><span class="math inline">\(4500 \div 30 = 150\)</span> columns</p>
+<p><span class="math inline">\(200 \times 150 = 30,000\)</span> cells (per band)</p>
+<p><span class="math inline">\(30,000 \times 3 = 90,000\)</span> cells in total</p>
 </section>
 <section id="metadata-in-arcpro" class="slide level2">
 <h2>Metadata in ArcPro</h2>
@@ -662,7 +675,7 @@
 </ul></li>
 </ul>
 </div><div class="column" style="width:45%;">
-<p><img data-src="images/flood.png.png"></p>
+<p><img data-src="images/flood.png"></p>
 </div>
 </div>
 </section>

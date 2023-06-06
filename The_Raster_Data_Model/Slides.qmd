@@ -93,7 +93,7 @@ Resolution vs. Extent
 
 * 5 rows x 5 columns = 25 cells
 
-* Covers 5 m x 5 m = 25 m2
+* Covers 5 m x 5 m = 25 m<sup>2</sup>
 
 :::
 :::{.column width="40%"}
@@ -114,16 +114,16 @@ Resolution vs. Extent
 :::{.column width="100%"}
 
 
-**Resolution**: 10 m cell size = 100 m2 area per cell.  
+**Resolution**: 10 m cell size = 100 m<sup>2</sup> area per cell.  
 
 **Extent**: varies with number of cells and cell size.
 
 
 | Rows | Columns | Extent |
 | --- | --- | --- |
-| 5 | 5 | 50 m x 50 m = 2,500 m2 |
-| 5 | 10 | 50 m x 100 m = 5,000 m2 |
-| 100 | 100 | 1,000 m x 1,000 m = 1,000,000 m2 |
+| 5 | 5 | 50 m x 50 m = 2,500 m<sup>2</sup> |
+| 5 | 10 | 50 m x 100 m = 5,000 m<sup>2</sup> |
+| 100 | 100 | 1,000 m x 1,000 m = 1,000,000 m<sup>2</sup> |
 
 
 :::
@@ -237,16 +237,16 @@ The number of cells per image dictates file size.
 File Size
 ---------
 
-The number of cells per image dictates file size.
+Imagine four images that all have the same extent:
 
-* \#  cells = rows x columns x bands
+* 1000 m x 1000 m = 1,000,000 m<sup>2</sup>
 
-| Extent | Bands | Cell Size | Number of Cells |
-| --- | --- | --- | --- |
-| 1x1km | 1 | 100m | 100 |
-| 1x1km | 1 | 1m | 1,000,000 |
-| 1x1km | 3 | 100m | 300 |
-| 1x1km | 3 | 1m | 3,000,000 |
+| Bands | Cell Size | Rows | Columns | # of Cells |
+| --- | --- | --- | --- | --- |
+| 1 | 100m | 10 | 10 | 100 |
+| 1 | 1m | 1000 | 1000 | 1,000,000 |
+| 3 | 100m | 10 | 10 | 300 |
+| 3 | 1m | 1000 | 1000 | 3,000,000 |
 
 
 
@@ -275,10 +275,7 @@ Downloading, uploading, and processing times will all increase as the file size 
 TopHat Question 3
 =================
 
-
-
-
-You downloaded a 3 band LANDSAT8 image covering the UBC campus. The image's dimensions are 6000m (rows) by 4500m (columns) and the resolution (cell size) is 30m. How many cells does the image contain?
+You downloaded a 3 band LANDSAT8 image covering the UBC campus. The image's dimensions are 6000m north/south (rows are vertical) by 4500m east/west (columns are horizontal) and the resolution (aka cell size) is 30m. How many cells does the image contain?
 
 ::::{.columns}
 :::{.column width="50%"}
@@ -296,6 +293,22 @@ You downloaded a 3 band LANDSAT8 image covering the UBC campus. The image's dime
 
 :::
 ::::
+
+
+
+
+Solution
+--------
+
+You downloaded a 3 band LANDSAT8 image covering the UBC campus. The image's dimensions are 6000m north/south (rows are vertical) by 4500m east/west (columns are horizontal) and the resolution (aka cell size) is 30m. How many cells does the image contain?
+
+$6000 \div 30 = 200$ rows
+
+$4500 \div 30 = 150$ columns
+
+$200 \times 150 = 30,000$ cells (per band)
+
+$30,000 \times 3 = 90,000$ cells in total
 
 
 Metadata in ArcPro
@@ -431,7 +444,7 @@ Raster Calculator
 :::{.column width="45%"}
 
 
-![](images/flood.png.png)
+![](images/flood.png)
 
 
 :::

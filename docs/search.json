@@ -2342,7 +2342,7 @@
     "href": "The_Raster_Data_Model/Slides.html#file-size-1",
     "title": "Lecture Slides",
     "section": "File Size",
-    "text": "File Size\nThe number of cells per image dictates file size.\n\n# cells = rows x columns x bands\n\n\n\n\nExtent\nBands\nCell Size\nNumber of Cells\n\n\n\n\n1x1km\n1\n100m\n100\n\n\n1x1km\n1\n1m\n1,000,000\n\n\n1x1km\n3\n100m\n300\n\n\n1x1km\n3\n1m\n3,000,000"
+    "text": "File Size\nImagine four images that all have the same extent:\n\n1000 m x 1000 m = 1,000,000 m2\n\n\n\n\nBands\nCell Size\nRows\nColumns\n# of Cells\n\n\n\n\n1\n100m\n10\n10\n100\n\n\n1\n1m\n1000\n1000\n1,000,000\n\n\n3\n100m\n10\n10\n300\n\n\n3\n1m\n1000\n1000\n3,000,000"
   },
   {
     "objectID": "The_Raster_Data_Model/Slides.html#why-does-this-matter",
@@ -2350,6 +2350,13 @@
     "title": "Lecture Slides",
     "section": "Why does this matter?",
     "text": "Why does this matter?\n\n\nDownloading, uploading, and processing times will all increase as the file size increases.\n\nLarge raster datasets are computationally “expensive”\n\nMore cells = more “overhead”\n\nPractically speaking, how will this impact you?"
+  },
+  {
+    "objectID": "The_Raster_Data_Model/Slides.html#solution",
+    "href": "The_Raster_Data_Model/Slides.html#solution",
+    "title": "Lecture Slides",
+    "section": "Solution",
+    "text": "Solution\nYou downloaded a 3 band LANDSAT8 image covering the UBC campus. The image’s dimensions are 6000m north/south (rows are vertical) by 4500m east/west (columns are horizontal) and the resolution (aka cell size) is 30m. How many cells does the image contain?\n\\(6000 \\div 30 = 200\\) rows\n\\(4500 \\div 30 = 150\\) columns\n\\(200 \\times 150 = 30,000\\) cells (per band)\n\\(30,000 \\times 3 = 90,000\\) cells in total"
   },
   {
     "objectID": "The_Raster_Data_Model/Slides.html#metadata-in-arcpro",
