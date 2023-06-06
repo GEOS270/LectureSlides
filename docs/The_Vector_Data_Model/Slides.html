@@ -357,6 +357,7 @@
 <li>“Zero-dimensional”</li>
 <li>No length, width, or area</li>
 </ul>
+</div><div class="column" style="width:50%;">
 <p><img data-src="images/03-vector-example.png"></p>
 </div>
 </div>
@@ -366,7 +367,13 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>Points are great for representing a variety of objects, depending on the scale:</p>
-<p><strong>Almost Any Scale</strong>* Trees * Stop signs * Fire hydrants</p>
+<p><strong>Almost Any Scale</strong></p>
+<ul>
+<li>Trees</li>
+<li>Stop signs</li>
+<li>Fire hydrants</li>
+</ul>
+</div><div class="column" style="width:50%;">
 <p><img data-src="images/Van_Maple.png"></p>
 </div>
 </div>
@@ -376,8 +383,13 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>Points are great for representing a variety of objects, depending on the scale:</p>
-<p><strong>Almost Any Scale</strong>* Trees * Stop signs * Fire hydrants</p>
-<p><strong>Smaller Scales</strong>* Cities * Wild Fires * Airports</p>
+<p><strong>Smaller Scales</strong></p>
+<ul>
+<li>Cities</li>
+<li>Wild Fires</li>
+<li>Airports</li>
+</ul>
+</div><div class="column" style="width:50%;">
 <p><img data-src="images/map-of-canada-with-cities.jpg"></p>
 </div>
 </div>
@@ -392,6 +404,7 @@
 <li>Length</li>
 <li>No width or area</li>
 </ul>
+</div><div class="column" style="width:50%;">
 <p><img data-src="images/03-vector-example.png"></p>
 </div>
 </div>
@@ -401,7 +414,13 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>Lines are also great for representing a variety of objects, depending on the scale:</p>
-<p><strong>Almost Any Scale</strong>* Hiking trails * Power lines * Water pipes</p>
+<p><strong>Almost Any Scale</strong></p>
+<ul>
+<li>Hiking trails</li>
+<li>Power lines</li>
+<li>Water pipes</li>
+</ul>
+</div><div class="column" style="width:50%;">
 <p><img data-src="images/AT_map.png"></p>
 </div>
 </div>
@@ -411,8 +430,13 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>Lines are also great for representing a variety of objects, depending on the scale:</p>
-<p><strong>Almost Any Scale</strong>* Hiking trails * Power lines * Water pipes</p>
-<p><strong>Smaller Scales</strong>* Roads * Rivers * Storm tracks</p>
+<p><strong>Smaller Scales</strong></p>
+<ul>
+<li>Roads</li>
+<li>Rivers</li>
+<li>Storm tracks</li>
+</ul>
+</div><div class="column" style="width:50%;">
 <p><img data-src="images/03-river-scale.png"></p>
 </div>
 </div>
@@ -427,6 +451,7 @@
 <li>Length <strong>&amp;</strong> width</li>
 <li><strong>Area</strong></li>
 </ul>
+</div><div class="column" style="width:50%;">
 <p><img data-src="images/03-vector-example.png"></p>
 </div>
 </div>
@@ -436,7 +461,13 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>Preferred for many objects depending on scale:</p>
-<p><strong>Almost Any Scale</strong>* Climate units * Lakes * Political boundaries</p>
+<p><strong>Almost Any Scale</strong></p>
+<ul>
+<li>Climate units</li>
+<li>Lakes</li>
+<li>Political boundaries</li>
+</ul>
+</div><div class="column" style="width:50%;">
 <p><img data-src="images/Canada_Köppen.svg"></p>
 </div>
 </div>
@@ -446,21 +477,38 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>Preferred for many objects depending on scale:</p>
-<p><strong>Almost Any Scale</strong>* Climate units * Lakes * Political boundaries</p>
-<p><strong>Larger Scales</strong>* Buildings * Roads * Cities</p>
+<p><strong>Larger Scales</strong></p>
+<ul>
+<li>Buildings</li>
+<li>Roads</li>
+<li>Cities</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div style="overflow: hidden;
+padding-top: 100%;
+position: relative">
+<iframe src="html/Bldg.html" title="Processes" scrolling="no" frameborder="0" style="border: 0;
+height: 150%;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;">
+</iframe>
+</div>
 </div>
 </div>
 </section>
 <section id="interior-rings" class="slide level2">
 <h2>Interior Rings</h2>
+<p>All polygons are an enclosed shape. Some can also have interior rings (holes).</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>All polygons are an enclosed shape. Some can also have interior rings (holes).</p>
 <ul>
 <li>Each ring is a separate set of vertices and edges within the polygon</li>
 <li>Interior rings <strong>cannot</strong> overlap</li>
 </ul>
-<p><img data-src="images/doughnut.jpg"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/doughnut.jpg" style="width:150.0%"></p>
 </div>
 </div>
 </section></section>
@@ -489,6 +537,7 @@
 <li>Multi-lines</li>
 <li>Multi-points</li>
 </ul>
+</div><div class="column" style="width:50%;">
 <p><img data-src="images/BC_Bounds.png"></p>
 </div>
 </div>
@@ -496,14 +545,17 @@
 <section id="resolution" class="slide level2">
 <h2>Resolution</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:55%;">
 <p>Data resolution also applies to the vector model:</p>
 <ul>
-<li><p>Less straightforward than for raster model</p></li>
-<li><p>Spacing between vertices</p></li>
-<li><p>Smallest resolvable feature</p></li>
-<li><p>Higher resolution = larger filed size</p></li>
+<li>Less straightforward than for raster model</li>
+<li>Spacing between vertices
+<ul>
+<li>Smallest resolvable feature</li>
+</ul></li>
+<li>Higher resolution = larger file size</li>
 </ul>
+</div><div class="column" style="width:45%;">
 <p><img data-src="images/03-vector-resolution.png"></p>
 </div>
 </div>
@@ -523,44 +575,45 @@
 </div>
 </div>
 </section>
-<section id="attributes" class="slide level2">
-<h2>Attributes</h2>
+<section id="attribute-tables" class="slide level2">
+<h2>Attribute Tables</h2>
+<p>Non-spatial data is stored separate from spatial data.</p>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>Non-spatial data can be stored in an <strong>Attribute Table</strong> separate from the spatial data.</p>
+<div class="column" style="width:55%;">
 <ul>
-<li>Attributes are linked by an <strong>index</strong></li>
-<li>The index is a <strong>unique</strong> identifier</li>
+<li>Linked by an <strong>index</strong>
+<ul>
+<li>A <strong>unique</strong> identifier</li>
 <li>No two objects can have the same index</li>
 <li>Often labelled as the “FID” in Arc</li>
+</ul></li>
 </ul>
+</div><div class="column" style="width:45%;">
 <p><img data-src="images/03-vector-attribute.png"></p>
 </div>
 </div>
 </section>
-<section id="attributes-1" class="slide level2">
-<h2>Attributes</h2>
+<section id="attribute-tables-1" class="slide level2">
+<h2>Attribute Tables</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><img data-src="images/03-vector.png"></p>
+</div><div class="column" style="width:50%;">
 <p><img data-src="images/03-vector-attribute.png"></p>
 </div>
 </div>
 </section>
-<section id="attributes-2" class="slide level2">
-<h2>Attributes</h2>
+<section id="attribute-tables-2" class="slide level2">
+<h2>Attribute Tables</h2>
+<p>Non-spatial data is stored separate from spatial data.</p>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>Non-spatial data can be stored in an <strong>Attribute Table</strong> separate from the spatial data.</p>
+<div class="column" style="width:55%;">
 <ul>
-<li><p>Attributes are linked by an <strong>index</strong></p></li>
-<li><p>The index is a <strong>unique</strong> identifier</p></li>
-<li><p>No two objects can have the same index</p></li>
-<li><p>Often labelled as the “FID” in Arc</p></li>
-<li><p>Ability to store many attributes</p></li>
-<li><p>Less redundancy than raster model</p></li>
-<li><p>Easy to add new attributes</p></li>
+<li>Ability to store many attributes</li>
+<li>Less redundancy than raster model</li>
+<li>Easy to add new attributes</li>
 </ul>
+</div><div class="column" style="width:45%;">
 <p><img data-src="images/03-vector-attribute.png"></p>
 </div>
 </div>
@@ -580,23 +633,31 @@
 </section>
 <section id="loss-of-variability" class="slide level2">
 <h2>Loss of Variability</h2>
-<p>Similar to the mixed pixel problem, all space within a polygon (or along a line) is treated as homogenous</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p>Similar to the mixed pixel problem, feature is treated as homogenous</p>
 <ul>
 <li>What a unit covers multiple values?</li>
 <li>Any variability is lost and the unit is treated as homogenous</li>
 </ul>
-
-<img data-src="images/BBECA.png" class="r-stretch"><p>::: ::::</p>
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/BBECA.png"></p>
+</div>
+</div>
 </section>
 <section id="vector-overlay" class="slide level2">
 <h2>Vector Overlay</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>Vector overlay operations are more computationally expensive than raster overlay.</p>
+<div class="column" style="width:60%;">
+<p>More computationally expensive than raster overlay.</p>
 <ul>
-<li>Involves calculating the relative positions of ever point/vertex in every layer to determine overlap, containment, etc.</li>
-<li>Many different operations depending on needs</li>
+<li>Calculate the relative positions of ever vertex in every layer
+<ul>
+<li>Determine overlap, containment, etc.</li>
+<li>Many operations depending task</li>
+</ul></li>
 </ul>
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/Vector_Overlay_Operators.png"></p>
 </div>
 </div>
@@ -604,34 +665,76 @@
 <section id="field-calculator" class="slide level2">
 <h2>Field Calculator</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>The tool in Arc for performing calculations in the attribute table</p>
+<div class="column" style="width:60%;">
 <ul>
-<li>Fields can be “variables” in linear equations</li>
+<li>Fields can be “variables” in linear equations
+<ul>
 <li>Won’t update if field values change</li>
-<li>Not always easy to use or intuitive</li>
-<li>Lacks some basic functionality</li>
+</ul></li>
+<li>Not always intuitive
+<ul>
 <li>Can’t calculate the sum of a column without extra steps</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/Pop_Dense.png"></p>
+</div>
+</div>
+</section>
+<section id="field-calculator-1" class="slide level2">
+<h2>Field Calculator</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>Fields can be “variables” in linear equations
+<ul>
+<li>Won’t update if field values change</li>
+</ul></li>
+<li>Not always intuitive
+<ul>
+<li>Can’t calculate the sum of a column without extra steps</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/FieldCalc.png"></p>
 </div>
 </div>
 </section>
 <section id="topology" class="slide level2">
 <h2>Topology</h2>
+<p>The spatial relationships between geographic features.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>The spatial relationships between geographic features.</p>
 <ul>
-<li><p>An important aspect of network analysis (route finding)</p></li>
-<li><p>Google maps uses topology every time you search for directions</p></li>
-<li><p>Different rules for different features (pedestrian, car, transit)</p></li>
-<li><p>We can specify rules e.g.:</p></li>
-<li><p>Polygons (i.e.&nbsp;buildings) cannot overlap</p></li>
-<li><p>Points (i.e.&nbsp;fire hydrants) must be attached to lines (i.e.&nbsp;water mains)</p></li>
+<li>Important for route finding
+<ul>
+<li>Google maps uses topology for directions</li>
+<li>Rules by feature
+<ul>
+<li>Pedestrian</li>
+<li>Car</li>
+<li>Transit</li>
+</ul></li>
+</ul></li>
 </ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/Topology.gif"></p>
+</div>
+</div>
+</section>
+<section id="topology-1" class="slide level2">
+<h2>Topology</h2>
+<p>The spatial relationships between geographic features.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>We can set rules e.g.:
+<ul>
+<li>Polygons (i.e.&nbsp;buildings) cannot overlap</li>
+<li>Points (i.e.&nbsp;fire hydrants) must be attached to lines (i.e.&nbsp;water mains)</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
 <p><img data-src="images/Topology.gif"></p>
 </div>
 </div>
@@ -642,12 +745,15 @@
 <div class="column" style="width:100%;">
 <p>The vector data model is well suited for discrete objects:</p>
 <ul>
-<li><p>The compact data structure allows for smaller file sizes relative to the raster dta model</p></li>
-<li><p>Easy to query and select by attributes</p></li>
-<li><p>Topology (connectivity)</p></li>
-<li><p>Proximity &amp; Network Analysis</p></li>
-<li><p>Graphic output is usually “cleaner”</p></li>
-<li><p>For final production maps, often useful to convert to vector format</p></li>
+<li>The compact data structure allows for smaller file sizes relative to the raster dta model</li>
+<li>Easy to query and select by attributes
+<ul>
+<li>Topology &gt; Proximity &amp; Network Analysis</li>
+</ul></li>
+<li>Graphic output is usually “cleaner”
+<ul>
+<li>For final production maps, often useful to convert to vector format</li>
+</ul></li>
 </ul>
 </div>
 </div>
@@ -677,7 +783,6 @@
 <li><p>Coordinate reference system (CRS).</p></li>
 <li><p>Attribute table.</p></li>
 </ul>
-<p>::: ::::</p>
 </section>
 <section id="geojson" class="slide level2">
 <h2>GeoJSON</h2>
@@ -688,104 +793,90 @@
 <li>Larger File Size</li>
 <li><a href="https://geojson.io/#map=2/20.0/0.0">An Example</a>)</li>
 </ul>
-<p>::: ::::</p>
 </section>
-<section id="text-data" class="slide level2">
+<section id="text-data" class="slide level2 smaller">
 <h2>Text Data</h2>
-<div class="columns">
-<div class="column" style="width:100%;">
-<p>Point objects can be stored as simple text flies.</p>
-<ul>
-<li><strong>Does not</strong> work for lines or polygons</li>
-</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-wx">
 <table>
+<caption>Table&nbsp;1: BC Weather Stations</caption>
 <colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
+<col style="width: 30%">
+<col style="width: 10%">
 <col style="width: 20%">
 <col style="width: 20%">
 <col style="width: 20%">
 </colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Province</th>
+<th style="text-align: right;">ClimateID</th>
+<th style="text-align: right;">Latitude</th>
+<th style="text-align: right;">Longitude</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
-<td>Name</td>
-<td>Province</td>
-<td>Climate ID</td>
-<td>Latitude (Decimal Degrees)</td>
-<td>Longitude (Decimal Degrees)</td>
+<td style="text-align: left;">ACTIVE PASS</td>
+<td style="text-align: left;">BC</td>
+<td style="text-align: right;">1010066</td>
+<td style="text-align: right;">48.87</td>
+<td style="text-align: right;">-123.28</td>
 </tr>
 <tr class="even">
-<td>ACTIVE PASS</td>
-<td>BRITISH COLUMBIA</td>
-<td>1010066</td>
-<td>48.87</td>
-<td>-123.28</td>
+<td style="text-align: left;">ALBERT HEAD</td>
+<td style="text-align: left;">BC</td>
+<td style="text-align: right;">1010235</td>
+<td style="text-align: right;">48.40</td>
+<td style="text-align: right;">-123.48</td>
 </tr>
 <tr class="odd">
-<td>ALBERT HEAD</td>
-<td>BRITISH COLUMBIA</td>
-<td>1010235</td>
-<td>48.40</td>
-<td>-123.48</td>
+<td style="text-align: left;">BAMBERTON OCEAN CEMENT</td>
+<td style="text-align: left;">BC</td>
+<td style="text-align: right;">1010595</td>
+<td style="text-align: right;">48.58</td>
+<td style="text-align: right;">-123.52</td>
 </tr>
 <tr class="even">
-<td>BAMBERTON OCEAN CEMENT</td>
-<td>BRITISH COLUMBIA</td>
-<td>1010595</td>
-<td>48.58</td>
-<td>-123.52</td>
+<td style="text-align: left;">BEAR CREEK</td>
+<td style="text-align: left;">BC</td>
+<td style="text-align: right;">1010720</td>
+<td style="text-align: right;">48.50</td>
+<td style="text-align: right;">-124.00</td>
 </tr>
 <tr class="odd">
-<td>BEAR CREEK</td>
-<td>BRITISH COLUMBIA</td>
-<td>1010720</td>
-<td>48.50</td>
-<td>-124.00</td>
+<td style="text-align: left;">BEAVER LAKE</td>
+<td style="text-align: left;">BC</td>
+<td style="text-align: right;">1010774</td>
+<td style="text-align: right;">48.50</td>
+<td style="text-align: right;">-123.35</td>
 </tr>
 <tr class="even">
-<td>BEAVER LAKE</td>
-<td>BRITISH COLUMBIA</td>
-<td>1010774</td>
-<td>48.50</td>
-<td>-123.35</td>
+<td style="text-align: left;">BECHER BAY</td>
+<td style="text-align: left;">BC</td>
+<td style="text-align: right;">1010780</td>
+<td style="text-align: right;">48.33</td>
+<td style="text-align: right;">-123.63</td>
 </tr>
 <tr class="odd">
-<td>BECHER BAY</td>
-<td>BRITISH COLUMBIA</td>
-<td>1010780</td>
-<td>48.33</td>
-<td>-123.63</td>
+<td style="text-align: left;">BRENTWOOD BAY 2</td>
+<td style="text-align: left;">BC</td>
+<td style="text-align: right;">1010960</td>
+<td style="text-align: right;">48.60</td>
+<td style="text-align: right;">-123.47</td>
 </tr>
 <tr class="even">
-<td>BRENTWOOD BAY 2</td>
-<td>BRITISH COLUMBIA</td>
-<td>1010960</td>
-<td>48.60</td>
-<td>-123.47</td>
-</tr>
-<tr class="odd">
-<td>BRENTWOOD CLARKE ROAD</td>
-<td>BRITISH COLUMBIA</td>
-<td>1010961</td>
-<td>48.57</td>
-<td>-123.45</td>
-</tr>
-<tr class="even">
-<td>BRENTWOOD W SAANICH RD</td>
-<td>BRITISH COLUMBIA</td>
-<td>1010965</td>
-<td>48.57</td>
-<td>-123.43</td>
-</tr>
-<tr class="odd">
-<td>CENTRAL SAANICH VEYANESS</td>
-<td>BRITISH COLUMBIA</td>
-<td>1011467</td>
-<td>48.58</td>
-<td>-123.42</td>
+<td style="text-align: left;">BRENTWOOD CLARKE ROAD</td>
+<td style="text-align: left;">BC</td>
+<td style="text-align: right;">1010961</td>
+<td style="text-align: right;">48.57</td>
+<td style="text-align: right;">-123.45</td>
 </tr>
 </tbody>
 </table>
+</div>
 </div>
 </div>
 </section></section>
@@ -1018,6 +1109,44 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

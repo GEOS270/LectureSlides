@@ -18,8 +18,6 @@ fig-dpi: 300
 Raster Data Model
 =================
 
-
-
 ::::{.columns}
 :::{.column width="100%"}
 
@@ -28,8 +26,6 @@ Raster Data Model
  
 :::
 ::::
-
-
 
 
 Raster Data Model
@@ -46,8 +42,6 @@ Represents space **continuously**:
 * Rectangular grid of equally sized cells
 * Each cell only has **one value**
 
-
-
 :::
 :::{.column width="50%"}
 
@@ -55,23 +49,19 @@ Represents space **continuously**:
 ![](images/03-raster-example.png)
 
 
-
-
 :::
 ::::
-
-
-
 
 Raster Data Model
 -----------------
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="60%"}
 
 
 Multiple attributes, require multiple **bands**
+
 * Standard color photos have three bands:
 	+ Red, green, & blue
 * LANDSAT8 has 11 bands:
@@ -80,59 +70,40 @@ Multiple attributes, require multiple **bands**
 
 
 
-
-
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 ![](images/DeltaMap.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 Resolution vs. Extent
 ---------------------
 
+**Resolution** (aka cell size) is the smallest resolvable feature. 
+**Extent** (aka domain) depends on number of rows and columns along with the cell size.
 
 ::::{.columns}
-:::{.column width="50%"}
-
-
-**Resolution**: (aka cell size) is the smallest resolvable feature.
-
-
-* 1 m x 1 m = 1 m2
-
-
-**Extent**: (aka domain) depends on number of rows and columns along with the cell size.
-
+:::{.column width="55%"}
+* 1 m cell size
 
 * 5 rows x 5 columns = 25 cells
-* 1 m cell size
+
 * Covers 5 m x 5 m = 25 m2
 
-
-
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 ![](images/03-raster-example.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 Resolution vs. Extent
@@ -148,8 +119,6 @@ Resolution vs. Extent
 **Extent**: varies with number of cells and cell size.
 
 
-
-
 | Rows | Columns | Extent |
 | --- | --- | --- |
 | 5 | 5 | 50 m x 50 m = 2,500 m2 |
@@ -157,12 +126,8 @@ Resolution vs. Extent
 | 100 | 100 | 1,000 m x 1,000 m = 1,000,000 m2 |
 
 
-
-
 :::
 ::::
-
-
 
 
 TopHat Question 1
@@ -181,31 +146,25 @@ Raster resolution is dictated by the number of rows and columns, raster extent i
 * Sometimes True, Sometimes False
 
 
-
-
 :::
 ::::
-
 
 
 
 Mixed Pixel Problem
 -------------------
 
+One cell = one value. What if it covers multiple values?
 
+::::{.columns}
+:::{.column width="50%"}
 
-One cell: one value
-
-
-* What if it covers multiple values?
-+ A: Winner take all
-+ B: Cell center
+* A: Winner take all
+* B: Cell center
 
 * Other options?
-+ Containment - if a value of interest is anywhere within a cell
-- e.g. invasive species presence
-
-
+  	+ Containment: value of interest is present
+    - e.g. invasive species presence
 
 :::
 :::{.column width="50%"}
@@ -214,41 +173,33 @@ One cell: one value
 ![](images/03-mixed-pixel.jpg)
 
 
-
-
 :::
 ::::
-
-
 
 
 Implications
 ------------
 
-
+::::{.columns}
+:::{.column width="55%"}
 
 Loss of information during rasterization.
 
 
-* A "bigger" issue for larger cells.
-* At a certain point features become unrecognizable.
-* Higher resolution = larger file for equivalent areas.
-
-
+* "**Bigger**" issue for larger cells
+* At some point features become unrecognizable
+* Higher resolution = larger file
+  + *For equivalent areas*
 
 :::
-:::{.column width="50%"}
+:::{.column width="45%"}
 
 
 ![](images/03-raster-resolution.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 TopHat Question 2
@@ -268,51 +219,34 @@ This term describes how information is lost when creating a raster image.
 * Rasterization
 
 
-
-
 :::
 ::::
-
-
 
 
 File Size
 ---------
 
+The number of cells per image dictates file size.
 
-::::{.columns}
-:::{.column width="50%"}
+* \#  cells = rows x columns x bands
+  + Increases **exponentially** with resolution
+	  - For a given extent
+  + Increases **linearly** with number of bands
 
+
+File Size
+---------
 
 The number of cells per image dictates file size.
 
-
-* Cells = rows x columns x bands
-* Increases **exponentially** with resolution
-+ For a given extent
-
-* Increases **linearly** with number of bands
-
-
-
-:::
-:::{.column width="50%"}
-
-
-
+* \#  cells = rows x columns x bands
 
 | Extent | Bands | Cell Size | Number of Cells |
 | --- | --- | --- | --- |
 | 1x1km | 1 | 100m | 100 |
 | 1x1km | 1 | 1m | 1,000,000 |
- 1x1km | 3 | 100m | 300 |
+| 1x1km | 3 | 100m | 300 |
 | 1x1km | 3 | 1m | 3,000,000 |
-
-
-
-
-:::
-::::
 
 
 
@@ -329,44 +263,39 @@ Downloading, uploading, and processing times will all increase as the file size 
 
 
 * Large raster datasets are computationally "expensive"
-+ More cells = more "overhead"
+	+ More cells = more "overhead"
 
 * Practically speaking, how will this impact you?
 
 
-
-
 :::
 ::::
-
-
 
 
 TopHat Question 3
 =================
 
 
-::::{.columns}
-:::{.column width="100%"}
 
 
 You downloaded a 3 band LANDSAT8 image covering the UBC campus. The image's dimensions are 6000m (rows) by 4500m (columns) and the resolution (cell size) is 30m. How many cells does the image contain?
 
+::::{.columns}
+:::{.column width="50%"}
 
 * 30,000
 * 90,000
 * 900,000
+
+:::
+:::{.column width="50%"}
+
 * 2,700,000
 * 27,000,000
 * 81,000,000
 
-
-
-
 :::
 ::::
-
-
 
 
 Metadata in ArcPro
@@ -379,8 +308,6 @@ Metadata in ArcPro
 
 ![](images/van_greenest.png)
 
-
-
 :::
 :::{.column width="50%"}
 
@@ -388,31 +315,26 @@ Metadata in ArcPro
 ![](images/extent.png)
 
 
-
-
 :::
 ::::
 
 
-
-
 Raster Overlay
 --------------
+
+Raster data can be used to evaluate algebraic expressions easily and efficiently.
 
 
 ::::{.columns}
 :::{.column width="50%"}
 
 
-Raster data can be used to evaluate algebraic expressions easily and efficiently.
 
 
 * A: Winter Temperature
 * B: Summer Temperature
 * Range: B-A
 * Average: (A+B)/2
-
-
 
 :::
 :::{.column width="50%"}
@@ -421,12 +343,8 @@ Raster data can be used to evaluate algebraic expressions easily and efficiently
 ![](images/03-raster-overlay.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 Raster Calculator
@@ -434,88 +352,128 @@ Raster Calculator
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="55%"}
 
 
-The tool for this in Arc is called the "Raster Calculator"
-
-
-* Raster layers can be "variables" in linear equations
 * Perform simple calculations incorporating one or multiple layers
 * Ideally, layers should have the same resolution and extent
-+ Resampling is required if not
-+ Output will be restricted to "smallest" extent
-
-
+	+ Output will be restricted to "smallest" extent
 
 :::
-:::{.column width="50%"}
+:::{.column width="45%"}
 
 
-![](images/RasterCalculator.png)
-
-
+![](images/elevation.png)
 
 
 :::
 ::::
 
 
+Raster Calculator
+-----------------
 
+
+::::{.columns}
+:::{.column width="55%"}
+
+
+* Perform simple calculations incorporating one or multiple layers
+* Ideally, layers should have the same resolution and extent
+	+ Output will be restricted to "smallest" extent
+
+:::
+:::{.column width="45%"}
+
+
+![](images/elevation_below10.png)
+
+
+:::
+::::
+
+Raster Calculator
+-----------------
+
+
+::::{.columns}
+:::{.column width="55%"}
+
+
+* Perform simple calculations incorporating one or multiple layers
+* Ideally, layers should have the same resolution and extent
+	+ Output will be restricted to "smallest" extent
+
+:::
+:::{.column width="45%"}
+
+
+![](images/RasterCalculator.png)
+
+
+:::
+::::
+
+
+Raster Calculator
+-----------------
+
+
+::::{.columns}
+:::{.column width="55%"}
+
+
+* Perform simple calculations incorporating one or multiple layers
+* Ideally, layers should have the same resolution and extent
+	+ Output will be restricted to "smallest" extent
+
+:::
+:::{.column width="45%"}
+
+
+![](images/flood.png.png)
+
+
+:::
+::::
 
 Key Advantages
 --------------
 
+Raster model is well suited for continuous phenomena:
 
 
-The raster data model is well suited for continuous phenomena:
-
-
-* Continuous in **space**
-+ Complete coverage within the domain (extent), everywhere has a value
-
-* Continuous in space and **time**
-+ Bands can be used to represent time steps
-+ Common tool approach for climate data
-- i.e., bands 1, 2, 3 ... could represent mean Jan, Feb, Mar temperatures
-
-* Simple data structure makes raster overlay easy and efficient
-+ Multiple raster layers can be combined and evaluated using expressions
-+ Easy to "show" others what has been done
-
-
-
+* Continuous in **space** and *time*
+	+ Complete coverage within the domain 
+	+ Bands can be stacked to represent multiple attributes or time steps
+* Simple data structure overlay easy and efficient
+	+ Relation between layers can evaluated with expressions
+	  - Easy to "show" others what has been done
 
 
 
 GeoTIFF
 -------
 
+One of the most common/functional raster formats, based of the Tag Image File Format (TIFF). 
 
-
-One of the most common/functional raster formats, based of the Tag Image File Format (TIFF). A TIFF file stores metadata (data about the data) as tags. A GeoTIFF is a standard .tif image format plus additional tags spatial tags denoting spatial information including: 
-
-
-* Extent (minimum x,y and maximum x,y)
-* Resolution (cell size)
-* Projection, Coordinate system, and datum
-
-
+* A TIFF file stores metadata (data about the data) as tags. 
+  + GeoTIFF adds spatial tags denoting: 
+    - Extent (minimum x,y and maximum x,y)
+    - Resolution (cell size)
+    - Projection, Coordinate system, and datum
 
 
 Other file types
 ----------------
 
-
-
 Raster data can come in many different formats. You will likely encounter when working with raster data include:
 
 
-* IMG - A proprietary image format commonly used by ESRI products
-* JPEG2000 - A geospatial version of the common .jpg image type
-* ASCII - An older human readable format (simple text file) with slower performance than the types listed above
-
-
+* **IMG**: Proprietary format used by ESRI products
+* **JPEG2000**: Geospatial version of the .jpg image
+* **ASCII**: Human readable format (text file) 
+  + Slower performance than the types listed above
 
 
 
@@ -536,26 +494,44 @@ The Raster Calculator tool lets you:
 * Overlay raster and vector layers
 
 
-
-
 :::
 ::::
 
 
+Satellites Data
+---------------
 
 
-Monitoring Vegetation with Satellites
+We're going to work with [LANDSAT8](https://developers.google.com/earth-engine/datasets/catalog/landsat-8) data in lab.  
+
+* LANDSAT8 is one of a large number of satellites that orbit the earth continuously collecting multi-spectral (visible light & other wavelengths) imagery.  
+* We can use multi-spectral imagery for a number of different applications like estimating vegetation health.
+
+
+
+Monitoring Vegetation
 ----------------
 
 
+The lines on the chart below are referred to as a spectral reflectance curves. 
 
 
-We're going to work with [LANDSAT8](https://developers.google.com/earth-engine/datasets/catalog/landsat-8) data in this lab.  LANDSAT8 is one of a large number of satellites that orbit the earth continuously collecting multi-spectral (visible light & other wavelengths) imagery.  We can use multi-spectral imagery for a number of different applications like estimating vegetation health.
+::::{.columns}
+:::{.column width="40%"}
 
-The lines on the chart below are referred to as a spectral reflectance curves. They show reflectance (amount of light) on the y-axis, defined as the percent of radiation reflected by different earth features, and wavelength on the x-axis. As you can see, the spectral reflectance curves for different features look very different. Specifically, you can see that healthy green vegetation has very high reflectance in the near-infrared wavelengths (0.7-1.4 µm) and lower reflectance in the visible part of the spectrum (0-0.7 µm), while water absorbs almost all incoming infrared radiation and thus has very low infrared reflectance. Soil has relatively higher reflectance in the visible wavelengths, and intermediate reflectance in the near infrared.
+$NDVI = \frac{(NIR-Red)}{(NIR+Red)}$
+
+* Green vegetation has different reflectance than soil and water
+
+
+:::
+:::{.column width="60%"}
 
 
 ![](images/NDVI.png)
+
+:::
+::::
 
 
 TopHat Question 5
@@ -574,9 +550,8 @@ What does NDVI tell us?
 * Number of Plants per Square Meter
 * Location and Age of Forests
 
-
-
 :::
 ::::
+
 
 

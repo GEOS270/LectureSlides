@@ -18,8 +18,6 @@ fig-dpi: 300
 Vector Data Model
 =================
 
-
-
 ::::{.columns}
 :::{.column width="100%"}
 
@@ -28,8 +26,6 @@ Vector Data Model
  
 :::
 ::::
-
-
 
 
 Vector Data Model
@@ -47,8 +43,6 @@ Represents space **discretely**:
 + Linked to descriptive attributes
 + Many attributes per object
 
-
-
 :::
 :::{.column width="50%"}
 
@@ -56,12 +50,8 @@ Represents space **discretely**:
 ![](images/03-vector-example.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 Points
@@ -79,17 +69,15 @@ A point feature is an individual x, y coordinate pair representing a precise loc
 * No length, width, or area
 
 
+:::
+:::{.column width="50%"}
 
 
 ![](images/03-vector-example.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 Points
@@ -103,22 +91,22 @@ Points
 Points are great for representing a variety of objects, depending on the scale:
 
 
-**Almost Any Scale*** Trees
+**Almost Any Scale**
+
+* Trees
 * Stop signs
 * Fire hydrants
 
 
+:::
+:::{.column width="50%"}
 
 
 ![](images/Van_Maple.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 Points
@@ -132,28 +120,20 @@ Points
 Points are great for representing a variety of objects, depending on the scale:
 
 
-**Almost Any Scale*** Trees
-* Stop signs
-* Fire hydrants
+**Smaller Scales**
 
-
-**Smaller Scales*** Cities
+* Cities
 * Wild Fires
 * Airports
 
-
-
+:::
+:::{.column width="50%"}
 
 ![](images/map-of-canada-with-cities.jpg)
 
 
-
-
 :::
 ::::
-
-
-
 
 Lines
 -----
@@ -171,17 +151,15 @@ A line feature is a set of connected points. **Must** have a start and end point
 * No width or area
 
 
+:::
+:::{.column width="50%"}
 
 
 ![](images/03-vector-example.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 Lines
@@ -195,24 +173,20 @@ Lines
 Lines are also great for representing a variety of objects, depending on the scale:
 
 
-**Almost Any Scale*** Hiking trails
+**Almost Any Scale**
+
+* Hiking trails
 * Power lines
 * Water pipes
 
-
-
+:::
+:::{.column width="50%"}
 
 
 ![](images/AT_map.png)
 
-
-
-
 :::
 ::::
-
-
-
 
 Lines
 -----
@@ -225,27 +199,22 @@ Lines
 Lines are also great for representing a variety of objects, depending on the scale:
 
 
-**Almost Any Scale*** Hiking trails
-* Power lines
-* Water pipes
+**Smaller Scales**
 
-
-**Smaller Scales*** Roads
+* Roads
 * Rivers
 * Storm tracks
 
 
+:::
+:::{.column width="50%"}
 
 
 ![](images/03-river-scale.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 Polygons
@@ -264,17 +233,15 @@ A polygon feature consist of a set of **three** or more vertices connected by li
 * **Area**
 
 
+:::
+:::{.column width="50%"}
 
 
 ![](images/03-vector-example.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 Polygons
@@ -288,23 +255,20 @@ Polygons
 Preferred for many objects depending on scale:
 
 
-**Almost Any Scale*** Climate units
+**Almost Any Scale**
+
+* Climate units
 * Lakes
 * Political boundaries
 
-
-
-
+:::
+:::{.column width="50%"}
 
 ![](images/Canada_Köppen.svg)
 
 
-
-
 :::
 ::::
-
-
 
 
 Polygons
@@ -317,56 +281,55 @@ Polygons
 
 Preferred for many objects depending on scale:
 
+**Larger Scales**
 
-**Almost Any Scale*** Climate units
-* Lakes
-* Political boundaries
-
-
-**Larger Scales*** Buildings
+* Buildings
 * Roads
 * Cities
 
 
+:::
+:::{.column width="50%"}
 
 
-
-
-
-
-
+<div style="overflow: hidden;
+padding-top: 100%;
+position: relative">
+<iframe src="html/Bldg.html" title="Processes" scrolling="no" frameborder="0"
+style="border: 0;
+height: 150%;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;">
+</iframe>
+</div>
 
 :::
 ::::
-
-
 
 
 Interior Rings
 --------------
 
+All polygons are an enclosed shape. Some can also have interior rings (holes).
 
 ::::{.columns}
 :::{.column width="50%"}
-
-
-All polygons are an enclosed shape. Some can also have interior rings (holes).
 
 
 * Each ring is a separate set of vertices and edges within the polygon
 * Interior rings **cannot** overlap
 
 
+:::
+:::{.column width="50%"}
 
 
-![](images/doughnut.jpg)
-
-
+![](images/doughnut.jpg){width="150%"}
 
 :::
 ::::
-
-
 
 
 TopHat Question 1
@@ -385,14 +348,8 @@ The vector data model can represent objects as: (select all that apply)
 * Polygons
 * Surfaces
 
-
-
-
 :::
 ::::
-
-
-
 
 Multi-part Objects
 ------------------
@@ -409,17 +366,13 @@ When an object has multiple parts, the vector model allows for:
 * Multi-lines
 * Multi-points
 
-
-
+:::
+:::{.column width="50%"}
 
 ![](images/BC_Bounds.png)
 
-
-
 :::
 ::::
-
-
 
 
 Resolution
@@ -427,7 +380,7 @@ Resolution
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="55%"}
 
 
 Data resolution also applies to the vector model:
@@ -435,22 +388,19 @@ Data resolution also applies to the vector model:
 
 * Less straightforward than for raster model
 * Spacing between vertices
-+ Smallest resolvable feature
+  + Smallest resolvable feature
 
-* Higher resolution = larger filed size
+* Higher resolution = larger file size
 
 
-
+:::
+:::{.column width="45%"}
 
 ![](images/03-vector-resolution.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 TopHat Question 2
@@ -470,46 +420,35 @@ The resolution of a vector layer is defined by
 * The number of attributes
 
 
-
-
 :::
 ::::
 
 
+Attribute Tables
+----------------
 
-
-Attributes
-----------
-
+Non-spatial data is stored separate from spatial data.
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="55%"}
 
+* Linked by an **index**
+  + A **unique** identifier
+  + No two objects can have the same index
+  + Often labelled as the "FID" in Arc
 
-Non-spatial data can be stored in an **Attribute Table** separate from the spatial data.
-
-
-* Attributes are linked by an **index**
-+ The index is a **unique** identifier
-+ No two objects can have the same index
-+ Often labelled as the "FID" in Arc
-
-
-
+:::
+:::{.column width="45%"}
 
 ![](images/03-vector-attribute.png)
 
 
-
-
 :::
 ::::
 
 
-
-
-Attributes
-----------
+Attribute Tables
+----------------
 
 
 ::::{.columns}
@@ -519,51 +458,37 @@ Attributes
 ![](images/03-vector.png)
 
 
-
+:::
+:::{.column width="50%"}
 
 ![](images/03-vector-attribute.png)
-
-
 
 
 :::
 ::::
 
 
+Attribute Tables
+----------------
 
-
-Attributes
-----------
-
+Non-spatial data is stored separate from spatial data.
 
 ::::{.columns}
-:::{.column width="50%"}
-
-
-Non-spatial data can be stored in an **Attribute Table** separate from the spatial data.
-
-
-* Attributes are linked by an **index**
-+ The index is a **unique** identifier
-+ No two objects can have the same index
-+ Often labelled as the "FID" in Arc
+:::{.column width="55%"}
 
 * Ability to store many attributes
 + Less redundancy than raster model
 + Easy to add new attributes
 
 
-
+:::
+:::{.column width="45%"}
 
 ![](images/03-vector-attribute.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 TopHat Question 3
@@ -581,37 +506,32 @@ As with the raster data model, each vector object can only have one attribute. W
 * False
 
 
-
-
 :::
 ::::
-
-
 
 
 Loss of Variability
 -------------------
 
 
+::::{.columns}
+:::{.column width="60%"}
 
-Similar to the mixed pixel problem, all space within a polygon (or along a line) is treated as homogenous
+Similar to the mixed pixel problem, feature is treated as homogenous
 
 
 * What a unit covers multiple values?
 + Any variability is lost and the unit is treated as homogenous
 
 
-
+:::
+:::{.column width="40%"}
 
 ![](images/BBECA.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 Vector Overlay
@@ -619,27 +539,25 @@ Vector Overlay
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="60%"}
 
 
-Vector overlay operations are more computationally expensive than raster overlay.
+More computationally expensive than raster overlay.
 
 
-* Involves calculating the relative positions of ever point/vertex in every layer to determine overlap, containment, etc.
-* Many different operations depending on needs
+* Calculate the relative positions of ever vertex in every layer 
+  + Determine overlap, containment, etc.
+  + Many operations depending task
 
 
-
+:::
+:::{.column width="40%"}
 
 ![](images/Vector_Overlay_Operators.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 Field Calculator
@@ -647,72 +565,96 @@ Field Calculator
 
 
 ::::{.columns}
-:::{.column width="50%"}
-
-
-The tool in Arc for performing calculations in the attribute table
-
+:::{.column width="60%"}
 
 * Fields can be "variables" in linear equations
-* Won't update if field values change
-* Not always easy to use or intuitive
-+ Lacks some basic functionality
-+ Can't calculate the sum of a column without extra steps
-
-
+  + Won't update if field values change
+* Not always intuitive
+  + Can't calculate the sum of a column without extra steps
 
 :::
-:::{.column width="50%"}
-
-
+:::{.column width="40%"}
 
 ![](images/Pop_Dense.png)
 
 
 
-
-![](images/FieldCalc.png)
-
-
-
-
-
 :::
 ::::
 
 
+Field Calculator
+----------------
+
+
+::::{.columns}
+:::{.column width="60%"}
+
+
+* Fields can be "variables" in linear equations
+  + Won't update if field values change
+* Not always intuitive
+  + Can't calculate the sum of a column without extra steps
+
+:::
+:::{.column width="40%"}
+
+
+![](images/FieldCalc.png)
+
+
+:::
+::::
 
 
 Topology
 --------
 
+The spatial relationships between geographic features.
+
 
 ::::{.columns}
 :::{.column width="50%"}
 
+* Important for route finding
+  + Google maps uses topology for directions
+  + Rules by feature 
+    - Pedestrian
+    - Car
+    - Transit
 
-The spatial relationships between geographic features.
-
-
-* An important aspect of network analysis (route finding)
-+ Google maps uses topology every time you search for directions
-- Different rules for different features (pedestrian, car, transit)
-
-* We can specify rules e.g.:
-+ Polygons (i.e. buildings) cannot overlap
-+ Points (i.e. fire hydrants) must be attached to lines (i.e. water mains)
-
-
-
+:::
+:::{.column width="50%"}
 
 ![](images/Topology.gif)
-
-
 
 
 :::
 ::::
 
+
+Topology
+--------
+
+The spatial relationships between geographic features.
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+* We can set rules e.g.:
+  + Polygons (i.e. buildings) cannot overlap
+  + Points (i.e. fire hydrants) must be attached to lines (i.e. water mains)
+
+
+:::
+:::{.column width="50%"}
+
+![](images/Topology.gif)
+
+
+:::
+::::
 
 
 
@@ -726,22 +668,16 @@ Key Advantages
 
 The vector data model is well suited for discrete objects:
 
-
 * The compact data structure allows for smaller file sizes relative to the raster dta model
 * Easy to query and select by attributes
-* Topology (connectivity)
-+ Proximity & Network Analysis
+  * Topology > Proximity & Network Analysis
 
 * Graphic output is usually "cleaner"
-+ For final production maps, often useful to convert to vector format
-
-
+  + For final production maps, often useful to convert to vector format
 
 
 :::
 ::::
-
-
 
 
 TopHat Question 4
@@ -762,18 +698,12 @@ This term describes the spatial relationships between features:
 * Vector
 
 
-
-
 :::
 ::::
 
 
-
-
 Shapefiles
 ----------
-
-
 
 One of the most common file types you will encounter, stores the coordinates of vertices plus metadata. Identified by a .shp tag.
 
@@ -786,17 +716,8 @@ One of the most common file types you will encounter, stores the coordinates of 
 
 
 
-
-:::
-::::
-
-
-
-
 GeoJSON
 -------
-
-
 
 A simple, lightweight format for most commonly encountered in web mapping. Identified by a .json tag.
 
@@ -808,54 +729,25 @@ A simple, lightweight format for most commonly encountered in web mapping. Ident
 
 
 
-
-:::
-::::
-
-
-
-
-Text Data
+Text Data {.smaller}
 ---------
 
 
-::::{.columns}
-:::{.column width="100%"}
+```{r include=FALSE}
+library(knitr)
+```
 
 
-Point objects can be stored as simple text flies.
+```{r}
+#| label: tbl-wx
+#| tbl-cap: "BC Weather Stations"
+#| tbl-colwidths: [30,10,20,20,20]
 
+csv <- read.csv(file = 'data/wx.csv')
+kable(csv)
 
-* **Does not** work for lines or polygons
-
-
+```
   
-
-
-
-|  |  |  |  |  |
-| --- | --- | --- | --- | --- |
-| Name | Province | Climate ID | Latitude (Decimal Degrees) | Longitude (Decimal Degrees) |
-| ACTIVE PASS | BRITISH COLUMBIA | 1010066 | 48.87 | -123.28 |
-| ALBERT HEAD | BRITISH COLUMBIA | 1010235 | 48.40 | -123.48 |
-| BAMBERTON OCEAN CEMENT | BRITISH COLUMBIA | 1010595 | 48.58 | -123.52 |
-| BEAR CREEK | BRITISH COLUMBIA | 1010720 | 48.50 | -124.00 |
-| BEAVER LAKE | BRITISH COLUMBIA | 1010774 | 48.50 | -123.35 |
-| BECHER BAY | BRITISH COLUMBIA | 1010780 | 48.33 | -123.63 |
-| BRENTWOOD BAY 2 | BRITISH COLUMBIA | 1010960 | 48.60 | -123.47 |
-| BRENTWOOD CLARKE ROAD | BRITISH COLUMBIA | 1010961 | 48.57 | -123.45 |
-| BRENTWOOD W SAANICH RD | BRITISH COLUMBIA | 1010965 | 48.57 | -123.43 |
-| CENTRAL SAANICH VEYANESS | BRITISH COLUMBIA | 1011467 | 48.58 | -123.42 |
-
-
-
-
-:::
-::::
-
-
-
-
 TopHat Question 5
 =================
 
@@ -871,8 +763,6 @@ The Vector data model is almost always a better choice than the raster data mode
 * It has better resolution for a given file size
 * We can store many attributes for one object without creating redundancy
 * The vector data model is not always better than the raster data model
-
-
 
 
 :::

@@ -4,7 +4,7 @@
     "href": "Choice_of_Data_Model/Slides.html#comparing-data-models",
     "title": "Lecture Slides",
     "section": "Comparing Data Models",
-    "text": "Comparing Data Models\n\n\nRaster\nUsually continuous fields\n\nFull coverage over domain\nGrid of equally sized cells\nData “gaps” must be given a value\n(i.e., NODATA)\nSeparate bands for each attribute\nEach cell has one value per band\nOne raster can have many bands\n\n\nVector\nUsually discrete objects\n\nOnly represents features of interest\nPoints, Lines, and/or Polygons\nCan overlap, have gaps, or be continuous\nEach object can have many attributes\nAttribute table links spatial and non-spatial data\nTopology rules\nConnectivity and relationships between features"
+    "text": "Comparing Data Models\n\n\nRaster\nUsually continuous fields\n\nFull coverage over domain\n\nGrid of equal size cells\nGaps need a value\n\nOne band per attribute\n\nOne raster can have many bands\n\n\n\nVector\nUsually discrete objects\n\nOnly features of interest\n\nPoints, Lines, Polygons\nTopology\n\nMany attributes per object\n\nAttribute table links spatial and non-spatial data"
   },
   {
     "objectID": "Choice_of_Data_Model/Slides.html#advantages",
@@ -21,18 +21,39 @@
     "text": "Disadvantages\n\n\nRaster\n\nMixed pixel problem\nOne attribute per cell\nLarge data volumes\n\n\nVector\n\nNo variability within polygons\nComplex data structure\nOverlay can be computationally expensive"
   },
   {
-    "objectID": "Choice_of_Data_Model/Slides.html#resolution-.-scale",
-    "href": "Choice_of_Data_Model/Slides.html#resolution-.-scale",
+    "objectID": "Choice_of_Data_Model/Slides.html#resolution-scale",
+    "href": "Choice_of_Data_Model/Slides.html#resolution-scale",
     "title": "Lecture Slides",
-    "section": "Resolution &. Scale",
-    "text": "Resolution &. Scale\n\n\nThese properties can influence our choice of model.\n\nHow does the scale of our analysis dictate our desired resolution?\nHow can resolution of the data limit the scale of our analysis?"
+    "section": "Resolution & Scale",
+    "text": "Resolution & Scale\n\n\nThese properties can influence our choice of model.\n\nHow does the scale of our analysis dictate our desired resolution?\nHow can resolution of the data limit the scale of our analysis?"
   },
   {
-    "objectID": "Choice_of_Data_Model/Slides.html#resolution-.-scale-1",
-    "href": "Choice_of_Data_Model/Slides.html#resolution-.-scale-1",
+    "objectID": "Choice_of_Data_Model/Slides.html#resolution-scale-1",
+    "href": "Choice_of_Data_Model/Slides.html#resolution-scale-1",
     "title": "Lecture Slides",
-    "section": "Resolution &. Scale",
-    "text": "Resolution &. Scale\n\n\nWe want to work with high resolution data because:\n↑ resolution = ↓ generalization = ↓ uncertainty\n\nBut in reality, this isn’t always practical or possible. High resolution data may\nBe too expensive $$$\nTake too long to collect or process\nInfringe on individuals privacy or endanger marginalized people\nWe must try to strike a balance\nFind what suits our needs without hindering adding unnecessary risk, expense, or complexity"
+    "section": "Resolution & Scale",
+    "text": "Resolution & Scale\n\n\nThese properties can influence our choice of model.\n\nHow does the scale of our analysis dictate our desired resolution?\nHow can resolution of the data limit the scale of our analysis?"
+  },
+  {
+    "objectID": "Choice_of_Data_Model/Slides.html#resolution-scale-2",
+    "href": "Choice_of_Data_Model/Slides.html#resolution-scale-2",
+    "title": "Lecture Slides",
+    "section": "Resolution & Scale",
+    "text": "Resolution & Scale\n\n\nThese properties can influence our choice of model.\n\nHow does the scale of our analysis dictate our desired resolution?\nHow can resolution of the data limit the scale of our analysis?"
+  },
+  {
+    "objectID": "Choice_of_Data_Model/Slides.html#resolution-scale-3",
+    "href": "Choice_of_Data_Model/Slides.html#resolution-scale-3",
+    "title": "Lecture Slides",
+    "section": "Resolution & Scale",
+    "text": "Resolution & Scale\n\n\nThese properties can influence our choice of model.\n\nHow does the scale of our analysis dictate our desired resolution?\nHow can resolution of the data limit the scale of our analysis?"
+  },
+  {
+    "objectID": "Choice_of_Data_Model/Slides.html#resolution-scale-4",
+    "href": "Choice_of_Data_Model/Slides.html#resolution-scale-4",
+    "title": "Lecture Slides",
+    "section": "Resolution & Scale",
+    "text": "Resolution & Scale\n\n\nWe want to work with high resolution data because:\n↑ resolution = ↓ generalization = ↓ uncertainty\n\nIsn’t always possible. High resolution data may:\n\nBe too expensive $$$\nTake too long to collect or process\nInfringe on individuals privacy\n\nStrike a balance: what suits our needs without adding unnecessary risk, expense, or complexity?"
   },
   {
     "objectID": "Choice_of_Data_Model/Slides.html#things-to-consider",
@@ -53,14 +74,21 @@
     "href": "Choice_of_Data_Model/Slides.html#working-together",
     "title": "Lecture Slides",
     "section": "Working Together",
-    "text": "Working Together\n\n\nFrequently we’ll end up working with both raster and vector data in the same analysis.\n\nIn Module 1, you worked with:\nCholera deaths (points)\nVector Data Model\nKernel density (probability of deaths)\nRaster Data Model"
+    "text": "Working Together\n\n\nFrequently we work with both raster and vector data.\n\nIn Module 1, you worked with:\n\nCholera deaths (points)\n\nVector Data Model\n\nKernel density (probability of deaths)\n\nRaster Data Model"
   },
   {
     "objectID": "Choice_of_Data_Model/Slides.html#working-together-1",
     "href": "Choice_of_Data_Model/Slides.html#working-together-1",
     "title": "Lecture Slides",
     "section": "Working Together",
-    "text": "Working Together\n\n\n\nIn the Module 4 Lab you are converting between data types\nNDVI (Raster Data Model)\nCensus units (Vector Data Model)\nExploring two approaches\nZonal Statistics:\nFaster, but in a more limited applicability.\nRaster to Polygon Conversion: Converting between data types requires more, but it is more flexible."
+    "text": "Working Together\nIn the Module 4 you are working with both data models.\n\n\n\nNDVI Data (Raster)\nCensus Data (Vector)"
+  },
+  {
+    "objectID": "Choice_of_Data_Model/Slides.html#working-together-2",
+    "href": "Choice_of_Data_Model/Slides.html#working-together-2",
+    "title": "Lecture Slides",
+    "section": "Working Together",
+    "text": "Working Together\nExploring two approaches:\n\n\n\nZonal Statistics:\n\nFaster, but more limited applicability.\n\nConversion:\n\nRequires more work, but is more flexible."
   },
   {
     "objectID": "Data_Classification/Slides.html#descriptive-statistics",
@@ -1796,7 +1824,7 @@
     "href": "Spatial_is_Special/Slides.html#spatial-heterogeneity-1",
     "title": "Lecture Slides",
     "section": "Spatial Heterogeneity",
-    "text": "Spatial Heterogeneity"
+    "text": "Spatial Heterogeneity\n\n\nVideo"
   },
   {
     "objectID": "Spatial_is_Special/Slides.html#spatial-autocorrelation",
@@ -1817,14 +1845,14 @@
     "href": "Spatial_is_Special/Slides.html#revisiting-scale",
     "title": "Lecture Slides",
     "section": "Revisiting Scale",
-    "text": "Revisiting Scale\nMap scale: ratio of map units to real world units.\n\nSmall Scale: Large area, more generalization, less detail.\nLarge Scale: Small area, more detail, less generalization.\n\n::: :::{.column width=“50%”}\n\n::: ::::"
+    "text": "Revisiting Scale\n\n\nMap scale: ratio of map units to real world units.\n\nSmall Scale: Large area, more generalization, less detail.\nLarge Scale: Small area, more detail, less generalization."
   },
   {
     "objectID": "Spatial_is_Special/Slides.html#time-scale",
     "href": "Spatial_is_Special/Slides.html#time-scale",
     "title": "Lecture Slides",
     "section": "Time Scale",
-    "text": "Time Scale\nTime is “one dimensional”, but many of the same concepts related to scale apply.\n\nJust as features are exhibit spatial autocorrelation, they typically exhibit temporal autocorrelation\n\n::: :::{.column width=“50%”}\n\n::: ::::"
+    "text": "Time Scale\n\n\nTime is “one dimensional”, but many of the same concepts related to scale apply.\n\nJust as features are exhibit spatial autocorrelation, they typically exhibit temporal autocorrelation"
   },
   {
     "objectID": "Spatial_is_Special/Slides.html#analysis-scale",
@@ -1845,7 +1873,7 @@
     "href": "Spatial_is_Special/Slides.html#boninis-paradox",
     "title": "Lecture Slides",
     "section": "Bonini’s paradox",
-    "text": "Bonini’s paradox\n\n\nAs a model of a complex system becomes more complete, it becomes less understandable.\n\nIt will eventually be just as difficult to understand as the real-world processes it represents\nA 1:1 scale map needs to be as big as the features you are mapping\nA life size model house … would be the size of a regular house\nAt a certain point, we have to ignore the heterogeneity."
+    "text": "Bonini’s paradox\n\n\nAs a model of a complex system becomes more complete, it becomes less understandable.\n\nIt will eventually be just as difficult to understand as the real-world processes it represents\n\nA 1:1 scale map is as big as the feature you’re mapping\nA life size model house … is the size of a house\n\nAt a certain point, we have to ignore the heterogeneity."
   },
   {
     "objectID": "Spatial_is_Special/Slides.html#map-the-forest-not-the-trees",
@@ -1901,7 +1929,7 @@
     "href": "Spatial_is_Special/Slides.html#scale-dependence-1",
     "title": "Lecture Slides",
     "section": "Scale Dependence",
-    "text": "Scale Dependence\n\n\nAcknowledge the heterogeneity where appropriate.\n\nLarge scale maps might need more attention to detail.\nHigher resolution data."
+    "text": "Scale Dependence\n\n\nAcknowledge heterogeneity where appropriate.\n\nLarge scale maps might need more attention to detail.\nHigher resolution data."
   },
   {
     "objectID": "Spatial_is_Special/Slides.html#scale-dependence-2",
@@ -2272,14 +2300,14 @@
     "href": "The_Raster_Data_Model/Slides.html#raster-data-model-2",
     "title": "Lecture Slides",
     "section": "Raster Data Model",
-    "text": "Raster Data Model\n\n\nMultiple attributes, require multiple bands * Standard color photos have three bands: + Red, green, & blue * LANDSAT8 has 11 bands: + “False Color Images” + Spectral Indices (NDVI)"
+    "text": "Raster Data Model\n\n\nMultiple attributes, require multiple bands\n\nStandard color photos have three bands:\n\nRed, green, & blue\n\nLANDSAT8 has 11 bands:\n\n“False Color Images”\nSpectral Indices (NDVI)"
   },
   {
     "objectID": "The_Raster_Data_Model/Slides.html#resolution-vs.-extent",
     "href": "The_Raster_Data_Model/Slides.html#resolution-vs.-extent",
     "title": "Lecture Slides",
     "section": "Resolution vs. Extent",
-    "text": "Resolution vs. Extent\n\n\nResolution: (aka cell size) is the smallest resolvable feature.\n\n1 m x 1 m = 1 m2\n\nExtent: (aka domain) depends on number of rows and columns along with the cell size.\n\n5 rows x 5 columns = 25 cells\n1 m cell size\nCovers 5 m x 5 m = 25 m2"
+    "text": "Resolution vs. Extent\nResolution (aka cell size) is the smallest resolvable feature. Extent (aka domain) depends on number of rows and columns along with the cell size.\n\n\n\n1 m cell size\n5 rows x 5 columns = 25 cells\nCovers 5 m x 5 m = 25 m2"
   },
   {
     "objectID": "The_Raster_Data_Model/Slides.html#resolution-vs.-extent-1",
@@ -2293,28 +2321,35 @@
     "href": "The_Raster_Data_Model/Slides.html#mixed-pixel-problem",
     "title": "Lecture Slides",
     "section": "Mixed Pixel Problem",
-    "text": "Mixed Pixel Problem\nOne cell: one value\n\nWhat if it covers multiple values?\nA: Winner take all\nB: Cell center\nOther options?\nContainment - if a value of interest is anywhere within a cell\ne.g. invasive species presence\n\n::: :::{.column width=“50%”}\n\n::: ::::"
+    "text": "Mixed Pixel Problem\nOne cell = one value. What if it covers multiple values?\n\n\n\nA: Winner take all\nB: Cell center\nOther options?\n\nContainment: value of interest is present\ne.g. invasive species presence"
   },
   {
     "objectID": "The_Raster_Data_Model/Slides.html#implications",
     "href": "The_Raster_Data_Model/Slides.html#implications",
     "title": "Lecture Slides",
     "section": "Implications",
-    "text": "Implications\nLoss of information during rasterization.\n\nA “bigger” issue for larger cells.\nAt a certain point features become unrecognizable.\nHigher resolution = larger file for equivalent areas.\n\n::: :::{.column width=“50%”}\n\n::: ::::"
+    "text": "Implications\n\n\nLoss of information during rasterization.\n\n“Bigger” issue for larger cells\nAt some point features become unrecognizable\nHigher resolution = larger file\n\nFor equivalent areas"
   },
   {
     "objectID": "The_Raster_Data_Model/Slides.html#file-size",
     "href": "The_Raster_Data_Model/Slides.html#file-size",
     "title": "Lecture Slides",
     "section": "File Size",
-    "text": "File Size\n\n\nThe number of cells per image dictates file size.\n\nCells = rows x columns x bands\nIncreases exponentially with resolution\nFor a given extent\nIncreases linearly with number of bands\n\n\n\n\n\nExtent\nBands\nCell Size\nNumber of Cells\n\n\n\n\n1x1km\n1\n100m\n100\n\n\n1x1km\n1\n1m\n1,000,000\n\n\n1x1km\n3\n100m\n300\n\n\n1x1km\n3\n1m\n3,000,000"
+    "text": "File Size\nThe number of cells per image dictates file size.\n\n# cells = rows x columns x bands\n\nIncreases exponentially with resolution\n\nFor a given extent\n\nIncreases linearly with number of bands"
+  },
+  {
+    "objectID": "The_Raster_Data_Model/Slides.html#file-size-1",
+    "href": "The_Raster_Data_Model/Slides.html#file-size-1",
+    "title": "Lecture Slides",
+    "section": "File Size",
+    "text": "File Size\nThe number of cells per image dictates file size.\n\n# cells = rows x columns x bands\n\n\n\n\nExtent\nBands\nCell Size\nNumber of Cells\n\n\n\n\n1x1km\n1\n100m\n100\n\n\n1x1km\n1\n1m\n1,000,000\n\n\n1x1km\n3\n100m\n300\n\n\n1x1km\n3\n1m\n3,000,000"
   },
   {
     "objectID": "The_Raster_Data_Model/Slides.html#why-does-this-matter",
     "href": "The_Raster_Data_Model/Slides.html#why-does-this-matter",
     "title": "Lecture Slides",
     "section": "Why does this matter?",
-    "text": "Why does this matter?\n\n\nDownloading, uploading, and processing times will all increase as the file size increases.\n\nLarge raster datasets are computationally “expensive”\nMore cells = more “overhead”\nPractically speaking, how will this impact you?"
+    "text": "Why does this matter?\n\n\nDownloading, uploading, and processing times will all increase as the file size increases.\n\nLarge raster datasets are computationally “expensive”\n\nMore cells = more “overhead”\n\nPractically speaking, how will this impact you?"
   },
   {
     "objectID": "The_Raster_Data_Model/Slides.html#metadata-in-arcpro",
@@ -2328,42 +2363,70 @@
     "href": "The_Raster_Data_Model/Slides.html#raster-overlay",
     "title": "Lecture Slides",
     "section": "Raster Overlay",
-    "text": "Raster Overlay\n\n\nRaster data can be used to evaluate algebraic expressions easily and efficiently.\n\nA: Winter Temperature\nB: Summer Temperature\nRange: B-A\nAverage: (A+B)/2"
+    "text": "Raster Overlay\nRaster data can be used to evaluate algebraic expressions easily and efficiently.\n\n\n\nA: Winter Temperature\nB: Summer Temperature\nRange: B-A\nAverage: (A+B)/2"
   },
   {
     "objectID": "The_Raster_Data_Model/Slides.html#raster-calculator",
     "href": "The_Raster_Data_Model/Slides.html#raster-calculator",
     "title": "Lecture Slides",
     "section": "Raster Calculator",
-    "text": "Raster Calculator\n\n\nThe tool for this in Arc is called the “Raster Calculator”\n\nRaster layers can be “variables” in linear equations\nPerform simple calculations incorporating one or multiple layers\nIdeally, layers should have the same resolution and extent\nResampling is required if not\nOutput will be restricted to “smallest” extent"
+    "text": "Raster Calculator\n\n\n\nPerform simple calculations incorporating one or multiple layers\nIdeally, layers should have the same resolution and extent\n\nOutput will be restricted to “smallest” extent"
+  },
+  {
+    "objectID": "The_Raster_Data_Model/Slides.html#raster-calculator-1",
+    "href": "The_Raster_Data_Model/Slides.html#raster-calculator-1",
+    "title": "Lecture Slides",
+    "section": "Raster Calculator",
+    "text": "Raster Calculator\n\n\n\nPerform simple calculations incorporating one or multiple layers\nIdeally, layers should have the same resolution and extent\n\nOutput will be restricted to “smallest” extent"
+  },
+  {
+    "objectID": "The_Raster_Data_Model/Slides.html#raster-calculator-2",
+    "href": "The_Raster_Data_Model/Slides.html#raster-calculator-2",
+    "title": "Lecture Slides",
+    "section": "Raster Calculator",
+    "text": "Raster Calculator\n\n\n\nPerform simple calculations incorporating one or multiple layers\nIdeally, layers should have the same resolution and extent\n\nOutput will be restricted to “smallest” extent"
+  },
+  {
+    "objectID": "The_Raster_Data_Model/Slides.html#raster-calculator-3",
+    "href": "The_Raster_Data_Model/Slides.html#raster-calculator-3",
+    "title": "Lecture Slides",
+    "section": "Raster Calculator",
+    "text": "Raster Calculator\n\n\n\nPerform simple calculations incorporating one or multiple layers\nIdeally, layers should have the same resolution and extent\n\nOutput will be restricted to “smallest” extent"
   },
   {
     "objectID": "The_Raster_Data_Model/Slides.html#key-advantages",
     "href": "The_Raster_Data_Model/Slides.html#key-advantages",
     "title": "Lecture Slides",
     "section": "Key Advantages",
-    "text": "Key Advantages\nThe raster data model is well suited for continuous phenomena:\n\nContinuous in space\nComplete coverage within the domain (extent), everywhere has a value\nContinuous in space and time\nBands can be used to represent time steps\nCommon tool approach for climate data\ni.e., bands 1, 2, 3 … could represent mean Jan, Feb, Mar temperatures\nSimple data structure makes raster overlay easy and efficient\nMultiple raster layers can be combined and evaluated using expressions\nEasy to “show” others what has been done"
+    "text": "Key Advantages\nRaster model is well suited for continuous phenomena:\n\nContinuous in space and time\n\nComplete coverage within the domain\nBands can be stacked to represent multiple attributes or time steps\n\nSimple data structure overlay easy and efficient\n\nRelation between layers can evaluated with expressions\n\nEasy to “show” others what has been done"
   },
   {
     "objectID": "The_Raster_Data_Model/Slides.html#geotiff",
     "href": "The_Raster_Data_Model/Slides.html#geotiff",
     "title": "Lecture Slides",
     "section": "GeoTIFF",
-    "text": "GeoTIFF\nOne of the most common/functional raster formats, based of the Tag Image File Format (TIFF). A TIFF file stores metadata (data about the data) as tags. A GeoTIFF is a standard .tif image format plus additional tags spatial tags denoting spatial information including:\n\nExtent (minimum x,y and maximum x,y)\nResolution (cell size)\nProjection, Coordinate system, and datum"
+    "text": "GeoTIFF\nOne of the most common/functional raster formats, based of the Tag Image File Format (TIFF).\n\nA TIFF file stores metadata (data about the data) as tags.\n\nGeoTIFF adds spatial tags denoting:\n\nExtent (minimum x,y and maximum x,y)\nResolution (cell size)\nProjection, Coordinate system, and datum"
   },
   {
     "objectID": "The_Raster_Data_Model/Slides.html#other-file-types",
     "href": "The_Raster_Data_Model/Slides.html#other-file-types",
     "title": "Lecture Slides",
     "section": "Other file types",
-    "text": "Other file types\nRaster data can come in many different formats. You will likely encounter when working with raster data include:\n\nIMG - A proprietary image format commonly used by ESRI products\nJPEG2000 - A geospatial version of the common .jpg image type\nASCII - An older human readable format (simple text file) with slower performance than the types listed above"
+    "text": "Other file types\nRaster data can come in many different formats. You will likely encounter when working with raster data include:\n\nIMG: Proprietary format used by ESRI products\nJPEG2000: Geospatial version of the .jpg image\nASCII: Human readable format (text file)\n\nSlower performance than the types listed above"
   },
   {
-    "objectID": "The_Raster_Data_Model/Slides.html#monitoring-vegetation-with-satellites",
-    "href": "The_Raster_Data_Model/Slides.html#monitoring-vegetation-with-satellites",
+    "objectID": "The_Raster_Data_Model/Slides.html#satellites-data",
+    "href": "The_Raster_Data_Model/Slides.html#satellites-data",
     "title": "Lecture Slides",
-    "section": "Monitoring Vegetation with Satellites",
-    "text": "Monitoring Vegetation with Satellites\nWe’re going to work with LANDSAT8 data in this lab. LANDSAT8 is one of a large number of satellites that orbit the earth continuously collecting multi-spectral (visible light & other wavelengths) imagery. We can use multi-spectral imagery for a number of different applications like estimating vegetation health.\nThe lines on the chart below are referred to as a spectral reflectance curves. They show reflectance (amount of light) on the y-axis, defined as the percent of radiation reflected by different earth features, and wavelength on the x-axis. As you can see, the spectral reflectance curves for different features look very different. Specifically, you can see that healthy green vegetation has very high reflectance in the near-infrared wavelengths (0.7-1.4 µm) and lower reflectance in the visible part of the spectrum (0-0.7 µm), while water absorbs almost all incoming infrared radiation and thus has very low infrared reflectance. Soil has relatively higher reflectance in the visible wavelengths, and intermediate reflectance in the near infrared."
+    "section": "Satellites Data",
+    "text": "Satellites Data\nWe’re going to work with LANDSAT8 data in lab.\n\nLANDSAT8 is one of a large number of satellites that orbit the earth continuously collecting multi-spectral (visible light & other wavelengths) imagery.\n\nWe can use multi-spectral imagery for a number of different applications like estimating vegetation health."
+  },
+  {
+    "objectID": "The_Raster_Data_Model/Slides.html#monitoring-vegetation",
+    "href": "The_Raster_Data_Model/Slides.html#monitoring-vegetation",
+    "title": "Lecture Slides",
+    "section": "Monitoring Vegetation",
+    "text": "Monitoring Vegetation\nThe lines on the chart below are referred to as a spectral reflectance curves.\n\n\n\\(NDVI = \\frac{(NIR-Red)}{(NIR+Red)}\\)\n\nGreen vegetation has different reflectance than soil and water"
   },
   {
     "objectID": "The_Vector_Data_Model/Slides.html#vector-data-model-1",
@@ -2384,14 +2447,14 @@
     "href": "The_Vector_Data_Model/Slides.html#points-1",
     "title": "Lecture Slides",
     "section": "Points",
-    "text": "Points\n\n\nPoints are great for representing a variety of objects, depending on the scale:\nAlmost Any Scale* Trees * Stop signs * Fire hydrants"
+    "text": "Points\n\n\nPoints are great for representing a variety of objects, depending on the scale:\nAlmost Any Scale\n\nTrees\nStop signs\nFire hydrants"
   },
   {
     "objectID": "The_Vector_Data_Model/Slides.html#points-2",
     "href": "The_Vector_Data_Model/Slides.html#points-2",
     "title": "Lecture Slides",
     "section": "Points",
-    "text": "Points\n\n\nPoints are great for representing a variety of objects, depending on the scale:\nAlmost Any Scale* Trees * Stop signs * Fire hydrants\nSmaller Scales* Cities * Wild Fires * Airports"
+    "text": "Points\n\n\nPoints are great for representing a variety of objects, depending on the scale:\nSmaller Scales\n\nCities\nWild Fires\nAirports"
   },
   {
     "objectID": "The_Vector_Data_Model/Slides.html#lines",
@@ -2405,14 +2468,14 @@
     "href": "The_Vector_Data_Model/Slides.html#lines-1",
     "title": "Lecture Slides",
     "section": "Lines",
-    "text": "Lines\n\n\nLines are also great for representing a variety of objects, depending on the scale:\nAlmost Any Scale* Hiking trails * Power lines * Water pipes"
+    "text": "Lines\n\n\nLines are also great for representing a variety of objects, depending on the scale:\nAlmost Any Scale\n\nHiking trails\nPower lines\nWater pipes"
   },
   {
     "objectID": "The_Vector_Data_Model/Slides.html#lines-2",
     "href": "The_Vector_Data_Model/Slides.html#lines-2",
     "title": "Lecture Slides",
     "section": "Lines",
-    "text": "Lines\n\n\nLines are also great for representing a variety of objects, depending on the scale:\nAlmost Any Scale* Hiking trails * Power lines * Water pipes\nSmaller Scales* Roads * Rivers * Storm tracks"
+    "text": "Lines\n\n\nLines are also great for representing a variety of objects, depending on the scale:\nSmaller Scales\n\nRoads\nRivers\nStorm tracks"
   },
   {
     "objectID": "The_Vector_Data_Model/Slides.html#polygons",
@@ -2426,21 +2489,21 @@
     "href": "The_Vector_Data_Model/Slides.html#polygons-1",
     "title": "Lecture Slides",
     "section": "Polygons",
-    "text": "Polygons\n\n\nPreferred for many objects depending on scale:\nAlmost Any Scale* Climate units * Lakes * Political boundaries"
+    "text": "Polygons\n\n\nPreferred for many objects depending on scale:\nAlmost Any Scale\n\nClimate units\nLakes\nPolitical boundaries"
   },
   {
     "objectID": "The_Vector_Data_Model/Slides.html#polygons-2",
     "href": "The_Vector_Data_Model/Slides.html#polygons-2",
     "title": "Lecture Slides",
     "section": "Polygons",
-    "text": "Polygons\n\n\nPreferred for many objects depending on scale:\nAlmost Any Scale* Climate units * Lakes * Political boundaries\nLarger Scales* Buildings * Roads * Cities"
+    "text": "Polygons\n\n\nPreferred for many objects depending on scale:\nLarger Scales\n\nBuildings\nRoads\nCities"
   },
   {
     "objectID": "The_Vector_Data_Model/Slides.html#interior-rings",
     "href": "The_Vector_Data_Model/Slides.html#interior-rings",
     "title": "Lecture Slides",
     "section": "Interior Rings",
-    "text": "Interior Rings\n\n\nAll polygons are an enclosed shape. Some can also have interior rings (holes).\n\nEach ring is a separate set of vertices and edges within the polygon\nInterior rings cannot overlap"
+    "text": "Interior Rings\nAll polygons are an enclosed shape. Some can also have interior rings (holes).\n\n\n\nEach ring is a separate set of vertices and edges within the polygon\nInterior rings cannot overlap"
   },
   {
     "objectID": "The_Vector_Data_Model/Slides.html#multi-part-objects",
@@ -2454,84 +2517,98 @@
     "href": "The_Vector_Data_Model/Slides.html#resolution",
     "title": "Lecture Slides",
     "section": "Resolution",
-    "text": "Resolution\n\n\nData resolution also applies to the vector model:\n\nLess straightforward than for raster model\nSpacing between vertices\nSmallest resolvable feature\nHigher resolution = larger filed size"
+    "text": "Resolution\n\n\nData resolution also applies to the vector model:\n\nLess straightforward than for raster model\nSpacing between vertices\n\nSmallest resolvable feature\n\nHigher resolution = larger file size"
   },
   {
-    "objectID": "The_Vector_Data_Model/Slides.html#attributes",
-    "href": "The_Vector_Data_Model/Slides.html#attributes",
+    "objectID": "The_Vector_Data_Model/Slides.html#attribute-tables",
+    "href": "The_Vector_Data_Model/Slides.html#attribute-tables",
     "title": "Lecture Slides",
-    "section": "Attributes",
-    "text": "Attributes\n\n\nNon-spatial data can be stored in an Attribute Table separate from the spatial data.\n\nAttributes are linked by an index\nThe index is a unique identifier\nNo two objects can have the same index\nOften labelled as the “FID” in Arc"
+    "section": "Attribute Tables",
+    "text": "Attribute Tables\nNon-spatial data is stored separate from spatial data.\n\n\n\nLinked by an index\n\nA unique identifier\nNo two objects can have the same index\nOften labelled as the “FID” in Arc"
   },
   {
-    "objectID": "The_Vector_Data_Model/Slides.html#attributes-1",
-    "href": "The_Vector_Data_Model/Slides.html#attributes-1",
+    "objectID": "The_Vector_Data_Model/Slides.html#attribute-tables-1",
+    "href": "The_Vector_Data_Model/Slides.html#attribute-tables-1",
     "title": "Lecture Slides",
-    "section": "Attributes",
-    "text": "Attributes"
+    "section": "Attribute Tables",
+    "text": "Attribute Tables"
   },
   {
-    "objectID": "The_Vector_Data_Model/Slides.html#attributes-2",
-    "href": "The_Vector_Data_Model/Slides.html#attributes-2",
+    "objectID": "The_Vector_Data_Model/Slides.html#attribute-tables-2",
+    "href": "The_Vector_Data_Model/Slides.html#attribute-tables-2",
     "title": "Lecture Slides",
-    "section": "Attributes",
-    "text": "Attributes\n\n\nNon-spatial data can be stored in an Attribute Table separate from the spatial data.\n\nAttributes are linked by an index\nThe index is a unique identifier\nNo two objects can have the same index\nOften labelled as the “FID” in Arc\nAbility to store many attributes\nLess redundancy than raster model\nEasy to add new attributes"
+    "section": "Attribute Tables",
+    "text": "Attribute Tables\nNon-spatial data is stored separate from spatial data.\n\n\n\nAbility to store many attributes\nLess redundancy than raster model\nEasy to add new attributes"
   },
   {
     "objectID": "The_Vector_Data_Model/Slides.html#loss-of-variability",
     "href": "The_Vector_Data_Model/Slides.html#loss-of-variability",
     "title": "Lecture Slides",
     "section": "Loss of Variability",
-    "text": "Loss of Variability\nSimilar to the mixed pixel problem, all space within a polygon (or along a line) is treated as homogenous\n\nWhat a unit covers multiple values?\nAny variability is lost and the unit is treated as homogenous\n\n\n::: ::::"
+    "text": "Loss of Variability\n\n\nSimilar to the mixed pixel problem, feature is treated as homogenous\n\nWhat a unit covers multiple values?\nAny variability is lost and the unit is treated as homogenous"
   },
   {
     "objectID": "The_Vector_Data_Model/Slides.html#vector-overlay",
     "href": "The_Vector_Data_Model/Slides.html#vector-overlay",
     "title": "Lecture Slides",
     "section": "Vector Overlay",
-    "text": "Vector Overlay\n\n\nVector overlay operations are more computationally expensive than raster overlay.\n\nInvolves calculating the relative positions of ever point/vertex in every layer to determine overlap, containment, etc.\nMany different operations depending on needs"
+    "text": "Vector Overlay\n\n\nMore computationally expensive than raster overlay.\n\nCalculate the relative positions of ever vertex in every layer\n\nDetermine overlap, containment, etc.\nMany operations depending task"
   },
   {
     "objectID": "The_Vector_Data_Model/Slides.html#field-calculator",
     "href": "The_Vector_Data_Model/Slides.html#field-calculator",
     "title": "Lecture Slides",
     "section": "Field Calculator",
-    "text": "Field Calculator\n\n\nThe tool in Arc for performing calculations in the attribute table\n\nFields can be “variables” in linear equations\nWon’t update if field values change\nNot always easy to use or intuitive\nLacks some basic functionality\nCan’t calculate the sum of a column without extra steps"
+    "text": "Field Calculator\n\n\n\nFields can be “variables” in linear equations\n\nWon’t update if field values change\n\nNot always intuitive\n\nCan’t calculate the sum of a column without extra steps"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#field-calculator-1",
+    "href": "The_Vector_Data_Model/Slides.html#field-calculator-1",
+    "title": "Lecture Slides",
+    "section": "Field Calculator",
+    "text": "Field Calculator\n\n\n\nFields can be “variables” in linear equations\n\nWon’t update if field values change\n\nNot always intuitive\n\nCan’t calculate the sum of a column without extra steps"
   },
   {
     "objectID": "The_Vector_Data_Model/Slides.html#topology",
     "href": "The_Vector_Data_Model/Slides.html#topology",
     "title": "Lecture Slides",
     "section": "Topology",
-    "text": "Topology\n\n\nThe spatial relationships between geographic features.\n\nAn important aspect of network analysis (route finding)\nGoogle maps uses topology every time you search for directions\nDifferent rules for different features (pedestrian, car, transit)\nWe can specify rules e.g.:\nPolygons (i.e. buildings) cannot overlap\nPoints (i.e. fire hydrants) must be attached to lines (i.e. water mains)"
+    "text": "Topology\nThe spatial relationships between geographic features.\n\n\n\nImportant for route finding\n\nGoogle maps uses topology for directions\nRules by feature\n\nPedestrian\nCar\nTransit"
+  },
+  {
+    "objectID": "The_Vector_Data_Model/Slides.html#topology-1",
+    "href": "The_Vector_Data_Model/Slides.html#topology-1",
+    "title": "Lecture Slides",
+    "section": "Topology",
+    "text": "Topology\nThe spatial relationships between geographic features.\n\n\n\nWe can set rules e.g.:\n\nPolygons (i.e. buildings) cannot overlap\nPoints (i.e. fire hydrants) must be attached to lines (i.e. water mains)"
   },
   {
     "objectID": "The_Vector_Data_Model/Slides.html#key-advantages",
     "href": "The_Vector_Data_Model/Slides.html#key-advantages",
     "title": "Lecture Slides",
     "section": "Key Advantages",
-    "text": "Key Advantages\n\n\nThe vector data model is well suited for discrete objects:\n\nThe compact data structure allows for smaller file sizes relative to the raster dta model\nEasy to query and select by attributes\nTopology (connectivity)\nProximity & Network Analysis\nGraphic output is usually “cleaner”\nFor final production maps, often useful to convert to vector format"
+    "text": "Key Advantages\n\n\nThe vector data model is well suited for discrete objects:\n\nThe compact data structure allows for smaller file sizes relative to the raster dta model\nEasy to query and select by attributes\n\nTopology > Proximity & Network Analysis\n\nGraphic output is usually “cleaner”\n\nFor final production maps, often useful to convert to vector format"
   },
   {
     "objectID": "The_Vector_Data_Model/Slides.html#shapefiles",
     "href": "The_Vector_Data_Model/Slides.html#shapefiles",
     "title": "Lecture Slides",
     "section": "Shapefiles",
-    "text": "Shapefiles\nOne of the most common file types you will encounter, stores the coordinates of vertices plus metadata. Identified by a .shp tag.\n\nObject type: points/multi-points, lines/multi-lines, or polygons/multi-polygons.\nOnly one type per .shp!\nCoordinate reference system (CRS).\nAttribute table.\n\n::: ::::"
+    "text": "Shapefiles\nOne of the most common file types you will encounter, stores the coordinates of vertices plus metadata. Identified by a .shp tag.\n\nObject type: points/multi-points, lines/multi-lines, or polygons/multi-polygons.\nOnly one type per .shp!\nCoordinate reference system (CRS).\nAttribute table."
   },
   {
     "objectID": "The_Vector_Data_Model/Slides.html#geojson",
     "href": "The_Vector_Data_Model/Slides.html#geojson",
     "title": "Lecture Slides",
     "section": "GeoJSON",
-    "text": "GeoJSON\nA simple, lightweight format for most commonly encountered in web mapping. Identified by a .json tag.\n\nUnlike shapefiles, a GeoJSON can mix of geometries.\nEncoded stylistic choices in the file.\nLarger File Size\nAn Example)\n\n::: ::::"
+    "text": "GeoJSON\nA simple, lightweight format for most commonly encountered in web mapping. Identified by a .json tag.\n\nUnlike shapefiles, a GeoJSON can mix of geometries.\nEncoded stylistic choices in the file.\nLarger File Size\nAn Example)"
   },
   {
     "objectID": "The_Vector_Data_Model/Slides.html#text-data",
     "href": "The_Vector_Data_Model/Slides.html#text-data",
     "title": "Lecture Slides",
     "section": "Text Data",
-    "text": "Text Data\n\n\nPoint objects can be stored as simple text flies.\n\nDoes not work for lines or polygons\n\n\n\n\n\n\n\n\n\n\n\nName\nProvince\nClimate ID\nLatitude (Decimal Degrees)\nLongitude (Decimal Degrees)\n\n\nACTIVE PASS\nBRITISH COLUMBIA\n1010066\n48.87\n-123.28\n\n\nALBERT HEAD\nBRITISH COLUMBIA\n1010235\n48.40\n-123.48\n\n\nBAMBERTON OCEAN CEMENT\nBRITISH COLUMBIA\n1010595\n48.58\n-123.52\n\n\nBEAR CREEK\nBRITISH COLUMBIA\n1010720\n48.50\n-124.00\n\n\nBEAVER LAKE\nBRITISH COLUMBIA\n1010774\n48.50\n-123.35\n\n\nBECHER BAY\nBRITISH COLUMBIA\n1010780\n48.33\n-123.63\n\n\nBRENTWOOD BAY 2\nBRITISH COLUMBIA\n1010960\n48.60\n-123.47\n\n\nBRENTWOOD CLARKE ROAD\nBRITISH COLUMBIA\n1010961\n48.57\n-123.45\n\n\nBRENTWOOD W SAANICH RD\nBRITISH COLUMBIA\n1010965\n48.57\n-123.43\n\n\nCENTRAL SAANICH VEYANESS\nBRITISH COLUMBIA\n1011467\n48.58\n-123.42"
+    "text": "Text Data\n\n\n\n\nTable 1: BC Weather Stations\n\n\n\n\n\n\n\n\n\nName\nProvince\nClimateID\nLatitude\nLongitude\n\n\n\n\nACTIVE PASS\nBC\n1010066\n48.87\n-123.28\n\n\nALBERT HEAD\nBC\n1010235\n48.40\n-123.48\n\n\nBAMBERTON OCEAN CEMENT\nBC\n1010595\n48.58\n-123.52\n\n\nBEAR CREEK\nBC\n1010720\n48.50\n-124.00\n\n\nBEAVER LAKE\nBC\n1010774\n48.50\n-123.35\n\n\nBECHER BAY\nBC\n1010780\n48.33\n-123.63\n\n\nBRENTWOOD BAY 2\nBC\n1010960\n48.60\n-123.47\n\n\nBRENTWOOD CLARKE ROAD\nBC\n1010961\n48.57\n-123.45"
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#uncertainty",

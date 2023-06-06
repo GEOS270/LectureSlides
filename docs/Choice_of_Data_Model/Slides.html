@@ -371,25 +371,29 @@
 <h3 id="raster">Raster</h3>
 <p>Usually <strong>continuous fields</strong></p>
 <ul>
-<li><p>Full coverage over domain</p></li>
-<li><p>Grid of equally sized cells</p></li>
-<li><p>Data “gaps” must be given a value<br>
-(i.e., NODATA)</p></li>
-<li><p>Separate bands for each attribute</p></li>
-<li><p>Each cell has <strong>one</strong> value per band</p></li>
-<li><p>One raster can have <strong>many</strong> bands</p></li>
+<li>Full coverage over domain
+<ul>
+<li>Grid of equal size cells</li>
+<li>Gaps need a value</li>
+</ul></li>
+<li>One band per attribute
+<ul>
+<li>One raster can have <strong>many</strong> bands</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <h3 id="vector">Vector</h3>
 <p>Usually <strong>discrete objects</strong></p>
 <ul>
-<li><p>Only represents features of interest</p></li>
-<li><p>Points, Lines, and/or Polygons</p></li>
-<li><p>Can overlap, have gaps, or be continuous</p></li>
-<li><p>Each object can have <strong>many</strong> attributes</p></li>
-<li><p>Attribute table links spatial and non-spatial data</p></li>
-<li><p>Topology rules</p></li>
-<li><p>Connectivity and relationships between features</p></li>
+<li>Only features of interest
+<ul>
+<li>Points, Lines, Polygons</li>
+<li>Topology</li>
+</ul></li>
+<li><strong>Many</strong> attributes per object
+<ul>
+<li>Attribute table links spatial and non-spatial data</li>
+</ul></li>
 </ul>
 </div>
 </div>
@@ -452,8 +456,8 @@
 </div>
 </div>
 </section>
-<section id="resolution-.-scale" class="slide level2">
-<h2>Resolution &amp;. Scale</h2>
+<section id="resolution-scale" class="slide level2">
+<h2>Resolution &amp; Scale</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>These properties can influence our choice of model.</p>
@@ -463,25 +467,65 @@
 </ol>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/03-scales.png"></p>
+</div>
+</div>
+</section>
+<section id="resolution-scale-1" class="slide level2">
+<h2>Resolution &amp; Scale</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>These properties can influence our choice of model.</p>
+<ol type="1">
+<li>How does the scale of our analysis dictate our desired resolution?</li>
+<li>How can resolution of the data limit the scale of our analysis?</li>
+</ol>
+</div><div class="column" style="width:50%;">
 <p><img data-src="images/coastal_scale.jpg"></p>
-<p><img data-src="images/03-resolution.gif"></p>
+</div>
+</div>
+</section>
+<section id="resolution-scale-2" class="slide level2">
+<h2>Resolution &amp; Scale</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>These properties can influence our choice of model.</p>
+<ol type="1">
+<li>How does the scale of our analysis dictate our desired resolution?</li>
+<li>How can resolution of the data limit the scale of our analysis?</li>
+</ol>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/03-resolution.gif" style="width:150.0%"></p>
+</div>
+</div>
+</section>
+<section id="resolution-scale-3" class="slide level2">
+<h2>Resolution &amp; Scale</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>These properties can influence our choice of model.</p>
+<ol type="1">
+<li>How does the scale of our analysis dictate our desired resolution?</li>
+<li>How can resolution of the data limit the scale of our analysis?</li>
+</ol>
+</div><div class="column" style="width:50%;">
 <p><img data-src="images/scale_general.png"></p>
 </div>
 </div>
 </section>
-<section id="resolution-.-scale-1" class="slide level2">
-<h2>Resolution &amp;. Scale</h2>
+<section id="resolution-scale-4" class="slide level2">
+<h2>Resolution &amp; Scale</h2>
 <div class="columns">
 <div class="column" style="width:100%;">
 <p>We want to work with high resolution data because:</p>
 <p><strong>↑ resolution = ↓ generalization = ↓ uncertainty</strong></p>
 <ul>
-<li><p>But in reality, this isn’t always practical or possible. High resolution data may</p></li>
-<li><p>Be too expensive $$$</p></li>
-<li><p>Take too long to collect or process</p></li>
-<li><p>Infringe on individuals privacy or endanger marginalized people</p></li>
-<li><p>We must try to strike a balance</p></li>
-<li><p>Find what suits our needs without hindering adding unnecessary risk, expense, or complexity</p></li>
+<li>Isn’t always possible. High resolution data may:
+<ul>
+<li>Be too expensive $$$</li>
+<li>Take too long to collect or process</li>
+<li>Infringe on individuals privacy</li>
+</ul></li>
+<li>Strike a balance: what suits our needs without adding unnecessary risk, expense, or complexity?</li>
 </ul>
 </div>
 </div>
@@ -513,39 +557,61 @@
 <section id="working-together" class="slide level2">
 <h2>Working Together</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>Frequently we’ll end up working with both raster and vector data in the same analysis.</p>
+<div class="column" style="width:60%;">
+<p>Frequently we work with both raster and vector data.</p>
 <ul>
-<li><p>In Module 1, you worked with:</p></li>
-<li><p>Cholera deaths (points)</p></li>
-<li><p><strong>Vector Data Model</strong></p></li>
-<li><p>Kernel density (probability of deaths)</p></li>
-<li><p><strong>Raster Data Model</strong></p></li>
+<li>In Module 1, you worked with:
+<ul>
+<li>Cholera deaths (points)
+<ul>
+<li><strong>Vector Data Model</strong></li>
+</ul></li>
+<li>Kernel density (probability of deaths)
+<ul>
+<li><strong>Raster Data Model</strong></li>
+</ul></li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/Final_Map.png"></p>
 </div>
 </div>
 </section>
 <section id="working-together-1" class="slide level2">
 <h2>Working Together</h2>
+<p>In the Module 4 you are working with both data models.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
-<li><p>In the <a href="https://geos270.github.io/Module4/docs/Application.html">Module 4 Lab</a> you are converting between data types</p></li>
-<li><p>NDVI (<strong>Raster Data Model</strong>)</p></li>
-<li><p>Census units (<strong>Vector Data Model</strong>)</p></li>
-<li><p>Exploring two approaches</p></li>
-<li><p><strong>Zonal Statistics:</strong><br>
-Faster, but in a more limited applicability.</p></li>
-<li><p><strong>Raster to Polygon Conversion:</strong> Converting between data types requires more, but it is more flexible.</p></li>
+<li>NDVI Data (<strong>Raster</strong>)</li>
+<li>Census Data (<strong>Vector</strong>)</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/Van_NDVI_Map.png"></p>
+</div>
+</div>
+</section>
+<section id="working-together-2" class="slide level2">
+<h2>Working Together</h2>
+<p>Exploring two approaches:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><strong>Zonal Statistics:</strong>
+<ul>
+<li>Faster, but more limited applicability.</li>
+</ul></li>
+<li><strong>Conversion:</strong>
+<ul>
+<li>Requires more work, but is more flexible.</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/Van_NDVI_Map.png"></p>
 </div>
 </div>
 </section></section>
-<section id="tophat-question-4" class="title-slide slide level1 center">
+<section id="tophat-question-4" class="title-slide slide level1 smaller center">
 <h1>TopHat Question 4</h1>
 <div class="columns">
 <div class="column" style="width:100%;">
@@ -561,7 +627,7 @@ Faster, but in a more limited applicability.</p></li>
 </div>
 </section>
 
-<section id="tophat-question-5" class="title-slide slide level1 center">
+<section id="tophat-question-5" class="title-slide slide level1 smaller center">
 <h1>TopHat Question 5</h1>
 <div class="columns">
 <div class="column" style="width:100%;">

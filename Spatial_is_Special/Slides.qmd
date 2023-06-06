@@ -239,7 +239,7 @@ Spatial Heterogeneity
 :::{.column width="100%"}
 
 
-
+![](videos/SiteTour.mp4)
 
 
 
@@ -323,6 +323,9 @@ Revisiting Scale
 ----------------
 
 
+::::{.columns}
+:::{.column width="50%"}
+
 
 **Map scale**: ratio of map units to real world units.
 
@@ -351,6 +354,8 @@ Time Scale
 ----------
 
 
+::::{.columns}
+:::{.column width="50%"}
 
 Time is "one dimensional", but many of the same concepts related to scale apply.
 
@@ -363,7 +368,7 @@ Time is "one dimensional", but many of the same concepts related to scale apply.
 :::{.column width="50%"}
 
 
-![](images/03-time-scale.png)
+![](images/03-time-scale.png){width="150%"}
 
 
 
@@ -467,8 +472,8 @@ As a model of a complex system becomes more complete, it becomes less understand
 
 
 * It will eventually be just as difficult to understand as the real-world processes it represents
-+ A 1:1 scale map needs to be as big as the features you are mapping
-+ A life size model house ... would be the size of a regular house
+  + A 1:1 scale map is as big as the feature you're mapping
+  + A life size model house ... is the size of a house
 
 * At a certain point, we have to ignore the heterogeneity.
 
@@ -657,11 +662,11 @@ Scale Dependence
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="55%"}
 
 
 
-Acknowledge the heterogeneity where appropriate.
+Acknowledge heterogeneity where appropriate.
 
 
 * Large scale maps might need more attention to detail.
@@ -670,7 +675,7 @@ Acknowledge the heterogeneity where appropriate.
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="45%"}
 
 
 ![](images/footprint_class.jpg)
@@ -689,7 +694,7 @@ Scale Dependence
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="55%"}
 
 
 Count on spatial autocorrelation  
@@ -702,7 +707,7 @@ Count on spatial autocorrelation
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="45%"}
 
 
 ![](images/LCM.png)
@@ -720,7 +725,7 @@ Scale Dependence
 
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="55%"}
 
 
 At even smaller scales, more and more generalization is required.
@@ -732,10 +737,10 @@ At even smaller scales, more and more generalization is required.
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="45%"}
 
 
-![](images/DeltaMap.png)
+![](images/DeltaMap.png){width="80%"}
 
 
 
