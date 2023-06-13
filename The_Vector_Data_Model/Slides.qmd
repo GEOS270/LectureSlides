@@ -499,7 +499,7 @@ TopHat Question 3
 :::{.column width="100%"}
 
 
-As with the raster data model, each vector object can only have one attribute. We must stack objects if we need multiple attributes.
+In the vector data model, each object can only have one attribute.  We must stack objects if we need multiple attributes.
 
 
 * True

@@ -1607,98 +1607,91 @@
     "href": "Raster_Analysis_Methods/Slides.html#clip",
     "title": "Lecture Slides",
     "section": "Clip",
-    "text": "Clip\n\n\nOften our data is more “complex” than we need it to be. It is useful to parse, reclassify, and/or aggregate our data.\n\nClip Raster: cuts raster down to a bounding box.\nMax N/S & E/W extent of another layer (vector or raster) or manually defined.\nDifferent tool than vector clipping\n\n\n\nRaster clipping is similar to vector clipping"
+    "text": "Clip\nOften our data covers more area than needed, we can clip it to reduce the data volume.\n\n\n\nClip Raster: cuts raster down to a bounding box.\n\nMax N/S & E/W extent of another layer (vector or raster) or manually defined."
   },
   {
     "objectID": "Raster_Analysis_Methods/Slides.html#reclassify",
     "href": "Raster_Analysis_Methods/Slides.html#reclassify",
     "title": "Lecture Slides",
     "section": "Reclassify",
-    "text": "Reclassify\n\n\nOften our data is more “complex” than we need it to be. It is useful to parse, reclassify, and/or aggregate our data.\n\nReclassify: creates a new output based on a classification scheme.\n\n\n\nReassign values or simplify data to reduce data volume"
-  },
-  {
-    "objectID": "Raster_Analysis_Methods/Slides.html#reclassify-1",
-    "href": "Raster_Analysis_Methods/Slides.html#reclassify-1",
-    "title": "Lecture Slides",
-    "section": "Reclassify",
-    "text": "Reclassify\n\n\nOften our data is more “complex” than we need it to be. It is useful to parse, reclassify, and/or aggregate our data.\n\nReclassify: creates a new output based on a classification scheme.\n\n\n\nReassign values or simplify data to reduce data volume"
+    "text": "Reclassify\n\n\nWhen data is more complex than needed.\n\nReclassify: creates a new output based on a classification scheme.\n\nReassign values or simplify data to reduce data volume"
   },
   {
     "objectID": "Raster_Analysis_Methods/Slides.html#mosaic",
     "href": "Raster_Analysis_Methods/Slides.html#mosaic",
     "title": "Lecture Slides",
     "section": "Mosaic",
-    "text": "Mosaic\n\n\nOften our data is more “complex” than we need it to be. It is useful to parse, reclassify, and/or aggregate our data.\n\nMosaic: Combine multiple raster data sets into one.\nThere are multiple approaches we can use.\n\n\n\nOften used to merge multiple satellite images"
+    "text": "Mosaic\nSometimes the data comes in parts that need to be combined\n\n\n\nMosaic: Combine multiple raster data sets into one.\n\nThere are multiple approaches we can use."
   },
   {
     "objectID": "Raster_Analysis_Methods/Slides.html#mosaic-1",
     "href": "Raster_Analysis_Methods/Slides.html#mosaic-1",
     "title": "Lecture Slides",
     "section": "Mosaic",
-    "text": "Mosaic\n\n\nOften our data is more “complex” than we need it to be. It is useful to parse, reclassify, and/or aggregate our data.\n\nMosaic: Combine multiple raster data sets into one.\nThere are multiple approaches we can use.\n\n\n\nOften used to merge multiple satellite images"
+    "text": "Mosaic\nSometimes the data comes in parts that need to be combined\n\n\n\nMosaic: Combine multiple raster data sets into one.\n\nThere are multiple approaches we can use.\n\n\n\n\nOften used to merge multiple satellite images"
   },
   {
     "objectID": "Raster_Analysis_Methods/Slides.html#proximity-analysis",
     "href": "Raster_Analysis_Methods/Slides.html#proximity-analysis",
     "title": "Lecture Slides",
     "section": "Proximity Analysis",
-    "text": "Proximity Analysis\n\n\nSometimes, we’re interested in looking at spatial relationships using raster data. * Euclidean Distance: use this tool to calculate distance from the nearest feature or raster layer."
+    "text": "Proximity Analysis\n\n\nSometimes, we’re interested in looking at spatial relationships using raster data.\n\nEuclidean Distance: use this tool to calculate distance from the nearest feature or raster layer."
   },
   {
     "objectID": "Raster_Analysis_Methods/Slides.html#raster-overlay",
     "href": "Raster_Analysis_Methods/Slides.html#raster-overlay",
     "title": "Lecture Slides",
     "section": "Raster Overlay",
-    "text": "Raster Overlay\n\n\nWhen we have multiple raster layers and we want to combine them to form a new output.\n\nEasy, efficient overlay is a key advantage of the raster data model\nWe have a few tools we can use for this"
+    "text": "Raster Overlay\nWhen we have multiple raster layers and we want to combine them to form a new output.\n\n\n\nEasy, efficient overlay\n\nKey advantage of the raster data model\n\nWe have a few tools we can use for this"
   },
   {
     "objectID": "Raster_Analysis_Methods/Slides.html#weighted-overlay",
     "href": "Raster_Analysis_Methods/Slides.html#weighted-overlay",
     "title": "Lecture Slides",
     "section": "Weighted Overlay",
-    "text": "Weighted Overlay\n\n\nWeights inputs for suitability analysis or risk assessment.\n\nInputs must be discrete numbers\nManually define weights and scale"
+    "text": "Weighted Overlay\nWeights inputs for suitability analysis or risk assessment.\n\n\n\nInputs must be discrete numbers\nManually define weights and scale"
   },
   {
     "objectID": "Raster_Analysis_Methods/Slides.html#weighted-overlay-1",
     "href": "Raster_Analysis_Methods/Slides.html#weighted-overlay-1",
     "title": "Lecture Slides",
     "section": "Weighted Overlay",
-    "text": "Weighted Overlay\n\n\nWeights inputs for suitability analysis or risk assessment.\n\nInputs must be discrete numbers\nManually define weights and scale\n\n\n\n\nOutputs discrete classification."
+    "text": "Weighted Overlay\nWeights inputs for suitability analysis or risk assessment.\n\n\n\nDiscrete outputs"
   },
   {
     "objectID": "Raster_Analysis_Methods/Slides.html#raster-calculator",
     "href": "Raster_Analysis_Methods/Slides.html#raster-calculator",
     "title": "Lecture Slides",
     "section": "Raster Calculator",
-    "text": "Raster Calculator\n\n\nMore general and flexible than weighted overlay.\n\nOutputs are more straightforward\nBecause inputs are more explicit\nCan do weighted overlay among other tasks"
+    "text": "Raster Calculator\nMore general and flexible than weighted overlay.\n\n\n\nOutputs are more straightforward\n\nBecause inputs are more explicit\n\nCan do weighted overlay among other tasks"
   },
   {
     "objectID": "Raster_Analysis_Methods/Slides.html#raster-calculator-1",
     "href": "Raster_Analysis_Methods/Slides.html#raster-calculator-1",
     "title": "Lecture Slides",
     "section": "Raster Calculator",
-    "text": "Raster Calculator\n\n\nMore general and flexible than weighted overlay.\n\nOutputs are more straightforward\nBecause inputs are more explicit\nCan do weighted overlay among other tasks\n\n\n\nOutputs continuous gradient."
+    "text": "Raster Calculator\nMore general and flexible than weighted overlay.\n\n\n\nContinuous output"
   },
   {
     "objectID": "Raster_Analysis_Methods/Slides.html#zonal-statistics",
     "href": "Raster_Analysis_Methods/Slides.html#zonal-statistics",
     "title": "Lecture Slides",
     "section": "Zonal Statistics",
-    "text": "Zonal Statistics\n\n\nCalculate statistics (mean, max, etc.) using zones (regions) and output desired statistic by zone.\n\nThe zone can be either a raster or vector layer.\nZonal Statistics as Table generates a table containing multiple statistics by zone."
+    "text": "Zonal Statistics\n\n\nCalculate statistics by region.\n\nThe zone can be either a raster or vector layer.\nZonal Statistics as Table generates a table containing multiple statistics by zone."
   },
   {
     "objectID": "Raster_Analysis_Methods/Slides.html#surface-analysis",
     "href": "Raster_Analysis_Methods/Slides.html#surface-analysis",
     "title": "Lecture Slides",
     "section": "Surface Analysis",
-    "text": "Surface Analysis\n\n\nThese tools are specifically designed to analyze terrain surfaces (ie. Digital Elevation Models).\n\nHowever, they can be applied to other purposes in select applications\nSlope: calculates the slope of a terrain surface\nie. the angle in degrees from a cell to it’s “lowest” neighbor"
+    "text": "Surface Analysis\nThese tools are designed to analyze elevation surfaces.\n\nSlope: calculates the slope of a terrain surface\n\nThe angle in degrees from a cell to it’s “lowest” neighbor"
   },
   {
     "objectID": "Raster_Analysis_Methods/Slides.html#surface-analysis-1",
     "href": "Raster_Analysis_Methods/Slides.html#surface-analysis-1",
     "title": "Lecture Slides",
     "section": "Surface Analysis",
-    "text": "Surface Analysis\n\n\nThese tools are specifically designed to analyze terrain surfaces (ie. Digital Elevation Models).\n\nHowever, they can be applied to other purposes in select applications\nAspect: calculates the direction a slope is facing\nNorth, southeast, west northwest, etc."
+    "text": "Surface Analysis\nThese tools are designed to analyze elevation surfaces.\n\nAspect: calculates the direction a slope is facing\n\nNorth, southeast, west northwest, etc."
   },
   {
     "objectID": "Raster_Analysis_Methods/Slides.html#raster-functions",
@@ -1712,70 +1705,119 @@
     "href": "Raster_Analysis_Methods/Slides.html#hydrologic-modelling",
     "title": "Lecture Slides",
     "section": "Hydrologic Modelling",
-    "text": "Hydrologic Modelling\n\n\nThe Hydrology toolset can be used to calculate stream flow.\n\nUse a DEM as an input\nFill “sinks”\nCalculate flow direction\nRun flow accumulation\n\n\nDEM Input\n\nAccumulated stream flow output"
+    "text": "Hydrologic Modelling\n\n\nThe Hydrology toolset can be used to calculate stream flow.\n\nUse a DEM as an input\nFill “sinks”\nCalculate flow direction\nRun flow accumulation"
+  },
+  {
+    "objectID": "Raster_Analysis_Methods/Slides.html#hydrologic-modelling-1",
+    "href": "Raster_Analysis_Methods/Slides.html#hydrologic-modelling-1",
+    "title": "Lecture Slides",
+    "section": "Hydrologic Modelling",
+    "text": "Hydrologic Modelling\n\n\nThe Hydrology toolset can be used to calculate stream flow.\n\nUse a DEM as an input\nFill “sinks”\nCalculate flow direction\nRun flow accumulation\n\n\nDEM Input"
+  },
+  {
+    "objectID": "Raster_Analysis_Methods/Slides.html#hydrologic-modelling-2",
+    "href": "Raster_Analysis_Methods/Slides.html#hydrologic-modelling-2",
+    "title": "Lecture Slides",
+    "section": "Hydrologic Modelling",
+    "text": "Hydrologic Modelling\n\n\nThe Hydrology toolset can be used to calculate stream flow.\n\nUse a DEM as an input\nFill “sinks”\nCalculate flow direction\nRun flow accumulation\n\n\nAccumulated stream flow output"
   },
   {
     "objectID": "Raster_Analysis_Methods/Slides.html#calculate-ndvi",
     "href": "Raster_Analysis_Methods/Slides.html#calculate-ndvi",
     "title": "Lecture Slides",
     "section": "Calculate NDVI",
-    "text": "Calculate NDVI\n\n\nYou can calculate NDVI directly in Arc * Just give the red and near infrared bands from a satellite image + e.g. Landsat8: Red (4), near infrared (5)"
+    "text": "Calculate NDVI\n\n\nYou can calculate NDVI directly in Arc\n\nJust give the red and near infrared bands from a satellite image\n\ne.g. Landsat8: Red (4), near infrared (5)"
   },
   {
     "objectID": "Raster_Analysis_Methods/Slides.html#image-classification",
     "href": "Raster_Analysis_Methods/Slides.html#image-classification",
     "title": "Lecture Slides",
     "section": "Image Classification",
-    "text": "Image Classification\n\n\nClassify a raster.\n\nSupervised or unsupervised"
+    "text": "Image Classification\n\n\nSupervised or unsupervised classification methods"
   },
   {
     "objectID": "Raster_Analysis_Methods/Slides.html#image-classification-1",
     "href": "Raster_Analysis_Methods/Slides.html#image-classification-1",
     "title": "Lecture Slides",
     "section": "Image Classification",
-    "text": "Image Classification\n\n\nClassify a raster.\n\nSupervised or unsupervised"
+    "text": "Image Classification\n\n\nSupervised or unsupervised classification methods"
   },
   {
     "objectID": "Spatial_Data_Workflows/Slides.html#gis-research-process",
     "href": "Spatial_Data_Workflows/Slides.html#gis-research-process",
     "title": "Lecture Slides",
     "section": "GIS Research Process",
-    "text": "GIS Research Process\n\n\n\nDefine your research question\n\nIdentify the problems you will address and determine scale of your analysis\nExplore the available data\n\nAdjust your research question as needed* Outline a plan for your analysis\n\n\nConduct your analysis\n\nClean, convert, reproject, and reclassify input data\nSpatial overlays, statistical tests, summary statistics, etc.\nRefine and incorporate more data as needed\n\nShare your results\n\nVisualizations, reports, publications, press releases, etc.\nIdentify new questions\n\nGood research often generates more questions than it answers"
+    "text": "GIS Research Process\n\nDefine your research question\n\n\nIdentify the problems you will address and determine scale of your analysis\nExplore the available data\n\nAdjust your research question as needed* Outline a plan for your analysis"
+  },
+  {
+    "objectID": "Spatial_Data_Workflows/Slides.html#gis-research-process-1",
+    "href": "Spatial_Data_Workflows/Slides.html#gis-research-process-1",
+    "title": "Lecture Slides",
+    "section": "GIS Research Process",
+    "text": "GIS Research Process\n\nConduct your analysis\n\n\nPre-processing:\n\nParse and clean data\nData conversion and projection\n\nSpatial Analysis:\n\nInvestigate the spatial relationships between inputs\nStatistical tests and descriptive statistics\n\nRefine and incorporate more data as needed"
+  },
+  {
+    "objectID": "Spatial_Data_Workflows/Slides.html#gis-research-process-2",
+    "href": "Spatial_Data_Workflows/Slides.html#gis-research-process-2",
+    "title": "Lecture Slides",
+    "section": "GIS Research Process",
+    "text": "GIS Research Process\n\nShare your results\n\n\nVisualizations, reports, publications, press releases, etc.\nIdentify new questions\n\nGood research often generates more questions than it answers"
   },
   {
     "objectID": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow",
     "href": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow",
     "title": "Lecture Slides",
     "section": "Visualizing a Workflow",
-    "text": "Visualizing a Workflow\n\n\nIt is a good idea to think through a workflow before conducting it.\n\nA flowchart is a diagram that outlines the key steps in an analysis\nA flowchart can help you\nIdentify necessary analysis steps\nThink through the logical progression of analysis steps\nCatch errors before you start working\nShare your planned analysis with colleagues, funding organizations, etc."
-  },
-  {
-    "objectID": "Spatial_Data_Workflows/Slides.html#an-applied-example",
-    "href": "Spatial_Data_Workflows/Slides.html#an-applied-example",
-    "title": "Lecture Slides",
-    "section": "An Applied Example",
-    "text": "An Applied Example\n\n\nPort Alberni has needs a new tsunami evacuation shelter and you have been tasked with finding a suitable location. The shelter must:\n\nOutside the flood zone:\n\n\n\n15 MASL or > 1 km from coast.\n\n\n\n\n1.5 km from existing shelters.\n\n< 250 m from an Arterial Roadway.\nNot on Residential, Commercial, or Industrial parcels."
+    "text": "Visualizing a Workflow\nIt is a good idea to think through a workflow before conducting it.\n\n\n\nA flowchart is a diagram that outlines the key steps in an analysis"
   },
   {
     "objectID": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow-1",
     "href": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow-1",
     "title": "Lecture Slides",
     "section": "Visualizing a Workflow",
-    "text": "Visualizing a Workflow\n\n\nIt is best to create a workflow that is repeatable, modifiable, and sharable.\n\n“Point and Click” GIS is not repeatable\nThis can create issues when you:\nNeed to write up a report\nWant to share how you completed a task\nHave to redo or update complex analyses"
+    "text": "Visualizing a Workflow\n\n\nA flowchart can help you:\n\nThink through logical progression of analysis\n\nIdentify key steps\n\nCatch errors before you start working\nShare your analysis with colleagues, funding organizations, etc."
+  },
+  {
+    "objectID": "Spatial_Data_Workflows/Slides.html#an-applied-example",
+    "href": "Spatial_Data_Workflows/Slides.html#an-applied-example",
+    "title": "Lecture Slides",
+    "section": "An Applied Example",
+    "text": "An Applied Example\nPort Alberni needs a new tsunami evacuation shelter. The shelter must:\n\n\n\nOutside the flood zone: > 15 m ASL or > 1 km from coast.\n> 1.5 km from existing shelters.\n< 250 m from an Arterial Roadway.\nNot on Residential, Commercial, or Industrial parcels."
   },
   {
     "objectID": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow-2",
     "href": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow-2",
     "title": "Lecture Slides",
     "section": "Visualizing a Workflow",
-    "text": "Visualizing a Workflow\n\n\nModel Builder is a good solution for beginners.\n\nIt lets you define you analysis steps using a flowchart\nInputs are run trough the geoprocessing steps\nModels are easy to save and update\nCan be exported as custom tools\nHelps you visualize your results and share them with others"
+    "text": "Visualizing a Workflow\nIt is best to create a workflow that is repeatable, modifiable, and sharable.\n\n\n\n“Point and Click” GIS is not repeatable\n\nEasy to mix up steps\nAccidentally input change parameters\nMix up file names"
   },
   {
     "objectID": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow-3",
     "href": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow-3",
     "title": "Lecture Slides",
     "section": "Visualizing a Workflow",
-    "text": "Visualizing a Workflow\n\n\nIf you pursue a GIS career, or any other science, you should consider learning to code.\n\nCode is replicable, legible, and even more explicit than a model\nPython is a great option for geospatial analysis\nJavascript is great for making web based applications and interactive visualizations\nR is useful for statistical analysis\n\n\n\nModels can be exported as Python code!\n\nJavascript can create interactive web maps!\nJavascript can create interactive web maps!"
+    "text": "Visualizing a Workflow\nIt is best to create a workflow that is repeatable, modifiable, and sharable.\n\n\n\nHaving a record is helpful when you:\n\nNeed to write a report\nWant to share how you completed a task\nHave to redo or update complex analyses"
+  },
+  {
+    "objectID": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow-4",
+    "href": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow-4",
+    "title": "Lecture Slides",
+    "section": "Visualizing a Workflow",
+    "text": "Visualizing a Workflow\nModel Builder is a good solution for beginners.\n\n\n\nIt lets you define you analysis using a flowchart\n\nInputs are run trough the geoprocessing steps\nModels are easy to save and update\nCan be exported as custom tools\n\n\n\n\n\nHelps you explain your results"
+  },
+  {
+    "objectID": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow-5",
+    "href": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow-5",
+    "title": "Lecture Slides",
+    "section": "Visualizing a Workflow",
+    "text": "Visualizing a Workflow\nIf you pursue a GIS career, or any other science, you should consider learning to code.\n\nCode is replicable, legible, and even more explicit than a model\nPython is a great option for geospatial analysis\nJavaScript is great for making web based applications and interactive visualizations\nR is useful for statistical analysis"
+  },
+  {
+    "objectID": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow-6",
+    "href": "Spatial_Data_Workflows/Slides.html#visualizing-a-workflow-6",
+    "title": "Lecture Slides",
+    "section": "Visualizing a Workflow",
+    "text": "Visualizing a Workflow\n\n\n\nModels can be exported as Python code!\n\n\n\n\n\nJavaScript can create interactive web maps!"
   },
   {
     "objectID": "Spatial_is_Special/Slides.html#first-law-of-geography",
@@ -2874,14 +2916,21 @@
     "href": "Vector_Analysis_Methods/Slides.html#vector-analysis-methods-1",
     "title": "Lecture Slides",
     "section": "Vector Analysis Methods",
-    "text": "Vector Analysis Methods\n\n\nMany operations can be done with vector data.\n\nSome methods are very similar.\nDistinctions between methods can be subtle, but important.\nCan complete the same tasks, but need slight changes to a workflow.\nTypically in GIS there are multiple ways to get the same answers.\nSome “routes” are just more direct."
+    "text": "Vector Analysis Methods\n\n\nMany operations can be done with vector data.\n\nSome methods are very similar.\n\nDistinctions between methods can be subtle, but important.\nCan complete the same tasks, but need slight changes to a workflow.\n\nTypically in GIS there are multiple ways to get the same answers.\n\nSome “routes” are just more direct."
   },
   {
     "objectID": "Vector_Analysis_Methods/Slides.html#querying-attributes",
     "href": "Vector_Analysis_Methods/Slides.html#querying-attributes",
     "title": "Lecture Slides",
     "section": "Querying Attributes",
-    "text": "Querying Attributes\n\n\nFinding features of interest based on attributes.\n\nA good way to reduce data volumes, export queries to new layers\nIn ArcGIS Pro you can Select by Attribute\nUses SQL (Structured Query Language)\nCheck equality, relative magnitude, etc.\nCombined with operators: AND / OR\nIf we’re only interested in historic residential buildings:\nWhere “YEAR BUILT” ≤ 1950 AND “TYPE” = “Residential”\nSave as a new layer, won’t have to search through all the objects every time."
+    "text": "Querying Attributes\n\n\nFinding features of interest based on attributes.\n\nA good way to reduce data volumes, export queries to new layers\nIn ArcGIS Pro you can Select by Attribute\n\nUses SQL (Structured Query Language)\nCheck equality, relative magnitude, etc.\nCombined with operators: AND / OR"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#querying-attributes-1",
+    "href": "Vector_Analysis_Methods/Slides.html#querying-attributes-1",
+    "title": "Lecture Slides",
+    "section": "Querying Attributes",
+    "text": "Querying Attributes\n\n\nFinding features of interest based on attributes.\n\nIf we’re only interested in historic residential buildings:\n\nWhere “YEAR BUILT” ≤ 1950 AND “TYPE” = “Residential”\nSave as a new layer, won’t have to search through all the objects every time."
   },
   {
     "objectID": "Vector_Analysis_Methods/Slides.html#select-by-attribute",
@@ -2923,91 +2972,119 @@
     "href": "Vector_Analysis_Methods/Slides.html#proximity-analysis",
     "title": "Lecture Slides",
     "section": "Proximity Analysis",
-    "text": "Proximity Analysis\n\n\nLooking at spatial relationships within or between layers.\n\nA good way to reduce data volumes, export queries to new layers.\nMultiple options, depending on our needs.\nIf we’re only interested in buildings within 1 km of streams:\nIdentify by proximity\nSave as a new layer, won’t have to search through all the objects every time."
+    "text": "Proximity Analysis\n\n\nLooking at spatial relationships within or between layers.\n\nA good way to reduce data volumes, export queries to new layers.\nMultiple options, depending on our needs.\nIf we’re only interested in buildings within 1 km of streams:\n\nIdentify by proximity\nSave as a new layer, won’t have to search through all the objects every time."
   },
   {
     "objectID": "Vector_Analysis_Methods/Slides.html#select-by-location",
     "href": "Vector_Analysis_Methods/Slides.html#select-by-location",
     "title": "Lecture Slides",
     "section": "Select by Location",
-    "text": "Select by Location\n\n\nUse Select by Location when you want to check for spatial relationships. There are many relationships we can check for:\n\nContainment\nIntersection\nDistance"
+    "text": "Select by Location\n\n\nUse to check for spatial relationships such as:\n\nContainment\nIntersection\nDistance"
   },
   {
-    "objectID": "Vector_Analysis_Methods/Slides.html#geometric-manipulations",
-    "href": "Vector_Analysis_Methods/Slides.html#geometric-manipulations",
+    "objectID": "Vector_Analysis_Methods/Slides.html#buffer",
+    "href": "Vector_Analysis_Methods/Slides.html#buffer",
     "title": "Lecture Slides",
-    "section": "Geometric Manipulations",
-    "text": "Geometric Manipulations\n\n\nThese methods create new layers with altered “geometries”. Geometry is a term we use to refer to points, lines, and/or polygons in a vector layer."
+    "section": "Buffer",
+    "text": "Buffer\n\n\nCreate a new Polygon layer based on distance.\n\nBuffer points, lines, or polygons using a buffer distance or set a field to specify varriable distance.\nUse the Multiple Ring Buffer tool for multi-criteria buffers.\n\n\nExample From ESRI Docs"
   },
   {
-    "objectID": "Vector_Analysis_Methods/Slides.html#buffering",
-    "href": "Vector_Analysis_Methods/Slides.html#buffering",
+    "objectID": "Vector_Analysis_Methods/Slides.html#buffer-1",
+    "href": "Vector_Analysis_Methods/Slides.html#buffer-1",
     "title": "Lecture Slides",
-    "section": "Buffering",
-    "text": "Buffering\n\n\nUse the Buffer tool to create a new Polygon layer based on distance.\n\nBuffer points, lines, or polygons using a buffer distance or set a field to specify varriable distance.\nUse the Multiple Ring Buffer tool for multi-criteria buffers.\n\nExample From ESRI Docs"
-  },
-  {
-    "objectID": "Vector_Analysis_Methods/Slides.html#buffering-1",
-    "href": "Vector_Analysis_Methods/Slides.html#buffering-1",
-    "title": "Lecture Slides",
-    "section": "Buffering",
-    "text": "Buffering\n\n\nUse the Buffer tool to create a new Polygon layer based on distance.\n\nBuffer points, lines, or polygons using a buffer distance or set a field to specify varriable distance.\nUse the Multiple Ring Buffer tool for multi-criteria buffers.\n\nBuffering Tsunami Shelters"
+    "section": "Buffer",
+    "text": "Buffer\n\n\nCreate a new Polygon layer based on distance.\n\nBuffer points, lines, or polygons using a buffer distance or set a field to specify varriable distance.\nUse the Multiple Ring Buffer tool for multi-criteria buffers.\n\n\nBuffering Tsunami Shelters"
   },
   {
     "objectID": "Vector_Analysis_Methods/Slides.html#dissolve",
     "href": "Vector_Analysis_Methods/Slides.html#dissolve",
     "title": "Lecture Slides",
     "section": "Dissolve",
-    "text": "Dissolve\n\n\nDissolve aggregates features.\n\nMerges objects completely or by attribute(s).\nCan calculate statistics for aggregated regions.\nUseful if our data is more “complex” than we need it to be.\n\nExample From ESRI Docs"
+    "text": "Dissolve\n\n\nAggregates features.\n\nMerges objects completely or by attribute(s).\nCan calculate statistics for aggregated regions.\nUseful if our data is more “complex” than we need it to be.\n\n\nExample From ESRI Docs"
   },
   {
     "objectID": "Vector_Analysis_Methods/Slides.html#dissolve-1",
     "href": "Vector_Analysis_Methods/Slides.html#dissolve-1",
     "title": "Lecture Slides",
     "section": "Dissolve",
-    "text": "Dissolve\n\n\nDissolve aggregates features.\n\nMerges objects completely or by attribute(s).\nCan calculate statistics for aggregated regions.\nUseful if our data is more “complex” than we need it to be.\n\nDissolve Tsunami Shelter Buffers"
-  },
-  {
-    "objectID": "Vector_Analysis_Methods/Slides.html#feature-overlay",
-    "href": "Vector_Analysis_Methods/Slides.html#feature-overlay",
-    "title": "Lecture Slides",
-    "section": "Feature Overlay",
-    "text": "Feature Overlay\n\n\nWhen we have multiple data layers and we want to combine them to form a new output."
+    "text": "Dissolve\n\n\nAggregates features.\n\nMerges objects completely or by attribute(s).\nCan calculate statistics for aggregated regions.\nUseful if our data is more “complex” than we need it to be.\n\n\nDissolve Shelter Buffers"
   },
   {
     "objectID": "Vector_Analysis_Methods/Slides.html#clip",
     "href": "Vector_Analysis_Methods/Slides.html#clip",
     "title": "Lecture Slides",
     "section": "Clip",
-    "text": "Clip\n\n\nUse the Clip tool to cut one layer down to the boundaries of another.\n\nWorks like a cookie cutter\nUseful when we want to focus on a study area\nDoes not alter attributes\nInput layer: our data layer\nClip layer: the study area\n\n\nExample From ESRI Docs\n\nInput\n\nOutput"
+    "text": "Clip\n\n\nCut one layer down to the boundaries of another.\n\nUseful when we want to focus on a study area\nDoes not alter attributes\n\nInput layer: our data layer\nClip layer: the study area\n\n\n\nExample From ESRI Docs"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#clip-1",
+    "href": "Vector_Analysis_Methods/Slides.html#clip-1",
+    "title": "Lecture Slides",
+    "section": "Clip",
+    "text": "Clip\n\n\nCut one layer down to the boundaries of another.\n\nUseful when we want to focus on a study area\nDoes not alter attributes\n\nInput layer: our data layer\nClip layer: the study area\n\n\n\nInput"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#clip-2",
+    "href": "Vector_Analysis_Methods/Slides.html#clip-2",
+    "title": "Lecture Slides",
+    "section": "Clip",
+    "text": "Clip\n\n\nCut one layer down to the boundaries of another.\n\nUseful when we want to focus on a study area\nDoes not alter attributes\n\nInput layer: our data layer\nClip layer: the study area\n\n\n\nOutput"
   },
   {
     "objectID": "Vector_Analysis_Methods/Slides.html#erase",
     "href": "Vector_Analysis_Methods/Slides.html#erase",
     "title": "Lecture Slides",
     "section": "Erase",
-    "text": "Erase\n\n\nUse the erase tool to remove the area of one layer from another.\n\nOpposite of the clip tool\nDoes not alter attributes\nUseful when we want to discard/exclude an area\n\n\nExample From ESRI Docs\n\nInput\n\nOutput"
+    "text": "Erase\n\n\nRemove the area of one layer from another.\n\nOpposite of the clip tool\nDoes not alter attributes\nUseful when we want to discard/exclude an area\n\n\nExample From ESRI Docs"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#erase-1",
+    "href": "Vector_Analysis_Methods/Slides.html#erase-1",
+    "title": "Lecture Slides",
+    "section": "Erase",
+    "text": "Erase\n\n\nRemove the area of one layer from another.\n\nOpposite of the clip tool\nDoes not alter attributes\nUseful when we want to discard/exclude an area\n\n\nInput"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#erase-2",
+    "href": "Vector_Analysis_Methods/Slides.html#erase-2",
+    "title": "Lecture Slides",
+    "section": "Erase",
+    "text": "Erase\n\n\nRemove the area of one layer from another.\n\nOpposite of the clip tool\nDoes not alter attributes\nUseful when we want to discard/exclude an area\n\n\nOutput"
   },
   {
     "objectID": "Vector_Analysis_Methods/Slides.html#intersect",
     "href": "Vector_Analysis_Methods/Slides.html#intersect",
     "title": "Lecture Slides",
     "section": "Intersect",
-    "text": "Intersect\n\n\nIntersect lets us see only where layers overlap and combine overlapping attributes.\n\nCan handle more than two layers at once\nSplits features by overlaps and merges attribute tables\nUseful when we want to merge and parse data at the same time\n\n\nExample From ESRI Docs\n\nInput\n\nOutput"
+    "text": "Intersect\n\n\nOutput where layers overlap and combine attributes.\n\nCan handle more than two layers at once\nSplits features by overlaps and merges attribute tables\nMerge and parse data at the same time\n\n\nExample From ESRI Docs"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#intersect-1",
+    "href": "Vector_Analysis_Methods/Slides.html#intersect-1",
+    "title": "Lecture Slides",
+    "section": "Intersect",
+    "text": "Intersect\n\n\nOutput where layers overlap and combine attributes.\n\nCan handle more than two layers at once\nSplits features by overlaps and merges attribute tables\nMerge and parse data at the same time\n\n\nInput"
+  },
+  {
+    "objectID": "Vector_Analysis_Methods/Slides.html#intersect-2",
+    "href": "Vector_Analysis_Methods/Slides.html#intersect-2",
+    "title": "Lecture Slides",
+    "section": "Intersect",
+    "text": "Intersect\n\n\nOutput where layers overlap and combine attributes.\n\nCan handle more than two layers at once\nSplits features by overlaps and merges attribute tables\nMerge and parse data at the same time\n\n\nOutput"
   },
   {
     "objectID": "Vector_Analysis_Methods/Slides.html#union",
     "href": "Vector_Analysis_Methods/Slides.html#union",
     "title": "Lecture Slides",
     "section": "Union",
-    "text": "Union\n\n\nUse the Union tool to combine multiple layers, split features where they overlap and combine attributes.\n\nSimilar to intersect, but keeps overlapping areas\nAdds attributes from all overlaps.\nCan handle more than two layers at once.\nNull values where for new attributes where no overlaps are present.\nUseful when we want to merge layers."
+    "text": "Union\nCombine multiple polygon layers, split features where they overlap and combine attributes.\n\nSimilar to intersect, but keeps overlapping areas\nAdds attributes from all overlaps.\nCan handle more than two layers at once.\n\nNull values where for new attributes where no overlaps are present."
   },
   {
     "objectID": "Vector_Analysis_Methods/Slides.html#union-1",
     "href": "Vector_Analysis_Methods/Slides.html#union-1",
     "title": "Lecture Slides",
     "section": "Union",
-    "text": "Union\n\n\nUse the Union tool to combine multiple layers, split features where they overlap and combine attributes.\n\nSimilar to intersect, but keeps overlapping areas"
+    "text": "Union\nCombine multiple polygon layers, split features where they overlap and combine attributes.\n\nSimilar to intersect, but keeps overlapping areas"
   },
   {
     "objectID": "Vector_Analysis_Methods/Slides.html#many-more",

@@ -14,227 +14,209 @@ fig-dpi: 300
 
 ---
 
-
 GIS Workflows
 =============
-
 
 
 ::::{.columns}
 :::{.column width="100%"}
 
-
- The flow of information through a project.
+How information moves and transforms through a project.
  
 :::
 ::::
 
+GIS Research Process
+--------------------
 
+1. Define your research question
+
+* Identify the problems you will address and determine scale of your analysis
+* Explore the available data
+  + Adjust your research question as needed* Outline a plan for your analysis
 
 
 GIS Research Process
 --------------------
 
-
-::::{.columns}
-:::{.column width="100%"}
-
-
-1. Define your research question
-	* Identify the problems you will address and determine scale of your analysis
-	* Explore the available data
-	
-		+ Adjust your research question as needed* Outline a plan for your analysis
 2. Conduct your analysis
-	* Clean, convert, reproject, and reclassify input data
-	* Spatial overlays, statistical tests, summary statistics, etc.
-	* Refine and incorporate more data as needed
+
+* Pre-processing:
+  + Parse and clean data
+  + Data conversion and projection
+    
+* Spatial Analysis:
+  + Investigate the spatial relationships between inputs
+  + Statistical tests and descriptive statistics
+
+* Refine and incorporate more data as needed
+
+
+GIS Research Process
+--------------------
+
 3. Share your results
-	* Visualizations, reports, publications, press releases, etc.
-	* Identify new questions
 	
-		+ Good research often generates more questions than it answers
-
-
-
-
-:::
-::::
-
+* Visualizations, reports, publications, press releases, etc.
+* Identify new questions
+  + Good research often generates more questions than it answers
 
 
 
 Visualizing a Workflow
 ----------------------
 
+It is a good idea to think through a workflow before conducting it.
+
 
 ::::{.columns}
 :::{.column width="50%"}
 
 
-It is a good idea to think through a workflow before conducting it.
-
-
 * A flowchart is a diagram that outlines the key steps in an analysis
-* A flowchart can help you
-+ Identify necessary analysis steps
-+ Think through the logical progression of analysis steps
-+ Catch errors **before** you start working
-+ Share your planned analysis with colleagues, funding organizations, etc.
-
-
 
 :::
 :::{.column width="50%"}
 
-
-
-  
-
 ![](images/Flowchart.png)
-
-
-
-
-![](images/Modelling_NECB.png)
-
-
-
-
 
 :::
 ::::
 
 
+Visualizing a Workflow
+----------------------
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+A flowchart can help you:
+
+* Think through logical progression of analysis
+  + Identify key steps
+* Catch errors **before** you start working
+* Share your analysis with colleagues, funding organizations, etc.
+
+
+:::
+:::{.column width="50%"}
+
+![](images/Modelling_NECB.png)
+
+:::
+::::
 
 
 TopHat Question 1
 =================
 
-
 ::::{.columns}
 :::{.column width="100%"}
 
-
 A \_\_\_\_\_\_\_ is a diagram that outlines the key steps in an analysis.
-
-
-
 
 :::
 ::::
-
-
-
-
 An Applied Example
 ------------------
 
 
+Port Alberni needs a new tsunami evacuation shelter.  The shelter must:
+
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="60%"}
 
 
-Port Alberni has needs a new tsunami evacuation shelter and you have been tasked with finding a suitable location. The shelter must:
-
-
-1. Outside the flood zone:
-* > 15 MASL **or** > 1 km from coast.
-
-3. > 1.5 km from existing shelters.
+1. Outside the flood zone: \> 15 m ASL **or** > 1 km from coast.
+3. \> 1.5 km from existing shelters.
 4. < 250 m from an Arterial Roadway.
 5. Not on Residential, Commercial, or Industrial parcels.
 
-
-
+:::
+:::{.column width="40%"}
 
 ![](images/Flowchart_Example.png)
 
 
-
 :::
 ::::
 
-
-
-
 Visualizing a Workflow
 ----------------------
-
-
-::::{.columns}
-:::{.column width="50%"}
-
 
 It is best to create a workflow that is repeatable, modifiable, and sharable.
 
+::::{.columns}
+:::{.column width="50%"}
+
 
 * "Point and Click" GIS is not repeatable
-* This can create issues when you:
-+ Need to write up a report
-+ Want to share how you completed a task
-+ Have to redo or update complex analyses
-
-
-
-
+  + Easy to mix up steps
+  + Accidentally input change parameters
+  + Mix up file names
   
+:::
+:::{.column width="50%"}
 
 ![](images/RiskModelling.png)
-
-
-
-
 :::
 ::::
-
-
 
 
 Visualizing a Workflow
 ----------------------
 
+It is best to create a workflow that is repeatable, modifiable, and sharable.
 
 ::::{.columns}
 :::{.column width="50%"}
 
 
-Model Builder is a good solution for beginners.
-
-
-* It lets you define you analysis steps using a flowchart
-+ Inputs are run trough the geoprocessing steps
-+ Models are easy to save and update
-+ Can be exported as custom tools
-
-* Helps you visualize your results and share them with others
-
-
-
-
+* Having a record is helpful when you:
+  + Need to write a report
+  + Want to share how you completed a task
+  + Have to redo or update complex analyses
   
+:::
+:::{.column width="50%"}
 
 ![](images/RiskModelling.png)
-
-
-
-
 :::
 ::::
 
 
+Visualizing a Workflow
+----------------------
+
+Model Builder is a good solution for beginners.
+
+::::{.columns}
+:::{.column width="50%"}
 
 
+* It lets you define you analysis using a flowchart
+  + Inputs are run trough the geoprocessing steps
+  + Models are easy to save and update
+  + Can be exported as custom tools
+
+  
+:::
+:::{.column width="50%"}
+
+![](images/RiskModelling.png)
+
+* Helps you explain your results
+
+:::
+::::
 TopHat Question 2
 =================
-
 
 ::::{.columns}
 :::{.column width="100%"}
 
-
 This is useful tool in ArcGIS Pro that lets you define your analysis steps using a flowchart and create repeatable workflows.
-
 
 * Model Builder
 * Geoprocessing
@@ -242,84 +224,63 @@ This is useful tool in ArcGIS Pro that lets you define your analysis steps using
 * Google Earth Engine
 * Python
 
-
-
-
 :::
 ::::
-
-
 
 
 Visualizing a Workflow
 ----------------------
 
-
-::::{.columns}
-:::{.column width="50%"}
-
-
 If you pursue a GIS career, or any other science, you should consider learning to code.
-
 
 * Code is replicable, legible, and even more explicit than a model
 * Python is a great option for geospatial analysis
-* Javascript is great for making web based applications and interactive visualizations
+* JavaScript is great for making web based applications and interactive visualizations
 * R is useful for statistical analysis
 
 
+Visualizing a Workflow
+----------------------
 
-:::
-:::{.column width="50%"}
+::::{.columns}
+:::{.column width="60%"}
 
-
-
-  
 
 ![](images/Model_Code.png)
 
-
 Models can be exported as Python code!
 
+:::
+:::{.column width="40%"}
 
 
+<div style="overflow: hidden;
+padding-top: 100%;
+position: relative">
+<iframe src="https://ubc-micromet.github.io/FieldSiteMaps/" title="Processes" scrolling="no" frameborder="0"
+style="border: 0;
+height: 150%;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;">
+</iframe>
+</div>
 
-![](images/Code.png)
-
-
-Javascript can create interactive web maps!
-
-
-
-
-  
-
-
-
-
-
-Javascript can create interactive web maps!
-
-
-
+JavaScript can create interactive web maps!
 
 
 :::
 ::::
 
 
-
-
 TopHat Question 3
 =================
-
 
 ::::{.columns}
 :::{.column width="100%"}
 
-
 These are programming languages that can be used to for GIS:
-
 
 * Python
 * Microsoft Excel
@@ -327,10 +288,6 @@ These are programming languages that can be used to for GIS:
 * ArcGIS Pro
 * R
 
-
-
-
 :::
 ::::
-
 

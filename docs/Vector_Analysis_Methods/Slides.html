@@ -339,11 +339,15 @@
 <div class="column" style="width:100%;">
 <p>Many operations can be done with vector data.</p>
 <ul>
-<li><p>Some methods are very similar.</p></li>
-<li><p>Distinctions between methods can be subtle, but important.</p></li>
-<li><p>Can complete the same tasks, but need slight changes to a workflow.</p></li>
-<li><p>Typically in GIS there are multiple ways to get the same answers.</p></li>
-<li><p>Some “routes” are just more direct.</p></li>
+<li>Some methods are very similar.
+<ul>
+<li>Distinctions between methods can be subtle, but important.</li>
+<li>Can complete the same tasks, but need slight changes to a workflow.</li>
+</ul></li>
+<li>Typically in GIS there are multiple ways to get the same answers.
+<ul>
+<li>Some “routes” are just more direct.</li>
+</ul></li>
 </ul>
 </div>
 </div>
@@ -354,14 +358,28 @@
 <div class="column" style="width:100%;">
 <p>Finding features of interest based on attributes.</p>
 <ul>
-<li><p>A good way to reduce data volumes, export queries to new layers</p></li>
-<li><p>In ArcGIS Pro you can <strong>Select by Attribute</strong></p></li>
-<li><p>Uses SQL (Structured Query Language)</p></li>
-<li><p>Check equality, relative magnitude, etc.</p></li>
-<li><p>Combined with operators: <strong>AND</strong> / <strong>OR</strong></p></li>
-<li><p>If we’re only interested in historic residential buildings:</p></li>
-<li><p>Where “YEAR BUILT” ≤ 1950 <strong>AND</strong> “TYPE” = “Residential”</p></li>
-<li><p>Save as a new layer, won’t have to search through all the objects every time.</p></li>
+<li>A good way to reduce data volumes, export queries to new layers</li>
+<li>In ArcGIS Pro you can <strong>Select by Attribute</strong>
+<ul>
+<li>Uses SQL (Structured Query Language)</li>
+<li>Check equality, relative magnitude, etc.</li>
+<li>Combined with operators: <strong>AND</strong> / <strong>OR</strong></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="querying-attributes-1" class="slide level2">
+<h2>Querying Attributes</h2>
+<div class="columns">
+<div class="column" style="width:100%;">
+<p>Finding features of interest based on attributes.</p>
+<ul>
+<li>If we’re only interested in historic residential buildings:
+<ul>
+<li>Where “YEAR BUILT” ≤ 1950 <strong>AND</strong> <br>“TYPE” = “Residential”</li>
+<li>Save as a new layer, won’t have to search through all the objects every time.</li>
+</ul></li>
 </ul>
 </div>
 </div>
@@ -369,7 +387,7 @@
 <section id="select-by-attribute" class="slide level2">
 <h2>Select by Attribute</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:52%;">
 <p>Sample SQL queries</p>
 <ul>
 <li><strong>Where “SPECIES” = “Pine”</strong></li>
@@ -378,7 +396,7 @@
 <li>Where “SPECIES” = “Pine” AND “HEIGHT” ≤ 5</li>
 <li>Where “SPECIES” = “Pine” fc0314OR “HEIGHT” ≤ 5</li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:48%;">
 <table>
 <tbody>
 <tr class="odd">
@@ -387,14 +405,14 @@
 <td>Height</td>
 </tr>
 <tr class="even">
-<td>Pine</td>
-<td>10</td>
-<td>5</td>
+<td><strong>Pine</strong></td>
+<td><strong>10</strong></td>
+<td><strong>5</strong></td>
 </tr>
 <tr class="odd">
-<td>Pine</td>
-<td>95</td>
-<td>28</td>
+<td><strong>Pine</strong></td>
+<td><strong>95</strong></td>
+<td><strong>28</strong></td>
 </tr>
 <tr class="even">
 <td>Oak</td>
@@ -414,7 +432,7 @@
 <section id="select-by-attribute-1" class="slide level2">
 <h2>Select by Attribute</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:52%;">
 <p>Sample SQL queries</p>
 <ul>
 <li>Where “SPECIES” = “Pine”</li>
@@ -423,7 +441,7 @@
 <li>Where “SPECIES” = “Pine” AND “HEIGHT” ≤ 5</li>
 <li>Where “SPECIES” = “Pine” OR “HEIGHT” ≤ 5</li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:48%;">
 <table>
 <tbody>
 <tr class="odd">
@@ -442,14 +460,14 @@
 <td>28</td>
 </tr>
 <tr class="even">
-<td>Oak</td>
-<td>200</td>
-<td>25</td>
+<td><strong>Oak</strong></td>
+<td><strong>200</strong></td>
+<td><strong>25</strong></td>
 </tr>
 <tr class="odd">
-<td>Oak</td>
-<td>5</td>
-<td>4</td>
+<td><strong>Oak</strong></td>
+<td><strong>5</strong></td>
+<td><strong>4</strong></td>
 </tr>
 </tbody>
 </table>
@@ -459,7 +477,7 @@
 <section id="select-by-attribute-2" class="slide level2">
 <h2>Select by Attribute</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:52%;">
 <p>Sample SQL queries</p>
 <ul>
 <li>Where “SPECIES” = “Pine”</li>
@@ -468,7 +486,7 @@
 <li>Where “SPECIES” = “Pine” AND “HEIGHT” ≤ 5</li>
 <li>Where “SPECIES” = “Pine” OR “HEIGHT” ≤ 5</li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:48%;">
 <table>
 <tbody>
 <tr class="odd">
@@ -477,9 +495,9 @@
 <td>Height</td>
 </tr>
 <tr class="even">
-<td>Pine</td>
-<td>10</td>
-<td>5</td>
+<td><strong>Pine</strong></td>
+<td><strong>10</strong></td>
+<td><strong>5</strong></td>
 </tr>
 <tr class="odd">
 <td>Pine</td>
@@ -492,9 +510,9 @@
 <td>25</td>
 </tr>
 <tr class="odd">
-<td>Oak</td>
-<td>5</td>
-<td>4</td>
+<td><strong>Oak</strong></td>
+<td><strong>5</strong></td>
+<td><strong>4</strong></td>
 </tr>
 </tbody>
 </table>
@@ -504,7 +522,7 @@
 <section id="select-by-attribute-3" class="slide level2">
 <h2>Select by Attribute</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:52%;">
 <p>Sample SQL queries</p>
 <ul>
 <li>Where “SPECIES” = “Pine”</li>
@@ -513,7 +531,7 @@
 <li><strong>Where “SPECIES” = “Pine” AND “HEIGHT” ≤ 5</strong></li>
 <li>Where “SPECIES” = “Pine” OR “HEIGHT” ≤ 5</li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:48%;">
 <table>
 <tbody>
 <tr class="odd">
@@ -522,9 +540,9 @@
 <td>Height</td>
 </tr>
 <tr class="even">
-<td>Pine</td>
-<td>10</td>
-<td>5</td>
+<td><strong>Pine</strong></td>
+<td><strong>10</strong></td>
+<td><strong>5</strong></td>
 </tr>
 <tr class="odd">
 <td>Pine</td>
@@ -549,7 +567,7 @@
 <section id="select-by-attribute-4" class="slide level2">
 <h2>Select by Attribute</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:52%;">
 <p>Sample SQL queries</p>
 <ul>
 <li>Where “SPECIES” = “Pine”</li>
@@ -558,7 +576,7 @@
 <li>Where “SPECIES” = “Pine” AND “HEIGHT” ≤ 5</li>
 <li><strong>Where “SPECIES” = “Pine” OR “HEIGHT” ≤ 5</strong></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:48%;">
 <table>
 <tbody>
 <tr class="odd">
@@ -567,9 +585,9 @@
 <td>Height</td>
 </tr>
 <tr class="even">
-<td>Pine</td>
-<td>10</td>
-<td>5</td>
+<td><strong>Pine</strong></td>
+<td><strong>10</strong></td>
+<td><strong>5</strong></td>
 </tr>
 <tr class="odd">
 <td>Pine</td>
@@ -577,14 +595,14 @@
 <td>28</td>
 </tr>
 <tr class="even">
-<td>Oak</td>
-<td>200</td>
-<td>25</td>
+<td><strong>Oak</strong></td>
+<td><strong>200</strong></td>
+<td><strong>25</strong></td>
 </tr>
 <tr class="odd">
-<td>Oak</td>
-<td>5</td>
-<td>4</td>
+<td><strong>Oak</strong></td>
+<td><strong>5</strong></td>
+<td><strong>4</strong></td>
 </tr>
 </tbody>
 </table>
@@ -594,9 +612,10 @@
 <section id="tophat-question-1" class="title-slide slide level1 center">
 <h1>TopHat Question 1</h1>
 <div class="columns">
-<div class="column" style="width:100%;">
+<div class="column" style="width:52%;">
 <p>How many rows in this table would the following query return?</p>
 <p><strong>Where “SPECIES” = “Pine” AND “SPECIES” = “Oak”</strong></p>
+</div><div class="column" style="width:48%;">
 <table>
 <tbody>
 <tr class="odd">
@@ -639,9 +658,10 @@
 <section id="tophat-question-2" class="title-slide slide level1 center">
 <h1>TopHat Question 2</h1>
 <div class="columns">
-<div class="column" style="width:100%;">
+<div class="column" style="width:52%;">
 <p>How many rows in this table would the following query return?</p>
 <p><strong>Where “SPECIES” = “Pine” OR “SPECIES” = “Oak”</strong></p>
+</div><div class="column" style="width:48%;">
 <table>
 <tbody>
 <tr class="odd">
@@ -687,94 +707,101 @@
 <ul>
 <li>A good way to reduce data volumes, export queries to new layers.</li>
 <li>Multiple options, depending on our needs.</li>
-<li>If we’re only interested in buildings within 1 km of streams:</li>
+<li>If we’re only interested in buildings within 1 km of streams:
+<ul>
 <li>Identify by proximity</li>
 <li>Save as a new layer, won’t have to search through all the objects every time.</li>
+</ul></li>
 </ul>
 </div>
 </div>
 </section>
 <section id="select-by-location" class="slide level2">
-<h2>Select by Location</h2>
+<h2><a href="https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/using-select-by-location.htm">Select by Location</a></h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Use <a href="https://desktop.arcgis.com/en/arcmap/latest/map/working-with-layers/using-select-by-location.htm">Select by Location</a> when you want to check for spatial relationships. There are many relationships we can check for:</p>
+<p>Use to check for spatial relationships such as:</p>
 <ul>
 <li>Containment</li>
 <li>Intersection</li>
 <li>Distance</li>
 </ul>
-<p><img data-src="images/by_location.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/by_location.png" style="width:80.0%"></p>
 </div>
 </div>
-</section>
-<section id="geometric-manipulations" class="slide level2">
-<h2>Geometric Manipulations</h2>
+</section></section>
+<section>
+<section id="geometric-manipulations" class="title-slide slide level1 center">
+<h1>Geometric Manipulations</h1>
 <div class="columns">
 <div class="column" style="width:100%;">
 <p>These methods create new layers with altered “geometries”. Geometry is a term we use to refer to points, lines, and/or polygons in a vector layer.</p>
 </div>
 </div>
 </section>
-<section id="buffering" class="slide level2">
-<h2>Buffering</h2>
+<section id="buffer" class="slide level2">
+<h2><a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/buffer.htm">Buffer</a></h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Use the <a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/buffer.htm">Buffer</a> tool to create a new Polygon layer based on distance.</p>
+<p>Create a new Polygon layer based on distance.</p>
 <ul>
 <li>Buffer points, lines, or polygons using a buffer distance or set a field to specify varriable distance.</li>
 <li>Use the <a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/multiple-ring-buffer.htm">Multiple Ring Buffer</a> tool for multi-criteria buffers.</li>
 </ul>
+</div><div class="column" style="width:50%;">
 <p>Example From ESRI Docs</p>
 <p><img data-src="images/buffer_docs.png"></p>
 </div>
 </div>
 </section>
-<section id="buffering-1" class="slide level2">
-<h2>Buffering</h2>
+<section id="buffer-1" class="slide level2">
+<h2><a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/buffer.htm">Buffer</a></h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Use the <a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/buffer.htm">Buffer</a> tool to create a new Polygon layer based on distance.</p>
+<p>Create a new Polygon layer based on distance.</p>
 <ul>
 <li>Buffer points, lines, or polygons using a buffer distance or set a field to specify varriable distance.</li>
 <li>Use the <a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/multiple-ring-buffer.htm">Multiple Ring Buffer</a> tool for multi-criteria buffers.</li>
 </ul>
+</div><div class="column" style="width:50%;">
 <p>Buffering Tsunami Shelters</p>
 <p><img data-src="images/buffer.png"></p>
 </div>
 </div>
 </section>
 <section id="dissolve" class="slide level2">
-<h2>Dissolve</h2>
+<h2><a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/dissolve.htm">Dissolve</a></h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/dissolve.htm">Dissolve</a> aggregates features.</p>
+<p>Aggregates features.</p>
 <ul>
 <li>Merges objects completely or by attribute(s).</li>
 <li>Can calculate statistics for aggregated regions.</li>
 <li>Useful if our data is more “complex” than we need it to be.</li>
 </ul>
+</div><div class="column" style="width:50%;">
 <p>Example From ESRI Docs</p>
 <p><img data-src="images/dissolve_docs.png"></p>
 </div>
 </div>
 </section>
 <section id="dissolve-1" class="slide level2">
-<h2>Dissolve</h2>
+<h2><a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/dissolve.htm">Dissolve</a></h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/dissolve.htm">Dissolve</a> aggregates features.</p>
+<p>Aggregates features.</p>
 <ul>
 <li>Merges objects completely or by attribute(s).</li>
 <li>Can calculate statistics for aggregated regions.</li>
 <li>Useful if our data is more “complex” than we need it to be.</li>
 </ul>
-<p>Dissolve Tsunami Shelter Buffers</p>
-<p><img data-src="images/dissolve.png"></p>
+</div><div class="column" style="width:50%;">
+<p>Dissolve Shelter Buffers</p>
+<p><img data-src="images/dissolve.png" style="width:90.0%"></p>
 </div>
 </div>
 </section></section>
-<section>
 <section id="tophat-question-3" class="title-slide slide level1 center">
 <h1>TopHat Question 3</h1>
 <div class="columns">
@@ -789,41 +816,74 @@
 </div>
 </div>
 </section>
-<section id="feature-overlay" class="slide level2">
-<h2>Feature Overlay</h2>
-<div class="columns">
-<div class="column" style="width:100%;">
+
+<section>
+<section id="feature-overlay" class="title-slide slide level1 center">
+<h1>Feature Overlay</h1>
 <p>When we have multiple data layers and we want to combine them to form a new output.</p>
-</div>
-</div>
 </section>
 <section id="clip" class="slide level2">
-<h2>Clip</h2>
+<h2><a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/clip.htm">Clip</a></h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Use the <a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/clip.htm">Clip</a> tool to cut one layer down to the boundaries of another.</p>
+<p>Cut one layer down to the boundaries of another.</p>
 <ul>
-<li>Works like a cookie cutter</li>
 <li>Useful when we want to focus on a study area</li>
-<li>Does not alter attributes</li>
+<li>Does not alter attributes
+<ul>
 <li>Input layer: our data layer</li>
 <li>Clip layer: the study area</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p>Example From ESRI Docs</p>
 <p><img data-src="images/clip_docs.png"></p>
+</div>
+</div>
+</section>
+<section id="clip-1" class="slide level2">
+<h2><a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/clip.htm">Clip</a></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Cut one layer down to the boundaries of another.</p>
+<ul>
+<li>Useful when we want to focus on a study area</li>
+<li>Does not alter attributes
+<ul>
+<li>Input layer: our data layer</li>
+<li>Clip layer: the study area</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
 <p>Input</p>
 <p><img data-src="images/clip_inpt.png"></p>
+</div>
+</div>
+</section>
+<section id="clip-2" class="slide level2">
+<h2><a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/clip.htm">Clip</a></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Cut one layer down to the boundaries of another.</p>
+<ul>
+<li>Useful when we want to focus on a study area</li>
+<li>Does not alter attributes
+<ul>
+<li>Input layer: our data layer</li>
+<li>Clip layer: the study area</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
 <p>Output</p>
 <p><img data-src="images/clip_output.png"></p>
 </div>
 </div>
 </section>
 <section id="erase" class="slide level2">
-<h2>Erase</h2>
+<h2><a href="https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/erase.htm">Erase</a></h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Use the <a href="https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/erase.htm">erase</a> tool to remove the area of one layer from another.</p>
+<p>Remove the area of one layer from another.</p>
 <ul>
 <li>Opposite of the clip tool</li>
 <li>Does not alter attributes</li>
@@ -832,58 +892,107 @@
 </div><div class="column" style="width:50%;">
 <p>Example From ESRI Docs</p>
 <p><img data-src="images/erase_docs.png"></p>
+</div>
+</div>
+</section>
+<section id="erase-1" class="slide level2">
+<h2><a href="https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/erase.htm">Erase</a></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Remove the area of one layer from another.</p>
+<ul>
+<li>Opposite of the clip tool</li>
+<li>Does not alter attributes</li>
+<li>Useful when we want to discard/exclude an area</li>
+</ul>
+</div><div class="column" style="width:50%;">
 <p>Input</p>
 <p><img data-src="images/clip_inpt.png"></p>
+</div>
+</div>
+</section>
+<section id="erase-2" class="slide level2">
+<h2><a href="https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/erase.htm">Erase</a></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Remove the area of one layer from another.</p>
+<ul>
+<li>Opposite of the clip tool</li>
+<li>Does not alter attributes</li>
+<li>Useful when we want to discard/exclude an area</li>
+</ul>
+</div><div class="column" style="width:50%;">
 <p>Output</p>
 <p><img data-src="images/erase.png"></p>
 </div>
 </div>
 </section>
 <section id="intersect" class="slide level2">
-<h2>Intersect</h2>
+<h2><a href="https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/intersect.htm">Intersect</a></h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><a href="https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/intersect.htm">Intersect</a> lets us see <strong>only</strong> where layers overlap and combine overlapping attributes.</p>
+<p>Output where layers overlap and combine attributes.</p>
 <ul>
 <li>Can handle more than two layers at once</li>
 <li>Splits features by overlaps and merges attribute tables</li>
-<li>Useful when we want to merge and parse data at the same time</li>
+<li>Merge and parse data at the same time</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p>Example From ESRI Docs</p>
 <p><img data-src="images/intersect_docs.png"></p>
+</div>
+</div>
+</section>
+<section id="intersect-1" class="slide level2">
+<h2><a href="https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/intersect.htm">Intersect</a></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Output where layers overlap and combine attributes.</p>
+<ul>
+<li>Can handle more than two layers at once</li>
+<li>Splits features by overlaps and merges attribute tables</li>
+<li>Merge and parse data at the same time</li>
+</ul>
+</div><div class="column" style="width:50%;">
 <p>Input</p>
 <p><img data-src="images/clip_inpt.png"></p>
+</div>
+</div>
+</section>
+<section id="intersect-2" class="slide level2">
+<h2><a href="https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/intersect.htm">Intersect</a></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Output where layers overlap and combine attributes.</p>
+<ul>
+<li>Can handle more than two layers at once</li>
+<li>Splits features by overlaps and merges attribute tables</li>
+<li>Merge and parse data at the same time</li>
+</ul>
+</div><div class="column" style="width:50%;">
 <p>Output</p>
 <p><img data-src="images/intersect.png"></p>
 </div>
 </div>
 </section>
 <section id="union" class="slide level2">
-<h2>Union</h2>
-<div class="columns">
-<div class="column" style="width:100%;">
-<p>Use the <a href="https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/union.htm">Union</a> tool to combine multiple layers, split features where they overlap and combine attributes.</p>
+<h2><a href="https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/union.htm">Union</a></h2>
+<p>Combine multiple <strong>polygon</strong> layers, split features where they overlap and combine attributes.</p>
 <ul>
-<li><p>Similar to intersect, but keeps overlapping areas</p></li>
-<li><p>Adds attributes from all overlaps.</p></li>
-<li><p>Can handle more than two layers at once.</p></li>
-<li><p>Null values where for new attributes where no overlaps are present.</p></li>
-<li><p>Useful when we want to merge layers.</p></li>
+<li>Similar to intersect, but keeps overlapping areas</li>
+<li>Adds attributes from all overlaps.</li>
+<li>Can handle more than two layers at once.
+<ul>
+<li>Null values where for new attributes where no overlaps are present.</li>
+</ul></li>
 </ul>
-</div>
-</div>
 </section>
 <section id="union-1" class="slide level2">
-<h2>Union</h2>
-<div class="columns">
-<div class="column" style="width:100%;">
-<p>Use the <a href="https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/union.htm">Union</a> tool to combine multiple layers, split features where they overlap and combine attributes.</p>
+<h2><a href="https://desktop.arcgis.com/en/arcmap/latest/tools/analysis-toolbox/union.htm">Union</a></h2>
+<p>Combine multiple <strong>polygon</strong> layers, split features where they overlap and combine attributes.</p>
 <ul>
 <li>Similar to intersect, but keeps overlapping areas <img data-src="images/union_docs.gif"></li>
 </ul>
-</div>
-</div>
 </section>
 <section id="many-more" class="slide level2">
 <h2>Many More</h2>

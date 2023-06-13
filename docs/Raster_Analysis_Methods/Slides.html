@@ -335,17 +335,17 @@
 </section>
 <section id="clip" class="slide level2">
 <h2>Clip</h2>
+<p>Often our data covers more area than needed, we can clip it to reduce the data volume.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Often our data is more “complex” than we need it to be. It is useful to parse, reclassify, and/or aggregate our data.</p>
 <ul>
-<li><a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/clip.htm">Clip Raster</a>: cuts raster down to a bounding box.</li>
+<li><a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/clip.htm">Clip Raster</a>: cuts raster down to a bounding box.
+<ul>
 <li>Max N/S &amp; E/W extent of another layer (vector or raster) or manually defined.</li>
-<li><strong>Different tool</strong> than vector clipping</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><img data-src="images/clip_raster.gif"></p>
-<p>Raster clipping is similar to vector clipping</p>
+<p><img data-src="images/clip_raster.gif" style="width:150.0%"></p>
 </div>
 </div>
 </section>
@@ -353,53 +353,45 @@
 <h2>Reclassify</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Often our data is more “complex” than we need it to be. It is useful to parse, reclassify, and/or aggregate our data.</p>
+<p>When data is more complex than needed.</p>
 <ul>
-<li><a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/reclassify.htm">Reclassify</a>: creates a new output based on a classification scheme.</li>
+<li><a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/reclassify.htm">Reclassify</a>: creates a new output based on a classification scheme.
+<ul>
+<li>Reassign values or simplify data to reduce data volume</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/Reclassify_1.gif"></p>
-<p>Reassign values or simplify data to reduce data volume</p>
-</div>
-</div>
-</section>
-<section id="reclassify-1" class="slide level2">
-<h2>Reclassify</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Often our data is more “complex” than we need it to be. It is useful to parse, reclassify, and/or aggregate our data.</p>
-<ul>
-<li><a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/reclassify.htm">Reclassify</a>: creates a new output based on a classification scheme.</li>
-</ul>
-</div><div class="column" style="width:50%;">
 <p><img data-src="images/Reclassify_2.gif"></p>
-<p>Reassign values or simplify data to reduce data volume</p>
 </div>
 </div>
 </section>
 <section id="mosaic" class="slide level2">
 <h2>Mosaic</h2>
+<p>Sometimes the data comes in parts that need to be combined</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Often our data is more “complex” than we need it to be. It is useful to parse, reclassify, and/or aggregate our data.</p>
 <ul>
-<li><a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/mosaic.htm">Mosaic</a>: Combine multiple raster data sets into one.</li>
+<li><a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/mosaic.htm">Mosaic</a>: Combine multiple raster data sets into one.
+<ul>
 <li>There are <a href="https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/mosaic-operators.htm">multiple approaches</a> we can use.</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/Mosaic.png"></p>
-<p>Often used to merge multiple satellite images</p>
 </div>
 </div>
 </section>
 <section id="mosaic-1" class="slide level2">
 <h2>Mosaic</h2>
+<p>Sometimes the data comes in parts that need to be combined</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Often our data is more “complex” than we need it to be. It is useful to parse, reclassify, and/or aggregate our data.</p>
 <ul>
-<li><a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/mosaic.htm">Mosaic</a>: Combine multiple raster data sets into one.</li>
+<li><a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/mosaic.htm">Mosaic</a>: Combine multiple raster data sets into one.
+<ul>
 <li>There are <a href="https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/mosaic-operators.htm">multiple approaches</a> we can use.</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/CO_Landsat_Tiles.jpg"></p>
@@ -411,18 +403,25 @@
 <h2>Proximity Analysis</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Sometimes, we’re interested in looking at spatial relationships using raster data. * <a href="https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/euclidean-distance.htm">Euclidean Distance</a>: use this tool to calculate distance from the nearest feature or raster layer.</p>
+<p>Sometimes, we’re interested in looking at spatial relationships using raster data.</p>
+<ul>
+<li><a href="https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/euclidean-distance.htm">Euclidean Distance</a>: use this tool to calculate distance from the nearest feature or raster layer.</li>
+</ul>
+</div><div class="column" style="width:50%;">
 <p><img data-src="images/euc_dist.png"></p>
 </div>
 </div>
 </section>
 <section id="raster-overlay" class="slide level2">
 <h2>Raster Overlay</h2>
+<p>When we have multiple raster layers and we want to combine them to form a new output.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>When we have multiple raster layers and we want to combine them to form a new output.</p>
 <ul>
-<li>Easy, efficient overlay is a key advantage of the raster data model</li>
+<li>Easy, efficient overlay
+<ul>
+<li>Key advantage of the raster data model</li>
+</ul></li>
 <li>We have a few tools we can use for this</li>
 </ul>
 </div><div class="column" style="width:50%;">
@@ -432,44 +431,44 @@
 </section>
 <section id="weighted-overlay" class="slide level2">
 <h2><a href="https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/weighted-overlay.htm">Weighted Overlay</a></h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p>Weights inputs for suitability analysis or risk assessment.</p>
+<div class="columns">
+<div class="column" style="width:65%;">
 <ul>
 <li>Inputs must be discrete numbers</li>
 <li>Manually define weights and scale</li>
 </ul>
 <p><img data-src="images/Weighted_Overlay2.png"></p>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:35%;">
 <p><img data-src="images/Weighted_Overlay.png"></p>
 </div>
 </div>
 </section>
 <section id="weighted-overlay-1" class="slide level2">
 <h2><a href="https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/weighted-overlay.htm">Weighted Overlay</a></h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p>Weights inputs for suitability analysis or risk assessment.</p>
+<div class="columns">
+<div class="column" style="width:35%;">
 <ul>
-<li>Inputs must be discrete numbers</li>
-<li>Manually define weights and scale</li>
+<li>Discrete outputs</li>
 </ul>
 <p><img data-src="images/Weighted_Overlay2.png"></p>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:65%;">
 <p><img data-src="images/Overlay_out.png"></p>
-<p>Outputs discrete classification.</p>
 </div>
 </div>
 </section>
 <section id="raster-calculator" class="slide level2">
 <h2><a href="https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/raster-calculator.htm">Raster Calculator</a></h2>
+<p>More general and flexible than weighted overlay.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>More general and flexible than weighted overlay.</p>
 <ul>
-<li><p>Outputs are more straightforward</p></li>
-<li><p>Because inputs are more explicit</p></li>
-<li><p>Can do weighted overlay among other tasks</p></li>
+<li>Outputs are more straightforward
+<ul>
+<li>Because inputs are more explicit</li>
+</ul></li>
+<li>Can do weighted overlay among other tasks</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/RasterCalculator.png"></p>
@@ -478,17 +477,14 @@
 </section>
 <section id="raster-calculator-1" class="slide level2">
 <h2><a href="https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/raster-calculator.htm">Raster Calculator</a></h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p>More general and flexible than weighted overlay.</p>
+<div class="columns">
+<div class="column" style="width:40%;">
 <ul>
-<li><p>Outputs are more straightforward</p></li>
-<li><p>Because inputs are more explicit</p></li>
-<li><p>Can do weighted overlay among other tasks</p></li>
+<li>Continuous output</li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:60%;">
 <p><img data-src="images/Calc_out.png"></p>
-<p>Outputs continuous gradient.</p>
 </div>
 </div>
 </section></section>
@@ -511,7 +507,7 @@
 <h2><a href="https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/zonal-statistics.htm">Zonal Statistics</a></h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Calculate statistics (mean, max, etc.) using zones (regions) and output desired statistic by zone.</p>
+<p>Calculate statistics by region.</p>
 <ul>
 <li>The zone can be either a raster <strong>or</strong> vector layer.</li>
 <li><strong><a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/zonal-statistics-as-table.htm">Zonal Statistics as Table</a></strong> generates a table containing multiple statistics by zone.</li>
@@ -524,34 +520,26 @@
 </section>
 <section id="surface-analysis" class="slide level2">
 <h2>Surface Analysis</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>These tools are specifically designed to analyze terrain surfaces (ie. Digital Elevation Models).</p>
+<p>These tools are designed to analyze elevation surfaces.</p>
 <ul>
-<li>However, they can be applied to other purposes in select applications</li>
-<li><strong><a href="https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/slope.htm">Slope</a></strong>: calculates the slope of a terrain surface</li>
-<li>ie. the angle in degrees from a cell to it’s “lowest” neighbor</li>
+<li><strong><a href="https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/slope.htm">Slope</a></strong>: calculates the slope of a terrain surface
+<ul>
+<li>The angle in degrees from a cell to it’s “lowest” neighbor</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/Slope.png"></p>
-</div>
-</div>
-</section>
+
+<img data-src="images/Slope.png" style="width:80.0%" class="r-stretch quarto-figure-center"></section>
 <section id="surface-analysis-1" class="slide level2">
 <h2>Surface Analysis</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>These tools are specifically designed to analyze terrain surfaces (ie. Digital Elevation Models).</p>
+<p>These tools are designed to analyze elevation surfaces.</p>
 <ul>
-<li>However, they can be applied to other purposes in select applications</li>
-<li><strong><a href="https://pro.arcgis.com/en/pro-app/latest/help/analysis/raster-functions/aspect-function.htm">Aspect</a></strong>: calculates the direction a slope is facing</li>
+<li><strong><a href="https://pro.arcgis.com/en/pro-app/latest/help/analysis/raster-functions/aspect-function.htm">Aspect</a></strong>: calculates the direction a slope is facing
+<ul>
 <li>North, southeast, west northwest, etc.</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/aspect.gif"></p>
-</div>
-</div>
-</section></section>
+
+<img data-src="images/aspect.gif" style="width:70.0%" class="r-stretch quarto-figure-center"></section></section>
 <section>
 <section id="tophat-question-2" class="title-slide slide level1 center">
 <h1>TopHat Question 2</h1>
@@ -589,9 +577,40 @@
 <li>Calculate flow direction</li>
 <li>Run flow accumulation</li>
 </ol>
-<p><img data-src="images/Hydrology.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/Hydrology.png" style="width:80.0%"></p>
+</div>
+</div>
+</section>
+<section id="hydrologic-modelling-1" class="slide level2">
+<h2>Hydrologic Modelling</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>The <strong><a href="https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/an-overview-of-the-hydrology-tools.htm">Hydrology toolset</a></strong> can be used to calculate stream flow.</p>
+<ol type="1">
+<li>Use a DEM as an input</li>
+<li>Fill “sinks”</li>
+<li>Calculate flow direction</li>
+<li>Run flow accumulation</li>
+</ol>
+</div><div class="column" style="width:50%;">
 <p>DEM Input</p>
 <p><img data-src="images/DEM.png"></p>
+</div>
+</div>
+</section>
+<section id="hydrologic-modelling-2" class="slide level2">
+<h2>Hydrologic Modelling</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>The <strong><a href="https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/an-overview-of-the-hydrology-tools.htm">Hydrology toolset</a></strong> can be used to calculate stream flow.</p>
+<ol type="1">
+<li>Use a DEM as an input</li>
+<li>Fill “sinks”</li>
+<li>Calculate flow direction</li>
+<li>Run flow accumulation</li>
+</ol>
+</div><div class="column" style="width:50%;">
 <p>Accumulated stream flow output</p>
 <p><img data-src="images/Stream.png"></p>
 </div>
@@ -601,7 +620,13 @@
 <h2>Calculate NDVI</h2>
 <div class="columns">
 <div class="column" style="width:100%;">
-<p>You can calculate NDVI directly in Arc * Just give the red and near infrared bands from a satellite image + e.g.&nbsp;Landsat8: Red (4), near infrared (5)</p>
+<p>You can calculate NDVI directly in Arc</p>
+<ul>
+<li>Just give the red and near infrared bands from a satellite image
+<ul>
+<li>e.g.&nbsp;Landsat8: Red (4), near infrared (5)</li>
+</ul></li>
+</ul>
 <p><img data-src="images/NDVI_Calc.png"></p>
 </div>
 </div>
@@ -610,10 +635,7 @@
 <h2>Image Classification</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Classify a raster.</p>
-<ul>
-<li>Supervised or unsupervised</li>
-</ul>
+<p>Supervised or unsupervised classification methods</p>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/Classification1.png"></p>
 </div>
@@ -623,10 +645,7 @@
 <h2>Image Classification</h2>
 <div class="columns">
 <div class="column" style="width:100%;">
-<p>Classify a raster.</p>
-<ul>
-<li>Supervised or unsupervised</li>
-</ul>
+<p>Supervised or unsupervised classification methods</p>
 <p><img data-src="images/Classification2.png"></p>
 </div>
 </div>
