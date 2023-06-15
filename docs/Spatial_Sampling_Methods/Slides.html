@@ -350,14 +350,14 @@
 </section>
 <section id="the-first-law-of-geography" class="slide level2">
 <h2>The First Law of Geography</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p>Everything is related to everything else, but near things are more related than distant things.</p>
+<div class="columns">
+<div class="column" style="width:60%;">
 <ul>
-<li>Objects (or regions) near each other are more likely to be similar to one another Objects (or regions) that are distant from each other are more likely to be different from each other</li>
-<li><strong>This aspect of nature keeps coming up again and again in GIS!</strong></li>
+<li>Object/areas near each other are more likely to be similar Objects/areas near that are distant from each other are more likely to be different</li>
+<li><strong>This aspect of nature keeps coming in GIS!</strong></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/03-spatial-is-special.jpg"></p>
 </div>
 </div>
@@ -366,14 +366,13 @@
 <h2>Sampling</h2>
 <div class="columns">
 <div class="column" style="width:100%;">
-<p>You can think of sampling as the process of selecting points from within an area or population, called a <strong>sample frame</strong>.</p>
+<p>The process of selecting points from within an area or population, called a <strong>sample frame</strong>.</p>
 <ul>
-<li><p>We collect information about some within the sample frame</p></li>
-<li><p>But we ignore <strong>most</strong> objects/locations</p></li>
-<li><p>Think back to Bonini’s Paradox</p></li>
-<li><p>How we define our sample frame and choose our sample can determine the quality of our data</p></li>
-<li><p>We want to maximize representativeness of the sample</p></li>
-<li><p>But also minimize effort and expense associated with sampling</p></li>
+<li>We collect information for a subset of objects/locations sample frame
+<ul>
+<li>But we ignore <strong>most</strong> objects/locations</li>
+<li>Think back to Bonini’s Paradox</li>
+</ul></li>
 </ul>
 </div>
 </div>
@@ -382,60 +381,78 @@
 <h2>Sampling</h2>
 <div class="columns">
 <div class="column" style="width:100%;">
-<p>Scientific sampling requires that each element in the sample frame have a known and pre-specified chance of selection.</p>
+<p>The process of selecting points from within an area or population, called a <strong>sample frame</strong>.</p>
 <ul>
-<li>If some elements have a greater or lower chance of being selected our sample is said to be <strong>biased</strong></li>
-<li>If every element of interest has an equal chance of being selected our sample is said to be <strong>unbiased</strong></li>
+<li>How we define the sample frame and choose samples can determine the quality of our data
+<ul>
+<li>We want to maximize representativeness of the sample</li>
+<li>But also minimize effort and expense associated with sampling</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="scientific-sampling" class="slide level2">
+<h2>Scientific Sampling</h2>
+<div class="columns">
+<div class="column" style="width:100%;">
+<p>Requires each element in the sample frame have a known and pre-specified chance of selection.</p>
+<ul>
+<li><strong>Biased Sampling</strong>: some elements have a greater or lower chance of being selected</li>
+<li><strong>Unbiased</strong>: every element has an equal chance of being selected</li>
 </ul>
 </div>
 </div>
 </section>
 <section id="random-sampling" class="slide level2">
 <h2>Random Sampling</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p>In theory, a random sample is best. Its the “gold standard”.</p>
+<div class="columns">
+<div class="column" style="width:55%;">
 <ul>
-<li>Each location has equal chance of being selected (<em>Unbiased</em>) Easy to do, randomly select 𝑥,𝑦 coordinates</li>
-<li>A foundational assumption of many statistical tests</li>
+<li><strong>Unbiased</strong>: each location has equal chance of selection
+<ul>
+<li>Easy to do, randomly select 𝑥,𝑦 coordinates</li>
+</ul></li>
+<li>A key assumption of many statistical tests</li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:45%;">
 <p><img data-src="images/Random1.png"></p>
 </div>
 </div>
 </section>
 <section id="random-sampling-1" class="slide level2">
 <h2>Random Sampling</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p>Can be difficult to implement in practice.</p>
+<div class="columns">
+<div class="column" style="width:55%;">
 <ul>
-<li>There is a chance, that all samples will miss important features</li>
-<li>May be barriers to accessing some features</li>
+<li>Chance that all samples miss important features</li>
+<li>May be barriers to access
+<ul>
 <li>Remote or rugged terrain</li>
-<li>Private or restricted property</li>
+<li>Private property</li>
 <li>Systematic under-responses</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:45%;">
 <p><img data-src="images/Random1.png"></p>
 </div>
 </div>
 </section>
 <section id="random-sampling-2" class="slide level2">
 <h2>Random Sampling</h2>
-<div class="columns">
-<div class="column" style="width:100%;">
 <p>We have some options to account for the drawbacks</p>
 <ul>
-<li><p><strong>The “law of large numbers”</strong>: as we collect more information, our sample will become increasingly representative of actual population values</p></li>
-<li><p>Larger sample sizes</p></li>
-<li><p>Repeated samples (aka “Bootstrapping”)</p></li>
-<li><p>e.g., Take 30 random samples of 100 individuals, calculate an average for each sample, then average across samples</p></li>
-<li><p>Not always practical</p></li>
-<li><p>Requires more time and resources</p></li>
+<li><strong>“Law of large numbers”</strong>: as we collect more information, our sample will become increasingly representative of actual population values
+<ul>
+<li>Larger sample sizes or “Bootstrapping”</li>
+</ul></li>
+<li>Not always practical
+<ul>
+<li>Requires more time and resources</li>
+</ul></li>
 </ul>
-</div>
-</div>
 </section></section>
 <section>
 <section id="tophat-question-2" class="title-slide slide level1 center">
@@ -459,122 +476,153 @@
 <p><strong>Biased sampling</strong></p>
 <ul>
 <li>Create a sample design that trades a sampling scheme for randomness</li>
-<li>Induce bias to the sample to:</li>
+<li>Induce bias to the sample to:
+<ul>
 <li>Save time or resources</li>
 <li>Account for relevant information about the sample frame</li>
+</ul></li>
 </ul>
 </div>
 </div>
 </section>
 <section id="systematic-sampling" class="slide level2">
 <h2>Systematic Sampling</h2>
+<p>A random starting point is chosen and a fixed sampling interval is used.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>A random starting point is chosen and a fixed sampling interval is used.</p>
 <ul>
-<li><p>Randomly select first of 3 students</p></li>
-<li><p>Then select every 3rd after that</p></li>
-<li><p>Choose a random starting point</p></li>
-<li><p>Then draw equally spaced grid</p></li>
+<li>Randomly select first of 3 students
+<ul>
+<li>Select every 3rd after</li>
+</ul></li>
 </ul>
-<p><img data-src="images/systematic1.png"></p>
 </div><div class="column" style="width:50%;">
-<p><img data-src="images/systematic2.png"></p>
+<p><img data-src="images/systematic1.png"></p>
 </div>
 </div>
 </section>
 <section id="systematic-sampling-1" class="slide level2">
 <h2>Systematic Sampling</h2>
+<p>A random starting point is chosen and a fixed sampling interval is used.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>A random starting point is chosen and a fixed sampling interval is used.</p>
 <ul>
-<li><p>General premise behind remote sensing (satellite data collection)</p></li>
-<li><p>Can be a good for areas that contain few features and abrupt boundaries</p></li>
-<li><p>e.g., Agricultural fields</p></li>
-<li><p>Not ideal for attributes that exhibit periodicity</p></li>
-<li><p>e.g., Roads</p></li>
+<li>Choose a random starting point
+<ul>
+<li>Then draw equally spaced grid</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><img data-src="images/Satelite.jpg"></p>
+<p><img data-src="images/systematic2.png"></p>
 </div>
 </div>
 </section>
 <section id="systematic-sampling-2" class="slide level2">
 <h2>Systematic Sampling</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p>A random starting point is chosen and a fixed sampling interval is used.</p>
+<div class="columns">
+<div class="column" style="width:60%;">
 <ul>
-<li><p>General premise behind remote sensing (satellite data collection)</p></li>
-<li><p>Can be a good for areas that contain few features and abrupt boundaries</p></li>
-<li><p>e.g., Agricultural fields</p></li>
-<li><p>Not ideal for attributes that exhibit periodicity</p></li>
-<li><p>e.g., Roads</p></li>
+<li>Premise behind satellite data collection
+<ul>
+<li>Often good for continuous fields
+<ul>
+<li>eg., land cover</li>
+</ul></li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/Satelite.jpg"></p>
+</div>
+</div>
+</section>
+<section id="systematic-sampling-3" class="slide level2">
+<h2>Systematic Sampling</h2>
+<p>A random starting point is chosen and a fixed sampling interval is used.</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>Not ideal for discrete objects that exhibit periodicity
+<ul>
+<li>City blocks, Roads, etc.</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/systematic3.png"></p>
 </div>
 </div>
 </section>
 <section id="stratified-sampling" class="slide level2">
 <h2>Stratified Sampling</h2>
+<p>Address the issues with systematic sampling by sampling at random locations, while applying a “systematic bias”</p>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>Helps to address the issues with systematic sampling by sampling at random locations, but still applying some “systematic bias”</p>
+<div class="column" style="width:60%;">
 <ul>
-<li>Create a systematic sampling grid, then take random samples within cells</li>
-<li>Divide a population by certain attributes, then take random samples from sub-populations</li>
-<li>Gender, race, age, political party, etc.</li>
+<li><p>Create a systematic sampling grid, then take random samples within cells</p></li>
+<li><p>Can avoid over/under sampling regularly repeating features</p></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/stratified1.png"></p>
 </div>
 </div>
 </section>
 <section id="stratified-sampling-1" class="slide level2">
 <h2>Stratified Sampling</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Helps to address the issues with systematic sampling by sampling at random locations, but still applying some “systematic bias”</p>
+<p>Divide a population by certain attributes, then take random samples from sub-populations</p>
 <ul>
-<li>Can avoid over/under sampling regularly repeating features</li>
-<li>Account for important factors</li>
+<li>Account for important factors
+<ul>
+<li>Gender, race, age, political party, etc.</li>
+</ul></li>
 </ul>
-<p><img data-src="images/stratified3.png"></p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/stratified1.png"></p>
+
+<img data-src="images/stratified3.png" class="r-stretch"></section>
+<section id="cluster-sampling" class="slide level2">
+<h2>Cluster Sampling</h2>
+<p>Intense sampling of features in clusters around a number of selected locations</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>Locations can be selected for specific features, e.g.,:
+<ul>
+<li>Shopping centers</li>
+<li>Known history of invasive species</li>
+</ul></li>
+<li>Or, locations can be selected at random across the grid</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/cluster1.png"></p>
 </div>
 </div>
 </section>
-<section id="cluster-sampling" class="slide level2">
+<section id="cluster-sampling-1" class="slide level2">
 <h2>Cluster Sampling</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p>Intense sampling of features in clusters around a number of selected locations</p>
+<div class="columns">
+<div class="column" style="width:60%;">
 <ul>
-<li><p>Locations can be selected for specific features:</p></li>
-<li><p>e.g., Shopping centers, known history of invasive species</p></li>
-<li><p>Or, locations can be selected at random across the grid</p></li>
-<li><p>More efficient use of time and resources</p></li>
-<li><p>May not be representative</p></li>
+<li>More efficient use of time and resources
+<ul>
+<li>May not be representative</li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/cluster1.png"></p>
 </div>
 </div>
 </section>
 <section id="transect-sampling" class="slide level2">
 <h2>Transect Sampling</h2>
+<p>Commonly used along line features like roads &amp; rivers.</p>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p>Most commonly used along line features like roads, rivers</p>
+<div class="column" style="width:70%;">
 <ul>
-<li>Allows you to focus your efforts on features of interest</li>
-<li>Requires understanding of spatial structure for maximum effectiveness <img data-src="images/transect.png"></li>
+<li>Focused effort on features of interest</li>
+<li>Requires understanding of spatial structure for maximum effectiveness</li>
 </ul>
-</div><div class="column" style="width:50%;">
 <p><img data-src="images/transect2.jpg"></p>
+</div><div class="column" style="width:30%;">
+<p><img data-src="images/transect.png"></p>
 </div>
 </div>
 </section></section>
@@ -595,16 +643,17 @@
 </section>
 <section id="how-many-samples" class="slide level2">
 <h2>How Many Samples?</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p>The number of samples required is a function of how similar units of that population are.</p>
+<div class="columns">
+<div class="column" style="width:60%;">
 <ul>
-<li><p>Spatial structure can vary wildly across a landscape</p></li>
-<li><p>A little knowledge of your study area will help you to establish ways to best stratify to maximize returns with minimal effort</p></li>
-<li><p>Need to balance effective coverage with the cost (in $ or time)</p></li>
-<li><p>Eg. short vs.&nbsp;long census form</p></li>
+<li>Spatial structure can vary wildly across a landscape
+<ul>
+<li>Knowledge of your study area will help to establish how to best sample</li>
+</ul></li>
+<li>Maximize returns minimize effort</li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
 <p><img data-src="images/samp_size.png"></p>
 </div>
 </div>
@@ -616,9 +665,8 @@
 <p>When the values of objects are related to the values of nearby objects.</p>
 <ul>
 <li>If you know the value of one object, you can make a reasonable guess at the value of nearby objects</li>
-<li>That doesn’t mean they are the same; <strong>Correlation does not imply causation!</strong></li>
-<li>There could be relationship between them, a relationship to a third object that determines the values of both, or a completely random coincidence <img data-src="images/autocorrelation1.png"></li>
 </ul>
+<p><img data-src="images/autocorrelation1.png" style="width:70.0%"></p>
 </div>
 </div>
 </section>
@@ -630,16 +678,31 @@
 </div>
 </div>
 </section>
+<section id="spatial-autocorrelation-2" class="slide level2">
+<h2>Spatial Autocorrelation</h2>
+<div class="columns">
+<div class="column" style="width:100%;">
+<p><strong>Correlation does not imply causation!</strong></p>
+<ul>
+<li>There could be relationship between features
+<ul>
+<li>Or a relationship to a third object that determines the values of both</li>
+<li>Or a completely random coincidence</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
 <section id="statistical-assumptions" class="slide level2">
 <h2>Statistical Assumptions</h2>
-<p>Spatial autocorrelation is a problem when it comes to spatial statistics. Most statistics assume that there is no relationship between objects!</p>
+<p>Spatial autocorrelation is a problem when it comes to spatial statistics.</p>
 <ul>
-<li>If you know the value of one object, you can make a reasonable guess at the value of nearby objects</li>
+<li>Most tests assume that there is no relationship between objects by default!
+<ul>
 <li>By violating this assumption, we “break” many common statistics!</li>
-<li>For this reason, a separate field of spatial statistics explores different ways of accessing similar information, or we acknowledge this as a flaw in our assumptions</li>
-<li><strong>It is also a benefit!</strong>: We can exploit spatial autocorrelation to our advantage</li>
+<li>Spatial statistics explores ways of analyzing statistical relationships across space</li>
+</ul></li>
 </ul>
-<p>::: ::::</p>
 </section></section>
 <section>
 <section id="tophat-question-4" class="title-slide slide level1 center">
@@ -664,31 +727,38 @@
 <li><p>Over a 2D or 3D surface we call this spatial interpolation</p></li>
 <li><p>Intelligent guesswork in which we attempt to make reasonable estimates of the values of a continuous field at places where we do not have measurements</p></li>
 </ul>
-<p>::: ::::</p>
 </section>
 <section id="spatial-interpolation" class="slide level2">
 <h2>Spatial Interpolation</h2>
 <p>Spatial interpolation only makes sense for a continuous field with numeric values.</p>
+<div class="columns">
+<div class="column" style="width:60%;">
 <ul>
-<li><p>Rainfall, temperature, pressure</p></li>
-<li><p>Estimate between weather stations</p></li>
-<li><p>Elevation between measured locations</p></li>
-<li><p>With qualitative data, this can be problematic</p></li>
+<li>Rainfall, temperature, pressure, elevation
+<ul>
+<li>Estimate between measured locations</li>
+</ul></li>
+<li>Can be problematic with qualitative data</li>
 </ul>
-<p>::: :::{.column width=“50%”}</p>
-
-<img data-src="images/wx_interp.gif" class="r-stretch"><p>::: ::::</p>
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/wx_interp.gif"></p>
+</div>
+</div>
 </section>
 <section id="spatial-interpolation-1" class="slide level2">
 <h2>Spatial Interpolation</h2>
-<p>All spatial interpolation methods incorporate distance to known samples.</p>
+<p>Continuous fields tend to exhibit strong positive spatial autocorrelation</p>
 <ul>
-<li>Continuous fields tend to exhibit strong positive spatial autocorrelation, it is reasonable to assume that missing values are likely to be similar to those around them in the field</li>
-<li>Sound familiar? This is Tobler’s First Law!</li>
-<li>Closer samples may be given more weight than distant ones</li>
+<li>Reasonable to assume missing values are similar to those around them
+<ul>
+<li>Methods incorporate distance to known samples.</li>
+</ul></li>
+<li>Sound familiar? This is Tobler’s First Law!
+<ul>
+<li>Closer samples given more weight than distant ones</li>
 <li>A threshold is usually set, to determine the maximum distance to take samples from</li>
+</ul></li>
 </ul>
-<p>::: ::::</p>
 </section>
 <section id="inverse-distance-weighting" class="slide level2">
 <h2>Inverse Distance Weighting</h2>
@@ -698,33 +768,41 @@
 <li>Mathematical expression of Tobler’s Law</li>
 </ul>
 
-<img data-src="images/IDW.png" class="r-stretch"><p>::: ::::</p>
-</section>
+<img data-src="images/IDW.png" class="r-stretch"></section>
 <section id="inverse-distance-weighting-1" class="slide level2">
 <h2>Inverse Distance Weighting</h2>
 <p>Best applied to discrete samples of continuous quantitative variables.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
 <li>Elevation</li>
 <li>Temperature</li>
 <li>Precipitation</li>
 </ul>
-<p>::: :::{.column width=“50%”}</p>
-
-<img data-src="images/IDW2.png" class="r-stretch"><p>::: ::::</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/IDW2.png"></p>
+</div>
+</div>
 </section>
 <section id="kernel-density" class="slide level2">
 <h2>Kernel Density</h2>
-<p>Calculates the “density” of discrete point observations/samples and converts to a raster surface</p>
+<p>Calculates the “density” of discrete objects and converts to a raster surface</p>
+<div class="columns">
+<div class="column" style="width:60%;">
 <ul>
-<li><p>Shows the probability of occurrence at any given location</p></li>
-<li><p>Weight cells by “value” of points</p></li>
-<li><p>Often applied to counts of qualitative data</p></li>
-<li><p>Disease outbreaks</p></li>
-<li><p>Crime data</p></li>
+<li>Probability of occurrence across space
+<ul>
+<li>Weight by “value” of points</li>
+</ul></li>
+<li>Often applied to counts of qualitative data
+<ul>
+<li>Disease outbreaks &amp; crime data</li>
+</ul></li>
 </ul>
-<p>::: :::{.column width=“50%”}</p>
-
-<img data-src="images/Final_Map.png" class="r-stretch"><p>::: ::::</p>
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/Final_Map.png"></p>
+</div>
+</div>
 
 <div class="footer footer-default">
 <p><a href="https://geos270.github.io/">Back to Course Modules</a></p>

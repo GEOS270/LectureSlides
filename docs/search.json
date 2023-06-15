@@ -1999,112 +1999,112 @@
     "href": "Spatial_Sampling_Methods/Slides.html#the-first-law-of-geography",
     "title": "Lecture Slides",
     "section": "The First Law of Geography",
-    "text": "The First Law of Geography\n\n\nEverything is related to everything else, but near things are more related than distant things.\n\nObjects (or regions) near each other are more likely to be similar to one another Objects (or regions) that are distant from each other are more likely to be different from each other\nThis aspect of nature keeps coming up again and again in GIS!"
+    "text": "The First Law of Geography\nEverything is related to everything else, but near things are more related than distant things.\n\n\n\nObject/areas near each other are more likely to be similar Objects/areas near that are distant from each other are more likely to be different\nThis aspect of nature keeps coming in GIS!"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#sampling",
     "href": "Spatial_Sampling_Methods/Slides.html#sampling",
     "title": "Lecture Slides",
     "section": "Sampling",
-    "text": "Sampling\n\n\nYou can think of sampling as the process of selecting points from within an area or population, called a sample frame.\n\nWe collect information about some within the sample frame\nBut we ignore most objects/locations\nThink back to Bonini’s Paradox\nHow we define our sample frame and choose our sample can determine the quality of our data\nWe want to maximize representativeness of the sample\nBut also minimize effort and expense associated with sampling"
+    "text": "Sampling\n\n\nThe process of selecting points from within an area or population, called a sample frame.\n\nWe collect information for a subset of objects/locations sample frame\n\nBut we ignore most objects/locations\nThink back to Bonini’s Paradox"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#sampling-1",
     "href": "Spatial_Sampling_Methods/Slides.html#sampling-1",
     "title": "Lecture Slides",
     "section": "Sampling",
-    "text": "Sampling\n\n\nScientific sampling requires that each element in the sample frame have a known and pre-specified chance of selection.\n\nIf some elements have a greater or lower chance of being selected our sample is said to be biased\nIf every element of interest has an equal chance of being selected our sample is said to be unbiased"
+    "text": "Sampling\n\n\nThe process of selecting points from within an area or population, called a sample frame.\n\nHow we define the sample frame and choose samples can determine the quality of our data\n\nWe want to maximize representativeness of the sample\nBut also minimize effort and expense associated with sampling"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#random-sampling",
     "href": "Spatial_Sampling_Methods/Slides.html#random-sampling",
     "title": "Lecture Slides",
     "section": "Random Sampling",
-    "text": "Random Sampling\n\n\nIn theory, a random sample is best. Its the “gold standard”.\n\nEach location has equal chance of being selected (Unbiased) Easy to do, randomly select 𝑥,𝑦 coordinates\nA foundational assumption of many statistical tests"
+    "text": "Random Sampling\nIn theory, a random sample is best. Its the “gold standard”.\n\n\n\nUnbiased: each location has equal chance of selection\n\nEasy to do, randomly select 𝑥,𝑦 coordinates\n\nA key assumption of many statistical tests"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#random-sampling-1",
     "href": "Spatial_Sampling_Methods/Slides.html#random-sampling-1",
     "title": "Lecture Slides",
     "section": "Random Sampling",
-    "text": "Random Sampling\n\n\nCan be difficult to implement in practice.\n\nThere is a chance, that all samples will miss important features\nMay be barriers to accessing some features\nRemote or rugged terrain\nPrivate or restricted property\nSystematic under-responses"
+    "text": "Random Sampling\nCan be difficult to implement in practice.\n\n\n\nChance that all samples miss important features\nMay be barriers to access\n\nRemote or rugged terrain\nPrivate property\nSystematic under-responses"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#random-sampling-2",
     "href": "Spatial_Sampling_Methods/Slides.html#random-sampling-2",
     "title": "Lecture Slides",
     "section": "Random Sampling",
-    "text": "Random Sampling\n\n\nWe have some options to account for the drawbacks\n\nThe “law of large numbers”: as we collect more information, our sample will become increasingly representative of actual population values\nLarger sample sizes\nRepeated samples (aka “Bootstrapping”)\ne.g., Take 30 random samples of 100 individuals, calculate an average for each sample, then average across samples\nNot always practical\nRequires more time and resources"
+    "text": "Random Sampling\nWe have some options to account for the drawbacks\n\n“Law of large numbers”: as we collect more information, our sample will become increasingly representative of actual population values\n\nLarger sample sizes or “Bootstrapping”\n\nNot always practical\n\nRequires more time and resources"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#alternate-approaches-to-sampling",
     "href": "Spatial_Sampling_Methods/Slides.html#alternate-approaches-to-sampling",
     "title": "Lecture Slides",
     "section": "Alternate Approaches to Sampling",
-    "text": "Alternate Approaches to Sampling\n\n\nBiased sampling\n\nCreate a sample design that trades a sampling scheme for randomness\nInduce bias to the sample to:\nSave time or resources\nAccount for relevant information about the sample frame"
+    "text": "Alternate Approaches to Sampling\n\n\nBiased sampling\n\nCreate a sample design that trades a sampling scheme for randomness\nInduce bias to the sample to:\n\nSave time or resources\nAccount for relevant information about the sample frame"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#systematic-sampling",
     "href": "Spatial_Sampling_Methods/Slides.html#systematic-sampling",
     "title": "Lecture Slides",
     "section": "Systematic Sampling",
-    "text": "Systematic Sampling\n\n\nA random starting point is chosen and a fixed sampling interval is used.\n\nRandomly select first of 3 students\nThen select every 3rd after that\nChoose a random starting point\nThen draw equally spaced grid"
+    "text": "Systematic Sampling\nA random starting point is chosen and a fixed sampling interval is used.\n\n\n\nRandomly select first of 3 students\n\nSelect every 3rd after"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#systematic-sampling-1",
     "href": "Spatial_Sampling_Methods/Slides.html#systematic-sampling-1",
     "title": "Lecture Slides",
     "section": "Systematic Sampling",
-    "text": "Systematic Sampling\n\n\nA random starting point is chosen and a fixed sampling interval is used.\n\nGeneral premise behind remote sensing (satellite data collection)\nCan be a good for areas that contain few features and abrupt boundaries\ne.g., Agricultural fields\nNot ideal for attributes that exhibit periodicity\ne.g., Roads"
+    "text": "Systematic Sampling\nA random starting point is chosen and a fixed sampling interval is used.\n\n\n\nChoose a random starting point\n\nThen draw equally spaced grid"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#systematic-sampling-2",
     "href": "Spatial_Sampling_Methods/Slides.html#systematic-sampling-2",
     "title": "Lecture Slides",
     "section": "Systematic Sampling",
-    "text": "Systematic Sampling\n\n\nA random starting point is chosen and a fixed sampling interval is used.\n\nGeneral premise behind remote sensing (satellite data collection)\nCan be a good for areas that contain few features and abrupt boundaries\ne.g., Agricultural fields\nNot ideal for attributes that exhibit periodicity\ne.g., Roads"
+    "text": "Systematic Sampling\nA random starting point is chosen and a fixed sampling interval is used.\n\n\n\nPremise behind satellite data collection\n\nOften good for continuous fields\n\neg., land cover"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#stratified-sampling",
     "href": "Spatial_Sampling_Methods/Slides.html#stratified-sampling",
     "title": "Lecture Slides",
     "section": "Stratified Sampling",
-    "text": "Stratified Sampling\n\n\nHelps to address the issues with systematic sampling by sampling at random locations, but still applying some “systematic bias”\n\nCreate a systematic sampling grid, then take random samples within cells\nDivide a population by certain attributes, then take random samples from sub-populations\nGender, race, age, political party, etc."
+    "text": "Stratified Sampling\nAddress the issues with systematic sampling by sampling at random locations, while applying a “systematic bias”\n\n\n\nCreate a systematic sampling grid, then take random samples within cells\nCan avoid over/under sampling regularly repeating features"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#stratified-sampling-1",
     "href": "Spatial_Sampling_Methods/Slides.html#stratified-sampling-1",
     "title": "Lecture Slides",
     "section": "Stratified Sampling",
-    "text": "Stratified Sampling\n\n\nHelps to address the issues with systematic sampling by sampling at random locations, but still applying some “systematic bias”\n\nCan avoid over/under sampling regularly repeating features\nAccount for important factors"
+    "text": "Stratified Sampling\nDivide a population by certain attributes, then take random samples from sub-populations\n\nAccount for important factors\n\nGender, race, age, political party, etc."
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#cluster-sampling",
     "href": "Spatial_Sampling_Methods/Slides.html#cluster-sampling",
     "title": "Lecture Slides",
     "section": "Cluster Sampling",
-    "text": "Cluster Sampling\n\n\nIntense sampling of features in clusters around a number of selected locations\n\nLocations can be selected for specific features:\ne.g., Shopping centers, known history of invasive species\nOr, locations can be selected at random across the grid\nMore efficient use of time and resources\nMay not be representative"
+    "text": "Cluster Sampling\nIntense sampling of features in clusters around a number of selected locations\n\n\n\nLocations can be selected for specific features, e.g.,:\n\nShopping centers\nKnown history of invasive species\n\nOr, locations can be selected at random across the grid"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#transect-sampling",
     "href": "Spatial_Sampling_Methods/Slides.html#transect-sampling",
     "title": "Lecture Slides",
     "section": "Transect Sampling",
-    "text": "Transect Sampling\n\n\nMost commonly used along line features like roads, rivers\n\nAllows you to focus your efforts on features of interest\nRequires understanding of spatial structure for maximum effectiveness"
+    "text": "Transect Sampling\nCommonly used along line features like roads & rivers.\n\n\n\nFocused effort on features of interest\nRequires understanding of spatial structure for maximum effectiveness"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#how-many-samples",
     "href": "Spatial_Sampling_Methods/Slides.html#how-many-samples",
     "title": "Lecture Slides",
     "section": "How Many Samples?",
-    "text": "How Many Samples?\n\n\nThe number of samples required is a function of how similar units of that population are.\n\nSpatial structure can vary wildly across a landscape\nA little knowledge of your study area will help you to establish ways to best stratify to maximize returns with minimal effort\nNeed to balance effective coverage with the cost (in $ or time)\nEg. short vs. long census form"
+    "text": "How Many Samples?\nThe number of samples required is a function of how similar units of that population are.\n\n\n\nSpatial structure can vary wildly across a landscape\n\nKnowledge of your study area will help to establish how to best sample\n\nMaximize returns minimize effort"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#spatial-autocorrelation",
     "href": "Spatial_Sampling_Methods/Slides.html#spatial-autocorrelation",
     "title": "Lecture Slides",
     "section": "Spatial Autocorrelation",
-    "text": "Spatial Autocorrelation\n\n\nWhen the values of objects are related to the values of nearby objects.\n\nIf you know the value of one object, you can make a reasonable guess at the value of nearby objects\nThat doesn’t mean they are the same; Correlation does not imply causation!\nThere could be relationship between them, a relationship to a third object that determines the values of both, or a completely random coincidence"
+    "text": "Spatial Autocorrelation\n\n\nWhen the values of objects are related to the values of nearby objects.\n\nIf you know the value of one object, you can make a reasonable guess at the value of nearby objects"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#spatial-autocorrelation-1",
@@ -2118,49 +2118,49 @@
     "href": "Spatial_Sampling_Methods/Slides.html#statistical-assumptions",
     "title": "Lecture Slides",
     "section": "Statistical Assumptions",
-    "text": "Statistical Assumptions\nSpatial autocorrelation is a problem when it comes to spatial statistics. Most statistics assume that there is no relationship between objects!\n\nIf you know the value of one object, you can make a reasonable guess at the value of nearby objects\nBy violating this assumption, we “break” many common statistics!\nFor this reason, a separate field of spatial statistics explores different ways of accessing similar information, or we acknowledge this as a flaw in our assumptions\nIt is also a benefit!: We can exploit spatial autocorrelation to our advantage\n\n::: ::::"
+    "text": "Statistical Assumptions\nSpatial autocorrelation is a problem when it comes to spatial statistics.\n\nMost tests assume that there is no relationship between objects by default!\n\nBy violating this assumption, we “break” many common statistics!\nSpatial statistics explores ways of analyzing statistical relationships across space"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#statistical-interpolation",
     "href": "Spatial_Sampling_Methods/Slides.html#statistical-interpolation",
     "title": "Lecture Slides",
     "section": "Statistical Interpolation",
-    "text": "Statistical Interpolation\nThe process of “filling in the blanks” that you just performed is called interpolation\n\nIf you know the value of one object, you can make a reasonable guess at the value of nearby objects\nOver a 2D or 3D surface we call this spatial interpolation\nIntelligent guesswork in which we attempt to make reasonable estimates of the values of a continuous field at places where we do not have measurements\n\n::: ::::"
+    "text": "Statistical Interpolation\nThe process of “filling in the blanks” that you just performed is called interpolation\n\nIf you know the value of one object, you can make a reasonable guess at the value of nearby objects\nOver a 2D or 3D surface we call this spatial interpolation\nIntelligent guesswork in which we attempt to make reasonable estimates of the values of a continuous field at places where we do not have measurements"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#spatial-interpolation",
     "href": "Spatial_Sampling_Methods/Slides.html#spatial-interpolation",
     "title": "Lecture Slides",
     "section": "Spatial Interpolation",
-    "text": "Spatial Interpolation\nSpatial interpolation only makes sense for a continuous field with numeric values.\n\nRainfall, temperature, pressure\nEstimate between weather stations\nElevation between measured locations\nWith qualitative data, this can be problematic\n\n::: :::{.column width=“50%”}\n\n::: ::::"
+    "text": "Spatial Interpolation\nSpatial interpolation only makes sense for a continuous field with numeric values.\n\n\n\nRainfall, temperature, pressure, elevation\n\nEstimate between measured locations\n\nCan be problematic with qualitative data"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#spatial-interpolation-1",
     "href": "Spatial_Sampling_Methods/Slides.html#spatial-interpolation-1",
     "title": "Lecture Slides",
     "section": "Spatial Interpolation",
-    "text": "Spatial Interpolation\nAll spatial interpolation methods incorporate distance to known samples.\n\nContinuous fields tend to exhibit strong positive spatial autocorrelation, it is reasonable to assume that missing values are likely to be similar to those around them in the field\nSound familiar? This is Tobler’s First Law!\nCloser samples may be given more weight than distant ones\nA threshold is usually set, to determine the maximum distance to take samples from\n\n::: ::::"
+    "text": "Spatial Interpolation\nContinuous fields tend to exhibit strong positive spatial autocorrelation\n\nReasonable to assume missing values are similar to those around them\n\nMethods incorporate distance to known samples.\n\nSound familiar? This is Tobler’s First Law!\n\nCloser samples given more weight than distant ones\nA threshold is usually set, to determine the maximum distance to take samples from"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#inverse-distance-weighting",
     "href": "Spatial_Sampling_Methods/Slides.html#inverse-distance-weighting",
     "title": "Lecture Slides",
     "section": "Inverse Distance Weighting",
-    "text": "Inverse Distance Weighting\nCalculates cell values based on nearby observations.\n\nWeight cells by distance from observation points\nMathematical expression of Tobler’s Law\n\n\n::: ::::"
+    "text": "Inverse Distance Weighting\nCalculates cell values based on nearby observations.\n\nWeight cells by distance from observation points\nMathematical expression of Tobler’s Law"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#inverse-distance-weighting-1",
     "href": "Spatial_Sampling_Methods/Slides.html#inverse-distance-weighting-1",
     "title": "Lecture Slides",
     "section": "Inverse Distance Weighting",
-    "text": "Inverse Distance Weighting\nBest applied to discrete samples of continuous quantitative variables.\n\nElevation\nTemperature\nPrecipitation\n\n::: :::{.column width=“50%”}\n\n::: ::::"
+    "text": "Inverse Distance Weighting\nBest applied to discrete samples of continuous quantitative variables.\n\n\n\nElevation\nTemperature\nPrecipitation"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#kernel-density",
     "href": "Spatial_Sampling_Methods/Slides.html#kernel-density",
     "title": "Lecture Slides",
     "section": "Kernel Density",
-    "text": "Kernel Density\nCalculates the “density” of discrete point observations/samples and converts to a raster surface\n\nShows the probability of occurrence at any given location\nWeight cells by “value” of points\nOften applied to counts of qualitative data\nDisease outbreaks\nCrime data\n\n::: :::{.column width=“50%”}\n\n::: ::::\n\n\nBack to Course Modules"
+    "text": "Kernel Density\nCalculates the “density” of discrete objects and converts to a raster surface\n\n\n\nProbability of occurrence across space\n\nWeight by “value” of points\n\nOften applied to counts of qualitative data\n\nDisease outbreaks & crime data\n\n\n\n\n\n\n\n\nBack to Course Modules"
   },
   {
     "objectID": "Steps_of_Abstraction/Slides.html#flattening-the-blue-marble",
@@ -3120,5 +3120,54 @@
     "title": "Lecture Slides",
     "section": "What can be done with GIS?",
     "text": "What can be done with GIS?\nGIS can be used to help solve a wide range of geographic problems in different fields:\n\n\n\nPublic Health (Epidemiology)\nPlanning (Urban, Hazards)\nResource Management\nEconomics\n\n\n\nEcology & Biology\nClimate Science\nSocial Justice\nConservation"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#sampling-2",
+    "href": "Spatial_Sampling_Methods/Slides.html#sampling-2",
+    "title": "Lecture Slides",
+    "section": "Sampling",
+    "text": "Sampling\n\n\nScientific sampling requires that each element in the sample frame have a known and pre-specified chance of selection.\n\nIf some elements have a greater or lower chance of being selected our sample is said to be biased\nIf every element of interest has an equal chance of being selected our sample is said to be unbiased"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#scientific-sampling",
+    "href": "Spatial_Sampling_Methods/Slides.html#scientific-sampling",
+    "title": "Lecture Slides",
+    "section": "Scientific Sampling",
+    "text": "Scientific Sampling\n\n\nRequires each element in the sample frame have a known and pre-specified chance of selection.\n\nBiased Sampling: some elements have a greater or lower chance of being selected\nUnbiased: every element has an equal chance of being selected"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#systematic-sampling-3",
+    "href": "Spatial_Sampling_Methods/Slides.html#systematic-sampling-3",
+    "title": "Lecture Slides",
+    "section": "Systematic Sampling",
+    "text": "Systematic Sampling\nA random starting point is chosen and a fixed sampling interval is used.\n\n\n\nNot ideal for discrete objects that exhibit periodicity\n\nCity blocks, Roads, etc."
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#systematic-sampling-4",
+    "href": "Spatial_Sampling_Methods/Slides.html#systematic-sampling-4",
+    "title": "Lecture Slides",
+    "section": "Systematic Sampling",
+    "text": "Systematic Sampling\n\n\nA random starting point is chosen and a fixed sampling interval is used.\n\nGeneral premise behind remote sensing (satellite data collection)\nCan be a good for areas that contain few features and abrupt boundaries\ne.g., Agricultural fields\nNot ideal for attributes that exhibit periodicity\ne.g., Roads"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#stratified-sampling-2",
+    "href": "Spatial_Sampling_Methods/Slides.html#stratified-sampling-2",
+    "title": "Lecture Slides",
+    "section": "Stratified Sampling",
+    "text": "Stratified Sampling\n\n\nHelps to address the issues with systematic sampling by sampling at random locations, but still applying some “systematic bias”"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#cluster-sampling-1",
+    "href": "Spatial_Sampling_Methods/Slides.html#cluster-sampling-1",
+    "title": "Lecture Slides",
+    "section": "Cluster Sampling",
+    "text": "Cluster Sampling\nIntense sampling of features in clusters around a number of selected locations\n\n\n\nMore efficient use of time and resources\n\nMay not be representative"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#spatial-autocorrelation-2",
+    "href": "Spatial_Sampling_Methods/Slides.html#spatial-autocorrelation-2",
+    "title": "Lecture Slides",
+    "section": "Spatial Autocorrelation",
+    "text": "Spatial Autocorrelation\n\n\nCorrelation does not imply causation!\n\nThere could be relationship between features\n\nOr a relationship to a third object that determines the values of both\nOr a completely random coincidence"
   }
 ]

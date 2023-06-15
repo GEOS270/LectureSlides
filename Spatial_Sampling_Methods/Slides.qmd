@@ -61,21 +61,22 @@ The First Law of Geography
 --------------------------
 
 
-::::{.columns}
-:::{.column width="50%"}
 
 
 Everything is related to everything else, but near things are more related than distant things.
 
 
-* Objects (or regions) near each other are more likely to be similar to one another
-Objects (or regions) that are distant from each other are more likely to be different from each other
-* **This aspect of nature keeps coming up again and again in GIS!**
+::::{.columns}
+:::{.column width="60%"}
+
+* Object/areas near each other are more likely to be similar
+Objects/areas near that are distant from each other are more likely to be different
+* **This aspect of nature keeps coming in GIS!**
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 ![](images/03-spatial-is-special.jpg)
@@ -97,25 +98,14 @@ Sampling
 :::{.column width="100%"}
 
 
-You can think of sampling as the process of selecting points from within an area or population, called a **sample frame**.
+The process of selecting points from within an area or population, called a **sample frame**.
 
-
-* We collect information about some within the sample frame
-+ But we ignore **most** objects/locations
-+ Think back to Bonini's Paradox
-
-* How we define our sample frame and choose our sample can determine the quality of our data
-+ We want to maximize representativeness of the sample
-+ But also minimize effort and expense associated with sampling
-
-
-
+* We collect information for a subset of objects/locations sample frame
+  + But we ignore **most** objects/locations
+  + Think back to Bonini's Paradox
 
 :::
 ::::
-
-
-
 
 Sampling
 --------
@@ -125,105 +115,30 @@ Sampling
 :::{.column width="100%"}
 
 
-Scientific sampling requires that each element in the sample frame have a known and pre-specified chance of selection.
+The process of selecting points from within an area or population, called a **sample frame**.
 
-
-* If some elements have a greater or lower chance of being selected our sample is said to be **biased**
-* If every element of interest has an equal chance of being selected our sample is said to be **unbiased**
-
-
-
+* How we define the sample frame and choose samples can determine the quality of our data
+  + We want to maximize representativeness of the sample
+  + But also minimize effort and expense associated with sampling
 
 :::
 ::::
 
 
 
-
-Random Sampling
----------------
-
-
-::::{.columns}
-:::{.column width="50%"}
-
-
-In theory, a random sample is best. Its the "gold standard".
-
-
-* Each location has equal chance of being selected (*Unbiased*)
-Easy to do, randomly select 𝑥,𝑦 coordinates
-* A foundational assumption of many statistical tests
-
-
-
-:::
-:::{.column width="50%"}
-
-
-![](images/Random1.png)
-
-
-
-
-:::
-::::
-
-
-
-
-Random Sampling
----------------
-
-
-::::{.columns}
-:::{.column width="50%"}
-
-
-Can be difficult to implement in practice.
-
-
-* There is a chance, that all samples will miss important features
-* May be barriers to accessing some features
-+ Remote or rugged terrain
-+ Private or restricted property
-+ Systematic under-responses
-
-
-
-:::
-:::{.column width="50%"}
-
-
-![](images/Random1.png)
-
-
-
-
-:::
-::::
-
-
-
-
-Random Sampling
----------------
+Scientific Sampling
+-------------------
 
 
 ::::{.columns}
 :::{.column width="100%"}
 
 
-We have some options to account for the drawbacks
+Requires each element in the sample frame have a known and pre-specified chance of selection.
 
 
-* **The "law of large numbers"**: as we collect more information, our sample will become increasingly representative of actual population values
-+ Larger sample sizes
-+ Repeated samples (aka "Bootstrapping")
-- e.g., Take 30 random samples of 100 individuals, calculate an average for each sample, then average across samples
-
-* Not always practical
-+ Requires more time and resources
+* **Biased Sampling**: some elements have a greater or lower chance of being selected
+* **Unbiased**: every element has an equal chance of being selected 
 
 
 
@@ -231,6 +146,86 @@ We have some options to account for the drawbacks
 :::
 ::::
 
+
+
+
+Random Sampling
+---------------
+
+
+
+In theory, a random sample is best. Its the "gold standard".
+
+::::{.columns}
+:::{.column width="55%"}
+
+
+* **Unbiased**: each location has equal chance of selection
+  + Easy to do, randomly select 𝑥,𝑦 coordinates
+* A key assumption of many statistical tests
+
+
+
+:::
+:::{.column width="45%"}
+
+
+![](images/Random1.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Random Sampling
+---------------
+
+Can be difficult to implement in practice.
+
+
+::::{.columns}
+:::{.column width="55%"}
+
+
+
+* Chance that all samples miss important features
+* May be barriers to access
+  + Remote or rugged terrain
+  + Private property
+  + Systematic under-responses
+
+
+
+:::
+:::{.column width="45%"}
+
+
+![](images/Random1.png)
+
+
+
+
+:::
+::::
+
+
+
+
+Random Sampling
+---------------
+
+We have some options to account for the drawbacks
+
+
+* **"Law of large numbers"**: as we collect more information, our sample will become increasingly representative of actual population values
+  + Larger sample sizes or "Bootstrapping"
+
+* Not always practical
+  + Requires more time and resources
 
 
 
@@ -272,8 +267,8 @@ Alternate Approaches to Sampling
 
 * Create a sample design that trades a sampling scheme for randomness
 * Induce bias to the sample to:
-+ Save time or resources
-+ Account for relevant information about the sample frame
+  + Save time or resources
+  + Account for relevant information about the sample frame
 
 
 
@@ -287,33 +282,40 @@ Alternate Approaches to Sampling
 Systematic Sampling
 -------------------
 
+A random starting point is chosen and a fixed sampling interval is used.
 
 ::::{.columns}
 :::{.column width="50%"}
 
-
-A random starting point is chosen and a fixed sampling interval is used.
-
-
 * Randomly select first of 3 students
-+ Then select every 3rd after that
+  + Select every 3rd after
 
-* Choose a random starting point
-+ Then draw equally spaced grid
+:::
+:::{.column width="50%"}
 
 
 ![](images/systematic1.png)
 
 
+:::
+::::
+
+
+Systematic Sampling
+-------------------
+
+A random starting point is chosen and a fixed sampling interval is used.
+
+::::{.columns}
+:::{.column width="50%"}
+
+* Choose a random starting point
+  + Then draw equally spaced grid
 
 :::
 :::{.column width="50%"}
 
-
 ![](images/systematic2.png)
-
-
-
 
 :::
 ::::
@@ -324,25 +326,20 @@ A random starting point is chosen and a fixed sampling interval is used.
 Systematic Sampling
 -------------------
 
-
-::::{.columns}
-:::{.column width="50%"}
-
-
 A random starting point is chosen and a fixed sampling interval is used.
 
-
-* General premise behind remote sensing (satellite data collection)
-* Can be a good for areas that contain few features and abrupt boundaries
-+ e.g., Agricultural fields
-
-* Not ideal for attributes that exhibit periodicity
-+ e.g., Roads
+::::{.columns}
+:::{.column width="60%"}
 
 
+
+
+* Premise behind satellite data collection
+  + Often good for continuous fields
+    - eg., land cover
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 ![](images/Satelite.jpg)
@@ -353,168 +350,131 @@ A random starting point is chosen and a fixed sampling interval is used.
 :::
 ::::
 
-
-
-
 Systematic Sampling
 -------------------
-
-
-::::{.columns}
-:::{.column width="50%"}
-
 
 A random starting point is chosen and a fixed sampling interval is used.
 
 
-* General premise behind remote sensing (satellite data collection)
-* Can be a good for areas that contain few features and abrupt boundaries
-+ e.g., Agricultural fields
+::::{.columns}
+:::{.column width="60%"}
 
-* Not ideal for attributes that exhibit periodicity
-+ e.g., Roads
-
-
+* Not ideal for discrete objects that exhibit periodicity
+  + City blocks, Roads, etc.
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 ![](images/systematic3.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 Stratified Sampling
 -------------------
 
+Address the issues with systematic sampling by sampling at random locations, while applying a "systematic bias"
 
 ::::{.columns}
-:::{.column width="50%"}
-
-
-Helps to address the issues with systematic sampling by sampling at random locations, but still applying some "systematic bias"
-
+:::{.column width="60%"}
 
 * Create a systematic sampling grid, then take random samples within cells
-* Divide a population by certain attributes, then take random samples from sub-populations
-+ Gender, race, age, political party, etc.
 
-
+* Can avoid over/under sampling regularly repeating features
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 ![](images/stratified1.png)
 
 
-
-
 :::
 ::::
-
-
 
 
 Stratified Sampling
 -------------------
 
+Divide a population by certain attributes, then take random samples from sub-populations
 
-::::{.columns}
-:::{.column width="50%"}
-
-
-Helps to address the issues with systematic sampling by sampling at random locations, but still applying some "systematic bias"
-
-
-* Can avoid over/under sampling regularly repeating features
 * Account for important factors
+  + Gender, race, age, political party, etc.
 
 
 ![](images/stratified3.png)
 
 
 
+Cluster Sampling
+----------------
+
+Intense sampling of features in clusters around a number of selected locations
+
+::::{.columns}
+:::{.column width="60%"}
+
+* Locations can be selected for specific features, e.g.,:
+  + Shopping centers
+  + Known history of invasive species
+
+* Or, locations can be selected at random across the grid
+
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
-![](images/stratified1.png)
-
-
-
+![](images/cluster1.png)
 
 :::
 ::::
-
-
 
 
 Cluster Sampling
 ----------------
 
-
-::::{.columns}
-:::{.column width="50%"}
-
-
 Intense sampling of features in clusters around a number of selected locations
 
+::::{.columns}
+:::{.column width="60%"}
 
-* Locations can be selected for specific features:
-+ e.g., Shopping centers, known history of invasive species
-
-* Or, locations can be selected at random across the grid
 * More efficient use of time and resources
-+ May not be representative
-
-
+  + May not be representative
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 ![](images/cluster1.png)
-
-
-
 
 :::
 ::::
 
 
-
-
 Transect Sampling
 -----------------
 
+Commonly used along line features like roads & rivers.
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="70%"}
 
-
-Most commonly used along line features like roads, rivers
-
-
-* Allows you to focus your efforts on features of interest
+* Focused effort on features of interest
 * Requires understanding of spatial structure for maximum effectiveness
-![](images/transect.png)
-
-
-
-
-:::
-:::{.column width="50%"}
 
 
 ![](images/transect2.jpg)
+
+
+:::
+:::{.column width="30%"}
+
+
+![](images/transect.png)
+
 
 
 
@@ -553,24 +513,21 @@ Which of these sampling methods are unbiased?
 How Many Samples?
 -----------------
 
+The number of samples required is a function of how similar units of that population are.
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="60%"}
 
 
-The number of samples required is a function of how similar units of that population are.
 
 
 * Spatial structure can vary wildly across a landscape
-+ A little knowledge of your study area will help you to establish ways to best stratify to maximize returns with minimal effort
+  + Knowledge of your study area will help to establish how to best sample 
 
-* Need to balance effective coverage with the cost (in $ or time)
-+ Eg. short vs. long census form
-
-
+* Maximize returns minimize effort
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 ![](images/samp_size.png)
@@ -596,16 +553,12 @@ When the values of objects are related to the values of nearby objects.
 
 
 * If you know the value of one object, you can make a reasonable guess at the value of nearby objects
-+ That doesn’t mean they are the same; **Correlation does not imply causation!**
-+ There could be relationship between them, a relationship to a third object that determines the values of both, or a completely random coincidence
-![](images/autocorrelation1.png)
 
-
-
-
+![](images/autocorrelation1.png){width="70%"}
 
 :::
 ::::
+
 
 
 
@@ -627,29 +580,33 @@ Spatial Autocorrelation
 ::::
 
 
-
-
-Statistical Assumptions
+Spatial Autocorrelation
 -----------------------
 
 
-
-Spatial autocorrelation is a problem when it comes to spatial statistics. Most statistics assume that there is no relationship between objects!
-
-
-* If you know the value of one object, you can make a reasonable guess at the value of nearby objects
-+ By violating this assumption, we “break” many common statistics!
-+ For this reason, a separate field of spatial statistics explores different ways of accessing similar information, or we acknowledge this as a flaw in our assumptions
-+ **It is also a benefit!**: We can exploit spatial autocorrelation to our advantage
+::::{.columns}
+:::{.column width="100%"}
 
 
+**Correlation does not imply causation!**
 
+
+* There could be relationship between features
+  + Or a relationship to a third object that determines the values of both
+  + Or a completely random coincidence
 
 :::
 ::::
 
 
+Statistical Assumptions
+-----------------------
 
+Spatial autocorrelation is a problem when it comes to spatial statistics. 
+
+* Most tests assume that there is no relationship between objects by default!
+  + By violating this assumption, we “break” many common statistics!
+  + Spatial statistics explores ways of analyzing statistical relationships across space
 
 TopHat Question 4
 =================
@@ -692,63 +649,46 @@ The process of “filling in the blanks” that you just performed is called int
 
 
 
-:::
-::::
-
 
 
 
 Spatial Interpolation
 ---------------------
 
-
-
 Spatial interpolation only makes sense for a continuous field with numeric values.
 
+::::{.columns}
+:::{.column width="60%"}
 
-* Rainfall, temperature, pressure
-+ Estimate between weather stations
 
-* Elevation between measured locations
-* With qualitative data, this can be problematic
+
+* Rainfall, temperature, pressure, elevation
+  + Estimate between measured locations
+
+* Can be problematic with qualitative data
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 ![](images/wx_interp.gif)
 
-
-
-
 :::
 ::::
-
-
-
 
 Spatial Interpolation
 ---------------------
 
+Continuous fields tend to exhibit strong positive spatial autocorrelation
 
+* Reasonable to assume missing values are similar to those around them
+  + Methods incorporate distance to known samples.
 
-All spatial interpolation methods incorporate distance to known samples.
-
-
-* Continuous fields tend to exhibit strong positive spatial autocorrelation, it is reasonable to assume that missing values are likely to be similar to those around them in the field
 + Sound familiar? This is Tobler’s First Law!
-+ Closer samples may be given more weight than distant ones
-+ A threshold is usually set, to determine the maximum distance to take samples from
-
-
-
-
-:::
-::::
-
-
+  + Closer samples given more weight than distant ones
+  + A threshold is usually set, to determine the maximum distance to take samples from
 
 
 Inverse Distance Weighting
@@ -768,18 +708,15 @@ Calculates cell values based on nearby observations.
 
 
 
-:::
-::::
-
-
-
-
 Inverse Distance Weighting
 --------------------------
 
-
-
 Best applied to discrete samples of continuous quantitative variables.
+
+
+::::{.columns}
+:::{.column width="50%"}
+
 
 
 * Elevation
@@ -807,22 +744,24 @@ Best applied to discrete samples of continuous quantitative variables.
 Kernel Density
 --------------
 
+Calculates the "density" of discrete objects and converts to a raster surface
+
+::::{.columns}
+:::{.column width="60%"}
 
 
-Calculates the "density" of discrete point observations/samples and converts to a raster surface
 
 
-* Shows the probability of occurrence at any given location
-+ Weight cells by "value" of points
+* Probability of occurrence across space
+  + Weight by "value" of points
 
 * Often applied to counts of qualitative data
-+ Disease outbreaks
-+ Crime data
+  + Disease outbreaks & crime data
 
 
 
 :::
-:::{.column width="50%"}
+:::{.column width="40%"}
 
 
 ![](images/Final_Map.png)
