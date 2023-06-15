@@ -2664,14 +2664,14 @@
     "href": "Uncertainty_in_GIS/Slides.html#uncertainty",
     "title": "Lecture Slides",
     "section": "Uncertainty",
-    "text": "Uncertainty\nArises from our inability to measure phenomena perfectly and flaws in our conceptual models.\n\nData quality: Instrument limitations, sampling costs, etc.\nGeneralizations when representing phenomena: i.e., Bonini’s Paradox\nIncomplete knowledge, misunderstandings, biases, etc.\n\n\n::: ::::"
+    "text": "Uncertainty\nArises from our inability to measure phenomena perfectly and flaws in our conceptual models.\n\n\n\nData quality: Instrument limitations, sampling costs, etc.\nGeneralizations when representing phenomena: i.e., Bonini’s Paradox\nIncomplete knowledge, misunderstandings, biases, etc."
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#data-quality",
     "href": "Uncertainty_in_GIS/Slides.html#data-quality",
     "title": "Lecture Slides",
     "section": "Data Quality",
-    "text": "Data Quality\nThere is no standardized measure of data quality in GIS.\n\nFlaws may pass through many users before discovery.\nMust trust the data was collected and processed correctly.\nRisk of the users misinterpreting valid products.\n\n\nWhen baking mistakes are obvious.\nOften in GIS, they are not.\n::: ::::"
+    "text": "Data Quality\nThere is no standardized measure of data quality in GIS.\n\n\n\nFlaws may pass through many users before discovery.\nMust trust the data was collected and processed correctly.\nRisk of the users misinterpreting valid products.\n\n\n\nIn baking mistakes are obvious. Often in GIS, they are not."
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#data-quality-1",
@@ -2685,98 +2685,98 @@
     "href": "Uncertainty_in_GIS/Slides.html#error-accuracy-precision",
     "title": "Lecture Slides",
     "section": "Error: Accuracy & Precision",
-    "text": "Error: Accuracy & Precision\n\n\nThe terms are related, but the distinction is very important.\nAccuracy: The degree to which a set of measurements correctly matches the real world values. * How close is the measurement to the real value?\nPrecision: The degree of agreement between multiple measurements of the same real world phenomena. * How repeatable is the measurement?"
+    "text": "Error: Accuracy & Precision\n\n\nThe terms are related, but the distinction is very important.\nAccuracy: The degree to which a set of measurements correctly matches the real world values.\n\nHow close is the measurement to the real value?\n\nPrecision: The degree of agreement between multiple measurements of the same real world phenomena.\n\nHow repeatable is the measurement?"
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#error-accuracy-precision-1",
     "href": "Uncertainty_in_GIS/Slides.html#error-accuracy-precision-1",
     "title": "Lecture Slides",
     "section": "Error: Accuracy & Precision",
-    "text": "Error: Accuracy & Precision\n\nAccuracy: A systematic (consistent) offset from the real world value; errors have a bias.\nPrecision: A random offset from the real world value; errors are unbiased\n\n\nAccuracy and precision can be quantified.\n::: ::::"
+    "text": "Error: Accuracy & Precision\n\n\n\nAccuracy: A systematic offset from the real world value\n\nErrors are biased\n\nPrecision: A random offset from the real world value\n\nErrors are unbiased"
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#quantifying-error",
     "href": "Uncertainty_in_GIS/Slides.html#quantifying-error",
     "title": "Lecture Slides",
     "section": "Quantifying Error",
-    "text": "Quantifying Error\nStatistical methods can be used to quantify error.\n\nThese measures won’t tell us for sure that we are correct, but they can give us some insight.\n\n\nWe can quantify any offset (bias) and the spread of the measurements (unbiased).\n::: ::::"
+    "text": "Quantifying Error\nStatistical methods can be used to describe uncertainty.\n\n\n\nQuantify the offset (bias) and dispersion (unbiased) of data points.\nWon’t tell us if we are correct with 100% certainty, but they can give us some insight."
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#quantifying-accuracy",
     "href": "Uncertainty_in_GIS/Slides.html#quantifying-accuracy",
     "title": "Lecture Slides",
     "section": "Quantifying Accuracy",
-    "text": "Quantifying Accuracy\nMean Absolute Error (MAE):\n\nThe absolute value of the error averaged across all samples.\nHow close the samples (observations or estimate) are to be to the true values.\n\n\\(MAE = \\frac{\\sum\\_{i=1}^N \\lvert{x\\_i-t\\_i}\\rvert}{N}\\)\n\\(x\\_i\\) = the ith sample value\n\\(t\\_i\\) = the ith true value\n\\(N\\) = the total number of samples\n::: ::::"
+    "text": "Quantifying Accuracy\n\n\nMean Absolute Error (MAE)\n\nThe absolute error for each sample\n\nAveraged across all samples\n\nHow close the data are to be to the true values\n\n\n\\(MAE = \\frac{\\sum_{i=1}^N \\lvert{x_i-t_i}\\rvert}{N}\\)\n\\(x_i\\) = ith sample value\n\\(t_i\\) = ith true value\n\\(N\\) = number of samples"
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#quantifying-accuracy-1",
     "href": "Uncertainty_in_GIS/Slides.html#quantifying-accuracy-1",
     "title": "Lecture Slides",
     "section": "Quantifying Accuracy",
-    "text": "Quantifying Accuracy\nMean Squared Error (MSE):\n\nThe squared error averaged across all samples.\nSimilar to MAE, but more harshly penalizes large deviations.\nMSE is not in the same units as the original data.\n\n\\(MSE = \\frac{\\sum\\_{i=1}^N \\left({x\\_i-t\\_i}\\right)^2}{N}\\)\n\\(x\\_i\\) = the ith sample value\n\\(t\\_i\\) = the ith true value\n\\(N\\) = the total number of samples\n::: ::::"
+    "text": "Quantifying Accuracy\n\n\nRoot Mean Squared Error (RMSE):\n\nMore harshly penalizes large deviations.\nThe squared error for each sample\n\nAveraged across all samples, the square root keeps the original units\n\n\n\n\\(RMSE = \\sqrt{\\frac{\\sum_{i=1}^N \\left({x_i-t_i}\\right)^2}{N}}\\)\n\\(x_i\\) = ith sample value\n\\(t_i\\) = ith true value\n\\(N\\) = number of samples"
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#quantifying-accuracy-2",
     "href": "Uncertainty_in_GIS/Slides.html#quantifying-accuracy-2",
     "title": "Lecture Slides",
     "section": "Quantifying Accuracy",
-    "text": "Quantifying Accuracy\nRoot Mean Squared Error (RMSE):\n\nThe square root of the squared error averaged across all samples.\nSame as MSE, except:\nWith the square root, RMSE is in the same units as the original data.\n\n\\(RMSE = \\sqrt{\\frac{\\sum\\_{i=1}^N \\left({x\\_i-t\\_i}\\right)^2}{N}}\\)\n\\(x\\_i\\) = the ith sample value\n\\(t\\_i\\) = the ith true value\n\\(N\\) = the total number of samples\n::: ::::"
+    "text": "Quantifying Accuracy\n\n\nRoot Mean Squared Error (RMSE):\n\nMore harshly penalizes large deviations.\nThe squared error for each sample\n\nAveraged across all samples, the square root keeps the original units\n\n\n\n\\(RMSE = \\sqrt{\\frac{\\sum_{i=1}^N \\left({x_i-t_i}\\right)^2}{N}}\\)\n\\(x_i\\) = the ith sample value\n\\(t_i\\) = the ith true value\n\\(N\\) = number of samples"
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#quantifying-precision",
     "href": "Uncertainty_in_GIS/Slides.html#quantifying-precision",
     "title": "Lecture Slides",
     "section": "Quantifying Precision",
-    "text": "Quantifying Precision\nStandard Deviation (\\(\\sigma\\)):\n\nThe square root of squared deviation averaged across all samples.\nsimilar to RMSE, except:\nInstead of characterizing error, it the dispersion of a dataset.\n\n\\(\\sigma=\\sqrt{\\frac{\\sum\\_{i=1}^N \\left({x\\_i-\\overline{X}}\\right)^2}{N}}\\)\n\\(x\\_i\\) = the ith sample value\n\\(\\overline{X}\\) = the mean of all samples\n\\(N\\) = the total number of samples\n::: ::::"
+    "text": "Quantifying Precision\n\n\nStandard Deviation (\\(\\sigma\\)):\n\nThe square root of squared deviation averaged across all samples.\nSimilar to RMSE, except:\n\nCharacterizing dispersion of data\n\n\n\n\\(\\sigma=\\sqrt{\\frac{\\sum_{i=1}^N \\left({x_i-\\overline{X}}\\right)^2}{N}}\\)\n\\(x_i\\) = ith sample value\n\\(\\overline{X}\\) = the mean of all samples\n\\(N\\) = number of samples"
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#quantifying-precision-1",
     "href": "Uncertainty_in_GIS/Slides.html#quantifying-precision-1",
     "title": "Lecture Slides",
     "section": "Quantifying Precision",
-    "text": "Quantifying Precision\nConfidence Intervals (CI):\n\nUsed to convey our confidence in the estimated average value.\nIf the \\(x\\) values are close together, we have higher confidence in \\(\\overline{X}\\).\nIf the \\(x\\) values are more dispersed, we have lower confidence in \\(\\overline{X}\\).\n\n\\(CI = \\frac{\\sigma}{\\sqrt{N}} z\\)\n\\(\\sigma\\) = the standard deviation\n\\(N\\) = the total number of samples\n\\(z\\) = a z-score\n::: ::::"
+    "text": "Quantifying Precision\n\n\nConfidence Intervals (CI) can be used to specify a confidence level (i.e., 90%, 95%, etc):\n\nFor Normally Distributed data:\n\nTypically presented as a range around the mean."
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#quantifying-precision-2",
     "href": "Uncertainty_in_GIS/Slides.html#quantifying-precision-2",
     "title": "Lecture Slides",
     "section": "Quantifying Precision",
-    "text": "Quantifying Precision\nConfidence Intervals (CI):\n\nFor Normally Distributed data:\nCan be used to specify a confidence level (i.e., 90%, 95%, etc).\nTypically presented as a range around the mean.\n\n\n::: ::::"
+    "text": "Quantifying Precision\n\n\nConfidence Intervals (CI):\n\nConveys our confidence in an estimate \\(\\overline{X} = \\frac{\\sum_{i=1}^N {x_i}}{N}\\)\nIf \\(x_i\\) are close, we are more confident in \\(\\overline{X}\\).\nIf \\(x_i\\) are dispersed, we are more confident in \\(\\overline{X}\\).\n\n\n\\(CI = \\frac{\\sigma}{\\sqrt{N}} z\\)\n\\(\\sigma\\) = standard deviation\n\\(N\\) = number of samples\n\\(z\\) = a z-score"
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#quantifying-precision-3",
     "href": "Uncertainty_in_GIS/Slides.html#quantifying-precision-3",
     "title": "Lecture Slides",
     "section": "Quantifying Precision",
-    "text": "Quantifying Precision\nInter Quartile Range (IQR):\n\nFor Non-normally Distributed data:\nCannot be used to specify a confidence level.\nBut it can give us some idea of the dispersion in a dataset.\n\n\n::: ::::"
+    "text": "Quantifying Precision\n\n\nInter Quartile Range (IQR):\n\nFor Non-normally Distributed data:\n\nCannot be used to specify a confidence level.\nBut it can give us some idea of the dispersion in a dataset."
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#vagueness-and-ambiguity",
     "href": "Uncertainty_in_GIS/Slides.html#vagueness-and-ambiguity",
     "title": "Lecture Slides",
     "section": "Vagueness and Ambiguity",
-    "text": "Vagueness and Ambiguity\n\n\nThe terms are related, but the distinction is very important.\nVagueness: When something is not clearly stated or defined. * Arises when boundaries or labels are poorly defined.\nAmbiguity: When something can reasonably be interpreted in multiple ways. * Arises when terms or labels can apply to multiple features."
+    "text": "Vagueness and Ambiguity\n\n\nVagueness: When something is not clearly stated or defined.\n\nWhen boundaries or labels are poorly defined.\n\nAmbiguity: When something can reasonably be interpreted in multiple ways.\n\nWhen terms or labels can apply to multiple features."
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#vagueness",
     "href": "Uncertainty_in_GIS/Slides.html#vagueness",
     "title": "Lecture Slides",
     "section": "Vagueness",
-    "text": "Vagueness\n\nWhat does “London” refer to:\nLondon, UK?\nLondon, Ontario?\nLondon Drugs?\nThe word “bank”:\nA financial institution?\nThe edge of a river?\n\n\n::: ::::"
+    "text": "Vagueness\n\n\n\nWhat does “London” refer to:\n\nLondon, UK?\nLondon, Ontario?\nLondon Drugs?\n\nThe word “bank”:\n\nA financial institution?\nThe edge of a river?"
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#ambiguity",
     "href": "Uncertainty_in_GIS/Slides.html#ambiguity",
     "title": "Lecture Slides",
     "section": "Ambiguity",
-    "text": "Ambiguity\n\nInterpretation requires context.\nWhere does a forest end and a grassland begin?\nThe position of objects are unclear or changeable.\nCoastal boundary file - High tide? Low tide? Mean water level?\n\n\n::: ::::"
+    "text": "Ambiguity\n\n\n\nInterpretation requires context.\nWhere does a forest end and a grassland begin?\nThe position of objects are unclear or changeable.\n\nCoastal boundary file - High tide? Low tide? Mean water level?"
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#qualifying-vagueness-and-ambiguity",
     "href": "Uncertainty_in_GIS/Slides.html#qualifying-vagueness-and-ambiguity",
     "title": "Lecture Slides",
     "section": "Qualifying Vagueness and Ambiguity",
-    "text": "Qualifying Vagueness and Ambiguity\n\n\nAmbiguity and vagueness are difficult to quantify numerically. But they still must be addressed whenever possible..\nThe key with these issues: * Present things clearly and thoroughly. Be explicit and transparent when conducting and communicating your work."
+    "text": "Qualifying Vagueness and Ambiguity\n\n\nDifficult to quantify numerically, but they must be addressed whenever possible.\nThe key with these issues:\n\nPresent things clearly and thoroughly.\n\nBe explicit and transparent when conducting and communicating your work."
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#measurements",
@@ -2790,126 +2790,126 @@
     "href": "Uncertainty_in_GIS/Slides.html#data-resolution",
     "title": "Lecture Slides",
     "section": "Data Resolution",
-    "text": "Data Resolution\n\n\nThe concentration of samples in space and time dictates the level of accuracy & precision you can attain. * Lower resolution data is by definition less precise, but not necessarily less accurate. * High resolution data can be very precise, but have a significant bias. * What do you do if your data are collected at different resolutions? * Low resolution result in vagueness & ambiguity."
+    "text": "Data Resolution\n\n\nThe concentration of samples in space and time dictates the level of accuracy & precision you can attain.\n\nLower resolution data is by definition less precise, but not necessarily less accurate.\nHigh resolution data can be very precise, but have a significant bias.\nWhat do you do if your data are collected at different resolutions?"
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#data-entry",
     "href": "Uncertainty_in_GIS/Slides.html#data-entry",
     "title": "Lecture Slides",
     "section": "Data Entry",
-    "text": "Data Entry\n\n\nThings we do have some control over: * Input datasets & sample sizes. * Typos during tabular data entry. * Digitizing errors when creating vector features. + Gaps: there should be a feature, but there is not. + Overlaps: one polygon sits over another polygon. + Slivers: a feature is created between two features when it should not be."
+    "text": "Data Entry\n\n\nOthers occur when we create data.\n\nInsufficient sample sizes\nTypos during tabular data entry\nDigitization errors\nCommunication issues - unclear reports, maps, etc."
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#digitization-errors",
     "href": "Uncertainty_in_GIS/Slides.html#digitization-errors",
     "title": "Lecture Slides",
     "section": "Digitization Errors",
-    "text": "Digitization Errors\nErrors that arise when creating vector features: * Slivers: a feature is created between two features when it should not be. * Gaps: there should be a feature, but there is not. * Overlaps: one polygon sits over another polygon.\n\nmissing::: ::::"
+    "text": "Digitization Errors\n\n\nErrors that arise when creating vector features:\n\nSlivers: a feature is created between two features when it should not be.\nGaps: there should be a feature, but there is not.\nOverlaps: one polygon sits over another polygon."
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#digitization-errors-1",
     "href": "Uncertainty_in_GIS/Slides.html#digitization-errors-1",
     "title": "Lecture Slides",
     "section": "Digitization Errors",
-    "text": "Digitization Errors\nErrors that arise when creating vector features: * Under/overshoots: vertex misses a connection. * Extra nodes: unnecessary vertices. * Missing features: features or attributes missing.\n\nmissing::: ::::"
+    "text": "Digitization Errors\n\n\nErrors that arise when creating vector features:\n\nUnder/overshoots: vertex misses a connection.\nExtra nodes: unnecessary vertices.\nMissing features: features or attributes missing."
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#labels-and-boundaries",
     "href": "Uncertainty_in_GIS/Slides.html#labels-and-boundaries",
     "title": "Lecture Slides",
     "section": "Labels and Boundaries",
-    "text": "Labels and Boundaries\n\n\nSince geographic phenomena often don’t have clear, natural units, we are often forced to assign zones and labels in our work (i.e. Census Data). * A convenient way of simplifying complex processes. * Often vague and/or ambiguous. * May be difficult to defend because they are arbitrary. * Where to draw a boundary and what to call a zone are likely to vary significantly between different people/groups."
+    "text": "Labels and Boundaries\n\n\nGeographic phenomena often don’t have clear, natural units. We are often forced to assign boundaries (i.e. Census Data).\n\nA convenient way of simplifying complex processes\nOften vague and/or ambiguous\nMay be difficult to defend because they are arbitrary\nWhere to draw a boundary and what to call a zone?\n\nLikely to vary significantly between different people"
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#data-aggregation",
     "href": "Uncertainty_in_GIS/Slides.html#data-aggregation",
     "title": "Lecture Slides",
     "section": "Data Aggregation",
-    "text": "Data Aggregation\n\n\nMuch of the data we use to learn about society is collected in aggregate. We take average values for many individuals within a group or area (i.e. Census Data). * Lets us explore the general attributes (e.g. mean, median, etc.) for each group/area. * Compare the attributes between different groups or regions * Determine the allocation of resources."
+    "text": "Data Aggregation\n\n\nMuch of the data we use to learn about society is released in aggregate: average values for many individuals within a group or area (i.e. Census Data).\n\nLets us explore the general attributes\nCompare the attributes between different groups or regions\nDetermine the allocation of resources"
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#conversion-and-processing",
     "href": "Uncertainty_in_GIS/Slides.html#conversion-and-processing",
     "title": "Lecture Slides",
     "section": "Conversion and Processing",
-    "text": "Conversion and Processing\n\n\nEven with “perfect” data; GIS operations can add uncertainty:\n\nRe-projecting to different coordinate systems.\nConverting between data types.\nPerform generalizations (i.e. data classification)\n\n\n\n\nmissing"
+    "text": "Conversion and Processing\nEven with “perfect” data; GIS operations add uncertainty:\n\nRe-projecting to different coordinate systems\nConverting between data types\nPerform generalizations (i.e. data classification)"
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#logical-fallacies",
     "href": "Uncertainty_in_GIS/Slides.html#logical-fallacies",
     "title": "Lecture Slides",
     "section": "Logical Fallacies",
-    "text": "Logical Fallacies\n\n\nA flaw in our reasoning that undermines the logic of our argument.\n\nCan be made both by accident and on purpose.\nOften lacking evidence to support the claims/decisions made, or evidence is presented in a misleading way.\n“Hasty generalizations” are an example of logical fallacies:\n‘I saw a violent protester on TV … Protesters are inciting violence.’"
+    "text": "Logical Fallacies\n\n\nA flaw in our reasoning that undermines the logic of our argument.\n\nCan be made both by accident and on purpose.\nOften lacking evidence to support the claims/decisions made, or evidence is presented in a misleading way.\n“Hasty generalizations” are an example of logical fallacies:\n\n‘I saw a violent protester on TV … Protesters are inciting violence.’"
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#ecological-fallacy",
     "href": "Uncertainty_in_GIS/Slides.html#ecological-fallacy",
     "title": "Lecture Slides",
     "section": "Ecological Fallacy",
-    "text": "Ecological Fallacy\n\n\nApplying data collected/presented in aggregate for a group/region and applying it to an individual or specific place.\n\nYou cannot make an assumption about individuals within a group based on the aggregate data for that group.\nCensus data is averaged for an area, the information about individual values is lost.\nBasically - don’t make assumptions about individuals."
+    "text": "Ecological Fallacy\n\n\nApplying data collected/presented in aggregate for a group/region and applying it to an individual or specific place.\n\nYou cannot make an assumption about individuals within a group based on the aggregate data for that group.\nCensus data is averaged for an area, the information about individual values is lost.\n\nBasically - don’t make assumptions about individuals."
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#atomistic-fallacy",
     "href": "Uncertainty_in_GIS/Slides.html#atomistic-fallacy",
     "title": "Lecture Slides",
     "section": "Atomistic Fallacy",
-    "text": "Atomistic Fallacy\n\n\nOccurs when we take aggregated data and aggregate it again at a higher level.\n\nTake the average income by census DA for the city of Vancouver.\nAverage those across the city Vancouver, and you won’t get the correct value.\nYou are comparing across units of different sizes/populations"
+    "text": "Atomistic Fallacy\n\n\nOccurs when we take aggregated data and aggregate it again at a higher level.\n\nTake the average income by census DA for the city of Vancouver.\n\nAverage those across the city Vancouver, and you won’t get the correct value.\nYou are comparing across units of different sizes/populations"
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#atomistic-fallacy-1",
     "href": "Uncertainty_in_GIS/Slides.html#atomistic-fallacy-1",
     "title": "Lecture Slides",
     "section": "Atomistic Fallacy",
-    "text": "Atomistic Fallacy\n\nmissingSee here for a proof\n::: ::::"
+    "text": "Atomistic Fallacy\n\nSee here for a proof"
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#atomistic-fallacy-2",
     "href": "Uncertainty_in_GIS/Slides.html#atomistic-fallacy-2",
     "title": "Lecture Slides",
     "section": "Atomistic Fallacy",
-    "text": "Atomistic Fallacy\nThe US Electoral College is an example of this in practice:\n\nTotaling votes per state.\n… then totaling “delegates” by state.\n\n\nmissing::: ::::"
+    "text": "Atomistic Fallacy\n\n\nThe US Electoral College is an example of this in practice:\n\nTotaling votes per state … then totaling “delegates” by state."
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#modifiable-areal-unit-problem",
     "href": "Uncertainty_in_GIS/Slides.html#modifiable-areal-unit-problem",
     "title": "Lecture Slides",
     "section": "Modifiable Areal Unit Problem",
-    "text": "Modifiable Areal Unit Problem\nModifiable, arbitrary boundaries can have a significant impact on descriptive statistics for areas. * When areas are grouped together, the way you choose to group them can change the values of the groups. * See this video for more context.\n\nmissing::: ::::"
+    "text": "Modifiable Areal Unit Problem\nModifiable, arbitrary boundaries can have a significant impact on descriptive statistics for areas.\n\n\n\nWhen areas are grouped together, the way you choose to group them can change the values of the groups.\nSee this video for more context."
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#modifiable-areal-unit-problem-1",
     "href": "Uncertainty_in_GIS/Slides.html#modifiable-areal-unit-problem-1",
     "title": "Lecture Slides",
     "section": "Modifiable Areal Unit Problem",
-    "text": "Modifiable Areal Unit Problem\nData collected at a finer level of detail is being combined into larger areas of lower detail that can be manipulated. * Used to imply things that are not necessarily true. * Serious ethical implications. * Gerrymandering is a prime example.\n\nmissing::: ::::"
+    "text": "Modifiable Areal Unit Problem\nData collected at a finer level of detail is being combined into larger areas of lower detail that can be manipulated.\n\n\n\nUsed to imply things that are not necessarily true.\nSerious ethical implications.\nGerrymandering is a prime example."
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#modifiable-areal-unit-problem-2",
     "href": "Uncertainty_in_GIS/Slides.html#modifiable-areal-unit-problem-2",
     "title": "Lecture Slides",
     "section": "Modifiable Areal Unit Problem",
-    "text": "Modifiable Areal Unit Problem\n\nmissing::: ::::"
+    "text": "Modifiable Areal Unit Problem"
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#modifiable-areal-unit-problem-3",
     "href": "Uncertainty_in_GIS/Slides.html#modifiable-areal-unit-problem-3",
     "title": "Lecture Slides",
     "section": "Modifiable Areal Unit Problem",
-    "text": "Modifiable Areal Unit Problem\n\nmissing::: ::::"
+    "text": "Modifiable Areal Unit Problem"
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#modifiable-areal-unit-problem-4",
     "href": "Uncertainty_in_GIS/Slides.html#modifiable-areal-unit-problem-4",
     "title": "Lecture Slides",
     "section": "Modifiable Areal Unit Problem",
-    "text": "Modifiable Areal Unit Problem\n\nmissing::: ::::"
+    "text": "Modifiable Areal Unit Problem"
   },
   {
     "objectID": "Uncertainty_in_GIS/Slides.html#error-propagation",
     "href": "Uncertainty_in_GIS/Slides.html#error-propagation",
     "title": "Lecture Slides",
     "section": "Error Propagation",
-    "text": "Error Propagation\nErrors are cumulative: * Uncertainty will propagate through the model/system.\n\nmissing::: ::::\n\n\nBack to Course Modules"
+    "text": "Error Propagation\n\n\nErrors are cumulative:\n\nUncertainty will propagate through an analysis\n\n\n\n\n\n\n\nBack to Course Modules"
   },
   {
     "objectID": "Vector_Analysis_Methods/Slides.html#vector-analysis-methods-1",
@@ -3169,5 +3169,12 @@
     "title": "Lecture Slides",
     "section": "Spatial Autocorrelation",
     "text": "Spatial Autocorrelation\n\n\nCorrelation does not imply causation!\n\nThere could be relationship between features\n\nOr a relationship to a third object that determines the values of both\nOr a completely random coincidence"
+  },
+  {
+    "objectID": "Uncertainty_in_GIS/Slides.html#mean-absolute-error-mae",
+    "href": "Uncertainty_in_GIS/Slides.html#mean-absolute-error-mae",
+    "title": "Lecture Slides",
+    "section": "Mean Absolute Error (MAE)",
+    "text": "Mean Absolute Error (MAE)\n\n\n\nThe absolute value of the error averaged across all samples.\nHow close the samples (observations or estimate) are to be to the true values.\n\n\n\\(MAE = \\frac{\\sum\\_{i=1}^N \\lvert{x\\_i-t\\_i}\\rvert}{N}\\)\n\\(x\\_i\\) = the ith sample value\n\\(t\\_i\\) = the ith true value\n\\(N\\) = the total number of samples"
   }
 ]

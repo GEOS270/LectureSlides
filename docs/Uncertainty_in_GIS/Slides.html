@@ -328,31 +328,37 @@
 <section id="uncertainty-in-gis" class="title-slide slide level1 center">
 <h1>Uncertainty in GIS</h1>
 <p><strong>Uncertainty</strong> = Accuracy + Precision + Ambiguity + Vagueness + Logical Fallacies</p>
-<p>::: ::::</p>
 </section>
 <section id="uncertainty" class="slide level2">
 <h2>Uncertainty</h2>
 <p>Arises from our inability to measure phenomena perfectly <strong>and</strong> flaws in our conceptual models.</p>
+<div class="columns">
+<div class="column" style="width:65%;">
 <ul>
 <li>Data quality: Instrument limitations, sampling costs, etc.</li>
-<li>Generalizations when representing phenomena: i.e., <a href="https://june-skeeter.github.io/Module2_GEOS270/docs/content/Toblers_Law.html#/4">Bonini’s Paradox</a></li>
+<li>Generalizations when representing phenomena: i.e., Bonini’s Paradox</li>
 <li>Incomplete knowledge, misunderstandings, biases, etc.</li>
 </ul>
-
-<img data-src="images/confidence_interval_xkcd.png" class="r-stretch"><p>::: ::::</p>
+</div><div class="column" style="width:35%;">
+<p><img data-src="images/confidence_interval_xkcd.png"></p>
+</div>
+</div>
 </section>
 <section id="data-quality" class="slide level2">
 <h2>Data Quality</h2>
 <p>There is no standardized measure of data quality in GIS.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
 <li>Flaws may pass through many users before discovery.</li>
 <li>Must trust the data was collected and processed correctly.</li>
 <li>Risk of the users misinterpreting valid products.</li>
 </ul>
-
-<img data-src="images/cake.jpg" class="r-stretch"><p>When baking mistakes are obvious.<br>
-Often in GIS, they are not.</p>
-<p>::: ::::</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/cake.jpg"></p>
+<p>In baking mistakes are obvious. Often in GIS, they are not.</p>
+</div>
+</div>
 </section>
 <section id="data-quality-1" class="slide level2">
 <h2>Data Quality</h2>
@@ -372,163 +378,227 @@ Often in GIS, they are not.</p>
 <div class="columns">
 <div class="column" style="width:100%;">
 <p>The terms are related, but the distinction is <strong>very</strong> important.</p>
-<p><strong>Accuracy</strong>: The degree to which a set of measurements correctly matches the real world values. * How close is the measurement to the real value?</p>
-<p><strong>Precision</strong>: The degree of agreement between multiple measurements of the same real world phenomena. * How repeatable is the measurement?</p>
+<p><strong>Accuracy</strong>: The degree to which a set of measurements correctly matches the real world values.</p>
+<ul>
+<li>How close is the measurement to the real value?</li>
+</ul>
+<p><strong>Precision</strong>: The degree of agreement between multiple measurements of the same real world phenomena.</p>
+<ul>
+<li>How repeatable is the measurement?</li>
+</ul>
 </div>
 </div>
 </section>
 <section id="error-accuracy-precision-1" class="slide level2">
 <h2>Error: Accuracy &amp; Precision</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
-<li><strong>Accuracy</strong>: A systematic (consistent) offset from the real world value; errors have a <strong>bias</strong>.</li>
-<li><strong>Precision</strong>: A random offset from the real world value; errors are <strong>unbiased</strong></li>
+<li><strong>Accuracy</strong>: A systematic offset from the real world value
+<ul>
+<li>Errors are <em>biased</em></li>
+</ul></li>
+<li><strong>Precision</strong>: A random offset from the real world value
+<ul>
+<li>Errors are <em>unbiased</em></li>
+</ul></li>
 </ul>
-
-<img data-src="images/16-accuracy-vs-precision.png" class="r-stretch"><p>Accuracy and precision can be quantified.</p>
-<p>::: ::::</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/16-accuracy-vs-precision.png"></p>
+</div>
+</div>
 </section>
 <section id="quantifying-error" class="slide level2">
 <h2>Quantifying Error</h2>
-<p>Statistical methods can be used to quantify error.</p>
+<p>Statistical methods can be used to describe uncertainty.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
-<li>These measures won’t tell us for sure that we are correct, but they can give us some insight.</li>
+<li><p>Quantify the offset (bias) and dispersion (unbiased) of data points.</p></li>
+<li><p>Won’t tell us if we are correct with 100% certainty, but they can give us some insight.</p></li>
 </ul>
-
-<img data-src="images/16-accuracy-vs-precision2.png" class="r-stretch"><p>We can quantify any offset (bias) and the spread of the measurements (unbiased).</p>
-<p>::: ::::</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/16-accuracy-vs-precision2.png"></p>
+</div>
+</div>
 </section>
 <section id="quantifying-accuracy" class="slide level2">
 <h2>Quantifying Accuracy</h2>
-<p><strong>Mean Absolute Error (MAE)</strong>:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Mean Absolute Error (MAE)</strong></p>
 <ul>
-<li>The absolute value of the error averaged across all samples.</li>
-<li>How close the samples (observations or estimate) are to be to the true values.</li>
+<li>The absolute error for each sample
+<ul>
+<li>Averaged across all samples</li>
+</ul></li>
+<li>How close the data are to be to the true values</li>
 </ul>
-<p><span class="math inline">\(MAE = \frac{\sum\_{i=1}^N \lvert{x\_i-t\_i}\rvert}{N}\)</span></p>
-<p><span class="math inline">\(x\_i\)</span> = the ith sample value<br>
-<span class="math inline">\(t\_i\)</span> = the ith true value<br>
-<span class="math inline">\(N\)</span> = the total number of samples</p>
-<p>::: ::::</p>
+</div><div class="column" style="width:50%;">
+<p><span class="math inline">\(MAE = \frac{\sum_{i=1}^N \lvert{x_i-t_i}\rvert}{N}\)</span></p>
+<p><span class="math inline">\(x_i\)</span> = ith sample value<br>
+<span class="math inline">\(t_i\)</span> = ith true value<br>
+<span class="math inline">\(N\)</span> = number of samples</p>
+</div>
+</div>
 </section>
 <section id="quantifying-accuracy-1" class="slide level2">
 <h2>Quantifying Accuracy</h2>
-<p><strong>Mean Squared Error (MSE)</strong>:</p>
-<ul>
-<li>The squared error averaged across all samples.</li>
-<li>Similar to MAE, but more harshly penalizes <strong>large</strong> deviations.</li>
-<li>MSE is <strong>not</strong> in the same units as the original data.</li>
-</ul>
-<p><span class="math inline">\(MSE = \frac{\sum\_{i=1}^N \left({x\_i-t\_i}\right)^2}{N}\)</span></p>
-<p><span class="math inline">\(x\_i\)</span> = the ith sample value<br>
-<span class="math inline">\(t\_i\)</span> = the ith true value<br>
-<span class="math inline">\(N\)</span> = the total number of samples</p>
-<p>::: ::::</p>
-</section>
-<section id="quantifying-accuracy-2" class="slide level2">
-<h2>Quantifying Accuracy</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
 <p><strong>Root Mean Squared Error (RMSE)</strong>:</p>
 <ul>
-<li>The square root of the squared error averaged across all samples.</li>
-<li>Same as MSE, except:</li>
-<li>With the square root, RMSE <strong>is</strong> in the same units as the original data.</li>
+<li><p>More harshly penalizes <strong>large</strong> deviations.</p></li>
+<li><p>The squared error for each sample</p>
+<ul>
+<li>Averaged across all samples, the square root keeps the original units</li>
+</ul></li>
 </ul>
-<p><span class="math inline">\(RMSE = \sqrt{\frac{\sum\_{i=1}^N \left({x\_i-t\_i}\right)^2}{N}}\)</span></p>
-<p><span class="math inline">\(x\_i\)</span> = the ith sample value<br>
-<span class="math inline">\(t\_i\)</span> = the ith true value<br>
-<span class="math inline">\(N\)</span> = the total number of samples</p>
-<p>::: ::::</p>
+</div><div class="column" style="width:50%;">
+<p><span class="math inline">\(RMSE = \sqrt{\frac{\sum_{i=1}^N \left({x_i-t_i}\right)^2}{N}}\)</span></p>
+<p><span class="math inline">\(x_i\)</span> = ith sample value<br>
+<span class="math inline">\(t_i\)</span> = ith true value<br>
+<span class="math inline">\(N\)</span> = number of samples</p>
+</div>
+</div>
 </section>
 <section id="quantifying-precision" class="slide level2">
 <h2>Quantifying Precision</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
 <p><strong>Standard Deviation (<span class="math inline">\(\sigma\)</span>)</strong>:</p>
 <ul>
 <li>The square root of squared <strong>deviation</strong> averaged across all samples.</li>
-<li>similar to RMSE, except:</li>
-<li>Instead of characterizing error, it the dispersion of a dataset.</li>
+<li>Similar to RMSE, except:
+<ul>
+<li>Characterizing dispersion of data</li>
+</ul></li>
 </ul>
-<p><span class="math inline">\(\sigma=\sqrt{\frac{\sum\_{i=1}^N \left({x\_i-\overline{X}}\right)^2}{N}}\)</span></p>
-<p><span class="math inline">\(x\_i\)</span> = the ith sample value<br>
+</div><div class="column" style="width:50%;">
+<p><span class="math inline">\(\sigma=\sqrt{\frac{\sum_{i=1}^N \left({x_i-\overline{X}}\right)^2}{N}}\)</span></p>
+<p><span class="math inline">\(x_i\)</span> = ith sample value<br>
 <span class="math inline">\(\overline{X}\)</span> = the mean of all samples<br>
-<span class="math inline">\(N\)</span> = the total number of samples</p>
-<p>::: ::::</p>
+<span class="math inline">\(N\)</span> = number of samples</p>
+</div>
+</div>
 </section>
 <section id="quantifying-precision-1" class="slide level2">
 <h2>Quantifying Precision</h2>
-<p><strong>Confidence Intervals (CI)</strong>:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Confidence Intervals (CI)</strong> can be used to specify a confidence level (i.e., 90%, 95%, etc):</p>
 <ul>
-<li>Used to convey our confidence in the estimated average value.</li>
-<li>If the <span class="math inline">\(x\)</span> values are close together, we have higher confidence in <span class="math inline">\(\overline{X}\)</span>.</li>
-<li>If the <span class="math inline">\(x\)</span> values are more dispersed, we have lower confidence in <span class="math inline">\(\overline{X}\)</span>.</li>
+<li>For <strong>Normally Distributed</strong> data:
+<ul>
+<li><a href="https://cdnsciencepub.com/doi/full/10.1139/as-2021-0034#sec-3">Typically presented</a> as a range around the mean.</li>
+</ul></li>
 </ul>
-<p><span class="math inline">\(CI = \frac{\sigma}{\sqrt{N}} z\)</span></p>
-<p><span class="math inline">\(\sigma\)</span> = the standard deviation<br>
-<span class="math inline">\(N\)</span> = the total number of samples<br>
-<span class="math inline">\(z\)</span> = a <a href="https://en.wikipedia.org/wiki/Standard_score">z-score</a></p>
-<p>::: ::::</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/zscore.png"></p>
+</div>
+</div>
 </section>
 <section id="quantifying-precision-2" class="slide level2">
 <h2>Quantifying Precision</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
 <p><strong>Confidence Intervals (CI)</strong>:</p>
 <ul>
-<li>For <strong>Normally Distributed</strong> data:</li>
-<li>Can be used to specify a confidence level (i.e., 90%, 95%, etc).</li>
-<li><a href="https://cdnsciencepub.com/doi/full/10.1139/as-2021-0034#sec-3">Typically presented</a> as a range around the mean.</li>
+<li>Conveys our confidence in an estimate <span class="math inline">\(\overline{X} = \frac{\sum_{i=1}^N {x_i}}{N}\)</span></li>
+<li>If <span class="math inline">\(x_i\)</span> are close, we are more confident in <span class="math inline">\(\overline{X}\)</span>.</li>
+<li>If <span class="math inline">\(x_i\)</span> are dispersed, we are more confident in <span class="math inline">\(\overline{X}\)</span>.</li>
 </ul>
-
-<img data-src="images/zscore.png" class="r-stretch"><p>::: ::::</p>
+</div><div class="column" style="width:50%;">
+<p><span class="math inline">\(CI = \frac{\sigma}{\sqrt{N}} z\)</span></p>
+<p><span class="math inline">\(\sigma\)</span> = standard deviation<br>
+<span class="math inline">\(N\)</span> = number of samples<br>
+<span class="math inline">\(z\)</span> = a <a href="https://en.wikipedia.org/wiki/Standard_score">z-score</a></p>
+</div>
+</div>
 </section>
 <section id="quantifying-precision-3" class="slide level2">
 <h2>Quantifying Precision</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
 <p><strong>Inter Quartile Range (IQR)</strong>:</p>
 <ul>
-<li>For <strong>Non-normally Distributed</strong> data:</li>
+<li>For <strong>Non-normally Distributed</strong> data:
+<ul>
 <li><strong>Cannot</strong> be used to specify a confidence level.</li>
 <li>But it can give us some idea of the dispersion in a dataset.</li>
+</ul></li>
 </ul>
-
-<img data-src="images/IQR.png" class="r-stretch"><p>::: ::::</p>
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/IQR.jpg"></p>
+</div>
+</div>
 </section>
 <section id="vagueness-and-ambiguity" class="slide level2">
 <h2>Vagueness and Ambiguity</h2>
 <div class="columns">
 <div class="column" style="width:100%;">
-<p>The terms are related, but the distinction is <strong>very</strong> important.</p>
-<p><strong>Vagueness</strong>: When something is not clearly stated or defined. * Arises when boundaries or labels are poorly defined.</p>
-<p><strong>Ambiguity</strong>: When something can reasonably be interpreted in multiple ways. * Arises when terms or labels can apply to multiple features.</p>
+<p><strong>Vagueness</strong>: When something is not clearly stated or defined.</p>
+<ul>
+<li>When boundaries or labels are poorly defined.</li>
+</ul>
+<p><strong>Ambiguity</strong>: When something can reasonably be interpreted in multiple ways.</p>
+<ul>
+<li>When terms or labels can apply to multiple features.</li>
+</ul>
 </div>
 </div>
 </section>
 <section id="vagueness" class="slide level2">
 <h2>Vagueness</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
 <ul>
-<li><p>What does <strong>“London”</strong> refer to:</p></li>
-<li><p>London, UK?</p></li>
-<li><p>London, Ontario?</p></li>
-<li><p>London Drugs?</p></li>
-<li><p>The word <strong>“bank”</strong>:</p></li>
-<li><p>A financial institution?</p></li>
-<li><p>The edge of a river?</p></li>
+<li>What does <strong>“London”</strong> refer to:
+<ul>
+<li>London, UK?</li>
+<li>London, Ontario?</li>
+<li>London Drugs?</li>
+</ul></li>
+<li>The word <strong>“bank”</strong>:
+<ul>
+<li>A financial institution?</li>
+<li>The edge of a river?</li>
+</ul></li>
 </ul>
-
-<img data-src="images/vague_text.jpg" class="r-stretch"><p>::: ::::</p>
+</div><div class="column" style="width:45%;">
+<p><img data-src="images/vague_text.jpg"></p>
+</div>
+</div>
 </section>
 <section id="ambiguity" class="slide level2">
 <h2>Ambiguity</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
 <li>Interpretation requires context.</li>
 <li>Where does a forest end and a grassland begin?</li>
-<li>The position of objects are unclear or changeable.</li>
+<li>The position of objects are unclear or changeable.
+<ul>
 <li>Coastal boundary file - High tide? Low tide? Mean water level?</li>
+</ul></li>
 </ul>
-
-<img data-src="images/ambiguity.png" class="r-stretch"><p>::: ::::</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/ambiguity.png" style="width:150.0%"></p>
+</div>
+</div>
 </section>
 <section id="qualifying-vagueness-and-ambiguity" class="slide level2">
 <h2>Qualifying Vagueness and Ambiguity</h2>
 <div class="columns">
 <div class="column" style="width:100%;">
-<p>Ambiguity and vagueness are difficult to quantify numerically. But they still must be addressed whenever possible..</p>
-<p><strong>The key with these issues</strong>: * Present things clearly and thoroughly. Be explicit and transparent when conducting and communicating your work.</p>
+<p>Difficult to quantify numerically, but they must be addressed whenever possible.</p>
+<p><strong>The key with these issues</strong>:</p>
+<ul>
+<li>Present things clearly and thoroughly.
+<ul>
+<li>Be explicit and transparent when conducting and communicating your work.</li>
+</ul></li>
+</ul>
 </div>
 </div>
 </section></section>
@@ -557,7 +627,12 @@ Often in GIS, they are not.</p>
 <h2>Data Resolution</h2>
 <div class="columns">
 <div class="column" style="width:100%;">
-<p>The concentration of samples in space <strong>and</strong> time dictates the level of accuracy &amp; precision you can attain. * Lower resolution data is by definition less precise, but not necessarily less accurate. * High resolution data can be very precise, but have a significant bias. * What do you do if your data are collected at different resolutions? * Low resolution result in vagueness &amp; ambiguity.</p>
+<p>The concentration of samples in space <strong>and</strong> time dictates the level of accuracy &amp; precision you can attain.</p>
+<ul>
+<li>Lower resolution data is by definition less precise, but not necessarily less accurate.</li>
+<li>High resolution data can be very precise, but have a significant bias.</li>
+<li>What do you do if your data are collected at different resolutions?</li>
+</ul>
 </div>
 </div>
 </section>
@@ -565,27 +640,60 @@ Often in GIS, they are not.</p>
 <h2>Data Entry</h2>
 <div class="columns">
 <div class="column" style="width:100%;">
-<p>Things we do have some control over: * Input datasets &amp; sample sizes. * Typos during tabular data entry. * Digitizing errors when creating vector features. + <strong>Gaps</strong>: there should be a feature, but there is not. + <strong>Overlaps</strong>: one polygon sits over another polygon. + <strong>Slivers</strong>: a feature is created between two features when it should not be.</p>
+<p>Others occur when we create data.</p>
+<ul>
+<li>Insufficient sample sizes</li>
+<li>Typos during tabular data entry</li>
+<li>Digitization errors</li>
+<li>Communication issues - unclear reports, maps, etc.</li>
+</ul>
 </div>
 </div>
 </section>
 <section id="digitization-errors" class="slide level2">
 <h2>Digitization Errors</h2>
-<p>Errors that arise when creating vector features: * <strong>Slivers</strong>: a feature is created between two features when it should not be. * <strong>Gaps</strong>: there should be a feature, but there is not. * <strong>Overlaps</strong>: one polygon sits over another polygon.</p>
-
-<img data-src="images/digitizing.jpg" class="r-stretch quarto-figure-center"><p class="caption">missing</p><p>::: ::::</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Errors that arise when creating vector features:</p>
+<ul>
+<li><strong>Slivers</strong>: a feature is created between two features when it should not be.</li>
+<li><strong>Gaps</strong>: there should be a feature, but there is not.</li>
+<li><strong>Overlaps</strong>: one polygon sits over another polygon.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/digitizing.jpg"></p>
+</div>
+</div>
 </section>
 <section id="digitization-errors-1" class="slide level2">
 <h2>Digitization Errors</h2>
-<p>Errors that arise when creating vector features: * <strong>Under/overshoots</strong>: vertex misses a connection. * <strong>Extra nodes</strong>: unnecessary vertices. * <strong>Missing features</strong>: features or attributes missing.</p>
-
-<img data-src="images/digitizingerrors.png" class="r-stretch quarto-figure-center"><p class="caption">missing</p><p>::: ::::</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Errors that arise when creating vector features:</p>
+<ul>
+<li><strong>Under/overshoots</strong>: vertex misses a connection.</li>
+<li><strong>Extra nodes</strong>: unnecessary vertices.</li>
+<li><strong>Missing features</strong>: features or attributes missing.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/digitizingerrors.png"></p>
+</div>
+</div>
 </section>
 <section id="labels-and-boundaries" class="slide level2">
 <h2>Labels and Boundaries</h2>
 <div class="columns">
 <div class="column" style="width:100%;">
-<p>Since geographic phenomena often don’t have clear, natural units, we are often forced to assign zones and labels in our work (i.e.&nbsp;<strong>Census Data</strong>). * A convenient way of simplifying complex processes. * Often <strong>vague</strong> and/or <strong>ambiguous</strong>. * May be difficult to defend because they are arbitrary. * Where to draw a boundary and what to call a zone are likely to vary significantly between different people/groups.</p>
+<p>Geographic phenomena often don’t have clear, natural units. We are often forced to assign boundaries (i.e.&nbsp;<strong>Census Data</strong>).</p>
+<ul>
+<li>A convenient way of simplifying complex processes</li>
+<li>Often <strong>vague</strong> and/or <strong>ambiguous</strong></li>
+<li>May be difficult to defend because they are arbitrary</li>
+<li>Where to draw a boundary and what to call a zone?
+<ul>
+<li>Likely to vary significantly between different people</li>
+</ul></li>
+</ul>
 </div>
 </div>
 </section>
@@ -593,29 +701,25 @@ Often in GIS, they are not.</p>
 <h2>Data Aggregation</h2>
 <div class="columns">
 <div class="column" style="width:100%;">
-<p>Much of the data we use to learn about society is collected in aggregate. We take average values for many individuals within a group or area (i.e.&nbsp;<strong>Census Data</strong>). * Lets us explore the general attributes (e.g.&nbsp;mean, median, etc.) for each group/area. * Compare the attributes between different groups or regions * Determine the allocation of resources.</p>
+<p>Much of the data we use to learn about society is released in aggregate: average values for many individuals within a group or area (i.e.&nbsp;<strong>Census Data</strong>).</p>
+<ul>
+<li>Lets us explore the general attributes</li>
+<li>Compare the attributes between different groups or regions</li>
+<li>Determine the allocation of resources</li>
+</ul>
 </div>
 </div>
 </section>
 <section id="conversion-and-processing" class="slide level2">
 <h2>Conversion and Processing</h2>
-<div class="columns">
-<div class="column" style="width:100%;">
-<p>Even with “perfect” data; GIS operations <a href="https://june-skeeter.github.io/Module5_GEOS270/docs/Content_Part4.html#raster-vs-vector-resolution-and-conversion-errrors">can add uncertainty</a>:</p>
+<p>Even with “perfect” data; GIS operations <a href="https://www.youtube.com/watch?v=bG5E8YzqI0A">add uncertainty</a>:</p>
 <ul>
-<li>Re-projecting to different coordinate systems.</li>
-<li>Converting between data types.</li>
+<li>Re-projecting to different coordinate systems</li>
+<li>Converting between data types</li>
 <li>Perform generalizations (i.e.&nbsp;data classification)</li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/raster2vector.png"></p>
-<p></p><figcaption>missing</figcaption><p></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
+
+<img data-src="images/raster2vector.png" class="r-stretch"></section>
 <section id="logical-fallacies" class="slide level2">
 <h2>Logical Fallacies</h2>
 <div class="columns">
@@ -624,8 +728,10 @@ Often in GIS, they are not.</p>
 <ul>
 <li>Can be made both by accident and on <em>purpose</em>.</li>
 <li>Often lacking evidence to support the claims/decisions made, or evidence is presented in a misleading way.</li>
-<li>“Hasty generalizations” are an example of logical fallacies:</li>
+<li>“Hasty generalizations” are an example of logical fallacies:
+<ul>
 <li>‘I saw a violent protester on TV … Protesters are inciting violence.’</li>
+</ul></li>
 </ul>
 </div>
 </div>
@@ -637,8 +743,10 @@ Often in GIS, they are not.</p>
 <p>Applying data collected/presented in aggregate for a group/region and applying it to an individual or specific place.</p>
 <ul>
 <li>You cannot make an assumption about individuals within a group based on the aggregate data for that group.</li>
-<li>Census data is averaged for an area, the information about individual values is lost.</li>
+<li>Census data is averaged for an area, the information about individual values is lost.
+<ul>
 <li>Basically - don’t make assumptions about individuals.</li>
+</ul></li>
 </ul>
 </div>
 </div>
@@ -649,9 +757,11 @@ Often in GIS, they are not.</p>
 <div class="column" style="width:100%;">
 <p>Occurs when we take aggregated data and aggregate it again at a higher level.</p>
 <ul>
-<li>Take the average income by census DA for the city of Vancouver.</li>
+<li>Take the average income by census DA for the city of Vancouver.
+<ul>
 <li>Average those across the city Vancouver, and you won’t get the correct value.</li>
 <li>You are comparing across units of different sizes/populations</li>
+</ul></li>
 </ul>
 </div>
 </div>
@@ -659,51 +769,74 @@ Often in GIS, they are not.</p>
 <section id="atomistic-fallacy-1" class="slide level2">
 <h2>Atomistic Fallacy</h2>
 
-<img data-src="images/Atomistic_2.png" class="r-stretch quarto-figure-center"><p class="caption">missing</p><p><a href="https://github.com/June-Skeeter/Module5_GEOS270/blob/main/data/AtomisticFallacy.zip">See here for a proof</a></p>
-<p>::: ::::</p>
+<img data-src="images/Atomistic_2.png" class="r-stretch"><p><a href="https://github.com/GEOS270/LabData/raw/main/Mod6/AtomisticFallacy.zip">See here for a proof</a></p>
 </section>
 <section id="atomistic-fallacy-2" class="slide level2">
 <h2>Atomistic Fallacy</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
 <p>The US Electoral College is an example of this in practice:</p>
 <ul>
-<li>Totaling votes <strong>per</strong> state.</li>
-<li>… then totaling “delegates” <strong>by</strong> state.</li>
+<li>Totaling votes <strong>per</strong> state … then totaling “delegates” <strong>by</strong> state.</li>
 </ul>
-
-<img data-src="images/atomistic.png" class="r-stretch quarto-figure-center"><p class="caption">missing</p><p>::: ::::</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/atomistic.png"></p>
+</div>
+</div>
 </section>
 <section id="modifiable-areal-unit-problem" class="slide level2">
 <h2>Modifiable Areal Unit Problem</h2>
-<p>Modifiable, arbitrary boundaries can have a significant impact on descriptive statistics for areas. * When areas are grouped together, the way you choose to group them can change the values of the groups. * See this <a href="https://june-skeeter.github.io/Module5_GEOS270/docs/Content_Part4.html#error">video</a> for more context.</p>
-
-<img data-src="images/MAUP1.png" class="r-stretch quarto-figure-center"><p class="caption">missing</p><p>::: ::::</p>
+<p>Modifiable, arbitrary boundaries can have a significant impact on descriptive statistics for areas.</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>When areas are grouped together, the way you choose to group them can change the values of the groups.</li>
+<li>See this <a href="https://www.youtube.com/watch?v=w-DMtRJrtWA">video</a> for more context.</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/MAUP1.png"></p>
+</div>
+</div>
 </section>
 <section id="modifiable-areal-unit-problem-1" class="slide level2">
 <h2>Modifiable Areal Unit Problem</h2>
-<p>Data collected at a finer level of detail is being combined into larger areas of lower detail that can be manipulated. * Used to imply things that are not necessarily true. * Serious ethical implications. * Gerrymandering is a prime example.</p>
-
-<img data-src="images/gerrymander_0.png" class="r-stretch quarto-figure-center"><p class="caption">missing</p><p>::: ::::</p>
+<p>Data collected at a finer level of detail is being combined into larger areas of lower detail that can be manipulated.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Used to imply things that are not necessarily true.</li>
+<li>Serious ethical implications.</li>
+<li>Gerrymandering is a prime example.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/gerrymander_0.png"></p>
+</div>
+</div>
 </section>
 <section id="modifiable-areal-unit-problem-2" class="slide level2">
 <h2>Modifiable Areal Unit Problem</h2>
 
-<img data-src="images/gerrymander_nc.png" class="r-stretch quarto-figure-center"><p class="caption">missing</p><p>::: ::::</p>
-</section>
+<img data-src="images/gerrymander_nc.png" class="r-stretch"></section>
 <section id="modifiable-areal-unit-problem-3" class="slide level2">
 <h2>Modifiable Areal Unit Problem</h2>
 
-<img data-src="images/gerrymander_md.png" class="r-stretch quarto-figure-center"><p class="caption">missing</p><p>::: ::::</p>
-</section>
+<img data-src="images/gerrymander_md.png" class="r-stretch"></section>
 <section id="modifiable-areal-unit-problem-4" class="slide level2">
 <h2>Modifiable Areal Unit Problem</h2>
 
-<img data-src="images/gerrymander_al.png" class="r-stretch quarto-figure-center"><p class="caption">missing</p><p>::: ::::</p>
-</section>
+<img data-src="images/gerrymander_al.png" class="r-stretch"></section>
 <section id="error-propagation" class="slide level2">
 <h2>Error Propagation</h2>
-<p>Errors are <strong>cumulative</strong>: * Uncertainty will propagate through the model/system.</p>
-
-<img data-src="images/error_prop.jpg" class="r-stretch quarto-figure-center"><p class="caption">missing</p><p>::: ::::</p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>Errors are <strong>cumulative</strong>:</p>
+<ul>
+<li>Uncertainty will propagate through an analysis</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<p><img data-src="images/error_prop.jpg"></p>
+</div>
+</div>
 
 <div class="footer footer-default">
 <p><a href="https://geos270.github.io/">Back to Course Modules</a></p>
