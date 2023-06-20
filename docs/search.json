@@ -473,35 +473,35 @@
     "href": "Ethics_in_GIS/Slides.html#what-is-ethics",
     "title": "Lecture Slides",
     "section": "What is Ethics",
-    "text": "What is Ethics\n\n\nEthics is a branch of philosophy that deals with the nature of right and wrong. It is a theory or set of standards that inform moral practice.\n\nEthics and legality are not synonymous\nThough the laws we have constructed as a society may be informed by morality"
+    "text": "What is Ethics\nA branch of philosophy that deals with the nature of right and wrong. Theory and standards that inform one’s moral practice.\n\n\n\nEthics and legality are not synonymous\n\nLaws society has constructed may be informed by ethics"
   },
   {
     "objectID": "Ethics_in_GIS/Slides.html#ethics-vs.-legality",
     "href": "Ethics_in_GIS/Slides.html#ethics-vs.-legality",
     "title": "Lecture Slides",
     "section": "Ethics vs. Legality",
-    "text": "Ethics vs. Legality\n\n\n\nLegal but Unethical\n\n\nEthical but Illegal"
+    "text": "Ethics vs. Legality\n\n\n\nLegal but Unethical\n\n\n\n\nEthical but Illegal"
   },
   {
     "objectID": "Ethics_in_GIS/Slides.html#ethics-in-science",
     "href": "Ethics_in_GIS/Slides.html#ethics-in-science",
     "title": "Lecture Slides",
     "section": "Ethics in Science",
-    "text": "Ethics in Science\n\n\nResearch often involves handling the private, personal information about individuals and minority groups:\n\nPotential participants must be able to trust that their information will be used in a safe and respected manner.\nIn some fields, ethics boards often review research proposals to ensure best practices are used.\nHow will the data be used?\nWho will have access to data/results?\nWhat identifying information will be used/released?"
-  },
-  {
-    "objectID": "Ethics_in_GIS/Slides.html#ethics-in-gis-1",
-    "href": "Ethics_in_GIS/Slides.html#ethics-in-gis-1",
-    "title": "Lecture Slides",
-    "section": "Ethics in GIS",
-    "text": "Ethics in GIS\n\n\nGIS has the potential to be more intrusive in to people’s every day lives other sciences:\n\nWe can know where people are at any given time\nWe can guess at what they are doing reasonably well\nWe can know where people shop, approximately how much money they make, who they know, and to which organizations they belong\nWe can know if they belong to minority groups:\nE.g., racial minorities, religious minorities, political groups, LGBT+"
+    "text": "Ethics in Science\n\n\nResearch often involves handling the sensitive information:\n\nInformation will be used in a safe and respectful way\nIn some fields, ethics boards review research proposals to ensure best practices are used\n\nHow will the data be used?\nWho will have access to data/results?\nWhat identifying information will be used/released?"
   },
   {
     "objectID": "Ethics_in_GIS/Slides.html#data-privacy-and-security",
     "href": "Ethics_in_GIS/Slides.html#data-privacy-and-security",
     "title": "Lecture Slides",
     "section": "Data Privacy and Security",
-    "text": "Data Privacy and Security\n\n\nMore detail gives = more accurate; allows for better decision making but infringes on privacy.\n\nHow specific is too specific?\nPoint locations risk exposing personal information\nGuidelines surrounding exposure of information\nPublic health agencies don’t release information about individuals\nStats Canada masks census data when they don’t get enough respondents"
+    "text": "Data Privacy and Security\nHigher resolution data = more accurate representation of the phenomena.\n\nAllows for better decision making but infringes on privacy\nHow specific is too specific?\n\nPoint locations risk exposing personal information"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#data-privacy-and-security-1",
+    "href": "Ethics_in_GIS/Slides.html#data-privacy-and-security-1",
+    "title": "Lecture Slides",
+    "section": "Data Privacy and Security",
+    "text": "Data Privacy and Security\nOrganizations have guidelines surrounding exposure of information.\n\n\n\nPublic health agencies don’t release information about individuals\nStats Canada masks census blocks with low response rates"
   },
   {
     "objectID": "Ethics_in_GIS/Slides.html#the-power-of-a-line",
@@ -515,70 +515,77 @@
     "href": "Ethics_in_GIS/Slides.html#the-power-of-a-line-1",
     "title": "Lecture Slides",
     "section": "The Power of a Line",
-    "text": "The Power of a Line\n\n\nBorders are often arbitrary and modifiable.\n\nThink back to the modifiable areal unit problem\nThe decisions of a few can impact many"
+    "text": "The Power of a Line\nBorders are often arbitrary and modifiable.\n\n\n\nThink back to the modifiable areal unit problem\n\nThe decisions of a few can impact many"
   },
   {
     "objectID": "Ethics_in_GIS/Slides.html#redlining",
     "href": "Ethics_in_GIS/Slides.html#redlining",
     "title": "Lecture Slides",
     "section": "Redlining",
-    "text": "Redlining\n\n\nThe systematic denial of services to racially marginalized groups by government and lending institutions in order to forcibly segregated communities.\n\nFor much of the 20th century, redlining was legal and wide spread across North American cities. The practice has been more thoroughly documented and researched in the US.\nIt is very important to note that redlining occurred in Canada as well (source)"
+    "text": "Redlining\n\n\nThe systematic denial of services to marginalized groups by governments and banks used it to segregate communities\n\nDirect impact on transfer of inter-generational wealth"
+  },
+  {
+    "objectID": "Ethics_in_GIS/Slides.html#redlining-1",
+    "href": "Ethics_in_GIS/Slides.html#redlining-1",
+    "title": "Lecture Slides",
+    "section": "Redlining",
+    "text": "Redlining\n\n\nFor much of the 20th century, redlining was legal and wide spread across North American cities.\n\nMore researched in the US\nImportant to note it occurred in Canada as well\n\nHarris & Forester, 2003"
   },
   {
     "objectID": "Ethics_in_GIS/Slides.html#data-representation",
     "href": "Ethics_in_GIS/Slides.html#data-representation",
     "title": "Lecture Slides",
     "section": "Data Representation",
-    "text": "Data Representation\n\n\nEvery cartographic choice you make can have ramifications.\n\nHow we choose to display our data can have a big impact on how it is perceived\nMaps influence the way people think\nThey can reinforce (or counter) biases individuals may hold\nAll maps lie, but some lie more than others.\nAbstraction is a necessary part of map making\nBut it needs to be done carefully"
+    "text": "Data Representation\n\n\nEvery cartographic choice can have ramifications.\n\nHow we display data impacts how it is perceived\n\nMaps influence the way people think\nThey can reinforce (or counter) biases\n\nAll maps lie, but some lie more than others.\n\nAbstraction is a necessary part of map making\nBut it needs to be done carefully"
   },
   {
     "objectID": "Ethics_in_GIS/Slides.html#all-maps-lie",
     "href": "Ethics_in_GIS/Slides.html#all-maps-lie",
     "title": "Lecture Slides",
     "section": "All Maps Lie",
-    "text": "All Maps Lie\n\n\nSometimes the lies are intentional.\n\nMaps can be crafted to sway public opinion and influence political outcomes\nThis is a serious ethical issue"
+    "text": "All Maps Lie\nSometimes the lies are intentional.\n\n\n\nMaps can be crafted to sway public opinion and influence political outcomes\nThis is a serious ethical issue"
   },
   {
     "objectID": "Ethics_in_GIS/Slides.html#all-maps-lie-1",
     "href": "Ethics_in_GIS/Slides.html#all-maps-lie-1",
     "title": "Lecture Slides",
     "section": "All Maps Lie",
-    "text": "All Maps Lie\n\n\nSometimes the lies are careless oversights.\n\nDifferent map projections cause areas to be different sizes\nIt may not be an intentional choice by the map maker\nNonetheless it will influence the way people think"
+    "text": "All Maps Lie\nSometimes the lies are careless oversights.\n\n\n\nDifferent projections cause areas to be different sizes\n\nMay intention of the map maker\nNonetheless it will influence the way people think"
   },
   {
     "objectID": "Ethics_in_GIS/Slides.html#all-maps-lie-2",
     "href": "Ethics_in_GIS/Slides.html#all-maps-lie-2",
     "title": "Lecture Slides",
     "section": "All Maps Lie",
-    "text": "All Maps Lie\n\n\nSometimes the lack of context is the issue.\n\nDifferent unit sizes mean this map over-represents republicans\nIt may not be an intentional choice by the map maker\nNonetheless it will influence the way people think\nThere are strategies to correct these issues\nMore context\nAdjust the map\n\n\n\nUS House of Representatives 2022 Election"
+    "text": "All Maps Lie\n\n\nSometimes the lack of context is the issue.\n\nMap over-represents republican votes\n\nIt may not be an intentional choice\nNonetheless it influences the way people think\n\n\n\n\nUS House of Representatives 2022 Election"
   },
   {
     "objectID": "Ethics_in_GIS/Slides.html#all-maps-lie-3",
     "href": "Ethics_in_GIS/Slides.html#all-maps-lie-3",
     "title": "Lecture Slides",
     "section": "All Maps Lie",
-    "text": "All Maps Lie\n\n\nSometimes the lack of context is the issue.\n\nDifferent unit sizes mean this map over-represents republicans\nIt may not be an intentional choice by the map maker\nNonetheless it will influence the way people think\nThere are strategies to correct these issues\nMore context\nAdjust the map\n\n\n\nUS House of Representatives 2022 Election\nEqually Sized Districts"
+    "text": "All Maps Lie\n\n\nThere are strategies to correct these issues\n\nAdjust the map area to give more context\n\n\n\nUS House of Representatives 2022 Election with Equally Sized Districts"
   },
   {
     "objectID": "Ethics_in_GIS/Slides.html#all-maps-lie-4",
     "href": "Ethics_in_GIS/Slides.html#all-maps-lie-4",
     "title": "Lecture Slides",
     "section": "All Maps Lie",
-    "text": "All Maps Lie\n\n\nSometimes the lack of context is the issue.\n\nDifferent unit sizes mean this map over-represents republicans\nIt may not be an intentional choice by the map maker\nNonetheless it will influence the way people think\nThere are strategies to correct these issues\nMore context\nAdjust the map\n\n\n\nCartograms of 2020 Presidential Election"
+    "text": "All Maps Lie\n\n\nThere are strategies to correct these issues\n\nAdjust the map area to give more context\nCartograms: Sacrifice spatial accuracy to emphasize other attributes"
   },
   {
     "objectID": "Ethics_in_GIS/Slides.html#who-has-access-to-gis",
     "href": "Ethics_in_GIS/Slides.html#who-has-access-to-gis",
     "title": "Lecture Slides",
     "section": "Who Has Access to GIS?",
-    "text": "Who Has Access to GIS?\n\n\nWho has access to GIS? ESRI products (e.g. ArcGIS Pro) have very expensive licensing fees. Beyond just the cost of the software, hardware to run GIS is not always accessible, and GIS training takes time.\n\nThere are options to make GIS more accessible to the public\nBut they can only go so far"
+    "text": "Who Has Access to GIS?\n\n\nMany GIS products (e.g. ArcGIS Pro) have expensive licensing fees.\n\nBeyond just the cost of the software:\n\nHardware to run GIS is not always accessible\nTraining takes time.\n\nOptions to make GIS more accessible to the public\n\nBut they can only go so far"
   },
   {
     "objectID": "Ethics_in_GIS/Slides.html#open-source-gis",
     "href": "Ethics_in_GIS/Slides.html#open-source-gis",
     "title": "Lecture Slides",
     "section": "Open Source GIS",
-    "text": "Open Source GIS\n\n\nOpen source software is free to access, platforms are created and maintain by volunteers. There are open source alternatives that can provide some access to GIS:\n\nQGIS is an application with similar functionality to ArcGIS Pro.\nPython, R, JavaScript etc. are open source programming languages that have many GIS packages\nFree help pages like stackexchange and github doc’s pages e.g., qgis can help with training, but they require a base level of knowledge first."
+    "text": "Open Source GIS\n\n\nFree to access; created and maintain by volunteers. There are open source alternatives for GIS:\n\nQGIS is an application with similar functionality to ArcGIS Pro.\nPython, R, JavaScript etc. are open source programming languages that have many GIS packages\nSites like stackexchange and docs pages (eg qgis)\n\nThey require a base level of knowledge first"
   },
   {
     "objectID": "Ethics_in_GIS/Slides.html#public-participation-in-gis",
@@ -592,49 +599,49 @@
     "href": "Ethics_in_GIS/Slides.html#volunteer-geographic-information",
     "title": "Lecture Slides",
     "section": "Volunteer Geographic Information",
-    "text": "Volunteer Geographic Information\n\n\nThe collection, processing, assembly, and dissemination of geographic data provided voluntarily by individuals. Is sometimes, part of participatory approaches to GIS; sometimes its just using freely provided information that people are unaware of.\n\nThis is equally likely to be used for commercial purposes as it is for participatory, educational, and other non-commercial uses: E.g. Trip Advisor, Flickr, Twitter, etc.\nUsually some sort of “wisdom of the crowds” is used to validate data, or else data verification and validation is performed by the organizing group\nSee Chae et al. (2025)"
+    "text": "Volunteer Geographic Information\n\n\nThe collection, processing, assembly, and dissemination of geographic data provided voluntarily.\n\nUsually some sort of “wisdom of the crowds” is used to validate data, or else data verification and validation is performed by the organizing group\n\nSee Chae et al. (2015)\n\nEqually likely to be used for commercial purposes:\n\nE.g. Trip Advisor, Flickr, Twitter, etc."
   },
   {
     "objectID": "Ethics_in_GIS/Slides.html#citizen-science",
     "href": "Ethics_in_GIS/Slides.html#citizen-science",
     "title": "Lecture Slides",
     "section": "Citizen Science",
-    "text": "Citizen Science\n\n\nAllows interested volunteers and researchers to team up to address some scientific question.\n\nVolunteers provide the “leg work” of data collection, data cleaning, and initial interpretation of field data; guided by scientific research experts\nParticipation levels can range from simple data collection through to contributing to academic journal submission.\nThe COCORAHS platform is a great example!"
+    "text": "Citizen Science\n\n\nAllows interested volunteers and researchers to team up to address some scientific question.\n\nVolunteers provide the “leg work” of data collection, data cleaning, and initial interpretation of field data; guided by scientific research experts\nParticipation levels can range from simple data collection through to contributing to academic journal submission.\n\nThe COCORAHS platform is a great example!"
   },
   {
     "objectID": "Ethics_in_GIS/Slides.html#participatory-gis",
     "href": "Ethics_in_GIS/Slides.html#participatory-gis",
     "title": "Lecture Slides",
     "section": "Participatory GIS",
-    "text": "Participatory GIS\n\n\nThe goal is the empowerment and inclusion of marginalized people. These groups tend to have little or no voice due to extremes of location, poverty, racism, sexism, anti-religious feelings, etc.\n\nBegins through a process of community mapping, with many steps and a set of long-term goals for the community\nMembers of the community generate their own data and construct their own maps\nBring members together to share their maps and combine into a community map/database\nThese community efforts can then be coded into a GIS to systematize the community’s knowledge and allow for greater spatial analysis to occur\nEmphasizes engagement throughout the GIS process"
+    "text": "Participatory GIS\n\n\nPrioritizes empowerment and inclusion of marginalized people.\n\nMembers of a community generate their own data\n\nPeople share their data and combine into a community map/database\nCoded into a GIS to systematize the knowledge and allow for spatial analysis\n\nEmphasizes engagement throughout the GIS process"
   },
   {
-    "objectID": "Ethics_in_GIS/Slides.html#inuit-land-use-and-occupancy-project",
-    "href": "Ethics_in_GIS/Slides.html#inuit-land-use-and-occupancy-project",
+    "objectID": "Ethics_in_GIS/Slides.html#inuit-land-use-and-occupancy",
+    "href": "Ethics_in_GIS/Slides.html#inuit-land-use-and-occupancy",
     "title": "Lecture Slides",
-    "section": "Inuit Land Use and Occupancy Project",
-    "text": "Inuit Land Use and Occupancy Project\n\n\nParticipatory GIS to safeguard Inuit rights to Arctic lands and waters.\n\nInuit People became increasingly concerned about resource extraction projects\nCommissioned a study on land use and occupancy that was instrumental in the establishment of Nunavut"
+    "section": "Inuit Land Use and Occupancy",
+    "text": "Inuit Land Use and Occupancy\n\n\nParticipatory GIS to safeguard Inuit rights to Arctic lands and waters.\n\nInuit People became increasingly concerned about resource extraction projects\nCommissioned a study on land use and occupancy that was instrumental in the establishment of Nunavut"
   },
   {
-    "objectID": "Ethics_in_GIS/Slides.html#inuit-land-use-and-occupancy-project-1",
-    "href": "Ethics_in_GIS/Slides.html#inuit-land-use-and-occupancy-project-1",
+    "objectID": "Ethics_in_GIS/Slides.html#inuit-land-use-and-occupancy-1",
+    "href": "Ethics_in_GIS/Slides.html#inuit-land-use-and-occupancy-1",
     "title": "Lecture Slides",
-    "section": "Inuit Land Use and Occupancy Project",
-    "text": "Inuit Land Use and Occupancy Project\n\n\nNo references to published work or other secondary sources of information:\n\nExisting maps and information had significant colonial bias\n100 % Original Data collection from Inuit Sources"
+    "section": "Inuit Land Use and Occupancy",
+    "text": "Inuit Land Use and Occupancy\n\n\nNo references to published work or other secondary sources of information:\n\nExisting maps and information had significant colonial bias\n100 % Original Data collection from Inuit Sources"
   },
   {
     "objectID": "Ethics_in_GIS/Slides.html#positionality",
     "href": "Ethics_in_GIS/Slides.html#positionality",
     "title": "Lecture Slides",
     "section": "Positionality",
-    "text": "Positionality\n\n\nIt is important to reflect on your relation to your work. In the social sciences, positionality is especially important, because a researches privileges, biases, and preconceptions can drastically impact the people and communities they are working with.\n\nIn some of the “hard” sciences, there are often a claims of total objectivity, but complete objectivity is impossible.\nNo one is completely objective, that must be understood and acknowledged regardless of the field."
+    "text": "Positionality\n\n\nReflect on your relation to your work: a researcher’s privileges, biases, and preconceptions can impact the communities they are work with and the results they produce.\n\nIn the “hard” sciences, there is often a claim of total objectivity, but total objectivity is impossible\n\nNo one can be 100% objective\nMust be acknowledged regardless of the field"
   },
   {
     "objectID": "Ethics_in_GIS/Slides.html#positionality-1",
     "href": "Ethics_in_GIS/Slides.html#positionality-1",
     "title": "Lecture Slides",
     "section": "Positionality",
-    "text": "Positionality\n\n\nSome important questions to ask yourself, and things you may want to disclose depending on the context.\n\nWho am I and where do I come from?\nWhat is my relationship to the community/field I am working in?\nWhat are my motivations for this work?\nWhat biases may I have and how may my past experiences influence how I engage with this work?"
+    "text": "Positionality\n\n\nSome important questions to ask yourself, and points you may want to disclose depending on the context.\n\nWho am I and where do I come from?\nWhat is my relationship to the community/field I am working in?\nWhat are my motivations for this work?\n\nWhat biases may I have and how may my past experiences influence how I engage with this work?"
   },
   {
     "objectID": "History_of_GIS/Slides.html#history-of-gis-1",
@@ -2016,6 +2023,13 @@
     "text": "Sampling\n\n\nThe process of selecting points from within an area or population, called a sample frame.\n\nHow we define the sample frame and choose samples can determine the quality of our data\n\nWe want to maximize representativeness of the sample\nBut also minimize effort and expense associated with sampling"
   },
   {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#scientific-sampling",
+    "href": "Spatial_Sampling_Methods/Slides.html#scientific-sampling",
+    "title": "Lecture Slides",
+    "section": "Scientific Sampling",
+    "text": "Scientific Sampling\n\n\nRequires each element in the sample frame have a known and pre-specified chance of selection.\n\nBiased Sampling: some elements have a greater or lower chance of being selected\nUnbiased: every element has an equal chance of being selected"
+  },
+  {
     "objectID": "Spatial_Sampling_Methods/Slides.html#random-sampling",
     "href": "Spatial_Sampling_Methods/Slides.html#random-sampling",
     "title": "Lecture Slides",
@@ -2065,6 +2079,13 @@
     "text": "Systematic Sampling\nA random starting point is chosen and a fixed sampling interval is used.\n\n\n\nPremise behind satellite data collection\n\nOften good for continuous fields\n\neg., land cover"
   },
   {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#systematic-sampling-3",
+    "href": "Spatial_Sampling_Methods/Slides.html#systematic-sampling-3",
+    "title": "Lecture Slides",
+    "section": "Systematic Sampling",
+    "text": "Systematic Sampling\nA random starting point is chosen and a fixed sampling interval is used.\n\n\n\nNot ideal for discrete objects that exhibit periodicity\n\nCity blocks, Roads, etc."
+  },
+  {
     "objectID": "Spatial_Sampling_Methods/Slides.html#stratified-sampling",
     "href": "Spatial_Sampling_Methods/Slides.html#stratified-sampling",
     "title": "Lecture Slides",
@@ -2084,6 +2105,13 @@
     "title": "Lecture Slides",
     "section": "Cluster Sampling",
     "text": "Cluster Sampling\nIntense sampling of features in clusters around a number of selected locations\n\n\n\nLocations can be selected for specific features, e.g.,:\n\nShopping centers\nKnown history of invasive species\n\nOr, locations can be selected at random across the grid"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#cluster-sampling-1",
+    "href": "Spatial_Sampling_Methods/Slides.html#cluster-sampling-1",
+    "title": "Lecture Slides",
+    "section": "Cluster Sampling",
+    "text": "Cluster Sampling\nIntense sampling of features in clusters around a number of selected locations\n\n\n\nMore efficient use of time and resources\n\nMay not be representative"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#transect-sampling",
@@ -2112,6 +2140,13 @@
     "title": "Lecture Slides",
     "section": "Spatial Autocorrelation",
     "text": "Spatial Autocorrelation"
+  },
+  {
+    "objectID": "Spatial_Sampling_Methods/Slides.html#spatial-autocorrelation-2",
+    "href": "Spatial_Sampling_Methods/Slides.html#spatial-autocorrelation-2",
+    "title": "Lecture Slides",
+    "section": "Spatial Autocorrelation",
+    "text": "Spatial Autocorrelation\n\n\nCorrelation does not imply causation!\n\nThere could be relationship between features\n\nOr a relationship to a third object that determines the values of both\nOr a completely random coincidence"
   },
   {
     "objectID": "Spatial_Sampling_Methods/Slides.html#statistical-assumptions",
@@ -2716,13 +2751,6 @@
     "text": "Quantifying Accuracy\n\n\nRoot Mean Squared Error (RMSE):\n\nMore harshly penalizes large deviations.\nThe squared error for each sample\n\nAveraged across all samples, the square root keeps the original units\n\n\n\n\\(RMSE = \\sqrt{\\frac{\\sum_{i=1}^N \\left({x_i-t_i}\\right)^2}{N}}\\)\n\\(x_i\\) = ith sample value\n\\(t_i\\) = ith true value\n\\(N\\) = number of samples"
   },
   {
-    "objectID": "Uncertainty_in_GIS/Slides.html#quantifying-accuracy-2",
-    "href": "Uncertainty_in_GIS/Slides.html#quantifying-accuracy-2",
-    "title": "Lecture Slides",
-    "section": "Quantifying Accuracy",
-    "text": "Quantifying Accuracy\n\n\nRoot Mean Squared Error (RMSE):\n\nMore harshly penalizes large deviations.\nThe squared error for each sample\n\nAveraged across all samples, the square root keeps the original units\n\n\n\n\\(RMSE = \\sqrt{\\frac{\\sum_{i=1}^N \\left({x_i-t_i}\\right)^2}{N}}\\)\n\\(x_i\\) = the ith sample value\n\\(t_i\\) = the ith true value\n\\(N\\) = number of samples"
-  },
-  {
     "objectID": "Uncertainty_in_GIS/Slides.html#quantifying-precision",
     "href": "Uncertainty_in_GIS/Slides.html#quantifying-precision",
     "title": "Lecture Slides",
@@ -3120,61 +3148,5 @@
     "title": "Lecture Slides",
     "section": "What can be done with GIS?",
     "text": "What can be done with GIS?\nGIS can be used to help solve a wide range of geographic problems in different fields:\n\n\n\nPublic Health (Epidemiology)\nPlanning (Urban, Hazards)\nResource Management\nEconomics\n\n\n\nEcology & Biology\nClimate Science\nSocial Justice\nConservation"
-  },
-  {
-    "objectID": "Spatial_Sampling_Methods/Slides.html#sampling-2",
-    "href": "Spatial_Sampling_Methods/Slides.html#sampling-2",
-    "title": "Lecture Slides",
-    "section": "Sampling",
-    "text": "Sampling\n\n\nScientific sampling requires that each element in the sample frame have a known and pre-specified chance of selection.\n\nIf some elements have a greater or lower chance of being selected our sample is said to be biased\nIf every element of interest has an equal chance of being selected our sample is said to be unbiased"
-  },
-  {
-    "objectID": "Spatial_Sampling_Methods/Slides.html#scientific-sampling",
-    "href": "Spatial_Sampling_Methods/Slides.html#scientific-sampling",
-    "title": "Lecture Slides",
-    "section": "Scientific Sampling",
-    "text": "Scientific Sampling\n\n\nRequires each element in the sample frame have a known and pre-specified chance of selection.\n\nBiased Sampling: some elements have a greater or lower chance of being selected\nUnbiased: every element has an equal chance of being selected"
-  },
-  {
-    "objectID": "Spatial_Sampling_Methods/Slides.html#systematic-sampling-3",
-    "href": "Spatial_Sampling_Methods/Slides.html#systematic-sampling-3",
-    "title": "Lecture Slides",
-    "section": "Systematic Sampling",
-    "text": "Systematic Sampling\nA random starting point is chosen and a fixed sampling interval is used.\n\n\n\nNot ideal for discrete objects that exhibit periodicity\n\nCity blocks, Roads, etc."
-  },
-  {
-    "objectID": "Spatial_Sampling_Methods/Slides.html#systematic-sampling-4",
-    "href": "Spatial_Sampling_Methods/Slides.html#systematic-sampling-4",
-    "title": "Lecture Slides",
-    "section": "Systematic Sampling",
-    "text": "Systematic Sampling\n\n\nA random starting point is chosen and a fixed sampling interval is used.\n\nGeneral premise behind remote sensing (satellite data collection)\nCan be a good for areas that contain few features and abrupt boundaries\ne.g., Agricultural fields\nNot ideal for attributes that exhibit periodicity\ne.g., Roads"
-  },
-  {
-    "objectID": "Spatial_Sampling_Methods/Slides.html#stratified-sampling-2",
-    "href": "Spatial_Sampling_Methods/Slides.html#stratified-sampling-2",
-    "title": "Lecture Slides",
-    "section": "Stratified Sampling",
-    "text": "Stratified Sampling\n\n\nHelps to address the issues with systematic sampling by sampling at random locations, but still applying some “systematic bias”"
-  },
-  {
-    "objectID": "Spatial_Sampling_Methods/Slides.html#cluster-sampling-1",
-    "href": "Spatial_Sampling_Methods/Slides.html#cluster-sampling-1",
-    "title": "Lecture Slides",
-    "section": "Cluster Sampling",
-    "text": "Cluster Sampling\nIntense sampling of features in clusters around a number of selected locations\n\n\n\nMore efficient use of time and resources\n\nMay not be representative"
-  },
-  {
-    "objectID": "Spatial_Sampling_Methods/Slides.html#spatial-autocorrelation-2",
-    "href": "Spatial_Sampling_Methods/Slides.html#spatial-autocorrelation-2",
-    "title": "Lecture Slides",
-    "section": "Spatial Autocorrelation",
-    "text": "Spatial Autocorrelation\n\n\nCorrelation does not imply causation!\n\nThere could be relationship between features\n\nOr a relationship to a third object that determines the values of both\nOr a completely random coincidence"
-  },
-  {
-    "objectID": "Uncertainty_in_GIS/Slides.html#mean-absolute-error-mae",
-    "href": "Uncertainty_in_GIS/Slides.html#mean-absolute-error-mae",
-    "title": "Lecture Slides",
-    "section": "Mean Absolute Error (MAE)",
-    "text": "Mean Absolute Error (MAE)\n\n\n\nThe absolute value of the error averaged across all samples.\nHow close the samples (observations or estimate) are to be to the true values.\n\n\n\\(MAE = \\frac{\\sum\\_{i=1}^N \\lvert{x\\_i-t\\_i}\\rvert}{N}\\)\n\\(x\\_i\\) = the ith sample value\n\\(t\\_i\\) = the ith true value\n\\(N\\) = the total number of samples"
   }
 ]
