@@ -169,6 +169,26 @@ Error: Accuracy & Precision
 
 
 
+TopHat Question 1
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Accuracy is biased, it is related to systematic errors in a measurement. Precision is unbiased, it is related to ___ errors in a measurement.
+
+
+* Skewed
+* Random
+* Systematic
+* Weird
+
+
+:::
+::::
+
 
 Quantifying Error
 -----------------
@@ -392,6 +412,27 @@ Quantifying Precision
 :::
 ::::
 
+
+
+TopHat Question 2
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Which of the following metrics can be used to describe the accuracy of an estimate?
+
+
+* Confidence Interval
+* Root Mean Squared Error
+* Standard Deviation
+* Inter Quartile Range
+
+
+:::
+::::
 
 
 
@@ -647,11 +688,26 @@ Errors that arise when creating vector features:
 ![](images/digitizingerrors.png)
 
 
+:::
+::::
+
+TopHat Question 3
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Digitization errors arise when we manually create features.
+
+
+* True
+* False
 
 
 :::
 ::::
-
 
 
 
@@ -923,6 +979,26 @@ Modifiable Areal Unit Problem
 
 
 ![](images/gerrymander_al.png)
+
+
+
+TopHat Question 4
+=================
+
+
+::::{.columns}
+:::{.column width="100%"}
+
+
+Gerrymandering exploits the modifiable areal unit problem to skew election results.
+
+
+* True
+* False
+
+
+:::
+::::
 
 
 Error Propagation
